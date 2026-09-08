@@ -1,0 +1,6 @@
+mutation AboutSeo($metafields: [MetafieldsSetInput!]!) {
+  metafieldsSet(metafields: $metafields) {
+    metafields { key value }
+    userErrors { field message }
+  }
+}

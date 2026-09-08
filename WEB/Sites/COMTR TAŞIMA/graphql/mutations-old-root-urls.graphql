@@ -1,0 +1,18 @@
+mutation OldRootRedirects {
+  rNedir: urlRedirectCreate(urlRedirect: { path: "/sumen-takimi-nedir", target: "/pages/sumen-takimi-rehberi" }) {
+    urlRedirect { path target }
+    userErrors { field message }
+  }
+  rNedirSlash: urlRedirectCreate(urlRedirect: { path: "/sumen-takimi-nedir/", target: "/pages/sumen-takimi-rehberi" }) {
+    urlRedirect { path target }
+    userErrors { field message }
+  }
+  rKriter: urlRedirectCreate(urlRedirect: { path: "/sumen-takimi-nasil-secilir-10-onemli-kriter", target: "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli" }) {
+    urlRedirect { path target }
+    userErrors { field message }
+  }
+  rKriterSlash: urlRedirectCreate(urlRedirect: { path: "/sumen-takimi-nasil-secilir-10-onemli-kriter/", target: "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli" }) {
+    urlRedirect { path target }
+    userErrors { field message }
+  }
+}

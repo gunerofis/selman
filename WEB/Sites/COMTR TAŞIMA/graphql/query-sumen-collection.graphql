@@ -1,0 +1,14 @@
+query SumenCollection {
+  shop { name }
+  collection(id: "gid://shopify/Collection/660811153700") {
+    id
+    handle
+    title
+    sortOrder
+    productsCount { count }
+    ruleSet {
+      appliedDisjunctively
+      rules { column relation condition }
+    }
+  }
+}

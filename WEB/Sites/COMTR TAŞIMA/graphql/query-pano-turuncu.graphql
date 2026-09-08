@@ -1,0 +1,44 @@
+query PanoTuruncu {
+  product(id: "gid://shopify/Product/10785344094500") {
+    id
+    title
+    handle
+    vendor
+    productType
+    status
+    onlineStoreUrl
+    featuredImage {
+      url
+      width
+      height
+    }
+    images(first: 10) {
+      nodes {
+        url
+        width
+        height
+      }
+    }
+    variants(first: 5) {
+      nodes {
+        id
+        sku
+        barcode
+        price
+        inventoryQuantity
+        selectedOptions {
+          name
+          value
+        }
+        inventoryItem {
+          measurement {
+            weight {
+              value
+              unit
+            }
+          }
+        }
+      }
+    }
+  }
+}

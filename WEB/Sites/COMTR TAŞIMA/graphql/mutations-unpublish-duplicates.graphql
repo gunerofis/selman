@@ -1,0 +1,102 @@
+mutation UnpublishDuplicates {
+  removeKumasliFromPano: collectionRemoveProducts(
+    id: "gid://shopify/Collection/660811317540"
+    productIds: [
+      "gid://shopify/Product/10785344258340"
+      "gid://shopify/Product/10785344192804"
+      "gid://shopify/Product/10785344094500"
+      "gid://shopify/Product/10785343963428"
+    ]
+  ) {
+    job {
+      id
+      done
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+  hideFrontpage: publishableUnpublish(
+    id: "gid://shopify/Collection/660810858788"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideKristalMasaSetleri: publishableUnpublish(
+    id: "gid://shopify/Collection/660821475620"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideKristalIsimlikDup: publishableUnpublish(
+    id: "gid://shopify/Collection/660811579684"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideMakamPanolari3: publishableUnpublish(
+    id: "gid://shopify/Collection/660821606692"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideKristalSumen2: publishableUnpublish(
+    id: "gid://shopify/Collection/660821508388"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideDugmeliPano: publishableUnpublish(
+    id: "gid://shopify/Collection/660821410084"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors {
+      field
+      message
+    }
+  }
+  hideAdresPage: pageUpdate(
+    id: "gid://shopify/Page/166741410084"
+    page: { isPublished: false }
+  ) {
+    page {
+      id
+      handle
+      isPublished
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+  hideMakamPage: pageUpdate(
+    id: "gid://shopify/Page/166741672228"
+    page: { isPublished: false }
+  ) {
+    page {
+      id
+      handle
+      isPublished
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<article class="faq-page" itemscope itemtype="https://schema.org/Article">
+  <header class="catalog-head prose-head">
+    <p class="eyebrow">Kullanıcı rehberi</p>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <p>Malzeme, parça sayısı, ölçü, kişiselleştirme, bakım ve sipariş sorularının tam listesi. Fiyat ve stok için ürün sayfası esas alınır.</p>
+  </header>
+
+  <div class="faq-toolbar">
+    <label class="faq-search">
+      <span class="visually-hidden">SSS içinde ara</span>
+      <input type="search" data-faq-search placeholder="Sorularda ara" autocomplete="off">
+    </label>
+    <p class="faq-search-status" data-faq-status hidden>Eşleşen soru yok. Farklı bir ifade deneyin veya <a href="/pages/bize-ulasin">bize ulaşın</a>.</p>
+  </div>
+
+  <div class="faq-body rte" itemprop="articleBody" data-faq-root>
+    {{ page.content }}
+  </div>
+
+  <aside class="prose-help">
+    <div>
+      <p class="eyebrow">Sorunuz mu var?</p>
+      <h2>Ürün sayfasında olmayan bir ayrıntı için yazın.</h2>
+    </div>
+    <a class="button button-outline" href="/pages/bize-ulasin">Bize ulaşın <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </aside>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | json }},
+  "headline": {{ page.title | json }},
+  "description": {{ page.content | strip_html | truncate: 160 | json }},
+  "dateModified": "2026-09-02",
+  "inLanguage": "tr-TR",
+  "mainEntityOfPage": {{ request.origin | append: page.url | json }},
+  "about": "Sümen takımı, masa isimliği, makam panosu ve otel ekipmanı seçimi",
+  "author": {
+    "@type": "Organization",
+    "name": "Sümen Takımı"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sümen Takımı"
+  }
+}
+</script>
+
+{% schema %}
+{
+  "name": "SSS",
+  "settings": []
+}
+{% endschema %}

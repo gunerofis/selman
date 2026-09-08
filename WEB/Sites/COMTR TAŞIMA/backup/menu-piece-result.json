@@ -1,0 +1,93 @@
+{
+  "menuUpdate": {
+    "menu": {
+      "handle": "main-menu",
+      "items": [
+        {
+          "title": "Sümen Takımları",
+          "items": [
+            {
+              "title": "Tüm Sümen Takımları",
+              "url": "/collections/sumen-takimi"
+            },
+            {
+              "title": "Deri Sümen Takımları",
+              "url": "/collections/deri-sumen-takimlari"
+            },
+            {
+              "title": "Lüks Sümen Takımları",
+              "url": "/collections/luks-sumen-takimlari"
+            },
+            {
+              "title": "Kristal Sümen Takımları",
+              "url": "/collections/kristal-sumen-takimlari"
+            },
+            {
+              "title": "9 Parça",
+              "url": "/collections/9-parca-sumen-takimi"
+            },
+            {
+              "title": "10 Parça",
+              "url": "/collections/10-parca-sumen-takimi"
+            },
+            {
+              "title": "11 Parça",
+              "url": "/collections/11-parca-sumen-takimi"
+            },
+            {
+              "title": "12 Parça",
+              "url": "/collections/12-parca-sumen-takimi"
+            }
+          ]
+        },
+        {
+          "title": "Masa İsimlikleri",
+          "items": []
+        },
+        {
+          "title": "Masa Üstü Ürünleri",
+          "items": [
+            {
+              "title": "Masa Üstü Setler",
+              "url": "/collections/masa-ustu-setler"
+            },
+            {
+              "title": "Sümen Aksesuarları",
+              "url": "/collections/sumen-aksesuarlari"
+            }
+          ]
+        },
+        {
+          "title": "Makam Ürünleri",
+          "items": [
+            {
+              "title": "Makam Panoları",
+              "url": "/collections/makam-panolari"
+            },
+            {
+              "title": "Kumaşlı Panolar",
+              "url": "/collections/kumasli-panolar"
+            },
+            {
+              "title": "Makam Bayrakları",
+              "url": "/collections/makam-bayraklari"
+            }
+          ]
+        },
+        {
+          "title": "Otel Ekipmanları",
+          "items": []
+        },
+        {
+          "title": "Rehber",
+          "items": []
+        },
+        {
+          "title": "İletişim",
+          "items": []
+        }
+      ]
+    },
+    "userErrors": []
+  }
+}

@@ -1,0 +1,21 @@
+mutation RehberNedirSeo {
+  rehber: metafieldsSet(metafields: [
+    {
+      ownerId: "gid://shopify/Page/166741475620"
+      namespace: "global"
+      key: "title_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı Nedir? Türler, Ölçüler ve Parça Rehberi | Sümen Takımı"
+    }
+    {
+      ownerId: "gid://shopify/Page/166741475620"
+      namespace: "global"
+      key: "description_tag"
+      type: "single_line_text_field"
+      value: "Sümen takımı nedir, hangi parçalardan oluşur, deri-kristal farkı, 9-12 parça karşılaştırma ve bakım. Satış kategorisi değil, seçim rehberi."
+    }
+  ]) {
+    metafields { key value }
+    userErrors { field message }
+  }
+}

@@ -1,0 +1,5 @@
+query KristalInAll {
+  p1: product(id: "gid://shopify/Product/10785349697828") { handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+  p2: product(id: "gid://shopify/Product/10785345732900") { handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+  col: collection(id: "gid://shopify/Collection/660811153700") { productsCount { count } }
+}

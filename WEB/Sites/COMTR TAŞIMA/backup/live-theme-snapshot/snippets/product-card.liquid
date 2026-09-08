@@ -1,0 +1,24 @@
+<article class="catalog-card"
+  data-type="{{ product.metafields.custom.urun_turu.value | default: product.type | escape }}"
+  data-color="{{ product.metafields.custom.ana_renk.value | escape }}"
+  data-material="{{ product.metafields.custom.malzeme.value | escape }}"
+  data-pieces="{{ product.metafields.custom.parca_sayisi.value }}"
+  data-personal="{% if product.metafields.custom.kisisellestirme.value %}1{% else %}0{% endif %}"
+  data-flag="{% if product.metafields.custom.masa_bayragi.value %}1{% else %}0{% endif %}"
+  data-shelf="{% if product.metafields.custom.evrak_rafi.value or product.title contains 'Evrak' or product.description contains 'Evrak Raf' %}1{% else %}0{% endif %}"
+  data-price="{{ product.price }}">
+  <a class="catalog-card__media" href="{{ product.url }}">
+    {% if product.featured_image %}
+      {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360, 540, 720, 900', alt: product.featured_image.alt | default: product.title }}
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </a>
+  <div class="catalog-card__copy">
+    <a href="{{ product.url }}">{{ product.title }}</a>
+    <p>
+      <strong>{{ product.price | money }}</strong>
+      {% if product.compare_at_price > product.price %}<s>{{ product.compare_at_price | money }}</s>{% endif %}
+    </p>
+  </div>
+</article>

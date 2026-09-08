@@ -1,0 +1,14 @@
+mutation PublishPieceCollections {
+  p9: publishablePublish(id: "gid://shopify/Collection/660952351012", input: [{ publicationId: "gid://shopify/Publication/323509354788" }]) {
+    userErrors { field message }
+  }
+  p10: publishablePublish(id: "gid://shopify/Collection/660952383780", input: [{ publicationId: "gid://shopify/Publication/323509354788" }]) {
+    userErrors { field message }
+  }
+  p11: publishablePublish(id: "gid://shopify/Collection/660952416548", input: [{ publicationId: "gid://shopify/Publication/323509354788" }]) {
+    userErrors { field message }
+  }
+  p12: publishablePublish(id: "gid://shopify/Collection/660952449316", input: [{ publicationId: "gid://shopify/Publication/323509354788" }]) {
+    userErrors { field message }
+  }
+}

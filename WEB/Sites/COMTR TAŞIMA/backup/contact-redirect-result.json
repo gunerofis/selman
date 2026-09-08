@@ -1,0 +1,9 @@
+{
+  "r1": {
+    "urlRedirect": {
+      "path": "/pages/contact",
+      "target": "/pages/bize-ulasin"
+    },
+    "userErrors": []
+  }
+}

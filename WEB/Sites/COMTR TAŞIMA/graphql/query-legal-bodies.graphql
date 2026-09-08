@@ -1,0 +1,10 @@
+query LegalBodies {
+  teslimat: page(id: "gid://shopify/Page/166741737764") { handle body }
+  kullanim: page(id: "gid://shopify/Page/166741639460") { handle body }
+  uyelik: page(id: "gid://shopify/Page/166741770532") { handle body }
+  eft: page(id: "gid://shopify/Page/166741573924") { handle body }
+  adres: page(id: "gid://shopify/Page/166741410084") { handle body }
+  makam: page(id: "gid://shopify/Page/166741672228") { handle body }
+  about: page(id: "gid://shopify/Page/166761464100") { handle body }
+  sss: page(id: "gid://shopify/Page/166814220580") { handle body }
+}

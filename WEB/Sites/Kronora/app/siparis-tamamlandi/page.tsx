@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata = { title: "Sipariş Alındı | Moneluks", robots: { index: false, follow: false } };
+export default async function OrderSuccess({ searchParams }: { searchParams: Promise<{ no?: string }> }) { const no = String((await searchParams).no || "").slice(0, 80); return <main id="main-content" className="inner-page"><section className="success-card"><span>✓</span><p className="eyebrow">Sipariş alındı</p><h1>Teşekkür ederiz.</h1><p>Siparişiniz başarıyla oluşturuldu. Sipariş numaranız:</p><strong>{no}</strong><p>Durum güncellemeleri iletişim bilgileriniz üzerinden paylaşılacaktır.</p><Link className="button primary" href="/">Ana sayfaya dön</Link></section></main>; }

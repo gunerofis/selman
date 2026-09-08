@@ -1,0 +1,28 @@
+{
+  "rehber": {
+    "metafields": [
+      {
+        "key": "title_tag",
+        "value": "Sümen Takımı Rehberi: Türler, Ölçüler ve Parçalar | Sümen Takımı TR"
+      },
+      {
+        "key": "description_tag",
+        "value": "Sümen takımı nedir, hangi parçalardan oluşur, deri-kristal farkı, parça sayısı ve bakım. Satış kategorisi değil, seçim rehberi."
+      }
+    ],
+    "userErrors": []
+  },
+  "about": {
+    "metafields": [
+      {
+        "key": "title_tag",
+        "value": "Hakkımızda ve Üretim | Sümen Takımı TR"
+      },
+      {
+        "key": "description_tag",
+        "value": "Sümen Takımı TR mağazası ve Güner Ofis üretimi: MDF işleme, deri kaplama, kişiselleştirme, Gebze üretim ve İstanbul depo."
+      }
+    ],
+    "userErrors": []
+  }
+}

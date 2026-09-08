@@ -1,0 +1,33 @@
+query VerifyAfterEdits {
+  shop {
+    id
+    name
+  }
+  p9: collection(id: "gid://shopify/Collection/660952351012") {
+    handle
+    productsCount { count }
+    publishedOnPublication(publicationId: "gid://shopify/Publication/323509354788")
+  }
+  p10: collection(id: "gid://shopify/Collection/660952383780") {
+    handle
+    productsCount { count }
+    publishedOnPublication(publicationId: "gid://shopify/Publication/323509354788")
+  }
+  p11: collection(id: "gid://shopify/Collection/660952416548") {
+    handle
+    productsCount { count }
+    publishedOnPublication(publicationId: "gid://shopify/Publication/323509354788")
+  }
+  p12: collection(id: "gid://shopify/Collection/660952449316") {
+    handle
+    productsCount { count }
+    publishedOnPublication(publicationId: "gid://shopify/Publication/323509354788")
+  }
+  sample: products(first: 3, query: "vendor:Güner") {
+    nodes {
+      title
+      vendor
+      parca: metafield(namespace: "custom", key: "parca_sayisi") { value }
+    }
+  }
+}

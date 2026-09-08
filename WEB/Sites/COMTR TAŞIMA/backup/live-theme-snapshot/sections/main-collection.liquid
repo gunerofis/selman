@@ -1,0 +1,148 @@
+<section class="generic-page catalog-page">
+  <header class="catalog-head">
+    <div><p class="eyebrow">Koleksiyon</p><h1>{{ collection.title }}</h1></div>
+    <div class="catalog-head__copy">{% if collection.description != blank %}<div class="rte">{{ collection.description }}</div>{% else %}<p>Çalışma alanınıza uygun masa üstü ürünlerini; malzeme, set içeriği ve kullanım biçimine göre karşılaştırın.</p>{% endif %}<span>{{ collection.products_count }} ürün</span></div>
+  </header>
+  {% paginate collection.products by 24 %}
+    <div class="catalog-filters" data-catalog-filters>
+      <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">Tümü</button>
+      <button type="button" class="filter-button" data-filter="pieces:9">9 parça</button>
+      <button type="button" class="filter-button" data-filter="pieces:10">10 parça</button>
+      <button type="button" class="filter-button" data-filter="pieces:11">11 parça</button>
+      <button type="button" class="filter-button" data-filter="pieces:12">12 parça</button>
+      <button type="button" class="filter-button" data-filter="material:Deri">Deri</button>
+      <button type="button" class="filter-button" data-filter="material:Kristal">Kristal</button>
+      <button type="button" class="filter-button" data-filter="personal:1">Kişiselleştirilebilir</button>
+      <button type="button" class="filter-button" data-filter="flag:1">Masa bayraklı</button>
+      <button type="button" class="filter-button" data-filter="shelf:1">Evrak rafı</button>
+      <button type="button" class="filter-button" data-filter="price:0-200000">2000 TL altı</button>
+      <button type="button" class="filter-button" data-filter="price:200000-400000">2000–4000 TL</button>
+      <button type="button" class="filter-button" data-filter="price:400000-">4000 TL üstü</button>
+    </div>
+    <div class="catalog-grid" data-catalog-grid>
+      {% for product in collection.products %}
+        {% render 'product-card', product: product %}
+      {% else %}
+        <p>Bu koleksiyona henüz ürün eklenmedi.</p>
+      {% endfor %}
+    </div>
+    {% render 'pagination', paginate: paginate %}
+  {% endpaginate %}
+</section>
+
+{% liquid
+  assign handle = collection.handle
+  if handle == 'deri-sumen-takimlari'
+    assign guide_title = 'Deri sümen takımını nasıl seçersiniz?'
+    assign g1t = 'Deri türü'
+    assign g1p = 'Günlük kullanım ve masanın rengine göre deri görünümünü seçin; sık kullanılan masalarda bakımı kolay yüzeyler daha dengeli durur.'
+    assign g2t = 'Renk ve aksesuar'
+    assign g2p = 'Siyah, kahve, taba ve bordo gibi ana renkleri; gold veya gümüş aksesuarla birlikte değerlendirin.'
+    assign g3t = 'Kişiselleştirme'
+    assign g3p = 'İsimlik hediyeli setlerde unvan ve logo ihtiyacını siparişten önce netleştirin.'
+  elsif handle == 'kristal-sumen-takimlari'
+    assign guide_title = 'Kristal masa setini nasıl seçersiniz?'
+    assign g1t = 'Parça yapısı'
+    assign g1p = 'Kristal setler masa düzenini tamamlayan sabit parçalardan oluşur; sümen hediyeli modellerde deri yüzey ayrıca gelir.'
+    assign g2t = 'Metal rengi'
+    assign g2p = 'Gold ve gümüş aksesuarı masa ayağı, lamba ve diğer metal detaylarla birlikte bakın.'
+    assign g3t = 'Temizlik'
+    assign g3p = 'Kristal yüzeyler nemli yumuşak bezle silinir; aşındırıcı temizlik malzemesi kullanılmaz.'
+  elsif handle == 'masa-ustu-isimlikler'
+    assign guide_title = 'Masa üstü isimliği nasıl seçersiniz?'
+    assign g1t = 'Ölçü ve yazı alanı'
+    assign g1p = 'İsim, unvan ve varsa kurum adının sığacağı yazı alanını ürün sayfasındaki ölçüyle kontrol edin.'
+    assign g2t = 'Malzeme'
+    assign g2p = 'Kristal, deri ve metal seçeneklerini masadaki sümen ve aksesuar rengiyle uyumlu seçin.'
+    assign g3t = 'Üretim'
+    assign g3p = 'Kişiye özel yazım için isim, unvan ve logo dosyasını siparişle birlikte iletin.'
+  elsif handle == 'makam-panolari' or handle == 'kumasli-panolar'
+    assign guide_title = 'Makam panosunu nasıl seçersiniz?'
+    assign g1t = 'Ölçü ve alan'
+    assign g1p = 'Duvar genişliği ve karşılama mesafesine göre pano ölçüsünü belirleyin.'
+    assign g2t = 'Çerçeve ve görsel'
+    assign g2p = 'Resimli, kumaşlı veya tuğralı modelleri makamın kurumsal diline göre ayırın.'
+    assign g3t = 'Montaj'
+    assign g3p = 'Duvara montaj için ağırlık ve sabitleme biçimini teslimattan önce sorun.'
+  elsif handle == 'deri-otel-ekipmanlari'
+    assign guide_title = 'Otel ekipmanını nasıl seçersiniz?'
+    assign g1t = 'Ürün türü'
+    assign g1p = 'Oda içi kutu, tepsi, peçetelik veya talimat gibi ürünü kullanım yerine göre seçin.'
+    assign g2t = 'Toplu üretim'
+    assign g2p = 'Adet, renk ve teslim süresini kurumsal siparişte birlikte netleştirin.'
+    assign g3t = 'Kurumsal renk'
+    assign g3p = 'Otel kimliğine uygun deri rengi ve logo uygulamasını numune üzerinden onaylayın.'
+  elsif handle == 'sumen-takimi' or handle == 'luks-sumen-takimlari' or handle contains 'parca-sumen'
+    assign guide_title = 'Parça sayısına göre sümen takımı seçimi'
+    assign g1t = 'Masa ölçüsü'
+    assign g1p = 'Dar masalarda 9–10 parça; geniş yönetici masalarında 11–12 parça daha dengeli durur.'
+    assign g2t = 'Set içeriği'
+    assign g2p = 'Kalemlik, evraklık, isimlik ve masa bayrağı ihtiyacını parça sayısıyla birlikte kontrol edin.'
+    assign g3t = 'Tam set'
+    assign g3p = 'Masa bayraklı ve full set modeller ayrı üründür; içerik değişince varyant değil ayrı model seçin.'
+  else
+    assign guide_title = 'Bu kategoride doğru ürünü nasıl seçersiniz?'
+    assign g1t = 'Kullanım yeri'
+    assign g1p = 'Ürünü masa, duvar veya oda içi kullanımına göre ayırın; sümen sorularını pano ve otel ürünlerine taşımayın.'
+    assign g2t = 'Malzeme ve renk'
+    assign g2p = 'Mevcut mobilya rengi ve metal detaylarla uyumu ürün görsellerinden kontrol edin.'
+    assign g3t = 'Sipariş desteği'
+    assign g3p = 'Ölçü, adet veya kişiselleştirme için iletişim sayfasından yazın.'
+  endif
+%}
+<section class="collection-guide" aria-labelledby="collection-guide-title-{{ section.id }}">
+  <header><p class="eyebrow">Seçim rehberi</p><h2 id="collection-guide-title-{{ section.id }}">{{ guide_title }}</h2></header>
+  <div class="collection-guide__steps">
+    <article><span>01</span><h3>{{ g1t }}</h3><p>{{ g1p }}</p></article>
+    <article><span>02</span><h3>{{ g2t }}</h3><p>{{ g2p }}</p></article>
+    <article><span>03</span><h3>{{ g3t }}</h3><p>{{ g3p }}</p></article>
+  </div>
+</section>
+
+<nav class="collection-directory" aria-label="İlgili kategoriler">
+  <p class="eyebrow">İlgili kategoriler</p>
+  <div>
+    <a href="{{ collections['sumen-takimi'].url }}"><span>01</span>Sümen takımı modelleri</a>
+    <a href="{{ collections['deri-sumen-takimlari'].url }}"><span>02</span>Deri sümen takımları</a>
+    <a href="{{ collections['kristal-sumen-takimlari'].url }}"><span>03</span>Kristal sümen takımları</a>
+    <a href="/pages/sumen-takimi-rehberi"><span>04</span>Sümen takımı rehberi</a>
+  </div>
+</nav>
+
+{% javascript %}
+  const root = document.querySelector('[data-catalog-filters]');
+  const grid = document.querySelector('[data-catalog-grid]');
+  if (root && grid) {
+    root.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-filter]');
+      if (!button) return;
+      root.querySelectorAll('[data-filter]').forEach((el) => {
+        el.classList.toggle('is-active', el === button);
+        el.setAttribute('aria-pressed', el === button ? 'true' : 'false');
+      });
+      const rule = button.getAttribute('data-filter');
+      grid.querySelectorAll('.catalog-card').forEach((card) => {
+        if (rule === 'all') {
+          card.hidden = false;
+          return;
+        }
+        const sep = rule.indexOf(':');
+        const key = rule.slice(0, sep);
+        const value = rule.slice(sep + 1);
+        if (key === 'price') {
+          const price = Number(card.getAttribute('data-price') || 0);
+          const bits = value.split('-');
+          const min = Number(bits[0] || 0);
+          const max = bits[1] === '' || bits[1] == null ? Infinity : Number(bits[1]);
+          card.hidden = !(price >= min && price < max);
+          return;
+        }
+        card.hidden = card.getAttribute('data-' + key) !== value;
+      });
+    });
+  }
+{% endjavascript %}
+
+{% schema %}
+{ "name": "Koleksiyon", "settings": [] }
+{% endschema %}

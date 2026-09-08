@@ -1,0 +1,190 @@
+{% liquid
+  assign menu = section.settings.menu | default: linklists['main-menu']
+%}
+<header class="site-header" data-site-header>
+  <div class="header-bar">
+    <button class="menu-trigger" type="button" aria-label="Menüyü aç" aria-haspopup="dialog" aria-controls="MobileMenu">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a class="brand" href="{{ routes.root_url }}" aria-label="Sümen Takımı ana sayfa">
+      Sümen Takımı
+    </a>
+    <div class="header-tools" aria-label="Hızlı işlemler">
+      <form class="header-search" role="search" action="{{ routes.search_url }}" method="get">
+        <label class="visually-hidden" for="HeaderSearch">Ürün ara</label>
+        <input id="HeaderSearch" type="search" name="q" placeholder="Ürün ara" autocomplete="off">
+        <input type="hidden" name="type" value="product">
+        <button type="submit" aria-label="Ara">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+      </form>
+      <button class="tool-button search-trigger" type="button" aria-haspopup="dialog" aria-controls="SiteSearch">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Ara</span>
+      </button>
+      {% if shop.customer_accounts_enabled %}
+        <a class="tool-button tool-account" href="{{ routes.account_url }}">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20v-2.2c0-3 2.4-5.3 5.3-5.3h2.4c2.9 0 5.3 2.3 5.3 5.3V20"/></svg>
+          <span>Hesabım</span>
+        </a>
+      {% endif %}
+      <a class="tool-button tool-cart" href="{{ routes.cart_url }}" data-cart-open>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span>Sepet <span data-cart-count>{% if cart.item_count > 0 %}({{ cart.item_count }}){% endif %}</span></span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="desktop-nav" aria-label="Ana menü">
+    {% if menu != blank and menu.links.size > 0 %}
+      {% for link in menu.links %}
+        {% if link.links.size > 0 %}
+          {% liquid
+            assign parent_listed = false
+            assign is_sumen_nav = false
+            if link.title contains 'Sümen Takım'
+              assign is_sumen_nav = true
+            endif
+            if link.url contains '/collections/sumen-takimi'
+              assign is_sumen_nav = true
+            endif
+            for child in link.links
+              if child.url == link.url
+                assign parent_listed = true
+              endif
+              if child.url contains '/collections/sumen-takimi'
+                assign is_sumen_nav = true
+              endif
+            endfor
+          %}
+          <details class="nav-group" data-nav-group>
+            <summary aria-expanded="false">
+              {{ link.title }}
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="nav-group__panel">
+              {% if is_sumen_nav %}
+                {% render 'nav-sumen-children' %}
+              {% else %}
+                {% if parent_listed == false and link.url != blank and link.url != '#' %}
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                {% endif %}
+                {% for child in link.links %}
+                  <a href="{{ child.url }}">{{ child.title }}</a>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </details>
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <a href="/collections/sumen-takimi">Sümen Takımları</a>
+      <a href="/collections/masa-ustu-isimlikler">Masa İsimlikleri</a>
+      <a href="/collections/makam-panolari">Makam Ürünleri</a>
+      <a href="/pages/sumen-takimi-rehberi">Rehber</a>
+      <a href="/pages/bize-ulasin">İletişim</a>
+    {% endif %}
+  </nav>
+</header>
+
+<dialog class="sheet mobile-menu" id="MobileMenu" aria-labelledby="mobile-menu-title">
+  <div class="sheet-head">
+    <h2 id="mobile-menu-title">Menü</h2>
+    <button class="dialog-close" type="button" aria-label="Menüyü kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobil menü">
+    {% if menu != blank and menu.links.size > 0 %}
+      {% for link in menu.links %}
+        {% if link.links.size > 0 %}
+          {% liquid
+            assign parent_listed = false
+            assign is_sumen_nav = false
+            if link.title contains 'Sümen Takım'
+              assign is_sumen_nav = true
+            endif
+            if link.url contains '/collections/sumen-takimi'
+              assign is_sumen_nav = true
+            endif
+            for child in link.links
+              if child.url == link.url
+                assign parent_listed = true
+              endif
+              if child.url contains '/collections/sumen-takimi'
+                assign is_sumen_nav = true
+              endif
+            endfor
+          %}
+          <details class="mobile-nav-group">
+            <summary>
+              {{ link.title }}
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div>
+              {% if is_sumen_nav %}
+                {% render 'nav-sumen-children' %}
+              {% else %}
+                {% if parent_listed == false and link.url != blank and link.url != '#' %}
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                {% endif %}
+                {% for child in link.links %}
+                  <a href="{{ child.url }}">{{ child.title }}</a>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </details>
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <a href="/collections/sumen-takimi">Sümen Takımları</a>
+      <a href="/collections/masa-ustu-isimlikler">Masa İsimlikleri</a>
+      <a href="/collections/makam-panolari">Makam Ürünleri</a>
+      <a href="/pages/sumen-takimi-rehberi">Rehber</a>
+      <a href="/pages/bize-ulasin">İletişim</a>
+    {% endif %}
+  </nav>
+  <div class="mobile-menu-tools">
+    <button class="search-trigger" type="button">Ara</button>
+    {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}">Hesabım</a>{% endif %}
+    <a href="{{ routes.cart_url }}" data-cart-open>Sepet <span data-cart-count>{% if cart.item_count > 0 %}({{ cart.item_count }}){% endif %}</span></a>
+  </div>
+</dialog>
+
+<dialog class="search-dialog" id="SiteSearch" aria-labelledby="search-title">
+  <div class="search-shell">
+    <div class="sheet-head">
+      <h2 id="search-title">Ürün ara</h2>
+      <button class="dialog-close" type="button" aria-label="Aramayı kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+    </div>
+    <form class="search-form" role="search" action="{{ routes.search_url }}" method="get">
+      <label for="site-search">Ürün adı, kategori veya ürün kodu</label>
+      <div>
+        <input id="site-search" type="search" name="q" autocomplete="off" placeholder="Örneğin: deri, kristal, masa seti" required aria-describedby="search-status" aria-controls="search-suggest">
+        <input type="hidden" name="type" value="product">
+        <button type="submit" aria-label="Ara"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+      </div>
+    </form>
+    <p class="search-status" id="search-status" data-search-status role="status">Mağazadaki ürünler içinde arayın.</p>
+    <ul class="search-suggest" id="search-suggest" data-search-suggest hidden></ul>
+    <nav class="search-shortcuts" data-search-shortcuts aria-label="Koleksiyonlar">
+      <a href="/collections/sumen-takimi">Tüm sümen takımları</a>
+      <a href="/collections/deri-sumen-takimlari">Deri sümen takımları</a>
+      <a href="/collections/kristal-sumen-takimlari">Kristal sümen takımları</a>
+      <a href="/collections/masa-ustu-isimlikler">Masa üstü isimlikler</a>
+    </nav>
+  </div>
+</dialog>
+
+{% render 'breadcrumbs' %}
+
+{% schema %}
+{
+  "name": "Site üst alanı",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Ana menü" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,82 @@
+{
+  "rFrontpage": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612233937188",
+      "path": "/collections/frontpage",
+      "target": "/collections/sumen-takimi"
+    },
+    "userErrors": []
+  },
+  "rKristalSet": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612233969956",
+      "path": "/collections/kristal-masa-setleri",
+      "target": "/collections/kristal-sumen-takimlari"
+    },
+    "userErrors": []
+  },
+  "rIsimlikDup": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234002724",
+      "path": "/collections/kristal-masa-ustu-i%cc%87simlikler",
+      "target": "/collections/masa-ustu-isimlikler"
+    },
+    "userErrors": []
+  },
+  "rMakam3": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234035492",
+      "path": "/collections/makam-panolari-3",
+      "target": "/collections/makam-panolari"
+    },
+    "userErrors": []
+  },
+  "rKristal2": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234068260",
+      "path": "/collections/kristal-sumen-takimlari-2",
+      "target": "/collections/kristal-sumen-takimlari"
+    },
+    "userErrors": []
+  },
+  "rDugmeliCol": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234101028",
+      "path": "/collections/dugmeli-makam-panosu",
+      "target": "/collections/makam-panolari"
+    },
+    "userErrors": []
+  },
+  "rAdresPage": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234133796",
+      "path": "/pages/adres-ve-konum-bilgisi",
+      "target": "/pages/bize-ulasin"
+    },
+    "userErrors": []
+  },
+  "rMakamPage": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/612234166564",
+      "path": "/pages/makam-panolari-2",
+      "target": "/collections/makam-panolari"
+    },
+    "userErrors": []
+  },
+  "updAdres": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/611811033380",
+      "path": "/adres-ve-konum-bilgisi",
+      "target": "/pages/bize-ulasin"
+    },
+    "userErrors": []
+  },
+  "updDugmeli": {
+    "urlRedirect": {
+      "id": "gid://shopify/UrlRedirect/611812868388",
+      "path": "/dugmeli-makam-panosu",
+      "target": "/collections/makam-panolari"
+    },
+    "userErrors": []
+  }
+}

@@ -1,0 +1,27 @@
+query LegalPagesPub {
+  gizlilik: page(id: "gid://shopify/Page/166741606692") {
+    handle
+    title
+    isPublished
+  }
+  teslimat: page(id: "gid://shopify/Page/166741737764") {
+    handle
+    title
+    isPublished
+  }
+  kullanim: page(id: "gid://shopify/Page/166741639460") {
+    handle
+    title
+    isPublished
+  }
+  mesafeli: page(id: "gid://shopify/Page/166741704996") {
+    handle
+    title
+    isPublished
+  }
+  hakkimizda: page(id: "gid://shopify/Page/166761464100") {
+    handle
+    title
+    isPublished
+  }
+}

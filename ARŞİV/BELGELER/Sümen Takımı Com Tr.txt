@@ -1,0 +1,456 @@
+sumentakimi.com.tr Tam İyileştirme Planı
+
+Uygulama sırası değişmeyecek:
+
+Veri yedeği → URL temizliği → marka tutarlılığı → kategori mimarisi → sayfa içerikleri → ürün düzeni → iç bağlantılar → teknik kontrol → indeksleme → ölçüm
+
+Mevcut sitede doğrulanan temel sorunlar: dar ana menü, yinelenen koleksiyonlar, bütün kategorilerde tekrarlanan genel metinler, eski “Makro Ofis” başlıkları, İngilizce ve gereksiz koleksiyon adları ile Shopify dışında hâlâ açık duran eski Faprika sayfasıdır. Ana sümen koleksiyonunda 78, deri koleksiyonunda 44 ürün; blogda yalnızca dört yazı bulunuyor.
+
+1. Değişiklik öncesi kayıt
+
+Hiçbir URL silinmeden önce:
+
+Shopify’dan ürünler, koleksiyonlar, sayfalar ve URL yönlendirmeleri dışa aktarılacak.
+Search Console’dan son 16 aylık:
+Sayfa
+Arama sorgusu
+Gösterim
+Tıklama
+Ortalama konum
+İndeksleme
+verileri alınacak.
+Site tam taranarak her URL için şu bilgiler kaydedilecek:
+HTTP durumu
+Canonical adresi
+Title
+H1
+Meta açıklama
+İç bağlantı sayısı
+Sitemap durumu
+İndekslenebilirlik
+Tek bir URL eşleştirme dosyası hazırlanacak:
+
+Eski URL → Yapılacak işlem → Yeni URL → 301 kontrolü
+
+Bitiş koşulu: Sitedeki her eski, yeni ve yinelenen URL için kesin işlem belirlenmiş olacak.
+
+2. Yinelenen ve eski URL’lerin temizlenmesi
+
+Aynı ürünleri taşıyan yinelenen kristal, isimlik ve makam koleksiyonları doğrulandı. Ayrıca “Home page” adlı gereksiz koleksiyon ve eski Faprika tasarımını gösteren adres sayfası hâlâ açıktır.
+
+Kalacak adres	Kapatılacak adres	İşlem
+/collections/kristal-sumen-takimlari	/collections/kristal-masa-setleri	İçerik birleştirilecek, ikinci adres 301 yönlenecek
+/collections/masa-ustu-isimlikler	/collections/kristal-masa-ustu-i̇simlikler	Ürünler tek koleksiyonda tutulacak, bozuk karakterli adres 301 yönlenecek
+/collections/makam-panolari	/collections/makam-panolari-3	İçerik birleştirilecek, -3 adresi 301 yönlenecek
+/collections/kumasli-panolar	Makam Panoları içindeki 4 kumaşlı pano	Ürünler doğru koleksiyona taşınacak
+/collections/sumen-takimi	/collections/frontpage	“Home page” koleksiyonu kaldırılacak ve ana sümen koleksiyonuna yönlenecek
+/pages/bize-ulasin	/adres-ve-konum-bilgisi/	Eski Faprika sayfası kapatılıp güncel iletişim sayfasına yönlenecek
+/pages/sumen-takimi-rehberi	/pages/anasayfa-aciklama	Eski sayfa rehber merkezine dönüştürülecek veya yeni rehber adresine yönlenecek
+Mevcut seçim rehberi yazısı	/sumen-takimi-nasil-secilir-10-onemli-kriter/	Mevcut güncel yazıya 301
+/pages/sumen-takimi-rehberi	/sumen-takimi-nedir/	Rehber merkezine 301
+
+Aşağıdaki çalışan yönlendirmeler korunacak:
+
+/sumen-takimi/ → /collections/sumen-takimi
+/deri-sumen-takimlari/ → /collections/deri-sumen-takimlari
+/masa-ustu-isimlikler/ → /collections/masa-ustu-isimlikler
+/kumasli-panolar/ → /collections/kumasli-panolar
+
+Bu yönlendirmeler şu anda doğru hedeflere çalışıyor.
+
+Uygulama kuralı
+Kapatılacak sayfanın menü ve iç bağlantıları kaldırılacak.
+Sayfa Shopify’da gizlenecek veya silinecek.
+Kaynak adres 404 verdikten sonra 301 yönlendirme oluşturulacak.
+Eski adres tek adımda doğru hedefe gitmeli; yönlendirme zinciri olmayacak.
+Hiçbir eski ürün veya kategori topluca ana sayfaya gönderilmeyecek; en yakın ilgili sayfaya yönlenecek.
+
+Shopify yönlendirmeleri yalnız kaynak adres 404 olduğunda çalışır. Google kalıcı 301/308 yönlendirmelerini hedef URL’nin ana adres olması yönünde güçlü sinyal olarak kullanır.
+
+3. Marka, üretici ve iletişim bilgilerinin tekleştirilmesi
+
+Sitede üç alan ayrı ve düzenli yönetilecek:
+
+Mağaza/site adı: Sümen Takımı TR
+Üretici: Güner Ofis
+Ürün markası: Ürünün ambalajında ve satış kanallarında kullanılan gerçek marka
+
+Yapılacaklar:
+
+Sayfa title’larındaki “Makro Ofis” uzantıları kaldırılacak.
+Makro Ofis artık ürün etiketi veya ambalajında kullanılmıyorsa ürün vendor, schema, açıklama ve Merchant verilerinden de kaldırılacak.
+Site başlığı, logo alt metni, footer, e-posta şablonları ve Organization schema aynı mağaza adını kullanacak.
+Satış sözleşmeleri yalnız gerçek fatura kesen şirketin unvanını gösterecek.
+Adres, telefon ve e-posta bilgileri tek merkezden yönetilecek.
+Birden fazla gerçek adres varsa açık biçimde:
+Merkez
+Üretim
+Depo
+olarak ayrılacak.
+Eski adresler, eski site adı ve eski Faprika bağlantıları tamamen kaldırılacak.
+Hakkımızda sayfasına gerçek üretim yapısı eklenecek:
+MDF işleme
+Deri kaplama
+Ahşap uygulama
+Kişiselleştirme
+Seri ve kurumsal üretim
+4. Son kategori mimarisi
+
+Sümen ürünleri aşağıdaki kalıcı yapıda düzenlenecek:
+
+Ana sayfalar
+/collections/sumen-takimi
+/collections/deri-sumen-takimlari
+/collections/luks-sumen-takimlari
+/collections/kristal-sumen-takimlari
+/collections/9-parca-sumen-takimi
+/collections/10-parca-sumen-takimi
+/collections/11-parca-sumen-takimi
+/collections/12-parca-sumen-takimi
+/collections/masa-ustu-isimlikler
+/collections/masa-ustu-setler
+/collections/sumen-aksesuarlari
+/pages/sumen-takimi-rehberi
+
+Mevcut 78 ürünün başlıklarına göre dağılımı:
+
+9 parça: 7 ürün
+10 parça: 24 ürün
+11 parça: 26 ürün
+12 parça: 14 ürün
+6 parça: 3 ürün
+7 parça: 3 ürün
+
+Bu nedenle ilk aşamada 9, 10, 11 ve 12 parça koleksiyonları açılacak. 6 ve 7 parça şimdilik filtre olarak kalacak. Koleksiyonlar ürün başlıklarına göre değil, doğrulanmış parça sayısı alanına göre otomatik oluşturulacak.
+
+Diğer ürün grupları
+/collections/makam-panolari
+/collections/kumasli-panolar
+/collections/makam-bayraklari
+/collections/deri-otel-ekipmanlari
+
+Bunlar sümen kategorisinin altına karıştırılmayacak.
+
+Son menü
+
+Sümen Takımları
+
+Tüm Sümen Takımları
+Deri Sümen Takımları
+Lüks Sümen Takımları
+Kristal Sümen Takımları
+9 Parça
+10 Parça
+11 Parça
+12 Parça
+
+Masa İsimlikleri
+
+Masa Üstü Ürünleri
+
+Masa Üstü Setler
+Sümen Aksesuarları
+
+Makam Ürünleri
+
+Makam Panoları
+Kumaşlı Panolar
+Makam Bayrakları
+
+Otel Ekipmanları
+
+Rehber
+
+İletişim
+
+/collections sayfasındaki “Product Collections” başlığı Türkçeleştirilecek. “Home page”, yinelenen koleksiyonlar ve müşteriye gösterilmesi gerekmeyen yardımcı koleksiyonlar buradan kaldırılacak. Mevcut koleksiyon listesinde bu sorunlar açık biçimde görülüyor.
+
+5. Sayfaların kesin arama hedefleri
+Sayfa	Title	H1
+Ana sayfa	Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı TR	Sümen Takımları ve Masaüstü Ofis Setleri
+Ana kategori	Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR	Sümen Takımı Modelleri ve Fiyatları
+Deri kategori	Deri Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR	Deri Sümen Takımı Modelleri
+Lüks kategori	Lüks Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR	Lüks Sümen Takımları
+Kristal kategori	Kristal Sümen Takımı Modelleri | Sümen Takımı TR	Kristal Sümen Takımları
+Parça sayısı	10 Parça Sümen Takımı Modelleri | Sümen Takımı TR	10 Parça Sümen Takımları
+Masa isimlikleri	Masa Üstü İsimlik Modelleri | Sümen Takımı TR	Masa Üstü İsimlikler
+Rehber merkezi	Sümen Takımı Rehberi: Türler, Ölçüler ve Parçalar | Sümen Takımı TR	Sümen Takımı Rehberi
+Hakkımızda	Hakkımızda ve Üretim | Sümen Takımı TR	Sümen Takımı TR Hakkında
+
+9, 11 ve 12 parça sayfalarında aynı yapı kendi parça sayısıyla uygulanacak.
+
+Her sayfada:
+
+Tek H1 bulunacak.
+Title ve meta açıklama benzersiz olacak.
+Ana hedef kelime bir kez doğal biçimde kullanılacak.
+“Makro Ofis” ve diğer eski başlık uzantıları kaldırılacak.
+H1, title ve sayfanın gerçek içeriği birbiriyle uyumlu olacak.
+
+Google her sayfa için açıklayıcı, kısa ve birbirinden farklı başlık kullanılmasını öneriyor.
+
+6. Kategori sayfası düzeni
+
+Her önemli koleksiyon şu sırayla hazırlanacak:
+
+H1
+Kategoriyi doğrudan açıklayan kısa giriş
+Ürün sayısı ve filtreler
+Ürün listesi
+Kategoriye özel seçim rehberi
+İlgili alt kategoriler
+İlgili rehber yazıları
+Sık sorulan sorular
+Kategoriye uygun güven ve teslimat bilgileri
+Filtreler
+
+Ürün verileri düzenlendikten sonra:
+
+Ürün türü
+Malzeme
+Parça sayısı
+Ana renk
+Aksesuar rengi
+Fiyat
+Kişiselleştirme
+Evrak rafı
+Masa bayrağı
+
+filtreleri kullanılacak.
+
+İçerik kuralı
+
+Bütün koleksiyonlarda tekrar eden “Masanız için doğru ürünü seçin” bloğu kaldırılacak. Deri, kristal, isimlik, pano ve otel ürünlerinin her biri kendi kullanımına uygun metin taşıyacak. Şu anda ilgisiz kategorilerde aynı ölçü–parça–malzeme metni tekrarlanıyor.
+
+Örnek:
+
+Deri kategorisi: deri türü, kullanım, bakım, renk, kişiselleştirme
+Kristal kategorisi: parça yapısı, metal rengi, masa uyumu, temizlik
+İsimlik kategorisi: ölçü, yazı alanı, unvan, logo, üretim
+Makam panosu: ölçü, görsel, çerçeve, montaj, kullanım alanı
+Otel ekipmanı: ürün türü, ölçü, toplu üretim, kurumsal renk
+7. Ürün verilerinin düzeltilmesi
+
+Her ürün için zorunlu alanlar:
+
+Ürün türü
+Model adı
+SKU
+Barkod varsa barkod
+Malzeme
+Renk
+Aksesuar rengi
+Parça sayısı
+Set içeriği
+Sümen ölçüsü
+Diğer parça ölçüleri
+Kişiselleştirme durumu
+Stok veya üretim durumu
+Gerçek hazırlık süresi
+Bakım bilgisi
+Kargo ve paketleme bilgisi
+Bağlı ana koleksiyon
+Ürün birleştirme kuralı
+
+Aynı model, aynı ölçü ve aynı parça içeriğine sahip; yalnız renk veya metal rengi değişen ürünler tek ürün altında varyant yapılacak.
+
+Şunlar ayrı ürün olarak kalacak:
+
+Parça içeriği değişen setler
+Masa bayraklı setler
+Full setler
+Farklı ölçüdeki ürünler
+Yapısı veya malzemesi farklı modeller
+
+Toplu URL birleştirmesi yapılmadan önce her ürünün Search Console trafiği kontrol edilecek. Trafik alan bir ürün kapatılırsa birebir karşılığına 301 verilecek.
+
+Ürün şablonları
+
+Beş ayrı ürün şablonu kullanılacak:
+
+Sümen takımı
+Masa isimliği
+Makam panosu
+Bayrak ve kurumsal ürün
+Otel ekipmanı ve aksesuar
+
+İsimlik bilgisi, logo veya kişiselleştirme alanları yalnız uygun ürünlerde gösterilecek. Evrak rafı, bayrak, pano veya yardımcı aksesuar sayfalarında ilgisiz sümen soruları bulunmayacak.
+
+Ürün görselleri
+
+Her ana üründe sırasıyla:
+
+Gerçek masa üzerinde kullanım
+Ön-üst 45 derece görünüm
+Üstten tam set
+Bütün parçalar açık biçimde
+Malzeme ve işçilik yakın planı
+Ölçü veya kişiselleştirme örneği
+
+bulunacak.
+
+8. Sümen rehber merkezi
+
+/pages/sumen-takimi-rehberi satış kategorisi olmayacak. Bilgilendirme ve dağıtım merkezi olarak çalışacak.
+
+İçerik sırası:
+
+Sümen takımı nedir?
+Hangi parçalardan oluşur?
+Deri, ahşap ve kristal farkları
+9, 10, 11 ve 12 parça karşılaştırması
+Masa ölçüsüne göre seçim
+Yönetici masası ve ev ofis seçimi
+Renk seçimi
+Kişiselleştirme
+Bakım ve temizlik
+İlgili koleksiyonlar
+İlgili rehber yazıları
+
+Bu sayfa bütün sümen kategorilerine doğrudan bağlantı verecek.
+
+9. İçerik planı
+
+Mevcut dört yazı korunacak ve ilgili kategorilere bağlanacak:
+
+Sümen Takımı Seçerken Nelere Dikkat Edilmeli?
+Deri ve Kristal Sümen Takımı Arasındaki Farklar
+Kişiye Özel Masa İsimliği Sipariş Rehberi
+Ofis Masasında Düzen Kurmanın 7 Pratik Yolu
+
+Yeni içerikler:
+
+Sümen Takımı Nedir ve Hangi Parçalardan Oluşur?
+9, 10, 11 ve 12 Parça Sümen Takımı Karşılaştırması
+Deri Sümen Takımı Bakımı ve Temizliği
+Masa Ölçüsüne Göre Sümen Takımı Seçimi
+Yönetici Masası İçin Sümen Takımı Seçimi
+Siyah, Kahve, Taba ve Bordo Sümen Renk Rehberi
+Kurumsal Logolu Sümen Takımı Sipariş Süreci
+Sümen Takımı Hediye Seçim Rehberi
+
+Her yazı tek bir ana arama amacına sahip olacak. Kategori sayfasındaki satış metni blogda tekrar edilmeyecek.
+
+10. İç bağlantı sistemi
+
+Bağlantılar sabit kurala göre verilecek:
+
+Ana sayfa → ana sümen kategorisi, deri, lüks, kristal, isimlik ve rehber
+Rehber merkezi → bütün sümen alt kategorileri
+Kategori → ana kategori, iki ilgili kategori ve iki rehber
+Blog yazısı → bir ana kategori ve ilgili ürünler
+Ürün → ana koleksiyon, ilgili rehber ve benzer ürünler
+Footer → yalnız temel kategori, kurumsal ve destek sayfaları
+
+Bağlantı metinleri açık olacak:
+
+Deri sümen takımları
+11 parça sümen takımları
+Sümen takımı seçim rehberi
+
+“Buraya tıklayın” gibi anlamsız bağlantı metinleri kullanılmayacak.
+
+Bütün iç bağlantılar doğrudan son URL’ye gidecek; 301 veya 404 üzerinden geçmeyecek.
+
+11. Teknik SEO ve Google kontrolleri
+Bütün indekslenebilir sayfalarda kendini gösteren canonical bulunacak.
+Yinelenen URL’ler 301 ile tek ana URL’de birleşecek.
+Sitemap yalnız:
+200 durum kodlu
+İndekslenebilir
+Canonical
+sayfaları içerecek.
+Filtre ve sıralama URL’lerinin indekslenmesi engellenecek.
+Arama, sepet, hesap ve müşteri sayfaları indeks dışında tutulacak.
+srsltid ve diğer takip parametreleri temiz ana URL’ye canonical verecek.
+Sayfalama bağlantıları gerçek <a href> bağlantılarıyla çalışacak.
+Sayfa 2, 3 ve 4 kendi canonical adreslerine sahip olacak.
+Ürün görsellerinde:
+Anlamlı dosya adı
+Gerçek alt metin
+Doğru genişlik ve yükseklik
+Sıkıştırılmış format
+Ekran altı görsellerde gecikmeli yükleme
+kullanılacak.
+Mobil ürün kartları, filtreler, menü ve satın alma alanları ayrıca test edilecek.
+404, 5xx, yönlendirme zinciri ve yanlış canonical taraması tamamlanacak.
+
+Google, iç bağlantıların canonical URL’ye gitmesini; sayfalamanın taranabilir bağlantılarla kurulmasını ve filtreli sıralama URL’lerinin indekslenmemesini öneriyor.
+
+12. Ürün yapılandırılmış verisi ve Merchant
+
+Her ürün sayfasında görünür bilgilerle aynı veriyi taşıyan:
+
+Product
+Offer
+Brand
+SKU
+Price
+Availability
+Shipping
+Return policy
+Product variant
+
+verileri bulunacak.
+
+Yapılandırılmış veri ile Merchant Center feed’i şu alanlarda birebir aynı olacak:
+
+Ürün adı
+Marka
+Fiyat
+Stok
+URL
+Ana görsel
+Varyant
+Kargo
+İade
+
+Sahte veya elle üretilmiş değerlendirme puanı kullanılmayacak. Yalnız gerçek müşteri yorumları gösterilecek.
+
+Google, ürün sayfasındaki yapılandırılmış veri ile Merchant Center feed’inin birlikte kullanılmasını ve varyantların doğru ürün ailesi altında belirtilmesini öneriyor.
+
+13. Yayına alma sırası
+Shopify ve Search Console verileri yedeklenecek.
+Marka, adres ve kurumsal bilgiler düzeltilecek.
+Eski Faprika sayfaları kapatılacak.
+Yinelenen koleksiyonlar birleştirilecek.
+301 yönlendirmeleri kurulacak.
+Ürün alanları ve parça sayıları doğrulanacak.
+Yeni 9, 10, 11 ve 12 parça koleksiyonları oluşturulacak.
+Menü ve breadcrumb sistemi kurulacak.
+Ana sayfa ve ana kategorilerin title, H1 ve içerikleri düzenlenecek.
+Ürün şablonları ayrılacak.
+Rehber merkezi hazırlanacak.
+Mevcut blogların iç bağlantıları düzeltilecek.
+Yeni içerikler yayınlanacak.
+Canonical, sitemap, schema ve Merchant kontrolleri yapılacak.
+Tam site taraması tekrar çalıştırılacak.
+Hatalar sıfırlandıktan sonra sitemap Search Console’a gönderilecek.
+Ana sayfa, ana sümen, deri sümen, kristal sümen, lüks sümen ve rehber sayfaları URL Denetimi ile kontrol edilecek.
+14. Planın tamamlanmış sayılması için gerekenler
+Yinelenen koleksiyon kalmayacak.
+“Home page” koleksiyonu görünmeyecek.
+Eski Faprika tasarımlı canlı sayfa kalmayacak.
+Eski marka ve adres tutarsızlığı kalmayacak.
+İç bağlantılarda 404 bulunmayacak.
+İç bağlantılar 301 üzerinden geçmeyecek.
+Bütün ana sayfaların title, H1 ve meta açıklaması benzersiz olacak.
+Her kategori yalnız doğru ürünleri gösterecek.
+Her ürünün parça sayısı ve set içeriği doğrulanmış olacak.
+Kişiselleştirme alanları yalnız uygun ürünlerde bulunacak.
+Bütün ana URL’ler 200 durum kodu verecek.
+Her indekslenebilir sayfa kendine canonical verecek.
+Sitemap’te kapatılmış veya yönlenen URL bulunmayacak.
+Yapılandırılmış veride kritik hata kalmayacak.
+Merchant fiyat ve stok bilgileri siteyle aynı olacak.
+Search Console’da Google’ın seçtiği canonical ile belirtilen canonical ana sayfalarda eşleşecek.
+Anahtar kelimeler sayfalara şu şekilde ayrılmış olacak:
+Ana sayfa: genel mağaza ve sümen takımları
+Ana koleksiyon: sümen takımı modelleri ve fiyatları
+Deri koleksiyonu: deri sümen takımı
+Lüks koleksiyon: lüks sümen takımı
+Kristal koleksiyon: kristal sümen takımı
+Parça koleksiyonları: 9, 10, 11 ve 12 parça
+Rehber merkezi: bilgilendirici sümen sorguları
+
+Bu yapı tamamlandığında site; tek bir “sümen takımı” sayfasına bağımlı kalmadan, genel kelimeyi, deri aramasını, parça sayılarını ve bilgilendirici aramaları birbirine karıştırmadan ayrı sayfalarla hedefleyecek.

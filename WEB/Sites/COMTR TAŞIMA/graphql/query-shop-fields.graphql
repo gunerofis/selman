@@ -1,0 +1,15 @@
+query ShopFields {
+  shop {
+    id
+    name
+    brand {
+      shortDescription
+      slogan
+    }
+  }
+  shopType: __type(name: "Shop") {
+    fields {
+      name
+    }
+  }
+}

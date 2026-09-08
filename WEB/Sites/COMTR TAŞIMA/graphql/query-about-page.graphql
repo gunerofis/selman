@@ -1,0 +1,5 @@
+query AboutPage {
+  pages(first: 5, query: "handle:about-us") {
+    nodes { id handle title body }
+  }
+}

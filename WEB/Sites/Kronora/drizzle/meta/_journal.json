@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1787770612841,
+      "tag": "0000_nasty_the_enforcers",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1787834562976,
+      "tag": "0001_overconfident_hellion",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1787935842597,
+      "tag": "0002_typical_miracleman",
+      "breakpoints": true
+    }
+  ]
+}

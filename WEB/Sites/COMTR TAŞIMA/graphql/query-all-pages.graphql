@@ -1,0 +1,5 @@
+query AllPages {
+  pages(first: 50) {
+    nodes { id handle title }
+  }
+}

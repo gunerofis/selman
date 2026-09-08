@@ -1,0 +1,602 @@
+{
+  "publications": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Publication/323509354788",
+        "autoPublish": false,
+        "catalog": {
+          "title": "Channel Catalog 323509354788 for Online Store"
+        }
+      },
+      {
+        "id": "gid://shopify/Publication/323509387556",
+        "autoPublish": false,
+        "catalog": {
+          "title": "Channel Catalog 323509387556 for Point of Sale"
+        }
+      },
+      {
+        "id": "gid://shopify/Publication/323509616932",
+        "autoPublish": false,
+        "catalog": {
+          "title": "Channel Catalog 323509616932 for Google & YouTube"
+        }
+      }
+    ]
+  },
+  "frontpage": {
+    "id": "gid://shopify/Collection/660810858788",
+    "handle": "frontpage",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785341505828",
+          "handle": "diamond-silver-sumen-takimi-9-parca-siyah",
+          "title": "Diamond Silver Sümen Takımı 9 Parça Siyah"
+        }
+      ]
+    }
+  },
+  "kristalKeep": {
+    "id": "gid://shopify/Collection/660811415844",
+    "handle": "kristal-sumen-takimlari",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785349697828",
+          "handle": "kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349665060",
+          "handle": "vuska-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349599524",
+          "handle": "lemi-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349566756",
+          "handle": "atay-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785345732900",
+          "handle": "kristal-sumen-takimi"
+        }
+      ]
+    }
+  },
+  "kristalDup": {
+    "id": "gid://shopify/Collection/660821475620",
+    "handle": "kristal-masa-setleri",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785349697828",
+          "handle": "kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349665060",
+          "handle": "vuska-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349599524",
+          "handle": "lemi-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785349566756",
+          "handle": "atay-kristal-masa-seti-sumen-hediyeli"
+        },
+        {
+          "id": "gid://shopify/Product/10785345732900",
+          "handle": "kristal-sumen-takimi"
+        }
+      ]
+    }
+  },
+  "isimlikKeep": {
+    "id": "gid://shopify/Collection/660821639460",
+    "handle": "masa-ustu-isimlikler",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785349468452",
+          "handle": "mkr-08"
+        },
+        {
+          "id": "gid://shopify/Product/10785349337380",
+          "handle": "kristal-masa-isimligi"
+        },
+        {
+          "id": "gid://shopify/Product/10785349239076",
+          "handle": "kristal-masa-isimligi-2"
+        },
+        {
+          "id": "gid://shopify/Product/10785349206308",
+          "handle": "kristal-masa-isimligi-3"
+        },
+        {
+          "id": "gid://shopify/Product/10785349140772",
+          "handle": "kristal-masa-isimligi-4"
+        },
+        {
+          "id": "gid://shopify/Product/10785349075236",
+          "handle": "kristal-masa-isimligi-5"
+        },
+        {
+          "id": "gid://shopify/Product/10785349009700",
+          "handle": "kristal-masa-isimligi-6"
+        },
+        {
+          "id": "gid://shopify/Product/10785348944164",
+          "handle": "kristal-masa-isimligi-7"
+        },
+        {
+          "id": "gid://shopify/Product/10785348911396",
+          "handle": "kristal-masa-isimligi-8"
+        },
+        {
+          "id": "gid://shopify/Product/10785348878628",
+          "handle": "kristal-masa-isimligi-9"
+        },
+        {
+          "id": "gid://shopify/Product/10785348845860",
+          "handle": "kristal-masa-isimligi-10"
+        },
+        {
+          "id": "gid://shopify/Product/10785348780324",
+          "handle": "kristal-masa-isimligi-11"
+        },
+        {
+          "id": "gid://shopify/Product/10785348747556",
+          "handle": "kristal-masa-isimligi-12"
+        },
+        {
+          "id": "gid://shopify/Product/10785348714788",
+          "handle": "kristal-masa-isimligi-13"
+        },
+        {
+          "id": "gid://shopify/Product/10785348649252",
+          "handle": "kristal-masa-isimligi-14"
+        },
+        {
+          "id": "gid://shopify/Product/10785348616484",
+          "handle": "kristal-masa-isimligi-15"
+        },
+        {
+          "id": "gid://shopify/Product/10785348583716",
+          "handle": "kristal-masa-isimligi-16"
+        },
+        {
+          "id": "gid://shopify/Product/10785348518180",
+          "handle": "kristal-masa-isimligi-17"
+        },
+        {
+          "id": "gid://shopify/Product/10785348485412",
+          "handle": "kristal-masa-isimligi-18"
+        },
+        {
+          "id": "gid://shopify/Product/10785348419876",
+          "handle": "kristal-masa-isimligi-19"
+        },
+        {
+          "id": "gid://shopify/Product/10785348354340",
+          "handle": "kristal-masa-isimligi-20"
+        },
+        {
+          "id": "gid://shopify/Product/10785348321572",
+          "handle": "kristal-masa-isimligi-21"
+        },
+        {
+          "id": "gid://shopify/Product/10785348288804",
+          "handle": "kristal-masa-isimligi-22"
+        },
+        {
+          "id": "gid://shopify/Product/10785348256036",
+          "handle": "kristal-masa-isimligi-23"
+        },
+        {
+          "id": "gid://shopify/Product/10785348223268",
+          "handle": "kristal-masa-isimligi-24"
+        },
+        {
+          "id": "gid://shopify/Product/10785348157732",
+          "handle": "kristal-masa-isimligi-25"
+        },
+        {
+          "id": "gid://shopify/Product/10785348124964",
+          "handle": "kristal-masa-isimligi-26"
+        },
+        {
+          "id": "gid://shopify/Product/10785348059428",
+          "handle": "kristal-masa-isimligi-27"
+        },
+        {
+          "id": "gid://shopify/Product/10785347993892",
+          "handle": "kristal-masa-isimligi-28"
+        },
+        {
+          "id": "gid://shopify/Product/10785347928356",
+          "handle": "kristal-masa-isimligi-29"
+        },
+        {
+          "id": "gid://shopify/Product/10785347895588",
+          "handle": "kristal-masa-isimligi-30"
+        },
+        {
+          "id": "gid://shopify/Product/10785347862820",
+          "handle": "kristal-masa-isimligi-31"
+        }
+      ]
+    }
+  },
+  "isimlikDup": {
+    "id": "gid://shopify/Collection/660811579684",
+    "handle": "kristal-masa-ustu-i̇simlikler",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785349468452",
+          "handle": "mkr-08"
+        },
+        {
+          "id": "gid://shopify/Product/10785349337380",
+          "handle": "kristal-masa-isimligi"
+        },
+        {
+          "id": "gid://shopify/Product/10785349239076",
+          "handle": "kristal-masa-isimligi-2"
+        },
+        {
+          "id": "gid://shopify/Product/10785349206308",
+          "handle": "kristal-masa-isimligi-3"
+        },
+        {
+          "id": "gid://shopify/Product/10785349140772",
+          "handle": "kristal-masa-isimligi-4"
+        },
+        {
+          "id": "gid://shopify/Product/10785349075236",
+          "handle": "kristal-masa-isimligi-5"
+        },
+        {
+          "id": "gid://shopify/Product/10785349009700",
+          "handle": "kristal-masa-isimligi-6"
+        },
+        {
+          "id": "gid://shopify/Product/10785348944164",
+          "handle": "kristal-masa-isimligi-7"
+        },
+        {
+          "id": "gid://shopify/Product/10785348911396",
+          "handle": "kristal-masa-isimligi-8"
+        },
+        {
+          "id": "gid://shopify/Product/10785348878628",
+          "handle": "kristal-masa-isimligi-9"
+        },
+        {
+          "id": "gid://shopify/Product/10785348845860",
+          "handle": "kristal-masa-isimligi-10"
+        },
+        {
+          "id": "gid://shopify/Product/10785348780324",
+          "handle": "kristal-masa-isimligi-11"
+        },
+        {
+          "id": "gid://shopify/Product/10785348747556",
+          "handle": "kristal-masa-isimligi-12"
+        },
+        {
+          "id": "gid://shopify/Product/10785348714788",
+          "handle": "kristal-masa-isimligi-13"
+        },
+        {
+          "id": "gid://shopify/Product/10785348649252",
+          "handle": "kristal-masa-isimligi-14"
+        },
+        {
+          "id": "gid://shopify/Product/10785348616484",
+          "handle": "kristal-masa-isimligi-15"
+        },
+        {
+          "id": "gid://shopify/Product/10785348583716",
+          "handle": "kristal-masa-isimligi-16"
+        },
+        {
+          "id": "gid://shopify/Product/10785348518180",
+          "handle": "kristal-masa-isimligi-17"
+        },
+        {
+          "id": "gid://shopify/Product/10785348485412",
+          "handle": "kristal-masa-isimligi-18"
+        },
+        {
+          "id": "gid://shopify/Product/10785348419876",
+          "handle": "kristal-masa-isimligi-19"
+        },
+        {
+          "id": "gid://shopify/Product/10785348354340",
+          "handle": "kristal-masa-isimligi-20"
+        },
+        {
+          "id": "gid://shopify/Product/10785348321572",
+          "handle": "kristal-masa-isimligi-21"
+        },
+        {
+          "id": "gid://shopify/Product/10785348288804",
+          "handle": "kristal-masa-isimligi-22"
+        },
+        {
+          "id": "gid://shopify/Product/10785348256036",
+          "handle": "kristal-masa-isimligi-23"
+        },
+        {
+          "id": "gid://shopify/Product/10785348223268",
+          "handle": "kristal-masa-isimligi-24"
+        },
+        {
+          "id": "gid://shopify/Product/10785348157732",
+          "handle": "kristal-masa-isimligi-25"
+        },
+        {
+          "id": "gid://shopify/Product/10785348124964",
+          "handle": "kristal-masa-isimligi-26"
+        },
+        {
+          "id": "gid://shopify/Product/10785348059428",
+          "handle": "kristal-masa-isimligi-27"
+        },
+        {
+          "id": "gid://shopify/Product/10785347993892",
+          "handle": "kristal-masa-isimligi-28"
+        },
+        {
+          "id": "gid://shopify/Product/10785347928356",
+          "handle": "kristal-masa-isimligi-29"
+        },
+        {
+          "id": "gid://shopify/Product/10785347895588",
+          "handle": "kristal-masa-isimligi-30"
+        },
+        {
+          "id": "gid://shopify/Product/10785347862820",
+          "handle": "kristal-masa-isimligi-31"
+        }
+      ]
+    }
+  },
+  "panoKeep": {
+    "id": "gid://shopify/Collection/660811317540",
+    "handle": "makam-panolari",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785345503524",
+          "handle": "resimli-makam-panosu",
+          "title": "Resimli Makam Panosu 1"
+        },
+        {
+          "id": "gid://shopify/Product/10785345437988",
+          "handle": "resimli-makam-panosu-2",
+          "title": "Resimli Makam Panosu 2"
+        },
+        {
+          "id": "gid://shopify/Product/10785345372452",
+          "handle": "resimli-makam-panosu-3",
+          "title": "Resimli Makam Panosu 3"
+        },
+        {
+          "id": "gid://shopify/Product/10785345339684",
+          "handle": "resimli-makam-panosu-4",
+          "title": "Resimli Makam Panosu 4"
+        },
+        {
+          "id": "gid://shopify/Product/10785345175844",
+          "handle": "resimli-makam-panosu-6",
+          "title": "Resimli Makam Panosu 6"
+        },
+        {
+          "id": "gid://shopify/Product/10785345044772",
+          "handle": "resimli-makam-panosu-7",
+          "title": "Resimli Makam Panosu 7"
+        },
+        {
+          "id": "gid://shopify/Product/10785344946468",
+          "handle": "resimli-makam-panosu-8",
+          "title": "Resimli Makam Panosu 8"
+        },
+        {
+          "id": "gid://shopify/Product/10785344880932",
+          "handle": "resimli-makam-panosu-9",
+          "title": "Resimli Makam Panosu 9"
+        },
+        {
+          "id": "gid://shopify/Product/10785344848164",
+          "handle": "resimli-makam-panosu-10",
+          "title": "Resimli Makam Panosu 10"
+        },
+        {
+          "id": "gid://shopify/Product/10785344815396",
+          "handle": "resimli-makam-panosu-11",
+          "title": "Resimli Makam Panosu 11"
+        },
+        {
+          "id": "gid://shopify/Product/10785344749860",
+          "handle": "resimli-makam-panosu-12",
+          "title": "Resimli Makam Panosu 12"
+        },
+        {
+          "id": "gid://shopify/Product/10785344684324",
+          "handle": "resimli-makam-panosu-13",
+          "title": "Resimli Makam Panosu 13"
+        },
+        {
+          "id": "gid://shopify/Product/10785344520484",
+          "handle": "resimli-makam-panosu-14",
+          "title": "Resimli Makam Panosu 14"
+        },
+        {
+          "id": "gid://shopify/Product/10785344454948",
+          "handle": "resimli-makam-panosu-15",
+          "title": "Resimli Makam Panosu 15"
+        },
+        {
+          "id": "gid://shopify/Product/10785344422180",
+          "handle": "resimli-makam-panosu-16",
+          "title": "Resimli Makam Panosu 16"
+        },
+        {
+          "id": "gid://shopify/Product/10785344389412",
+          "handle": "resimli-makam-panosu-17",
+          "title": "Resimli Makam Panosu 17"
+        },
+        {
+          "id": "gid://shopify/Product/10785344323876",
+          "handle": "resimli-makam-panosu-18",
+          "title": "Resimli Makam Panosu 18"
+        },
+        {
+          "id": "gid://shopify/Product/10785344258340",
+          "handle": "duvara-monte-kumasli-pano-mavi",
+          "title": "Duvara Monte Kumaşlı Pano Mavi"
+        },
+        {
+          "id": "gid://shopify/Product/10785344192804",
+          "handle": "duvara-monte-kumasli-pano-turkuaz",
+          "title": "Duvara Monte Kumaşlı Pano Turkuaz"
+        },
+        {
+          "id": "gid://shopify/Product/10785344094500",
+          "handle": "duvara-monte-kumasli-pano-turuncu",
+          "title": "Duvara Monte Kumaşlı Pano Turuncu"
+        },
+        {
+          "id": "gid://shopify/Product/10785343963428",
+          "handle": "duvara-monte-kumasli-pano-bordo",
+          "title": "Duvara Monte Kumaşlı Pano Bordo"
+        }
+      ]
+    }
+  },
+  "panoDup": {
+    "id": "gid://shopify/Collection/660821606692",
+    "handle": "makam-panolari-3",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785345503524",
+          "handle": "resimli-makam-panosu",
+          "title": "Resimli Makam Panosu 1"
+        },
+        {
+          "id": "gid://shopify/Product/10785345437988",
+          "handle": "resimli-makam-panosu-2",
+          "title": "Resimli Makam Panosu 2"
+        },
+        {
+          "id": "gid://shopify/Product/10785345372452",
+          "handle": "resimli-makam-panosu-3",
+          "title": "Resimli Makam Panosu 3"
+        },
+        {
+          "id": "gid://shopify/Product/10785345339684",
+          "handle": "resimli-makam-panosu-4",
+          "title": "Resimli Makam Panosu 4"
+        },
+        {
+          "id": "gid://shopify/Product/10785345175844",
+          "handle": "resimli-makam-panosu-6",
+          "title": "Resimli Makam Panosu 6"
+        },
+        {
+          "id": "gid://shopify/Product/10785345044772",
+          "handle": "resimli-makam-panosu-7",
+          "title": "Resimli Makam Panosu 7"
+        },
+        {
+          "id": "gid://shopify/Product/10785344946468",
+          "handle": "resimli-makam-panosu-8",
+          "title": "Resimli Makam Panosu 8"
+        },
+        {
+          "id": "gid://shopify/Product/10785344880932",
+          "handle": "resimli-makam-panosu-9",
+          "title": "Resimli Makam Panosu 9"
+        },
+        {
+          "id": "gid://shopify/Product/10785344848164",
+          "handle": "resimli-makam-panosu-10",
+          "title": "Resimli Makam Panosu 10"
+        },
+        {
+          "id": "gid://shopify/Product/10785344815396",
+          "handle": "resimli-makam-panosu-11",
+          "title": "Resimli Makam Panosu 11"
+        },
+        {
+          "id": "gid://shopify/Product/10785344749860",
+          "handle": "resimli-makam-panosu-12",
+          "title": "Resimli Makam Panosu 12"
+        },
+        {
+          "id": "gid://shopify/Product/10785344684324",
+          "handle": "resimli-makam-panosu-13",
+          "title": "Resimli Makam Panosu 13"
+        },
+        {
+          "id": "gid://shopify/Product/10785344520484",
+          "handle": "resimli-makam-panosu-14",
+          "title": "Resimli Makam Panosu 14"
+        },
+        {
+          "id": "gid://shopify/Product/10785344454948",
+          "handle": "resimli-makam-panosu-15",
+          "title": "Resimli Makam Panosu 15"
+        },
+        {
+          "id": "gid://shopify/Product/10785344422180",
+          "handle": "resimli-makam-panosu-16",
+          "title": "Resimli Makam Panosu 16"
+        },
+        {
+          "id": "gid://shopify/Product/10785344389412",
+          "handle": "resimli-makam-panosu-17",
+          "title": "Resimli Makam Panosu 17"
+        },
+        {
+          "id": "gid://shopify/Product/10785344323876",
+          "handle": "resimli-makam-panosu-18",
+          "title": "Resimli Makam Panosu 18"
+        }
+      ]
+    }
+  },
+  "kumasli": {
+    "id": "gid://shopify/Collection/660821541156",
+    "handle": "kumasli-panolar",
+    "products": {
+      "nodes": [
+        {
+          "id": "gid://shopify/Product/10785344258340",
+          "handle": "duvara-monte-kumasli-pano-mavi",
+          "title": "Duvara Monte Kumaşlı Pano Mavi"
+        },
+        {
+          "id": "gid://shopify/Product/10785344192804",
+          "handle": "duvara-monte-kumasli-pano-turkuaz",
+          "title": "Duvara Monte Kumaşlı Pano Turkuaz"
+        },
+        {
+          "id": "gid://shopify/Product/10785344094500",
+          "handle": "duvara-monte-kumasli-pano-turuncu",
+          "title": "Duvara Monte Kumaşlı Pano Turuncu"
+        },
+        {
+          "id": "gid://shopify/Product/10785343963428",
+          "handle": "duvara-monte-kumasli-pano-bordo",
+          "title": "Duvara Monte Kumaşlı Pano Bordo"
+        }
+      ]
+    }
+  }
+}

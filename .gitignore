@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Framework and build outputs
+.next/
+dist/
+build/
+coverage/
+.output/
+.nuxt/
+
+# Local runtimes and caches
+.wrangler/
+.sites-runtime/
+.cache/
+.turbo/
+.vercel/
+.parcel-cache/
+__pycache__/
+.venv/
+venv/
+
+# Local environment files (keep templates such as .env.example)
+.env
+.env.local
+.env.*.local
+
+# Private notes and credentials
+/ARŞİV/BELGELER/ŞİFRELER.txt
+
+# Logs and operating-system files
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local editor settings
+.idea/
+.vscode/

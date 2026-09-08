@@ -1,0 +1,15 @@
+query SumenProducts {
+  products(first: 250, query: "title:sümen") {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      id
+      handle
+      title
+      productType
+      status
+      collections(first: 30) {
+        nodes { handle }
+      }
+    }
+  }
+}

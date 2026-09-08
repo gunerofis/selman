@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   tokens — site-plani.md · faz 0
+   Kaynak: tokens.css. Tek doğruluk kaynağı burasıdır; renk veya
+   ölçü değeri component içine elle yazılmaz.
+   --------------------------------------------------------------- */
+@theme {
+  /* zemin */
+  --color-krem: #F7F1E8;   /* sayfa */
+  --color-kagit: #FDFAF6;  /* kart, panel */
+  --color-sut: #E9DCCB;    /* blok, görsel arkası */
+
+  /* metin */
+  --color-kahve: #4A3B2E;  /* ana metin */
+  /* Faz 0 paletinde #8A7866 idi; krem üzerinde 3.77:1 kalıp WCAG AA'yı
+     (4.5:1) geçemiyordu. Ton korunarak koyulaştırıldı → 5.41:1. */
+  --color-ikincil: #6E6052; /* yardımcı metin, mono */
+
+  /* çizgi */
+  --color-dikis: #E3D8CA;
+  --color-dikis-koyu: #D6C7B4;
+
+  /* aksan */
+  /* Faz 0'da #A9743F; krem üzerinde 3.56:1 idi. Ton korunarak → 5.46:1. */
+  --color-taba: #825931;
+  /* Nokta ve zemin gibi metin olmayan yerlerde özgün taba kullanılır. */
+  --color-taba-dolgu: #A9743F;
+  --color-bordo: #6B2D36;  /* yalnız indirim / uyarı */
+
+  /* pastel kategori zeminleri */
+  --color-p-krem: #EFE6DA;
+  --color-p-gri: #E4E5E2;
+  --color-p-lacivert: #DDE1E6;
+  --color-p-taba: #EDE2DB;
+  --color-p-bordo: #E8DCDC;
+  --color-p-siyah: #E3E0DC;
+
+  /* ürün renk noktaları — sabit liste, sıra değişmez */
+  --color-nokta-krem: #E9DCCB;
+  --color-nokta-taba: #B9926A;
+  --color-nokta-gri: #8C8F8B;
+  --color-nokta-lacivert: #2C3542;
+  --color-nokta-bordo: #6B2D36;
+  --color-nokta-kahve: #4A3B2E;
+  --color-nokta-beyaz: #FDFAF6;
+  --color-nokta-siyah: #26241F;
+
+  /* tipografi */
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  /* ölçek 12/14/16/20/26/34/46 — başka basamak yok */
+  --text-xs: 0.75rem;    /* 12 */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem;   /* 14 */
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;     /* 16 */
+  --text-base--line-height: 1.65;
+  --text-lg: 1.25rem;    /* 20 */
+  --text-lg--line-height: 1.35;
+  --text-xl: 1.625rem;   /* 26 */
+  --text-xl--line-height: 1.25;
+  --text-2xl: 2.125rem;  /* 34 */
+  --text-2xl--line-height: 1.15;
+  --text-3xl: 2.875rem;  /* 46 */
+  --text-3xl--line-height: 1.1;
+
+  /* yüzey — köşe yuvarlaması yok, gölge yok */
+  --radius-none: 0px;
+
+  /* hareket */
+  --ease-cikis: cubic-bezier(0.22, 1, 0.36, 1);
+  --default-transition-duration: 320ms;
+  --default-transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Yüzey kuralı: hiçbir yerde radius ve gölge yok. */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  /* Uzun listelerde ekran dışı kartların düzen/boyama maliyetini erteler. */
+  @media (min-width: 768px) {
+    .gec-boya {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 340px;
+    }
+  }
+
+  body {
+    background: var(--color-krem);
+    color: var(--color-kahve);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Odak halkası her yerde aynı: taba, 2px, 1px boşluk. */
+  :focus-visible {
+    outline: 2px solid var(--color-taba);
+    outline-offset: 1px;
+  }
+
+  ::selection {
+    background: var(--color-sut);
+    color: var(--color-kahve);
+  }
+
+  /* Görsel oranı 1:1 — ürün görselinin varsayılanı. */
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  /* Display başlık: Archivo, geniş eksen. */
+  .yazi-display {
+    font-family: var(--font-display);
+    font-variation-settings: 'wdth' 118;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .yazi-display-orta {
+    font-family: var(--font-display);
+    font-variation-settings: 'wdth' 112;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  /* Teknik metin: ürün kodu, ölçü, fiyat — her yerde mono. */
+  .yazi-mono {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.02em;
+    color: var(--color-ikincil);
+  }
+
+  /* Ayırıcı: kesikli, hairline. */
+  .dikis-ust {
+    border-top: 1px dashed var(--color-dikis);
+  }
+
+  .dikis-alt {
+    border-bottom: 1px dashed var(--color-dikis);
+  }
+}
+
+/* Form hatası yalnız kullanıcı alandan çıktıktan ya da gönderdikten sonra
+   görünür; yazarken erken uyarı çıkmaz. */
+@layer components {
+  .alan-hata {
+    display: none;
+  }
+
+  .alan:user-invalid + .alan-hata,
+  .alan-hata[data-gorunur] {
+    display: block;
+  }
+
+  .alan:user-invalid {
+    border-color: var(--color-bordo);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Duvarda yer değiştirme — View Transitions, 320ms.
+   Kareler `view-transition-class: duvar-kare` taşır (duvar.module.css).
+   Bu kurallar belge düzeyinde olduğu için CSS module'e konamaz.
+   -------------------------------------------------------------------------- */
+::view-transition-group(.duvar-kare) {
+  animation-duration: 320ms;
+  animation-timing-function: var(--ease-cikis);
+}
+
+/* Sayfanın tamamı değil, yalnız kareler geçiş yapar. */
+:root {
+  view-transition-name: none;
+}
+
+/* Geçiş sırasında altta kalan ögeler tıklanabilir kalsın. */
+::view-transition {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

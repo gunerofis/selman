@@ -1,0 +1,15 @@
+query MenuLive {
+  menu(id: "gid://shopify/Menu/323167682852") {
+    id
+    handle
+    title
+    items {
+      title
+      url
+      items {
+        title
+        url
+      }
+    }
+  }
+}

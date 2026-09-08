@@ -1,0 +1,16 @@
+<article class="generic-page prose-page">
+  <header class="catalog-head prose-head">
+    <p class="eyebrow">Bilgilendirme</p>
+    <h1>{{ page.title }}</h1>
+    <p>Aradığınız bilgiyi açık, sade ve kolay okunur biçimde bir araya getirdik.</p>
+  </header>
+  <div class="rte prose-page__body">{{ page.content }}</div>
+  <aside class="prose-help">
+    <div><p class="eyebrow">Sorunuz mu var?</p><h2>Size yardımcı olmaktan memnuniyet duyarız.</h2></div>
+    <a class="button button-outline" href="/pages/bize-ulasin">Bize ulaşın <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </aside>
+</article>
+
+{% schema %}
+{ "name": "Sayfa", "settings": [] }
+{% endschema %}

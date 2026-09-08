@@ -1,0 +1,6 @@
+query ArticlesShop {
+  articles(first: 20) {
+    nodes { id title content }
+  }
+  shop { name description }
+}

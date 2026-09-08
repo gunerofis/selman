@@ -1,0 +1,50 @@
+{
+  "aNedir": {
+    "article": {
+      "handle": "sumen-takimi-nedir-ve-hangi-parcalardan-olusur"
+    },
+    "userErrors": []
+  },
+  "aParca": {
+    "article": {
+      "handle": "9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi"
+    },
+    "userErrors": []
+  },
+  "aBakim": {
+    "article": {
+      "handle": "deri-sumen-takimi-bakimi-ve-temizligi"
+    },
+    "userErrors": []
+  },
+  "aOlcu": {
+    "article": {
+      "handle": "masa-olcusune-gore-sumen-takimi-secimi"
+    },
+    "userErrors": []
+  },
+  "aYonetici": {
+    "article": {
+      "handle": "yonetici-masasi-icin-sumen-takimi-secimi"
+    },
+    "userErrors": []
+  },
+  "aRenk": {
+    "article": {
+      "handle": "siyah-kahve-taba-ve-bordo-sumen-renk-rehberi"
+    },
+    "userErrors": []
+  },
+  "aLogo": {
+    "article": {
+      "handle": "kurumsal-logolu-sumen-takimi-siparis-sureci"
+    },
+    "userErrors": []
+  },
+  "aHediye": {
+    "article": {
+      "handle": "sumen-takimi-hediye-secim-rehberi"
+    },
+    "userErrors": []
+  }
+}

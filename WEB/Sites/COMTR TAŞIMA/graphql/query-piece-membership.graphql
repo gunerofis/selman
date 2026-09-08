@@ -1,0 +1,30 @@
+query PieceMembership {
+  parent: collectionByHandle(handle: "sumen-takimi") {
+    id
+    productsCount { count }
+  }
+  c9: collectionByHandle(handle: "9-parca-sumen-takimi") {
+    id
+    handle
+    productsCount { count }
+    products(first: 50) {
+      nodes {
+        id
+        handle
+        title
+        vendor
+        parca: metafield(namespace: "custom", key: "parca_sayisi") { value }
+        inAll: inCollection(id: "gid://shopify/Collection/660811153700")
+      }
+    }
+  }
+  c10: collectionByHandle(handle: "10-parca-sumen-takimi") {
+    productsCount { count }
+    products(first: 5) {
+      nodes {
+        handle
+        parca: metafield(namespace: "custom", key: "parca_sayisi") { value }
+      }
+    }
+  }
+}

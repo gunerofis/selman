@@ -1,0 +1,33 @@
+mutation UrlCleanup(
+  $kristalId: ID!
+  $kristalProductIds: [ID!]!
+  $isimlikId: ID!
+  $isimlikProductIds: [ID!]!
+  $panoId: ID!
+  $panoProductIds: [ID!]!
+  $kumasliId: ID!
+  $kumasliProductIds: [ID!]!
+  $sumenId: ID!
+  $sumenProductIds: [ID!]!
+) {
+  addKristal: collectionAddProducts(id: $kristalId, productIds: $kristalProductIds) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+  addIsimlik: collectionAddProducts(id: $isimlikId, productIds: $isimlikProductIds) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+  addPano: collectionAddProducts(id: $panoId, productIds: $panoProductIds) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+  addKumasli: collectionAddProducts(id: $kumasliId, productIds: $kumasliProductIds) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+  addSumen: collectionAddProducts(id: $sumenId, productIds: $sumenProductIds) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+}

@@ -1,0 +1,1316 @@
+[
+  {
+    "path": "/",
+    "clicks": 115,
+    "impr": 2683,
+    "status": 200,
+    "location": "",
+    "planned": "/",
+    "reason": "home"
+  },
+  {
+    "path": "/anasayfa-aciklama",
+    "clicks": 5,
+    "impr": 46,
+    "status": 301,
+    "location": "/pages/anasayfa-aciklama",
+    "planned": "/pages/sumen-takimi-rehberi",
+    "reason": "known-close"
+  },
+  {
+    "path": "/deri-sumen-takimlari",
+    "clicks": 3,
+    "impr": 22,
+    "status": 301,
+    "location": "/collections/deri-sumen-takimlari",
+    "planned": "/collections/deri-sumen-takimlari",
+    "reason": "collection"
+  },
+  {
+    "path": "/sumen-takimi-nedir",
+    "clicks": 1,
+    "impr": 147,
+    "status": 301,
+    "location": "/pages/sumen-takimi-rehberi",
+    "planned": "/pages/sumen-takimi-rehberi",
+    "reason": "known-close"
+  },
+  {
+    "path": "/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "clicks": 1,
+    "impr": 44,
+    "status": 301,
+    "location": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "planned": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-10-parca-beyaz",
+    "clicks": 1,
+    "impr": 43,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-10-parca-beyaz",
+    "planned": "/products/g101-deri-sumen-takimi-10-parca-beyaz",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/sumen-takimi-nasil-secilir-10-onemli-kriter",
+    "clicks": 1,
+    "impr": 32,
+    "status": 301,
+    "location": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+    "planned": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+    "reason": "known-close"
+  },
+  {
+    "path": "/sumen-aksesuarlari",
+    "clicks": 1,
+    "impr": 21,
+    "status": 301,
+    "location": "/collections/sumen-aksesuarlari",
+    "planned": "/collections/sumen-aksesuarlari",
+    "reason": "collection"
+  },
+  {
+    "path": "/deri-pecetelik",
+    "clicks": 1,
+    "impr": 14,
+    "status": 301,
+    "location": "/products/deri-pecetelik",
+    "planned": "/products/deri-pecetelik",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/blog/etiket/masa%20s%C3%BCmeni",
+    "clicks": 1,
+    "impr": 12,
+    "status": 404,
+    "location": "",
+    "planned": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "path": "/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "clicks": 1,
+    "impr": 11,
+    "status": 301,
+    "location": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "planned": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "clicks": 1,
+    "impr": 10,
+    "status": 301,
+    "location": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "planned": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-otel-ekipmanlari",
+    "clicks": 1,
+    "impr": 6,
+    "status": 301,
+    "location": "/collections/deri-otel-ekipmanlari",
+    "planned": "/collections/deri-otel-ekipmanlari",
+    "reason": "collection"
+  },
+  {
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "clicks": 1,
+    "impr": 5,
+    "status": 301,
+    "location": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "planned": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-15",
+    "clicks": 1,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-15",
+    "planned": "/products/kristal-masa-isimligi-15",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-deri-sumen-takimi-9-parca",
+    "clicks": 1,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/imza-sumeni",
+    "clicks": 0,
+    "impr": 77,
+    "status": 301,
+    "location": "/products/imza-sumeni",
+    "planned": "/products/imza-sumeni",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/osmanli-tugrasi",
+    "clicks": 0,
+    "impr": 50,
+    "status": 301,
+    "location": "/collections/osmanli-tugrasi",
+    "planned": "/collections/osmanli-tugrasi",
+    "reason": "collection"
+  },
+  {
+    "path": "/blog",
+    "clicks": 0,
+    "impr": 48,
+    "status": 301,
+    "location": "/blogs/news",
+    "planned": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "clicks": 0,
+    "impr": 32,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "planned": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-10-parca-taba",
+    "clicks": 0,
+    "impr": 19,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-10-parca-taba",
+    "planned": "/products/g101-deri-sumen-takimi-10-parca-taba",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/osmanli-devlet-armasi-altin-varak-tablo",
+    "clicks": 0,
+    "impr": 17,
+    "status": 301,
+    "location": "/products/osmanli-devlet-armasi-altin-varak-tablo",
+    "planned": "/products/osmanli-devlet-armasi-altin-varak-tablo",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "clicks": 0,
+    "impr": 16,
+    "status": 301,
+    "location": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "planned": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kumasli-pano-nedir-ofis-ve-kurumsal-alanlarda-kumasli-pano-kullanimi",
+    "clicks": 0,
+    "impr": 15,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/ataturk-resimli-makam-panolari",
+    "clicks": 0,
+    "impr": 15,
+    "status": 301,
+    "location": "/collections/ataturk-resimli-makam-panolari",
+    "planned": "/collections/ataturk-resimli-makam-panolari",
+    "reason": "collection"
+  },
+  {
+    "path": "/atay-kristal-masa-seti-sumen-hediyeli-",
+    "clicks": 0,
+    "impr": 14,
+    "status": 301,
+    "location": "/products/atay-kristal-masa-seti-sumen-hediyeli",
+    "planned": "/products/atay-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "clicks": 0,
+    "impr": 12,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "planned": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 9,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 8,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 8,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/logolu-makam-bayragi-gold",
+    "clicks": 0,
+    "impr": 8,
+    "status": 301,
+    "location": "/products/logolu-makam-bayragi-gold",
+    "planned": "/products/logolu-makam-bayragi-gold",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/masa-ustu-setler",
+    "clicks": 0,
+    "impr": 8,
+    "status": 301,
+    "location": "/collections/masa-ustu-setler",
+    "planned": "/collections/masa-ustu-setler",
+    "reason": "collection"
+  },
+  {
+    "path": "/masa-ustu-isimlikler",
+    "clicks": 0,
+    "impr": 8,
+    "status": 301,
+    "location": "/collections/masa-ustu-isimlikler",
+    "planned": "/collections/masa-ustu-isimlikler",
+    "reason": "collection"
+  },
+  {
+    "path": "/kristal-sumen-takimi",
+    "clicks": 0,
+    "impr": 7,
+    "status": 301,
+    "location": "/products/kristal-sumen-takimi",
+    "planned": "/products/kristal-sumen-takimi",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/makam-panolari-3",
+    "clicks": 0,
+    "impr": 7,
+    "status": 301,
+    "location": "/collections/makam-panolari-3",
+    "planned": "/collections/makam-panolari",
+    "reason": "known-close"
+  },
+  {
+    "path": "/bize-ulasin",
+    "clicks": 0,
+    "impr": 7,
+    "status": 301,
+    "location": "/pages/bize-ulasin",
+    "planned": "/pages/bize-ulasin",
+    "reason": "page"
+  },
+  {
+    "path": "/makam-bayraklari",
+    "clicks": 0,
+    "impr": 7,
+    "status": 301,
+    "location": "/collections/makam-bayraklari",
+    "planned": "/collections/makam-bayraklari",
+    "reason": "collection"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 6,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/teslimat-ve-iade-sozlesmesi",
+    "clicks": 0,
+    "impr": 6,
+    "status": 301,
+    "location": "/pages/teslimat-ve-iade-sozlesmesi",
+    "planned": "/pages/teslimat-ve-iade-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "path": "/kullanici-kayit",
+    "clicks": 0,
+    "impr": 6,
+    "status": 404,
+    "location": "",
+    "planned": "/account/login",
+    "reason": "account"
+  },
+  {
+    "path": "/kullanim-kosullari",
+    "clicks": 0,
+    "impr": 6,
+    "status": 301,
+    "location": "/pages/kullanim-kosullari",
+    "planned": "/pages/kullanim-kosullari",
+    "reason": "page"
+  },
+  {
+    "path": "/dora-sumen-takimi-11-parca-krem-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 6,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/adres-ve-konum-bilgisi",
+    "clicks": 0,
+    "impr": 6,
+    "status": 301,
+    "location": "/pages/bize-ulasin",
+    "planned": "/pages/bize-ulasin",
+    "reason": "known-close"
+  },
+  {
+    "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "clicks": 0,
+    "impr": 6,
+    "status": 301,
+    "location": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "planned": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-6-parca-siyah",
+    "clicks": 0,
+    "impr": 5,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/mesafeli-satis-sozlesmesi",
+    "clicks": 0,
+    "impr": 5,
+    "status": 301,
+    "location": "/pages/mesafeli-satis-sozlesmesi",
+    "planned": "/pages/mesafeli-satis-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "path": "/diamond-sumen-takimi-9-parca-mermer-desenli",
+    "clicks": 0,
+    "impr": 5,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/dugmeli-makam-panosu",
+    "clicks": 0,
+    "impr": 5,
+    "status": 301,
+    "location": "/collections/makam-panolari",
+    "planned": "/collections/makam-panolari",
+    "reason": "known-close"
+  },
+  {
+    "path": "/resimli-makam-panosu-16",
+    "clicks": 0,
+    "impr": 5,
+    "status": 301,
+    "location": "/products/resimli-makam-panosu-16",
+    "planned": "/products/resimli-makam-panosu-16",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "clicks": 0,
+    "impr": 5,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "planned": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-tepsi-5-adet",
+    "clicks": 0,
+    "impr": 5,
+    "status": 301,
+    "location": "/products/deri-tepsi-5-adet",
+    "planned": "/products/deri-tepsi-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kullanici-giris",
+    "clicks": 0,
+    "impr": 4,
+    "status": 404,
+    "location": "",
+    "planned": "/account/login",
+    "reason": "account"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 4,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kucuk-oval-osmanli-devlet-armasi-altin",
+    "clicks": 0,
+    "impr": 4,
+    "status": 301,
+    "location": "/products/kucuk-oval-osmanli-devlet-armasi-altin",
+    "planned": "/products/kucuk-oval-osmanli-devlet-armasi-altin",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/gizlilik-sozlesmesi",
+    "clicks": 0,
+    "impr": 4,
+    "status": 301,
+    "location": "/pages/gizlilik-sozlesmesi",
+    "planned": "/pages/gizlilik-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "path": "/uyelik-sozlesmesi",
+    "clicks": 0,
+    "impr": 4,
+    "status": 301,
+    "location": "/pages/uyelik-sozlesmesi",
+    "planned": "/pages/uyelik-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "path": "/liya-sumen-takimi-9-parca-kahverengi",
+    "clicks": 0,
+    "impr": 4,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/eko-501-deri-sumen-takimi-7-parca",
+    "clicks": 0,
+    "impr": 3,
+    "status": 404,
+    "location": "",
+    "planned": "/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "planned": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/blog/kategori/s%C3%BCmen%20tak%C4%B1m%C4%B1",
+    "clicks": 0,
+    "impr": 3,
+    "status": 404,
+    "location": "",
+    "planned": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "path": "/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+    "planned": "/products/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-16",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-16",
+    "planned": "/products/kristal-masa-isimligi-16",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/duvara-monte-kumasli-pano-turkuaz",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/duvara-monte-kumasli-pano-turkuaz",
+    "planned": "/products/duvara-monte-kumasli-pano-turkuaz",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "planned": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-kapi-kolu-talimati-50-adet",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/deri-kapi-kolu-talimati-50-adet",
+    "planned": "/products/deri-kapi-kolu-talimati-50-adet",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "planned": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+    "planned": "/products/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-otel-konik-cop-kovasi-kapakli",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/deri-otel-konik-cop-kovasi-kapakli",
+    "planned": "/products/deri-otel-konik-cop-kovasi-kapakli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-17",
+    "clicks": 0,
+    "impr": 3,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-17",
+    "planned": "/products/kristal-masa-isimligi-17",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "planned": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/vuska-kristal-masa-seti-sumen-hediyeli-",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/vuska-kristal-masa-seti-sumen-hediyeli",
+    "planned": "/products/vuska-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/gumus-sumen-kalemi-dolma",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/gumus-sumen-kalemi-dolma",
+    "planned": "/products/gumus-sumen-kalemi-dolma",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-deri-sumen-takimi-9-parca-gumus-aksesuar-",
+    "clicks": 0,
+    "impr": 2,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/kristal-masa-isimligi",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi",
+    "planned": "/products/kristal-masa-isimligi",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-cekmeceli-kutu-5-adet",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/deri-cekmeceli-kutu-5-adet",
+    "planned": "/products/deri-cekmeceli-kutu-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dikey-flama",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/dikey-flama",
+    "planned": "/products/dikey-flama",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/diamond-sumen-takimi-10-parca-mermer-desenli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/takvim-teli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/takvim-teli",
+    "planned": "/products/takvim-teli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/asel-gold-sumen-takimi-9-parca-siyah",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/asel-gold-sumen-takimi-9-parca-siyah",
+    "planned": "/products/asel-gold-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "planned": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "planned": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dernek-besgen-flama",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/dernek-besgen-flama",
+    "planned": "/products/dernek-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+    "planned": "/products/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/eft-banka-bilgileri",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/pages/eft-banka-bilgileri",
+    "planned": "/pages/eft-banka-bilgileri",
+    "reason": "page"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "planned": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/blog/etiket/ofis%20aksesuarlar%C4%B1",
+    "clicks": 0,
+    "impr": 2,
+    "status": 404,
+    "location": "",
+    "planned": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "path": "/spor-takimi-besgen-flama",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/spor-takimi-besgen-flama",
+    "planned": "/products/spor-takimi-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-27",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-27",
+    "planned": "/products/kristal-masa-isimligi-27",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 2,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "planned": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "planned": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/devlet-kurumu-besgen-flama",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/devlet-kurumu-besgen-flama",
+    "planned": "/products/devlet-kurumu-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/diamond-silver-sumen-takimi-9-parca-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/diamond-silver-sumen-takimi-9-parca-siyah",
+    "planned": "/products/diamond-silver-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dolma-sumen-kalemi-50-adet-",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/dolma-sumen-kalemi-50-adet",
+    "planned": "/products/dolma-sumen-kalemi-50-adet",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/duvara-monte-kumasli-pano-turuncu",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/duvara-monte-kumasli-pano-turuncu",
+    "planned": "/products/duvara-monte-kumasli-pano-turuncu",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-10-parca-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-10-parca-siyah",
+    "planned": "/products/g101-deri-sumen-takimi-10-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "planned": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-2",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/chester-deri-sumen-takimi-6-parca",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/eko502-deri-sumen-takimi-taba-6-parca-gold-aksesuar",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/3lu-bardaklik-5-adet",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/3lu-bardaklik-5-adet",
+    "planned": "/products/3lu-bardaklik-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/deri-kalemlik-notluk-telefonluk",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/duvara-monte-kumasli-pano-bordo",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/duvara-monte-kumasli-pano-bordo",
+    "planned": "/products/duvara-monte-kumasli-pano-bordo",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/duvara-monte-kumasli-pano-mavi",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/duvara-monte-kumasli-pano-mavi",
+    "planned": "/products/duvara-monte-kumasli-pano-mavi",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "planned": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/isimlik-topu",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/isimlik-topu",
+    "planned": "/products/isimlik-topu",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/pulsar-deri-sumen-takimi-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/pulsar-deri-sumen-takimi-siyah",
+    "planned": "/products/pulsar-deri-sumen-takimi-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "planned": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "planned": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-kahvrengi",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "planned": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/logolu-makam-bayragi-",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/logolu-makam-bayragi",
+    "planned": "/products/logolu-makam-bayragi-krom",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/deri-2-parca-masa-ustu-seti-kalemlik-ve-notluk",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-kahve-gold-aksesuar",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "planned": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/ikili-masa-bayragi-gold-direkli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/ikili-masa-bayragi-gold-direkli",
+    "planned": "/products/ikili-masa-bayragi-gold-direkli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/lemi-kristal-masa-seti-sumen-hediyeli-",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/lemi-kristal-masa-seti-sumen-hediyeli",
+    "planned": "/products/lemi-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "planned": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gold-aksesuar-2",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/resimli-makam-panosu-17",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/resimli-makam-panosu-17",
+    "planned": "/products/resimli-makam-panosu-17",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/resimli-makam-panosu-7",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/resimli-makam-panosu-7",
+    "planned": "/products/resimli-makam-panosu-7",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/lina-gold-sumen-takimi-10-parca-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/lina-gold-sumen-takimi-10-parca-siyah",
+    "planned": "/products/lina-gold-sumen-takimi-10-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/tukenmez-sumen-kalemi",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/tukenmez-sumen-kalemi",
+    "planned": "/products/tukenmez-sumen-kalemi",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/blog/etiket/s%C3%BCmen%20tak%C4%B1m%C4%B1",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "path": "/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+    "planned": "/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/resimli-makam-panosu-12",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/resimli-makam-panosu-12",
+    "planned": "/products/resimli-makam-panosu-12",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "planned": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/diamond-gold-sumen-takimi-9-parca-siyah",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/diamond-gold-sumen-takimi-9-parca-siyah",
+    "planned": "/products/diamond-gold-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "planned": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-krem-full-set-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-krem-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/kucuk-osmanli-devlet-armasi-altin",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/metal-ayak",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/metal-ayak",
+    "planned": "/products/metal-ayak",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "planned": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-26",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-26",
+    "planned": "/products/kristal-masa-isimligi-26",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/cam-ve-deri-masa-isimligi",
+    "clicks": 0,
+    "impr": 1,
+    "status": 404,
+    "location": "",
+    "planned": null,
+    "reason": "unmapped"
+  },
+  {
+    "path": "/tekli-masa-bayragi-krom-direkli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/tekli-masa-bayragi-krom-direkli",
+    "planned": "/products/tekli-masa-bayragi-krom-direkli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "planned": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "planned": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-2",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-2",
+    "planned": "/products/kristal-masa-isimligi-2",
+    "reason": "product-handle"
+  },
+  {
+    "path": "/kristal-masa-isimligi-7",
+    "clicks": 0,
+    "impr": 1,
+    "status": 301,
+    "location": "/products/kristal-masa-isimligi-7",
+    "planned": "/products/kristal-masa-isimligi-7",
+    "reason": "product-handle"
+  }
+]

@@ -1,0 +1,8 @@
+query LegalPages {
+  a: page(id: "gid://shopify/Page/166741704996") { handle body }
+  b: page(id: "gid://shopify/Page/166741606692") { handle body }
+  c: page(id: "gid://shopify/Page/166741770532") { handle body }
+  d: page(id: "gid://shopify/Page/166741573924") { handle body }
+  e: page(id: "gid://shopify/Page/166730989860") { handle body }
+  f: page(id: "gid://shopify/Page/166741541156") { handle body }
+}

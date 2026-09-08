@@ -1,0 +1,6 @@
+query GunerVendor {
+  products(first: 250, query: "vendor:Güner") {
+    pageInfo { hasNextPage endCursor }
+    nodes { id handle vendor }
+  }
+}

@@ -1,0 +1,6 @@
+query VendorsP1 {
+  products(first: 250) {
+    pageInfo { hasNextPage endCursor }
+    nodes { id handle vendor }
+  }
+}

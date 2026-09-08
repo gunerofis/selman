@@ -1,0 +1,2045 @@
+{
+  "at": "2026-09-02T15:03:36.236Z",
+  "by": {
+    "200": 147,
+    "301": 2,
+    "429": 77
+  },
+  "closedInSitemap": [],
+  "rows": [
+    {
+      "url": "https://www.sumentakimi.com.tr/",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/",
+      "title": "Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/sumen-takimi-nedir",
+      "status": 301,
+      "location": "/pages/sumen-takimi-rehberi",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/sumen-takimi-nasil-secilir-10-onemli-kriter",
+      "status": 301,
+      "location": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections",
+      "title": "Koleksiyonlar — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/sumen-takimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/sumen-takimi",
+      "title": "Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/sumen-takimi?page=2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/sumen-takimi?page=2",
+      "title": "Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR — Sayfa 2",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/sumen-takimi-rehberi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/sumen-takimi-rehberi",
+      "title": "Sümen Takımı Rehberi: Türler, Ölçüler ve Parçalar | Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/bize-ulasin",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/bize-ulasin",
+      "title": "Bize Ulaşın | Sümen Takımı — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/about-us",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/about-us",
+      "title": "Hakkımızda ve Üretim | Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/agents.md",
+      "status": 200,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-9-parca-siyah",
+      "title": "Diamond Silver Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-10-parca-siyah-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-10-parca-siyah-2",
+      "title": "Diamond Gold Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+      "title": "Nova Silver Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+      "title": "Nova Gold Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-9-parca-siyah",
+      "title": "Nova Silver Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-9-parca-siyah",
+      "title": "Nova Gold Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+      "title": "Asel Silver Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-10-parca-siyah-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-10-parca-siyah-2",
+      "title": "Asel Gold Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-9-parca-siyah",
+      "title": "Asel Gold Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+      "title": "Lina Silver Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lina-silver-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/lina-silver-sumen-takimi-9-parca-siyah",
+      "title": "Lina Silver Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-10-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-10-parca-siyah-full-set",
+      "title": "Lina Gold Sümen Takımı 10 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-9-parca-siyah",
+      "title": "Lina Gold Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Nova Silver Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-silver-sumen-takimi-10-parca-siyah",
+      "title": "Nova Silver Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Nova Gold Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/nova-gold-sumen-takimi-10-parca-siyah",
+      "title": "Nova Gold Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2",
+      "title": "Diamond Silver Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Asel Silver Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2",
+      "title": "Diamond Gold Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-silver-sumen-takimi-10-parca-siyah",
+      "title": "Asel Silver Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Asel Gold Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/asel-gold-sumen-takimi-10-parca-siyah",
+      "title": "Asel Gold Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Lina Silver Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-10-parca-siyah-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-10-parca-siyah-2",
+      "title": "Lina Silver Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+      "title": "Lina Gold Sümen Takımı 11 Parça Siyah Full Set — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/lina-gold-sumen-takimi-10-parca-siyah",
+      "title": "Lina Gold Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-10-parca-siyah",
+      "title": "Diamond Silver Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/pulsar-deri-sumen-takimi-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/pulsar-deri-sumen-takimi-siyah",
+      "title": "Pulsar Deri Sümen Takımı Siyah — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+      "title": "Eko500 Deri Evrak Raf Notluk Kalemlik Seti Taba Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2",
+      "title": "Eko500 Deri Evrak Raf Notluk Kalemlik Seti Kahve Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+      "title": "Eko500 Deri Evrak Raf Notluk Kalemlik Seti Siyah Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": false,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+      "title": "Eko502 Deri Sümen Takımı Taba 6 Parça Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2",
+      "title": "Eko502 Deri Sümen Takımı Kahve 6 Parça Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+      "title": "Eko502 Deri Sümen Takımı Siyah 6 Parça Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+      "title": "Eko 501 Deri Sümen Takımı 7 Parça Taba Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+      "title": "Eko 501 Deri Sümen Takımı 7 Parça Kahve Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+      "title": "Eko 501 Deri Sümen Takımı 7 Parça Siyah Gümüş Aksesuar — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-bordo",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-bordo",
+      "title": "Duvara Monte Kumaşlı Pano Bordo — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-turuncu",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-turuncu",
+      "title": "Duvara Monte Kumaşlı Pano Turuncu — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-turkuaz",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-turkuaz",
+      "title": "Duvara Monte Kumaşlı Pano Turkuaz — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-mavi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/duvara-monte-kumasli-pano-mavi",
+      "title": "Duvara Monte Kumaşlı Pano Mavi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-18",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-18",
+      "title": "Resimli Makam Panosu 18 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-17",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-17",
+      "title": "Resimli Makam Panosu 17 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-16",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-16",
+      "title": "Resimli Makam Panosu 16 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-15",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-15",
+      "title": "Resimli Makam Panosu 15 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-14",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-14",
+      "title": "Resimli Makam Panosu 14 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-13",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-13",
+      "title": "Resimli Makam Panosu 13 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-12",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-12",
+      "title": "Resimli Makam Panosu 12 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-11",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-11",
+      "title": "Resimli Makam Panosu 11 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-10",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-10",
+      "title": "Resimli Makam Panosu 10 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-9",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-9",
+      "title": "Resimli Makam Panosu 9 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-8",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-8",
+      "title": "Resimli Makam Panosu 8 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-7",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-7",
+      "title": "Resimli Makam Panosu 7 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-6",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-6",
+      "title": "Resimli Makam Panosu 6 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-5",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-5",
+      "title": "Resimli Makam Panosu 5 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-4",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-4",
+      "title": "Resimli Makam Panosu 4 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-3",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-3",
+      "title": "Resimli Makam Panosu 3 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-2",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu-2",
+      "title": "Resimli Makam Panosu 2 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/resimli-makam-panosu",
+      "title": "Resimli Makam Panosu 1 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-9-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-9-parca-siyah",
+      "title": "Diamond Gold Sümen Takımı 9 Parça Siyah — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/diamond-gold-sumen-takimi-siyah",
+      "title": "Diamond Gold Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-sumen-takimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-sumen-takimi",
+      "title": "Doğa Sümen Takımı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/metal-ayak",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/metal-ayak",
+      "title": "Metal Ayak (50 Adet) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/isimlik-topu",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/isimlik-topu",
+      "title": "İsimlik Topu — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kirlangic-bayrak",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kirlangic-bayrak",
+      "title": "Kırlangıç Bayrak — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/oval-flama",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/oval-flama",
+      "title": "Oval Flama — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/firma-tanitim-besgen-flama",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/firma-tanitim-besgen-flama",
+      "title": "Firma Tanıtım Beşgen Flama — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/devlet-kurumu-besgen-flama",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/devlet-kurumu-besgen-flama",
+      "title": "Devlet Kurumu Beşgen Flama — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/spor-takimi-besgen-flama",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/spor-takimi-besgen-flama",
+      "title": "Spor Takımı Beşgen Flama — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dernek-besgen-flama",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/dernek-besgen-flama",
+      "title": "Dernek Beşgen Flama — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dikey-flama",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/logolu-makam-bayragi-krom",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/ikili-masa-bayragi-gold-direkli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/ikili-masa-bayragi-krom-direkli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/ikili-masa-bayragi-krom-direkli",
+      "title": "İkili Masa Bayrağı (Krom Direkli) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/tekli-masa-bayragi-krom-direkli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/tekli-masa-bayragi-gumus-direkli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/tekli-masa-bayragi-gumus-direkli",
+      "title": "Tekli Masa Bayrağı (Krom Direkli) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/logolu-makam-bayragi",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/turk-makam-bayragi",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/logolu-makam-bayragi-gold",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/makam-bayragi-gold",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/gumus-sumen-kalemi-dolma",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/gumus-sumen-kalemi-dolma",
+      "title": "Gümüş Sümen Kalemi Dolma — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/gumus-sumen-kalemi-tukenmez",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dolma-sumen-kalemi-50-adet",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/tukenmez-sumen-kalemi",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/zarf-acacagi-50-adet",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/zarf-acacagi-50-adet",
+      "title": "Zarf Açacağı ( 50 adet ) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/resim-cerceve-mili",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/ay-tel-50-adet",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/ay-tel-50-adet",
+      "title": "Ay Tel ( 50 adet ) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/takvim-teli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-kahverengi-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-kahverengi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-kahverengi",
+      "title": "Dora Sümen Takımı 11 Parça Kahverengi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-31",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-31",
+      "title": "Kristal Masa İsimliği 31 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-30",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-29",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-28",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-27",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-27",
+      "title": "Kristal Masa İsimliği 27 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-26",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-25",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-25",
+      "title": "Kristal Masa İsimliği 25 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-24",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-23",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-22",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-21",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-21",
+      "title": "Kristal Masa İsimliği 21 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-20",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-19",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-18",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-17",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-16",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-16",
+      "title": "Kristal Masa İsimliği 16 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-15",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-14",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-14",
+      "title": "Kristal Masa İsimliği 14 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-13",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-12",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-11",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-10",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-10",
+      "title": "Kristal Masa İsimliği 10 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-9",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-8",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-7",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-6",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-6",
+      "title": "Kristal Masa İsimliği 6 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-5",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-4",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-3",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi-2",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kristal-masa-isimligi",
+      "title": "Kristal Masa İsimliği 1 — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/mkr-08",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/atay-kristal-masa-seti-sumen-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/atay-kristal-masa-seti-sumen-hediyeli",
+      "title": "Atay Kristal Masa Seti ( Sümen Hediyeli ) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/lemi-kristal-masa-seti-sumen-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/vuska-kristal-masa-seti-sumen-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kristal-masa-seti-sumen-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kucuk-oval-osmanli-devlet-armasi-altin",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/kucuk-oval-osmanli-devlet-armasi-altin",
+      "title": "Küçük Oval Osmanlı Devlet Arması Altın — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/kucuk-oval-osmanli-devlet-armasi-gumus",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/osmanli-devlet-armasi-gumus-varak-tablo",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/osmanli-devlet-armasi-gumus-varak-tablo",
+      "title": "Osmanlı Devlet Arması Gümüş Varak Tablo — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/osmanli-devlet-armasi-altin-varak-tablo",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+      "title": "G101 Deri Sümen Takımı 11 Parça Kahve Full Set — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-kahve",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-bordo",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-beyaz",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-beyaz",
+      "title": "G101 Deri Sümen Takımı 10 Parça Beyaz — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-11-parca-taba-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-taba",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-siyah",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/g101-deri-sumen-takimi-10-parca-siyah",
+      "title": "G101 Deri Sümen Takımı 10 Parça Siyah — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/cok-amacli-deri-kutu-5-adet-2",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-kirtasiye-kutusu-5-adet",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/cok-amacli-deri-kutu-5-adet",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-cekmeceli-kutu-5-adet",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-tepsi-5-adet",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/deri-tepsi-5-adet",
+      "title": "Deri Tepsi (5 Adet) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/imza-sumeni",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/3lu-bardaklik-5-adet",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/3lu-bardaklik-5-adet",
+      "title": "3&#39;lü Bardaklık (5 Adet) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-kapi-kolu-talimati-50-adet",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-pecetelik",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/deri-pecetelik",
+      "title": "Deri Peçetelik — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/deri-otel-konik-cop-kovasi-kapakli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+      "title": "Halep Sümen Takımı 12 Parça Gri — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+      "title": "Halep Sümen Takımı 12 Parça Kahve — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+      "title": "Halep Sümen Takımı 12 Parça Yeşil — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+      "title": "Dora Sümen Takımı 12 parça Siyah Masa Bayraklı (Gümüş Aksesuarlı) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli",
+      "title": "Dora Sümen Takımı 12 parça Siyah Full Set (Gold Aksesuarlı) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+      "title": "Dora Sümen Takımı 11 Parça Siyah (Gold Aksesuarlı) — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+      "title": "Chester Sümen Takımı 12 Parça Siyah Masa Bayraklı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+      "title": "Liya Sümen Takımı 11 Parça Kahve Full Set — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+      "title": "Liya Sümen Takımı 11 Parça Krem Full Set — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-krem-masa-bayrakli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+      "title": "Liya Sümen Takımı 10 Parça Krem — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+      "title": "Liya sümen Takımı 11 Parça Siyah Masa Bayraklı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-taba-cift-masa-bayrakli-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-taba-cift-masa-bayrakli-isimlik-hediyeli",
+      "title": "Liya Sümen Takımı 11 Parça Taba Full Set — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+      "title": "Liya sümen Takımı 10 Parça Taba — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/eft-banka-bilgileri",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/eft-banka-bilgileri",
+      "title": "EFT Banka Bilgileri — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/gizlilik-sozlesmesi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/gizlilik-sozlesmesi",
+      "title": "Gizlilik Politikası ve KVKK — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/kullanim-kosullari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/kullanim-kosullari",
+      "title": "Makro Ofis Kullanım Koşulları — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/mesafeli-satis-sozlesmesi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/mesafeli-satis-sozlesmesi",
+      "title": "Mesafeli Satış Sözleşmesi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/teslimat-ve-iade-sozlesmesi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/teslimat-ve-iade-sozlesmesi",
+      "title": "Teslimat ve İade Koşulları — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/pages/uyelik-sozlesmesi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/pages/uyelik-sozlesmesi",
+      "title": "Üyelik Sözleşmesi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/masa-ustu-setler",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/masa-ustu-setler",
+      "title": "Masa Üstü Setler | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/makam-panolari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/makam-panolari",
+      "title": "Makam Panosu Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/ataturk-resimli-makam-panolari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/ataturk-resimli-makam-panolari",
+      "title": "Atatürk Resimli Makam Panoları — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/kristal-sumen-takimlari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/kristal-sumen-takimlari",
+      "title": "Kristal Sümen Takımı Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/sumen-aksesuarlari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/sumen-aksesuarlari",
+      "title": "Sümen Aksesuarları | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/makam-bayraklari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/makam-bayraklari",
+      "title": "Makam Bayrağı Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/deri-otel-ekipmanlari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/deri-otel-ekipmanlari",
+      "title": "Deri Otel Ekipmanları | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/osmanli-tugrasi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/osmanli-tugrasi",
+      "title": "Osmanlı Tuğrası — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/deri-sumen-takimlari",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/kumasli-panolar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/kumasli-panolar",
+      "title": "Kumaşlı Pano Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/luks-sumen-takimlari",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/luks-sumen-takimlari",
+      "title": "Lüks Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/masa-ustu-isimlikler",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/9-parca-sumen-takimi",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/10-parca-sumen-takimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/10-parca-sumen-takimi",
+      "title": "10 Parça Sümen Takımı Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/11-parca-sumen-takimi",
+      "status": 429,
+      "location": "",
+      "canonical": "",
+      "title": "",
+      "crumb": false,
+      "viewport": false
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/collections/12-parca-sumen-takimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/collections/12-parca-sumen-takimi",
+      "title": "12 Parça Sümen Takımı Modelleri | Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news",
+      "title": "Masa Üstü Rehberi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+      "title": "Sümen Takımı Seçerken Nelere Dikkat Edilmeli? | Sümen Takımı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/ofis-masasinda-duzen-kurmanin-7-pratik-yolu",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/ofis-masasinda-duzen-kurmanin-7-pratik-yolu",
+      "title": "Ofis Masasında Düzen Kurmanın 7 Pratik Yolu | Sümen Takımı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/deri-ve-kristal-sumen-takimi-arasindaki-farklar",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/deri-ve-kristal-sumen-takimi-arasindaki-farklar",
+      "title": "Deri ve Kristal Sümen Takımı Arasındaki Farklar | Sümen Takımı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/kisiye-ozel-masa-isimligi-siparis-rehberi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/kisiye-ozel-masa-isimligi-siparis-rehberi",
+      "title": "Kişiye Özel Masa İsimliği Sipariş Rehberi | Sümen Takımı — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-nedir-ve-hangi-parcalardan-olusur",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-nedir-ve-hangi-parcalardan-olusur",
+      "title": "Sümen Takımı Nedir ve Hangi Parçalardan Oluşur? — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi",
+      "title": "9, 10, 11 ve 12 Parça Sümen Takımı Karşılaştırması — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/deri-sumen-takimi-bakimi-ve-temizligi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/deri-sumen-takimi-bakimi-ve-temizligi",
+      "title": "Deri Sümen Takımı Bakımı ve Temizliği — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/masa-olcusune-gore-sumen-takimi-secimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/masa-olcusune-gore-sumen-takimi-secimi",
+      "title": "Masa Ölçüsüne Göre Sümen Takımı Seçimi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/yonetici-masasi-icin-sumen-takimi-secimi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/yonetici-masasi-icin-sumen-takimi-secimi",
+      "title": "Yönetici Masası İçin Sümen Takımı Seçimi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/siyah-kahve-taba-ve-bordo-sumen-renk-rehberi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/siyah-kahve-taba-ve-bordo-sumen-renk-rehberi",
+      "title": "Siyah, Kahve, Taba ve Bordo Sümen Renk Rehberi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/kurumsal-logolu-sumen-takimi-siparis-sureci",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/kurumsal-logolu-sumen-takimi-siparis-sureci",
+      "title": "Kurumsal Logolu Sümen Takımı Sipariş Süreci — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    },
+    {
+      "url": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-hediye-secim-rehberi",
+      "status": 200,
+      "location": "",
+      "canonical": "https://www.sumentakimi.com.tr/blogs/news/sumen-takimi-hediye-secim-rehberi",
+      "title": "Sümen Takımı Hediye Seçim Rehberi — Sümen Takımı TR",
+      "crumb": true,
+      "viewport": true
+    }
+  ]
+}

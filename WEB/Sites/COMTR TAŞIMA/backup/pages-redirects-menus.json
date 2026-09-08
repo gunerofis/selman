@@ -1,0 +1,1003 @@
+{
+  "pages": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Page/166730989860",
+        "handle": "contact",
+        "title": "İletişim",
+        "body": "<p>Ürün seçimi, kişiselleştirme, sipariş desteği ve kurumsal talepleriniz için bize ulaşabilirsiniz.</p>\n<p><strong>Telefon:</strong> 0501 144 27 29<br><strong>E-posta:</strong> info@sumentakimi.com.tr<br><strong>Adres:</strong> Arapçeşme Mahallesi 1038. Sokak No:32/A, Gebze / Kocaeli</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "İletişim | Sümen Takımı",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Ürün seçimi, kişiselleştirme, sipariş ve kurumsal talepler için Sümen Takımı iletişim bilgileri.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741410084",
+        "handle": "adres-ve-konum-bilgisi",
+        "title": "Adres ve Konum Bilgisi",
+        "body": "<p><strong>Üretim (Gebze):</strong> Arapçeşme Mah. 1038. Sok. No:32/A, Gebze / Kocaeli</p>\n<p><strong>Depo (İstanbul):</strong> Onur Sokak No:8, 34445 İstanbul</p>\n<p>Telefon: <a href=\"tel:+905011442729\">0501 144 27 29</a></p>\n<p>E-posta: <a href=\"mailto:info@sumentakimi.com.tr\">info@sumentakimi.com.tr</a></p>\n<p>Kargo her iki noktadan da çıkar.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Makro Ofis Adres ve Konum Bilgileri",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis adres, iletişim ve konum bilgilerine ulaşın. Ofis ve üretim merkezimizi ziyaret etmek için yol tarifi alın.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741475620",
+        "handle": "anasayfa-aciklama",
+        "title": "Sümen Takımı Hakkında",
+        "body": "<p>Sümen Takımı, çalışma alanlarını daha düzenli, işlevli ve kişisel hâle getiren masa üstü ürünlerini bir araya getirir. Seçkimizi oluştururken yalnız görünüşe değil; günlük kullanım kolaylığına, parçalar arasındaki uyuma ve malzemenin masadaki hissine de dikkat ederiz.</p>\n<p>Farklı çalışma biçimlerine uygun deri, ahşap ve kristal setler ile masa isimlikleri ve tamamlayıcı aksesuarlar sunuyoruz. Amacımız, ev ofisinden yönetici odasına kadar her masada sakin ve bütünlüklü bir düzen kurulmasını kolaylaştırmaktır.</p>\n<p>Ürün seçimi, kişiselleştirme ve kurumsal taleplerde doğrudan destek vererek ihtiyacınıza uygun çözümü birlikte netleştiriyoruz.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Sümen Takımı Hakkında | Sümen Takımı",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Sümen Takımı'nın ürün seçkisi ve çalışma alanlarına yaklaşımı.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741541156",
+        "handle": "bize-ulasin",
+        "title": "Bize Ulaşın",
+        "body": "<p>Ürün seçimi, kişiselleştirme, sipariş desteği ve kurumsal talepleriniz için bize ulaşabilirsiniz.</p>\n<p><strong>Telefon:</strong> 0501 144 27 29<br><strong>E-posta:</strong> info@sumentakimi.com.tr<br><strong>Adres:</strong> Arapçeşme Mahallesi 1038. Sokak No:32/A, Gebze / Kocaeli</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Bize Ulaşın | Sümen Takımı",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Sümen Takımı iletişim kanalları, adres bilgisi ve mesaj formu.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741573924",
+        "handle": "eft-banka-bilgileri",
+        "title": "EFT Banka Bilgileri",
+        "body": "",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "EFT Banka Bilgileri",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis EFT ve havale banka bilgilerine ulaşın. Sipariş ödemelerinizi güvenli ve hızlı şekilde gerçekleştirin.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741606692",
+        "handle": "gizlilik-sozlesmesi",
+        "title": "Gizlilik Sözleşmesi",
+        "body": "<p>Son güncelleme: 1 Eylül 2026</p>\n<p>Makro Ofis — Sümen Takımı (sumentakimi.com.tr) kişisel verilerinizi sipariş, teslimat, müşteri desteği ve yasal yükümlülükler için işler.</p>\n<h2>İletişim</h2>\n<p><strong>Üretim / yasal bildirim adresi:</strong> Arapçeşme Mah. 1038. Sok. No:32/A, Gebze / Kocaeli<br>\n<strong>Depo / sevkiyat (İstanbul):</strong> Onur Sokak No:8, 34445 İstanbul<br>\n<strong>E-posta:</strong> info@sumentakimi.com.tr<br>\n<strong>Telefon / WhatsApp:</strong> 0501 144 27 29</p>\n<p>Kargo Gebze ve İstanbul depolarından çıkar. Talepleriniz için info@sumentakimi.com.tr veya 0501 144 27 29 üzerinden bize yazın.</p>\n<h2>Toplanan veriler</h2>\n<p>Sipariş, teslimat, ödeme ve iletişim formunda verdiğiniz ad, adres, telefon, e-posta ve sipariş içeriği; sitede teknik olarak oluşan cihaz/ tarayıcı bilgileri.</p>\n<h2>Paylaşım</h2>\n<p>Ödeme (iyzico), kargo ve yasal zorunluluklar dışında verileriniz satılmaz. KVKK kapsamındaki talepleriniz için info@sumentakimi.com.tr adresine başvurabilirsiniz.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Gizlilik Politikası ve KVKK",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis olarak kişisel verilerinizin gizliliğine önem veriyoruz. Gizlilik politikamızı ve kişisel verilerin korunmasına ilişkin bilgileri inceleyin.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741639460",
+        "handle": "kullanim-kosullari",
+        "title": "Kullanım Koşulları",
+        "body": "<h2>Kullanım Koşulları</h2>\n<p>Bu internet sitesi Sümen Takımı mağazasına aittir. Siteyi kullanan ziyaretçiler, yürürlükteki mevzuata ve sipariş sırasında kendilerine sunulan güncel koşullara tabidir.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Makro Ofis Kullanım Koşulları",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis web sitesini kullanırken geçerli olan kullanım koşulları ve kullanıcı sorumlulukları hakkında bilgi alın.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741672228",
+        "handle": "makam-panolari-2",
+        "title": "Makam Panoları",
+        "body": "",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Makam Panoları",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Sümen takımı, masa isimliği, makam panosu ve ofis masa seti modellerini inceleyin. İhtiyacınıza uygun ürünü Makro Ofis'ten güvenle online sipariş verin.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741704996",
+        "handle": "mesafeli-satis-sozlesmesi",
+        "title": "Mesafeli Satış Sözleşmesi",
+        "body": "<h2>1. Taraflar</h2>\n<h3>1.1. Satıcı</h3>\n<p><strong>Unvan:</strong> Makro Ofis — Sümen Takımı<br>\n<strong>Adres:</strong> Arapçeşme Mah. 1038. Sok. No:32/A, Gebze / Kocaeli<br>\n<strong>Depo / sevkiyat:</strong> Onur Sokak No:8, 34445 İstanbul<br>\n<strong>E-posta:</strong> info@sumentakimi.com.tr<br>\n<strong>Telefon:</strong> 0501 144 27 29</p>\n<h3>1.2. Alıcı</h3>\n<p>Alıcı, sumentakimi.com.tr üzerinden sipariş veren kişidir. Sipariş sırasında Alıcı tarafından bildirilen ad, adres ve iletişim bilgileri esas alınır.</p>\n<h2>2. Sözleşmenin Konusu</h2>\n<p>Bu sözleşme, Alıcı'nın sumentakimi.com.tr üzerinden sipariş verdiği ürünün satışı ve teslimine ilişkin tarafların hak ve yükümlülüklerinin belirlenmesi amacıyla düzenlenmiştir.</p>\n<h2>3. Sipariş Bilgileri</h2>\n<p>Ürün, adet, satış bedeli, ödeme, teslimat ve varsa kişiselleştirme bilgileri sipariş özeti ile ödeme adımında Alıcı'ya gösterilir. Sevkiyat Gebze veya İstanbul deposundan yapılabilir.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Mesafeli Satış Sözleşmesi",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis üzerinden gerçekleştirilen online alışverişlere ilişkin mesafeli satış sözleşmesini inceleyebilirsiniz.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741737764",
+        "handle": "teslimat-ve-iade-sozlesmesi",
+        "title": "Teslimat ve İade Sözleşmesi",
+        "body": "<h2>Teslimat ve İade</h2>\n<p>Siparişler Gebze üretim ve İstanbul depo noktalarından kargoya verilir. Teslimat bilgisi sipariş ve ürün sayfasında gösterilir.</p>\n<p><strong>İade iletişim bilgileri:</strong></p>\n<p>E-posta: info@sumentakimi.com.tr<br>Telefon / WhatsApp: 0501 144 27 29</p>\n<p><strong>Gebze üretim:</strong> Arapçeşme Mah. 1038. Sok. No:32/A, Gebze / Kocaeli<br>\n<strong>İstanbul depo:</strong> Onur Sokak No:8, 34445 İstanbul</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Teslimat ve İade Koşulları",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis siparişlerinde teslimat, kargo, değişim ve iade koşulları hakkında detaylı bilgi alın.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166741770532",
+        "handle": "uyelik-sozlesmesi",
+        "title": "Üyelik Sözleşmesi",
+        "body": "<h2>Üyelik Koşulları</h2>\n<p>Bu koşullar, sumentakimi.com.tr üzerinde isteğe bağlı olarak hesap oluşturan kullanıcılar için geçerlidir.</p>\n<p>Kullanıcı, hesap oluştururken verdiği bilgilerin doğru ve güncel olmasından ve hesap güvenliğini korumaktan sorumludur.</p>\n<p>Mağaza ve kullanıcıya ait doğrulanmış iletişim bilgileri bulunmadığı sürece bu sayfada ayrıca yayımlanmaz.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Üyelik Sözleşmesi",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Makro Ofis web sitesine üyelik ve kullanıcı hesabına ilişkin üyelik sözleşmesini inceleyebilirsiniz.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Page/166761464100",
+        "handle": "about-us",
+        "title": "Hakkımızda",
+        "body": "<p>Sümen Takımı, çalışma alanlarını daha düzenli, işlevli ve kişisel hâle getiren masa üstü ürünlerini bir araya getirir. Seçkimizi oluştururken yalnız görünüşe değil; günlük kullanım kolaylığına, parçalar arasındaki uyuma ve malzemenin masadaki hissine de dikkat ederiz.</p>\n<p>Farklı çalışma biçimlerine uygun deri, ahşap ve kristal setler ile masa isimlikleri ve tamamlayıcı aksesuarlar sunuyoruz. Amacımız, ev ofisinden yönetici odasına kadar her masada sakin ve bütünlüklü bir düzen kurulmasını kolaylaştırmaktır.</p>\n<p>Ürün seçimi, kişiselleştirme ve kurumsal taleplerde doğrudan destek vererek ihtiyacınıza uygun çözümü birlikte netleştiriyoruz.</p>",
+        "isPublished": true,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Hakkımızda | Sümen Takımı",
+              "type": "single_line_text_field"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Sümen Takımı'nın masa düzeni, seçili malzeme ve kişisel çalışma alanlarına yaklaşımını keşfedin.",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "urlRedirects": {
+    "nodes": [
+      {
+        "id": "gid://shopify/UrlRedirect/611811000612",
+        "path": "/3lu-bardaklik-5-adet",
+        "target": "/products/3lu-bardaklik-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811033380",
+        "path": "/adres-ve-konum-bilgisi",
+        "target": "/pages/adres-ve-konum-bilgisi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811066148",
+        "path": "/anasayfa-aciklama",
+        "target": "/pages/anasayfa-aciklama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811098916",
+        "path": "/asel-gold-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/asel-gold-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811131684",
+        "path": "/asel-gold-sumen-takimi-10-parca-siyah",
+        "target": "/products/asel-gold-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811164452",
+        "path": "/asel-gold-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/asel-gold-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811197220",
+        "path": "/asel-gold-sumen-takimi-9-parca-siyah-2",
+        "target": "/products/asel-gold-sumen-takimi-9-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811229988",
+        "path": "/asel-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/asel-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811262756",
+        "path": "/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811295524",
+        "path": "/asel-silver-sumen-takimi-10-parca-siyah",
+        "target": "/products/asel-silver-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811328292",
+        "path": "/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811361060",
+        "path": "/ataturk-resimli-makam-panolari",
+        "target": "/collections/ataturk-resimli-makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811393828",
+        "path": "/atay-kristal-masa-seti-sumen-hediyeli-",
+        "target": "/products/atay-kristal-masa-seti-sumen-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811426596",
+        "path": "/ay-tel-50-adet-",
+        "target": "/products/ay-tel-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811459364",
+        "path": "/bize-ulasin",
+        "target": "/pages/bize-ulasin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811492132",
+        "path": "/blog",
+        "target": "/blogs/news"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811524900",
+        "path": "/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+        "target": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811557668",
+        "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+        "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811590436",
+        "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+        "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811623204",
+        "path": "/cok-amacli-deri-kutu-5-adet-2",
+        "target": "/products/cok-amacli-deri-kutu-5-adet-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811655972",
+        "path": "/cok-amacli-deri-kutu-5-adet",
+        "target": "/products/cok-amacli-deri-kutu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811688740",
+        "path": "/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+        "target": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811721508",
+        "path": "/deri-cekmeceli-kutu-5-adet",
+        "target": "/products/deri-cekmeceli-kutu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811754276",
+        "path": "/deri-kapi-kolu-talimati-50-adet",
+        "target": "/products/deri-kapi-kolu-talimati-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811787044",
+        "path": "/deri-kirtasiye-kutusu-5-adet",
+        "target": "/products/deri-kirtasiye-kutusu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811819812",
+        "path": "/deri-otel-ekipmanlari",
+        "target": "/collections/deri-otel-ekipmanlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811852580",
+        "path": "/deri-otel-konik-cop-kovasi-kapakli",
+        "target": "/products/deri-otel-konik-cop-kovasi-kapakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811885348",
+        "path": "/deri-pecetelik",
+        "target": "/products/deri-pecetelik"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811918116",
+        "path": "/deri-sumen-takimlari",
+        "target": "/collections/deri-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811950884",
+        "path": "/deri-tepsi-5-adet",
+        "target": "/products/deri-tepsi-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811983652",
+        "path": "/dernek-besgen-flama",
+        "target": "/products/dernek-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812016420",
+        "path": "/devlet-kurumu-besgen-flama",
+        "target": "/products/devlet-kurumu-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812049188",
+        "path": "/diamond-gold-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/diamond-gold-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812081956",
+        "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2",
+        "target": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812114724",
+        "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812147492",
+        "path": "/diamond-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/diamond-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812180260",
+        "path": "/diamond-gold-sumen-takimi-siyah",
+        "target": "/products/diamond-gold-sumen-takimi-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812213028",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812245796",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah-3",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah-3"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812278564",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812311332",
+        "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2",
+        "target": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812344100",
+        "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812376868",
+        "path": "/diamond-silver-sumen-takimi-9-parca-siyah",
+        "target": "/products/diamond-silver-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812409636",
+        "path": "/dikey-flama",
+        "target": "/products/dikey-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812442404",
+        "path": "/dolma-sumen-kalemi-50-adet-",
+        "target": "/products/dolma-sumen-kalemi-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812475172",
+        "path": "/dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812507940",
+        "path": "/dora-sumen-takimi-11-parca-kahverengi",
+        "target": "/products/dora-sumen-takimi-11-parca-kahverengi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812540708",
+        "path": "/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812573476",
+        "path": "/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812606244",
+        "path": "/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812639012",
+        "path": "/dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812671780",
+        "path": "/dora-sumen-takimi-12-parca-kahverengi-full-set",
+        "target": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812704548",
+        "path": "/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+        "target": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812737316",
+        "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812770084",
+        "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812802852",
+        "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812835620",
+        "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812868388",
+        "path": "/dugmeli-makam-panosu",
+        "target": "/collections/dugmeli-makam-panosu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812901156",
+        "path": "/duvara-monte-kumasli-pano-bordo",
+        "target": "/products/duvara-monte-kumasli-pano-bordo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812933924",
+        "path": "/duvara-monte-kumasli-pano-mavi",
+        "target": "/products/duvara-monte-kumasli-pano-mavi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812966692",
+        "path": "/duvara-monte-kumasli-pano-turkuaz",
+        "target": "/products/duvara-monte-kumasli-pano-turkuaz"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812999460",
+        "path": "/duvara-monte-kumasli-pano-turuncu",
+        "target": "/products/duvara-monte-kumasli-pano-turuncu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813032228",
+        "path": "/eft-banka-bilgileri",
+        "target": "/pages/eft-banka-bilgileri"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813064996",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813097764",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813130532",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813163300",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813196068",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813228836",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813261604",
+        "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2",
+        "target": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813294372",
+        "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+        "target": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813327140",
+        "path": "/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+        "target": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813359908",
+        "path": "/firma-tanitim-besgen-flama",
+        "target": "/products/firma-tanitim-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813392676",
+        "path": "/g101-deri-sumen-takimi-10-parca-beyaz",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-beyaz"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813425444",
+        "path": "/g101-deri-sumen-takimi-10-parca-bordo",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-bordo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813458212",
+        "path": "/g101-deri-sumen-takimi-10-parca-kahve",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-kahve"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813490980",
+        "path": "/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813523748",
+        "path": "/g101-deri-sumen-takimi-10-parca-siyah",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813556516",
+        "path": "/g101-deri-sumen-takimi-10-parca-taba",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-taba"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813589284",
+        "path": "/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813622052",
+        "path": "/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813654820",
+        "path": "/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813687588",
+        "path": "/g101-deri-sumen-takimi-11-parca-taba-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813720356",
+        "path": "/gizlilik-sozlesmesi",
+        "target": "/pages/gizlilik-sozlesmesi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813753124",
+        "path": "/gumus-sumen-kalemi-dolma",
+        "target": "/products/gumus-sumen-kalemi-dolma"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813785892",
+        "path": "/gumus-sumen-kalemi-tukenmez",
+        "target": "/products/gumus-sumen-kalemi-tukenmez"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813818660",
+        "path": "/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813851428",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813884196",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813916964",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813949732",
+        "path": "/ikili-masa-bayragi-gold-direkli",
+        "target": "/products/ikili-masa-bayragi-gold-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813982500",
+        "path": "/ikili-masa-bayragi-krom-direkli",
+        "target": "/products/ikili-masa-bayragi-krom-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814015268",
+        "path": "/imza-sumeni",
+        "target": "/products/imza-sumeni"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814048036",
+        "path": "/isimlik-topu",
+        "target": "/products/isimlik-topu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814080804",
+        "path": "/kirlangic-bayrak",
+        "target": "/products/kirlangic-bayrak"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814113572",
+        "path": "/kristal-masa-isimligi-10",
+        "target": "/products/kristal-masa-isimligi-10"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814146340",
+        "path": "/kristal-masa-isimligi-11",
+        "target": "/products/kristal-masa-isimligi-11"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814179108",
+        "path": "/kristal-masa-isimligi-12",
+        "target": "/products/kristal-masa-isimligi-12"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814211876",
+        "path": "/kristal-masa-isimligi-13",
+        "target": "/products/kristal-masa-isimligi-13"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814244644",
+        "path": "/kristal-masa-isimligi-14",
+        "target": "/products/kristal-masa-isimligi-14"
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "endCursor": "eyJsYXN0X2lkIjo2MTE4MTQyNDQ2NDQsImxhc3RfdmFsdWUiOiI2MTE4MTQyNDQ2NDQifQ=="
+    }
+  },
+  "menus": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Menu/323167682852",
+        "handle": "main-menu",
+        "title": "Main menu",
+        "items": [
+          {
+            "id": "gid://shopify/MenuItem/809406234916",
+            "title": "Home",
+            "url": "/",
+            "type": "FRONTPAGE",
+            "resourceId": null,
+            "items": []
+          },
+          {
+            "id": "gid://shopify/MenuItem/809406267684",
+            "title": "Catalog",
+            "url": "/collections/all",
+            "type": "CATALOG",
+            "resourceId": null,
+            "items": []
+          },
+          {
+            "id": "gid://shopify/MenuItem/809406300452",
+            "title": "Contact",
+            "url": "/pages/contact",
+            "type": "PAGE",
+            "resourceId": "gid://shopify/Page/166730989860",
+            "items": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Menu/323167715620",
+        "handle": "footer",
+        "title": "Footer menu",
+        "items": [
+          {
+            "id": "gid://shopify/MenuItem/809406333220",
+            "title": "Search",
+            "url": "/search",
+            "type": "SEARCH",
+            "resourceId": null,
+            "items": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Menu/323167748388",
+        "handle": "customer-account-main-menu",
+        "title": "Customer account main menu",
+        "items": [
+          {
+            "id": "gid://shopify/MenuItem/809406365988",
+            "title": "Orders",
+            "url": "https://shopify.com/102665617700/account/orders",
+            "type": "CUSTOMER_ACCOUNT_PAGE",
+            "resourceId": "gid://shopify/CustomerAccountPage/253282484516",
+            "items": []
+          },
+          {
+            "id": "gid://shopify/MenuItem/809406398756",
+            "title": "Profile",
+            "url": "https://shopify.com/102665617700/account/profile",
+            "type": "CUSTOMER_ACCOUNT_PAGE",
+            "resourceId": "gid://shopify/CustomerAccountPage/253282517284",
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "shop": {
+    "name": "Sümen Takımı TR",
+    "email": "info@sumentakimi.com.tr",
+    "billingAddress": {
+      "company": "",
+      "address1": "Onur Sokak No:8",
+      "city": "İstanbul",
+      "province": null,
+      "zip": "34445",
+      "country": "Turkey",
+      "phone": ""
+    },
+    "primaryDomain": {
+      "host": "www.sumentakimi.com.tr",
+      "url": "https://www.sumentakimi.com.tr"
+    },
+    "myshopifyDomain": "b1zinb-wv.myshopify.com",
+    "currencyCode": "TRY"
+  },
+  "blogs": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Blog/125948657956",
+        "handle": "news",
+        "title": "Masa Üstü Rehberi",
+        "articles": {
+          "nodes": [
+            {
+              "id": "gid://shopify/Article/635961934116",
+              "handle": "sumen-takimi-secerken-nelere-dikkat-edilmeli",
+              "title": "Sümen Takımı Seçerken Nelere Dikkat Edilmeli?",
+              "tags": [
+                "masa düzeni",
+                "seçim rehberi",
+                "sümen takımı"
+              ],
+              "isPublished": true,
+              "metafields": {
+                "nodes": [
+                  {
+                    "namespace": "global",
+                    "key": "title_tag",
+                    "value": "Sümen Takımı Seçerken Nelere Dikkat Edilmeli? | Sümen Takımı",
+                    "type": "single_line_text_field"
+                  },
+                  {
+                    "namespace": "global",
+                    "key": "description_tag",
+                    "value": "Masanın ölçüsünden malzeme seçimine, parça sayısından renk uyumuna kadar doğru sümen takımını seçmenin temel noktaları.",
+                    "type": "single_line_text_field"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "gid://shopify/Article/635967242532",
+              "handle": "ofis-masasinda-duzen-kurmanin-7-pratik-yolu",
+              "title": "Ofis Masasında Düzen Kurmanın 7 Pratik Yolu",
+              "tags": [
+                "çalışma alanı",
+                "masa düzeni",
+                "ofis"
+              ],
+              "isPublished": true,
+              "metafields": {
+                "nodes": [
+                  {
+                    "namespace": "global",
+                    "key": "title_tag",
+                    "value": "Ofis Masasında Düzen Kurmanın 7 Pratik Yolu | Sümen Takımı",
+                    "type": "single_line_text_field"
+                  },
+                  {
+                    "namespace": "global",
+                    "key": "description_tag",
+                    "value": "Daha sakin ve işlevli bir çalışma alanı için hemen uygulanabilecek yedi sade masa düzeni önerisi.",
+                    "type": "single_line_text_field"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "gid://shopify/Article/635967275300",
+              "handle": "deri-ve-kristal-sumen-takimi-arasindaki-farklar",
+              "title": "Deri ve Kristal Sümen Takımı Arasındaki Farklar",
+              "tags": [
+                "deri sümen",
+                "kristal sümen",
+                "malzeme rehberi"
+              ],
+              "isPublished": true,
+              "metafields": {
+                "nodes": [
+                  {
+                    "namespace": "global",
+                    "key": "title_tag",
+                    "value": "Deri ve Kristal Sümen Takımı Arasındaki Farklar | Sümen Takımı",
+                    "type": "single_line_text_field"
+                  },
+                  {
+                    "namespace": "global",
+                    "key": "description_tag",
+                    "value": "Deri ve kristal masa setlerini görünüm, kullanım hissi ve mekân uyumu açısından karşılaştıran kısa rehber.",
+                    "type": "single_line_text_field"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "gid://shopify/Article/635967308068",
+              "handle": "kisiye-ozel-masa-isimligi-siparis-rehberi",
+              "title": "Kişiye Özel Masa İsimliği Sipariş Rehberi",
+              "tags": [
+                "kişiselleştirme",
+                "kurumsal hediye",
+                "masa isimliği"
+              ],
+              "isPublished": true,
+              "metafields": {
+                "nodes": [
+                  {
+                    "namespace": "global",
+                    "key": "title_tag",
+                    "value": "Kişiye Özel Masa İsimliği Sipariş Rehberi | Sümen Takımı",
+                    "type": "single_line_text_field"
+                  },
+                  {
+                    "namespace": "global",
+                    "key": "description_tag",
+                    "value": "İsim, unvan, ölçü ve malzeme seçiminden son kontrole kadar kişiye özel masa isimliği siparişinde dikkat edilecek noktalar.",
+                    "type": "single_line_text_field"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<section class="about-page">
+  <header class="editorial-hero about-hero">
+    <div class="editorial-hero__copy">
+      <p class="eyebrow">Sümen Takımı</p>
+      <h1>Sümen Takımı Hakkında</h1>
+      <p>Masayı yalnızca bir çalışma yüzeyi değil, kişisel bir ifade alanı olarak görüyoruz. Seçkimiz; işlev, malzeme ve sade estetiği aynı yerde buluşturur. Mağaza Sümen Takımı; üretici Makro Ofis’tir.</p>
+    </div>
+    <div class="about-hero__media">
+      {% assign about_hero = collections['deri-sumen-takimlari'].products.first %}
+      {% if about_hero and about_hero.featured_image %}
+        {{ about_hero.featured_image | image_url: width: 1400 | image_tag: loading: 'eager', widths: '720, 1000, 1400', alt: 'Deri sümen takımı' }}
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="about-statement">
+    <span>01 — Yaklaşımımız</span>
+    <h2>Düzenli, sakin ve size ait bir masa.</h2>
+    <div class="rte">{{ page.content }}</div>
+  </div>
+
+  <div class="about-values" aria-label="Değerlerimiz">
+    <article><span>01</span><h3>Seçili malzeme</h3><p>Deri, ahşap ve kristal gibi karakteri güçlü malzemeleri kullanım amacına göre bir araya getiriyoruz.</p></article>
+    <article><span>02</span><h3>İşlevli bütünlük</h3><p>Kalemlikten evrak tepsisine her parçanın aynı düzen içinde çalışmasına önem veriyoruz.</p></article>
+    <article><span>03</span><h3>Kişisel dokunuş</h3><p>İsimlik ve kişiselleştirme seçenekleriyle çalışma alanını sahibine özgü kılıyoruz.</p></article>
+    <article><span>04</span><h3>Doğrudan destek</h3><p>Ürün seçiminden sipariş sonrasına kadar ihtiyaç duyduğunuzda yanınızdayız.</p></article>
+  </div>
+
+  <div class="about-process">
+    <div class="about-process__media">
+      {% assign about_detail = collections['masa-ustu-isimlikler'].products.first %}
+      {% if about_detail and about_detail.featured_image %}
+        {{ about_detail.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '600, 900, 1200', alt: 'Masa üstü isimlik ayrıntısı' }}
+      {% endif %}
+    </div>
+    <div class="about-process__copy">
+      <p class="eyebrow">Nasıl ilerliyoruz?</p>
+      <h2>İhtiyacınızdan masanıza uzanan sade bir süreç.</h2>
+      <ol>
+        <li><span>01</span><div><strong>Tarzınızı belirleyin</strong><p>Deri, ahşap veya kristal koleksiyonları arasından çalışma alanınıza uygun yönü seçin.</p></div></li>
+        <li><span>02</span><div><strong>Parçaları tamamlayın</strong><p>Günlük kullanımınıza göre set içeriğini ve tamamlayıcı aksesuarları değerlendirin.</p></div></li>
+        <li><span>03</span><div><strong>Kişiselleştirin</strong><p>Uygun ürünlerde isimlik ve kurumsal ihtiyaçlar için bizimle iletişime geçin.</p></div></li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="about-cta"><div><p class="eyebrow">Size özel destek</p><h2>Kurumsal ve toplu siparişler için konuşalım.</h2></div><a class="button button-dark" href="/pages/bize-ulasin">İletişime geçin <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></aside>
+</section>
+
+{% schema %}
+{
+  "name": "Hakkımızda sayfası",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,208 @@
+/* --------------------------------------------------------------------------
+   Duvar ızgarası.
+   Merkez açıkça yerleştirilir; çevre kareleri seyrek (sparse) otomatik
+   yerleşimle merkezin etrafına satır sırasıyla dizilir. Kırılım geçişi
+   yalnız CSS ile yapılır.
+   -------------------------------------------------------------------------- */
+
+.izgara {
+  --n: 4;              /* ızgara kenarı */
+  --merkez: 2;         /* merkez karenin kapladığı hücre */
+  display: grid;
+  grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 1px;
+  background: var(--color-dikis);
+  border: 1px solid var(--color-dikis);
+  aspect-ratio: 1;
+}
+
+@media (min-width: 768px) {
+  .izgara {
+    --n: 5;
+    --merkez: 3;
+  }
+}
+
+@media (min-width: 1440px) {
+  .izgara {
+    --n: 6;
+    --merkez: 4;
+  }
+}
+
+.merkez {
+  grid-column: 2 / span var(--merkez);
+  grid-row: 2 / span var(--merkez);
+}
+
+/* Kırılıma sığmayan çevre kareleri: <768 ilk 12, 768–1439 ilk 16, ≥1440 hepsi.
+   Merkez ilk çocuk olduğu için çevre karesi n → nth-child(n+1). */
+.cevre:nth-child(n + 14) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cevre:nth-child(n + 14) {
+    display: block;
+  }
+  .cevre:nth-child(n + 18) {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cevre:nth-child(n + 18) {
+    display: block;
+  }
+}
+
+/* Yükleniş: 40ms arayla. Gecikme --gecikme ile satır içinde verilir. */
+@keyframes belir {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kare {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  text-align: left;
+  view-transition-class: duvar-kare;
+}
+
+/* Görsel alanı kalan yeri alır, yazı kendi doğal yüksekliğinde altta durur.
+   `object-fit: contain` sayesinde alan hangi orana gelirse gelsin render
+   kırpılmaz; yazı da görselin üstüne binmez. */
+.gorselAlani {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+/* Yalnız ilk yükleniş. Yer değiştirmede bu sınıf verilmez. */
+.giris {
+  animation: belir 320ms var(--ease-cikis) both;
+  animation-delay: var(--gecikme, 0ms);
+}
+
+/* Çevre karesi bir <button>; hover'da yalnız kenar koyulaşır. */
+.cevre .kare {
+  cursor: pointer;
+  transition: box-shadow 320ms var(--ease-cikis);
+}
+
+.cevre .kare:hover .bant {
+  color: var(--color-kahve);
+}
+
+/* Alt bant. Görselin üstünde değil, altındaki kendi boşluğunda. */
+.bant {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 4px 6px;
+  background: var(--color-kagit);
+  border-top: 1px solid var(--color-dikis);
+  color: var(--color-ikincil);
+}
+
+/* <768'de hücre ~90px. İki satırlık ad bandı şişirip görseli eziyordu;
+   o kırılımda yalnız kod duruyor, ad merkeze geçince görünüyor. */
+.ad {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ad {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-kahve);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+}
+
+.kod {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--color-kahve);
+}
+
+@media (min-width: 768px) {
+  .kod {
+    font-size: 12px;
+    color: var(--color-ikincil);
+    /* Kod hep tam görünür; kısalan ad olur. */
+    flex: 0 0 auto;
+  }
+
+  .bant {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px;
+  }
+
+}
+
+/* Merkezde bilgiler açılır — yine görselin altındaki boşlukta. */
+.merkezIcerik {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+  padding: 6px 8px;
+  background: var(--color-kagit);
+  border-top: 1px solid var(--color-dikis);
+}
+
+/* <768'de merkez 2×2 (~175px). Açıklama kareyi doldurmasın diye gizlenir;
+   kod, ad ve fiyat kalır. */
+.merkezAciklama {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .merkezIcerik {
+    gap: 6px;
+    padding: 16px 24px 20px;
+  }
+
+  .merkezAciklama {
+    display: block;
+  }
+}
+
+.gorsel {
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+}
+
+/* Yer değiştirme animasyonu belge düzeyindedir; app/globals.css içinde. */
+
+@media (prefers-reduced-motion: reduce) {
+  .giris {
+    animation: none;
+  }
+}

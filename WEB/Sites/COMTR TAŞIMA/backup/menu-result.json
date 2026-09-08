@@ -1,0 +1,85 @@
+{
+  "menuUpdate": {
+    "menu": {
+      "id": "gid://shopify/Menu/323167682852",
+      "handle": "main-menu",
+      "items": [
+        {
+          "title": "Sümen Takımları",
+          "url": "/collections/sumen-takimi",
+          "items": [
+            {
+              "title": "Tüm Sümen Takımları",
+              "url": "/collections/sumen-takimi"
+            },
+            {
+              "title": "Deri Sümen Takımları",
+              "url": "/collections/deri-sumen-takimlari"
+            },
+            {
+              "title": "Lüks Sümen Takımları",
+              "url": "/collections/luks-sumen-takimlari"
+            },
+            {
+              "title": "Kristal Sümen Takımları",
+              "url": "/collections/kristal-sumen-takimlari"
+            }
+          ]
+        },
+        {
+          "title": "Masa İsimlikleri",
+          "url": "/collections/masa-ustu-isimlikler",
+          "items": []
+        },
+        {
+          "title": "Masa Üstü Ürünleri",
+          "url": "/collections/masa-ustu-setler",
+          "items": [
+            {
+              "title": "Masa Üstü Setler",
+              "url": "/collections/masa-ustu-setler"
+            },
+            {
+              "title": "Sümen Aksesuarları",
+              "url": "/collections/sumen-aksesuarlari"
+            }
+          ]
+        },
+        {
+          "title": "Makam Ürünleri",
+          "url": "/collections/makam-panolari",
+          "items": [
+            {
+              "title": "Makam Panoları",
+              "url": "/collections/makam-panolari"
+            },
+            {
+              "title": "Kumaşlı Panolar",
+              "url": "/collections/kumasli-panolar"
+            },
+            {
+              "title": "Makam Bayrakları",
+              "url": "/collections/makam-bayraklari"
+            }
+          ]
+        },
+        {
+          "title": "Otel Ekipmanları",
+          "url": "/collections/deri-otel-ekipmanlari",
+          "items": []
+        },
+        {
+          "title": "Rehber",
+          "url": "/pages/sumen-takimi-rehberi",
+          "items": []
+        },
+        {
+          "title": "İletişim",
+          "url": "/pages/bize-ulasin",
+          "items": []
+        }
+      ]
+    },
+    "userErrors": []
+  }
+}

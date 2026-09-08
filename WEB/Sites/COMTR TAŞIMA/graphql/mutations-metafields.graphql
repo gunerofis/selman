@@ -1,0 +1,38 @@
+mutation CreatePieceCountDefinition {
+  metafieldDefinitionCreate(definition: {
+    name: "Parça sayısı"
+    namespace: "custom"
+    key: "parca_sayisi"
+    description: "Sümen takımının doğrulanmış parça sayısı"
+    type: "number_integer"
+    ownerType: PRODUCT
+    pin: true
+    access: { storefront: PUBLIC_READ }
+    capabilities: {
+      adminFilterable: { enabled: true }
+      smartCollectionCondition: { enabled: true }
+    }
+  }) {
+    createdDefinition {
+      id
+      namespace
+      key
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+  urunTuru: metafieldDefinitionCreate(definition: {
+    name: "Ürün türü"
+    namespace: "custom"
+    key: "urun_turu"
+    type: "single_line_text_field"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) {
+    createdDefinition { id key }
+    userErrors { field message }
+  }
+}

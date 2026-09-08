@@ -1,0 +1,101 @@
+query BackupPagesRedirectsMenus {
+  pages(first: 50) {
+    nodes {
+      id
+      handle
+      title
+      body
+      isPublished
+      metafields(first: 20) {
+        nodes {
+          namespace
+          key
+          value
+          type
+        }
+      }
+    }
+  }
+  urlRedirects(first: 100) {
+    nodes {
+      id
+      path
+      target
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+  menus(first: 20) {
+    nodes {
+      id
+      handle
+      title
+      items {
+        id
+        title
+        url
+        type
+        resourceId
+        items {
+          id
+          title
+          url
+          type
+          resourceId
+          items {
+            id
+            title
+            url
+            type
+            resourceId
+          }
+        }
+      }
+    }
+  }
+  shop {
+    name
+    email
+    billingAddress {
+      company
+      address1
+      city
+      province
+      zip
+      country
+      phone
+    }
+    primaryDomain {
+      host
+      url
+    }
+    myshopifyDomain
+    currencyCode
+  }
+  blogs(first: 5) {
+    nodes {
+      id
+      handle
+      title
+      articles(first: 20) {
+        nodes {
+          id
+          handle
+          title
+          tags
+          isPublished
+          metafields(first: 10) {
+            nodes {
+              namespace
+              key
+              value
+              type
+            }
+          }
+        }
+      }
+    }
+  }
+}

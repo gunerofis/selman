@@ -1,0 +1,487 @@
+<section class="generic-page catalog-page">
+  <header class="catalog-head">
+    <div><p class="eyebrow">Koleksiyon</p><h1>{{ collection.title }}</h1></div>
+    <div class="catalog-head__copy">{% if collection.description != blank %}<div class="rte">{{ collection.description }}</div>{% else %}<p>Çalışma alanınıza uygun masa üstü ürünlerini; malzeme, set içeriği ve kullanım biçimine göre karşılaştırın.</p>{% endif %}<span>{{ collection.products_count }} ürün</span></div>
+  </header>
+  {% liquid
+    assign handle = collection.handle
+    assign is_sumen_family = false
+    if handle == 'sumen-takimi' or handle == 'deri-sumen-takimlari' or handle == 'luks-sumen-takimlari' or handle == 'kristal-sumen-takimlari' or handle contains 'parca-sumen'
+      assign is_sumen_family = true
+    endif
+  %}
+  {% paginate collection.products by 120 %}
+  <div class="catalog-layout">
+    <div class="filter-backdrop" data-filter-backdrop hidden></div>
+    <aside class="filter-rail" data-filter-rail id="FilterRail">
+      <div class="filter-rail__head">
+        <h2>Filtrele</h2>
+        <button type="button" class="dialog-close" data-filter-close aria-label="Filtreleri kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+      </div>
+      <form class="filter-form" data-catalog-filters>
+        {% if is_sumen_family %}
+        <fieldset class="filter-group" data-filter-group="pieces">
+          <legend>Parça</legend>
+          <label class="filter-option"><input type="radio" name="pieces" value="" checked> Tümü</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="6"> 6 parça</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="7"> 7 parça</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="9"> 9 parça</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="10"> 10 parça</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="11"> 11 parça</label>
+          <label class="filter-option"><input type="radio" name="pieces" value="12"> 12 parça</label>
+        </fieldset>
+        {% endif %}
+        <fieldset class="filter-group" data-filter-group="material">
+          <legend>Malzeme</legend>
+          <label class="filter-option"><input type="radio" name="material" value="" checked> Tümü</label>
+          <label class="filter-option"><input type="radio" name="material" value="Deri"> Deri</label>
+          <label class="filter-option"><input type="radio" name="material" value="Kristal"> Kristal</label>
+        </fieldset>
+        <fieldset class="filter-group" data-filter-group="feature">
+          <legend>Özellik</legend>
+          <label class="filter-option"><input type="checkbox" name="personal" value="1"> Kişiselleştirilebilir</label>
+          <label class="filter-option"><input type="checkbox" name="flag" value="1"> Masa bayraklı</label>
+          <label class="filter-option"><input type="checkbox" name="shelf" value="1"> Evrak rafı</label>
+        </fieldset>
+        <fieldset class="filter-group" data-filter-group="price">
+          <legend>Fiyat</legend>
+          <label class="filter-option"><input type="radio" name="price" value="" checked> Tümü</label>
+          <label class="filter-option"><input type="radio" name="price" value="0-200000"> 2000 TL altı</label>
+          <label class="filter-option"><input type="radio" name="price" value="200000-400000"> 2000–4000 TL</label>
+          <label class="filter-option"><input type="radio" name="price" value="400000-"> 4000 TL üstü</label>
+        </fieldset>
+        <button type="reset" class="text-link filter-clear" data-filter-clear hidden>Filtreleri temizle</button>
+      </form>
+    </aside>
+    <div class="catalog-main">
+      <div class="catalog-toolbar">
+        <button type="button" class="filter-open" data-filter-open aria-controls="FilterRail">
+          Filtrele<span data-filter-badge></span>
+        </button>
+        <p class="catalog-count" data-catalog-count>{{ paginate.items }} ürün</p>
+        {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+        {% if collection.sort_options.size > 0 %}
+          <form method="get" action="{{ collection.url }}" class="catalog-sort">
+            <label for="SortBy">Sırala</label>
+            <select name="sort_by" id="SortBy" onchange="this.form.submit()">
+              {% for option in collection.sort_options %}
+                <option value="{{ option.value }}" {% if option.value == sort_by %}selected{% endif %}>{{ option.name }}</option>
+              {% endfor %}
+            </select>
+            <button class="visually-hidden" type="submit">Uygula</button>
+          </form>
+        {% endif %}
+      </div>
+      <div class="filter-chips" data-filter-chips hidden></div>
+      <div class="catalog-grid home-board" data-catalog-grid>
+        {% for product in collection.products %}
+          {% render 'product-card', product: product %}
+        {% else %}
+          <p>Bu koleksiyona henüz ürün eklenmedi.</p>
+        {% endfor %}
+      </div>
+      <p class="catalog-empty" data-catalog-empty hidden>Bu ölçütlere uyan ürün bu sayfada yok. Filtreleri temizleyin veya sonraki sayfaya bakın.</p>
+      {% render 'pagination', paginate: paginate %}
+    </div>
+  </div>
+  {% endpaginate %}
+</section>
+
+{% liquid
+  assign handle = collection.handle
+  if handle == 'deri-sumen-takimlari'
+    assign guide_title = 'Deri sümen takımını nasıl seçersiniz?'
+    assign g1t = 'Deri türü'
+    assign g1p = 'Günlük kullanım ve masanın rengine göre deri görünümünü seçin; sık kullanılan masalarda bakımı kolay yüzeyler daha dengeli durur.'
+    assign g2t = 'Renk ve aksesuar'
+    assign g2p = 'Siyah, kahve, taba ve bordo gibi ana renkleri; gold veya gümüş aksesuarla birlikte değerlendirin.'
+    assign g3t = 'Kişiselleştirme'
+    assign g3p = 'İsimlik hediyeli setlerde unvan ve logo ihtiyacını siparişten önce netleştirin.'
+  elsif handle == 'kristal-sumen-takimlari'
+    assign guide_title = 'Kristal masa setini nasıl seçersiniz?'
+    assign g1t = 'Parça yapısı'
+    assign g1p = 'Kristal setler masa düzenini tamamlayan sabit parçalardan oluşur; sümen hediyeli modellerde deri yüzey ayrıca gelir.'
+    assign g2t = 'Metal rengi'
+    assign g2p = 'Gold ve gümüş aksesuarı masa ayağı, lamba ve diğer metal detaylarla birlikte bakın.'
+    assign g3t = 'Temizlik'
+    assign g3p = 'Kristal yüzeyler nemli yumuşak bezle silinir; aşındırıcı temizlik malzemesi kullanılmaz.'
+  elsif handle == 'masa-ustu-isimlikler'
+    assign guide_title = 'Masa üstü isimliği nasıl seçersiniz?'
+    assign g1t = 'Ölçü ve yazı alanı'
+    assign g1p = 'İsim, unvan ve varsa kurum adının sığacağı yazı alanını ürün sayfasındaki ölçüyle kontrol edin.'
+    assign g2t = 'Malzeme'
+    assign g2p = 'Kristal, deri ve metal seçeneklerini masadaki sümen ve aksesuar rengiyle uyumlu seçin.'
+    assign g3t = 'Üretim'
+    assign g3p = 'Kişiye özel yazım için isim, unvan ve logo dosyasını siparişle birlikte iletin.'
+  elsif handle == 'makam-panolari' or handle == 'kumasli-panolar'
+    assign guide_title = 'Makam panosunu nasıl seçersiniz?'
+    assign g1t = 'Ölçü ve alan'
+    assign g1p = 'Duvar genişliği ve karşılama mesafesine göre pano ölçüsünü belirleyin.'
+    assign g2t = 'Çerçeve ve görsel'
+    assign g2p = 'Resimli, kumaşlı veya tuğralı modelleri makamın kurumsal diline göre ayırın.'
+    assign g3t = 'Montaj'
+    assign g3p = 'Duvara montaj için ağırlık ve sabitleme biçimini teslimattan önce sorun.'
+  elsif handle == 'deri-otel-ekipmanlari'
+    assign guide_title = 'Otel ekipmanını nasıl seçersiniz?'
+    assign g1t = 'Ürün türü'
+    assign g1p = 'Oda içi kutu, tepsi, peçetelik veya talimat gibi ürünü kullanım yerine göre seçin.'
+    assign g2t = 'Toplu üretim'
+    assign g2p = 'Adet, renk ve teslim süresini kurumsal siparişte birlikte netleştirin.'
+    assign g3t = 'Kurumsal renk'
+    assign g3p = 'Otel kimliğine uygun deri rengi ve logo uygulamasını numune üzerinden onaylayın.'
+  elsif handle == 'sumen-takimi' or handle == 'luks-sumen-takimlari' or handle contains 'parca-sumen'
+    assign guide_title = 'Parça sayısına göre sümen takımı seçimi'
+    assign g1t = 'Masa ölçüsü'
+    assign g1p = 'Dar masalarda 9–10 parça; geniş yönetici masalarında 11–12 parça daha dengeli durur.'
+    assign g2t = 'Set içeriği'
+    assign g2p = 'Kalemlik, evraklık, isimlik ve masa bayrağı ihtiyacını parça sayısıyla birlikte kontrol edin.'
+    assign g3t = 'Tam set'
+    assign g3p = 'Masa bayraklı ve full set modeller ayrı üründür; içerik değişince varyant değil ayrı model seçin.'
+  else
+    assign guide_title = 'Bu kategoride doğru ürünü nasıl seçersiniz?'
+    assign g1t = 'Kullanım yeri'
+    assign g1p = 'Ürünü masa, duvar veya oda içi kullanımına göre ayırın; sümen sorularını pano ve otel ürünlerine taşımayın.'
+    assign g2t = 'Malzeme ve renk'
+    assign g2p = 'Mevcut mobilya rengi ve metal detaylarla uyumu ürün görsellerinden kontrol edin.'
+    assign g3t = 'Sipariş desteği'
+    assign g3p = 'Ölçü, adet veya kişiselleştirme için iletişim sayfasından yazın.'
+  endif
+  if handle == 'deri-sumen-takimlari'
+    assign fq1 = 'Deri sümen takımı nasıl temizlenir?'
+    assign fa1 = 'Kuru veya hafif nemli yumuşak bez kullanılır. Ayrıntı deri sümen bakımı yazısındadır.'
+    assign fq2 = 'Siyah mı kahve mi?'
+    assign fa2 = 'Masa ve metal rengine göre seçilir. Renk rehberi yazısına bakın.'
+    assign fq3 = 'Parça sayısı neyi değiştirir?'
+    assign fa3 = 'Kaliteyi değil, masaya sığacak düzeni. 9–12 parça karşılaştırması yazısına bakın.'
+    assign fq4 = 'İsimlik yazılır mı?'
+    assign fa4 = 'Uygun setlerde evet. Kişiselleştirme SSS bölümüne bakın.'
+  elsif handle == 'kristal-sumen-takimlari'
+    assign fq1 = 'Kristal sümen günlük kullanıma uygun mu?'
+    assign fa1 = 'Temsil masalarında öne çıkar; yoğun yazı için deri daha pratik olabilir.'
+    assign fq2 = 'Sümen hediyeli ne demek?'
+    assign fa2 = 'Kristal parça setine deri sümen eklenen modellerdir. Ürün set içeriğine bakın.'
+    assign fq3 = 'Gold mu gümüş mü?'
+    assign fa3 = 'Masadaki metal detayla uyum önemlidir.'
+    assign fq4 = 'Nasıl temizlenir?'
+    assign fa4 = 'Yumuşak bez; aşındırıcı kullanılmaz.'
+  elsif handle == 'masa-ustu-isimlikler'
+    assign fq1 = 'İsim ve unvan nasıl iletilir?'
+    assign fa1 = 'Yazım onaylı ve Türkçe karakterli olmalı. İsimlik sipariş rehberine bakın.'
+    assign fq2 = 'Logo basılır mı?'
+    assign fa2 = 'Model uygunsa evet. Kurumsal logo süreci yazısına bakın.'
+    assign fq3 = 'Ölçü nerede?'
+    assign fa3 = 'Ürün açıklamasındaki ebat esastır; yoksa tahmin edilmez.'
+    assign fq4 = 'Sümen takımıyla birlikte mi?'
+    assign fa4 = 'Takımda isimlik varsa ayrı almaya gerek yoktur.'
+  elsif handle == 'makam-panolari' or handle == 'kumasli-panolar' or handle == 'ataturk-resimli-makam-panolari'
+    assign fq1 = 'Makam panosu ölçüsü nasıl seçilir?'
+    assign fa1 = 'Duvar genişliği ve görüş mesafesine göre seçilir.'
+    assign fq2 = 'Kumaşlı pano ayrı mıdır?'
+    assign fa2 = 'Evet. Kumaşlı panolar ayrı koleksiyondadır.'
+    assign fq3 = 'Atatürk görseli var mı?'
+    assign fa3 = 'Atatürk resimli makam panoları koleksiyonunda yer alır.'
+    assign fq4 = 'Montaj dahil mi?'
+    assign fa4 = 'Duvar türü ve ağırlık siparişte netleşir.'
+  elsif handle == 'deri-otel-ekipmanlari'
+    assign fq1 = 'Toplu otel siparişi olur mu?'
+    assign fa1 = 'Evet. Adet ve renk iletişimden yazılır.'
+    assign fq2 = 'Peçetelik örneği var mı?'
+    assign fa2 = 'Deri peçetelik ürün sayfasında incelenebilir.'
+    assign fq3 = 'Logo uygulanır mı?'
+    assign fa3 = 'Malzeme ve adet uygunsa uygulanır.'
+    assign fq4 = 'Sümen takımı mıdır?'
+    assign fa4 = 'Hayır; oda ve lobi ekipmanıdır.'
+  else
+    assign fq1 = 'Sümen takımı nedir?'
+    assign fa1 = 'Çalışma masasının ana yazı yüzeyini ve masaüstü araçlarını aynı düzende tutan settir.'
+    assign fq2 = '9, 10, 11, 12 parça farkı nedir?'
+    assign fa2 = 'Parça sayısı masaya sığacak düzeni değiştirir; kalite ölçüsü değildir.'
+    assign fq3 = 'Masa ölçüsü nasıl bakılır?'
+    assign fa3 = 'Masa üstü yazı alanı ve kenar boşluğu ürün ölçüsüyle karşılaştırılır.'
+    assign fq4 = 'Daha fazla soru?'
+    assign fa4 = 'Sık sorulan sorular sayfasında 200 soruluk kullanıcı rehberi vardır.'
+  endif
+%}
+<section class="collection-guide" aria-labelledby="collection-guide-title-{{ section.id }}">
+  <header><p class="eyebrow">Seçim rehberi</p><h2 id="collection-guide-title-{{ section.id }}">{{ guide_title }}</h2></header>
+  <div class="collection-guide__steps">
+    <article><span>01</span><h3>{{ g1t }}</h3><p>{{ g1p }}</p></article>
+    <article><span>02</span><h3>{{ g2t }}</h3><p>{{ g2p }}</p></article>
+    <article><span>03</span><h3>{{ g3t }}</h3><p>{{ g3p }}</p></article>
+  </div>
+  <div class="collection-faq" aria-label="Bu kategoride sık sorulanlar">
+    {% if handle == 'deri-sumen-takimlari' %}
+      <details><summary>Deri sümen takımı nasıl temizlenir?</summary><p>Kuru veya hafif nemli yumuşak bez kullanılır. Ayrıntı: <a href="/blogs/news/deri-sumen-takimi-bakimi-ve-temizligi">deri sümen bakımı</a>.</p></details>
+      <details><summary>Siyah mı kahve mi?</summary><p>Masa ve metal rengine göre seçilir. <a href="/blogs/news/siyah-kahve-taba-ve-bordo-sumen-renk-rehberi">Renk rehberi</a>.</p></details>
+      <details><summary>Parça sayısı neyi değiştirir?</summary><p>Kaliteyi değil, masaya sığacak düzeni. <a href="/blogs/news/9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi">9–12 parça karşılaştırması</a>.</p></details>
+      <details><summary>İsimlik yazılır mı?</summary><p>Uygun setlerde evet. <a href="/pages/sss#kisiye-ozel-logo">Kişiselleştirme SSS</a>.</p></details>
+    {% elsif handle == 'kristal-sumen-takimlari' %}
+      <details><summary>Kristal sümen günlük kullanıma uygun mu?</summary><p>Temsil masalarında öne çıkar; yoğun yazı için deri daha pratik olabilir. <a href="/blogs/news/deri-ve-kristal-sumen-takimi-arasindaki-farklar">Fark yazısı</a>.</p></details>
+      <details><summary>Sümen hediyeli ne demek?</summary><p>Kristal parça setine deri sümen eklenen modellerdir. Ürün set içeriğine bakın.</p></details>
+      <details><summary>Gold mu gümüş mü?</summary><p>Masadaki metal detayla uyum önemlidir. <a href="/pages/sss#renk-ve-tasarim">Renk SSS</a>.</p></details>
+      <details><summary>Nasıl temizlenir?</summary><p>Yumuşak bez; aşındırıcı yok. <a href="/pages/sss#bakim-ve-temizlik">Bakım SSS</a>.</p></details>
+    {% elsif handle == 'masa-ustu-isimlikler' %}
+      <details><summary>İsim ve unvan nasıl iletilir?</summary><p>Yazım onaylı ve Türkçe karakterli olmalı. <a href="/blogs/news/kisiye-ozel-masa-isimligi-siparis-rehberi">İsimlik sipariş rehberi</a>.</p></details>
+      <details><summary>Logo basılır mı?</summary><p>Model uygunsa evet. <a href="/blogs/news/kurumsal-logolu-sumen-takimi-siparis-sureci">Kurumsal logo süreci</a>.</p></details>
+      <details><summary>Ölçü nerede?</summary><p>Ürün açıklamasındaki ebat esastır; yoksa tahmin edilmez.</p></details>
+      <details><summary>Sümen takımıyla birlikte mi?</summary><p>Takımda isimlik varsa ayrı almaya gerek yoktur. Takımlar: <a href="/collections/sumen-takimi">sümen takımları</a>.</p></details>
+    {% elsif handle == 'makam-panolari' or handle == 'kumasli-panolar' or handle == 'ataturk-resimli-makam-panolari' %}
+      <details><summary>Makam panosu ölçüsü nasıl seçilir?</summary><p>Duvar genişliği ve görüş mesafesine göre. <a href="/pages/sss#makam-panolari-kanvas">Pano SSS</a>.</p></details>
+      <details><summary>Kumaşlı pano ayrı mıdır?</summary><p>Evet. <a href="/collections/kumasli-panolar">Kumaşlı panolar</a>.</p></details>
+      <details><summary>Atatürk görseli var mı?</summary><p><a href="/collections/ataturk-resimli-makam-panolari">Atatürk resimli makam panoları</a>.</p></details>
+      <details><summary>Montaj dahil mi?</summary><p>Duvar türü ve ağırlık siparişte netleşir. <a href="/pages/bize-ulasin">İletişim</a>.</p></details>
+    {% elsif handle == 'deri-otel-ekipmanlari' %}
+      <details><summary>Toplu otel siparişi olur mu?</summary><p>Evet. Adet ve renk <a href="/pages/bize-ulasin">iletişimden</a> yazılır.</p></details>
+      <details><summary>Peçetelik örneği var mı?</summary><p><a href="/products/deri-pecetelik">Deri peçetelik</a>.</p></details>
+      <details><summary>Logo uygulanır mı?</summary><p>Malzeme ve adet uygunsa. <a href="/pages/sss#otel-ekipmanlari-makro-ofis">Otel SSS</a>.</p></details>
+      <details><summary>Sümen takımı mıdır?</summary><p>Hayır; oda ve lobi ekipmanıdır. Sümen: <a href="/collections/sumen-takimi">sümen takımları</a>.</p></details>
+    {% else %}
+      <details><summary>Sümen takımı nedir?</summary><p><a href="/blogs/news/sumen-takimi-nedir-ve-hangi-parcalardan-olusur">Parça ve tanım yazısı</a>.</p></details>
+      <details><summary>9, 10, 11, 12 parça farkı nedir?</summary><p><a href="/blogs/news/9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi">Karşılaştırma yazısı</a>.</p></details>
+      <details><summary>Masa ölçüsü nasıl bakılır?</summary><p><a href="/blogs/news/masa-olcusune-gore-sumen-takimi-secimi">Ölçü yazısı</a>.</p></details>
+      <details><summary>Daha fazla soru?</summary><p><a href="/pages/sss">Sık sorulan sorular</a>.</p></details>
+    {% endif %}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": {{ collection.title | json }},
+      "url": {{ request.origin | append: collection.url | json }},
+      "description": {{ collection.description | strip_html | strip | truncate: 300 | json }},
+      "inLanguage": "tr-TR"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": {{ fq1 | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ fa1 | json }} } },
+        { "@type": "Question", "name": {{ fq2 | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ fa2 | json }} } },
+        { "@type": "Question", "name": {{ fq3 | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ fa3 | json }} } },
+        { "@type": "Question", "name": {{ fq4 | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ fa4 | json }} } }
+      ]
+    }
+  ]
+}
+</script>
+
+<nav class="collection-directory" aria-label="İlgili kategoriler">
+  <p class="eyebrow">İlgili kategoriler</p>
+  <div>
+    {% if collection.handle == 'sumen-takimi' or collection.handle == 'deri-sumen-takimlari' or collection.handle == 'luks-sumen-takimlari' or collection.handle == 'kristal-sumen-takimlari' or collection.handle contains 'parca-sumen' %}
+      <a href="{{ collections['sumen-takimi'].url }}"><span>01</span>Tüm sümen takımları</a>
+      <a href="{{ collections['deri-sumen-takimlari'].url }}"><span>02</span>{{ collections['deri-sumen-takimlari'].title }}</a>
+      <a href="{{ collections['luks-sumen-takimlari'].url }}"><span>03</span>{{ collections['luks-sumen-takimlari'].title }}</a>
+      <a href="{{ collections['kristal-sumen-takimlari'].url }}"><span>04</span>{{ collections['kristal-sumen-takimlari'].title }}</a>
+    {% else %}
+      <a href="{{ collections['sumen-takimi'].url }}"><span>01</span>Sümen takımı modelleri</a>
+      <a href="{{ collections['deri-sumen-takimlari'].url }}"><span>02</span>Deri sümen takımları</a>
+      <a href="{{ collections['kristal-sumen-takimlari'].url }}"><span>03</span>Kristal sümen takımları</a>
+      <a href="/pages/sumen-takimi-rehberi"><span>04</span>Sümen takımı rehberi</a>
+    {% endif %}
+  </div>
+</nav>
+
+{% liquid
+  if handle == 'deri-sumen-takimlari'
+    assign b1u = '/blogs/news/deri-sumen-takimi-bakimi-ve-temizligi'
+    assign b1t = 'Deri sümen bakımı'
+    assign b2u = '/blogs/news/siyah-kahve-taba-ve-bordo-sumen-renk-rehberi'
+    assign b2t = 'Sümen renk rehberi'
+  elsif handle == 'kristal-sumen-takimlari'
+    assign b1u = '/blogs/news/deri-ve-kristal-sumen-takimi-arasindaki-farklar'
+    assign b1t = 'Deri ve kristal sümen farkları'
+    assign b2u = '/pages/sss#ahsap-kristal-luks-tek-parca'
+    assign b2t = 'Kristal sümen SSS'
+  elsif handle == 'masa-ustu-isimlikler'
+    assign b1u = '/blogs/news/kisiye-ozel-masa-isimligi-siparis-rehberi'
+    assign b1t = 'İsimlik sipariş rehberi'
+    assign b2u = '/pages/sss#masa-isimlikleri-masaustu'
+    assign b2t = 'İsimlik SSS'
+  elsif handle == 'makam-panolari' or handle == 'kumasli-panolar' or handle == 'ataturk-resimli-makam-panolari'
+    assign b1u = '/pages/sss#makam-panolari-kanvas'
+    assign b1t = 'Makam panosu SSS'
+    assign b2u = '/pages/sss#kumasli-panolar-yazi-tahtalari'
+    assign b2t = 'Kumaşlı pano SSS'
+  elsif handle == 'makam-bayraklari'
+    assign b1u = '/pages/sss#makam-ve-masa-bayraklari'
+    assign b1t = 'Makam ve masa bayrağı SSS'
+    assign b2u = '/pages/bize-ulasin'
+    assign b2t = 'Logolu sipariş'
+  elsif handle == 'deri-otel-ekipmanlari'
+    assign b1u = '/pages/sss#otel-ekipmanlari-makro-ofis'
+    assign b1t = 'Otel ekipmanı SSS'
+    assign b2u = '/pages/bize-ulasin'
+    assign b2t = 'Kurumsal sipariş'
+  elsif handle contains 'parca-sumen'
+    assign b1u = '/blogs/news/9-10-11-ve-12-parca-sumen-takimi-karsilastirmasi'
+    assign b1t = '9-12 parça karşılaştırması'
+    assign b2u = '/blogs/news/masa-olcusune-gore-sumen-takimi-secimi'
+    assign b2t = 'Masa ölçüsüne göre seçim'
+  else
+    assign b1u = '/blogs/news/sumen-takimi-nedir-ve-hangi-parcalardan-olusur'
+    assign b1t = 'Sümen takımı nedir?'
+    assign b2u = '/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli'
+    assign b2t = 'Sümen takımı seçim yazısı'
+  endif
+%}
+<nav class="collection-guides" aria-label="İlgili rehberler">
+  <p class="eyebrow">İlgili rehberler</p>
+  <div>
+    <a href="/pages/sumen-takimi-rehberi">Sümen takımı rehberi</a>
+    <a href="{{ b1u }}">{{ b1t }}</a>
+    <a href="{{ b2u }}">{{ b2t }}</a>
+    <a href="/pages/sss">Tüm SSS</a>
+  </div>
+</nav>
+
+{% javascript %}
+  const form = document.querySelector('[data-catalog-filters]');
+  const grid = document.querySelector('[data-catalog-grid]');
+  const rail = document.querySelector('[data-filter-rail]');
+  const backdrop = document.querySelector('[data-filter-backdrop]');
+  const chips = document.querySelector('[data-filter-chips]');
+  const countEl = document.querySelector('[data-catalog-count]');
+  const emptyEl = document.querySelector('[data-catalog-empty]');
+  const clearBtn = document.querySelector('[data-filter-clear]');
+  const badge = document.querySelector('[data-filter-badge]');
+  const cards = grid ? [...grid.querySelectorAll('.catalog-card')] : [];
+
+  const readState = () => {
+    if (!form) return {};
+    const data = new FormData(form);
+    return {
+      pieces: data.get('pieces') || '',
+      material: data.get('material') || '',
+      personal: data.get('personal') === '1',
+      flag: data.get('flag') === '1',
+      shelf: data.get('shelf') === '1',
+      price: data.get('price') || ''
+    };
+  };
+
+  const priceMatch = (card, range) => {
+    if (!range) return true;
+    const price = Number(card.getAttribute('data-price') || 0);
+    const bits = range.split('-');
+    const min = Number(bits[0] || 0);
+    const max = bits[1] === '' || bits[1] == null ? Infinity : Number(bits[1]);
+    return price >= min && price < max;
+  };
+
+  const pieceValue = (card) => String(card.getAttribute('data-pieces') || '').replace(/\D/g, '');
+
+  const cardMatches = (card, state) => {
+    if (state.pieces && pieceValue(card) !== String(state.pieces)) return false;
+    if (state.material && card.getAttribute('data-material') !== state.material) return false;
+    if (state.personal && card.getAttribute('data-personal') !== '1') return false;
+    if (state.flag && card.getAttribute('data-flag') !== '1') return false;
+    if (state.shelf && card.getAttribute('data-shelf') !== '1') return false;
+    if (!priceMatch(card, state.price)) return false;
+    return true;
+  };
+
+  const labels = {
+    pieces: (v) => v + ' parça',
+    material: (v) => v,
+    personal: () => 'Kişiselleştirilebilir',
+    flag: () => 'Masa bayraklı',
+    shelf: () => 'Evrak rafı',
+    price: (v) => v === '0-200000' ? '2000 TL altı' : v === '200000-400000' ? '2000–4000 TL' : '4000 TL üstü'
+  };
+
+  const applyFilters = () => {
+    if (!form || !grid) return;
+    const state = readState();
+    let visible = 0;
+    cards.forEach((card) => {
+      const show = cardMatches(card, state);
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (countEl) countEl.textContent = visible + ' ürün';
+    if (emptyEl) emptyEl.hidden = visible > 0 || cards.length === 0;
+    const active = [];
+    if (state.pieces) active.push({ key: 'pieces', label: labels.pieces(state.pieces) });
+    if (state.material) active.push({ key: 'material', label: labels.material(state.material) });
+    if (state.personal) active.push({ key: 'personal', label: labels.personal() });
+    if (state.flag) active.push({ key: 'flag', label: labels.flag() });
+    if (state.shelf) active.push({ key: 'shelf', label: labels.shelf() });
+    if (state.price) active.push({ key: 'price', label: labels.price(state.price) });
+    if (chips) {
+      chips.replaceChildren();
+      active.forEach((item) => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'filter-chip';
+        chip.textContent = item.label;
+        chip.setAttribute('aria-label', item.label + ' filtresini kaldır');
+        chip.addEventListener('click', () => {
+          const input = form.querySelector('[name="' + item.key + '"][value=""]') || form.querySelector('[name="' + item.key + '"]');
+          if (input && input.type === 'checkbox') input.checked = false;
+          else if (input) input.checked = true;
+          applyFilters();
+        });
+        chips.append(chip);
+      });
+      chips.hidden = active.length === 0;
+    }
+    if (clearBtn) clearBtn.hidden = active.length === 0;
+    if (badge) badge.textContent = active.length ? ' (' + active.length + ')' : '';
+    form.querySelectorAll('.filter-option input').forEach((input) => {
+      if (input.value === '' || (input.type === 'checkbox' && !input.checked && !input.value)) {
+        input.disabled = false;
+        return;
+      }
+      const next = Object.assign({}, state);
+      if (input.type === 'checkbox') next[input.name] = true;
+      else next[input.name] = input.value;
+      const any = cards.some((card) => cardMatches(card, next));
+      input.disabled = !any && !input.checked;
+    });
+    form.querySelectorAll('[data-filter-group]').forEach((group) => {
+      const key = group.getAttribute('data-filter-group');
+      const present = cards.some((card) => {
+        if (key === 'pieces') return Boolean(pieceValue(card));
+        if (key === 'material') return Boolean(card.getAttribute('data-material'));
+        if (key === 'feature') {
+          return card.getAttribute('data-personal') === '1' || card.getAttribute('data-flag') === '1' || card.getAttribute('data-shelf') === '1';
+        }
+        return true;
+      });
+      group.hidden = !present;
+    });
+  };
+
+  const closeRail = () => {
+    rail?.classList.remove('is-open');
+    if (backdrop) backdrop.hidden = true;
+    document.body.classList.remove('filter-open');
+  };
+
+  document.querySelector('[data-filter-open]')?.addEventListener('click', () => {
+    rail?.classList.add('is-open');
+    if (backdrop) backdrop.hidden = false;
+    document.body.classList.add('filter-open');
+  });
+  document.querySelector('[data-filter-close]')?.addEventListener('click', closeRail);
+  backdrop?.addEventListener('click', closeRail);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeRail();
+  });
+  form?.addEventListener('change', applyFilters);
+  form?.addEventListener('reset', () => requestAnimationFrame(applyFilters));
+  clearBtn?.addEventListener('click', (event) => {
+    event.preventDefault();
+    form?.reset();
+    applyFilters();
+  });
+  applyFilters();
+{% endjavascript %}
+
+{% schema %}
+{ "name": "Koleksiyon", "settings": [] }
+{% endschema %}

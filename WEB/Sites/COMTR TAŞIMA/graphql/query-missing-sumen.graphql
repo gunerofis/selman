@@ -1,0 +1,29 @@
+query MissingFromAll {
+  deri: collection(id: "gid://shopify/Collection/660821442852") {
+    products(first: 100) {
+      nodes {
+        id
+        handle
+        inAll: inCollection(id: "gid://shopify/Collection/660811153700")
+      }
+    }
+  }
+  kristal: collection(id: "gid://shopify/Collection/660811415844") {
+    products(first: 20) {
+      nodes {
+        id
+        handle
+        inAll: inCollection(id: "gid://shopify/Collection/660811153700")
+      }
+    }
+  }
+  luks: collection(id: "gid://shopify/Collection/660821573924") {
+    products(first: 20) {
+      nodes {
+        id
+        handle
+        inAll: inCollection(id: "gid://shopify/Collection/660811153700")
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query LegalMeta {
+  teslimat: page(id: "gid://shopify/Page/166741737764") {
+    handle
+    body
+    metafields(first: 10, namespace: "global") { nodes { key value } }
+  }
+  kullanim: page(id: "gid://shopify/Page/166741639460") {
+    handle
+    body
+    metafields(first: 10, namespace: "global") { nodes { key value } }
+  }
+}

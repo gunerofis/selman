@@ -1,0 +1,56 @@
+mutation ExtraMetafieldDefinitions {
+  renk: metafieldDefinitionCreate(definition: {
+    name: "Ana renk"
+    namespace: "custom"
+    key: "ana_renk"
+    type: "single_line_text_field"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+  aksesuar: metafieldDefinitionCreate(definition: {
+    name: "Aksesuar rengi"
+    namespace: "custom"
+    key: "aksesuar_rengi"
+    type: "single_line_text_field"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+  malzeme: metafieldDefinitionCreate(definition: {
+    name: "Malzeme"
+    namespace: "custom"
+    key: "malzeme"
+    type: "single_line_text_field"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+  kisisel: metafieldDefinitionCreate(definition: {
+    name: "Kişiselleştirme"
+    namespace: "custom"
+    key: "kisisellestirme"
+    type: "boolean"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+  bayrak: metafieldDefinitionCreate(definition: {
+    name: "Masa bayrağı"
+    namespace: "custom"
+    key: "masa_bayragi"
+    type: "boolean"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+  fullset: metafieldDefinitionCreate(definition: {
+    name: "Full set"
+    namespace: "custom"
+    key: "full_set"
+    type: "boolean"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) { createdDefinition { id key } userErrors { field message } }
+}

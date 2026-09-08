@@ -1,0 +1,1104 @@
+{
+  "products": {
+    "nodes": [
+      {
+        "handle": "diamond-silver-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-silver-sumen-takimi-10-parca-siyah-3",
+        "status": "ACTIVE",
+        "onStore": false,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-gold-sumen-takimi-10-parca-siyah-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-silver-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-gold-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-silver-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-gold-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-silver-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-gold-sumen-takimi-10-parca-siyah-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-gold-sumen-takimi-9-parca-siyah-2",
+        "status": "ACTIVE",
+        "onStore": false,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-gold-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lina-silver-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lina-silver-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lina-gold-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lina-gold-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-silver-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-silver-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-gold-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "nova-gold-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-silver-sumen-takimi-11-parca-siyah-full-set-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-silver-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-gold-sumen-takimi-11-parca-siyah-full-set-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-silver-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-gold-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "asel-gold-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-silver-sumen-takimi-10-parca-siyah-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lina-gold-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-silver-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "pulsar-deri-sumen-takimi-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "duvara-monte-kumasli-pano-bordo",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "duvara-monte-kumasli-pano-turuncu",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "duvara-monte-kumasli-pano-turkuaz",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "duvara-monte-kumasli-pano-mavi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-18",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-17",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-16",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-15",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-14",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-13",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-12",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-11",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-10",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-9",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-8",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-7",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-6",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-5",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-4",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-3",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resimli-makam-panosu",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-gold-sumen-takimi-9-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "diamond-gold-sumen-takimi-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-sumen-takimi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "metal-ayak",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "isimlik-topu",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kirlangic-bayrak",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "oval-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "firma-tanitim-besgen-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "devlet-kurumu-besgen-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "spor-takimi-besgen-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dernek-besgen-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dikey-flama",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "logolu-makam-bayragi-krom",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "ikili-masa-bayragi-gold-direkli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "ikili-masa-bayragi-krom-direkli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "tekli-masa-bayragi-krom-direkli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "tekli-masa-bayragi-gumus-direkli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "logolu-makam-bayragi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "turk-makam-bayragi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "logolu-makam-bayragi-gold",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "makam-bayragi-gold",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "gumus-sumen-kalemi-dolma",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "gumus-sumen-kalemi-tukenmez",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dolma-sumen-kalemi-50-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "tukenmez-sumen-kalemi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "zarf-acacagi-50-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "resim-cerceve-mili",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "ay-tel-50-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "takvim-teli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-kahverengi-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-11-parca-kahverengi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-31",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-30",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-29",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-28",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-27",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-26",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-25",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-24",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-23",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-22",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-21",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-20",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-19",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-18",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-17",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-16",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-15",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-14",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-13",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-12",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-11",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-10",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-9",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-8",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-7",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-6",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-5",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-4",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-3",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-isimligi",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "mkr-08",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "atay-kristal-masa-seti-sumen-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "lemi-kristal-masa-seti-sumen-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "vuska-kristal-masa-seti-sumen-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kristal-masa-seti-sumen-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kucuk-oval-osmanli-devlet-armasi-altin",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "kucuk-oval-osmanli-devlet-armasi-gumus",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "osmanli-devlet-armasi-gumus-varak-tablo",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "osmanli-devlet-armasi-altin-varak-tablo",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-11-parca-kahve-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-kahve",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-11-parca-bordo-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-bordo",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-beyaz",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-11-parca-taba-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-taba",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-siyah-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "g101-deri-sumen-takimi-10-parca-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "cok-amacli-deri-kutu-5-adet-2",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-kirtasiye-kutusu-5-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "cok-amacli-deri-kutu-5-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-cekmeceli-kutu-5-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-tepsi-5-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "imza-sumeni",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "3lu-bardaklik-5-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-kapi-kolu-talimati-50-adet",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-pecetelik",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "deri-otel-konik-cop-kovasi-kapakli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-krem-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-taba-cift-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      },
+      {
+        "handle": "liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+        "status": "ACTIVE",
+        "onStore": true,
+        "onGoogle": true
+      }
+    ]
+  }
+}

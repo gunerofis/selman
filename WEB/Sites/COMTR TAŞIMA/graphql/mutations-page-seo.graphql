@@ -1,0 +1,40 @@
+mutation SetPageSeo {
+  rehber: metafieldsSet(metafields: [
+    {
+      ownerId: "gid://shopify/Page/166741475620"
+      namespace: "global"
+      key: "title_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı Rehberi: Türler, Ölçüler ve Parçalar | Sümen Takımı TR"
+    }
+    {
+      ownerId: "gid://shopify/Page/166741475620"
+      namespace: "global"
+      key: "description_tag"
+      type: "single_line_text_field"
+      value: "Sümen takımı nedir, hangi parçalardan oluşur, deri-kristal farkı, parça sayısı ve bakım. Satış kategorisi değil, seçim rehberi."
+    }
+  ]) {
+    metafields { key value }
+    userErrors { field message }
+  }
+  about: metafieldsSet(metafields: [
+    {
+      ownerId: "gid://shopify/Page/166761464100"
+      namespace: "global"
+      key: "title_tag"
+      type: "single_line_text_field"
+      value: "Hakkımızda ve Üretim | Sümen Takımı TR"
+    }
+    {
+      ownerId: "gid://shopify/Page/166761464100"
+      namespace: "global"
+      key: "description_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı TR mağazası ve Güner Ofis üretimi: MDF işleme, deri kaplama, kişiselleştirme, Gebze üretim ve İstanbul depo."
+    }
+  ]) {
+    metafields { key value }
+    userErrors { field message }
+  }
+}

@@ -1,0 +1,16 @@
+query AboutAndUnpublished {
+  about: pages(first: 5, query: "handle:about-us") {
+    nodes { id handle title body }
+  }
+  col: collection(id: "gid://shopify/Collection/660811153700") {
+    productsCount { count }
+    products(first: 250) {
+      nodes {
+        id
+        handle
+        status
+        publishedOnCurrentPublication
+      }
+    }
+  }
+}

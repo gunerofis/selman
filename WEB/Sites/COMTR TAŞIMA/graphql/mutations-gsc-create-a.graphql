@@ -1,0 +1,92 @@
+mutation GscCreateA {
+  rBlogEtiketMasa: urlRedirectCreate(
+    urlRedirect: { path: "/blog/etiket/masa sümeni", target: "/blogs/news" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rBlogKategoriSumen: urlRedirectCreate(
+    urlRedirect: { path: "/blog/kategori/sümen takımı", target: "/blogs/news" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rBlogEtiketOfis: urlRedirectCreate(
+    urlRedirect: { path: "/blog/etiket/ofis aksesuarları", target: "/blogs/news" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rBlogEtiketSumen: urlRedirectCreate(
+    urlRedirect: { path: "/blog/etiket/sümen takımı", target: "/blogs/news" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rKayit: urlRedirectCreate(
+    urlRedirect: { path: "/kullanici-kayit", target: "/account/login" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rGiris: urlRedirectCreate(
+    urlRedirect: { path: "/kullanici-giris", target: "/account/login" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rKumasliNedir: urlRedirectCreate(
+    urlRedirect: { path: "/kumasli-pano-nedir-ofis-ve-kurumsal-alanlarda-kumasli-pano-kullanimi", target: "/collections/kumasli-panolar" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDora9: urlRedirectCreate(
+    urlRedirect: { path: "/dora-deri-sumen-takimi-9-parca", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDora9Gumus: urlRedirectCreate(
+    urlRedirect: { path: "/dora-deri-sumen-takimi-9-parca-gumus-aksesuar-", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDora11Krem: urlRedirectCreate(
+    urlRedirect: { path: "/dora-sumen-takimi-11-parca-krem-isimlik-hediyeli", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDora12KremFull: urlRedirectCreate(
+    urlRedirect: { path: "/dora-sumen-takimi-12-parca-krem-full-set-isimlik-hediyeli", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDora12KremBayrak: urlRedirectCreate(
+    urlRedirect: { path: "/dora-sumen-takimi-12-parca-krem-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rLiya6: urlRedirectCreate(
+    urlRedirect: { path: "/liya-sumen-takimi-6-parca-siyah", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rLiya9: urlRedirectCreate(
+    urlRedirect: { path: "/liya-sumen-takimi-9-parca-kahverengi", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rLiya10Typo: urlRedirectCreate(
+    urlRedirect: { path: "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-kahvrengi", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+}

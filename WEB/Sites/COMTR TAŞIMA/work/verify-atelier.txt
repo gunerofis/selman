@@ -1,0 +1,15 @@
+URL https://www.sumentakimi.com.tr/ STATUS 200
+title=Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı
+h1=Sümen Takımları ve Masaüstü Ofis Setleri
+heroDark=1 heroText=1 serviceRail=False faqAccordion=False persHero=False paths=1 grid3=1 cards=62 altImg=7 compactHelp=True css=theme.css?v=60389318111069359561788514694
+---
+URL https://www.sumentakimi.com.tr/collections/sumen-takimi STATUS 200
+title=Sümen Takımı Modelleri ve Fiyatları
+h1=Sümen Takımı Modelleri ve Fiyatları
+heroDark=0 heroText=0 serviceRail=False faqAccordion=False persHero=False paths=0 grid3=0 cards=192 altImg=24 compactHelp=False css=theme.css?v=60389318111069359561788514694
+---
+URL https://www.sumentakimi.com.tr/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli STATUS 200
+title=Liya Sümen Takımı 10 Parça Taba
+h1=Liya Sümen Takımı 10 Parça Taba
+heroDark=0 heroText=0 serviceRail=False faqAccordion=False persHero=False paths=0 grid3=0 cards=32 altImg=4 compactHelp=False css=theme.css?v=60389318111069359561788514694
+---

@@ -1,0 +1,161 @@
+{
+  "rows": 726,
+  "uniqueItem": 341,
+  "uniqueProducts": 341,
+  "multiVariantProducts": 1,
+  "maxVariants": 543,
+  "durum": {
+    "(bos)": 569,
+    "yeni": 157
+  },
+  "stok": {
+    "stokta": 205,
+    "stokta yok": 135,
+    "(bos)": 386
+  },
+  "kanal": {
+    "Dijital": 340,
+    "(bos)": 386
+  },
+  "dil": {
+    "tr": 340,
+    "(bos)": 386
+  },
+  "feed": {
+    "TRY_102699401508": 183,
+    "TR": 157,
+    "(bos)": 386
+  },
+  "brands": {
+    "Güner Ofis": 186,
+    "(bos)": 529,
+    "Makro Ofis": 11
+  },
+  "types": {
+    "Sümen Takımı": 80,
+    "(bos)": 543,
+    "Kristal Masa Üstü İsimlikler": 32,
+    "Makam Panoları": 21,
+    "Sümen Aksesuarları": 10,
+    "Makam Bayrakları": 16,
+    "Masa Üstü Setler": 4,
+    "Kristal Sümen Takımları": 5,
+    "Deri Otel Ekipmanları": 10,
+    "Atatürk Resimli Makam Panoları": 1,
+    "Osmanlı Tuğrası": 4
+  },
+  "noImg": 415,
+  "noLink": 415,
+  "noSku": 543,
+  "noBrand": 529,
+  "weight0": 183,
+  "withRating": 4,
+  "withClicks": 13,
+  "withDiscount": 114,
+  "makroMentions": 60,
+  "otherDomain": 0,
+  "durumEmpty": 569,
+  "utmLinks": 183,
+  "variantLinks": 183,
+  "priceMin": 600,
+  "priceMax": 12000,
+  "qtyMin": 0,
+  "qtyMax": 1000,
+  "qtyAll1000": 183,
+  "descMin": 0,
+  "descMax": 3453,
+  "descEmpty": 386,
+  "shippingKeys": 3,
+  "shippingSample": "299.00 TRY:Hızlı:2:0:1:0:TR,116.00 TRY:Standart:5:0:3:0:TR",
+  "clickRows": [
+    {
+      "title": "Liya sümen Takımı 11 Parça Kahve Masa Bayraklı",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Deri 3 Parça Masa Üstü Seti Çiftli Evrak Rafı, Kalemlik Ve Notluk",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "G101 Deri Sümen Takımı 10 Parça Taba",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Deri Kalemlik - Notluk - Telefonluk Kahverengi",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Dora Sümen Takımı 11 Parça siyah (Gold Aksesuarlı)",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "G101 Deri Sümen Takımı 10 Parça Beyaz",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Eko500 Deri Evrak Raf Notluk Kalemlik Seti Siyah Gümüş Aksesuar",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Deri Peçetelik",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Chester Sümen Takımı 12 Parça Siyah Masa Bayraklı",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Dora Sümen Takımı 12 parça Kahverengi Masa Bayraklı",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Liya Sümen Takımı 10 Parça Krem",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Osmanlı Devlet Arması Altın Varak Tablo",
+      "clicks": "1",
+      "status": "yeni"
+    },
+    {
+      "title": "Atay Kristal Masa Seti ( Sümen Hediyeli )",
+      "clicks": "3",
+      "status": "yeni"
+    }
+  ],
+  "sampleNoSku": [
+    "Eko 501 Deri Sümen Takımı 7 Parça Kahve Gold Aksesuar",
+    "Metal Ayak (50 Adet)",
+    "Resimli Makam Panosu",
+    "Atay Kristal Masa Seti ( Mavi cam )",
+    "Nova Gold Sümen Takımı 9 Parça Siyah",
+    "G101 Deri Sümen Takımı 11 Parça Bordo Full Set",
+    "Nova Silver Sümen Takımı 10 Parça Siyah Full Set",
+    "Nova Silver Sümen Takımı 10 Parça Siyah Full Set, çalışma masasındaki temel ihtiyaçları düzenli tutmak için hazırlanan 10 parçalı bir sümen setidir. Kişiselleştirilebilir masa isimliği ve uyumlu masaüstü aksesuarlarıyla çalışma alanında düzenli, bütünlüklü bir görünüm oluşturur."
+  ],
+  "sampleEmptyDurum": [
+    "Nova Gold Sümen Takımı 11 Parça Siyah Full Set",
+    "Asel Gold Sümen Takımı 9 Parça Siyah",
+    "Kristal Masa İsimliği 21",
+    "Resimli Makam Panosu 8",
+    "Duvara Monte Kumaşlı Pano Turkuaz"
+  ],
+  "makroSample": [
+    "Metal Ayak (50 Adet) | Makro Ofis",
+    "Nova Gold Sümen Takımı 9 Parça Siyah | Makro Ofis",
+    "Parçaları yumuşak, nemli bir bezle temizleyin. Güçlü ve aşındırıcı kimyasallar kullanmayın.\thttps://www.sumentakimi.com.tr/nova-silver-sumen-takimi-10-parca-siyah-full-set/\thttps://sumentakimi.com.tr/i/l/000/0001492_nova-silver-sumen-takimi-10-parca-siyah-full-set.jpeg,https://sumentakimi.com.tr/i/l/000/0001493_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001494_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001495_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001496_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001497_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001498_nova-silver-sumen-takimi-10-parca-siyah-full-set.png,https://sumentakimi.com.tr/i/l/000/0001499_nova-silver-sumen-takimi-10-parca-siyah-full-set.png\t\t::::::TR\tMakro Ofis\t\t\t\t\thttps://sumentakimi.com.tr/i/l/000/0001491_nova-silver-sumen-takimi-10-parca-siyah-full-set.png\t\t\t0\t | ",
+    "Parçaları yumuşak, nemli bir bezle temizleyin. Güçlü ve aşındırıcı kimyasallar kullanmayın.\thttps://www.sumentakimi.com.tr/diamond-silver-sumen-takimi-10-parca-siyah/\thttps://sumentakimi.com.tr/i/l/000/0001253_diamond-silver-sumen-takimi-10-parca-siyah.png,https://sumentakimi.com.tr/i/l/000/0001255_diamond-silver-sumen-takimi-10-parca-siyah.png,https://sumentakimi.com.tr/i/l/000/0001256_diamond-silver-sumen-takimi-10-parca-siyah.png,https://sumentakimi.com.tr/i/l/000/0001257_diamond-silver-sumen-takimi-10-parca-siyah.png,https://sumentakimi.com.tr/i/l/000/0001258_diamond-silver-sumen-takimi-10-parca-siyah.png\t\t::::::TR\tMakro Ofis\t\t\t\t\thttps://sumentakimi.com.tr/i/l/000/0001251_diamond-silver-sumen-takimi-10-parca-siyah.png\t\t\t0\t | ",
+    "Bu masa üstü seti, sadece bir kırtasiye ürünü değil; aynı zamanda prestij ve tarzı temsil eden bir dekoratif öğedir. İster kendi ofisiniz için alın, ister sevdiklerinize özel ve anlamlı bir hediye olarak sunun. Her detayıyla özenle hazırlanmış bu set, çalışma motivasyonunuzu artıracak ve masanıza hak ettiği değeri katacaktır.\thttps://www.sumentakimi.com.tr/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar/\thttps://sumentakimi.com.tr/i/l/000/0001138_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png,https://sumentakimi.com.tr/i/l/000/0001139_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png,https://sumentakimi.com.tr/i/l/000/0001140_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png,https://sumentakimi.com.tr/i/l/000/0001141_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png,https://sumentakimi.com.tr/i/l/000/0001142_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png,https://sumentakimi.com.tr/i/l/000/0001143_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png\t\t::::::TR\tMakro Ofis\t\t\t\t\thttps://sumentakimi.com.tr/i/l/000/0001137_eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar.png\t\t\t0\t | "
+  ]
+}

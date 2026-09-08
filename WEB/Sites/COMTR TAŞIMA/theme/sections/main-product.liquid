@@ -1,0 +1,365 @@
+<section class="generic-page product-page" data-section-id="{{ section.id }}">
+  <div class="product-gallery" data-product-gallery>
+    {% if product.featured_image %}
+      <button type="button" class="product-gallery__stage media-plate" data-gallery-stage data-full="{{ product.featured_image | image_url: width: 1600 }}" aria-label="Görseli büyüt">
+        {{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '600, 900, 1200', sizes: '(max-width: 900px) calc(100vw - 32px), 55vw', alt: product.featured_image.alt | default: product.title }}
+      </button>
+      {% if product.images.size > 1 %}
+        <div class="product-gallery__thumbs" role="list">
+          {% for image in product.images %}
+            <button type="button" class="product-gallery__thumb{% if forloop.first %} is-active{% endif %}" data-gallery-thumb role="listitem" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" data-src="{{ image | image_url: width: 1200 }}" data-srcset="{{ image | image_url: width: 600 }} 600w, {{ image | image_url: width: 900 }} 900w, {{ image | image_url: width: 1200 }} 1200w" data-full="{{ image | image_url: width: 1600 }}" data-alt="{{ image.alt | default: product.title | escape }}">
+              {{ image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '120, 200', alt: image.alt | default: product.title }}
+            </button>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <dialog class="gallery-zoom" data-gallery-zoom>
+    <button type="button" class="dialog-close" aria-label="Büyütmeyi kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+    <img alt="" data-gallery-zoom-img>
+  </dialog>
+  {% liquid
+    assign suffix = template.suffix
+    if suffix == blank
+      if product.type contains 'İsimlik'
+        assign suffix = 'isimlik'
+      elsif product.type contains 'Bayrak'
+        assign suffix = 'bayrak'
+      elsif product.type contains 'Pano' or product.type contains 'Tuğra' or product.type contains 'Atatürk'
+        assign suffix = 'pano'
+      elsif product.type contains 'Otel' or product.type contains 'Aksesuar' or product.type contains 'Set'
+        assign suffix = 'otel'
+      else
+        assign suffix = 'sumen'
+      endif
+    endif
+    assign show_personalize = false
+    if suffix == 'sumen' or suffix == 'isimlik'
+      assign show_personalize = true
+    endif
+    if product.metafields.custom.kisisellestirme.value == false
+      assign show_personalize = false
+    endif
+  %}
+  <div class="product-page__info">
+    {% if product.type != blank %}<p class="eyebrow">{{ product.type }}</p>{% endif %}
+    <h1>{{ product.title }}</h1>
+    <p class="product-page__price">
+      <strong>{{ product.selected_or_first_available_variant.price | money }}</strong>
+      {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+        <s>{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>
+      {% endif %}
+    </p>
+
+    {% if suffix == 'sumen' %}
+      {% liquid
+        assign set_pieces = product.metafields.custom.parca_sayisi.value | append: '' | strip
+        assign set_material = product.metafields.custom.malzeme.value
+        assign set_color = product.metafields.custom.ana_renk.value
+        assign set_acc = product.metafields.custom.aksesuar_rengi.value
+        assign set_personal = product.metafields.custom.kisisellestirme.value
+        assign set_flag = product.metafields.custom.masa_bayragi.value
+        assign set_shelf = product.metafields.custom.evrak_rafi.value
+        assign set_has = false
+        if set_pieces != blank or set_material != blank or set_color != blank or set_acc != blank or set_personal or set_flag or set_shelf
+          assign set_has = true
+        endif
+      %}
+      {% if set_has %}
+        <div class="product-set">
+          <h2>Bu sette</h2>
+          <ul>
+            {% if set_pieces != blank %}
+              <li>{% if set_pieces contains 'parça' %}{{ set_pieces }}{% else %}{{ set_pieces }} parça{% endif %}</li>
+            {% endif %}
+            {% if set_material != blank %}<li>{{ set_material }}</li>{% endif %}
+            {% if set_color != blank %}<li>{{ set_color }}</li>{% endif %}
+            {% if set_acc != blank %}<li>{{ set_acc }} aksesuar</li>{% endif %}
+            {% if set_personal %}<li>İsimlik (yazılabilir)</li>{% endif %}
+            {% if set_flag %}<li>Masa bayrağı</li>{% endif %}
+            {% if set_shelf %}<li>Evrak rafı</li>{% endif %}
+          </ul>
+          <p>Parça listesi ürün açıklamasındadır. Görseldeki dekoratif obje satışa dahil olmayabilir.</p>
+        </div>
+      {% endif %}
+    {% endif %}
+
+    {% form 'product', product, class: 'product-form' %}
+      {% if product.variants.size > 1 %}
+        <label for="Variant-{{ section.id }}">Seçenek</label>
+        <select id="Variant-{{ section.id }}" name="id">
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected{% endif %} {% unless variant.available %}disabled{% endunless %}>
+              {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} — Tükendi{% endunless %}
+            </option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      {% endif %}
+      {% if show_personalize %}
+      <div class="product-personalize">
+        <label for="PropName-{{ section.id }}">İsim / unvan (opsiyonel)</label>
+        <input id="PropName-{{ section.id }}" type="text" name="properties[İsim]" placeholder="Masa isimliğine yazılacak ad">
+        <label for="PropTitle-{{ section.id }}">Ünvan (opsiyonel)</label>
+        <input id="PropTitle-{{ section.id }}" type="text" name="properties[Ünvan]" placeholder="Örn. Genel Müdür">
+        <p class="product-personalize-note">Boş bırakırsanız standart ürün gider. Kurumsal baskı için sipariş sonrası <a href="/pages/bize-ulasin">iletişim formundan</a> da yazabilirsiniz.</p>
+      </div>
+      {% endif %}
+      <label for="Quantity-{{ section.id }}">Adet</label>
+      <input id="Quantity-{{ section.id }}" type="number" name="quantity" min="1" value="1">
+      <button class="button button-dark product-submit" type="submit" data-add-to-cart {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}>
+        {% if product.selected_or_first_available_variant.available %}Sepete ekle{% else %}Tükendi{% endif %}
+      </button>
+      <p class="product-form-status" data-cart-status role="status" hidden></p>
+    {% endform %}
+
+    <p class="product-fulfillment">
+      Siparişler Gebze üretim ve İstanbul depolarından kargoya verilir. Kargo ücreti ödeme adımında hesaplanır.
+      <a href="{{ shop.refund_policy.url | default: shop.shipping_policy.url }}">Teslimat ve iade</a>
+    </p>
+
+    <div class="product-assurances" aria-label="Sipariş bilgileri">
+      <div><p><strong>Güvenli ödeme</strong>iyzico altyapısıyla ödeme</p></div>
+      <div><p><strong>Kargo</strong>Gebze ve İstanbul depolarından sevkiyat</p></div>
+      <div><p><strong>İade</strong><a href="{{ shop.refund_policy.url | default: shop.shipping_policy.url }}">Koşullar</a></p></div>
+    </div>
+
+    <dl class="product-specs">
+      {% if product.metafields.custom.urun_turu.value %}<div><dt>Ürün türü</dt><dd>{{ product.metafields.custom.urun_turu.value }}</dd></div>{% endif %}
+      {% if product.metafields.custom.parca_sayisi.value %}<div><dt>Parça sayısı</dt><dd>{{ product.metafields.custom.parca_sayisi.value }}</dd></div>{% endif %}
+      {% if product.metafields.custom.malzeme.value %}<div><dt>Malzeme</dt><dd>{{ product.metafields.custom.malzeme.value }}</dd></div>{% endif %}
+      {% if product.metafields.custom.ana_renk.value %}<div><dt>Ana renk</dt><dd>{{ product.metafields.custom.ana_renk.value }}</dd></div>{% endif %}
+      {% if product.metafields.custom.aksesuar_rengi.value %}<div><dt>Aksesuar rengi</dt><dd>{{ product.metafields.custom.aksesuar_rengi.value }}</dd></div>{% endif %}
+      {% if product.metafields.custom.sumen_olcu.value %}<div><dt>Ölçü</dt><dd>{{ product.metafields.custom.sumen_olcu.value }}</dd></div>{% endif %}
+    </dl>
+
+    <div class="product-guide">
+      {% if suffix == 'isimlik' %}
+        <details open><summary>Yazı alanı nasıl seçilir?</summary><p>İsim, unvan ve varsa kurum adının sığacağı alanı ürün görseli ve açıklamasındaki ölçüyle kontrol edin. Sümen parça soruları bu ürüne ait değildir.</p></details>
+        <details><summary>Logo veya unvan nasıl iletilir?</summary><p>Yukarıdaki alanlara yazın veya sipariş sonrası iletişim formundan logo dosyasını gönderin.</p></details>
+        <details><summary>Hangi isimlik bu masaya uyar?</summary><p>Kristal ve masa üstü isimlikleri sümen rengiyle birlikte bakın. <a href="/collections/masa-ustu-isimlikler">Masa üstü isimlikler</a></p></details>
+      {% elsif suffix == 'pano' %}
+        <details open><summary>Pano ölçüsü nasıl seçilir?</summary><p>Duvar genişliği ve izleme mesafesine göre seçin. Sümen parça sayısı bu ürün için geçerli değildir.</p></details>
+        <details><summary>Montaj var mı?</summary><p>Duvara montaj bilgisi sipariş ve teslimat notunda netleşir. Ağırlık ve sabitleme için iletişimden sorun.</p></details>
+        <details><summary>Kumaşlı pano ayrı mı?</summary><p>Evet. Kumaşlı modeller <a href="/collections/kumasli-panolar">kumaşlı panolar</a> koleksiyonundadır.</p></details>
+      {% elsif suffix == 'bayrak' %}
+        <details open><summary>Masa bayrağı mı, makam bayrağı mı?</summary><p>Masa üstü direkli modeller ile duvar/flama ürünlerini ayırın. Sümen set soruları bu sayfada yoktur.</p></details>
+        <details><summary>Logo basılır mı?</summary><p>Logolu üretim için dosya ve adeti iletişim formundan iletin.</p></details>
+        <details><summary>Direk rengi</summary><p>Gold ve krom/gümüş direk ürün başlığında belirtilir.</p></details>
+      {% elsif suffix == 'otel' %}
+        <details open><summary>Toplu sipariş nasıl verilir?</summary><p>Adet, renk ve teslim süresini iletişim formundan yazın. Oda içi ekipman sümen takımı değildir.</p></details>
+        <details><summary>Kurumsal renk</summary><p>Otel kimliğine uygun deri rengi numune ile onaylanır.</p></details>
+        <details><summary>İsimlik alanı neden yok?</summary><p>Bu ürün kişiselleştirilebilir isimlik satmaz. İsimlik için <a href="/collections/masa-ustu-isimlikler">masa üstü isimlikler</a>.</p></details>
+      {% else %}
+        <details open><summary>Parça sayısını nasıl okumalıyım?</summary><p>Parça sayısı ürün başlığı ve parça sayısı alanından gelir. Masa bayraklı ve full set ayrı üründür.</p></details>
+        <details><summary>Kişiselleştirme nasıl belirlenir?</summary><p>İsimlik hediyeli setlerde isim ve unvanı yukarıya yazın. Kurumsal logo için iletişim formunu kullanın.</p></details>
+        <details><summary>Set içeriğini nereden görebilirim?</summary><p>Açıklamadaki set içeriği esastır. Görseldeki dekoratif parça satışa dahil olmayabilir.</p></details>
+      {% endif %}
+    </div>
+    <nav class="product-seo-links" aria-label="İlgili sayfalar">
+      {% if suffix == 'isimlik' %}
+        <a href="/collections/masa-ustu-isimlikler">Masaüstü isimlikler</a>
+        <a href="/blogs/news/kisiye-ozel-masa-isimligi-siparis-rehberi">İsimlik sipariş rehberi</a>
+      {% elsif suffix == 'pano' %}
+        <a href="/collections/makam-panolari">Makam panoları</a>
+        <a href="/collections/kumasli-panolar">Kumaşlı panolar</a>
+      {% elsif suffix == 'bayrak' %}
+        <a href="/collections/makam-bayraklari">Makam bayrakları</a>
+      {% elsif suffix == 'otel' %}
+        <a href="/collections/deri-otel-ekipmanlari">Deri otel ekipmanları</a>
+      {% else %}
+        <a href="/collections/sumen-takimi">Sümen takımı modelleri</a>
+        {% if product.metafields.custom.malzeme.value == 'Deri' %}
+          <a href="/collections/deri-sumen-takimlari">Deri sümen takımları</a>
+        {% endif %}
+        <a href="/pages/sumen-takimi-rehberi">Sümen takımı rehberi</a>
+      {% endif %}
+      <a href="/pages/sss">Sık sorulan sorular</a>
+    </nav>
+
+    {% if product.description != blank %}<div class="rte product-description">{{ product.description }}</div>{% endif %}
+    {% if product.selected_or_first_available_variant.sku != blank %}<p class="product-sku">Ürün kodu: {{ product.selected_or_first_available_variant.sku }}</p>{% endif %}
+  </div>
+</section>
+
+{% assign related_collection = blank %}
+{% if suffix == 'isimlik' %}
+  {% assign related_collection = collections['masa-ustu-isimlikler'] %}
+{% elsif suffix == 'pano' %}
+  {% assign related_collection = collections['makam-panolari'] %}
+{% elsif suffix == 'bayrak' %}
+  {% assign related_collection = collections['makam-bayraklari'] %}
+{% elsif suffix == 'otel' %}
+  {% assign related_collection = collections['deri-otel-ekipmanlari'] %}
+{% else %}
+  {% if product.metafields.custom.malzeme.value == 'Deri' %}
+    {% assign related_collection = collections['deri-sumen-takimlari'] %}
+  {% elsif product.metafields.custom.malzeme.value == 'Kristal' %}
+    {% assign related_collection = collections['kristal-sumen-takimlari'] %}
+  {% else %}
+    {% assign related_collection = collections['sumen-takimi'] %}
+  {% endif %}
+{% endif %}
+{% if related_collection == blank or related_collection.products_count < 2 %}
+  {% assign related_collection = blank %}
+  {% for candidate_collection in product.collections %}
+    {% if related_collection == blank and candidate_collection.products_count > 1 %}
+      {% assign related_collection = candidate_collection %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% liquid
+  assign related_heading = 'Daha fazla set'
+  assign related_more = 'Daha fazla set'
+  if suffix == 'isimlik'
+    assign related_heading = 'Diğer isimlikler'
+    assign related_more = 'Daha fazla isimlik'
+  elsif suffix == 'pano'
+    assign related_heading = 'Diğer panolar'
+    assign related_more = 'Daha fazla pano'
+  elsif suffix == 'bayrak'
+    assign related_heading = 'Diğer bayraklar'
+    assign related_more = 'Daha fazla bayrak'
+  elsif suffix == 'otel'
+    assign related_heading = 'Diğer otel ürünleri'
+    assign related_more = 'Daha fazla ürün'
+  endif
+%}
+{% if related_collection != blank and related_collection.products_count > 1 %}
+  <section class="related-products" aria-labelledby="related-title-{{ section.id }}">
+    <header><div><p class="eyebrow">Aynı koleksiyondan</p><h2 id="related-title-{{ section.id }}">{{ related_heading }}</h2></div><a class="text-link" href="{{ related_collection.url }}">Koleksiyonu görün</a></header>
+    <div class="related-products__grid home-board" data-more-grid>
+      {% assign related_count = 0 %}
+      {% for related_product in related_collection.products limit: 8 %}
+        {% unless related_product.id == product.id %}
+          {% render 'product-card', product: related_product %}
+          {% assign related_count = related_count | plus: 1 %}
+          {% if related_count == 4 %}{% break %}{% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+    <p class="more-load-wrap"><button type="button" class="button more-load" data-more-load hidden>{{ related_more }}</button></p>
+    <script type="application/json" data-more-feed>
+      [
+      {%- assign more_first = true -%}
+      {%- for related_product in related_collection.products limit: 48 -%}
+        {%- if related_product.id == product.id -%}{%- continue -%}{%- endif -%}
+        {%- unless more_first -%},{%- endunless -%}
+        {%- assign more_first = false -%}
+        {
+          "url": {{ related_product.url | json }},
+          "title": {{ related_product.title | json }},
+          "image": {% if related_product.featured_image %}{{ related_product.featured_image | image_url: width: 900 | json }}{% else %}""{% endif %},
+          "price": {{ related_product.price | money | json }},
+          "compare": {% if related_product.compare_at_price > related_product.price %}{{ related_product.compare_at_price | money | json }}{% else %}null{% endif %},
+          "pieces": {{ related_product.metafields.custom.parca_sayisi.value | json }},
+          "material": {{ related_product.metafields.custom.malzeme.value | json }}
+        }
+      {%- endfor -%}
+      ]
+    </script>
+  </section>
+{% endif %}
+
+<section class="product-help-band">
+  <div><p class="eyebrow">Karar veremediniz mi?</p><h2>Masanız için doğru seti birlikte seçelim.</h2></div>
+  <div>
+    <a class="button button-dark" href="/pages/bize-ulasin">Bize ulaşın</a>
+    <a class="text-link" href="/pages/sumen-takimi-rehberi">Sümen takımı rehberi</a>
+    <a class="text-link" href="/pages/sss">Sık sorulan sorular</a>
+  </div>
+</section>
+
+{% if product.selected_or_first_available_variant.available %}
+  <div class="sticky-atc" data-sticky-atc hidden>
+    <p>{{ product.title }} · {{ product.selected_or_first_available_variant.price | money }}</p>
+    <button type="button" class="button button-dark" data-sticky-submit>Sepete ekle</button>
+  </div>
+{% endif %}
+
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign product_brand = product.vendor | default: 'Makro Ofis' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ request.origin | append: product.url | json }},
+  {% if product.featured_image %}
+  "image": {{ product.featured_image | image_url: width: 1200 | prepend: "https:" | json }},
+  {% endif %}
+  {% if product.description != blank %}
+  "description": {{ product.description | strip_html | strip | truncate: 5000 | json }},
+  {% endif %}
+  {% if current_variant.sku != blank %}
+  "sku": {{ current_variant.sku | json }},
+  "mpn": {{ current_variant.sku | json }},
+  {% endif %}
+  {%- if current_variant.barcode != blank -%}
+    {%- assign gtin_value = current_variant.barcode | strip -%}
+    {%- assign gtin_len = gtin_value | size -%}
+    {%- if gtin_len == 8 -%}
+  "gtin8": {{ gtin_value | json }},
+    {%- elsif gtin_len == 12 -%}
+  "gtin12": {{ gtin_value | json }},
+    {%- elsif gtin_len == 13 -%}
+  "gtin13": {{ gtin_value | json }},
+    {%- elsif gtin_len == 14 -%}
+  "gtin14": {{ gtin_value | json }},
+    {%- else -%}
+  "gtin": {{ gtin_value | json }},
+    {%- endif -%}
+  {%- endif -%}
+  "brand": {
+    "@type": "Brand",
+    "name": {{ product_brand | json }}
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Makro Ofis"
+  }{% if product.metafields.custom.parca_sayisi.value or product.metafields.custom.malzeme.value or product.metafields.custom.ana_renk.value or product.metafields.custom.sumen_olcu.value %},
+  "additionalProperty": [
+    {%- assign prop_first = true -%}
+    {%- if product.metafields.custom.parca_sayisi.value -%}
+    {%- unless prop_first -%},{%- endunless -%}{%- assign prop_first = false -%}
+    { "@type": "PropertyValue", "name": "Parça sayısı", "value": {{ product.metafields.custom.parca_sayisi.value | json }} }
+    {%- endif -%}
+    {%- if product.metafields.custom.malzeme.value -%}
+    {%- unless prop_first -%},{%- endunless -%}{%- assign prop_first = false -%}
+    { "@type": "PropertyValue", "name": "Malzeme", "value": {{ product.metafields.custom.malzeme.value | json }} }
+    {%- endif -%}
+    {%- if product.metafields.custom.ana_renk.value -%}
+    {%- unless prop_first -%},{%- endunless -%}{%- assign prop_first = false -%}
+    { "@type": "PropertyValue", "name": "Ana renk", "value": {{ product.metafields.custom.ana_renk.value | json }} }
+    {%- endif -%}
+    {%- if product.metafields.custom.sumen_olcu.value -%}
+    {%- unless prop_first -%},{%- endunless -%}{%- assign prop_first = false -%}
+    { "@type": "PropertyValue", "name": "Ölçü", "value": {{ product.metafields.custom.sumen_olcu.value | json }} }
+    {%- endif -%}
+  ]
+  {% endif %},
+  "offers": [
+    {%- for variant in product.variants -%}
+    {
+      "@type": "Offer",
+      "url": {{ request.origin | append: variant.url | json }},
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "price": {{ variant.price | divided_by: 100.0 | json }},
+      {% if variant.sku != blank %}"sku": {{ variant.sku | json }},{% endif %}
+      "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": { "@type": "Organization", "name": "Sümen Takımı" }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+{% schema %}
+{ "name": "Ürün", "settings": [] }
+{% endschema %}

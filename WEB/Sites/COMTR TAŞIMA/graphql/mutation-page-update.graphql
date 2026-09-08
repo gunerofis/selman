@@ -1,0 +1,6 @@
+mutation UpdateSss($id: ID!, $body: String!) {
+  pageUpdate(id: $id, page: { body: $body }) {
+    page { id handle }
+    userErrors { field message }
+  }
+}

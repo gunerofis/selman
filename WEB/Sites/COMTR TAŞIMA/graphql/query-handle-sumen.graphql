@@ -1,0 +1,9 @@
+query HandleSumen {
+  products(first: 250, query: "handle:sumen") {
+    nodes {
+      id
+      handle
+      inAll: inCollection(id: "gid://shopify/Collection/660811153700")
+    }
+  }
+}

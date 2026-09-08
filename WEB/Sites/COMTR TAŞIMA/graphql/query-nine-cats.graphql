@@ -1,0 +1,12 @@
+query NineCats {
+  deri: collectionByHandle(handle: "deri-sumen-takimlari") { id }
+  luks: collectionByHandle(handle: "luks-sumen-takimlari") { id }
+  products(first: 8, query: "title:'9 Parça'") {
+    nodes {
+      handle
+      title
+      deri: inCollection(id: "gid://shopify/Collection/REPLACE_DERI")
+      luks: inCollection(id: "gid://shopify/Collection/REPLACE_LUKS")
+    }
+  }
+}

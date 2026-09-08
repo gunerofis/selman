@@ -1,0 +1,6 @@
+mutation ShopName {
+  shopUpdate(input: { name: "Sümen Takımı" }) {
+    shop { name }
+    userErrors { field message }
+  }
+}

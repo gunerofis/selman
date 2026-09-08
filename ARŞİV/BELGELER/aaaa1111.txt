@@ -1,0 +1,120 @@
+## Uygulama Sırası
+
+### 1. Mail ve satış riski
+
+**sumentakimi.com**
+
+* MX kaydı ekle.
+* SPF, DKIM ve DMARC kur.
+* `info@sumentakimi.com` için gönderme ve alma testi yap.
+
+**Tüm siteler**
+
+* DMARC ve DKIM’i gerçek test mailiyle doğrula.
+
+---
+
+### 2. gunerofis.com bozuk URL temizliği
+
+* `httpswwwgunerofiscom...` şeklindeki 10 URL’yi doğru sayfalara **301** yönlendir.
+* Bu URL’leri sitemap’ten kaldır.
+* Silinmiş sayfaları ana sayfaya yönlendirme; karşılığı yoksa **404/410** döndür.
+* `${CART_URL}`, `MAPS_URL`, `escapeAttribute...` gibi bozuk tema linklerini düzelt.
+* `-kopya` sayfaları ana ürüne 301 yönlendir veya birleştir.
+
+---
+
+### 3. gunerofis.com hız düzeltmesi
+
+* Ana sayfadaki gereksiz bölüm ve görselleri kaldır.
+* Görselleri WebP/AVIF ve doğru ölçülerde kullan.
+* İlk ekran dışındaki görselleri lazy-load yap.
+* HTML boyutunu yaklaşık **1 MB’den 200 KB altına** indir.
+* Gereksiz JavaScript ve uygulamaları kaldır.
+* Cloudflare HTML cache aç; `/cart`, `/checkout`, `/account` ve oturumları hariç tut.
+* jQuery Migrate’i önce bağımlılıkları düzelterek kaldır.
+
+**Hedef:** mobil LCP `<2,5 sn`, CLS `<0,1`, TBT `<300 ms`.
+
+---
+
+### 4. gunerofis.com ürün verisi ve schema
+
+* Ürünlerdeki 11/12/13/14 parça tutarsızlıklarını düzelt.
+* Fiyat, para birimi, stok ve SKU bilgisini HTML ile aynı hale getir.
+* Tüm ürünlere Product + Offer JSON-LD ekle:
+
+  * name
+  * sku
+  * brand
+  * image
+  * price
+  * priceCurrency
+  * availability
+
+---
+
+### 5. sumentakimi.com.tr
+
+* Ana sayfa title ve meta description yaz.
+* Ürünlere Product + Offer schema ekle.
+* Organization ve WebSite schema ekle.
+* Favicon 404 hatasını düzelt.
+* Shopify domain e-posta doğrulamasını tamamla.
+
+---
+
+### 6. sumentakimi.com
+
+* `og:image` adresini HTTPS yap ve görseli küçült.
+* Aynı ürünün renk sayfalarını varyant olarak birleştir.
+* Tekrarlanan SKU’ları benzersiz yap.
+* Gerçek ürün ağırlıklarını gir.
+* Product schema’ya kargo ve iade bilgisi ekle.
+
+---
+
+### 7. imalattansumen.com
+
+* Yanlış ürün açıklamalarını düzelt.
+* `Default Title` ve boş `sameAs` alanlarını temizle.
+* `/pages/contact` bağlantısını `/pages/bize-ulasin` olarak düzelt.
+* SKU ve ürün ağırlıklarını düzenle.
+* EN sitemap ve kopya dil sayfalarını temizle.
+
+---
+
+### 8. Dil sayfaları
+
+* İngilizce ve Arapça title, H1 ve içerikleri gerçek diline çevir.
+* Hreflang bağlantılarını karşılıklı doğrula.
+* Tamamlanmamış EN/AR sayfaları düzelene kadar `noindex` yap.
+* Sayısal Arapça URL üretimini durdur.
+
+---
+
+### 9. Güvenlik
+
+* gunerofis.com için minimum TLS sürümünü **1.2** yap.
+* CSP’yi önce `Report-Only` ile test et.
+* Sorun çıkarmayan scriptlerden sonra `unsafe-eval` ve geniş `*` izinlerini kaldır.
+* Sepet ve ödeme akışını bozmadan güvenlik değişikliklerini uygula.
+
+---
+
+### 10. Son kontrol
+
+Her düzeltmeden sonra:
+
+* 5 mobil + 5 masaüstü Lighthouse testi, median sonuç.
+* Google Rich Results Test.
+* Sitemap ve iç link crawl.
+* Search Console indeksleme kontrolü.
+* Gerçek uçtan uca test siparişi.
+* Dört sitede mail gönderme/alma testi.
+
+## Net öncelik
+
+**Önce:** sumentakimi.com mail sistemi → gunerofis bozuk URL’ler → gunerofis hız → ürün verisi/schema.
+
+**Sonra:** sumentakimi.com.tr SEO → diğer Shopify veri temizliği → EN/AR → güvenlik ve son test.

@@ -1,0 +1,43 @@
+{
+  "removeKumasliFromPano": {
+    "job": {
+      "id": "gid://shopify/Job/cec3ddb7-5e02-4025-be51-c775c5d6a4bc",
+      "done": false
+    },
+    "userErrors": []
+  },
+  "hideFrontpage": {
+    "userErrors": []
+  },
+  "hideKristalMasaSetleri": {
+    "userErrors": []
+  },
+  "hideKristalIsimlikDup": {
+    "userErrors": []
+  },
+  "hideMakamPanolari3": {
+    "userErrors": []
+  },
+  "hideKristalSumen2": {
+    "userErrors": []
+  },
+  "hideDugmeliPano": {
+    "userErrors": []
+  },
+  "hideAdresPage": {
+    "page": {
+      "id": "gid://shopify/Page/166741410084",
+      "handle": "adres-ve-konum-bilgisi",
+      "isPublished": false
+    },
+    "userErrors": []
+  },
+  "hideMakamPage": {
+    "page": {
+      "id": "gid://shopify/Page/166741672228",
+      "handle": "makam-panolari-2",
+      "isPublished": false
+    },
+    "userErrors": []
+  }
+}

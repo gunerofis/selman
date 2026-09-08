@@ -1,0 +1,81 @@
+<section class="journal-page">
+  <header class="editorial-hero journal-hero">
+    <div class="editorial-hero__copy">
+      <p class="eyebrow">Masa üstü notları</p>
+      <h1>{{ blog.title }}</h1>
+      <p>Çalışma alanınızı daha düzenli, kişisel ve işlevli kılmak için malzeme seçiminden masa düzenine uzanan kısa rehberler.</p>
+    </div>
+    <div class="journal-hero__index" aria-hidden="true">
+      <span>Rehber</span>
+      <strong>{{ blog.articles_count | prepend: '0' | slice: -2, 2 }}</strong>
+      <span>Yazı</span>
+    </div>
+  </header>
+
+  {% paginate blog.articles by 9 %}
+    {% if blog.articles_count > 0 %}
+      {% assign featured_article = blog.articles.first %}
+      <article class="journal-feature">
+        <a class="journal-feature__media" href="{{ featured_article.url }}">
+          {% if featured_article.image %}
+            {{ featured_article.image | image_url: width: 1600 | image_tag: widths: '720, 1000, 1400, 1600', sizes: '(max-width: 800px) 100vw, 58vw', loading: 'eager', alt: featured_article.image.alt | default: featured_article.title }}
+          {% else %}
+            <img src="{{ 'story-crystal-1536.webp' | asset_url }}" alt="Kristal sümen takımı detay görünümü" width="1536" height="1024" loading="eager">
+          {% endif %}
+        </a>
+        <div class="journal-feature__copy">
+          <p class="eyebrow">Öne çıkan rehber</p>
+          <time datetime="{{ featured_article.published_at | date: '%Y-%m-%d' }}">{{ featured_article.published_at | date: '%d.%m.%Y' }}</time>
+          <h2><a href="{{ featured_article.url }}">{{ featured_article.title }}</a></h2>
+          <p>{{ featured_article.excerpt_or_content | strip_html | truncatewords: 32 }}</p>
+          <a class="text-link arrow-link" href="{{ featured_article.url }}">Yazıyı okuyun <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+        </div>
+      </article>
+
+      {% if blog.articles_count > 1 %}
+        <div class="journal-list-head">
+          <p class="eyebrow">Tüm yazılar</p>
+          <span>Seçim, bakım ve masa düzeni üzerine</span>
+        </div>
+        <div class="journal-grid">
+          {% for article in blog.articles offset: 1 %}
+            <article class="journal-card">
+              <a class="journal-card__media journal-card__media--{{ forloop.index | modulo: 3 }}" href="{{ article.url }}">
+                {% if article.image %}
+                  {{ article.image | image_url: width: 960 | image_tag: widths: '480, 720, 960', sizes: '(max-width: 800px) 100vw, 33vw', loading: 'lazy', alt: article.image.alt | default: article.title }}
+                {% else %}
+                  {% case forloop.index %}
+                    {% when 1 %}<img src="{{ 'category-dora-1200.webp' | asset_url }}" alt="Deri masa seti" width="1200" height="900" loading="lazy">
+                    {% when 2 %}<img src="{{ 'category-atay-1200.webp' | asset_url }}" alt="Modern masa üstü düzeni" width="1200" height="900" loading="lazy">
+                    {% else %}<img src="{{ 'product-g101-1200.webp' | asset_url }}" alt="Kristal masa isimliği" width="1200" height="900" loading="lazy">
+                  {% endcase %}
+                {% endif %}
+              </a>
+              <div class="journal-card__copy">
+                <div><span>0{{ forloop.index | plus: 1 }}</span><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d.%m.%Y' }}</time></div>
+                <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                <p>{{ article.excerpt_or_content | strip_html | truncatewords: 24 }}</p>
+                <a class="text-link" href="{{ article.url }}">Devamını okuyun</a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% render 'pagination', paginate: paginate %}
+    {% else %}
+      <div class="empty-state"><p>Yeni rehberler hazırlanıyor.</p></div>
+    {% endif %}
+  {% endpaginate %}
+
+  <aside class="journal-cta">
+    <div><p class="eyebrow">Seçiminizi kolaylaştırın</p><h2>Masanıza uygun seti birlikte bulalım.</h2></div>
+    <a class="button button-dark" href="/pages/bize-ulasin">Bize danışın <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </aside>
+</section>
+
+{% schema %}
+{
+  "name": "Editoryal blog",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,21 @@
+{
+  "gizlilik": {
+    "page": {
+      "handle": "gizlilik-sozlesmesi"
+    },
+    "userErrors": []
+  },
+  "mesafeli": {
+    "page": {
+      "handle": "mesafeli-satis-sozlesmesi"
+    },
+    "userErrors": []
+  },
+  "hideContactDup": {
+    "page": {
+      "handle": "contact",
+      "isPublished": false
+    },
+    "userErrors": []
+  }
+}

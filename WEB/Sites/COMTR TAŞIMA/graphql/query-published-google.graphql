@@ -1,0 +1,10 @@
+query PublishedOnGoogle {
+  products(first: 250) {
+    nodes {
+      handle
+      status
+      onStore: publishedOnPublication(publicationId: "gid://shopify/Publication/323509354788")
+      onGoogle: publishedOnPublication(publicationId: "gid://shopify/Publication/323509616932")
+    }
+  }
+}

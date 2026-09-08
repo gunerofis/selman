@@ -1,0 +1,37 @@
+{
+  "shop": {
+    "id": "gid://shopify/Shop/102665617700",
+    "name": "Sümen Takımı TR"
+  },
+  "p9": {
+    "handle": "9-parca-sumen-takimi",
+    "productsCount": {
+      "count": 8
+    },
+    "publishedOnPublication": false
+  },
+  "p10": {
+    "handle": "10-parca-sumen-takimi",
+    "productsCount": {
+      "count": 25
+    },
+    "publishedOnPublication": false
+  },
+  "p11": {
+    "handle": "11-parca-sumen-takimi",
+    "productsCount": {
+      "count": 26
+    },
+    "publishedOnPublication": false
+  },
+  "p12": {
+    "handle": "12-parca-sumen-takimi",
+    "productsCount": {
+      "count": 14
+    },
+    "publishedOnPublication": false
+  },
+  "sample": {
+    "nodes": []
+  }
+}

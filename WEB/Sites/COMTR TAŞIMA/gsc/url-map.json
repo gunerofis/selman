@@ -1,0 +1,1316 @@
+[
+  {
+    "url": "https://www.sumentakimi.com.tr/",
+    "clicks": 115,
+    "impr": 2683,
+    "path": "/",
+    "existing": null,
+    "target": "/",
+    "reason": "home"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/anasayfa-aciklama/",
+    "clicks": 5,
+    "impr": 46,
+    "path": "/anasayfa-aciklama",
+    "existing": "/pages/anasayfa-aciklama",
+    "target": "/pages/sumen-takimi-rehberi",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-sumen-takimlari/",
+    "clicks": 3,
+    "impr": 22,
+    "path": "/deri-sumen-takimlari",
+    "existing": "/collections/deri-sumen-takimlari",
+    "target": "/collections/deri-sumen-takimlari",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/sumen-takimi-nedir/",
+    "clicks": 1,
+    "impr": 147,
+    "path": "/sumen-takimi-nedir",
+    "existing": null,
+    "target": "/pages/sumen-takimi-rehberi",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli/",
+    "clicks": 1,
+    "impr": 44,
+    "path": "/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "existing": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "target": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-10-parca-beyaz/",
+    "clicks": 1,
+    "impr": 43,
+    "path": "/g101-deri-sumen-takimi-10-parca-beyaz",
+    "existing": "/products/g101-deri-sumen-takimi-10-parca-beyaz",
+    "target": "/products/g101-deri-sumen-takimi-10-parca-beyaz",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/sumen-takimi-nasil-secilir-10-onemli-kriter/",
+    "clicks": 1,
+    "impr": 32,
+    "path": "/sumen-takimi-nasil-secilir-10-onemli-kriter",
+    "existing": null,
+    "target": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/sumen-aksesuarlari/",
+    "clicks": 1,
+    "impr": 21,
+    "path": "/sumen-aksesuarlari",
+    "existing": null,
+    "target": "/collections/sumen-aksesuarlari",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-pecetelik/",
+    "clicks": 1,
+    "impr": 14,
+    "path": "/deri-pecetelik",
+    "existing": "/products/deri-pecetelik",
+    "target": "/products/deri-pecetelik",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/blog/etiket/masa sümeni/",
+    "clicks": 1,
+    "impr": 12,
+    "path": "/blog/etiket/masa%20s%C3%BCmeni",
+    "existing": null,
+    "target": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk/",
+    "clicks": 1,
+    "impr": 11,
+    "path": "/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "existing": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "target": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli/",
+    "clicks": 1,
+    "impr": 10,
+    "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "existing": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-otel-ekipmanlari/",
+    "clicks": 1,
+    "impr": 6,
+    "path": "/deri-otel-ekipmanlari",
+    "existing": "/collections/deri-otel-ekipmanlari",
+    "target": "/collections/deri-otel-ekipmanlari",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar/",
+    "clicks": 1,
+    "impr": 5,
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "existing": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-15/",
+    "clicks": 1,
+    "impr": 3,
+    "path": "/kristal-masa-isimligi-15",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-15",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-deri-sumen-takimi-9-parca/",
+    "clicks": 1,
+    "impr": 1,
+    "path": "/dora-deri-sumen-takimi-9-parca",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/imza-sumeni/",
+    "clicks": 0,
+    "impr": 77,
+    "path": "/imza-sumeni",
+    "existing": "/products/imza-sumeni",
+    "target": "/products/imza-sumeni",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/osmanli-tugrasi/",
+    "clicks": 0,
+    "impr": 50,
+    "path": "/osmanli-tugrasi",
+    "existing": null,
+    "target": "/collections/osmanli-tugrasi",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/blog/",
+    "clicks": 0,
+    "impr": 48,
+    "path": "/blog",
+    "existing": "/blogs/news",
+    "target": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli/",
+    "clicks": 0,
+    "impr": 32,
+    "path": "/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "existing": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "target": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-10-parca-taba/",
+    "clicks": 0,
+    "impr": 19,
+    "path": "/g101-deri-sumen-takimi-10-parca-taba",
+    "existing": "/products/g101-deri-sumen-takimi-10-parca-taba",
+    "target": "/products/g101-deri-sumen-takimi-10-parca-taba",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/osmanli-devlet-armasi-altin-varak-tablo/",
+    "clicks": 0,
+    "impr": 17,
+    "path": "/osmanli-devlet-armasi-altin-varak-tablo",
+    "existing": null,
+    "target": "/products/osmanli-devlet-armasi-altin-varak-tablo",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil/",
+    "clicks": 0,
+    "impr": 16,
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "existing": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kumasli-pano-nedir-ofis-ve-kurumsal-alanlarda-kumasli-pano-kullanimi/",
+    "clicks": 0,
+    "impr": 15,
+    "path": "/kumasli-pano-nedir-ofis-ve-kurumsal-alanlarda-kumasli-pano-kullanimi",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/ataturk-resimli-makam-panolari/",
+    "clicks": 0,
+    "impr": 15,
+    "path": "/ataturk-resimli-makam-panolari",
+    "existing": "/collections/ataturk-resimli-makam-panolari",
+    "target": "/collections/ataturk-resimli-makam-panolari",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/atay-kristal-masa-seti-sumen-hediyeli-/",
+    "clicks": 0,
+    "impr": 14,
+    "path": "/atay-kristal-masa-seti-sumen-hediyeli-",
+    "existing": "/products/atay-kristal-masa-seti-sumen-hediyeli",
+    "target": "/products/atay-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-11-parca-bordo-full-set/",
+    "clicks": 0,
+    "impr": 12,
+    "path": "/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "existing": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "target": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 9,
+    "path": "/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 8,
+    "path": "/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 8,
+    "path": "/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/logolu-makam-bayragi-gold/",
+    "clicks": 0,
+    "impr": 8,
+    "path": "/logolu-makam-bayragi-gold",
+    "existing": null,
+    "target": "/products/logolu-makam-bayragi-gold",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/masa-ustu-setler/",
+    "clicks": 0,
+    "impr": 8,
+    "path": "/masa-ustu-setler",
+    "existing": null,
+    "target": "/collections/masa-ustu-setler",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/masa-ustu-isimlikler/",
+    "clicks": 0,
+    "impr": 8,
+    "path": "/masa-ustu-isimlikler",
+    "existing": null,
+    "target": "/collections/masa-ustu-isimlikler",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-sumen-takimi/",
+    "clicks": 0,
+    "impr": 7,
+    "path": "/kristal-sumen-takimi",
+    "existing": null,
+    "target": "/products/kristal-sumen-takimi",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/makam-panolari-3/",
+    "clicks": 0,
+    "impr": 7,
+    "path": "/makam-panolari-3",
+    "existing": null,
+    "target": "/collections/makam-panolari",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/bize-ulasin/",
+    "clicks": 0,
+    "impr": 7,
+    "path": "/bize-ulasin",
+    "existing": "/pages/bize-ulasin",
+    "target": "/pages/bize-ulasin",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/makam-bayraklari/",
+    "clicks": 0,
+    "impr": 7,
+    "path": "/makam-bayraklari",
+    "existing": null,
+    "target": "/collections/makam-bayraklari",
+    "reason": "collection"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/teslimat-ve-iade-sozlesmesi/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/teslimat-ve-iade-sozlesmesi",
+    "existing": null,
+    "target": "/pages/teslimat-ve-iade-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kullanici-kayit/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/kullanici-kayit",
+    "existing": null,
+    "target": "/account/login",
+    "reason": "account"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kullanim-kosullari/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/kullanim-kosullari",
+    "existing": null,
+    "target": "/pages/kullanim-kosullari",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-11-parca-krem-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/dora-sumen-takimi-11-parca-krem-isimlik-hediyeli",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/adres-ve-konum-bilgisi/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/adres-ve-konum-bilgisi",
+    "existing": "/pages/adres-ve-konum-bilgisi",
+    "target": "/pages/bize-ulasin",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar/",
+    "clicks": 0,
+    "impr": 6,
+    "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "existing": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "target": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-6-parca-siyah/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/liya-sumen-takimi-6-parca-siyah",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/mesafeli-satis-sozlesmesi/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/mesafeli-satis-sozlesmesi",
+    "existing": null,
+    "target": "/pages/mesafeli-satis-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-sumen-takimi-9-parca-mermer-desenli/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/diamond-sumen-takimi-9-parca-mermer-desenli",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dugmeli-makam-panosu/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/dugmeli-makam-panosu",
+    "existing": "/collections/dugmeli-makam-panosu",
+    "target": "/collections/makam-panolari",
+    "reason": "known-close"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/resimli-makam-panosu-16/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/resimli-makam-panosu-16",
+    "existing": null,
+    "target": "/products/resimli-makam-panosu-16",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-11-parca-taba-full-set/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "existing": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "target": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-tepsi-5-adet/",
+    "clicks": 0,
+    "impr": 5,
+    "path": "/deri-tepsi-5-adet",
+    "existing": "/products/deri-tepsi-5-adet",
+    "target": "/products/deri-tepsi-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kullanici-giris/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/kullanici-giris",
+    "existing": null,
+    "target": "/account/login",
+    "reason": "account"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kucuk-oval-osmanli-devlet-armasi-altin/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/kucuk-oval-osmanli-devlet-armasi-altin",
+    "existing": null,
+    "target": "/products/kucuk-oval-osmanli-devlet-armasi-altin",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/gizlilik-sozlesmesi/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/gizlilik-sozlesmesi",
+    "existing": "/pages/gizlilik-sozlesmesi",
+    "target": "/pages/gizlilik-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/uyelik-sozlesmesi/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/uyelik-sozlesmesi",
+    "existing": null,
+    "target": "/pages/uyelik-sozlesmesi",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-9-parca-kahverengi/",
+    "clicks": 0,
+    "impr": 4,
+    "path": "/liya-sumen-takimi-9-parca-kahverengi",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko-501-deri-sumen-takimi-7-parca/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/eko-501-deri-sumen-takimi-7-parca",
+    "existing": null,
+    "target": "/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "existing": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/blog/kategori/sümen takımı/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/blog/kategori/s%C3%BCmen%20tak%C4%B1m%C4%B1",
+    "existing": null,
+    "target": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/nova-gold-sumen-takimi-10-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+    "existing": null,
+    "target": "/products/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-16/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/kristal-masa-isimligi-16",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-16",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/duvara-monte-kumasli-pano-turkuaz/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/duvara-monte-kumasli-pano-turkuaz",
+    "existing": "/products/duvara-monte-kumasli-pano-turkuaz",
+    "target": "/products/duvara-monte-kumasli-pano-turkuaz",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "existing": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "target": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-kapi-kolu-talimati-50-adet/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/deri-kapi-kolu-talimati-50-adet",
+    "existing": "/products/deri-kapi-kolu-talimati-50-adet",
+    "target": "/products/deri-kapi-kolu-talimati-50-adet",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-kahverengi-full-set/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "existing": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "target": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/nova-silver-sumen-takimi-10-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+    "existing": null,
+    "target": "/products/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-otel-konik-cop-kovasi-kapakli/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/deri-otel-konik-cop-kovasi-kapakli",
+    "existing": "/products/deri-otel-konik-cop-kovasi-kapakli",
+    "target": "/products/deri-otel-konik-cop-kovasi-kapakli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-17/",
+    "clicks": 0,
+    "impr": 3,
+    "path": "/kristal-masa-isimligi-17",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-17",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "existing": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "target": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/vuska-kristal-masa-seti-sumen-hediyeli-/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/vuska-kristal-masa-seti-sumen-hediyeli-",
+    "existing": null,
+    "target": "/products/vuska-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/gumus-sumen-kalemi-dolma/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/gumus-sumen-kalemi-dolma",
+    "existing": "/products/gumus-sumen-kalemi-dolma",
+    "target": "/products/gumus-sumen-kalemi-dolma",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-deri-sumen-takimi-9-parca-gumus-aksesuar-/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/dora-deri-sumen-takimi-9-parca-gumus-aksesuar-",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/kristal-masa-isimligi",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-cekmeceli-kutu-5-adet/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/deri-cekmeceli-kutu-5-adet",
+    "existing": "/products/deri-cekmeceli-kutu-5-adet",
+    "target": "/products/deri-cekmeceli-kutu-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dikey-flama/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/dikey-flama",
+    "existing": "/products/dikey-flama",
+    "target": "/products/dikey-flama",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-sumen-takimi-10-parca-mermer-desenli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/diamond-sumen-takimi-10-parca-mermer-desenli",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/takvim-teli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/takvim-teli",
+    "existing": null,
+    "target": "/products/takvim-teli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/asel-gold-sumen-takimi-9-parca-siyah/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/asel-gold-sumen-takimi-9-parca-siyah",
+    "existing": "/products/asel-gold-sumen-takimi-9-parca-siyah",
+    "target": "/products/asel-gold-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "existing": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "target": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-sumen-takimi-siyah-11-parca-cam-isimlikli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "existing": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "target": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dernek-besgen-flama/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/dernek-besgen-flama",
+    "existing": "/products/dernek-besgen-flama",
+    "target": "/products/dernek-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/lina-silver-sumen-takimi-10-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+    "existing": null,
+    "target": "/products/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eft-banka-bilgileri/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/eft-banka-bilgileri",
+    "existing": "/pages/eft-banka-bilgileri",
+    "target": "/pages/eft-banka-bilgileri",
+    "reason": "page"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "existing": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "target": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/blog/etiket/ofis aksesuarları/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/blog/etiket/ofis%20aksesuarlar%C4%B1",
+    "existing": null,
+    "target": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/spor-takimi-besgen-flama/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/spor-takimi-besgen-flama",
+    "existing": null,
+    "target": "/products/spor-takimi-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-27/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/kristal-masa-isimligi-27",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-27",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 2,
+    "path": "/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "existing": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "target": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/asel-silver-sumen-takimi-10-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "existing": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "target": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/devlet-kurumu-besgen-flama/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/devlet-kurumu-besgen-flama",
+    "existing": "/products/devlet-kurumu-besgen-flama",
+    "target": "/products/devlet-kurumu-besgen-flama",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-silver-sumen-takimi-9-parca-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/diamond-silver-sumen-takimi-9-parca-siyah",
+    "existing": "/products/diamond-silver-sumen-takimi-9-parca-siyah",
+    "target": "/products/diamond-silver-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dolma-sumen-kalemi-50-adet-/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dolma-sumen-kalemi-50-adet-",
+    "existing": "/products/dolma-sumen-kalemi-50-adet",
+    "target": "/products/dolma-sumen-kalemi-50-adet",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/duvara-monte-kumasli-pano-turuncu/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/duvara-monte-kumasli-pano-turuncu",
+    "existing": "/products/duvara-monte-kumasli-pano-turuncu",
+    "target": "/products/duvara-monte-kumasli-pano-turuncu",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-10-parca-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/g101-deri-sumen-takimi-10-parca-siyah",
+    "existing": "/products/g101-deri-sumen-takimi-10-parca-siyah",
+    "target": "/products/g101-deri-sumen-takimi-10-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-11-parca-kahve-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "existing": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "target": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-2/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-2",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-deri-sumen-takimi-6-parca/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/chester-deri-sumen-takimi-6-parca",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko502-deri-sumen-takimi-taba-6-parca-gold-aksesuar/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/eko502-deri-sumen-takimi-taba-6-parca-gold-aksesuar",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/3lu-bardaklik-5-adet/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/3lu-bardaklik-5-adet",
+    "existing": "/products/3lu-bardaklik-5-adet",
+    "target": "/products/3lu-bardaklik-5-adet",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-kalemlik-notluk-telefonluk/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/deri-kalemlik-notluk-telefonluk",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/duvara-monte-kumasli-pano-bordo/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/duvara-monte-kumasli-pano-bordo",
+    "existing": "/products/duvara-monte-kumasli-pano-bordo",
+    "target": "/products/duvara-monte-kumasli-pano-bordo",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/duvara-monte-kumasli-pano-mavi/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/duvara-monte-kumasli-pano-mavi",
+    "existing": "/products/duvara-monte-kumasli-pano-mavi",
+    "target": "/products/duvara-monte-kumasli-pano-mavi",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-10-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "existing": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "target": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/isimlik-topu/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/isimlik-topu",
+    "existing": "/products/isimlik-topu",
+    "target": "/products/isimlik-topu",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/pulsar-deri-sumen-takimi-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/pulsar-deri-sumen-takimi-siyah",
+    "existing": null,
+    "target": "/products/pulsar-deri-sumen-takimi-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "existing": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-gold-sumen-takimi-11-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "existing": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "target": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-kahvrengi/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-kahvrengi",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-siyah",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "existing": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "target": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/logolu-makam-bayragi-/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/logolu-makam-bayragi-",
+    "existing": null,
+    "target": "/products/logolu-makam-bayragi-krom",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/deri-2-parca-masa-ustu-seti-kalemlik-ve-notluk/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/deri-2-parca-masa-ustu-seti-kalemlik-ve-notluk",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko500-deri-evrak-raf-notluk-kalemlik-seti-kahve-gold-aksesuar/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-kahve-gold-aksesuar",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "existing": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/ikili-masa-bayragi-gold-direkli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/ikili-masa-bayragi-gold-direkli",
+    "existing": "/products/ikili-masa-bayragi-gold-direkli",
+    "target": "/products/ikili-masa-bayragi-gold-direkli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/lemi-kristal-masa-seti-sumen-hediyeli-/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/lemi-kristal-masa-seti-sumen-hediyeli-",
+    "existing": null,
+    "target": "/products/lemi-kristal-masa-seti-sumen-hediyeli",
+    "reason": "product-fuzzy"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-silver-sumen-takimi-11-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "existing": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "target": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/eko-501-deri-sumen-takimi-7-parca-siyah-gold-aksesuar-2/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gold-aksesuar-2",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/resimli-makam-panosu-17/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/resimli-makam-panosu-17",
+    "existing": null,
+    "target": "/products/resimli-makam-panosu-17",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/resimli-makam-panosu-7/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/resimli-makam-panosu-7",
+    "existing": null,
+    "target": "/products/resimli-makam-panosu-7",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/lina-gold-sumen-takimi-10-parca-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/lina-gold-sumen-takimi-10-parca-siyah",
+    "existing": null,
+    "target": "/products/lina-gold-sumen-takimi-10-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/tukenmez-sumen-kalemi/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/tukenmez-sumen-kalemi",
+    "existing": null,
+    "target": "/products/tukenmez-sumen-kalemi",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/blog/etiket/sümen takımı/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/blog/etiket/s%C3%BCmen%20tak%C4%B1m%C4%B1",
+    "existing": null,
+    "target": "/blogs/news",
+    "reason": "old-blog"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+    "existing": null,
+    "target": "/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/resimli-makam-panosu-12/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/resimli-makam-panosu-12",
+    "existing": null,
+    "target": "/products/resimli-makam-panosu-12",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/asel-silver-sumen-takimi-11-parca-siyah-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "existing": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "target": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/diamond-gold-sumen-takimi-9-parca-siyah/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/diamond-gold-sumen-takimi-9-parca-siyah",
+    "existing": "/products/diamond-gold-sumen-takimi-9-parca-siyah",
+    "target": "/products/diamond-gold-sumen-takimi-9-parca-siyah",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "existing": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "target": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-krem-full-set-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dora-sumen-takimi-12-parca-krem-full-set-isimlik-hediyeli",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-krem-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dora-sumen-takimi-12-parca-krem-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kucuk-osmanli-devlet-armasi-altin/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/kucuk-osmanli-devlet-armasi-altin",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/metal-ayak/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/metal-ayak",
+    "existing": null,
+    "target": "/products/metal-ayak",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/g101-deri-sumen-takimi-11-parca-beyaz-full-set/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "existing": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "target": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-26/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/kristal-masa-isimligi-26",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-26",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/cam-ve-deri-masa-isimligi/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/cam-ve-deri-masa-isimligi",
+    "existing": null,
+    "target": null,
+    "reason": "unmapped"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/tekli-masa-bayragi-krom-direkli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/tekli-masa-bayragi-krom-direkli",
+    "existing": null,
+    "target": "/products/tekli-masa-bayragi-krom-direkli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "existing": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "target": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "existing": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-2/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/kristal-masa-isimligi-2",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-2",
+    "reason": "product-handle"
+  },
+  {
+    "url": "https://www.sumentakimi.com.tr/kristal-masa-isimligi-7/",
+    "clicks": 0,
+    "impr": 1,
+    "path": "/kristal-masa-isimligi-7",
+    "existing": null,
+    "target": "/products/kristal-masa-isimligi-7",
+    "reason": "product-handle"
+  }
+]

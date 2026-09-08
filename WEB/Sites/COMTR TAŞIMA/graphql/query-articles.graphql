@@ -1,0 +1,15 @@
+query ExistingArticles {
+  blog(id: "gid://shopify/Blog/125948657956") {
+    id
+    handle
+    articles(first: 20) {
+      nodes {
+        id
+        handle
+        title
+        body
+        isPublished
+      }
+    }
+  }
+}

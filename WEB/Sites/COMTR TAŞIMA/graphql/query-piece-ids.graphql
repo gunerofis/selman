@@ -1,0 +1,6 @@
+query PieceIds {
+  c9: collectionByHandle(handle: "9-parca-sumen-takimi") { id productsCount { count } }
+  c10: collectionByHandle(handle: "10-parca-sumen-takimi") { id productsCount { count } }
+  c11: collectionByHandle(handle: "11-parca-sumen-takimi") { id productsCount { count } }
+  c12: collectionByHandle(handle: "12-parca-sumen-takimi") { id productsCount { count } }
+}

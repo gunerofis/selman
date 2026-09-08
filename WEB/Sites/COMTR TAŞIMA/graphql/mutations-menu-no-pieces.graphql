@@ -1,0 +1,51 @@
+mutation RemovePieceFiltersFromNav {
+  menuUpdate(
+    id: "gid://shopify/Menu/323167682852"
+    title: "Ana menü"
+    items: [
+      {
+        title: "Sümen Takımları"
+        type: COLLECTION
+        resourceId: "gid://shopify/Collection/660811153700"
+        items: [
+          { title: "Tüm Sümen Takımları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811153700" }
+          { title: "Deri Sümen Takımları", type: COLLECTION, resourceId: "gid://shopify/Collection/660821442852" }
+          { title: "Lüks Sümen Takımları", type: COLLECTION, resourceId: "gid://shopify/Collection/660821573924" }
+          { title: "Kristal Sümen Takımları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811415844" }
+        ]
+      }
+      { title: "Masa İsimlikleri", type: COLLECTION, resourceId: "gid://shopify/Collection/660821639460" }
+      {
+        title: "Masa Üstü Ürünleri"
+        type: COLLECTION
+        resourceId: "gid://shopify/Collection/660811284772"
+        items: [
+          { title: "Masa Üstü Setler", type: COLLECTION, resourceId: "gid://shopify/Collection/660811284772" }
+          { title: "Sümen Aksesuarları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811448612" }
+        ]
+      }
+      {
+        title: "Makam Ürünleri"
+        type: COLLECTION
+        resourceId: "gid://shopify/Collection/660811317540"
+        items: [
+          { title: "Makam Panoları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811317540" }
+          { title: "Kumaşlı Panolar", type: COLLECTION, resourceId: "gid://shopify/Collection/660821541156" }
+          { title: "Makam Bayrakları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811481380" }
+        ]
+      }
+      { title: "Otel Ekipmanları", type: COLLECTION, resourceId: "gid://shopify/Collection/660811546916" }
+      { title: "Rehber", type: PAGE, resourceId: "gid://shopify/Page/166741475620" }
+      { title: "SSS", type: PAGE, resourceId: "gid://shopify/Page/166814220580" }
+      { title: "İletişim", type: PAGE, resourceId: "gid://shopify/Page/166741541156" }
+    ]
+  ) {
+    menu {
+      items {
+        title
+        items { title url }
+      }
+    }
+    userErrors { field message }
+  }
+}

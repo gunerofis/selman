@@ -1,0 +1,11 @@
+query TitleTags {
+  products(first: 100) {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      id
+      handle
+      title
+      seo { title }
+    }
+  }
+}

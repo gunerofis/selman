@@ -1,0 +1,273 @@
+import { useEffect, useRef } from "react";
+import { Link } from "@tanstack/react-router";
+import { Trash2, X } from "lucide-react";
+import { cartCount, cartSubtotal, shippingFor, useCart } from "@/lib/cart";
+import { PASTEL, getColor, getProduct, productSlug } from "@/lib/products";
+import { includedVat } from "@/lib/commerce";
+import { formatPrice } from "@/lib/utils";
+import { ColorDot } from "@/components/color-swatch";
+import { LineColorPicker } from "@/components/line-color-picker";
+import { usePrefs } from "@/lib/prefs";
+import { QtyControl } from "@/components/qty-control";
+import { Button } from "@/components/ui/button";
+import { ShippingBar } from "@/components/shipping-bar";
+import { BuyAssurance } from "@/components/buy-assurance";
+import { SeriesFill } from "@/components/series-fill";
+import { SaveForLater } from "@/components/save-for-later";
+import { toastRemoved } from "@/lib/cart-toast";
+import { trapTab } from "@/lib/focus";
+import { cn } from "@/lib/utils";
+
+export function CartDrawer() {
+  const open = useCart((s) => s.drawerOpen);
+  const close = useCart((s) => s.closeDrawer);
+  const lastAdded = useCart((s) => s.lastAdded);
+  const lines = useCart((s) => s.lines);
+  const setQty = useCart((s) => s.setQty);
+  const remove = useCart((s) => s.remove);
+  const setColor = useCart((s) => s.setColor);
+  const recent = usePrefs((s) => s.recent);
+  const recents = recent
+    .map(getProduct)
+    .filter((p): p is NonNullable<ReturnType<typeof getProduct>> => p != null)
+    .slice(0, 4);
+  const subtotal = cartSubtotal(lines);
+  const shipping = shippingFor(subtotal);
+  const total = subtotal + shipping;
+  const panelRef = useRef<HTMLElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const lastLineRef = useRef<HTMLLIElement>(null);
+  const lastFocus = useRef<HTMLElement | null>(null);
+  const closeAfterNavigate = () => window.setTimeout(close, 0);
+
+  useEffect(() => {
+    if (!open) return;
+    lastFocus.current = document.activeElement as HTMLElement | null;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const t = window.setTimeout(() => closeRef.current?.focus(), 20);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        close();
+        return;
+      }
+      if (e.key === "Tab" && panelRef.current) trapTab(e, panelRef.current);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+      lastFocus.current?.focus();
+    };
+  }, [open, close]);
+
+  useEffect(() => {
+    if (!open || !lastAdded) return;
+    lastLineRef.current?.scrollIntoView({ block: "nearest" });
+  }, [open, lastAdded]);
+
+  return (
+    <div
+      className={cn("fixed inset-0 z-50 print:hidden", open ? "pointer-events-auto" : "pointer-events-none")}
+      aria-hidden={!open}
+      inert={!open}
+      data-print-hide
+    >
+      <button
+        type="button"
+        aria-label="Kapat"
+        tabIndex={open ? 0 : -1}
+        className={cn(
+          "absolute inset-0 bg-bg-deep/40 transition-opacity duration-200",
+          open ? "opacity-100" : "opacity-0",
+        )}
+        onClick={close}
+      />
+      <aside
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Sepet"
+        className={cn(
+          "absolute top-0 right-0 flex h-full w-full max-w-md flex-col border-l border-dashed border-border bg-bg-elevated transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)]",
+          open ? "translate-x-0" : "translate-x-full",
+        )}
+      >
+        <div className="flex h-16 items-center justify-between border-b border-dashed border-border px-4">
+          <h2 className="font-display text-2xl">Sepet · {cartCount(lines)}</h2>
+          <button
+            ref={closeRef}
+            type="button"
+            className="flex size-11 items-center justify-center"
+            aria-label="Kapat"
+            onClick={close}
+          >
+            <X className="size-5" />
+          </button>
+        </div>
+        <span className="sr-only" aria-live="polite">
+          {lastAdded ? `${getProduct(lastAdded.sku)?.name ?? lastAdded.sku} eklendi` : ""}
+        </span>
+
+        {lines.length === 0 ? (
+          <div className="flex flex-1 flex-col items-center justify-center gap-3 px-6 text-center">
+            <p className="font-display text-2xl">Sepet boş</p>
+            <p className="text-sm text-fg-muted">Koleksiyondan bir parça ekleyin.</p>
+            <Link to="/koleksiyon" onClick={closeAfterNavigate}>
+              <Button>Koleksiyona git</Button>
+            </Link>
+            {recents.length > 0 ? (
+              <ul className="mt-8 w-full divide-y divide-dashed divide-border border-t border-dashed border-border text-left">
+                {recents.map((p) => (
+                  <li key={p.sku}>
+                    <Link
+                      to="/urun/$sku"
+                      params={{ sku: productSlug(p) }}
+                      onClick={closeAfterNavigate}
+                      className="flex items-center gap-3 py-3"
+                    >
+                      <img src={p.image} alt="" className="size-12 object-contain" />
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-display">{p.name}</span>
+                        <span className="font-mono text-[11px] text-fg-muted">{p.sku}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ) : (
+          <>
+            <div className="border-b border-border px-4 py-3">
+              <ShippingBar subtotal={subtotal} />
+            </div>
+            <ul className="flex-1 overflow-y-auto px-4">
+              {lines.map((line) => {
+                const p = getProduct(line.sku);
+                if (!p) return null;
+                const color = getColor(line.color);
+                const isLast =
+                  lastAdded?.sku === line.sku && lastAdded.color === line.color;
+                return (
+                  <li
+                    key={`${line.sku}-${line.color}`}
+                    ref={isLast ? lastLineRef : undefined}
+                    className={cn(
+                      "flex gap-3 border-b border-dashed border-border py-4",
+                      isLast && "-mx-4 bg-bg-wash px-4",
+                    )}
+                  >
+                    <Link
+                      to="/urun/$sku"
+                      params={{ sku: productSlug(p) }}
+                      search={{ renk: line.color }}
+                      onClick={closeAfterNavigate}
+                      className="size-20 shrink-0 overflow-hidden"
+                      style={{ backgroundColor: PASTEL[line.color] }}
+                    >
+                      <img src={p.image} alt="" className="size-full object-contain" />
+                    </Link>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-start justify-between gap-2">
+                        <Link
+                          to="/urun/$sku"
+                          params={{ sku: productSlug(p) }}
+                          search={{ renk: line.color }}
+                          onClick={closeAfterNavigate}
+                          className="font-display text-lg leading-tight"
+                        >
+                          {p.name}
+                        </Link>
+                        <button
+                          type="button"
+                          className="flex size-9 shrink-0 items-center justify-center text-fg-muted hover:text-danger"
+                          aria-label="Kaldır"
+                          onClick={() => {
+                            remove(line.sku, line.color);
+                            toastRemoved(p.name);
+                          }}
+                        >
+                          <Trash2 className="size-4" />
+                        </button>
+                      </div>
+                      {isLast ? (
+                        <p className="font-mono text-[11px] text-taba">Az önce eklendi</p>
+                      ) : null}
+                      <p className="mt-1 flex items-center gap-2 text-xs text-fg-muted">
+                        <ColorDot id={line.color} />
+                        {color?.name}
+                      </p>
+                      <LineColorPicker
+                        value={line.color}
+                        label={`${p.name} renk`}
+                        onChange={(id) => setColor(line.sku, line.color, id)}
+                      />
+                      <div className="mt-2 flex items-center justify-between">
+                        <QtyControl
+                          value={line.qty}
+                          onChange={(n) => setQty(line.sku, line.color, n)}
+                        />
+                        <span className="font-mono text-sm">{formatPrice(p.price * line.qty)}</span>
+                      </div>
+                      <SaveForLater sku={line.sku} color={line.color} />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+            <SeriesFill compact />
+            <div className="border-t border-border p-4">
+              <div className="mb-1 flex justify-between text-sm">
+                <span className="text-fg-muted">Toplam</span>
+                <span className="tabular-nums">{formatPrice(total)}</span>
+              </div>
+              <p className="mb-3 text-xs text-fg-muted">KDV dahil {formatPrice(includedVat(total))}</p>
+              <Link to="/odeme" onClick={closeAfterNavigate} className="block">
+                <Button className="w-full" size="lg">
+                  Ödemeye geç
+                </Button>
+              </Link>
+              <p className="mt-1 text-center font-mono text-[11px] text-fg-muted">
+                Kart çekilmez · e-postayla gönder
+              </p>
+              <Link
+                to="/teklif"
+                search={{
+                  sku: lines.length === 1 ? lines[0].sku : undefined,
+                  renk: lines[0]?.color,
+                  not: lines
+                    .map((l) => `${l.sku} ${getColor(l.color)?.name ?? l.color}`)
+                    .join(" · "),
+                }}
+                onClick={closeAfterNavigate}
+                className="mt-2 block text-center text-sm text-fg-muted hover:text-fg"
+              >
+                50+ adet teklif
+              </Link>
+              <button
+                type="button"
+                className="mt-2 h-11 w-full text-sm text-fg-muted hover:text-fg"
+                onClick={close}
+              >
+                Alışverişe devam
+              </button>
+              <div className="mt-3">
+                <BuyAssurance />
+              </div>
+              <Link
+                to="/sepet"
+                onClick={closeAfterNavigate}
+                className="mt-3 block text-center text-sm text-fg-muted hover:text-fg"
+              >
+                Sepet sayfası
+              </Link>
+            </div>
+          </>
+        )}
+      </aside>
+    </div>
+  );
+}

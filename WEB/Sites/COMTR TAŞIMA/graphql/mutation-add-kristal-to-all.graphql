@@ -1,0 +1,15 @@
+mutation AddKristalToAll {
+  collectionAddProducts(
+    id: "gid://shopify/Collection/660811153700"
+    productIds: [
+      "gid://shopify/Product/10785349697828"
+      "gid://shopify/Product/10785349665060"
+      "gid://shopify/Product/10785349599524"
+      "gid://shopify/Product/10785349566756"
+      "gid://shopify/Product/10785345732900"
+    ]
+  ) {
+    collection { id productsCount { count } }
+    userErrors { field message }
+  }
+}

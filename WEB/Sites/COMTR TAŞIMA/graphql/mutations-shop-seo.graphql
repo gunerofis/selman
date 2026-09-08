@@ -1,0 +1,21 @@
+mutation SetHomepageSeo {
+  metafieldsSet(metafields: [
+    {
+      ownerId: "gid://shopify/Shop/102665617700"
+      namespace: "global"
+      key: "title_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı TR"
+    }
+    {
+      ownerId: "gid://shopify/Shop/102665617700"
+      namespace: "global"
+      key: "description_tag"
+      type: "single_line_text_field"
+      value: "Sümen takımı modelleri, deri masa setleri ve masaüstü ofis ürünleri. Güner Ofis üretimi, Sümen Takımı TR mağazası."
+    }
+  ]) {
+    metafields { namespace key value }
+    userErrors { field message }
+  }
+}

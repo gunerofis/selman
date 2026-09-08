@@ -1,0 +1,14 @@
+mutation OlcuDefinition {
+  olcu: metafieldDefinitionCreate(definition: {
+    name: "Ölçü"
+    namespace: "custom"
+    key: "sumen_olcu"
+    type: "single_line_text_field"
+    ownerType: PRODUCT
+    access: { storefront: PUBLIC_READ }
+    capabilities: { adminFilterable: { enabled: true } }
+  }) {
+    createdDefinition { id key }
+    userErrors { field message }
+  }
+}

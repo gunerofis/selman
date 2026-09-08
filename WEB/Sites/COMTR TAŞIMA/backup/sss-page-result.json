@@ -1,0 +1,11 @@
+{
+  "pageCreate": {
+    "page": {
+      "id": "gid://shopify/Page/166814220580",
+      "handle": "sss",
+      "title": "Sümen Takımı Hakkında Sık Sorulan Sorular",
+      "templateSuffix": "faq"
+    },
+    "userErrors": []
+  }
+}

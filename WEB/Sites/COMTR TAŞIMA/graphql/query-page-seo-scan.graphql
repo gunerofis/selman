@@ -1,0 +1,18 @@
+query PageSeoScan {
+  shop {
+    name
+    metafields(first: 20, namespace: "global") {
+      nodes { key value }
+    }
+  }
+  pages(first: 50) {
+    nodes {
+      id
+      handle
+      title
+      metafields(first: 15, namespace: "global") {
+        nodes { key value }
+      }
+    }
+  }
+}

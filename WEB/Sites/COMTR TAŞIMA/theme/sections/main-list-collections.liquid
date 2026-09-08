@@ -1,0 +1,55 @@
+<section class="generic-page catalog-page">
+  <header class="catalog-head">
+    <div><p class="eyebrow">Koleksiyonlar</p><h1>Koleksiyonlar</h1></div>
+    <div class="catalog-head__copy"><p>Sümen takımları, masa isimlikleri, makam ürünleri ve otel ekipmanlarını kullanım yerine göre ayırarak inceleyin.</p></div>
+  </header>
+
+  {% assign sumen_all = collections['sumen-takimi'] %}
+  {% assign sumen_subs = 'deri-sumen-takimlari,luks-sumen-takimlari,kristal-sumen-takimlari' | split: ',' %}
+  <section class="collection-family" aria-labelledby="sumen-family-title">
+    <header class="collection-family__head">
+      <div>
+        <p class="eyebrow">Ana kategori</p>
+        <h2 id="sumen-family-title">
+          <a href="{{ sumen_all.url | default: '/collections/sumen-takimi' }}">Sümen Takımları</a>
+        </h2>
+        <p>Tüm sümen takımları tek kategoride toplanır. Deri, lüks ve kristal alt yollarıyla; parça sayısı koleksiyon içindeki filtreden seçilir.</p>
+      </div>
+      <a class="text-link" href="{{ sumen_all.url | default: '/collections/sumen-takimi' }}">
+        Tümünü gör{% if sumen_all != blank %} ({{ sumen_all.products_count }}){% endif %}
+      </a>
+    </header>
+    <div class="home-board home-board--cats collection-index">
+      {% for handle in sumen_subs %}
+        {% assign col = collections[handle] %}
+        {% if col != blank %}
+          {% render 'collection-card', collection: col %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  {% assign other_handles = 'masa-ustu-isimlikler,masa-ustu-setler,sumen-aksesuarlari,makam-panolari,kumasli-panolar,makam-bayraklari,deri-otel-ekipmanlari' | split: ',' %}
+  <section class="collection-family" aria-labelledby="other-family-title">
+    <header class="collection-family__head">
+      <div>
+        <p class="eyebrow">Diğer</p>
+        <h2 id="other-family-title">Masa üstü, makam ve otel</h2>
+      </div>
+    </header>
+    <div class="home-board home-board--cats collection-index">
+      {% for handle in other_handles %}
+        {% assign col = collections[handle] %}
+        {% if col != blank %}
+          {% render 'collection-card', collection: col %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <p class="collection-index__guide"><a class="text-link" href="/pages/sumen-takimi-rehberi">Sümen takımı rehberi</a></p>
+</section>
+
+{% schema %}
+{ "name": "Koleksiyon listesi", "settings": [] }
+{% endschema %}

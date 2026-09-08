@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#162235">
+  <title>Pano Maliyet</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M11 11h26v26H11z" fill="none" stroke="currentColor" stroke-width="3.4"/>
+            <path d="M17.3 33V15h9a4.7 4.7 0 0 1 0 9.4h-9" fill="none" stroke="currentColor" stroke-width="3.4"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-line">
+            <h1>Pano Maliyet</h1>
+            <span class="local-badge">YEREL</span>
+          </div>
+          <p>Üretim maliyeti hesaplama</p>
+        </div>
+      </div>
+
+      <div id="ratePill" class="rate-pill is-loading" aria-live="polite">
+        <span class="rate-dot" aria-hidden="true"></span>
+        <div>
+          <span class="rate-label">USD/TL</span>
+          <strong id="rateValue">Kur alınıyor…</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="control-panel" aria-label="Hesaplama bilgileri">
+        <form id="costForm" novalidate>
+          <section class="form-section">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">01</span>
+                <h2>Pano ölçüsü</h2>
+              </div>
+              <span class="section-note">Yükseklik × genişlik</span>
+            </div>
+
+            <div class="dimension-grid">
+              <label class="field">
+                <span>Yükseklik</span>
+                <div class="input-wrap">
+                  <input id="heightCm" name="heightCm" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="60" required>
+                  <span>cm</span>
+                </div>
+              </label>
+              <div class="times" aria-hidden="true">×</div>
+              <label class="field">
+                <span>Genişlik</span>
+                <div class="input-wrap">
+                  <input id="widthCm" name="widthCm" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="90" required>
+                  <span>cm</span>
+                </div>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-section prices-section">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">02</span>
+                <h2>Malzeme fiyatları</h2>
+              </div>
+              <span id="saveState" class="save-state">Bu bilgisayarda saklanır</span>
+            </div>
+
+            <div class="price-list">
+              <label class="price-field">
+                <span class="material-icon material-mdf">M</span>
+                <span class="material-name">MDF plaka<small>210 × 280 cm</small></span>
+                <span class="currency-input"><b>$</b><input id="mdfUsd" name="mdfUsd" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0,00" required></span>
+              </label>
+              <label class="price-field">
+                <span class="material-icon material-xbi">X</span>
+                <span class="material-name">XBi<small>1 m² fiyatı</small></span>
+                <span class="currency-input"><b>$</b><input id="xbiUsd" name="xbiUsd" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0,00" required></span>
+              </label>
+              <label class="price-field">
+                <span class="material-icon material-fabric">K</span>
+                <span class="material-name">Kumaş<small>1 metretül fiyatı</small></span>
+                <span class="currency-input"><b>$</b><input id="fabricUsd" name="fabricUsd" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0,00" required></span>
+              </label>
+              <label class="price-field">
+                <span class="material-icon material-aluminum">A</span>
+                <span class="material-name">Alüminyum<small>600 cm profil fiyatı</small></span>
+                <span class="currency-input"><b>$</b><input id="aluminumUsd" name="aluminumUsd" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0,00" required></span>
+              </label>
+              <label class="price-field">
+                <span class="material-icon material-other">D</span>
+                <span class="material-name">Diğer giderler<small>Pano başına sabit gider</small></span>
+                <span class="currency-input"><b>$</b><input id="otherUsd" name="otherUsd" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0,00" required></span>
+              </label>
+            </div>
+          </section>
+
+          <div id="formMessage" class="form-message" role="alert" hidden></div>
+
+          <button id="calculateButton" class="calculate-button" type="submit">
+            <span class="button-text">Maliyeti hesapla</span>
+            <span class="button-loader" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <p class="live-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12M7.76 16.24l-2.12 2.12"/></svg>
+            Her hesaplamada güncel USD/TL kuru yeniden alınır.
+          </p>
+        </form>
+      </aside>
+
+      <section class="result-panel" aria-live="polite">
+        <div id="emptyState" class="empty-state">
+          <div class="board-illustration" aria-hidden="true">
+            <div class="board-inner">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <span class="empty-kicker">HESAPLAMA ALANI</span>
+          <h2>Ölçüleri ve güncel fiyatları girin</h2>
+          <p>MDF yerleşimi, XBi, kumaş ve profil maliyeti tek pano için ayrıntılı hesaplanır.</p>
+          <div class="empty-rules" aria-label="Sabit hesap kuralları">
+            <span>210 × 280 MDF</span>
+            <span>Tek yönde dizilim</span>
+            <span>%30 işçilik · %25 kâr</span>
+            <span>Canlı USD/TL</span>
+          </div>
+        </div>
+
+        <div id="resultState" class="result-state" hidden>
+          <div class="result-header">
+            <div>
+              <span class="eyebrow">HESAP SONUCU</span>
+              <h2 id="resultDimensions">—</h2>
+              <p id="resultRate">—</p>
+            </div>
+            <div class="total-stack">
+              <div class="total-card">
+                <span>Genel toplam</span>
+                <strong id="totalTl">—</strong>
+                <small>Hammadde + %30 işçilik + %25 kâr · KDV hariçtir</small>
+              </div>
+              <div class="subtotal-card">
+                <span>Toplam hammadde maliyeti</span>
+                <strong id="baseTl">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="cost-summary" aria-label="Maliyet özeti">
+            <div class="cost-row">
+              <div><span class="summary-swatch swatch-mdf"></span><b>MDF</b></div>
+              <strong id="mdfCost">—</strong>
+            </div>
+            <div class="cost-row">
+              <div><span class="summary-swatch swatch-xbi"></span><b>XBi</b></div>
+              <strong id="xbiCost">—</strong>
+            </div>
+            <div class="cost-row">
+              <div><span class="summary-swatch swatch-fabric"></span><b>Kumaş</b></div>
+              <strong id="fabricCost">—</strong>
+            </div>
+            <div class="cost-row">
+              <div><span class="summary-swatch swatch-aluminum"></span><b>Alüminyum</b></div>
+              <strong id="aluminumCost">—</strong>
+            </div>
+            <div class="cost-row">
+              <div><span class="summary-swatch swatch-other"></span><b>Diğer giderler</b></div>
+              <strong id="otherCost">—</strong>
+            </div>
+            <div class="cost-row cost-row-added">
+              <div><span class="summary-swatch swatch-labor"></span><b>İşçilik %30</b></div>
+              <strong id="laborCost">—</strong>
+            </div>
+            <div class="cost-row cost-row-added">
+              <div><span class="summary-swatch swatch-profit"></span><b>Kâr %25</b></div>
+              <strong id="profitCost">—</strong>
+            </div>
+          </div>
+
+          <div class="detail-heading">
+            <h3>Hesap ayrıntıları</h3>
+            <span>Tüm değerler tek pano içindir</span>
+          </div>
+
+          <div class="detail-grid">
+            <article class="detail-card">
+              <div class="detail-title"><span class="material-icon material-mdf">M</span><div><h4>MDF</h4><p>Tek yönde plaka verimi</p></div></div>
+              <dl>
+                <div><dt>Plaka / pano</dt><dd id="mdfSizes">—</dd></div>
+                <div><dt>Plakadan çıkan</dt><dd id="mdfPieces">—</dd></div>
+                <div><dt>Plaka TL karşılığı</dt><dd id="mdfSheetTl">—</dd></div>
+                <div class="detail-total"><dt>Pano MDF maliyeti</dt><dd id="mdfDetailCost">—</dd></div>
+              </dl>
+            </article>
+
+            <article class="detail-card">
+              <div class="detail-title"><span class="material-icon material-xbi">X</span><div><h4>XBi</h4><p>100 cm minimum yükseklik</p></div></div>
+              <dl>
+                <div><dt>Gerçek / hesap yüksekliği</dt><dd id="xbiHeights">—</dd></div>
+                <div><dt>Hesap alanı</dt><dd id="xbiArea">—</dd></div>
+                <div><dt>Güncel birim fiyat</dt><dd id="xbiUnitTl">—</dd></div>
+                <div class="detail-total"><dt>XBi maliyeti</dt><dd id="xbiDetailCost">—</dd></div>
+              </dl>
+            </article>
+
+            <article class="detail-card">
+              <div class="detail-title"><span class="material-icon material-fabric">K</span><div><h4>Kumaş</h4><p>140 cm baz en kuralı</p></div></div>
+              <dl>
+                <div><dt>Gerçek / baz yükseklik</dt><dd id="fabricHeights">—</dd></div>
+                <div><dt>Uygulanan kural</dt><dd id="fabricRule">—</dd></div>
+                <div><dt>Tüketim / birim fiyat</dt><dd id="fabricUsage">—</dd></div>
+                <div class="detail-total"><dt>Kumaş maliyeti</dt><dd id="fabricDetailCost">—</dd></div>
+              </dl>
+            </article>
+
+            <article class="detail-card">
+              <div class="detail-title"><span class="material-icon material-aluminum">A</span><div><h4>Alüminyum</h4><p>600 cm profil oranı</p></div></div>
+              <dl>
+                <div><dt>Pano çevresi</dt><dd id="aluminumPerimeter">—</dd></div>
+                <div><dt>Kullanılan oran</dt><dd id="aluminumRatio">—</dd></div>
+                <div><dt>600 cm TL karşılığı</dt><dd id="aluminumProfileTl">—</dd></div>
+                <div class="detail-total"><dt>Alüminyum maliyeti</dt><dd id="aluminumDetailCost">—</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Pano Maliyet v1.1</span>
+      <span>Kur: <a href="https://frankfurter.dev/" target="_blank" rel="noreferrer">Frankfurter</a> · <a href="https://www.exchangerate-api.com/" target="_blank" rel="noreferrer">ExchangeRate-API</a> &nbsp;|&nbsp; Fiyat ayarları bu bilgisayarda saklanır.</span>
+    </footer>
+  </div>
+
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

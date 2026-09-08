@@ -1,0 +1,21 @@
+query SeoContinue {
+  shop { name description }
+  makroCount: productsCount(query: "vendor:'Makro Ofis'") { count }
+  gunerCount: productsCount(query: "vendor:'Güner Ofis'") { count }
+  sampleGuner: products(first: 3, query: "vendor:'Güner Ofis'") {
+    nodes { handle vendor }
+  }
+  sampleMakro: products(first: 3, query: "vendor:'Makro Ofis'") {
+    nodes { handle vendor }
+  }
+  pages(first: 50) {
+    nodes {
+      id
+      handle
+      title
+      metafields(first: 10, namespace: "global") {
+        nodes { key value }
+      }
+    }
+  }
+}

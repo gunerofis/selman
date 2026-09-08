@@ -1,0 +1,244 @@
+{% liquid
+  assign all_sumen = collections['sumen-takimi']
+  if all_sumen == blank
+    assign all_sumen = collections.all
+  endif
+  assign leather = collections['deri-sumen-takimlari']
+  if leather == blank or leather.products_count == 0
+    assign leather = all_sumen
+  endif
+  assign luxe = collections['luks-sumen-takimlari']
+  assign crystal = collections['kristal-sumen-takimlari']
+  assign names = collections['masa-ustu-isimlikler']
+  assign boards = collections['makam-panolari']
+  assign hotel = collections['deri-otel-ekipmanlari']
+  assign journal = blogs['news']
+
+  assign hero_product = blank
+  for product in leather.products
+    if product.title contains 'Liya' and product.title contains '10 Parça' and product.title contains 'Siyah'
+      assign hero_product = product
+      break
+    endif
+  endfor
+  if hero_product == blank
+    assign hero_product = leather.products.first
+  endif
+  assign hero_mark = ''
+  assign hero_pieces = ''
+  assign hero_material = ''
+  assign hero_color = ''
+  if hero_product != blank
+    assign hero_mark = hero_product.title | split: ' ' | first
+    assign hero_pieces = hero_product.metafields.custom.parca_sayisi.value | append: '' | remove: ' parça' | remove: ' Parça' | strip
+    if hero_pieces == blank and hero_product.title contains '10 Parça'
+      assign hero_pieces = '10'
+    elsif hero_pieces == blank and hero_product.title contains '11 Parça'
+      assign hero_pieces = '11'
+    elsif hero_pieces == blank and hero_product.title contains '12 Parça'
+      assign hero_pieces = '12'
+    elsif hero_pieces == blank and hero_product.title contains '9 Parça'
+      assign hero_pieces = '9'
+    endif
+    assign hero_material = hero_product.metafields.custom.malzeme.value
+    assign hero_color = hero_product.metafields.custom.ana_renk.value
+  endif
+
+  assign make_image = blank
+  if names != blank and names.products.first.featured_image
+    assign make_image = names.products.first.featured_image
+  elsif hero_product != blank and hero_product.images.size > 1
+    assign make_image = hero_product.images[1]
+  elsif hero_product != blank
+    assign make_image = hero_product.featured_image
+  endif
+%}
+
+<div class="home">
+  <header class="home-hero">
+    <div class="home-hero__copy">
+      <p class="home-kicker home-hero__kicker">Sümen Takımı</p>
+      <h1 id="hero-title-{{ section.id }}">{{ section.settings.hero_title | newline_to_br }}</h1>
+      <p class="home-lead">{{ section.settings.hero_text }}</p>
+      {% if hero_pieces != blank or hero_material != blank or hero_color != blank %}
+        <p class="home-hero__facts">
+          {% if hero_pieces != blank %}<span>{{ hero_pieces }} parça</span>{% endif %}
+          {% if hero_material != blank %}<span>{{ hero_material }}</span>{% endif %}
+          {% if hero_color != blank %}<span>{{ hero_color }}</span>{% endif %}
+        </p>
+      {% endif %}
+      <p class="home-hero__actions">
+        <a class="button button-dark" href="{{ all_sumen.url | default: '/collections/sumen-takimi' }}">Tüm sümen takımları</a>
+        <a class="text-link" href="{{ leather.url | default: '/collections/deri-sumen-takimlari' }}">Deri modeller</a>
+      </p>
+    </div>
+    {% if hero_product != blank and hero_product.featured_image %}
+      <div class="home-hero__stage">
+        {% if hero_mark != blank %}
+          <p class="home-hero__mark" aria-hidden="true">{{ hero_mark }}</p>
+        {% endif %}
+        <p class="home-hero__spine" aria-hidden="true">Gebze üretim</p>
+        <a class="home-hero__media" href="{{ hero_product.url }}">
+          {{ hero_product.featured_image | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '640, 900, 1200, 1600', sizes: '(max-width: 900px) 100vw, 58vw', alt: hero_product.featured_image.alt | default: hero_product.title }}
+        </a>
+        {% assign thumb_n = 0 %}
+        {% capture hero_thumbs %}
+          {% for product in leather.products %}
+            {% if hero_product != blank and product.id == hero_product.id %}{% continue %}{% endif %}
+            {% unless product.title contains 'Liya' and product.title contains '10 Parça' %}{% continue %}{% endunless %}
+            {% if product.featured_image %}
+              <a class="home-hero__thumb" href="{{ product.url }}" title="{{ product.title | escape }}">
+                {{ product.featured_image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '120, 200', alt: product.title }}
+              </a>
+              {% assign thumb_n = thumb_n | plus: 1 %}
+              {% if thumb_n == 3 %}{% break %}{% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endcapture %}
+        {% if thumb_n > 0 %}
+          <div class="home-hero__thumbs" aria-label="Diğer renkler">{{ hero_thumbs }}</div>
+        {% endif %}
+        <a class="home-hero__sheet" href="{{ hero_product.url }}">
+          <span>
+            <strong>{{ hero_product.title }}</strong>
+            {% if hero_pieces != blank or hero_material != blank %}
+              <em>
+                {% if hero_pieces != blank %}{{ hero_pieces }} parça{% endif %}
+                {% if hero_pieces != blank and hero_material != blank %} · {% endif %}
+                {% if hero_material != blank %}{{ hero_material }}{% endif %}
+              </em>
+            {% endif %}
+          </span>
+          <span class="home-hero__price">{{ hero_product.price | money }}</span>
+        </a>
+      </div>
+    {% endif %}
+  </header>
+
+  <nav class="home-lanes" aria-label="Koleksiyonlar">
+    <a href="{{ leather.url | default: '/collections/deri-sumen-takimlari' }}">Deri</a>
+    <a href="{{ luxe.url | default: '/collections/luks-sumen-takimlari' }}">Lüks</a>
+    <a href="{{ crystal.url | default: '/collections/kristal-sumen-takimlari' }}">Kristal</a>
+    <a href="{{ all_sumen.url | default: '/collections/sumen-takimi' }}">Tüm sümenler</a>
+    <a href="{{ names.url | default: '/collections/masa-ustu-isimlikler' }}">İsimlikler</a>
+    <a href="{{ boards.url | default: '/collections/makam-panolari' }}">Makam panoları</a>
+  </nav>
+
+  <section class="home-block" aria-labelledby="paths-title-{{ section.id }}">
+    <header class="home-block__head">
+      <h2 id="paths-title-{{ section.id }}">Koleksiyonlar</h2>
+      <a class="text-link" href="/collections">Tümü</a>
+    </header>
+    <div class="home-board home-board--4">
+      {% render 'collection-card', collection: leather, title: 'Deri sümen takımları' %}
+      {% render 'collection-card', collection: luxe, title: 'Lüks sümen takımları' %}
+      {% render 'collection-card', collection: crystal, title: 'Kristal masa setleri' %}
+      {% render 'collection-card', collection: names, title: 'Masa üstü isimlikler' %}
+    </div>
+  </section>
+
+  <section class="home-block" id="secili-setler" aria-labelledby="featured-title-{{ section.id }}">
+    <header class="home-block__head">
+      <h2 id="featured-title-{{ section.id }}">Seçili deri setler</h2>
+      <a class="text-link" href="{{ leather.url | default: '/collections/deri-sumen-takimlari' }}">Tümünü gör</a>
+    </header>
+    <div class="home-board home-board--4">
+      {% assign shown = 0 %}
+      {% for product in leather.products %}
+        {% if hero_product != blank and product.id == hero_product.id %}{% continue %}{% endif %}
+        {% unless product.title contains 'Liya' and product.title contains '10 Parça' %}{% continue %}{% endunless %}
+        {% render 'product-card', product: product %}
+        {% assign shown = shown | plus: 1 %}
+        {% if shown == 8 %}{% break %}{% endif %}
+      {% endfor %}
+      {% if shown < 8 %}
+        {% for product in leather.products %}
+          {% if hero_product != blank and product.id == hero_product.id %}{% continue %}{% endif %}
+          {% unless product.title contains 'Liya' %}{% continue %}{% endunless %}
+          {% if product.title contains '10 Parça' %}{% continue %}{% endif %}
+          {% render 'product-card', product: product %}
+          {% assign shown = shown | plus: 1 %}
+          {% if shown == 8 %}{% break %}{% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if shown < 8 %}
+        {% for product in leather.products %}
+          {% if hero_product != blank and product.id == hero_product.id %}{% continue %}{% endif %}
+          {% if product.title contains 'Liya' %}{% continue %}{% endif %}
+          {% render 'product-card', product: product %}
+          {% assign shown = shown | plus: 1 %}
+          {% if shown == 8 %}{% break %}{% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="home-make" aria-labelledby="personalization-title-{{ section.id }}">
+    {% if make_image %}
+      <div class="home-make__media">
+        {{ make_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '600, 900, 1200', sizes: '(max-width: 900px) 100vw, 48vw', alt: 'Masa üstü isimlik ve kişiselleştirme' }}
+      </div>
+    {% endif %}
+    <div class="home-make__copy">
+      <p class="home-kicker">Kişiselleştirme</p>
+      <h2 id="personalization-title-{{ section.id }}">İsimlik, unvan ve kurumsal sipariş</h2>
+      <p>Seçili ürünlerde isim ve unvanı ürün sayfasında yazın. Logo ve toplu alım için forma geçin.</p>
+      <a class="button button-dark" href="/pages/bize-ulasin">Bize yazın</a>
+    </div>
+  </section>
+
+  <section class="home-block home-block--quiet" aria-labelledby="desk-title-{{ section.id }}">
+    <header class="home-block__head">
+      <h2 id="desk-title-{{ section.id }}">Makam ve otel</h2>
+    </header>
+    <div class="home-board home-board--2">
+      {% render 'collection-card', collection: boards, title: 'Makam panoları' %}
+      {% render 'collection-card', collection: hotel, title: 'Otel ekipmanları' %}
+    </div>
+  </section>
+
+  {% if journal != blank and journal.articles_count > 0 %}
+    <section class="home-block" aria-labelledby="journal-title-{{ section.id }}">
+      <header class="home-block__head">
+        <h2 id="journal-title-{{ section.id }}">Seçim yazıları</h2>
+        <a class="text-link" href="{{ journal.url }}">Tümü</a>
+      </header>
+      <div class="home-board home-board--3">
+        {% for article in journal.articles limit: 3 %}
+          <a class="home-journal__card" href="{{ article.url }}">
+            {% if article.image %}
+              {{ article.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 640, 900', alt: article.image.alt | default: article.title }}
+            {% endif %}
+            <span>
+              <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d.%m.%Y' }}</time>
+              <strong>{{ article.title }}</strong>
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <ul class="home-trust" aria-label="Sipariş bilgileri">
+    <li>Gebze üretim</li>
+    <li>iyzico ile güvenli ödeme</li>
+    <li>İsimlik kişiselleştirme</li>
+    <li>Kurumsal sipariş</li>
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Özgün ana sayfa",
+  "settings": [
+    { "type": "textarea", "id": "hero_title", "label": "Ana başlık", "default": "Sümen Takımları ve\nMasaüstü Ofis Setleri" },
+    { "type": "textarea", "id": "hero_text", "label": "Ana açıklama", "default": "Deri sümen takımlarından kişiselleştirilebilir masa üstü aksesuarlara, çalışma alanınız için özenle seçilmiş parçalar." },
+    { "type": "collection", "id": "featured_collection", "label": "Öne çıkan ürün koleksiyonu" },
+    { "type": "collection", "id": "collection_1", "label": "Deri koleksiyonu" },
+    { "type": "collection", "id": "collection_2", "label": "Kristal koleksiyonu" },
+    { "type": "collection", "id": "collection_3", "label": "Makam koleksiyonu" },
+    { "type": "collection", "id": "collection_4", "label": "Otel koleksiyonu" }
+  ],
+  "presets": [{ "name": "Özgün ana sayfa" }]
+}
+{% endschema %}

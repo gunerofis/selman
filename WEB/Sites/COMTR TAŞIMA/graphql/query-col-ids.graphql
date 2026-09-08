@@ -1,0 +1,5 @@
+query ColIds {
+  deri: collectionByHandle(handle: "deri-sumen-takimlari") { id handle productsCount { count } }
+  luks: collectionByHandle(handle: "luks-sumen-takimlari") { id handle productsCount { count } }
+  kristal: collectionByHandle(handle: "kristal-sumen-takimlari") { id handle productsCount { count } }
+}

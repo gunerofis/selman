@@ -1,0 +1,13 @@
+query AllRedirects($cursor: String) {
+  urlRedirects(first: 250, after: $cursor) {
+    nodes {
+      id
+      path
+      target
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

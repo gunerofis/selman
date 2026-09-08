@@ -1,0 +1,170 @@
+<header class="site-header" data-site-header>
+  <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} ana sayfa">
+    {{ shop.name | upcase }}
+  </a>
+
+  <nav class="desktop-nav" aria-label="Ana menü">
+    {% assign menu = section.settings.menu | default: linklists['main-menu'] %}
+    {% if menu != blank and menu.links.size > 0 %}
+      {% for link in menu.links %}
+        {% if link.links.size > 0 %}
+          <details class="nav-group">
+            <summary>{{ link.title }}</summary>
+            <div>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+              {% for child in link.links %}
+                <a href="{{ child.url }}">{{ child.title }}</a>
+              {% endfor %}
+            </div>
+          </details>
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <a href="/collections/sumen-takimi">Sümen Takımları</a>
+      <a href="/collections/masa-ustu-isimlikler">Masa İsimlikleri</a>
+      <a href="/collections/makam-panolari">Makam Ürünleri</a>
+      <a href="/pages/sumen-takimi-rehberi">Rehber</a>
+      <a href="/pages/bize-ulasin">İletişim</a>
+    {% endif %}
+  </nav>
+
+  <div class="header-tools" aria-label="Hızlı işlemler">
+    <button class="tool-button search-trigger" type="button" aria-haspopup="dialog" aria-controls="SiteSearch">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <span>Ara</span>
+    </button>
+    {% if shop.customer_accounts_enabled %}
+      <a class="tool-button tool-account" href="{{ routes.account_url }}">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20v-2.2c0-3 2.4-5.3 5.3-5.3h2.4c2.9 0 5.3 2.3 5.3 5.3V20"/></svg>
+        <span>Hesabım</span>
+      </a>
+    {% endif %}
+    <a class="tool-button tool-cart" href="{{ routes.cart_url }}">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      <span>Sepet{% if cart.item_count > 0 %} ({{ cart.item_count }}){% endif %}</span>
+    </a>
+    <button class="menu-trigger" type="button" aria-label="Menüyü aç" aria-haspopup="dialog" aria-controls="MobileMenu">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<dialog class="sheet mobile-menu" id="MobileMenu" aria-labelledby="mobile-menu-title">
+  <div class="sheet-head">
+    <h2 id="mobile-menu-title">Menü</h2>
+    <button class="dialog-close" type="button" aria-label="Menüyü kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  </div>
+  <nav aria-label="Mobil menü">
+    {% assign menu = section.settings.menu | default: linklists['main-menu'] %}
+    {% if menu != blank and menu.links.size > 0 %}
+      {% for link in menu.links %}
+        <a href="{{ link.url }}"><span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ link.title }}</a>
+        {% for child in link.links %}
+          <a href="{{ child.url }}"><span>—</span>{{ child.title }}</a>
+        {% endfor %}
+      {% endfor %}
+    {% else %}
+      <a href="/collections/sumen-takimi"><span>01</span>Sümen Takımları</a>
+      <a href="/collections/masa-ustu-isimlikler"><span>02</span>Masa İsimlikleri</a>
+      <a href="/collections/makam-panolari"><span>03</span>Makam Ürünleri</a>
+      <a href="/pages/sumen-takimi-rehberi"><span>04</span>Rehber</a>
+      <a href="/pages/bize-ulasin"><span>05</span>İletişim</a>
+    {% endif %}
+  </nav>
+  <div class="mobile-menu-tools">
+    <button class="search-trigger" type="button">Ara</button>
+    {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}">Hesabım</a>{% endif %}
+    <a href="{{ routes.cart_url }}">Sepet</a>
+  </div>
+</dialog>
+
+<dialog class="search-dialog" id="SiteSearch" aria-labelledby="search-title">
+  <div class="search-shell">
+    <div class="sheet-head">
+      <h2 id="search-title">Ürün ara</h2>
+      <button class="dialog-close" type="button" aria-label="Aramayı kapat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+    </div>
+    <form class="search-form" role="search" action="{{ routes.search_url }}" method="get">
+      <label for="site-search">Ürün adı, kategori veya ürün kodu</label>
+      <div>
+        <input id="site-search" type="search" name="q" autocomplete="off" placeholder="Örneğin: deri, kristal, masa seti" required>
+        <input type="hidden" name="type" value="product">
+        <button type="submit" aria-label="Ara"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+      </div>
+    </form>
+    <p class="search-status">Mağazadaki ürünler içinde arayın.</p>
+  </div>
+</dialog>
+
+{%- unless request.page_type == 'index' -%}
+<nav class="breadcrumbs" aria-label="Sayfa yolu">
+  <ol>
+    <li><a href="{{ routes.root_url }}">Ana sayfa</a></li>
+    {%- if request.page_type == 'collection' -%}
+      <li><a href="{{ routes.collections_url }}">Koleksiyonlar</a></li>
+      <li><span aria-current="page">{{ collection.title }}</span></li>
+    {%- elsif request.page_type == 'list-collections' -%}
+      <li><span aria-current="page">Koleksiyonlar</span></li>
+    {%- elsif request.page_type == 'product' -%}
+      {%- assign crumb_collection = collection -%}
+      {%- if crumb_collection == blank -%}
+        {%- for candidate in product.collections -%}
+          {%- if crumb_collection == blank and candidate.handle != 'frontpage' -%}
+            {%- assign crumb_collection = candidate -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if crumb_collection != blank -%}
+        <li><a href="{{ crumb_collection.url }}">{{ crumb_collection.title }}</a></li>
+      {%- endif -%}
+      <li><span aria-current="page">{{ product.title }}</span></li>
+    {%- elsif request.page_type == 'page' -%}
+      <li><span aria-current="page">{{ page.title }}</span></li>
+    {%- elsif request.page_type == 'blog' -%}
+      <li><span aria-current="page">{{ blog.title }}</span></li>
+    {%- elsif request.page_type == 'article' -%}
+      <li><a href="{{ blog.url }}">{{ blog.title }}</a></li>
+      <li><span aria-current="page">{{ article.title }}</span></li>
+    {%- elsif request.page_type == 'search' -%}
+      <li><span aria-current="page">Arama</span></li>
+    {%- endif -%}
+  </ol>
+</nav>
+{%- endunless -%}
+
+{% stylesheet %}
+.nav-group { position: relative; display: inline-block; }
+.nav-group > summary { list-style: none; cursor: pointer; }
+.nav-group > summary::-webkit-details-marker { display: none; }
+.nav-group > div {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  background: #F4EFE3;
+  padding: 0.75rem 1rem;
+  z-index: 20;
+}
+.breadcrumbs { padding: 0.75rem 0; font-size: 0.85rem; }
+.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; list-style: none; margin: 0; padding: 0; }
+.breadcrumbs li + li::before { content: "/"; margin-right: 0.6rem; opacity: 0.5; }
+.breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
+.catalog-filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1rem; }
+@media (max-width: 700px) {
+  .desktop-nav { overflow-x: auto; max-width: 100%; }
+  .product-form input, .product-form select, .product-form button { max-width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Site üst alanı",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Ana menü" }
+  ]
+}
+{% endschema %}

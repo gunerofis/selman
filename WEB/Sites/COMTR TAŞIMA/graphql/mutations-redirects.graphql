@@ -1,0 +1,48 @@
+mutation CreateCleanupRedirects {
+  rFrontpage: urlRedirectCreate(urlRedirect: { path: "/collections/frontpage", target: "/collections/sumen-takimi" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rKristalSet: urlRedirectCreate(urlRedirect: { path: "/collections/kristal-masa-setleri", target: "/collections/kristal-sumen-takimlari" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rIsimlikDup: urlRedirectCreate(urlRedirect: { path: "/collections/kristal-masa-ustu-i̇simlikler", target: "/collections/masa-ustu-isimlikler" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rMakam3: urlRedirectCreate(urlRedirect: { path: "/collections/makam-panolari-3", target: "/collections/makam-panolari" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rKristal2: urlRedirectCreate(urlRedirect: { path: "/collections/kristal-sumen-takimlari-2", target: "/collections/kristal-sumen-takimlari" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDugmeliCol: urlRedirectCreate(urlRedirect: { path: "/collections/dugmeli-makam-panosu", target: "/collections/makam-panolari" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rAdresPage: urlRedirectCreate(urlRedirect: { path: "/pages/adres-ve-konum-bilgisi", target: "/pages/bize-ulasin" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rMakamPage: urlRedirectCreate(urlRedirect: { path: "/pages/makam-panolari-2", target: "/collections/makam-panolari" }) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updAdres: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611811033380"
+    urlRedirect: { path: "/adres-ve-konum-bilgisi", target: "/pages/bize-ulasin" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updDugmeli: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611812868388"
+    urlRedirect: { path: "/dugmeli-makam-panosu", target: "/collections/makam-panolari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+}

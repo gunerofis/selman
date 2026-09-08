@@ -1,0 +1,9 @@
+Her görselde aynı ürünün dört renk seçeneği birlikte gösterilir.
+
+Yerleşim:
+Sol üst: Siyah
+Sağ üst: Kahve
+Sol alt: Taba
+Sağ alt: Krem
+
+Bu dört renk, www.sumentakimi.com.tr ana sayfasındaki takım oluşturucuda görünen mevcut renk seçenekleridir.

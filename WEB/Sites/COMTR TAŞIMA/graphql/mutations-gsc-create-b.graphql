@@ -1,0 +1,86 @@
+mutation GscCreateB {
+  rLiya10Siyah: urlRedirectCreate(
+    urlRedirect: { path: "/liya-sumen-takimi-10-parca-kahverengi-tek-evrak-rafli-siyah", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDiamond9: urlRedirectCreate(
+    urlRedirect: { path: "/diamond-sumen-takimi-9-parca-mermer-desenli", target: "/collections/sumen-takimi" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rDiamond10: urlRedirectCreate(
+    urlRedirect: { path: "/diamond-sumen-takimi-10-parca-mermer-desenli", target: "/collections/sumen-takimi" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rEko501Short: urlRedirectCreate(
+    urlRedirect: { path: "/eko-501-deri-sumen-takimi-7-parca", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rEko501Gold: urlRedirectCreate(
+    urlRedirect: { path: "/eko-501-deri-sumen-takimi-7-parca-siyah-gold-aksesuar-2", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rEko502Gold: urlRedirectCreate(
+    urlRedirect: { path: "/eko502-deri-sumen-takimi-taba-6-parca-gold-aksesuar", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rChester11a: urlRedirectCreate(
+    urlRedirect: { path: "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-2", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rChester11b: urlRedirectCreate(
+    urlRedirect: { path: "/chester-deri-sumen-takimi-11-parca-gumus-aksesuar-", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rChester6: urlRedirectCreate(
+    urlRedirect: { path: "/chester-deri-sumen-takimi-6-parca", target: "/collections/deri-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rEko500Gold: urlRedirectCreate(
+    urlRedirect: { path: "/eko500-deri-evrak-raf-notluk-kalemlik-seti-kahve-gold-aksesuar", target: "/collections/masa-ustu-setler" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rKalemlik: urlRedirectCreate(
+    urlRedirect: { path: "/deri-kalemlik-notluk-telefonluk", target: "/collections/masa-ustu-setler" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rIkiParca: urlRedirectCreate(
+    urlRedirect: { path: "/deri-2-parca-masa-ustu-seti-kalemlik-ve-notluk", target: "/collections/masa-ustu-setler" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rOsmanli: urlRedirectCreate(
+    urlRedirect: { path: "/kucuk-osmanli-devlet-armasi-altin", target: "/products/kucuk-oval-osmanli-devlet-armasi-altin" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  rCamDeri: urlRedirectCreate(
+    urlRedirect: { path: "/cam-ve-deri-masa-isimligi", target: "/collections/masa-ustu-isimlikler" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+}

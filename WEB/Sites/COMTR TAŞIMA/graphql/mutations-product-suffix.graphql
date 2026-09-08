@@ -1,0 +1,6 @@
+mutation SetProductTemplate($product: ProductUpdateInput!) {
+  productUpdate(product: $product) {
+    product { id templateSuffix }
+    userErrors { field message }
+  }
+}

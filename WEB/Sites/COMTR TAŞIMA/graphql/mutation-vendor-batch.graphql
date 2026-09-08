@@ -1,0 +1,5 @@
+mutation VendorBatch180 {
+  p0: productUpdate(input: { id: "gid://shopify/Product/10785397375268", vendor: "Makro Ofis" }) { userErrors { message } }
+  p1: productUpdate(input: { id: "gid://shopify/Product/10785397408036", vendor: "Makro Ofis" }) { userErrors { message } }
+  p2: productUpdate(input: { id: "gid://shopify/Product/10785397440804", vendor: "Makro Ofis" }) { userErrors { message } }
+}

@@ -1,0 +1,21 @@
+query ProductCounts {
+  productsCount {
+    count
+  }
+  active: productsCount(query: "status:active") {
+    count
+  }
+  draft: productsCount(query: "status:draft") {
+    count
+  }
+  archived: productsCount(query: "status:archived") {
+    count
+  }
+  publications(first: 20) {
+    nodes {
+      id
+      name
+      autoPublish
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/Page/166741410084",
+      "namespace": "global",
+      "key": "title_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı Adres ve Konum Bilgileri"
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741410084",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı adres, iletişim ve konum bilgilerine ulaşın. Ofis ve üretim merkezimizi ziyaret etmek için yol tarifi alın."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741573924",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı EFT ve havale banka bilgilerine ulaşın. Sipariş ödemelerinizi güvenli ve hızlı şekilde gerçekleştirin."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741606692",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı olarak kişisel verilerinizin gizliliğine önem veriyoruz. Gizlilik politikamızı ve kişisel verilerin korunmasına ilişkin bilgileri inceleyin."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741639460",
+      "namespace": "global",
+      "key": "title_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı Kullanım Koşulları"
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741639460",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı web sitesini kullanırken geçerli olan kullanım koşulları ve kullanıcı sorumlulukları hakkında bilgi alın."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741672228",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen takımı, masa isimliği, makam panosu ve ofis masa seti modellerini inceleyin. İhtiyacınıza uygun ürünü Sümen Takımı'ndan güvenle online sipariş verin."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741704996",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı üzerinden gerçekleştirilen online alışverişlere ilişkin mesafeli satış sözleşmesini inceleyebilirsiniz."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741737764",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı siparişlerinde teslimat, kargo, değişim ve iade koşulları hakkında detaylı bilgi alın."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166741770532",
+      "namespace": "global",
+      "key": "description_tag",
+      "type": "single_line_text_field",
+      "value": "Sümen Takımı web sitesine üyelik ve kullanıcı hesabına ilişkin üyelik sözleşmesini inceleyebilirsiniz."
+    },
+    {
+      "ownerId": "gid://shopify/Page/166761464100",
+      "namespace": "global",
+      "key": "title_tag",
+      "value": "Hakkımızda ve Üretim | Sümen Takımı",
+      "type": "single_line_text_field"
+    }
+  ]
+}

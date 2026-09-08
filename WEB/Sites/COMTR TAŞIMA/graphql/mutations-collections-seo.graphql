@@ -1,0 +1,101 @@
+mutation UpdateCollectionSeo {
+  sumen: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811153700"
+    title: "Sümen Takımı Modelleri ve Fiyatları"
+    seo: {
+      title: "Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR"
+      description: "Deri, lüks ve kristal sümen takımı modellerini parça sayısı, malzeme ve masa kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>Sümen takımı modelleri; deri, lüks ve kristal setler ile masa düzenini tamamlayan masaüstü ofis ürünlerini bir araya getirir. Bu kategoride 9, 10, 11 ve 12 parça seçeneklerini, set içeriğini ve kişiselleştirilebilir isimlikli modelleri karşılaştırabilirsiniz.</p><p>İlgili sayfalar: <a href=\"/collections/deri-sumen-takimlari\">deri sümen takımları</a>, <a href=\"/collections/kristal-sumen-takimlari\">kristal sümen takımları</a>, <a href=\"/pages/sumen-takimi-rehberi\">sümen takımı rehberi</a>.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  deri: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660821442852"
+    title: "Deri Sümen Takımı Modelleri"
+    seo: {
+      title: "Deri Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR"
+      description: "Deri sümen takımı modellerini renk, parça sayısı, bakım ve kişiselleştirme seçenekleriyle inceleyin."
+    }
+    descriptionHtml: "<p>Deri sümen takımları günlük ofis kullanımında masa yüzeyini korur ve kalemlik, evraklık, isimlik gibi parçaları aynı düzende tutar. Siyah, kahve, taba ve bordo seçeneklerini aksesuar rengi ve set içeriğiyle birlikte değerlendirin.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  luks: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660821573924"
+    title: "Lüks Sümen Takımları"
+    seo: {
+      title: "Lüks Sümen Takımı Modelleri ve Fiyatları | Sümen Takımı TR"
+      description: "Yönetici masaları için lüks sümen takımı modellerini geniş set içeriği ve malzeme karakteriyle inceleyin."
+    }
+    descriptionHtml: "<p>Lüks sümen takımları geniş yönetici masaları için çok parçalı, bütünlüklü setlerdir. Chester ve Halep gibi modellerde masa bayraklı ve full set seçenekleri ayrı ürün olarak sunulur.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  kristal: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811415844"
+    title: "Kristal Sümen Takımları"
+    seo: {
+      title: "Kristal Sümen Takımı Modelleri | Sümen Takımı TR"
+      description: "Kristal sümen takımı ve kristal masa seti modellerini parça yapısı, metal rengi ve masa uyumuyla inceleyin."
+    }
+    descriptionHtml: "<p>Kristal sümen takımları masa düzenine sabit, parlak parçalar katar. Metal rengi, parça yapısı ve sümen hediyeli setleri bu kategoride ayrı ayrı görebilirsiniz. Ölçü-parça-malzeme metinleri deri kategorisinden kopyalanmaz; kristal kullanım ve temizlik esas alınır.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  isimlik: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660821639460"
+    title: "Masa Üstü İsimlikler"
+    seo: {
+      title: "Masa Üstü İsimlik Modelleri | Sümen Takımı TR"
+      description: "Kristal ve masa üstü isimlik modellerini ölçü, yazı alanı, unvan ve logo üretimine göre inceleyin."
+    }
+    descriptionHtml: "<p>Masa üstü isimlikler isim, unvan ve logo için yazı alanı sunar. Ölçü, malzeme ve kişiye özel üretim bu kategorinin kendi seçim kriterleridir; sümen parça sayısı bu sayfada tekrarlanmaz.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  pano: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811317540"
+    title: "Makam Panoları"
+    seo: {
+      title: "Makam Panosu Modelleri | Sümen Takımı TR"
+      description: "Makam panosu modellerini ölçü, görsel, çerçeve ve montaj kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>Makam panoları çalışma ve karşılama alanlarında kurumsal görseli taşır. Kumaşlı panolar ayrı koleksiyondadır; bu sayfada resimli makam panoları yer alır.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  kumasli: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660821541156"
+    title: "Kumaşlı Panolar"
+    seo: {
+      title: "Kumaşlı Pano Modelleri | Sümen Takımı TR"
+      description: "Duvara monte kumaşlı pano modellerini renk, ölçü ve makam kullanımıyla inceleyin."
+    }
+    descriptionHtml: "<p>Kumaşlı panolar duvara monte edilen, renk seçenekli makam ürünleridir. Bordo, mavi, turkuaz ve turuncu modeller bu koleksiyondadır.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  bayrak: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811481380"
+    title: "Makam Bayrakları"
+    seo: {
+      title: "Makam Bayrağı Modelleri | Sümen Takımı TR"
+      description: "Makam bayrağı, masa bayrağı ve flama modellerini direk tipi ve kullanım yerine göre inceleyin."
+    }
+    descriptionHtml: "<p>Makam bayrakları ve masa bayrakları kurumsal alanlar içindir. Direk tipi, tekli-ikili düzen ve logolu üretim bu kategorinin kendi kriterleridir.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  otel: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811546916"
+    title: "Deri Otel Ekipmanları"
+    seo: {
+      title: "Deri Otel Ekipmanları | Sümen Takımı TR"
+      description: "Deri otel ekipmanlarını ürün türü, ölçü, toplu üretim ve kurumsal renk ihtiyacına göre inceleyin."
+    }
+    descriptionHtml: "<p>Deri otel ekipmanları oda ve servis alanları için kutu, tepsi, peçetelik ve talimat gibi ürünleri kapsar. Toplu üretim ve kurumsal renk bu kategorinin kendi metnidir.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  setler: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811284772"
+    title: "Masa Üstü Setler"
+    seo: {
+      title: "Masa Üstü Setler | Sümen Takımı TR"
+      description: "Kompakt masa üstü setleri evrak rafı, kalemlik ve notluk kombinasyonuyla inceleyin."
+    }
+    descriptionHtml: "<p>Masa üstü setler tam sümen takımından daha az parçalı, kompakt düzenlerdir. Evrak rafı, kalemlik ve notluk kombinasyonları bu kategoridedir.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+  aksesuar: collectionUpdate(collection: {
+    id: "gid://shopify/Collection/660811448612"
+    title: "Sümen Aksesuarları"
+    seo: {
+      title: "Sümen Aksesuarları | Sümen Takımı TR"
+      description: "Kalem, ay tel ve tamamlayıcı sümen aksesuarlarını set içeriğinden ayrı olarak inceleyin."
+    }
+    descriptionHtml: "<p>Sümen aksesuarları mevcut seti tamamlayan kalem, ay tel ve benzeri parçalardır. Tam takım seçimi için ana sümen koleksiyonuna dönün.</p>"
+  }) { collection { id handle title } userErrors { field message } }
+}

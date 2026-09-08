@@ -1,0 +1,1120 @@
+{
+  "urlRedirects": {
+    "nodes": [
+      {
+        "id": "gid://shopify/UrlRedirect/611811000612",
+        "path": "/3lu-bardaklik-5-adet",
+        "target": "/products/3lu-bardaklik-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811033380",
+        "path": "/adres-ve-konum-bilgisi",
+        "target": "/pages/bize-ulasin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811066148",
+        "path": "/anasayfa-aciklama",
+        "target": "/pages/anasayfa-aciklama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811098916",
+        "path": "/asel-gold-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/asel-gold-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811131684",
+        "path": "/asel-gold-sumen-takimi-10-parca-siyah",
+        "target": "/products/asel-gold-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811164452",
+        "path": "/asel-gold-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/asel-gold-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811197220",
+        "path": "/asel-gold-sumen-takimi-9-parca-siyah-2",
+        "target": "/products/asel-gold-sumen-takimi-9-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811229988",
+        "path": "/asel-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/asel-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811262756",
+        "path": "/asel-silver-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/asel-silver-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811295524",
+        "path": "/asel-silver-sumen-takimi-10-parca-siyah",
+        "target": "/products/asel-silver-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811328292",
+        "path": "/asel-silver-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/asel-silver-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811361060",
+        "path": "/ataturk-resimli-makam-panolari",
+        "target": "/collections/ataturk-resimli-makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811393828",
+        "path": "/atay-kristal-masa-seti-sumen-hediyeli-",
+        "target": "/products/atay-kristal-masa-seti-sumen-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811426596",
+        "path": "/ay-tel-50-adet-",
+        "target": "/products/ay-tel-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811459364",
+        "path": "/bize-ulasin",
+        "target": "/pages/bize-ulasin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811492132",
+        "path": "/blog",
+        "target": "/blogs/news"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811524900",
+        "path": "/chester-sumen-takimi-siyah-11-parca-cam-isimlikli",
+        "target": "/products/chester-sumen-takimi-siyah-11-parca-cam-isimlikli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811557668",
+        "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set",
+        "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811590436",
+        "path": "/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli",
+        "target": "/products/chester-sumen-takimi-siyah-12-parca-cam-isimlikli-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811623204",
+        "path": "/cok-amacli-deri-kutu-5-adet-2",
+        "target": "/products/cok-amacli-deri-kutu-5-adet-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811655972",
+        "path": "/cok-amacli-deri-kutu-5-adet",
+        "target": "/products/cok-amacli-deri-kutu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811688740",
+        "path": "/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk",
+        "target": "/products/deri-3-parca-masa-ustu-seti-ciftli-evrak-rafi-kalemlik-ve-notluk"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811721508",
+        "path": "/deri-cekmeceli-kutu-5-adet",
+        "target": "/products/deri-cekmeceli-kutu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811754276",
+        "path": "/deri-kapi-kolu-talimati-50-adet",
+        "target": "/products/deri-kapi-kolu-talimati-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811787044",
+        "path": "/deri-kirtasiye-kutusu-5-adet",
+        "target": "/products/deri-kirtasiye-kutusu-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811819812",
+        "path": "/deri-otel-ekipmanlari",
+        "target": "/collections/deri-otel-ekipmanlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811852580",
+        "path": "/deri-otel-konik-cop-kovasi-kapakli",
+        "target": "/products/deri-otel-konik-cop-kovasi-kapakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811885348",
+        "path": "/deri-pecetelik",
+        "target": "/products/deri-pecetelik"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811918116",
+        "path": "/deri-sumen-takimlari",
+        "target": "/collections/deri-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811950884",
+        "path": "/deri-tepsi-5-adet",
+        "target": "/products/deri-tepsi-5-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611811983652",
+        "path": "/dernek-besgen-flama",
+        "target": "/products/dernek-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812016420",
+        "path": "/devlet-kurumu-besgen-flama",
+        "target": "/products/devlet-kurumu-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812049188",
+        "path": "/diamond-gold-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/diamond-gold-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812081956",
+        "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2",
+        "target": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812114724",
+        "path": "/diamond-gold-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/diamond-gold-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812147492",
+        "path": "/diamond-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/diamond-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812180260",
+        "path": "/diamond-gold-sumen-takimi-siyah",
+        "target": "/products/diamond-gold-sumen-takimi-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812213028",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah-2",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812245796",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah-3",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah-3"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812278564",
+        "path": "/diamond-silver-sumen-takimi-10-parca-siyah",
+        "target": "/products/diamond-silver-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812311332",
+        "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2",
+        "target": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812344100",
+        "path": "/diamond-silver-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/diamond-silver-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812376868",
+        "path": "/diamond-silver-sumen-takimi-9-parca-siyah",
+        "target": "/products/diamond-silver-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812409636",
+        "path": "/dikey-flama",
+        "target": "/products/dikey-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812442404",
+        "path": "/dolma-sumen-kalemi-50-adet-",
+        "target": "/products/dolma-sumen-kalemi-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812475172",
+        "path": "/dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-bordo-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812507940",
+        "path": "/dora-sumen-takimi-11-parca-kahverengi",
+        "target": "/products/dora-sumen-takimi-11-parca-kahverengi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812540708",
+        "path": "/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-siyah-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812573476",
+        "path": "/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-11-parca-siyah-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812606244",
+        "path": "/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-bordo-full-set-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812639012",
+        "path": "/dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-bordo-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812671780",
+        "path": "/dora-sumen-takimi-12-parca-kahverengi-full-set",
+        "target": "/products/dora-sumen-takimi-12-parca-kahverengi-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812704548",
+        "path": "/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli",
+        "target": "/products/dora-sumen-takimi-12-parca-kahverengi-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812737316",
+        "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812770084",
+        "path": "/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-full-set-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812802852",
+        "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gold-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812835620",
+        "path": "/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli",
+        "target": "/products/dora-sumen-takimi-12-parca-siyah-masa-bayrakli-gumus-aksesuarli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812868388",
+        "path": "/dugmeli-makam-panosu",
+        "target": "/collections/makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812901156",
+        "path": "/duvara-monte-kumasli-pano-bordo",
+        "target": "/products/duvara-monte-kumasli-pano-bordo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812933924",
+        "path": "/duvara-monte-kumasli-pano-mavi",
+        "target": "/products/duvara-monte-kumasli-pano-mavi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812966692",
+        "path": "/duvara-monte-kumasli-pano-turkuaz",
+        "target": "/products/duvara-monte-kumasli-pano-turkuaz"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611812999460",
+        "path": "/duvara-monte-kumasli-pano-turuncu",
+        "target": "/products/duvara-monte-kumasli-pano-turuncu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813032228",
+        "path": "/eft-banka-bilgileri",
+        "target": "/pages/eft-banka-bilgileri"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813064996",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-kahve-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813097764",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-siyah-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813130532",
+        "path": "/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar",
+        "target": "/products/eko-501-deri-sumen-takimi-7-parca-taba-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813163300",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813196068",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-siyah-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813228836",
+        "path": "/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar",
+        "target": "/products/eko500-deri-evrak-raf-notluk-kalemlik-seti-taba-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813261604",
+        "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2",
+        "target": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813294372",
+        "path": "/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar",
+        "target": "/products/eko502-deri-sumen-takimi-siyah-6-parca-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813327140",
+        "path": "/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar",
+        "target": "/products/eko502-deri-sumen-takimi-taba-6-parca-gumus-aksesuar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813359908",
+        "path": "/firma-tanitim-besgen-flama",
+        "target": "/products/firma-tanitim-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813392676",
+        "path": "/g101-deri-sumen-takimi-10-parca-beyaz",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-beyaz"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813425444",
+        "path": "/g101-deri-sumen-takimi-10-parca-bordo",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-bordo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813458212",
+        "path": "/g101-deri-sumen-takimi-10-parca-kahve",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-kahve"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813490980",
+        "path": "/g101-deri-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813523748",
+        "path": "/g101-deri-sumen-takimi-10-parca-siyah",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813556516",
+        "path": "/g101-deri-sumen-takimi-10-parca-taba",
+        "target": "/products/g101-deri-sumen-takimi-10-parca-taba"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813589284",
+        "path": "/g101-deri-sumen-takimi-11-parca-beyaz-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-beyaz-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813622052",
+        "path": "/g101-deri-sumen-takimi-11-parca-bordo-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-bordo-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813654820",
+        "path": "/g101-deri-sumen-takimi-11-parca-kahve-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-kahve-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813687588",
+        "path": "/g101-deri-sumen-takimi-11-parca-taba-full-set",
+        "target": "/products/g101-deri-sumen-takimi-11-parca-taba-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813720356",
+        "path": "/gizlilik-sozlesmesi",
+        "target": "/pages/gizlilik-sozlesmesi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813753124",
+        "path": "/gumus-sumen-kalemi-dolma",
+        "target": "/products/gumus-sumen-kalemi-dolma"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813785892",
+        "path": "/gumus-sumen-kalemi-tukenmez",
+        "target": "/products/gumus-sumen-kalemi-tukenmez"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813818660",
+        "path": "/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-gri-masa-bayrakli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813851428",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-kahve"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813884196",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813916964",
+        "path": "/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil",
+        "target": "/products/halep-deri-sumen-takimi-12-parca-masa-bayrakli-yesil"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813949732",
+        "path": "/ikili-masa-bayragi-gold-direkli",
+        "target": "/products/ikili-masa-bayragi-gold-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611813982500",
+        "path": "/ikili-masa-bayragi-krom-direkli",
+        "target": "/products/ikili-masa-bayragi-krom-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814015268",
+        "path": "/imza-sumeni",
+        "target": "/products/imza-sumeni"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814048036",
+        "path": "/isimlik-topu",
+        "target": "/products/isimlik-topu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814080804",
+        "path": "/kirlangic-bayrak",
+        "target": "/products/kirlangic-bayrak"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814113572",
+        "path": "/kristal-masa-isimligi-10",
+        "target": "/products/kristal-masa-isimligi-10"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814146340",
+        "path": "/kristal-masa-isimligi-11",
+        "target": "/products/kristal-masa-isimligi-11"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814179108",
+        "path": "/kristal-masa-isimligi-12",
+        "target": "/products/kristal-masa-isimligi-12"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814211876",
+        "path": "/kristal-masa-isimligi-13",
+        "target": "/products/kristal-masa-isimligi-13"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814244644",
+        "path": "/kristal-masa-isimligi-14",
+        "target": "/products/kristal-masa-isimligi-14"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814277412",
+        "path": "/kristal-masa-isimligi-15",
+        "target": "/products/kristal-masa-isimligi-15"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814310180",
+        "path": "/kristal-masa-isimligi-16",
+        "target": "/products/kristal-masa-isimligi-16"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814342948",
+        "path": "/kristal-masa-isimligi-17",
+        "target": "/products/kristal-masa-isimligi-17"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814375716",
+        "path": "/kristal-masa-isimligi-18",
+        "target": "/products/kristal-masa-isimligi-18"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814408484",
+        "path": "/kristal-masa-isimligi-19",
+        "target": "/products/kristal-masa-isimligi-19"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814441252",
+        "path": "/kristal-masa-isimligi-2",
+        "target": "/products/kristal-masa-isimligi-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814474020",
+        "path": "/kristal-masa-isimligi-20",
+        "target": "/products/kristal-masa-isimligi-20"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814506788",
+        "path": "/kristal-masa-isimligi-21",
+        "target": "/products/kristal-masa-isimligi-21"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814539556",
+        "path": "/kristal-masa-isimligi-22",
+        "target": "/products/kristal-masa-isimligi-22"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814572324",
+        "path": "/kristal-masa-isimligi-23",
+        "target": "/products/kristal-masa-isimligi-23"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814605092",
+        "path": "/kristal-masa-isimligi-24",
+        "target": "/products/kristal-masa-isimligi-24"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814637860",
+        "path": "/kristal-masa-isimligi-25",
+        "target": "/products/kristal-masa-isimligi-25"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814670628",
+        "path": "/kristal-masa-isimligi-26",
+        "target": "/products/kristal-masa-isimligi-26"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814703396",
+        "path": "/kristal-masa-isimligi-27",
+        "target": "/products/kristal-masa-isimligi-27"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814736164",
+        "path": "/kristal-masa-isimligi-28",
+        "target": "/products/kristal-masa-isimligi-28"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814768932",
+        "path": "/kristal-masa-isimligi-29",
+        "target": "/products/kristal-masa-isimligi-29"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814801700",
+        "path": "/kristal-masa-isimligi-3",
+        "target": "/products/kristal-masa-isimligi-3"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814834468",
+        "path": "/kristal-masa-isimligi-30",
+        "target": "/products/kristal-masa-isimligi-30"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814867236",
+        "path": "/kristal-masa-isimligi-31",
+        "target": "/products/kristal-masa-isimligi-31"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814900004",
+        "path": "/kristal-masa-isimligi-4",
+        "target": "/products/kristal-masa-isimligi-4"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814932772",
+        "path": "/kristal-masa-isimligi-5",
+        "target": "/products/kristal-masa-isimligi-5"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814965540",
+        "path": "/kristal-masa-isimligi-6",
+        "target": "/products/kristal-masa-isimligi-6"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611814998308",
+        "path": "/kristal-masa-isimligi-7",
+        "target": "/products/kristal-masa-isimligi-7"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815031076",
+        "path": "/kristal-masa-isimligi-8",
+        "target": "/products/kristal-masa-isimligi-8"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815063844",
+        "path": "/kristal-masa-isimligi-9",
+        "target": "/products/kristal-masa-isimligi-9"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815096612",
+        "path": "/kristal-masa-isimligi",
+        "target": "/products/kristal-masa-isimligi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815129380",
+        "path": "/kristal-masa-seti-sumen-hediyeli-",
+        "target": "/products/kristal-masa-seti-sumen-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815162148",
+        "path": "/kristal-masa-setleri",
+        "target": "/collections/kristal-masa-setleri"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815194916",
+        "path": "/kristal-sumen-takimi",
+        "target": "/products/kristal-sumen-takimi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815227684",
+        "path": "/kristal-sumen-takimlari-2",
+        "target": "/collections/kristal-sumen-takimlari-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815260452",
+        "path": "/kristal-sumen-takimlari",
+        "target": "/collections/kristal-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815293220",
+        "path": "/kucuk-oval-osmanli-devlet-armasi-altin",
+        "target": "/products/kucuk-oval-osmanli-devlet-armasi-altin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815325988",
+        "path": "/kucuk-oval-osmanli-devlet-armasi-gumus",
+        "target": "/products/kucuk-oval-osmanli-devlet-armasi-gumus"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815358756",
+        "path": "/kullanim-kosullari",
+        "target": "/pages/kullanim-kosullari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815391524",
+        "path": "/kumasli-panolar",
+        "target": "/collections/kumasli-panolar"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815424292",
+        "path": "/lemi-kristal-masa-seti-sumen-hediyeli-",
+        "target": "/products/lemi-kristal-masa-seti-sumen-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815457060",
+        "path": "/lina-gold-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/lina-gold-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815489828",
+        "path": "/lina-gold-sumen-takimi-10-parca-siyah",
+        "target": "/products/lina-gold-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815522596",
+        "path": "/lina-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/lina-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815555364",
+        "path": "/lina-silver-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/lina-silver-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815588132",
+        "path": "/lina-silver-sumen-takimi-9-parca-siyah",
+        "target": "/products/lina-silver-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815620900",
+        "path": "/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-10-parca-kahve-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815653668",
+        "path": "/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-10-parca-krem-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815686436",
+        "path": "/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-10-parca-siyah-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815719204",
+        "path": "/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-10-parca-taba-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815751972",
+        "path": "/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-kahve-cift-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815784740",
+        "path": "/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-kahve-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815817508",
+        "path": "/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-krem-cift-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815850276",
+        "path": "/liya-sumen-takimi-11-parca-krem-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-krem-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815883044",
+        "path": "/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-siyah-cift-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815915812",
+        "path": "/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-siyah-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815948580",
+        "path": "/liya-sumen-takimi-11-parca-taba-cift-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-taba-cift-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611815981348",
+        "path": "/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli",
+        "target": "/products/liya-sumen-takimi-11-parca-taba-masa-bayrakli-isimlik-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816014116",
+        "path": "/logolu-makam-bayragi-",
+        "target": "/products/logolu-makam-bayragi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816046884",
+        "path": "/logolu-makam-bayragi-gold",
+        "target": "/products/logolu-makam-bayragi-gold"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816079652",
+        "path": "/logolu-makam-bayragi-krom-",
+        "target": "/products/logolu-makam-bayragi-krom"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816112420",
+        "path": "/luks-sumen-takimlari",
+        "target": "/collections/luks-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816145188",
+        "path": "/makam-bayragi-gold",
+        "target": "/products/makam-bayragi-gold"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816177956",
+        "path": "/makam-bayraklari",
+        "target": "/collections/makam-bayraklari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816210724",
+        "path": "/makam-panolari-2",
+        "target": "/pages/makam-panolari-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816243492",
+        "path": "/makam-panolari-3",
+        "target": "/collections/makam-panolari-3"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816276260",
+        "path": "/masa-ustu-isimlikler",
+        "target": "/collections/masa-ustu-isimlikler"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816309028",
+        "path": "/masa-ustu-setler",
+        "target": "/collections/masa-ustu-setler"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816341796",
+        "path": "/mesafeli-satis-sozlesmesi",
+        "target": "/pages/mesafeli-satis-sozlesmesi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816374564",
+        "path": "/metal-ayak",
+        "target": "/products/metal-ayak"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816407332",
+        "path": "/mkr-08",
+        "target": "/products/mkr-08"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816440100",
+        "path": "/nova-gold-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/nova-gold-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816472868",
+        "path": "/nova-gold-sumen-takimi-10-parca-siyah",
+        "target": "/products/nova-gold-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816505636",
+        "path": "/nova-gold-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/nova-gold-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816538404",
+        "path": "/nova-gold-sumen-takimi-9-parca-siyah",
+        "target": "/products/nova-gold-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816571172",
+        "path": "/nova-silver-sumen-takimi-10-parca-siyah-full-set",
+        "target": "/products/nova-silver-sumen-takimi-10-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816603940",
+        "path": "/nova-silver-sumen-takimi-10-parca-siyah",
+        "target": "/products/nova-silver-sumen-takimi-10-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816636708",
+        "path": "/nova-silver-sumen-takimi-11-parca-siyah-full-set",
+        "target": "/products/nova-silver-sumen-takimi-11-parca-siyah-full-set"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816669476",
+        "path": "/nova-silver-sumen-takimi-9-parca-siyah",
+        "target": "/products/nova-silver-sumen-takimi-9-parca-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816702244",
+        "path": "/osmanli-devlet-armasi-altin-varak-tablo",
+        "target": "/products/osmanli-devlet-armasi-altin-varak-tablo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816735012",
+        "path": "/osmanli-devlet-armasi-gumus-varak-tablo",
+        "target": "/products/osmanli-devlet-armasi-gumus-varak-tablo"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816767780",
+        "path": "/osmanli-tugrasi",
+        "target": "/collections/osmanli-tugrasi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816800548",
+        "path": "/oval-flama",
+        "target": "/products/oval-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816833316",
+        "path": "/pulsar-deri-sumen-takimi-siyah",
+        "target": "/products/pulsar-deri-sumen-takimi-siyah"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816866084",
+        "path": "/resim-cerceve-mili",
+        "target": "/products/resim-cerceve-mili"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816898852",
+        "path": "/resimli-makam-panosu-10",
+        "target": "/products/resimli-makam-panosu-10"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816931620",
+        "path": "/resimli-makam-panosu-11",
+        "target": "/products/resimli-makam-panosu-11"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816964388",
+        "path": "/resimli-makam-panosu-12",
+        "target": "/products/resimli-makam-panosu-12"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611816997156",
+        "path": "/resimli-makam-panosu-13",
+        "target": "/products/resimli-makam-panosu-13"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817029924",
+        "path": "/resimli-makam-panosu-14",
+        "target": "/products/resimli-makam-panosu-14"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817062692",
+        "path": "/resimli-makam-panosu-15",
+        "target": "/products/resimli-makam-panosu-15"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817095460",
+        "path": "/resimli-makam-panosu-16",
+        "target": "/products/resimli-makam-panosu-16"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817128228",
+        "path": "/resimli-makam-panosu-17",
+        "target": "/products/resimli-makam-panosu-17"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817160996",
+        "path": "/resimli-makam-panosu-18",
+        "target": "/products/resimli-makam-panosu-18"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817193764",
+        "path": "/resimli-makam-panosu-2",
+        "target": "/products/resimli-makam-panosu-2"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817226532",
+        "path": "/resimli-makam-panosu-3",
+        "target": "/products/resimli-makam-panosu-3"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817259300",
+        "path": "/resimli-makam-panosu-4",
+        "target": "/products/resimli-makam-panosu-4"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817292068",
+        "path": "/resimli-makam-panosu-5",
+        "target": "/products/resimli-makam-panosu-5"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817324836",
+        "path": "/resimli-makam-panosu-6",
+        "target": "/products/resimli-makam-panosu-6"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817357604",
+        "path": "/resimli-makam-panosu-7",
+        "target": "/products/resimli-makam-panosu-7"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817390372",
+        "path": "/resimli-makam-panosu-8",
+        "target": "/products/resimli-makam-panosu-8"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817423140",
+        "path": "/resimli-makam-panosu-9",
+        "target": "/products/resimli-makam-panosu-9"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817455908",
+        "path": "/resimli-makam-panosu",
+        "target": "/products/resimli-makam-panosu"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817488676",
+        "path": "/spor-takimi-besgen-flama",
+        "target": "/products/spor-takimi-besgen-flama"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817521444",
+        "path": "/sumen-aksesuarlari",
+        "target": "/collections/sumen-aksesuarlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817554212",
+        "path": "/sumen-takimi",
+        "target": "/collections/sumen-takimi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817586980",
+        "path": "/takvim-teli",
+        "target": "/products/takvim-teli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817619748",
+        "path": "/tekli-masa-bayragi-gumus-direkli",
+        "target": "/products/tekli-masa-bayragi-gumus-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817652516",
+        "path": "/tekli-masa-bayragi-krom-direkli",
+        "target": "/products/tekli-masa-bayragi-krom-direkli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817685284",
+        "path": "/teslimat-ve-iade-sozlesmesi",
+        "target": "/pages/teslimat-ve-iade-sozlesmesi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817718052",
+        "path": "/tukenmez-sumen-kalemi",
+        "target": "/products/tukenmez-sumen-kalemi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817750820",
+        "path": "/turk-makam-bayragi",
+        "target": "/products/turk-makam-bayragi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817783588",
+        "path": "/uyelik-sozlesmesi",
+        "target": "/pages/uyelik-sozlesmesi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817816356",
+        "path": "/vuska-kristal-masa-seti-sumen-hediyeli-",
+        "target": "/products/vuska-kristal-masa-seti-sumen-hediyeli"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/611817849124",
+        "path": "/zarf-acacagi-50-adet-",
+        "target": "/products/zarf-acacagi-50-adet"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612233937188",
+        "path": "/collections/frontpage",
+        "target": "/collections/sumen-takimi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612233969956",
+        "path": "/collections/kristal-masa-setleri",
+        "target": "/collections/kristal-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234002724",
+        "path": "/collections/kristal-masa-ustu-i%cc%87simlikler",
+        "target": "/collections/masa-ustu-isimlikler"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234035492",
+        "path": "/collections/makam-panolari-3",
+        "target": "/collections/makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234068260",
+        "path": "/collections/kristal-sumen-takimlari-2",
+        "target": "/collections/kristal-sumen-takimlari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234101028",
+        "path": "/collections/dugmeli-makam-panosu",
+        "target": "/collections/makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234133796",
+        "path": "/pages/adres-ve-konum-bilgisi",
+        "target": "/pages/bize-ulasin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612234166564",
+        "path": "/pages/makam-panolari-2",
+        "target": "/collections/makam-panolari"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612235149604",
+        "path": "/pages/anasayfa-aciklama",
+        "target": "/pages/sumen-takimi-rehberi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612237312292",
+        "path": "/pages/contact",
+        "target": "/pages/bize-ulasin"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612247634212",
+        "path": "/sumen-takimi-nedir",
+        "target": "/pages/sumen-takimi-rehberi"
+      },
+      {
+        "id": "gid://shopify/UrlRedirect/612247666980",
+        "path": "/sumen-takimi-nasil-secilir-10-onemli-kriter",
+        "target": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli"
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": false,
+      "endCursor": "eyJsYXN0X2lkIjo2MTIyNDc2NjY5ODAsImxhc3RfdmFsdWUiOiI2MTIyNDc2NjY5ODAifQ=="
+    }
+  }
+}

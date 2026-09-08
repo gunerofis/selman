@@ -1,0 +1,13 @@
+query GooglePubCount {
+  google: publications(first: 10) {
+    nodes {
+      id
+      name
+    }
+  }
+  productsOnGoogle: products(first: 1, query: "published_at:*") {
+    pageInfo {
+      hasNextPage
+    }
+  }
+}

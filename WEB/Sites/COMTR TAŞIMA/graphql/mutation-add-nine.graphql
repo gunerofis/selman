@@ -1,0 +1,32 @@
+mutation AddNineToDeriLuks {
+  deri: collectionAddProducts(
+    id: "gid://shopify/Collection/660821442852"
+    productIds: [
+      "gid://shopify/Product/10785345569060"
+      "gid://shopify/Product/10785342488868"
+      "gid://shopify/Product/10785342357796"
+      "gid://shopify/Product/10785342193956"
+      "gid://shopify/Product/10785342161188"
+      "gid://shopify/Product/10785341899044"
+      "gid://shopify/Product/10785341833508"
+      "gid://shopify/Product/10785341505828"
+    ]
+  ) {
+    userErrors { field message }
+  }
+  luks: collectionAddProducts(
+    id: "gid://shopify/Collection/660821573924"
+    productIds: [
+      "gid://shopify/Product/10785345569060"
+      "gid://shopify/Product/10785342488868"
+      "gid://shopify/Product/10785342357796"
+      "gid://shopify/Product/10785342193956"
+      "gid://shopify/Product/10785342161188"
+      "gid://shopify/Product/10785341899044"
+      "gid://shopify/Product/10785341833508"
+      "gid://shopify/Product/10785341505828"
+    ]
+  ) {
+    userErrors { field message }
+  }
+}

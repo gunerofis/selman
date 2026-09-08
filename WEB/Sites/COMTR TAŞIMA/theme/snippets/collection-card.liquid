@@ -1,0 +1,53 @@
+{% doc %}
+  Renders a uniform collection tile.
+  @param {object} [collection] - Shopify collection
+  @param {string} [title] - Visible title
+  @param {string} [url] - Destination URL
+{% enddoc %}
+{% liquid
+  assign tile_title = title
+  if tile_title == blank and collection != blank
+    assign tile_title = collection.title
+  endif
+  assign tile_url = url
+  if tile_url == blank and collection != blank
+    assign tile_url = collection.url
+  endif
+  assign tile_image = blank
+  if collection != blank
+    if collection.handle == 'luks-sumen-takimlari'
+      for product in collection.products
+        if product.title contains 'Gold' and product.featured_image
+          assign tile_image = product.featured_image
+          break
+        endif
+      endfor
+    endif
+    if tile_image == blank
+      for product in collection.products
+        assign handle = product.handle | default: ''
+        if handle contains 'cop-kovasi' or handle contains 'cop-kova'
+          continue
+        endif
+        if product.featured_image
+          assign tile_image = product.featured_image
+          break
+        endif
+      endfor
+    endif
+    if tile_image == blank and collection.featured_image
+      assign tile_image = collection.featured_image
+    endif
+  endif
+%}
+<a class="home-cat img-zoom" href="{{ tile_url }}">
+  <span class="home-cat__media media-plate">
+    {% if tile_image %}
+      {{ tile_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(max-width: 800px) 50vw, 25vw', alt: tile_title }}
+    {% endif %}
+  </span>
+  <span class="home-cat__copy">
+    <h3>{{ tile_title }}</h3>
+    {% if collection != blank %}<span>{{ collection.products_count }} ürün</span>{% endif %}
+  </span>
+</a>

@@ -1,0 +1,12 @@
+mutation SetProductMetafields($metafields: [MetafieldsSetInput!]!) {
+  metafieldsSet(metafields: $metafields) {
+    metafields {
+      id
+      key
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

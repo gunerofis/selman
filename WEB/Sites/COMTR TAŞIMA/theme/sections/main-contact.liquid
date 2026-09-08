@@ -1,0 +1,77 @@
+<section class="contact-page">
+  <header class="contact-head">
+    <p class="eyebrow">İletişim</p>
+    <h1>Birlikte doğru masa düzenini kuralım.</h1>
+    <p>Ürün seçimi, kişiselleştirme, sipariş desteği ve kurumsal talepleriniz için bize yazın.</p>
+  </header>
+
+  <div class="contact-cards">
+    <a class="contact-card" href="tel:+905011442729">
+      <small>Telefon</small>
+      <strong>0501 144 27 29</strong>
+    </a>
+    <a class="contact-card" href="mailto:info@sumentakimi.com.tr">
+      <small>E-posta</small>
+      <strong>info@sumentakimi.com.tr</strong>
+    </a>
+    <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=Arap%C3%A7e%C5%9Fme+Mahallesi+1038.+Sokak+No:32%2FA+Gebze+Kocaeli" rel="noopener" target="_blank">
+      <small>Adres</small>
+      <strong>Arapçeşme Mah. 1038. Sok. No:32/A<br>Gebze / Kocaeli</strong>
+    </a>
+    <a class="contact-card" href="https://wa.me/905011442729">
+      <small>WhatsApp</small>
+      <strong>0501 144 27 29</strong>
+    </a>
+  </div>
+
+  <div class="contact-workspace">
+    <div class="contact-form-intro">
+      <p class="eyebrow">Bize yazın</p>
+      <h2>Nasıl yardımcı olabiliriz?</h2>
+      <p>Mesajınıza ürün adı veya sipariş numaranızı eklerseniz daha hızlı dönüş yaparız.</p>
+      <ul class="contact-topics" aria-label="Destek konuları">
+        <li>Ürün ve malzeme seçimi</li>
+        <li>İsimlik ve kişiselleştirme</li>
+        <li>Sipariş ve teslimat</li>
+        <li>Kurumsal ve toplu alım</li>
+      </ul>
+    </div>
+
+    <div class="contact-form-shell">
+      {% form 'contact', class: 'contact-form' %}
+        {% if form.posted_successfully? %}
+          <div class="form-success" tabindex="-1" autofocus>
+            <strong>Mesajınız bize ulaştı.</strong>
+            <p>En kısa sürede sizinle iletişime geçeceğiz.</p>
+          </div>
+        {% endif %}
+        {{ form.errors | default_errors }}
+
+        <label>
+          <span>Adınız soyadınız</span>
+          <input type="text" name="contact[name]" autocomplete="name" value="{% if form.name %}{{ form.name }}{% endif %}" required>
+        </label>
+        <label>
+          <span>Telefon</span>
+          <input type="tel" name="contact[phone]" autocomplete="tel" value="{% if form.phone %}{{ form.phone }}{% endif %}">
+        </label>
+        <label>
+          <span>E-posta adresiniz</span>
+          <input type="email" name="contact[email]" autocomplete="email" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% endif %}" required>
+        </label>
+        <label>
+          <span>Mesajınız</span>
+          <textarea name="contact[body]" rows="6" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+        </label>
+        <button class="button button-dark" type="submit">Mesajı gönder</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zengin iletişim sayfası",
+  "settings": []
+}
+{% endschema %}

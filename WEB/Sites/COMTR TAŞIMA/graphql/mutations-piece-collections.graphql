@@ -1,0 +1,98 @@
+mutation CreatePieceCollections {
+  p9: collectionCreate(collection: {
+    title: "9 Parça Sümen Takımları"
+    handle: "9-parca-sumen-takimi"
+    seo: {
+      title: "9 Parça Sümen Takımı Modelleri | Sümen Takımı TR"
+      description: "9 parça sümen takımı modellerini set içeriği ve masa kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>9 parça sümen takımları daha kompakt masa düzenleri içindir. Parça sayısı, ürün başlığından doğrulanıp parça sayısı alanına yazıldıktan sonra bu koleksiyona otomatik düşer.</p>"
+    sources: [{
+      source: {
+        title: "9 parça"
+        inclusion: {
+          matchType: ALL
+          conditions: [{
+            metafieldInteger: {
+              definitionId: "gid://shopify/MetafieldDefinition/276678377764"
+              relation: EQUALS
+              value: 9
+            }
+          }]
+        }
+      }
+    }]
+  }) { collection { id handle } userErrors { field message } }
+  p10: collectionCreate(collection: {
+    title: "10 Parça Sümen Takımları"
+    handle: "10-parca-sumen-takimi"
+    seo: {
+      title: "10 Parça Sümen Takımı Modelleri | Sümen Takımı TR"
+      description: "10 parça sümen takımı modellerini set içeriği ve masa kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>10 parça sümen takımları orta genişlikte masalar için dengeli set içeriği sunar.</p>"
+    sources: [{
+      source: {
+        title: "10 parça"
+        inclusion: {
+          matchType: ALL
+          conditions: [{
+            metafieldInteger: {
+              definitionId: "gid://shopify/MetafieldDefinition/276678377764"
+              relation: EQUALS
+              value: 10
+            }
+          }]
+        }
+      }
+    }]
+  }) { collection { id handle } userErrors { field message } }
+  p11: collectionCreate(collection: {
+    title: "11 Parça Sümen Takımları"
+    handle: "11-parca-sumen-takimi"
+    seo: {
+      title: "11 Parça Sümen Takımı Modelleri | Sümen Takımı TR"
+      description: "11 parça sümen takımı modellerini set içeriği ve masa kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>11 parça sümen takımları isimlikli ve daha geniş set içeriği arayan masalar içindir.</p>"
+    sources: [{
+      source: {
+        title: "11 parça"
+        inclusion: {
+          matchType: ALL
+          conditions: [{
+            metafieldInteger: {
+              definitionId: "gid://shopify/MetafieldDefinition/276678377764"
+              relation: EQUALS
+              value: 11
+            }
+          }]
+        }
+      }
+    }]
+  }) { collection { id handle } userErrors { field message } }
+  p12: collectionCreate(collection: {
+    title: "12 Parça Sümen Takımları"
+    handle: "12-parca-sumen-takimi"
+    seo: {
+      title: "12 Parça Sümen Takımı Modelleri | Sümen Takımı TR"
+      description: "12 parça sümen takımı modellerini set içeriği ve masa kullanımına göre inceleyin."
+    }
+    descriptionHtml: "<p>12 parça sümen takımları geniş yönetici masaları ve full set düzenleri için kullanılır.</p>"
+    sources: [{
+      source: {
+        title: "12 parça"
+        inclusion: {
+          matchType: ALL
+          conditions: [{
+            metafieldInteger: {
+              definitionId: "gid://shopify/MetafieldDefinition/276678377764"
+              relation: EQUALS
+              value: 12
+            }
+          }]
+        }
+      }
+    }]
+  }) { collection { id handle } userErrors { field message } }
+}

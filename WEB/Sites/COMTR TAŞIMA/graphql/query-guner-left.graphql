@@ -1,0 +1,5 @@
+query GunerLeft {
+  products(first: 5, query: "vendor:'Güner Ofis'") {
+    nodes { id handle vendor }
+  }
+}

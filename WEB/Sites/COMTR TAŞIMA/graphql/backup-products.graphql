@@ -1,0 +1,58 @@
+{
+  products {
+    edges {
+      node {
+        id
+        title
+        handle
+        status
+        vendor
+        productType
+        tags
+        descriptionHtml
+        seo {
+          title
+          description
+        }
+        onlineStoreUrl
+        createdAt
+        updatedAt
+        variants {
+          edges {
+            node {
+              id
+              sku
+              barcode
+              price
+              compareAtPrice
+              inventoryQuantity
+              selectedOptions {
+                name
+                value
+              }
+            }
+          }
+        }
+        metafields {
+          edges {
+            node {
+              namespace
+              key
+              value
+              type
+            }
+          }
+        }
+        collections {
+          edges {
+            node {
+              id
+              handle
+              title
+            }
+          }
+        }
+      }
+    }
+  }
+}

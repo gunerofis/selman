@@ -1,0 +1,18 @@
+{% doc %}
+  Sümen Takımları dropdown: tek ana kategori + malzeme. Parça sayısı navda yok.
+{% enddoc %}
+{% liquid
+  assign all_col = collections['sumen-takimi']
+  assign sub_handles = 'deri-sumen-takimlari,luks-sumen-takimlari,kristal-sumen-takimlari' | split: ','
+%}
+{% if all_col != blank %}
+  <a href="{{ all_col.url }}">Tüm Sümen Takımları</a>
+{% else %}
+  <a href="/collections/sumen-takimi">Tüm Sümen Takımları</a>
+{% endif %}
+{% for handle in sub_handles %}
+  {% assign col = collections[handle] %}
+  {% if col != blank %}
+    <a href="{{ col.url }}">{{ col.title }}</a>
+  {% endif %}
+{% endfor %}

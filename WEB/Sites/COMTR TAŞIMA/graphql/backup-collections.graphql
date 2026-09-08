@@ -1,0 +1,34 @@
+query BackupCollections {
+  collections(first: 50) {
+    nodes {
+      id
+      handle
+      title
+      descriptionHtml
+      sortOrder
+      productsCount {
+        count
+      }
+      seo {
+        title
+        description
+      }
+      ruleSet {
+        appliedDisjunctively
+        rules {
+          column
+          relation
+          condition
+        }
+      }
+      metafields(first: 30) {
+        nodes {
+          namespace
+          key
+          value
+          type
+        }
+      }
+    }
+  }
+}

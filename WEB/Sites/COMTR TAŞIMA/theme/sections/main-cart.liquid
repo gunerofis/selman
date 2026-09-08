@@ -1,0 +1,46 @@
+<section class="generic-page cart-page">
+  <header class="catalog-head"><p class="eyebrow">Alışveriş</p><h1>Sepetiniz</h1></header>
+  {% if cart.item_count == 0 %}
+    <p>Sepetiniz henüz boş.</p>
+    <div class="home-board home-board--cats">
+      {% render 'collection-card', collection: collections['deri-sumen-takimlari'] %}
+      {% render 'collection-card', collection: collections['kristal-sumen-takimlari'] %}
+      {% render 'collection-card', collection: collections['masa-ustu-isimlikler'] %}
+      {% render 'collection-card', collection: collections['makam-panolari'] %}
+    </div>
+  {% else %}
+    <form action="{{ routes.cart_url }}" method="post" class="cart-form">
+      <div class="cart-lines">
+        {% for item in cart.items %}
+          <article class="cart-line">
+            <a href="{{ item.url }}">{% if item.image %}{{ item.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: item.product.title }}{% endif %}</a>
+            <div>
+              <a href="{{ item.url }}"><strong>{{ item.product.title }}</strong></a>
+              {% unless item.product.has_only_default_variant %}<p>{{ item.variant.title }}</p>{% endunless %}
+              {% if item.properties.size > 0 %}
+                {% for property in item.properties %}
+                  {% if property.last != blank %}<p>{{ property.first }}: {{ property.last }}</p>{% endif %}
+                {% endfor %}
+              {% endif %}
+              <p>{{ item.final_price | money }}</p>
+            </div>
+            <label>Adet <input type="number" name="updates[]" value="{{ item.quantity }}" min="0"></label>
+            <strong>{{ item.final_line_price | money }}</strong>
+          </article>
+        {% endfor %}
+      </div>
+      <div class="cart-summary">
+        <div>
+          <p>Ara toplam <strong>{{ cart.total_price | money }}</strong></p>
+          <p class="cart-shipping-note">Kargo ücreti ödeme adımında hesaplanır. Siparişler Gebze ve İstanbul depolarından çıkar. <a href="{{ shop.refund_policy.url | default: shop.shipping_policy.url }}">Teslimat ve iade</a></p>
+        </div>
+        <button class="button button-outline" type="submit" name="update">Sepeti güncelle</button>
+        <button class="button button-dark" type="submit" name="checkout">Ödemeye geç</button>
+      </div>
+    </form>
+  {% endif %}
+</section>
+
+{% schema %}
+{ "name": "Sepet", "settings": [] }
+{% endschema %}

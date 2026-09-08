@@ -1,0 +1,10 @@
+query VendorSample {
+  makro: products(first: 5, query: "vendor:'Makro Ofis'") {
+    nodes { id vendor handle }
+  }
+  guner: products(first: 5, query: "vendor:'Güner Ofis'") {
+    nodes { id vendor handle }
+  }
+  makroCount: productsCount(query: "vendor:'Makro Ofis'") { count }
+  gunerCount: productsCount(query: "vendor:'Güner Ofis'") { count }
+}

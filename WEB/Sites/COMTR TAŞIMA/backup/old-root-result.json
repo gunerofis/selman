@@ -1,0 +1,40 @@
+{
+  "rNedir": {
+    "urlRedirect": {
+      "path": "/sumen-takimi-nedir",
+      "target": "/pages/sumen-takimi-rehberi"
+    },
+    "userErrors": []
+  },
+  "rNedirSlash": {
+    "urlRedirect": null,
+    "userErrors": [
+      {
+        "field": [
+          "urlRedirect",
+          "path"
+        ],
+        "message": "Yol zaten alınmış"
+      }
+    ]
+  },
+  "rKriter": {
+    "urlRedirect": {
+      "path": "/sumen-takimi-nasil-secilir-10-onemli-kriter",
+      "target": "/blogs/news/sumen-takimi-secerken-nelere-dikkat-edilmeli"
+    },
+    "userErrors": []
+  },
+  "rKriterSlash": {
+    "urlRedirect": null,
+    "userErrors": [
+      {
+        "field": [
+          "urlRedirect",
+          "path"
+        ],
+        "message": "Yol zaten alınmış"
+      }
+    ]
+  }
+}

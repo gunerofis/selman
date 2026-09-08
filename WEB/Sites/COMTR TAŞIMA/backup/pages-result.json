@@ -1,0 +1,26 @@
+{
+  "rehber": {
+    "page": {
+      "id": "gid://shopify/Page/166741475620",
+      "handle": "sumen-takimi-rehberi",
+      "title": "Sümen Takımı Rehberi"
+    },
+    "userErrors": []
+  },
+  "about": {
+    "page": {
+      "id": "gid://shopify/Page/166761464100",
+      "handle": "about-us",
+      "title": "Hakkımızda ve Üretim"
+    },
+    "userErrors": []
+  },
+  "contactTemplate": {
+    "page": {
+      "id": "gid://shopify/Page/166741541156",
+      "handle": "bize-ulasin",
+      "templateSuffix": "contact"
+    },
+    "userErrors": []
+  }
+}

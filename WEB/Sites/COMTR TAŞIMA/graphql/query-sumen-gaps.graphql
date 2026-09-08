@@ -1,0 +1,43 @@
+query SumenGaps {
+  parent: collection(id: "gid://shopify/Collection/660811153700") {
+    title
+    handle
+    productsCount { count }
+  }
+  deri: collection(id: "gid://shopify/Collection/660821442852") {
+    handle
+    productsCount { count }
+    products(first: 100) {
+      nodes { id handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+    }
+  }
+  luks: collection(id: "gid://shopify/Collection/660821573924") {
+    handle
+    productsCount { count }
+    products(first: 50) {
+      nodes { id handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+    }
+  }
+  kristal: collection(id: "gid://shopify/Collection/660811415844") {
+    handle
+    productsCount { count }
+    products(first: 20) {
+      nodes { id handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+    }
+  }
+  nine: collection(id: "gid://shopify/Collection/660952351012") {
+    handle
+    productsCount { count }
+    products(first: 30) {
+      nodes { id handle inAll: inCollection(id: "gid://shopify/Collection/660811153700") }
+    }
+  }
+  menu: menu(id: "gid://shopify/Menu/323167682852") {
+    handle
+    items {
+      title
+      url
+      items { title url }
+    }
+  }
+}

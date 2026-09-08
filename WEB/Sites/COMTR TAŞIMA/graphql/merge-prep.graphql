@@ -1,0 +1,95 @@
+query MergePrep {
+  publications(first: 20) {
+    nodes {
+      id
+      autoPublish
+      catalog {
+        title
+      }
+    }
+  }
+  frontpage: collection(id: "gid://shopify/Collection/660810858788") {
+    id
+    handle
+    products(first: 20) {
+      nodes {
+        id
+        handle
+        title
+      }
+    }
+  }
+  kristalKeep: collection(id: "gid://shopify/Collection/660811415844") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+      }
+    }
+  }
+  kristalDup: collection(id: "gid://shopify/Collection/660821475620") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+      }
+    }
+  }
+  isimlikKeep: collection(id: "gid://shopify/Collection/660821639460") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+      }
+    }
+  }
+  isimlikDup: collection(id: "gid://shopify/Collection/660811579684") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+      }
+    }
+  }
+  panoKeep: collection(id: "gid://shopify/Collection/660811317540") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+        title
+      }
+    }
+  }
+  panoDup: collection(id: "gid://shopify/Collection/660821606692") {
+    id
+    handle
+    products(first: 50) {
+      nodes {
+        id
+        handle
+        title
+      }
+    }
+  }
+  kumasli: collection(id: "gid://shopify/Collection/660821541156") {
+    id
+    handle
+    products(first: 20) {
+      nodes {
+        id
+        handle
+        title
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+mutation CreateSssPage($title: String!, $handle: String!, $body: String!, $suffix: String) {
+  pageCreate(
+    page: {
+      title: $title
+      handle: $handle
+      body: $body
+      isPublished: true
+      templateSuffix: $suffix
+    }
+  ) {
+    page {
+      id
+      handle
+      title
+      templateSuffix
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

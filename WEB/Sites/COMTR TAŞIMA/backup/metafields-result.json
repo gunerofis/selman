@@ -1,0 +1,17 @@
+{
+  "metafieldDefinitionCreate": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276678377764",
+      "namespace": "custom",
+      "key": "parca_sayisi"
+    },
+    "userErrors": []
+  },
+  "urunTuru": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276678410532",
+      "key": "urun_turu"
+    },
+    "userErrors": []
+  }
+}

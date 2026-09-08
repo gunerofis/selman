@@ -1,0 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "original-home",
+      "settings": {
+        "hero_title": "Sümen Takımları ve\nMasaüstü Ofis Setleri",
+        "hero_text": "Deri sümen takımlarından kişiselleştirilebilir masa üstü aksesuarlara, çalışma alanınız için özenle seçilmiş parçalar.",
+        "featured_collection": "sumen-takimi",
+        "collection_1": "deri-sumen-takimlari",
+        "collection_2": "kristal-sumen-takimlari",
+        "collection_3": "makam-panolari",
+        "collection_4": "deri-otel-ekipmanlari"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

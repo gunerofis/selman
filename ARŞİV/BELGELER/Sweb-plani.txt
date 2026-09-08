@@ -1,0 +1,148 @@
+SWEB PLANI
+==========
+Tarih: 2 Eylül 2026
+Kaynak: C:\Users\DELL\Desktop\WEB
+
+KARAR
+-----
+BÜCÜRÜKTOYS bitti. Moneluks sonraya kaldı.
+Sweb üzerinde çalışıyoruz.
+
+Asıl kopya:  C:\Users\DELL\Desktop\WEB\Sites\grok site
+  (TanStack Start vitrin — fiyatlar, duvar, setler, tasarla, favoriler)
+
+Duran kopya: C:\Users\DELL\Desktop\WEB\Sites\sweb
+  (eski Next.js iskelet — dokunulmaz, birleştirilmez)
+
+Canlı sümen mağazaları (sumentakimi.com / imalattansumen) bu işin dışında.
+Sweb, ev ve çalışma alanı için deri düzen ürünleri atölyesidir; sümen tek SKU değil.
+
+
+MARKA (tek dosya)
+-----------------
+Dosya: Sites\grok site\src\lib\brand.ts
+
+Dolu:
+  ad          Sweb
+  slogan      Ev ve çalışma alanı için düzen ürünleri.
+  e-posta     selam@sweb.co
+  atölye      Bomonti, Şişli · İstanbul
+  saat        09.00–18.00
+  dönüş       1 iş günü (iletişim), 2 iş günü (kurumsal teklif)
+
+Senden doldurulacak (uydurulmaz):
+  legalName   resmî ticaret unvanı
+  phone       telefon
+  iban        havale hesabı
+
+Bu üçü gelmeden KVKK tam tüzel kişi sayılmaz.
+IBAN gelmeden havale bilgisi sipariş onayında e-posta ile gider.
+
+
+YAPILAN (2 Eylül 2026 dilimi)
+-----------------------------
+1. Kimlik tek yerde toplandı. Unvan / telefon / IBAN boş bırakıldı.
+
+2. Formlar artık "önizleme, gönderilmedi" demiyor.
+   İletişim, kurumsal teklif, bülten, tasarım taslağı ve sipariş
+   kullanıcının e-posta uygulamasını selam@sweb.co adresine açıyor.
+   Kart tahsilatı yok. Ödeme: kapıda veya havale.
+   Ödeme formuna e-posta alanı eklendi.
+   Eşleşmeyen sipariş numarası sahte "teşekkürler" göstermiyor.
+
+3. Hukuki sayfalar önizleme stub'u değil:
+   gizlilik, KVKK, mesafeli satış, teslimat, iade.
+   KVKK'da resmî unvanın henüz yayımlanmadığı açık yazılı.
+
+4. Masaüstü menüde İletişim var. Hata ekranı Türkçe.
+
+5. Katalog ayrımı: Ürünler = tüm liste, Odalar = oda hub.
+   Menüde Odalar var. Ana sayfa ve hub Araç'ı tek ürüne indirger.
+   Renk metni: zemin boyanır, deri fotoğrafı değil.
+   Favoriler tablosunda oda adı (Ofis), ham id değil.
+
+6. Ödeme: il + ilçe + 5 haneli posta kodu.
+   Kapıda nakit / kapıda kart / havale.
+   IBAN yoksa havale notu "onay e-postasından gelir".
+   Teşekkür sayfası "sipariş hazır" — atölyeye düşmesi için e-postayı göndermek gerekir.
+
+7. Zenginleştirme:
+   Koleksiyon rengi URL'de paylaşılır (?renk=).
+   Son bakılanlar ana sayfa, ürün, koleksiyon.
+   Favori ve set sepete son seçilen rengi ekler.
+   Sepet / çekmece: renk zemini, KDV satırı, ürün linkinde renk.
+   Arama: sümen/kahve/banyo, boş sonuçta tasarla, son bakılan öneri.
+   404 ve boş sepet: odalar + tasarlayın.
+
+8. Estetik / etkileşim:
+   Duvar: merkeze al etiketi, merkezden sepete, renk zemin geçişi, görsel zoom.
+   Kart: noktaya basınca zemin boyanır, sepete o renk gider, toast.
+   Favori kalp pop + toast. Sepet sayısı pop.
+   Kaydırınca üst şerit kapanır, aktif menü kesikli taba çizgi.
+   Nasıl işliyor / kanıt şeridi tıklanır. Reduced-motion korunur.
+
+9. Kapsamlı etkileşim:
+   Ctrl+K veya / ile arama.
+   Kartta genişlet = hızlı bakış (renk + sepete).
+   Sepet/çekmecede satır rengi değiştirilir; aynı SKU birleşir.
+   Üstte kaydırma çubuğu, aşağıda yukarı çık.
+   Header'da (xl) global deri rengi.
+   Koleksiyonda 2/3/4 kolon.
+   Ürün görseli fareyle pan/zoom; SKU kopyala.
+   Tasarımda canlı ölçü kutusu.
+   Duvar: çift tık ürün sayfası.
+
+Sınır (bilinçli):
+  Sunucu tarafı gelen kutusu yok. Form, tarayıcıdaki mail uygulamasını açar.
+  Kullanıcı göndermezse atölyeye düşmez.
+
+
+SIRADAKİ DİLİMLER
+-----------------
+A. Senden gelen unvan, telefon, IBAN'ı brand.ts'e yaz.
+   İletişim, KVKK ve havale metni otomatik dolar.
+
+B. Gerçek e-posta gönderimi (Resend veya SMTP)
+   veya WhatsApp yedek kanalı.
+   Mail uygulamasına bağımlılık kalkar.
+
+E. Yayın öncesi
+   Hukukçu gözü (KVKK, mesafeli satış).
+   sweb.co alan adı, SSL, e-posta DNS (SPF/DKIM).
+   Fiyat / stok / kargo eşiklerinin son teyidi (şu an 1.500 TL üzeri kargo yok, 149 TL kargo).
+   Sites\sweb (Next.js) arşiv veya silme kararı.
+
+
+SAYFA HARİTASI (grok site)
+--------------------------
+  /                 duvar, nasıl işliyor, setler, odalar, bülten
+  /koleksiyon       tüm ürünler, arama, filtre
+  /kategori         oda hub
+  /kategori/$id     oda vitrini (ofis, banyo, makyaj, mutfak, gardırop, giriş, yaşam, araç)
+  /urun/$sku        ürün
+  /setler           üç ofis kiti
+  /tasarla          ölçü / fiyat taslağı, atölyeye gönder
+  /atolye           malzeme, üretim, bakım
+  /teklif           kurumsal, en az 50 adet
+  /iletisim         form + e-posta
+  /favoriler        noindex
+  /sepet            noindex
+  /odeme            noindex, kart yok
+  /siparis/$id      noindex, teşekkür
+  /teslimat /iade /gizlilik /cerez /kvkk /mesafeli
+
+
+YAPILMAYACAKLAR
+---------------
+  Unvan, vergi no, MERSİS, cadde no, IBAN uydurulmaz.
+  Sahte kart tahsilatı eklenmez.
+  Next.js sweb ile grok site paralel yaşatılmaz.
+  Moneluks / BÜCÜRÜKTOYS bu planda yok.
+
+
+KOMUTLAR (grok site)
+--------------------
+  klasör: C:\Users\DELL\Desktop\WEB\Sites\grok site
+  npm run dev
+  npm run test:storefront
+  node node_modules/typescript/bin/tsc --noEmit

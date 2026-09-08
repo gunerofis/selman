@@ -1,0 +1,30 @@
+{
+  "p9": {
+    "collection": {
+      "id": "gid://shopify/Collection/660952351012",
+      "handle": "9-parca-sumen-takimi"
+    },
+    "userErrors": []
+  },
+  "p10": {
+    "collection": {
+      "id": "gid://shopify/Collection/660952383780",
+      "handle": "10-parca-sumen-takimi"
+    },
+    "userErrors": []
+  },
+  "p11": {
+    "collection": {
+      "id": "gid://shopify/Collection/660952416548",
+      "handle": "11-parca-sumen-takimi"
+    },
+    "userErrors": []
+  },
+  "p12": {
+    "collection": {
+      "id": "gid://shopify/Collection/660952449316",
+      "handle": "12-parca-sumen-takimi"
+    },
+    "userErrors": []
+  }
+}

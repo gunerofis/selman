@@ -1,0 +1,31 @@
+:root{
+  /* zemin */
+  --krem:#F7F1E8;        /* sayfa */
+  --kagit:#FDFAF6;       /* kart, panel */
+  --sut:#E9DCCB;         /* sütlü kahve blok, görsel arkası */
+
+  /* metin */
+  --kahve:#4A3B2E;       /* ana metin */
+  --ikincil:#8A7866;     /* yardımcı metin, mono */
+
+  /* çizgi */
+  --dikis:#E3D8CA;       /* hairline + kesikli */
+  --dikis-koyu:#D6C7B4;  /* hover, seçili çerçeve */
+
+  /* aksan */
+  --taba:#A9743F;
+  --bordo:#6B2D36;       /* yalnız indirim / uyarı */
+
+  /* pastel kategori zeminleri */
+  --p-krem:#EFE6DA; --p-gri:#E4E5E2; --p-lacivert:#DDE1E6;
+  --p-taba:#EDE2DB; --p-bordo:#E8DCDC; --p-siyah:#E3E0DC;
+
+  /* ölçü */
+  --sp:8px; --r:0;
+  --font-display:'Archivo',sans-serif;
+  --font-body:'Instrument Sans',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+
+  /* hareket */
+  --hiz:320ms; --egri:cubic-bezier(.22,1,.36,1);
+}

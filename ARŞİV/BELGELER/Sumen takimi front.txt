@@ -1,0 +1,140 @@
+SUMEN TAKIMI FRONT — PLAN VE ÇALIŞMA GÜNLÜĞÜ
+============================================
+Site: https://www.sumentakimi.com.tr/
+Tarih: 2 Eylül 2026
+
+Bu txt boştu. Kanonik plan Grok hafızasına alındı:
+  C:\Users\DELL\.grok\memory\MEMORY.md
+  C:\Users\DELL\.grok\memory\sumentakimi-com-tr\FRONTEND.md
+  C:\Users\DELL\Desktop\sumentakimi-com-tr\FRONTEND.md
+
+SEO ajanı (dokunulmaz): oturum 01a06237 — URL, title, H1, koleksiyon, metafield, 301, schema.
+Bu ajan yalnız görünüm.
+
+
+PALET
+-----
+Orman yeşili  #1F3A2E  (birincil, buton, odak)
+Orman koyu    #14241C  (metin, footer)
+Krem          #F4EFE3  (sayfa)
+Vanilya       #FBF6EC  (kart / form)
+Krem koyu     #E6DCC8  (bant / panel)
+Parlak, pastel, lila, bebek mavisi, blush yasak.
+Resmi / otoriter dil. Radius yok. Gradient yok.
+
+
+ÇALIŞMA SONUÇLARI
+-----------------
+2026-09-02 17:10  Masaüstü Sumen takimi front.txt 0 bayt bulundu.
+2026-09-02 17:15  Plan hafızaya ve FRONTEND.md’ye yazıldı.
+
+Canlı denetim (https://www.sumentakimi.com.tr/):
+- Tema: Pastel Atelier, CDN t/2
+- Title/H1 SEO planıyla uyumlu (SEO ajanı tamamlamış; çakışma yok)
+- Palet hâlâ pastel: sage / blue / blush / lilac
+- Header dropdown #f7f7f3, theme-color #f7f7f3
+- Ana sayfa kristal filtresi boş sonuç basıyor
+- Yerel temada assets/theme.css yok; CSS yalnız Shopify’da
+- Shopify CLI PowerShell script yasağı: shopify.cmd kullanılacak
+- Canlı yayın henüz yapılmadı (kullanıcı izni kuralı)
+
+SEO ajanı çakışması:
+- URL / title / H1 / koleksiyon / metafield / 301’e dokunulmadı. Çakışma yok.
+- Küçük komşu alan: hero görsel alt metni “Pastel mimari…” → “Yönetici masasında siyah deri sümen takımı”. Title/H1 değil; SEO ajana haber.
+
+Yerel uygulama (canlıya basılmadı):
+- assets/theme.css: orman #1F3A2E + krem #F4EFE3 token; pastel hex temizlendi
+- layout/theme.liquid: theme-color #F4EFE3
+- site-header dropdown krem
+- original-home: kristal filtresine kristal koleksiyonundan kart; “Pastel” etiketleri kalktı
+- theme.js çerez anahtarı sumen-tr-consent-v1
+- settings_schema tema adı: Sümen Takımı TR
+- Yedek: backup/theme-css/theme.css.live.bak
+
+2026-09-02 18:20  Canlı yayın (b1zinb-wv.myshopify.com, tema 191944687908)
+- Yalnız 5 dosya, --nodelete: theme.css, theme.js, theme.liquid, original-home.liquid, settings_schema.json
+- sumen-takimi.myshopify.com’a BASILMADI (ayrı site)
+
+Canlı doğrulama (HTTP 200):
+- Ana, sümen koleksiyon, deri, kristal, ürün, iletişim, hakkımızda, blog, sepet, arama
+- theme-color #F4EFE3
+- CSS :root --forest #1F3A2E --cream #F4EFE3
+- Hero görseli duruyor (200)
+- Hero alt “Pastel” kalktı
+- Ana sayfa rail: 2 deri + 1 kristal kart; boş filtre gizli
+- SEO H1’leri duruyor (koleksiyon title’ları aynı)
+
+2026-09-02 18:40  İskelet yenilemesi canlı
+- original-home sadeleştirildi (4 koleksiyon kartı, 8 ürün, 3 yön)
+- theme.css baştan yazıldı (orman/krem, Palatino, yapışkan header)
+- Kaldı: 01-05 cetvel, overlap görsel, 183 sabiti, work-modes, story
+- Doğrulama: ana 4 cat + 8 kart; koleksiyon/ürün/iletişim/blog/sepet 200
+- CSS sürüm: theme.css?v=150248339777746541811788362149
+
+2026-09-02 19:10  Tek tip kapak + doluluk canlı
+- media-plate 4:3 contain, vanilya zemin
+- /collections 15 kart; ana 4 koleksiyon + 12 ürün + parça şeridi
+- Kart spec (parça · malzeme); filtre grupları
+- İletişim mührü yok
+- Doğrulama: home-cat 4, media-plate 16, index 15, contact seal false, H1’ler duruyor
+
+2026-09-02 19:40  Navbar + kart canlı
+- Üst öğe düğme (Shopify kılavuzu); tekrarlayan ebeveyn satırı yok
+- Farede hover, dokunmada tık; tek açık grup; Escape / dış tık
+- Mobil akordeon (3 grup)
+- Kart tek link; data-shelf yalnız metafield; ana ızgara 12 benzersiz ürün
+- Doğrulama: panel ilk satır “Tüm Sümen Takımları”, card-link 12, shelf=0 n=12, unique 12
+
+2026-09-02 21:10  UX turu canlı (galeri, sıralama, arama, sepet)
+- PDP: küçük resim + zoom; Gebze/İstanbul kargo notu (eşik yok); yapışkan sepete ekle
+- Koleksiyon: sort_by GET; 800px 2 kolon
+- Arama: suggest.json; boş sonuçta 4 koleksiyon
+- Sepet çekmecesi cart/add.js; boş sepet kartları
+- Tema 191944687908, --only 8 dosya, --nodelete
+- HTTP: ana 200, deri sort selected, Liya galeri+sticky, boş arama, sepet notu; ücretsiz kargo yok
+- CSS v=107589898999089817461788366484  JS v=154462964920553460571788366484
+
+2026-09-02 22:00  Görsel kırpma + hizalama
+- Canlı fotoğraflar 2:3 (900x1350); kart 4:3 + % padding + overflow kesiyordu
+- media-plate 2:3 contain, px inset; overflow kırpmıyor
+- Kart başlık 2 satır, fiyat alta hizalı; koleksiyon kartı tek çerçeve
+- Hero/iletişim contain 3:2; PDP galeri 2:3; journal 4:3 contain
+- 800px % padding kaldırıldı; spec/help kolonları düzeltildi
+- Yalnız theme.css, tema 191944687908
+
+2026-09-02 23:00  Filtre yerleşimi + navbar
+- Baymard/Shopify: masaüstü sol sütun, mobil çekmece; yatay etiket yığını kaldırıldı
+- Gruplar: Parça / Malzeme / Özellik / Fiyat; AND; ölü seçenek kapalı; chip + temizle
+- Filtre URL’si yok (SEO ajanı)
+- Navbar: 80px, harf aralığı, orman çizgi panel, 160ms hover gecikmesi; mega menü yok
+- Dosyalar: main-collection.liquid, theme.css, theme.js
+
+2026-09-02 23:40  Alt sepet sızıntısı + düğme hiyerarşisi
+- .cart-drawer { display:flex } kapalı dialog’u sayfa altına basıyordu
+- dialog:not([open]){display:none}; .cart-drawer[open] flex
+- Ara/Sepet çerçeveli ghost; dolu buton yalnız birincil CTA; “Tüm ürünler” metin link kaldı (NN/g)
+
+2026-09-02 24:10  Yoğunluk (boş duran ama dolu içerik)
+- Yeni bölüm yok. Kart çerçeve, featured/SSS vanilya bant, çizgi 0.28
+- Hero paneli cover ile doluyor; parça şeridi kutu; yön kartları 01–03
+- Güven şeridi 96px; journal kart çerçeve
+- Yalnız theme.css
+
+Geri alma: backup/theme-css/theme.css.live.bak ve backup/live-theme-snapshot/
+
+2026-09-02 (devam)  TR krom + yasal kimlik
+- Canlı tema 191944687908, --nodelete --only:
+  layout/theme.liquid (index title/og:title Sümen Takımı; TR soneki silinir)
+  sections/site-footer.liquid (© Sümen Takımı)
+  sections/main-product.liquid (schema seller Sümen Takımı; brand vendor/Makro Ofis)
+  sections/main-faq.liquid (schema author/publisher Sümen Takımı)
+  sections/main-collection.liquid (SSS hash #otel-ekipmanlari-makro-ofis)
+  config/settings_schema.json (theme_name Sümen Takımı)
+- Sayfa metafield kimliği (Makro Ofis mağaza adı değildi; üretici ayrı):
+  adres, EFT, gizlilik, kullanım, makam-panolari-2, mesafeli, teslimat, üyelik, hakkımızda title_tag TR
+- HTTP: ana title/og TR yok; footer © 2026 Sümen Takımı; header Sümen Takımı;
+  /collections/sumen-takimi 85 ürün; görünür Güner yok; PDP seller Sümen Takımı, brand Makro Ofis
+- Kalan: Admin shop.name hâlâ “Sümen Takımı TR” (shopUpdate yok). Yalnız ShopifyAnalytics initData içinde.
+  Admin’den Mağaza adı değiştirilirse script de düşer.
+
+SEO ajanı: yasal title_tag/description_tag kimlik metinleri değişti; H1/URL/koleksiyon dokunulmadı.

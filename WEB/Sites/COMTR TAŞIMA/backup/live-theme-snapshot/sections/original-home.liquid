@@ -1,0 +1,277 @@
+{% liquid
+  assign featured_collection = section.settings.featured_collection
+  if featured_collection == blank
+    assign featured_collection = collections.all
+  endif
+  assign c1 = section.settings.collection_1
+  assign c2 = section.settings.collection_2
+  assign c3 = section.settings.collection_3
+  assign c4 = section.settings.collection_4
+  assign name_collection = collections['masa-ustu-isimlikler']
+  assign luxury_collection = collections['luks-sumen-takimlari']
+  assign panel_collection = collections['makam-panolari']
+  assign journal = blogs['news']
+%}
+
+<section class="hero" aria-labelledby="hero-title-{{ section.id }}">
+  <div class="hero-index" aria-hidden="true"><span>01</span><i></i><b></b><i></i><span>05</span></div>
+  <div class="hero-copy">
+    <h1 id="hero-title-{{ section.id }}">{{ section.settings.hero_title | newline_to_br }}</h1>
+    <p>{{ section.settings.hero_text }}</p>
+    <div class="hero-actions">
+      <a class="button button-dark" href="{{ featured_collection.url | default: routes.all_products_collection_url }}">
+        Koleksiyonu keşfet
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg>
+      </a>
+      <a class="text-link" href="/pages/bize-ulasin">Kişiselleştirme seçenekleri</a>
+    </div>
+  </div>
+  <div class="hero-media" aria-label="Modern deri sümen takımı">
+    <picture>
+      <source media="(max-width: 800px)" srcset="{{ 'hero-liya-800.webp' | asset_url }}">
+      <img src="{{ 'hero-liya-1536.webp' | asset_url }}" width="1536" height="1024" alt="Pastel mimari masa düzeninde siyah deri sümen takımı" fetchpriority="high" loading="eager">
+    </picture>
+  </div>
+</section>
+
+<section class="collections" aria-labelledby="collections-title-{{ section.id }}">
+  <div class="collection-intro">
+    <h2 id="collections-title-{{ section.id }}">Koleksiyonlar</h2>
+    <p>Çalışma alanınızın ihtiyacına göre seçin.</p>
+    <a class="text-link arrow-link" href="{{ routes.collections_url }}">Tüm koleksiyonları gör <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </div>
+
+  <a class="collection-panel panel-sage" href="{% if c1 != blank %}{{ c1.url }}{% else %}/collections/deri-sumen-takimlari{% endif %}">
+    <span class="collection-number">01</span><h3>Deri Sümen<br>Takımları</h3>
+    {% if c1 != blank %}<span class="collection-count">{{ c1.products_count }} ürün</span>{% endif %}
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg>
+  </a>
+  <a class="collection-panel panel-blue" href="{% if c2 != blank %}{{ c2.url }}{% else %}/collections/kristal-sumen-takimlari{% endif %}">
+    <span class="collection-number">02</span><h3>Kristal<br>Sümen Takımları</h3>
+    {% if c2 != blank %}<span class="collection-count">{{ c2.products_count }} ürün</span>{% endif %}
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg>
+  </a>
+  <a class="collection-panel panel-blush" href="{% if c3 != blank %}{{ c3.url }}{% else %}/collections/makam-panolari{% endif %}">
+    <span class="collection-number">03</span><h3>Makam<br>Ürünleri</h3>
+    {% if c3 != blank %}<span class="collection-count">{{ c3.products_count }} ürün</span>{% endif %}
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg>
+  </a>
+  <a class="collection-panel panel-lilac" href="{% if c4 != blank %}{{ c4.url }}{% else %}/collections/deri-otel-ekipmanlari{% endif %}">
+    <span class="collection-number">04</span><h3>Otel<br>Ekipmanları</h3>
+    {% if c4 != blank %}<span class="collection-count">{{ c4.products_count }} ürün</span>{% endif %}
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg>
+  </a>
+
+  <picture class="collection-product collection-product-leather"><img src="{{ 'category-dora-1200.webp' | asset_url }}" width="1200" height="1800" alt="Siyah deri sümen takımı" loading="lazy"></picture>
+  <picture class="collection-product collection-product-crystal"><img src="{{ 'category-atay-1200.webp' | asset_url }}" width="1200" height="1800" alt="Siyah kristal masa seti" loading="lazy"></picture>
+</section>
+
+<section class="featured" id="secili-setler" aria-labelledby="featured-title-{{ section.id }}">
+  <div class="section-head">
+    <h2 id="featured-title-{{ section.id }}">Seçili setler</h2>
+    <div class="product-filters" role="group" aria-label="Ürünleri filtrele">
+      <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+      <button class="filter-button" type="button" data-filter="deri" aria-pressed="false">Deri</button>
+      <button class="filter-button" type="button" data-filter="kristal" aria-pressed="false">Kristal</button>
+      <button class="filter-button" type="button" data-filter="personalizable" aria-pressed="false">Kişiselleştirilebilir</button>
+    </div>
+  </div>
+
+  <div class="product-rail" data-product-rail aria-live="polite">
+    {% for product in featured_collection.products limit: 3 %}
+      {% liquid
+        assign searchable = product.title | append: ' ' | append: product.type | downcase
+        if searchable contains 'kristal'
+          assign card_type = 'kristal'
+        else
+          assign card_type = 'deri'
+        endif
+        assign card_class = 'product-card-wide'
+        if forloop.index == 2
+          assign card_class = 'product-card-tall'
+        elsif forloop.index == 3
+          assign card_class = 'product-card-crystal'
+        endif
+      %}
+      <article class="product-card {{ card_class }}" data-type="{{ card_type }}" data-personalizable="true">
+        <a class="product-media-link" href="{{ product.url }}">
+          {% if product.featured_image %}
+            {{ product.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '480, 800, 1200, 1400', alt: product.featured_image.alt | default: product.title }}
+          {% elsif forloop.first %}
+            <img src="{{ 'product-liya-1536.webp' | asset_url }}" width="1536" height="864" alt="{{ product.title | escape }}" loading="lazy">
+          {% else %}
+            <img src="{{ 'product-g101-1200.webp' | asset_url }}" width="1200" height="900" alt="{{ product.title | escape }}" loading="lazy">
+          {% endif %}
+        </a>
+        <div class="product-meta">
+          <a href="{{ product.url }}">{{ product.title }}</a>
+          <div>
+            <strong>{{ product.price | money }}</strong>
+            {% if product.compare_at_price > product.price %}<span class="compare-price">{{ product.compare_at_price | money }}</span>{% endif %}
+          </div>
+        </div>
+      </article>
+    {% else %}
+      <article class="product-card product-card-wide product-placeholder"><div class="product-media-link"><img src="{{ 'product-liya-1536.webp' | asset_url }}" width="1536" height="864" alt="Deri sümen takımı örnek görünümü"></div><div class="product-meta"><span>Ürünler içe aktarıldığında burada görünecek</span></div></article>
+      <article class="product-card product-card-tall product-placeholder"><div class="product-media-link"><img src="{{ 'product-g101-1200.webp' | asset_url }}" width="1200" height="900" alt="Bordo deri sümen takımı örnek görünümü"></div><div class="product-meta"><span>Koleksiyon yönetimden seçilebilir</span></div></article>
+    {% endfor %}
+  </div>
+  <p class="empty-state" data-empty-state hidden>Bu filtrede gösterilecek ürün bulunmuyor.</p>
+  <div class="featured-all"><a class="button button-outline" href="{{ featured_collection.url | default: routes.all_products_collection_url }}">Tüm ürünleri gör <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+</section>
+
+<section class="editorial-scene" aria-label="Pastel tonlarda düzenlenmiş yönetici masası">
+  <img src="{{ 'editorial-executive-desk-v1.png' | asset_url }}" width="1536" height="1024" alt="Siyah deri sümen takımıyla düzenlenmiş modern yönetici masası" loading="lazy">
+  <div class="editorial-scene__note">
+    <span>Çalışma alanı seçkisi</span>
+    <p>Malzeme, renk ve düzen aynı masada sakin bir bütün oluşturur.</p>
+  </div>
+</section>
+
+<section class="product-library" aria-labelledby="library-title-{{ section.id }}">
+  <header class="product-library__head">
+    <div>
+      <p class="eyebrow">Masanızı tamamlayın</p>
+      <h2 id="library-title-{{ section.id }}">Her çalışma biçimine<br>uygun bir parça.</h2>
+    </div>
+    <p>Günlük masa düzeninden yönetici odasına, farklı ihtiyaçlara göre seçilmiş sümen takımları ve tamamlayıcı aksesuarlar.</p>
+  </header>
+
+  <div class="product-library__grid">
+    {% for product in collections.all.products offset: 3 limit: 8 %}
+      <article class="library-product{% if forloop.index == 1 or forloop.index == 6 %} library-product--large{% endif %}">
+        <a class="library-product__media" href="{{ product.url }}">
+          {% if product.featured_image %}
+            {{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '360, 600, 900, 1200', sizes: '(max-width: 800px) 100vw, 25vw', alt: product.featured_image.alt | default: product.title }}
+          {% else %}
+            <img src="{{ 'product-g101-1200.webp' | asset_url }}" width="1200" height="900" alt="{{ product.title | escape }}" loading="lazy">
+          {% endif %}
+        </a>
+        <div class="library-product__meta">
+          <span>0{{ forloop.index }}</span>
+          <div><a href="{{ product.url }}">{{ product.title }}</a><strong>{{ product.price | money }}</strong></div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <div class="product-library__action"><a class="button button-outline" href="{{ routes.all_products_collection_url }}">183 ürünün tamamını görün <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+</section>
+
+<section class="personalization" aria-labelledby="personalization-title-{{ section.id }}">
+  <div class="personalization-copy">
+    <h2 id="personalization-title-{{ section.id }}">İsminize özel,<br>masanıza ait.</h2>
+    <p>Seçili ürünlerde isimlik, renk ve aksesuar seçeneklerini ürün sayfasında belirleyin.</p>
+    <a class="button button-dark" href="/pages/bize-ulasin">Kişiselleştirilebilir ürünler <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </div>
+  <div class="personalization-media"><img src="{{ 'editorial-personalization-detail-v1.png' | asset_url }}" width="1456" height="1086" alt="Boş isimlik plakası, dolma kalem ve siyah deri sümen seti detayı" loading="lazy"></div>
+</section>
+
+<section class="collection-stories" aria-labelledby="collection-stories-title-{{ section.id }}">
+  <header class="collection-stories__head">
+    <p class="eyebrow">Koleksiyon seçkisi</p>
+    <h2 id="collection-stories-title-{{ section.id }}">Tek bir masa,<br>birçok ifade biçimi.</h2>
+    <a class="text-link arrow-link" href="{{ routes.collections_url }}">Tüm koleksiyonlar <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </header>
+
+  <div class="collection-story collection-story--blue">
+    <a class="collection-story__media" href="{{ name_collection.url | default: '/collections/masa-ustu-isimlikler' }}">
+      {% if name_collection.products.first.featured_image %}
+        {{ name_collection.products.first.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1400', sizes: '(max-width: 800px) 100vw, 58vw', alt: name_collection.title }}
+      {% else %}
+        <img src="{{ 'product-g101-1200.webp' | asset_url }}" width="1200" height="900" alt="Masa üstü isimlik" loading="lazy">
+      {% endif %}
+    </a>
+    <div class="collection-story__copy"><span>01</span><p class="eyebrow">İmzanız masanızda</p><h3>Masa Üstü<br>İsimlikler</h3><p>Kristal, deri ve farklı malzeme seçenekleriyle çalışma alanınıza kişisel bir odak kazandırın.</p><a class="text-link arrow-link" href="{{ name_collection.url | default: '/collections/masa-ustu-isimlikler' }}">Koleksiyonu görün <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+  </div>
+
+  <div class="collection-story collection-story--reverse collection-story--blush">
+    <a class="collection-story__media" href="{{ luxury_collection.url | default: '/collections/luks-sumen-takimlari' }}">
+      {% if luxury_collection.products.first.featured_image %}
+        {{ luxury_collection.products.first.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1400', sizes: '(max-width: 800px) 100vw, 58vw', alt: luxury_collection.title }}
+      {% else %}
+        <img src="{{ 'category-dora-1200.webp' | asset_url }}" width="1200" height="900" alt="Lüks deri sümen takımı" loading="lazy">
+      {% endif %}
+    </a>
+    <div class="collection-story__copy"><span>02</span><p class="eyebrow">Yönetici masaları için</p><h3>Lüks Sümen<br>Takımları</h3><p>Geniş set içerikleri ve güçlü malzeme karakteriyle masanızda bütünlüklü bir düzen kurun.</p><a class="text-link arrow-link" href="{{ luxury_collection.url | default: '/collections/luks-sumen-takimlari' }}">Koleksiyonu görün <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+  </div>
+
+  <div class="collection-story collection-story--sage">
+    <a class="collection-story__media" href="{{ panel_collection.url | default: '/collections/makam-panolari' }}">
+      {% if panel_collection.products.first.featured_image %}
+        {{ panel_collection.products.first.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1400', sizes: '(max-width: 800px) 100vw, 58vw', alt: panel_collection.title }}
+      {% else %}
+        <img src="{{ 'category-atay-1200.webp' | asset_url }}" width="1200" height="900" alt="Makam odası ürünü" loading="lazy">
+      {% endif %}
+    </a>
+    <div class="collection-story__copy"><span>03</span><p class="eyebrow">Duvarlarda kurumsal ifade</p><h3>Makam<br>Panoları</h3><p>Çalışma ve karşılama alanlarını kurumsal kimliğinizle tamamlayan pano seçeneklerini keşfedin.</p><a class="text-link arrow-link" href="{{ panel_collection.url | default: '/collections/makam-panolari' }}">Koleksiyonu görün <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+  </div>
+</section>
+
+<section class="work-modes" aria-labelledby="work-modes-title-{{ section.id }}">
+  <header><p class="eyebrow">Nerede kullanacaksınız?</p><h2 id="work-modes-title-{{ section.id }}">Çalışma alanınıza göre seçin.</h2></header>
+  <div class="work-modes__list">
+    <a href="/collections/luks-sumen-takimlari"><span>01</span><h3>Yönetici masası</h3><p>Geniş yüzeyler için çok parçalı, bütünlüklü setler.</p><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+    <a href="/collections/deri-sumen-takimlari"><span>02</span><h3>Ev ofis</h3><p>Daha az parçayla sakin ve işlevli masa düzeni.</p><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+    <a href="/pages/bize-ulasin"><span>03</span><h3>Kurumsal alım</h3><p>Toplu sipariş ve kişiselleştirme talepleri için destek.</p><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </div>
+</section>
+
+<section class="story" aria-labelledby="story-title-{{ section.id }}">
+  <div class="story-copy">
+    <h2 id="story-title-{{ section.id }}">Detaylarda değer,<br>günlük rutinde düzen.</h2>
+    <div class="story-rule" aria-hidden="true"><span></span></div>
+    <p>Sümen takımlarımız; malzeme seçimi, işçilik ve fonksiyonelliği bir araya getirir. Çalışma alanınıza düzen ve prestij katar.</p>
+    <a class="text-link arrow-link" href="/pages/about-us">Hakkımızda <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+  </div>
+  <div class="story-art"><span class="story-circle" aria-hidden="true"></span><img src="{{ 'story-crystal-1536.webp' | asset_url }}" width="1536" height="864" alt="Kristal masa setinin altın ve kristal detayları" loading="lazy"></div>
+</section>
+
+{% if journal != blank and journal.articles_count > 0 %}
+  <section class="home-journal" aria-labelledby="journal-title-{{ section.id }}">
+    <header class="home-journal__head">
+      <div><p class="eyebrow">Masa üstü notları</p><h2 id="journal-title-{{ section.id }}">Seçiminizi kolaylaştıran rehberler.</h2></div>
+      <a class="text-link arrow-link" href="{{ journal.url }}">Tüm yazılar <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a>
+    </header>
+    <div class="home-journal__grid">
+      {% for article in journal.articles limit: 3 %}
+        <article class="home-journal__article">
+          <div class="home-journal__number">0{{ forloop.index }}</div>
+          <div class="home-journal__copy"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d.%m.%Y' }}</time><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.excerpt_or_content | strip_html | truncatewords: 21 }}</p><a class="text-link" href="{{ article.url }}">Okumaya devam edin</a></div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<section class="home-help" aria-labelledby="home-help-title-{{ section.id }}">
+  <div class="home-help__intro"><p class="eyebrow">Merak ettikleriniz</p><h2 id="home-help-title-{{ section.id }}">Doğru ürüne giden kısa cevaplar.</h2><p>Ürün seçimi veya kişiselleştirme konusunda farklı bir sorunuz varsa doğrudan bize yazabilirsiniz.</p><a class="button button-dark" href="/pages/bize-ulasin">Bize danışın <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></svg></a></div>
+  <div class="home-help__questions">
+    <details><summary>Hangi sümen takımını seçmeliyim?<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary><p>Masa ölçünüzü, gün içinde kullandığınız parçaları ve mobilya rengini birlikte değerlendirin. Dar masalarda kompakt; geniş yönetici masalarında çok parçalı setler daha dengeli sonuç verir.</p></details>
+    <details><summary>Kişiselleştirme nasıl yapılır?<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary><p>İsimlik veya özel uygulama istediğiniz ürünü belirledikten sonra isim, unvan ve adet bilgisini iletişim formumuz üzerinden paylaşabilirsiniz.</p></details>
+    <details><summary>Kurumsal ve toplu sipariş verebilir miyim?<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary><p>Evet. Ürün, adet ve varsa kurumsal uygulama talebinizi iletin; uygun seçenekleri birlikte netleştirelim.</p></details>
+    <details><summary>Siparişimle ilgili nasıl destek alırım?<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary><p>Sipariş numaranızla birlikte telefon, WhatsApp, e-posta veya iletişim formu üzerinden bize ulaşabilirsiniz.</p></details>
+  </div>
+</section>
+
+<section class="home-assurances" aria-label="Mağaza hizmetleri">
+  <div><span>01</span><strong>iyzico ile güvenli ödeme</strong></div>
+  <div><span>02</span><strong>Kargo ile teslimat</strong></div>
+  <div><span>03</span><strong>Ürün seçim desteği</strong></div>
+  <div><span>04</span><strong>Kişiselleştirme seçenekleri</strong></div>
+</section>
+
+{% schema %}
+{
+  "name": "Özgün ana sayfa",
+  "settings": [
+    { "type": "textarea", "id": "hero_title", "label": "Ana başlık", "default": "Sümen Takımları ve\nMasaüstü Ofis Setleri" },
+    { "type": "textarea", "id": "hero_text", "label": "Ana açıklama", "default": "Deri sümen takımlarından kişiselleştirilebilir masa üstü aksesuarlara, çalışma alanınız için özenle seçilmiş parçalar." },
+    { "type": "collection", "id": "featured_collection", "label": "Öne çıkan ürün koleksiyonu" },
+    { "type": "collection", "id": "collection_1", "label": "Deri koleksiyonu" },
+    { "type": "collection", "id": "collection_2", "label": "Kristal koleksiyonu" },
+    { "type": "collection", "id": "collection_3", "label": "Makam koleksiyonu" },
+    { "type": "collection", "id": "collection_4", "label": "Otel koleksiyonu" }
+  ],
+  "presets": [{ "name": "Özgün ana sayfa" }]
+}
+{% endschema %}

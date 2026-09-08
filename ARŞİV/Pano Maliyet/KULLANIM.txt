@@ -1,0 +1,39 @@
+PANO MALIYET v1.1
+=================
+
+KURULUM
+1. ZIP dosyasini normal bir klasore cikarin.
+2. KURULUM.bat dosyasina cift tiklayin.
+3. Masaustundeki "Pano Maliyet" kisayolunu acin.
+
+Ayni islemi kullanilacak 4 bilgisayarda birer kez uygulayin. Yonetici yetkisi
+gerekmez. Kurulum yalnizca o anki Windows kullanicisi icin yapilir.
+
+KULLANIM
+1. Pano yuksekligini ve genisligini santimetre olarak girin.
+2. MDF plaka, XBi, kumas ve 600 cm aluminyum profil USD fiyatlarini girin.
+3. Pano basina sabit "Diger giderler" tutarini USD olarak girin.
+4. "Maliyeti hesapla" butonuna basin.
+
+Tum fiyatlar ve sabit gider USD olarak girilir; her hesaplamada canli kurla
+TL'ye cevrilir. Girilen degerler bilgisayarda saklanir, her bilgisayara ilk
+kurulumdan sonra bir kez girilmelidir. Hesap gecmisi tutulmaz.
+
+HESAP
+Hammadde kalemleri + sabit gider = toplam hammadde maliyeti.
+Bunun uzerine ayni taban uzerinden %30 iscilik ve %25 kar eklenir.
+Genel toplam = toplam hammadde maliyeti x 1,55 (KDV haric).
+
+MDF plakadan cikan adet, tum parcalar ayni yonde dizilerek hesaplanir.
+Duz ve 90 derece cevrik dizilimden cok veren secilir; plaka uzerinde
+yon karistirilmaz.
+
+CANLI KUR
+Her hesaplamada USD/TL kuru internetten yeniden alinir. Internet veya iki kur
+servisi de kullanilamiyorsa eski kurla hesaplama yapilmaz.
+
+GUNCELLEME
+Yeni surum paketindeki KURULUM.bat dosyasini tekrar calistirmak yeterlidir.
+
+KALDIRMA
+Paket icindeki KALDIR.bat dosyasini calistirin.

@@ -1,0 +1,452 @@
+{
+  "collections": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Collection/660810858788",
+        "handle": "frontpage",
+        "title": "Home page",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 1
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811153700",
+        "handle": "sumen-takimi",
+        "title": "Sümen Takımı",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 80
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811284772",
+        "handle": "masa-ustu-setler",
+        "title": "Masa Üstü Setler",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 4
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811317540",
+        "handle": "makam-panolari",
+        "title": "Makam Panoları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 21
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811383076",
+        "handle": "ataturk-resimli-makam-panolari",
+        "title": "Atatürk Resimli Makam Panoları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 1
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811415844",
+        "handle": "kristal-sumen-takimlari",
+        "title": "Kristal Sümen Takımları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 5
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811448612",
+        "handle": "sumen-aksesuarlari",
+        "title": "Sümen Aksesuarları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 10
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811481380",
+        "handle": "makam-bayraklari",
+        "title": "Makam Bayrakları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 16
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811546916",
+        "handle": "deri-otel-ekipmanlari",
+        "title": "Deri Otel Ekipmanları",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 10
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811579684",
+        "handle": "kristal-masa-ustu-i̇simlikler",
+        "title": "Kristal Masa Üstü İsimlikler",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 32
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660811612452",
+        "handle": "osmanli-tugrasi",
+        "title": "Osmanlı Tuğrası",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 4
+        },
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": []
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821410084",
+        "handle": "dugmeli-makam-panosu",
+        "title": "Düğmeli Makam Panosu",
+        "descriptionHtml": "<p data-start=\"118\" data-end=\"376\">Şık tasarımı ve klasik görünümü ile öne çıkan <strong data-start=\"164\" data-end=\"190\">düğmeli makam panoları</strong>, ofis ve resmi alanlarda prestijli bir atmosfer oluşturur. Özel kapitone (düğmeli) tasarımı sayesinde dikkat çeken bu panolar, makam odalarına zarafet ve kurumsal bir kimlik kazandırır.</p>\n<p data-start=\"378\" data-end=\"670\">Kaliteli kumaş veya deri kaplama ile üretilen düğmeli makam panoları; Atatürk resmi, Türk bayrağı ve İstiklal Marşı gibi önemli değerlerle birlikte sunularak resmi kullanım için ideal bir seçenek oluşturur. Dayanıklı yapısı ve özenli işçiliği sayesinde uzun yıllar ilk günkü görünümünü korur.</p>\n<p data-start=\"672\" data-end=\"943\">Farklı renk, ölçü ve tasarım seçenekleri ile her ortama uyum sağlayan düğmeli makam panoları, yönetici odaları, kamu kurumları ve eğitim alanlarında sıklıkla tercih edilmektedir. Hem estetik hem de anlamlı bir dekorasyon ürünü arıyorsanız koleksiyonumuzu hemen inceleyin.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 0
+        },
+        "seo": {
+          "title": "Düğmeli Makam Panosu Modelleri | Makro Ofis",
+          "description": "Kapitone görünümlü düğmeli makam panosu modellerini inceleyin. Yönetici odası ve kurumunuza uygun şık, kaliteli pano seçeneklerini güvenle sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Düğmeli Makam Panosu Modelleri | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Kapitone görünümlü düğmeli makam panosu modellerini inceleyin. Yönetici odası ve kurumunuza uygun şık, kaliteli pano seçeneklerini güvenle sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821442852",
+        "handle": "deri-sumen-takimlari",
+        "title": "Deri Sümen Takımları",
+        "descriptionHtml": "<p data-start=\"127\" data-end=\"383\">Ofis şıklığını ve profesyonelliği bir araya getiren <strong data-start=\"179\" data-end=\"203\">deri sümen takımları</strong>, masa düzenini tamamlayan en prestijli aksesuarlardan biridir. Kaliteli deri kaplama ve özenli işçilikle üretilen bu setler, hem estetik hem de fonksiyonel yapısıyla dikkat çeker.</p>\n<p data-start=\"385\" data-end=\"692\">Deri sümen takımları; sümen (masa altlığı), kalemlik, notluk, kartvizitlik, evrak rafı ve masa isimliği gibi tamamlayıcı parçalardan oluşarak çalışma alanınızı düzenli hale getirir. Dayanıklı yapısı sayesinde uzun ömürlü kullanım sunarken, klasik ve modern tasarımlarıyla her ofis dekorasyonuna uyum sağlar.</p>\n<p data-start=\"694\" data-end=\"977\">Kişiye özel üretim seçenekleri ile isim, unvan veya logo baskısı yapılabilen deri sümen setleri, aynı zamanda şık ve anlamlı bir hediye alternatifi olarak da öne çıkar. Yönetici masalarında prestijli bir görünüm oluşturmak ve ofisinize değer katmak için ürünlerimizi hemen inceleyin.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 44
+        },
+        "seo": {
+          "title": "Deri Sümen Takımı Modelleri | Makro Ofis",
+          "description": "Halep, Chester, G101 ve Eko deri sümen takımı modellerini renk ve parça seçenekleriyle inceleyin. Ofis masanıza uygun seti güvenle sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Deri Sümen Takımı Modelleri | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Halep, Chester, G101 ve Eko deri sümen takımı modellerini renk ve parça seçenekleriyle inceleyin. Ofis masanıza uygun seti güvenle sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821475620",
+        "handle": "kristal-masa-setleri",
+        "title": "Kristal Masa Setleri",
+        "descriptionHtml": "<p>Ofis ve çalışma masalarınıza şık, modern ve prestijli bir görünüm kazandırmak için <strong>kristal masa setleri</strong> ideal bir seçimdir. Zarif tasarımı ve kaliteli detaylarıyla öne çıkan kristal masa setleri; makam odaları, yönetici ofisleri, şirket merkezleri ve özel çalışma alanlarında estetik bir masa düzeni oluşturmanıza yardımcı olur.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 5
+        },
+        "seo": {
+          "title": "Kristal Masa Setleri ve Sümen Takımları | Makro Ofis",
+          "description": "Kristal masa setleri ve sümen takımı seçeneklerini inceleyin. İsimlik, kalemlik ve masa üstü aksesuarlarıyla çalışma alanınıza şıklık ve düzen katın."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Kristal Masa Setleri ve Sümen Takımları | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Kristal masa setleri ve sümen takımı seçeneklerini inceleyin. İsimlik, kalemlik ve masa üstü aksesuarlarıyla çalışma alanınıza şıklık ve düzen katın.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821508388",
+        "handle": "kristal-sumen-takimlari-2",
+        "title": "Kristal Sümen Takımları",
+        "descriptionHtml": "<p>Ofis şıklığını ve prestijini yansıtan <strong data-start=\"182\" data-end=\"209\">kristal sümen takımları</strong>, masa düzeninizi estetik bir görünüme kavuştururken aynı zamanda profesyonel bir izlenim sunar. Özel tasarımı ve zarif detaylarıyla dikkat çeken bu ürünler, yönetici masalarının vazgeçilmez tamamlayıcıları arasında yer alır.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 0
+        },
+        "seo": {
+          "title": "Kişiye Özel Kristal Sümen Takımları | Makro Ofis",
+          "description": "Kişiye özel kristal sümen takımı seçeneklerini inceleyin. İsim ve unvan uygulamalı şık masa setleriyle ofisinizde profesyonel bir görünüm oluşturun."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Kişiye Özel Kristal Sümen Takımları | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Kişiye özel kristal sümen takımı seçeneklerini inceleyin. İsim ve unvan uygulamalı şık masa setleriyle ofisinizde profesyonel bir görünüm oluşturun.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821541156",
+        "handle": "kumasli-panolar",
+        "title": "Kumaşlı Panolar",
+        "descriptionHtml": "<p data-start=\"110\" data-end=\"383\">Ofis, okul ve yaşam alanlarında düzeni sağlamak ve notlarınızı pratik bir şekilde sergilemek için <strong data-start=\"208\" data-end=\"227\">kumaşlı panolar</strong> ideal bir çözümdür. Hem fonksiyonel hem de dekoratif yapısıyla öne çıkan bu panolar, modern tasarımlarıyla bulunduğu ortama estetik bir görünüm kazandırır.</p>\n<p data-start=\"385\" data-end=\"719\">Kaliteli kumaş kaplama yüzeyi sayesinde iğne ile kolay kullanım sunan kumaşlı panolar; duyuru, hatırlatma notları, fotoğraflar ve belgelerinizi düzenli bir şekilde sergilemenize yardımcı olur. Farklı renk ve ölçü seçenekleri ile her ortama uyum sağlayan bu ürünler, özellikle ofislerde ve eğitim alanlarında sıkça tercih edilmektedir.</p>\n<p data-start=\"721\" data-end=\"977\">Dayanıklı yapısı ve uzun ömürlü kullanımı ile dikkat çeken kumaş kaplı panolar, hem bireysel hem de kurumsal kullanım için uygundur. Duvar dekorasyonunu tamamlayan şık tasarımlarıyla yaşam alanlarınıza düzen ve stil katmak için ürünlerimizi hemen keşfedin.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 4
+        },
+        "seo": {
+          "title": "Kumaşlı Pano Modelleri ve Fiyatları | Makro Ofis",
+          "description": "Bordo, mavi, turkuaz ve turuncu kumaşlı pano modellerini inceleyin. Ofis, okul ve çalışma alanınıza uygun şık duyuru panosunu güvenle sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Kumaşlı Pano Modelleri ve Fiyatları | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Bordo, mavi, turkuaz ve turuncu kumaşlı pano modellerini inceleyin. Ofis, okul ve çalışma alanınıza uygun şık duyuru panosunu güvenle sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821573924",
+        "handle": "luks-sumen-takimlari",
+        "title": "Lüks Sümen Takımları",
+        "descriptionHtml": "<p data-start=\"134\" data-end=\"370\">Ofisinizde prestiji ve şıklığı ön plana çıkarmak istiyorsanız <strong data-start=\"196\" data-end=\"220\">lüks sümen takımları</strong> tam size göre. Üst düzey yöneticiler ve profesyonel çalışma alanları için özel olarak tasarlanan bu ürünler, masa düzenine zarafet ve bütünlük katar.</p>\n<p data-start=\"372\" data-end=\"684\">Kaliteli deri, kristal ve ahşap gibi seçkin malzemelerden üretilen lüks sümen takımları; kalemlik, evrak rafı, notluk, kartvizitlik ve masa isimliği gibi tamamlayıcı parçalarla birlikte sunulur. Hem fonksiyonel hem de estetik yapısıyla dikkat çeken bu setler, ofis dekorasyonunun en önemli parçalarından biridir.</p>\n<p data-start=\"686\" data-end=\"953\">Kişiye özel üretim seçenekleri ile isim, unvan veya firma logosu eklenebilen lüks sümen setleri, aynı zamanda prestijli bir hediye alternatifi sunar. İş hayatında fark yaratmak ve masanızda güçlü bir etki bırakmak için lüks sümen takımı modellerimizi hemen inceleyin.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 7
+        },
+        "seo": {
+          "title": "Lüks Sümen Takımı Modelleri | Makro Ofis",
+          "description": "Halep ve Chester lüks sümen takımı modellerini renk ve parça seçenekleriyle inceleyin. Yönetici masanıza uygun prestijli ofis setini güvenle sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Lüks Sümen Takımı Modelleri | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Halep ve Chester lüks sümen takımı modellerini renk ve parça seçenekleriyle inceleyin. Yönetici masanıza uygun prestijli ofis setini güvenle sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821606692",
+        "handle": "makam-panolari-3",
+        "title": "Makam Panoları",
+        "descriptionHtml": "<p>Makam panoları, ofis ve çalışma alanlarınıza şıklık ve prestij katmanın en zarif yollarından biridir. Deri, kristal ve ahşap seçenekleriyle sunulan makam panoları, isimlik, evrak rafı ve kalemlik gibi tamamlayıcı ofis aksesuarlarıyla kusursuz bir masa üstü düzeni sağlar. Atatürk resimli makam panoları, kurumsal ofislerde saygı ve değer katarken, düğmeli ve özel tasarım modeller ise modern ofis dekorasyonunu tamamlar. Fonksiyonel ve estetik makam panolarımız, hem hediye hem de kendi ofisiniz için ideal seçimdir.</p>",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 17
+        },
+        "seo": {
+          "title": "Makam Panosu Modelleri ve Fiyatları | Makro Ofis",
+          "description": "Atatürk resimli, düğmeli ve kumaş kaplı makam panosu modellerini inceleyin. Ofis ve kurumunuza uygun şık, kaliteli panoyu güvenle online sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Makam Panosu Modelleri ve Fiyatları | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Atatürk resimli, düğmeli ve kumaş kaplı makam panosu modellerini inceleyin. Ofis ve kurumunuza uygun şık, kaliteli panoyu güvenle online sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/660821639460",
+        "handle": "masa-ustu-isimlikler",
+        "title": "Kristal Masa Üstü İsimlikler",
+        "descriptionHtml": "",
+        "sortOrder": "MOST_RELEVANT",
+        "productsCount": {
+          "count": 32
+        },
+        "seo": {
+          "title": "Kristal Masa İsimliği Modelleri | Makro Ofis",
+          "description": "Kristal masa isimliği modellerini farklı tasarım seçenekleriyle inceleyin. İsme ve unvana özel hazırlanan şık ofis isimliklerini güvenle sipariş edin."
+        },
+        "ruleSet": null,
+        "metafields": {
+          "nodes": [
+            {
+              "namespace": "global",
+              "key": "title_tag",
+              "value": "Kristal Masa İsimliği Modelleri | Makro Ofis",
+              "type": "string"
+            },
+            {
+              "namespace": "global",
+              "key": "description_tag",
+              "value": "Kristal masa isimliği modellerini farklı tasarım seçenekleriyle inceleyin. İsme ve unvana özel hazırlanan şık ofis isimliklerini güvenle sipariş edin.",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+URL https://www.sumentakimi.com.tr/
+title=Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı
+og:title=Sümen Takımı Modelleri ve Masaüstü Setleri | Sümen Takımı
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+col=44 ürün
+---
+URL https://www.sumentakimi.com.tr/collections/sumen-takimi
+title=Sümen Takımı Modelleri ve Fiyatları
+og:title=Sümen Takımı Modelleri ve Fiyatları
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+col=85 ürün
+---
+URL https://www.sumentakimi.com.tr/pages/sss
+title=Sümen Takımı SSS: Malzeme, Parça ve Seçim
+og:title=Sümen Takımı SSS: Malzeme, Parça ve Seçim
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+otelHash=otel-ekipmanlari-makro-ofis
+---
+URL https://www.sumentakimi.com.tr/pages/about-us
+title=Hakkımızda ve Üretim | Sümen Takımı
+og:title=Hakkımızda ve Üretim | Sümen Takımı
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+---
+URL https://www.sumentakimi.com.tr/pages/kullanim-kosullari
+title=Sümen Takımı Kullanım Koşulları
+og:title=Sümen Takımı Kullanım Koşulları
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+---
+URL https://www.sumentakimi.com.tr/products/diamond-silver-sumen-takimi-9-parca-siyah
+title=Diamond Silver Sümen Takımı 9 Parça Siyah
+og:title=Diamond Silver Sümen Takımı 9 Parça Siyah
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+---
+URL https://www.sumentakimi.com.tr/collections/deri-otel-ekipmanlari
+title=Deri Otel Ekipmanları
+og:title=Deri Otel Ekipmanları
+header=Sümen Takımı
+copy=© 2026 Sümen Takımı
+gunerVis=False trVis=False
+trHitCount=1
+trSample=es":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Sümen Takımı TR","paymentSettings":{"currencyCode":"TRY"},"myshopifyDomain":"b1zinb-wv.myshopify.com","co
+col=10 ürün
+otelHash=otel-ekipmanlari-makro-ofis
+---

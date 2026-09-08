@@ -1,0 +1,90 @@
+{
+  "sumen": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811153700",
+      "handle": "sumen-takimi",
+      "title": "Sümen Takımı Modelleri ve Fiyatları"
+    },
+    "userErrors": []
+  },
+  "deri": {
+    "collection": {
+      "id": "gid://shopify/Collection/660821442852",
+      "handle": "deri-sumen-takimlari",
+      "title": "Deri Sümen Takımı Modelleri"
+    },
+    "userErrors": []
+  },
+  "luks": {
+    "collection": {
+      "id": "gid://shopify/Collection/660821573924",
+      "handle": "luks-sumen-takimlari",
+      "title": "Lüks Sümen Takımları"
+    },
+    "userErrors": []
+  },
+  "kristal": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811415844",
+      "handle": "kristal-sumen-takimlari",
+      "title": "Kristal Sümen Takımları"
+    },
+    "userErrors": []
+  },
+  "isimlik": {
+    "collection": {
+      "id": "gid://shopify/Collection/660821639460",
+      "handle": "masa-ustu-isimlikler",
+      "title": "Masa Üstü İsimlikler"
+    },
+    "userErrors": []
+  },
+  "pano": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811317540",
+      "handle": "makam-panolari",
+      "title": "Makam Panoları"
+    },
+    "userErrors": []
+  },
+  "kumasli": {
+    "collection": {
+      "id": "gid://shopify/Collection/660821541156",
+      "handle": "kumasli-panolar",
+      "title": "Kumaşlı Panolar"
+    },
+    "userErrors": []
+  },
+  "bayrak": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811481380",
+      "handle": "makam-bayraklari",
+      "title": "Makam Bayrakları"
+    },
+    "userErrors": []
+  },
+  "otel": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811546916",
+      "handle": "deri-otel-ekipmanlari",
+      "title": "Deri Otel Ekipmanları"
+    },
+    "userErrors": []
+  },
+  "setler": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811284772",
+      "handle": "masa-ustu-setler",
+      "title": "Masa Üstü Setler"
+    },
+    "userErrors": []
+  },
+  "aksesuar": {
+    "collection": {
+      "id": "gid://shopify/Collection/660811448612",
+      "handle": "sumen-aksesuarlari",
+      "title": "Sümen Aksesuarları"
+    },
+    "userErrors": []
+  }
+}

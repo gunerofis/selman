@@ -1,0 +1,8 @@
+query PageBodies {
+  p1: page(id: "gid://shopify/Page/166741475620") { handle body }
+  p2: page(id: "gid://shopify/Page/166741410084") { handle body }
+  p3: page(id: "gid://shopify/Page/166741639460") { handle body }
+  p4: page(id: "gid://shopify/Page/166741737764") { handle body }
+  p5: page(id: "gid://shopify/Page/166761464100") { handle body }
+  p6: page(id: "gid://shopify/Page/166741704996") { handle body }
+}

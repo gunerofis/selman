@@ -1,0 +1,2219 @@
+<style>
+/* =========================================================
+   GÜNER OFİS - SÜMENİNİ BUL V8
+   Ana sayfa / aç-kapat / Google yorumları üstü
+   ========================================================= */
+
+#go-sumen-toggle-wrap,
+#go-sumen-toggle-wrap *,
+#go-sumen-home-panel,
+#go-sumen-home-panel *{
+    box-sizing:border-box;
+}
+
+/* ============================ ÜST BUTON ============================ */
+
+#go-sumen-toggle-wrap{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:12px 18px;
+    text-align:center;
+    position:relative;
+    z-index:3;
+}
+
+#go-sumen-toggle{
+    appearance:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    min-height:46px;
+    padding:0 26px;
+    border:0!important;
+    border-radius:4px;
+    background:#1a1a1a!important;
+    color:#fff!important;
+    font-family:inherit;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.2px;
+    cursor:pointer;
+    transition:opacity .15s ease,transform .15s ease;
+}
+
+#go-sumen-toggle:hover{
+    opacity:.88;
+    transform:translateY(-1px);
+}
+
+#go-sumen-toggle .go-toggle-arrow{
+    font-size:15px;
+    line-height:1;
+    transition:transform .2s ease;
+}
+
+#go-sumen-toggle[aria-expanded="true"] .go-toggle-arrow{
+    transform:rotate(180deg);
+}
+
+/* ============================ ANA PANEL ============================ */
+
+#go-sumen-home-panel{
+    display:none;
+    width:100%;
+    max-width:1400px;
+    margin:30px auto;
+    padding:0 18px;
+    font-family:inherit;
+    color:#252525;
+}
+
+#go-sumen-home-panel.go-open{
+    display:block;
+}
+
+#go-sumen-home-panel .go-inner{
+    width:100%;
+    padding:28px 16px;
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+    background:#fff;
+}
+
+/* ============================ HEADER ============================ */
+
+#go-sumen-home-panel .go-panel-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:25px;
+    margin-bottom:24px;
+}
+
+#go-sumen-home-panel .go-kicker{
+    margin-bottom:5px;
+    color:#777;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+}
+
+#go-sumen-home-panel h2{
+    margin:0 0 7px!important;
+    padding:0!important;
+    color:#252525;
+    font-size:clamp(25px,3vw,35px);
+    font-weight:700;
+    line-height:1.2;
+    text-align:left;
+}
+
+#go-sumen-home-panel .go-intro{
+    max-width:680px;
+    margin:0;
+    color:#777;
+    font-size:13px;
+    line-height:1.65;
+}
+
+#go-sumen-home-panel .go-panel-close{
+    appearance:none;
+    flex:0 0 auto;
+    min-height:38px;
+    padding:0 13px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    background:#fff;
+    color:#444;
+    font-family:inherit;
+    font-size:12px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ============================ FİLTRELER ============================ */
+
+#go-sumen-home-panel .go-filters{
+    border-top:1px solid #eee;
+}
+
+#go-sumen-home-panel .go-filter-row{
+    display:grid;
+    grid-template-columns:135px minmax(0,1fr);
+    gap:18px;
+    padding:16px 0;
+    border-bottom:1px solid #eee;
+}
+
+#go-sumen-home-panel .go-filter-label{
+    padding-top:8px;
+    font-size:13px;
+    font-weight:700;
+}
+
+#go-sumen-home-panel .go-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+#go-sumen-home-panel .go-option{
+    appearance:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    min-height:37px;
+    padding:7px 12px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    background:#fff;
+    color:#333;
+    font-family:inherit;
+    font-size:11px;
+    font-weight:600;
+    line-height:1;
+    cursor:pointer;
+    transition:.15s ease;
+}
+
+#go-sumen-home-panel .go-option:hover{
+    border-color:#999;
+}
+
+#go-sumen-home-panel .go-option.go-active{
+    border-color:#1a1a1a;
+    background:#1a1a1a;
+    color:#fff;
+}
+
+#go-sumen-home-panel .go-dot{
+    width:12px;
+    height:12px;
+    flex:0 0 12px;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius:50%;
+}
+
+/* ============================ İŞLEMLER ============================ */
+
+#go-sumen-home-panel .go-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    padding-top:18px;
+}
+
+#go-sumen-home-panel .go-find,
+#go-sumen-home-panel .go-reset{
+    appearance:none;
+    min-height:43px;
+    padding:0 18px;
+    border-radius:3px;
+    font-family:inherit;
+    font-size:12px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+#go-sumen-home-panel .go-find{
+    border:1px solid #1a1a1a;
+    background:#1a1a1a;
+    color:#fff;
+}
+
+#go-sumen-home-panel .go-reset{
+    border:1px solid #ddd;
+    background:#fff;
+    color:#333;
+}
+
+/* ============================ DURUM ============================ */
+
+#go-sumen-home-panel .go-status{
+    display:none;
+    margin-top:17px;
+    padding:12px 14px;
+    background:#f7f7f7;
+    color:#777;
+    font-size:12px;
+}
+
+#go-sumen-home-panel .go-status.go-show{
+    display:block;
+}
+
+/* ============================ SONUÇ ============================ */
+
+#go-sumen-home-panel .go-results{
+    display:none;
+    margin-top:30px;
+}
+
+#go-sumen-home-panel .go-results.go-show{
+    display:block;
+}
+
+#go-sumen-home-panel .go-results-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:14px;
+}
+
+#go-sumen-home-panel .go-results-head h3{
+    margin:0 0 4px!important;
+    padding:0!important;
+    font-size:21px;
+    font-weight:700;
+    text-align:left;
+}
+
+#go-sumen-home-panel .go-result-info{
+    color:#777;
+    font-size:11px;
+}
+
+#go-sumen-home-panel .go-all-link{
+    flex:0 0 auto;
+    color:#333;
+    font-size:11px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+/* ============================ ÜRÜN GRID ============================ */
+
+#go-sumen-home-panel .go-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:13px;
+}
+
+#go-sumen-home-panel .go-product{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    overflow:hidden;
+    border:1px solid #e4e4e4;
+    border-radius:3px;
+    background:#fff;
+    transition:transform .18s ease,box-shadow .18s ease;
+}
+
+#go-sumen-home-panel .go-product:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(0,0,0,.07);
+}
+
+/* ============================ GÖRSEL ============================ */
+
+#go-sumen-home-panel .go-media{
+    position:relative;
+    display:block;
+    width:100%;
+    aspect-ratio:1 / 1;
+    padding:0;
+    overflow:hidden;
+    border:0;
+    border-bottom:1px solid #eee;
+    background:#fff;
+    cursor:pointer;
+}
+
+#go-sumen-home-panel .go-media img{
+    display:block;
+    width:100%;
+    height:100%;
+    padding:7px;
+    object-fit:contain;
+    background:#fff;
+}
+
+#go-sumen-home-panel .go-placeholder{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:#f7f7f7;
+    color:#888;
+    text-align:center;
+    font-size:11px;
+}
+
+/* ============================ ÜRÜN BODY ============================ */
+
+#go-sumen-home-panel .go-product-body{
+    display:flex;
+    flex-direction:column;
+    flex:1 1 auto;
+    padding:11px;
+}
+
+#go-sumen-home-panel .go-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px;
+    min-height:17px;
+    margin-bottom:6px;
+}
+
+#go-sumen-home-panel .go-tag{
+    padding:2px 5px;
+    background:#f5f5f5;
+    color:#777;
+    font-size:9px;
+    line-height:1.5;
+}
+
+#go-sumen-home-panel .go-name{
+    display:-webkit-box!important;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    min-height:39px;
+    margin-bottom:7px;
+    overflow:hidden;
+    color:#222;
+    font-size:12px;
+    font-weight:600;
+    line-height:1.55;
+    text-decoration:none!important;
+}
+
+#go-sumen-home-panel .go-price{
+    min-height:24px;
+    margin-bottom:9px;
+    color:#1a1a1a;
+    font-size:15px;
+    font-weight:700;
+}
+
+#go-sumen-home-panel .go-price .go-old{
+    margin-left:6px;
+    color:#999;
+    font-size:11px;
+    font-weight:500;
+    text-decoration:line-through;
+}
+
+/* ============================ ÜRÜN BUTONLARI ============================ */
+
+#go-sumen-home-panel .go-card-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+    margin-top:auto;
+}
+
+#go-sumen-home-panel .go-preview,
+#go-sumen-home-panel .go-product-link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:36px;
+    padding:5px 7px;
+    border-radius:2px;
+    font-family:inherit;
+    font-size:10px;
+    font-weight:700;
+    text-align:center;
+    text-decoration:none!important;
+}
+
+#go-sumen-home-panel .go-preview{
+    appearance:none;
+    border:1px solid #ddd;
+    background:#fff;
+    color:#333;
+    cursor:pointer;
+}
+
+#go-sumen-home-panel .go-product-link{
+    border:1px solid #1a1a1a;
+    background:#1a1a1a;
+    color:#fff!important;
+}
+
+#go-sumen-home-panel .go-empty{
+    grid-column:1/-1;
+    padding:25px;
+    background:#f7f7f7;
+    color:#666;
+    text-align:center;
+    font-size:12px;
+}
+
+/* ============================ HIZLI ÖNİZLEME ============================ */
+
+#go-sumen-home-panel .go-modal{
+    position:fixed;
+    inset:0;
+    z-index:99999999;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    background:rgba(0,0,0,.57);
+}
+
+#go-sumen-home-panel .go-modal.go-open{
+    display:flex;
+}
+
+#go-sumen-home-panel .go-modal-box{
+    position:relative;
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+    width:min(900px,100%);
+    max-height:90vh;
+    overflow:auto;
+    background:#fff;
+    box-shadow:0 24px 75px rgba(0,0,0,.25);
+}
+
+#go-sumen-home-panel .go-modal-close{
+    position:absolute;
+    z-index:10;
+    top:10px;
+    right:10px;
+    width:38px;
+    height:38px;
+    padding:0;
+    border:1px solid #ddd;
+    border-radius:50%;
+    background:#fff;
+    color:#222;
+    font-size:22px;
+    line-height:1;
+    cursor:pointer;
+}
+
+#go-sumen-home-panel .go-modal-media{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:420px;
+    padding:20px;
+    border-right:1px solid #eee;
+    background:#fafafa;
+    color:#888;
+    font-size:12px;
+}
+
+#go-sumen-home-panel .go-modal-media img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:520px;
+    object-fit:contain;
+}
+
+#go-sumen-home-panel .go-modal-content{
+    padding:34px 25px;
+}
+
+#go-sumen-home-panel .go-modal-content h4{
+    margin:0 0 10px!important;
+    padding:0!important;
+    font-size:20px;
+    line-height:1.4;
+    text-align:left;
+}
+
+#go-sumen-home-panel .go-modal-price{
+    margin-bottom:14px;
+    font-size:19px;
+    font-weight:700;
+}
+
+#go-sumen-home-panel .go-modal-desc{
+    margin-bottom:20px;
+    color:#707070;
+    font-size:12px;
+    line-height:1.65;
+}
+
+#go-sumen-home-panel .go-modal-link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:44px;
+    background:#1a1a1a;
+    color:#fff!important;
+    font-size:12px;
+    font-weight:700;
+    text-decoration:none!important;
+}
+
+/* ============================ MOBİL ============================ */
+
+@media(max-width:1000px){
+    #go-sumen-home-panel .go-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+}
+
+@media(max-width:700px){
+
+    #go-sumen-toggle-wrap{
+        padding:10px;
+    }
+
+    #go-sumen-toggle{
+        width:100%;
+        max-width:360px;
+    }
+
+    #go-sumen-home-panel{
+        margin:22px auto;
+        padding:0 10px;
+    }
+
+    #go-sumen-home-panel .go-inner{
+        padding:20px 12px;
+    }
+
+    #go-sumen-home-panel .go-panel-head{
+        gap:12px;
+    }
+
+    #go-sumen-home-panel .go-filter-row{
+        grid-template-columns:1fr;
+        gap:8px;
+        padding:13px 0;
+    }
+
+    #go-sumen-home-panel .go-filter-label{
+        padding:0;
+    }
+
+    #go-sumen-home-panel .go-option{
+        flex-grow:1;
+        justify-content:center;
+        padding-left:8px;
+        padding-right:8px;
+    }
+
+    #go-sumen-home-panel .go-actions{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    #go-sumen-home-panel .go-find,
+    #go-sumen-home-panel .go-reset{
+        width:100%;
+    }
+
+    #go-sumen-home-panel .go-results-head{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:6px;
+    }
+
+    #go-sumen-home-panel .go-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:7px;
+    }
+
+    #go-sumen-home-panel .go-product-body{
+        padding:8px;
+    }
+
+    #go-sumen-home-panel .go-card-actions{
+        grid-template-columns:1fr;
+    }
+
+    #go-sumen-home-panel .go-modal{
+        padding:6px;
+    }
+
+    #go-sumen-home-panel .go-modal-box{
+        grid-template-columns:1fr;
+    }
+
+    #go-sumen-home-panel .go-modal-media{
+        min-height:290px;
+        padding:12px;
+        border-right:0;
+        border-bottom:1px solid #eee;
+    }
+
+    #go-sumen-home-panel .go-modal-content{
+        padding:20px 15px;
+    }
+}
+</style>
+
+
+<script>
+(function(){
+
+"use strict";
+
+if(window.__GO_SUMEN_HOME_V8__){
+    return;
+}
+
+window.__GO_SUMEN_HOME_V8__ = true;
+
+
+/* Sadece ana sayfa */
+if(window.location.pathname.replace(/\/+$/,"") !== ""){
+    return;
+}
+
+
+/* =========================================================
+   AYAR
+   ========================================================= */
+
+var CONFIG = {
+
+    MAIN_CATEGORY: "/sumen-takimlari/",
+
+    MATERIAL_CATEGORIES: {
+        deri:    "/deri-sumen-takimlari/",
+        ahsap:   "/ahsap-sumen-takimlari/",
+        kristal: "/kristal-sumen-takimi/"
+    },
+
+    MAX_PAGES: 4,
+
+    MAX_RESULTS: 8
+};
+
+
+/* =========================================================
+   DATA
+   ========================================================= */
+
+var CATALOG      = [];
+var LOAD_PROMISE = null;
+
+var MATERIALS = {
+    deri:    new Set(),
+    ahsap:   new Set(),
+    kristal: new Set()
+};
+
+var DETAIL_CACHE = new Map();
+
+var STATE = {
+    material: "all",
+    color:    "all",
+    pieces:   "all"
+};
+
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function normalize(value){
+
+    return String(value || "")
+        .toLocaleLowerCase("tr-TR")
+        .replace(/ı/g,"i")
+        .replace(/ğ/g,"g")
+        .replace(/ü/g,"u")
+        .replace(/ş/g,"s")
+        .replace(/ö/g,"o")
+        .replace(/ç/g,"c")
+        .replace(/\s+/g," ")
+        .trim();
+}
+
+
+function absoluteURL(url){
+
+    if(!url){
+        return "";
+    }
+
+    try{
+        return new URL(url, window.location.href).href;
+    }
+    catch(error){
+        return "";
+    }
+}
+
+
+function cleanURL(url){
+
+    try{
+        var u = new URL(url, window.location.href);
+
+        u.search = "";
+        u.hash   = "";
+
+        return u.href.replace(/\/+$/,"");
+    }
+    catch(error){
+        return "";
+    }
+}
+
+
+/*
+ * www'lu ve www'suz adres aynı mağazadır.
+ * Ana sayfa hangi varyantta açılırsa açılsın
+ * kategori linkleri elenmesin diye host normalize edilir.
+ */
+function sameStore(url){
+
+    try{
+        var host = new URL(url).hostname.replace(/^www\./,"");
+        var here = window.location.hostname.replace(/^www\./,"");
+
+        return host === here;
+    }
+    catch(error){
+        return false;
+    }
+}
+
+
+/* =========================================================
+   ÜRÜN BAŞLIĞI
+   ========================================================= */
+
+/*
+ * Başlıklar ürün kartlarının içinden okunduğu için burada
+ * "sümen" kelimesi aranmaz: Kristal kategorisinde adı
+ * "Kristal Masa Üstü İsimliği" olan gerçek ürünler var ve
+ * kelime şartı bunları eliyordu.
+ *
+ * Liste yalnızca kategori bağlantısının ürün sanılmasına karşı
+ * bir emniyettir; "Kristal Sümen Takımı" hem kategori hem de
+ * gerçek bir ürün adı olduğu için listede yer almaz.
+ */
+function isProductTitle(title){
+
+    var t = normalize(title);
+
+    if(!t){
+        return false;
+    }
+
+    var excluded = [
+        "sumen takimlari",
+        "deri sumen takimlari",
+        "ahsap sumen takimlari",
+        "kristal sumen takimlari",
+        "sumen takimi olusturma"
+    ];
+
+    return excluded.indexOf(t) === -1;
+}
+
+
+/* =========================================================
+   RENK
+   ========================================================= */
+
+function detectColor(title){
+
+    var t = normalize(title);
+
+    var map = [
+        ["gul siyah","siyah"],
+        ["kahverengi","kahve"],
+        ["lacivert","mavi"],
+        ["kirmizi","kirmizi"],
+        ["turuncu","turuncu"],
+        ["turkuaz","turkuaz"],
+        ["zebrano","zebrano"],
+        ["yesil","yesil"],
+        ["pembe","pembe"],
+        ["bordo","bordo"],
+        ["ceviz","ceviz"],
+        ["beyaz","beyaz"],
+        ["kahve","kahve"],
+        ["siyah","siyah"],
+        ["taba","taba"],
+        ["krem","krem"],
+        ["gri","gri"],
+        ["mavi","mavi"]
+    ];
+
+    for(var i=0; i<map.length; i++){
+
+        if(t.includes(map[i][0])){
+            return map[i][1];
+        }
+    }
+
+    return "";
+}
+
+
+/* =========================================================
+   PARÇA
+   ========================================================= */
+
+function detectPieces(title){
+
+    var t = normalize(title);
+
+    var patterns = [
+        /(\d{1,2})\s*parca/,
+        /(\d{1,2})\s*aksesuarli/,
+        /(\d{1,2})\s*aksesuar/,
+        /(\d{1,2})['’]li\s*sumen/,
+        /\s(\d{1,2})\s*$/
+    ];
+
+    for(var i=0; i<patterns.length; i++){
+
+        var match = t.match(patterns[i]);
+
+        if(!match){
+            continue;
+        }
+
+        var number = parseInt(match[1], 10);
+
+        if(number >= 2 && number <= 30){
+            return number;
+        }
+    }
+
+    return null;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+function materialLabel(value){
+
+    return {
+        deri:         "Deri",
+        ahsap:        "Ahşap",
+        "ahsap-deri": "Ahşap + Deri",
+        kristal:      "Kristal"
+    }[value] || "";
+}
+
+
+function colorLabel(value){
+
+    return {
+        siyah:"Siyah",
+        beyaz:"Beyaz",
+        kahve:"Kahve",
+        taba:"Taba",
+        bordo:"Bordo",
+        krem:"Krem",
+        gri:"Gri",
+        mavi:"Mavi",
+        yesil:"Yeşil",
+        kirmizi:"Kırmızı",
+        turuncu:"Turuncu",
+        turkuaz:"Turkuaz",
+        pembe:"Pembe",
+        ceviz:"Ceviz",
+        zebrano:"Zebrano"
+    }[value] || "";
+}
+
+
+/* =========================================================
+   FETCH
+   ========================================================= */
+
+async function fetchDocument(url){
+
+    var response = await fetch(
+        absoluteURL(url),
+        {
+            credentials: "same-origin",
+            cache:       "default"
+        }
+    );
+
+    if(!response.ok){
+        throw new Error("HTTP " + response.status + " - " + url);
+    }
+
+    var html = await response.text();
+
+    return new DOMParser().parseFromString(html, "text/html");
+}
+
+
+/* =========================================================
+   KATEGORİ KARTINDAN ÜRÜN ÇIKAR
+
+   Faprika kategori kartı ürünün adını, linkini,
+   fiyatını ve görselini zaten taşıyor. Görsel lazy-load
+   olduğu için gerçek adres data-src içindedir; src ise
+   yer tutucudur (lazy-logo.png).
+
+   Görsel ve fiyat ürünün KENDİ kartından okunduğu için
+   başka bir ürünün görseline bağlanma riski yoktur ve
+   ürün başına ayrı detay isteği gerekmez.
+   ========================================================= */
+
+function pickCardImage(item){
+
+    var img = item.querySelector("img");
+
+    if(!img){
+        return "";
+    }
+
+    var candidates = [
+        img.getAttribute("data-src"),
+        img.getAttribute("data-original"),
+        img.getAttribute("data-lazy"),
+        img.getAttribute("src")
+    ];
+
+    for(var i=0; i<candidates.length; i++){
+
+        var value = candidates[i];
+
+        if(!value){
+            continue;
+        }
+
+        if(/lazy-logo|placeholder|blank\.|data:image/i.test(value)){
+            continue;
+        }
+
+        return absoluteURL(value);
+    }
+
+    return "";
+}
+
+
+function pickCardPrice(item){
+
+    var el =
+        item.querySelector(".prices .price") ||
+        item.querySelector(".product-price .price") ||
+        item.querySelector(".price");
+
+    if(!el){
+        return "";
+    }
+
+    var text = (el.textContent || "").replace(/\s+/g," ").trim();
+
+    return /\d/.test(text) ? text : "";
+}
+
+
+function pickCardOldPrice(item){
+
+    var el =
+        item.querySelector(".prices .old-price") ||
+        item.querySelector(".old-price");
+
+    if(!el){
+        return "";
+    }
+
+    var text = (el.textContent || "")
+        .replace(/\s+/g," ")
+        .replace(/%\s*\d+\s*(indirim)?/i,"")
+        .trim();
+
+    return /\d/.test(text) ? text : "";
+}
+
+
+function extractProducts(doc){
+
+    var items = Array.from(doc.querySelectorAll(".product-item"));
+
+    /* Tema değişirse tamamen boş kalmasın */
+    if(!items.length){
+        items = Array.from(doc.querySelectorAll(".product, .product-grid .item"));
+    }
+
+    var result = [];
+    var seen   = new Set();
+
+    items.forEach(function(item){
+
+        var anchor =
+            item.querySelector("h2.name a[href]") ||
+            item.querySelector("h2 a[href]") ||
+            item.querySelector(".product-name a[href]") ||
+            item.querySelector("a[href]");
+
+        if(!anchor){
+            return;
+        }
+
+        var title = (
+            anchor.textContent ||
+            anchor.getAttribute("title") ||
+            ""
+        ).replace(/\s+/g," ").trim();
+
+        if(!isProductTitle(title)){
+            return;
+        }
+
+        var url = cleanURL(anchor.getAttribute("href"));
+
+        if(!url || seen.has(url) || !sameStore(url)){
+            return;
+        }
+
+        seen.add(url);
+
+        result.push({
+            title:    title,
+            url:      url,
+            image:    pickCardImage(item),
+            price:    pickCardPrice(item),
+            oldPrice: pickCardOldPrice(item),
+            color:    detectColor(title),
+            pieces:   detectPieces(title)
+        });
+    });
+
+    return result;
+}
+
+
+/* =========================================================
+   KATEGORİ + SAYFALAMA
+   ========================================================= */
+
+async function categoryProducts(category){
+
+    var all  = [];
+    var seen = new Set();
+
+    for(var page=1; page<=CONFIG.MAX_PAGES; page++){
+
+        var url = new URL(category, window.location.origin);
+
+        if(page > 1){
+            url.searchParams.set("pagenumber", String(page));
+        }
+
+        var doc;
+
+        try{
+            doc = await fetchDocument(url.href);
+        }
+        catch(error){
+
+            if(page === 1){
+                throw error;
+            }
+
+            break;
+        }
+
+        var products = extractProducts(doc);
+        var added    = 0;
+
+        products.forEach(function(product){
+
+            if(seen.has(product.url)){
+                return;
+            }
+
+            seen.add(product.url);
+            all.push(product);
+            added++;
+        });
+
+        if(added === 0){
+            break;
+        }
+    }
+
+    return all;
+}
+
+
+/* =========================================================
+   KATALOG + MALZEME
+
+   Katalog dört kategorinin birleşimidir. Kristal ürünler
+   "Sümen Takımları" kategorisi altında listelenmediği için
+   yalnızca ana kategori okunsaydı Kristal filtresi hiçbir
+   zaman sonuç veremezdi.
+
+   Aynı geçişte malzeme kümeleri de kurulur: malzeme yalnızca
+   ürün adına bakılarak belirlenmez, ürün adında "deri"
+   geçmese bile Deri Sümen Takımları kategorisindeyse deri
+   kabul edilir.
+   ========================================================= */
+
+function loadCatalog(){
+
+    if(!LOAD_PROMISE){
+
+        LOAD_PROMISE = Promise.allSettled([
+            categoryProducts(CONFIG.MAIN_CATEGORY),
+            categoryProducts(CONFIG.MATERIAL_CATEGORIES.deri),
+            categoryProducts(CONFIG.MATERIAL_CATEGORIES.ahsap),
+            categoryProducts(CONFIG.MATERIAL_CATEGORIES.kristal)
+        ])
+        .then(function(results){
+
+            var keys   = [null, "deri", "ahsap", "kristal"];
+            var merged = new Map();
+
+            results.forEach(function(result, index){
+
+                if(result.status !== "fulfilled"){
+
+                    console.warn(
+                        "[Sümenini Bul] Kategori okunamadı:",
+                        keys[index] || CONFIG.MAIN_CATEGORY,
+                        result.reason
+                    );
+
+                    return;
+                }
+
+                result.value.forEach(function(product){
+
+                    if(keys[index]){
+                        MATERIALS[keys[index]].add(product.url);
+                    }
+
+                    if(!merged.has(product.url)){
+                        merged.set(product.url, product);
+                    }
+                });
+            });
+
+            if(!merged.size){
+                throw new Error("Katalog boş döndü.");
+            }
+
+            CATALOG = Array.from(merged.values());
+
+            return CATALOG;
+        })
+        .catch(function(error){
+
+            LOAD_PROMISE = null;
+
+            throw error;
+        });
+    }
+
+    return LOAD_PROMISE;
+}
+
+
+/* =========================================================
+   MALZEME BELİRLE
+   ========================================================= */
+
+function productMaterial(product){
+
+    var title = normalize(product.title);
+
+    var inAhsap = MATERIALS.ahsap.has(product.url);
+    var inDeri  = MATERIALS.deri.has(product.url);
+
+    if(MATERIALS.kristal.has(product.url)){
+        return "kristal";
+    }
+
+    if(inAhsap && (inDeri || title.includes("deri"))){
+        return "ahsap-deri";
+    }
+
+    if(inAhsap){
+        return "ahsap";
+    }
+
+    if(inDeri){
+        return "deri";
+    }
+
+    /* Kategori eşleşmesi yoksa ada bak */
+
+    if(title.includes("kristal")){
+        return "kristal";
+    }
+
+    if(title.includes("ahsap") && title.includes("deri")){
+        return "ahsap-deri";
+    }
+
+    if(title.includes("ahsap")){
+        return "ahsap";
+    }
+
+    if(title.includes("deri")){
+        return "deri";
+    }
+
+    return "";
+}
+
+
+/* =========================================================
+   ÜRÜN DETAYI
+
+   Sadece Hızlı Önizleme için çekilir: açıklama ve
+   büyük görsel. Fiyat/ad/kart görseli zaten katalogdan
+   gelir, bu yüzden liste açılırken hiç detay isteği
+   yapılmaz.
+
+   Not: Bu mağazada ürün sayfalarında Product JSON-LD
+   bulunmuyor, veriler DOM'dan okunur.
+   ========================================================= */
+
+/*
+ * Ürün sayfasının altında "benzer ürünler" listesi vardır ve
+ * o kartlar da .prices/.price taşır. Ana ürünün fiyat bloğunda
+ * ise .price sınıfı bulunmaz. Bu yüzden sayfa geneline bakan bir
+ * seçici, alakasız bir ürünün fiyatını yakalar.
+ * Okuma daima ana ürün bloğuna kilitlenir.
+ */
+function detailScope(doc){
+
+    return doc.querySelector(".product-details-page") ||
+           doc.querySelector(".product-essential") ||
+           doc;
+}
+
+
+function detailPrice(doc){
+
+    var scope = detailScope(doc);
+
+    var el =
+        scope.querySelector('[class*="price-value-"]') ||
+        scope.querySelector(".product-price") ||
+        scope.querySelector(".prices .price");
+
+    if(!el){
+        return "";
+    }
+
+    var text = (el.textContent || "").replace(/\s+/g," ").trim();
+
+    if(!/\d/.test(text)){
+        return "";
+    }
+
+    /* "15.000,00 TL 17.500,00 TL %14 İNDİRİM" -> güncel fiyat */
+    var match = text.match(/[\d.,]+\s*(TL|₺|€|\$|EUR|USD)?/i);
+
+    return match ? match[0].trim() : text;
+}
+
+
+function detailImage(doc){
+
+    var og = doc.querySelector('meta[property="og:image"]');
+
+    if(og && og.getAttribute("content")){
+
+        var url = absoluteURL(og.getAttribute("content"));
+
+        if(url && !url.startsWith("data:")){
+            return url;
+        }
+    }
+
+    var img = detailScope(doc).querySelector(".picture img[src], img[src]");
+
+    return img ? absoluteURL(img.getAttribute("src")) : "";
+}
+
+
+function detailDescription(doc){
+
+    var scope = detailScope(doc);
+
+    var el =
+        scope.querySelector(".short-description") ||
+        scope.querySelector(".full-description");
+
+    var text = el
+        ? (el.textContent || "").replace(/\s+/g," ").trim()
+        : "";
+
+    if(!text){
+
+        var meta = doc.querySelector('meta[name="description"]');
+
+        text = meta
+            ? (meta.getAttribute("content") || "").replace(/\s+/g," ").trim()
+            : "";
+    }
+
+    return text;
+}
+
+
+function productDetail(product){
+
+    if(!DETAIL_CACHE.has(product.url)){
+
+        var promise = fetchDocument(product.url)
+            .then(function(doc){
+
+                var h1 = doc.querySelector("h1");
+
+                var title = h1
+                    ? h1.textContent.replace(/\s+/g," ").trim()
+                    : product.title;
+
+                return {
+                    title:       title,
+                    url:         product.url,
+                    image:       detailImage(doc) || product.image,
+                    price:       detailPrice(doc) || product.price,
+                    description: detailDescription(doc),
+                    material:    productMaterial(product),
+                    color:       detectColor(title) || product.color,
+                    pieces:      detectPieces(title) || product.pieces
+                };
+            })
+            .catch(function(error){
+
+                DETAIL_CACHE.delete(product.url);
+
+                throw error;
+            });
+
+        DETAIL_CACHE.set(product.url, promise);
+    }
+
+    return DETAIL_CACHE.get(product.url);
+}
+
+
+/* =========================================================
+   ÜST BUTON
+   ========================================================= */
+
+function createTopButton(){
+
+    if(document.getElementById("go-sumen-toggle-wrap")){
+        return;
+    }
+
+    var wrap = document.createElement("div");
+
+    wrap.id = "go-sumen-toggle-wrap";
+
+    wrap.innerHTML =
+        '<button type="button" id="go-sumen-toggle" aria-expanded="false" aria-controls="go-sumen-home-panel">' +
+            '<span class="go-toggle-text">Sümenini Bul</span>' +
+            '<span class="go-toggle-arrow" aria-hidden="true">&#8595;</span>' +
+        '</button>';
+
+    var main   = document.querySelector("main");
+    var header = document.querySelector("header");
+
+    if(main && main.firstChild){
+        main.insertBefore(wrap, main.firstChild);
+    }
+    else if(header){
+        header.insertAdjacentElement("afterend", wrap);
+    }
+    else{
+        document.body.insertAdjacentElement("afterbegin", wrap);
+    }
+}
+
+
+/* =========================================================
+   PANEL
+   ========================================================= */
+
+function colorButton(value, label, color){
+
+    return '' +
+        '<button type="button" class="go-option go-color" data-value="' + value + '">' +
+            '<span class="go-dot" style="background:' + color + '"></span>' +
+            label +
+        '</button>';
+}
+
+
+function createPanel(){
+
+    if(document.getElementById("go-sumen-home-panel")){
+        return;
+    }
+
+    var panel = document.createElement("section");
+
+    panel.id = "go-sumen-home-panel";
+
+    panel.innerHTML =
+    '<div class="go-inner">' +
+
+        '<div class="go-panel-head">' +
+            '<div>' +
+                '<div class="go-kicker">Güner Ofis</div>' +
+                '<h2>Sümenini Bul</h2>' +
+                '<p class="go-intro">' +
+                    'Malzeme, renk ve parça sayısını seç. Güner Ofis kataloğundaki ' +
+                    'ürünler arasından sana uygun modelleri gösterelim.' +
+                '</p>' +
+            '</div>' +
+            '<button type="button" class="go-panel-close">Kapat</button>' +
+        '</div>' +
+
+        '<div class="go-filters">' +
+
+            '<div class="go-filter-row" data-group="material">' +
+                '<div class="go-filter-label">Malzeme</div>' +
+                '<div class="go-options">' +
+                    '<button type="button" class="go-option go-active" data-value="all">Tümü</button>' +
+                    '<button type="button" class="go-option" data-value="deri">Deri</button>' +
+                    '<button type="button" class="go-option" data-value="ahsap">Ahşap</button>' +
+                    '<button type="button" class="go-option" data-value="ahsap-deri">Ahşap + Deri</button>' +
+                    '<button type="button" class="go-option" data-value="kristal">Kristal</button>' +
+                '</div>' +
+            '</div>' +
+
+            '<div class="go-filter-row" data-group="color">' +
+                '<div class="go-filter-label">Renk</div>' +
+                '<div class="go-options">' +
+                    '<button type="button" class="go-option go-active" data-value="all">Tümü</button>' +
+                    colorButton("siyah",   "Siyah",   "#171717") +
+                    colorButton("beyaz",   "Beyaz",   "#ffffff") +
+                    colorButton("kahve",   "Kahve",   "#704936") +
+                    colorButton("taba",    "Taba",    "#a96b3e") +
+                    colorButton("bordo",   "Bordo",   "#682937") +
+                    colorButton("krem",    "Krem",    "#e6dbc7") +
+                    colorButton("gri",     "Gri",     "#888888") +
+                    colorButton("mavi",    "Mavi",    "#376985") +
+                    colorButton("yesil",   "Yeşil",   "#39674c") +
+                    colorButton("kirmizi", "Kırmızı", "#a82026") +
+                    colorButton("turuncu", "Turuncu", "#dc7830") +
+                    colorButton("turkuaz", "Turkuaz", "#43a7a5") +
+                    colorButton("pembe",   "Pembe",   "#d499ad") +
+                    colorButton("ceviz",   "Ceviz",   "#71462f") +
+                    colorButton("zebrano", "Zebrano", "#ac7955") +
+                '</div>' +
+            '</div>' +
+
+            '<div class="go-filter-row" data-group="pieces">' +
+                '<div class="go-filter-label">Parça Sayısı</div>' +
+                '<div class="go-options">' +
+                    '<button type="button" class="go-option go-active" data-value="all">Tümü</button>' +
+                    '<button type="button" class="go-option" data-value="2-6">2 &ndash; 6</button>' +
+                    '<button type="button" class="go-option" data-value="7-10">7 &ndash; 10</button>' +
+                    '<button type="button" class="go-option" data-value="11+">11+</button>' +
+                '</div>' +
+            '</div>' +
+
+        '</div>' +
+
+        '<div class="go-actions">' +
+            '<button type="button" class="go-find">Uygun Sümenleri Göster</button>' +
+            '<button type="button" class="go-reset">Temizle</button>' +
+        '</div>' +
+
+        '<div class="go-status"></div>' +
+
+        '<div class="go-results">' +
+            '<div class="go-results-head">' +
+                '<div>' +
+                    '<h3>Sana Uygun Sümenler</h3>' +
+                    '<div class="go-result-info"></div>' +
+                '</div>' +
+                '<a class="go-all-link" href="/sumen-takimlari/">Tüm Sümen Takımları &rarr;</a>' +
+            '</div>' +
+            '<div class="go-grid"></div>' +
+        '</div>' +
+
+    '</div>' +
+
+    '<div class="go-modal" aria-hidden="true">' +
+        '<div class="go-modal-box">' +
+            '<button type="button" class="go-modal-close" aria-label="Kapat">&times;</button>' +
+            '<div class="go-modal-media"></div>' +
+            '<div class="go-modal-content">' +
+                '<div class="go-tags"></div>' +
+                '<h4></h4>' +
+                '<div class="go-modal-price"></div>' +
+                '<div class="go-modal-desc"></div>' +
+                '<a class="go-modal-link" href="#">Ürün Sayfasına Git</a>' +
+            '</div>' +
+        '</div>' +
+    '</div>';
+
+    /*
+     * Panel doğrudan "Sümenini Bul" butonunun hemen altında,
+     * sayfanın üst kısmında açılır. Google yorumlarına taşınmaz.
+     */
+    var wrap = document.getElementById("go-sumen-toggle-wrap");
+
+    if(wrap){
+        wrap.insertAdjacentElement("afterend", panel);
+    }
+    else{
+        var footer = document.querySelector("footer");
+
+        if(footer){
+            footer.insertAdjacentElement("beforebegin", panel);
+        }
+        else{
+            document.body.appendChild(panel);
+        }
+    }
+}
+
+
+/* =========================================================
+   GOOGLE YORUM ALANI
+   ========================================================= */
+
+function visible(element){
+
+    if(!element){
+        return false;
+    }
+
+    var style = getComputedStyle(element);
+
+    return style.display !== "none" && style.visibility !== "hidden";
+}
+
+
+function findGoogleReviews(){
+
+    var selectors = [
+        "#guner-reviews-v2",
+        "#google-reviews",
+        ".google-reviews",
+        "[id*='google-review']",
+        "[class*='google-review']",
+        "[id*='google_reviews']",
+        "[class*='google_reviews']",
+        "[id*='reviews']",
+        ".ti-widget",
+        "[class*='trustindex']",
+        "[id*='trustindex']",
+        "[class*='review-widget']",
+        "[id*='review-widget']",
+        "[class*='g-review']"
+    ];
+
+    var panel = document.getElementById("go-sumen-home-panel");
+
+    for(var i=0; i<selectors.length; i++){
+
+        var elements = [];
+
+        try{
+            elements = Array.from(document.querySelectorAll(selectors[i]));
+        }
+        catch(error){}
+
+        for(var x=0; x<elements.length; x++){
+
+            var element = elements[x];
+
+            if(panel && (panel === element || panel.contains(element))){
+                continue;
+            }
+
+            if(visible(element)){
+                return element;
+            }
+        }
+    }
+
+    var headings = Array.from(document.querySelectorAll("h1,h2,h3,h4,h5"));
+
+    for(var h=0; h<headings.length; h++){
+
+        if(panel && panel.contains(headings[h])){
+            continue;
+        }
+
+        var text = normalize(headings[h].textContent);
+
+        if(
+            text.includes("google yorum") ||
+            text.includes("google degerlendirme") ||
+            text.includes("musteri yorumlari") ||
+            text.includes("musterilerimiz ne diyor")
+        ){
+            return headings[h].closest("section") || headings[h].parentElement;
+        }
+    }
+
+    return null;
+}
+
+
+function positionPanel(){
+
+    var panel = document.getElementById("go-sumen-home-panel");
+
+    if(!panel){
+        return false;
+    }
+
+    var reviews = findGoogleReviews();
+
+    if(!reviews || !reviews.parentElement){
+        return false;
+    }
+
+    var target = reviews.closest("section") || reviews;
+
+    if(target === panel || panel.contains(target) || target.contains(panel)){
+        return false;
+    }
+
+    if(target.previousElementSibling !== panel){
+        target.insertAdjacentElement("beforebegin", panel);
+    }
+
+    panel.setAttribute("data-position","before-google-reviews");
+
+    return true;
+}
+
+
+/* =========================================================
+   AÇ / KAPAT
+   ========================================================= */
+
+function setPanelOpen(open){
+
+    var panel  = document.getElementById("go-sumen-home-panel");
+    var toggle = document.getElementById("go-sumen-toggle");
+
+    if(!panel || !toggle){
+        return;
+    }
+
+    panel.classList.toggle("go-open", open);
+
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+
+    var text = toggle.querySelector(".go-toggle-text");
+
+    if(text){
+        text.textContent = open ? "Sümenini Bul'u Gizle" : "Sümenini Bul";
+    }
+}
+
+
+/* =========================================================
+   FİLTRE
+   ========================================================= */
+
+function matches(product){
+
+    if(
+        STATE.material !== "all" &&
+        productMaterial(product) !== STATE.material
+    ){
+        return false;
+    }
+
+    if(
+        STATE.color !== "all" &&
+        product.color !== STATE.color
+    ){
+        return false;
+    }
+
+    if(STATE.pieces !== "all"){
+
+        var n = product.pieces;
+
+        if(!n){
+            return false;
+        }
+
+        if(STATE.pieces === "2-6"  && !(n >= 2 && n <= 6)){
+            return false;
+        }
+
+        if(STATE.pieces === "7-10" && !(n >= 7 && n <= 10)){
+            return false;
+        }
+
+        if(STATE.pieces === "11+"  && n < 11){
+            return false;
+        }
+    }
+
+    return true;
+}
+
+
+/* =========================================================
+   ÜRÜN KARTI
+   ========================================================= */
+
+function addTag(container, text){
+
+    if(!text){
+        return;
+    }
+
+    var tag = document.createElement("span");
+
+    tag.className   = "go-tag";
+    tag.textContent = text;
+
+    container.appendChild(tag);
+}
+
+
+function createCard(product){
+
+    var card = document.createElement("article");
+
+    card.className = "go-product";
+
+    /* Görsel */
+
+    var media = document.createElement("button");
+
+    media.type      = "button";
+    media.className = "go-media";
+    media.setAttribute("aria-label", product.title + " - hızlı önizleme");
+
+    if(product.image){
+
+        var image = document.createElement("img");
+
+        image.src     = product.image;
+        image.alt     = product.title;
+        image.loading = "lazy";
+
+        image.onerror = function(){
+            media.innerHTML =
+                '<div class="go-placeholder">Ürün görseli yüklenemedi.</div>';
+        };
+
+        media.appendChild(image);
+    }
+    else{
+        media.innerHTML =
+            '<div class="go-placeholder">Ürün görseli bulunamadı.</div>';
+    }
+
+    /* Body */
+
+    var body = document.createElement("div");
+
+    body.className = "go-product-body";
+
+    var tags = document.createElement("div");
+
+    tags.className = "go-tags";
+
+    addTag(tags, materialLabel(productMaterial(product)));
+    addTag(tags, colorLabel(product.color));
+
+    if(product.pieces){
+        addTag(tags, product.pieces + " Parça");
+    }
+
+    var title = document.createElement("a");
+
+    title.className   = "go-name";
+    title.href        = product.url;
+    title.textContent = product.title;
+
+    var price = document.createElement("div");
+
+    price.className = "go-price";
+
+    if(product.price){
+
+        price.textContent = product.price;
+
+        if(product.oldPrice){
+
+            var old = document.createElement("span");
+
+            old.className   = "go-old";
+            old.textContent = product.oldPrice;
+
+            price.appendChild(old);
+        }
+    }
+    else{
+        price.textContent = "Fiyat için ürünü incele";
+    }
+
+    /* Butonlar */
+
+    var actions = document.createElement("div");
+
+    actions.className = "go-card-actions";
+
+    var preview = document.createElement("button");
+
+    preview.type        = "button";
+    preview.className   = "go-preview";
+    preview.textContent = "Hızlı Önizle";
+
+    var link = document.createElement("a");
+
+    link.className   = "go-product-link";
+    link.href        = product.url;
+    link.textContent = "Ürünü İncele";
+
+    actions.appendChild(preview);
+    actions.appendChild(link);
+
+    body.appendChild(tags);
+    body.appendChild(title);
+    body.appendChild(price);
+    body.appendChild(actions);
+
+    card.appendChild(media);
+    card.appendChild(body);
+
+    media.addEventListener("click", function(){
+        openPreview(product);
+    });
+
+    preview.addEventListener("click", function(){
+        openPreview(product);
+    });
+
+    return card;
+}
+
+
+/* =========================================================
+   SONUÇLARI GÖSTER
+   ========================================================= */
+
+async function showResults(){
+
+    var panel   = document.getElementById("go-sumen-home-panel");
+    var status  = panel.querySelector(".go-status");
+    var results = panel.querySelector(".go-results");
+    var grid    = panel.querySelector(".go-grid");
+    var info    = panel.querySelector(".go-result-info");
+
+    grid.innerHTML = "";
+
+    results.classList.add("go-show");
+    status.classList.add("go-show");
+
+    status.textContent = "Ürün kataloğu okunuyor...";
+
+    try{
+
+        await loadCatalog();
+
+        var matching = CATALOG.filter(matches);
+
+        info.textContent =
+            CATALOG.length + " ürün arasından " +
+            matching.length + " eşleşme bulundu.";
+
+        status.classList.remove("go-show");
+
+        if(!matching.length){
+
+            grid.innerHTML =
+                '<div class="go-empty">' +
+                    'Seçimlerinle eşleşen ürün bulunamadı.<br><br>' +
+                    'Başka bir renk, malzeme veya parça sayısı seç.' +
+                '</div>';
+
+            return;
+        }
+
+        matching
+            .slice(0, CONFIG.MAX_RESULTS)
+            .forEach(function(product){
+                grid.appendChild(createCard(product));
+            });
+    }
+    catch(error){
+
+        console.error("[Sümenini Bul]", error);
+
+        status.classList.add("go-show");
+
+        status.textContent = "Ürün kataloğu yüklenemedi. Lütfen tekrar dene.";
+    }
+}
+
+
+/* =========================================================
+   ÖNİZLEME
+   ========================================================= */
+
+async function openPreview(product){
+
+    var panel = document.getElementById("go-sumen-home-panel");
+    var modal = panel.querySelector(".go-modal");
+
+    var media       = modal.querySelector(".go-modal-media");
+    var title       = modal.querySelector("h4");
+    var price       = modal.querySelector(".go-modal-price");
+    var description = modal.querySelector(".go-modal-desc");
+    var tags        = modal.querySelector(".go-tags");
+    var link        = modal.querySelector(".go-modal-link");
+
+    /* Katalogdan gelen veri anında gösterilir */
+
+    title.textContent       = product.title;
+    price.textContent       = product.price || "";
+    description.textContent = "Ürün bilgileri yükleniyor...";
+    link.href               = product.url;
+
+    tags.innerHTML = "";
+
+    addTag(tags, materialLabel(productMaterial(product)));
+    addTag(tags, colorLabel(product.color));
+
+    if(product.pieces){
+        addTag(tags, product.pieces + " Parça");
+    }
+
+    media.innerHTML = "";
+
+    if(product.image){
+
+        var quick = document.createElement("img");
+
+        quick.src = product.image;
+        quick.alt = product.title;
+
+        media.appendChild(quick);
+    }
+    else{
+        media.textContent = "Ürün yükleniyor...";
+    }
+
+    modal.classList.add("go-open");
+    modal.setAttribute("aria-hidden","false");
+
+    document.body.style.overflow = "hidden";
+
+    /* Detay: açıklama ve büyük görsel */
+
+    try{
+
+        var detail = await productDetail(product);
+
+        if(!modal.classList.contains("go-open")){
+            return;
+        }
+
+        title.textContent       = detail.title;
+        price.textContent       = detail.price || "";
+        description.textContent = detail.description
+            ? detail.description.slice(0, 430)
+            : "";
+        link.href               = detail.url;
+
+        tags.innerHTML = "";
+
+        addTag(tags, materialLabel(detail.material));
+        addTag(tags, colorLabel(detail.color));
+
+        if(detail.pieces){
+            addTag(tags, detail.pieces + " Parça");
+        }
+
+        if(detail.image){
+
+            media.innerHTML = "";
+
+            var image = document.createElement("img");
+
+            image.src = detail.image;
+            image.alt = detail.title;
+
+            media.appendChild(image);
+        }
+    }
+    catch(error){
+
+        console.warn("[Sümenini Bul] Önizleme detayı alınamadı:", product.url, error);
+
+        description.textContent = "";
+    }
+}
+
+
+function closePreview(){
+
+    var panel = document.getElementById("go-sumen-home-panel");
+
+    if(!panel){
+        return;
+    }
+
+    var modal = panel.querySelector(".go-modal");
+
+    modal.classList.remove("go-open");
+    modal.setAttribute("aria-hidden","true");
+
+    document.body.style.overflow = "";
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+function resetFilters(){
+
+    STATE = {
+        material: "all",
+        color:    "all",
+        pieces:   "all"
+    };
+
+    var panel = document.getElementById("go-sumen-home-panel");
+
+    panel.querySelectorAll("[data-group]").forEach(function(group){
+
+        group.querySelectorAll(".go-option").forEach(function(button){
+            button.classList.remove("go-active");
+        });
+
+        var all = group.querySelector('[data-value="all"]');
+
+        if(all){
+            all.classList.add("go-active");
+        }
+    });
+
+    panel.querySelector(".go-results").classList.remove("go-show");
+    panel.querySelector(".go-status").classList.remove("go-show");
+}
+
+
+/* =========================================================
+   EVENTLER
+   ========================================================= */
+
+function bindEvents(){
+
+    var toggle = document.getElementById("go-sumen-toggle");
+    var panel  = document.getElementById("go-sumen-home-panel");
+
+    toggle.addEventListener("click", function(){
+
+        setPanelOpen(!panel.classList.contains("go-open"));
+    });
+
+    panel.querySelector(".go-panel-close")
+        .addEventListener("click", function(){
+            setPanelOpen(false);
+        });
+
+    panel.addEventListener("click", function(event){
+
+        var option = event.target.closest(".go-option");
+
+        if(!option){
+            return;
+        }
+
+        var group = option.closest("[data-group]");
+
+        if(!group){
+            return;
+        }
+
+        group.querySelectorAll(".go-option").forEach(function(button){
+            button.classList.remove("go-active");
+        });
+
+        option.classList.add("go-active");
+
+        STATE[group.getAttribute("data-group")] =
+            option.getAttribute("data-value");
+    });
+
+    panel.querySelector(".go-find")
+        .addEventListener("click", showResults);
+
+    panel.querySelector(".go-reset")
+        .addEventListener("click", resetFilters);
+
+    panel.querySelector(".go-modal-close")
+        .addEventListener("click", closePreview);
+
+    panel.querySelector(".go-modal")
+        .addEventListener("click", function(event){
+
+            if(event.target === this){
+                closePreview();
+            }
+        });
+
+    document.addEventListener("keydown", function(event){
+
+        if(event.key === "Escape"){
+            closePreview();
+        }
+    });
+}
+
+
+/* =========================================================
+   BAŞLAT
+   ========================================================= */
+
+function install(){
+
+    createTopButton();
+    createPanel();
+    bindEvents();
+
+    /* Katalog arka planda hazırlanır, görseller kart verisiyle gelir */
+
+    var warm = function(){
+        loadCatalog().catch(function(){});
+    };
+
+    if("requestIdleCallback" in window){
+        requestIdleCallback(warm);
+    }
+    else{
+        setTimeout(warm, 1200);
+    }
+}
+
+
+function start(){
+    install();
+}
+
+
+if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", start);
+}
+else{
+    start();
+}
+
+})();
+</script>

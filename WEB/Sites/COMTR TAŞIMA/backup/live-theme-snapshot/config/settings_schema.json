@@ -1,0 +1,18 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Pastel Atelier",
+    "theme_version": "1.0.0",
+    "theme_author": "Sümen Takımı",
+    "theme_documentation_url": "https://www.sumentakimi.com.tr/",
+    "theme_support_url": "https://www.sumentakimi.com.tr/bize-ulasin/"
+  },
+  {
+    "name": "İletişim",
+    "settings": [
+      { "type": "text", "id": "contact_phone", "label": "Telefon", "default": "0501 144 27 29" },
+      { "type": "text", "id": "contact_email", "label": "E-posta", "default": "info@sumentakimi.com.tr" },
+      { "type": "textarea", "id": "contact_address", "label": "Adres", "default": "Arapçeşme Mahallesi 1038. Sokak No:32/A, Gebze / Kocaeli" }
+    ]
+  }
+]

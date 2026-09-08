@@ -1,0 +1,44 @@
+{
+  "renk": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690796836",
+      "key": "ana_renk"
+    },
+    "userErrors": []
+  },
+  "aksesuar": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690829604",
+      "key": "aksesuar_rengi"
+    },
+    "userErrors": []
+  },
+  "malzeme": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690862372",
+      "key": "malzeme"
+    },
+    "userErrors": []
+  },
+  "kisisel": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690895140",
+      "key": "kisisellestirme"
+    },
+    "userErrors": []
+  },
+  "bayrak": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690927908",
+      "key": "masa_bayragi"
+    },
+    "userErrors": []
+  },
+  "fullset": {
+    "createdDefinition": {
+      "id": "gid://shopify/MetafieldDefinition/276690960676",
+      "key": "full_set"
+    },
+    "userErrors": []
+  }
+}

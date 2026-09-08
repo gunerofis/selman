@@ -1,0 +1,19 @@
+query SumenSetCollections {
+  all: collection(id: "gid://shopify/Collection/660811153700") {
+    handle
+    products(first: 250) { nodes { id handle } }
+  }
+  deri: collection(id: "gid://shopify/Collection/660821442852") {
+    handle
+    productsCount { count }
+    products(first: 250) { nodes { id handle } }
+  }
+  luks: collection(id: "gid://shopify/Collection/660821573924") {
+    handle
+    products(first: 250) { nodes { id handle } }
+  }
+  kristal: collection(id: "gid://shopify/Collection/660811415844") {
+    handle
+    products(first: 250) { nodes { id handle } }
+  }
+}

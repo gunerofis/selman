@@ -1,0 +1,3 @@
+query SssBody {
+  page(id: "gid://shopify/Page/166814220580") { id handle body }
+}

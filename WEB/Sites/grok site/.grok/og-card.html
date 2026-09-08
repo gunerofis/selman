@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Sweb OG</title>
+<style>
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 125%;
+  src: url('fonts/archivo-latinext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 125%;
+  src: url('fonts/archivo-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/instrument-latinext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/instrument-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/mono-latinext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/mono-latin.woff2') format('woff2');
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  background: #F7F1E8;
+  color: #4A3B2E;
+}
+.card {
+  width: 1200px;
+  height: 630px;
+  position: relative;
+  background: #F7F1E8;
+}
+.frame {
+  position: absolute;
+  inset: 22px;
+  border: 1px solid #E3D8CA;
+  pointer-events: none;
+}
+.frame-stitch {
+  position: absolute;
+  inset: 28px;
+  border: 1.5px dashed #A9743F;
+  opacity: 0.55;
+  pointer-events: none;
+}
+.inner {
+  position: absolute;
+  inset: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tile {
+  width: 156px;
+  height: 156px;
+  background: #FDFAF6;
+  border: 1px solid #E3D8CA;
+  overflow: hidden;
+  flex: 0 0 156px;
+}
+.tile img {
+  width: 156px;
+  height: 156px;
+  object-fit: contain;
+  display: block;
+  background: #F7F1E8;
+}
+.lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 4px 0 8px;
+}
+.rule {
+  width: 720px;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #A9743F 0 5px,
+    transparent 5px 12px
+  );
+  opacity: 0.7;
+}
+.brand {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125;
+  font-size: 168px;
+  letter-spacing: -0.04em;
+  line-height: 0.86;
+  color: #4A3B2E;
+  text-align: center;
+}
+.tag {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #A9743F;
+  text-align: center;
+}
+.meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: #8A7866;
+  text-transform: uppercase;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="frame"></div>
+    <div class="frame-stitch"></div>
+    <div class="inner">
+      <div class="row">
+        <div class="tile"><img src="../public/products/7043.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7131.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7012.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7007.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7036.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7048.png" alt=""></div>
+      </div>
+      <div class="lockup">
+        <div class="rule"></div>
+        <div class="brand">SWEB</div>
+        <div class="tag">Ev ve çalışma alanı için düzen ürünleri.</div>
+        <div class="meta">Atelier · İstanbul</div>
+        <div class="rule"></div>
+      </div>
+      <div class="row">
+        <div class="tile"><img src="../public/products/7101.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7011.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7118.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7004.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7025.png" alt=""></div>
+        <div class="tile"><img src="../public/products/7015.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

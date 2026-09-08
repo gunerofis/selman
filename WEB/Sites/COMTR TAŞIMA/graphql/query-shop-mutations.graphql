@@ -1,0 +1,7 @@
+query ShopMutations {
+  mutationType: __type(name: "Mutation") {
+    fields {
+      name
+    }
+  }
+}

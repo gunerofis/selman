@@ -1,0 +1,12 @@
+query NineInDeri {
+  c9: collectionByHandle(handle: "9-parca-sumen-takimi") {
+    products(first: 20) {
+      nodes {
+        id
+        handle
+        deri: inCollection(id: "gid://shopify/Collection/660821442852")
+        luks: inCollection(id: "gid://shopify/Collection/660821573924")
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+mutation UpdateRehberHub($id: ID!, $body: String!) {
+  pageUpdate(id: $id, page: { body: $body }) {
+    page { handle }
+    userErrors { field message }
+  }
+}

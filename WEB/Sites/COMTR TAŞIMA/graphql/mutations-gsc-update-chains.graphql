@@ -1,0 +1,37 @@
+mutation GscUpdateChains {
+  updAnasayfa: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611811066148"
+    urlRedirect: { path: "/anasayfa-aciklama", target: "/pages/sumen-takimi-rehberi" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updKristalSet: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611815162148"
+    urlRedirect: { path: "/kristal-masa-setleri", target: "/collections/kristal-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updKristal2: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611815227684"
+    urlRedirect: { path: "/kristal-sumen-takimlari-2", target: "/collections/kristal-sumen-takimlari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updMakam2: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611816210724"
+    urlRedirect: { path: "/makam-panolari-2", target: "/collections/makam-panolari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+  updMakam3: urlRedirectUpdate(
+    id: "gid://shopify/UrlRedirect/611816243492"
+    urlRedirect: { path: "/makam-panolari-3", target: "/collections/makam-panolari" }
+  ) {
+    urlRedirect { id path target }
+    userErrors { field message }
+  }
+}

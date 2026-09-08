@@ -1,0 +1,14 @@
+mutation PublishTwo {
+  a: publishablePublish(
+    id: "gid://shopify/Product/10785342161188"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors { field message }
+  }
+  b: publishablePublish(
+    id: "gid://shopify/Product/10785341604132"
+    input: [{ publicationId: "gid://shopify/Publication/323509354788" }]
+  ) {
+    userErrors { field message }
+  }
+}

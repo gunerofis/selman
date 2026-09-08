@@ -1,0 +1,8 @@
+query ColStatus {
+  collection(id: "gid://shopify/Collection/660811153700") {
+    productsCount { count }
+    products(first: 250) {
+      nodes { id handle status }
+    }
+  }
+}

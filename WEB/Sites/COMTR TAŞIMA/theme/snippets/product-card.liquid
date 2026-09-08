@@ -1,0 +1,62 @@
+{% doc %}
+  Uniform product card: one link, metafield-only filters.
+  @param {object} product - Product to render
+{% enddoc %}
+{% liquid
+  assign pieces = product.metafields.custom.parca_sayisi.value | append: '' | remove: ' parça' | remove: ' Parça' | strip
+  if pieces == blank and product.title contains '12 Parça'
+    assign pieces = '12'
+  elsif pieces == blank and product.title contains '11 Parça'
+    assign pieces = '11'
+  elsif pieces == blank and product.title contains '10 Parça'
+    assign pieces = '10'
+  elsif pieces == blank and product.title contains '9 Parça'
+    assign pieces = '9'
+  elsif pieces == blank and product.title contains '7 Parça'
+    assign pieces = '7'
+  elsif pieces == blank and product.title contains '6 Parça'
+    assign pieces = '6'
+  endif
+  assign material = product.metafields.custom.malzeme.value
+  assign has_shelf = false
+  if product.metafields.custom.evrak_rafi.value
+    assign has_shelf = true
+  endif
+  assign load_mode = image_loading | default: 'lazy'
+%}
+<article class="catalog-card"
+  data-type="{{ product.metafields.custom.urun_turu.value | default: product.type | escape }}"
+  data-color="{{ product.metafields.custom.ana_renk.value | escape }}"
+  data-material="{{ material | escape }}"
+  data-pieces="{{ pieces }}"
+  data-personal="{% if product.metafields.custom.kisisellestirme.value %}1{% else %}0{% endif %}"
+  data-flag="{% if product.metafields.custom.masa_bayragi.value %}1{% else %}0{% endif %}"
+  data-shelf="{% if has_shelf %}1{% else %}0{% endif %}"
+  data-price="{{ product.price }}">
+  <a class="catalog-card__link" href="{{ product.url }}">
+    <span class="catalog-card__media media-plate img-zoom">
+      {% if product.featured_image %}
+        {{ product.featured_image | image_url: width: 900 | image_tag: loading: load_mode, widths: '360, 540, 720, 900', alt: product.featured_image.alt | default: product.title }}
+        {% if product.images.size > 1 %}
+          {{ product.images[1] | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360, 540, 720, 900', class: 'catalog-card__alt', alt: product.images[1].alt | default: product.title }}
+        {% endif %}
+      {% else %}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </span>
+    <span class="catalog-card__copy">
+      <span class="catalog-card__title">{{ product.title }}</span>
+      {% if pieces != blank or material != blank %}
+        <span class="catalog-card__spec">
+          {% if pieces != blank %}{{ pieces }} parça{% endif %}
+          {% if pieces != blank and material != blank %} · {% endif %}
+          {% if material != blank %}{{ material }}{% endif %}
+        </span>
+      {% endif %}
+      <span class="catalog-card__price">
+        <strong>{{ product.price | money }}</strong>
+        {% if product.compare_at_price > product.price %}<s>{{ product.compare_at_price | money }}</s>{% endif %}
+      </span>
+    </span>
+  </a>
+</article>

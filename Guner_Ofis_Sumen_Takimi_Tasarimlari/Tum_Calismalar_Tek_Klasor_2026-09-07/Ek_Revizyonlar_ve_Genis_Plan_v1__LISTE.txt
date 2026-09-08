@@ -1,0 +1,14 @@
+01 İşlevsel gözlük standı
+02 Yeniden tasarlanmış gözlük kutusu
+03 Süngerli saat standı
+04 Çekmeceli monitör yükseltici
+05 MacBook portföyü
+06 Kişisel organizer
+07 Magazinlik — eşitlenmiş arka plan
+08 Peçetelik — eşitlenmiş arka plan
+09 Çöp kovası — eşitlenmiş arka plan
+10 Saat kutusu — eşitlenmiş arka plan
+11 Çalışma seti genel görünüm
+12 Modern masa seti genel görünüm
+
+Not: MacBook portföyünde cihaz güvenliği nedeniyle gerekli yapısal dikiş ve fermuar istisnası uygulanmıştır.

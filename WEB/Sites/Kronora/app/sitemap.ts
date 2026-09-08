@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+import { getProducts } from "./lib/store";
+const origin = "https://moneluks.gunerofis.chatgpt.site";
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> { const products = await getProducts(); return [{ url: origin, changeFrequency: "daily", priority: 1 }, ...["koleksiyon","aksesuar-kutulari","aksesuarlar","tekli-saat-kutulari","gozluk-airpods-kutusu","tekli-gozluk-kutulari","organizerler","galeri","firsatlar","hediye-karti","toplu-siparis","bayilik","rehber","hakkimizda","iletisim","gizlilik"].map((path) => ({ url: `${origin}/${path}`, changeFrequency: "monthly" as const, priority: .7 })), ...products.map((product) => ({ url: `${origin}/urun/${product.slug}`, changeFrequency: "weekly" as const, priority: .8, images: product.primaryImage ? [product.primaryImage] : undefined }))]; }

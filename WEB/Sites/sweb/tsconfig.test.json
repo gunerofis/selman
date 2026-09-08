@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": ".test-derleme",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "esnext"
+    ],
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "lib/**/*.ts",
+    "testler/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib/*.tsx",
+    "lib/depo.ts",
+    "lib/eposta.ts",
+    "lib/talep-deposu.ts",
+    "lib/siparis-deposu.ts",
+    "lib/istek-siniri.ts",
+    "lib/son-bakilanlar.ts"
+  ],
+  "_not": "Sunucuya bağlı dosyalar (fetch/Next tipleri) test derlemesine girmez; testler saf mantığı ölçer."
+}

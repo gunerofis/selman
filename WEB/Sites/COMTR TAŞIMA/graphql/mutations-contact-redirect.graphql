@@ -1,0 +1,6 @@
+mutation ContactRedirect {
+  r1: urlRedirectCreate(urlRedirect: { path: "/pages/contact", target: "/pages/bize-ulasin" }) {
+    urlRedirect { path target }
+    userErrors { field message }
+  }
+}

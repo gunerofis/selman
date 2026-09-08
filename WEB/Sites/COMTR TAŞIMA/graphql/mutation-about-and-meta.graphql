@@ -1,0 +1,30 @@
+mutation AboutAndMeta {
+  about: pageUpdate(
+    id: "gid://shopify/Page/166761464100"
+    page: {
+      body: "<p>Sümen Takımı, Makro Ofis üretimi masaüstü ofis ürünlerini satar. Mağaza adı Sümen Takımı; üretici Makro Ofis’tir.</p><h2>Üretim yapısı</h2><ul>\n<li>MDF işleme</li>\n<li>Deri kaplama</li>\n<li>Ahşap uygulama</li>\n<li>Kişiselleştirme</li>\n<li>Seri ve kurumsal üretim</li>\n</ul><h2>Adresler</h2><p><strong>Üretim (Gebze):</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Arap%C3%A7e%C5%9Fme+Mahallesi+1038.+Sokak+No:32%2FA+Gebze+Kocaeli\" rel=\"noopener\" target=\"_blank\">Arapçeşme Mah. 1038. Sok. No:32/A, Gebze / Kocaeli</a></p><p><strong>Depo (İstanbul):</strong> Onur Sokak No:8, 34445 İstanbul</p><p>Telefon: <a href=\"tel:+905011442729\">0501 144 27 29</a><br>E-posta: <a href=\"mailto:info@sumentakimi.com.tr\">info@sumentakimi.com.tr</a></p><p>Kargo her iki noktadan da çıkabilir.</p>"
+    }
+  ) {
+    page { handle }
+    userErrors { field message }
+  }
+  seo: metafieldsSet(metafields: [
+    {
+      ownerId: "gid://shopify/Page/166761464100"
+      namespace: "global"
+      key: "description_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı mağazası ve Makro Ofis üretimi: MDF işleme, deri kaplama, kişiselleştirme, Gebze üretim ve İstanbul depo."
+    }
+    {
+      ownerId: "gid://shopify/Page/166814220580"
+      namespace: "global"
+      key: "title_tag"
+      type: "single_line_text_field"
+      value: "Sümen Takımı SSS: Malzeme, Parça ve Seçim"
+    }
+  ]) {
+    metafields { key value }
+    userErrors { field message }
+  }
+}

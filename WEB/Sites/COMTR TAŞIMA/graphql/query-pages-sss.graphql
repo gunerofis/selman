@@ -1,0 +1,5 @@
+query PagesAndSss {
+  pages(first: 20, query: "handle:sss OR handle:bize-ulasin") {
+    nodes { id handle title }
+  }
+}
