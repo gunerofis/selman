@@ -1,0 +1,249 @@
+DOKU — Düzeltilecek görseller
+Güncelleme: 2026-10-16. Kural numaraları: DOKU Yönetim\03 Kurallar\01 Görsel Üretim.md
+Bu görseller silinmez. Düzeltilen görsel eski yerine (Katalog veya Onay Bekleyen) döner; satırı silinir.
+
+DK-002 - Çiçek Bahçesi - 02.png
+  Nereden: Bebek ve Çocuk
+  Sorun: İnce saplar, dağınık minik yapraklar (kural 8).
+
+DK-014 - Fil Ailesi - 01.png
+  Nereden: Bebek ve Çocuk
+  Sorun: Odadaki çerçevede okunur İngilizce yazı (kural 11).
+
+DK-016 - Uzay Kaşifi - 01.png
+  Nereden: Bebek ve Çocuk
+  Sorun: Odadaki posterde okunur İngilizce yazı (kural 11).
+
+DK-022 - Yön - 02.png
+  Nereden: Bebek ve Çocuk
+  Sorun: Yastıkta ve posterde okunur İngilizce yazı (kural 11).
+
+DK-024 - Pastel Orman - 01.png
+  Nereden: Bebek ve Çocuk
+  Sorun: Minik meyve ve yaprak parçaları (kural 8).
+
+DK-057 - Botanik Halka - 01.png
+  Nereden: Doğa ve Botanik
+  Sorun: Yuvarlak rozet, sarı-lacivert şerit ve yeşil meşe yaprağı: takım armasının yapısı (kural 11).
+
+FH-061 - Yamaç Paraşütü - 01.png
+  Nereden: Fan ve Hobi
+  Sorun: Paraşüt ipleri ince çizgi, parça değil (kural 6, 8).
+
+DK-032 - Turnalar - 01.png
+  Nereden: Figür ve Hayvan
+  Sorun: İnce saz sapları; su yansıması boyalı (kural 4, 8).
+
+DK-032 - Turnalar - 02.png
+  Nereden: Figür ve Hayvan
+  Sorun: İnce saz sapları; su yansıması boyalı (kural 4, 8).
+
+DK-032 - Turnalar - 03.png
+  Nereden: Figür ve Hayvan
+  Sorun: İnce saz sapları; su yansıması boyalı (kural 4, 8).
+
+DK-020 - Marka İmzası - 01.png
+  Nereden: Kurumsal ve Logo
+  Sorun: Duvarda basılı marka adı ve sloganlar; logo ince çizgi (kural 6, 11).
+
+DK-020 - Marka İmzası - 02.png
+  Nereden: Kurumsal ve Logo
+  Sorun: Duvarda basılı marka adı ve sloganlar; logo ince çizgi (kural 6, 11).
+
+DK-007 - İstanbul - 01.png
+  Nereden: Manzara ve Şehir
+  Sorun: Minare uçları ve köprü halatları ince (kural 8).
+
+DK-007 - İstanbul - 02.png
+  Nereden: Manzara ve Şehir
+  Sorun: Minare uçları ve köprü halatları ince (kural 8).
+
+DK-034 - Rota - 01.png
+  Nereden: Manzara ve Şehir
+  Sorun: Duvarda basılı slogan ve N/E/S/W harfleri (kural 11).
+
+07-Kayadaki-Vasak__NU-01-03-04-08.png
+  Nereden: Onay Bekleyen
+  Sorun: Yüz ve tüy boyalı ayrıntı; gövdedeki derzler yarıda bitiyor (kural 4, 6).
+
+100-Otlarin-Arasinda-Aslan__FO-01-03-10-12.png
+  Nereden: Onay Bekleyen
+  Sorun: Yele ve otlarda boyalı tüy dokusu; parçalar tek renk değil (kural 4).
+
+20-Buz-Kiyisindaki-Mors__NU-02-03-06-08.png
+  Nereden: Onay Bekleyen
+  Sorun: Gövdede yarıda biten derz çizgileri (kural 6).
+
+22-Tavus-Kusu__HA-03-07-09-13-15.png
+  Nereden: Onay Bekleyen
+  Sorun: Tepe tüyleri minik parça; bacaklar ince (kural 8).
+
+46-Buzdaki-Kutup-Ayisi__NU-02-03-06-08.png
+  Nereden: Onay Bekleyen
+  Sorun: Derzler gövde ortasında kayboluyor; komşu parçalar aynı renk (kural 4, 6).
+
+65-Balikci-Samandirasi__EL-03-05-06-11.png
+  Nereden: Onay Bekleyen
+  Sorun: Halat ve ağ ince; ağ gözleri parça değil, çizim (kural 6, 8).
+
+72-Eski-Dikis-Makinesi__FE-01-06-08-18.png
+  Nereden: Onay Bekleyen
+  Sorun: İplik ince çizgi, parça değil (kural 6, 8).
+
+87-Dag-Teleferigi__OR-01-11-19-23.png
+  Nereden: Onay Bekleyen
+  Sorun: Halat ince çizgi, parça değil (kural 6, 8).
+
+90-Eski-Balikci-Teknesi__SA-04-11-13-15.png
+  Nereden: Onay Bekleyen
+  Sorun: Ağ ve direk ipleri ince; ağ çizim (kural 6, 8).
+
+DK-056 - Aslan Döngüsü - 01.png
+  Nereden: Simgeler
+  Sorun: GS harfleri okunuyor: takım monogramı (kural 11). Sitede monogramsız sürümü var (11.10).
+
+DK-056 - Aslan Döngüsü - 02.png
+  Nereden: Simgeler
+  Sorun: G ve S monogramı: takım logosu (kural 11). Sitede monogramsız sürümü var (11.10).
+
+DK-059 - Sarmal Hareket - 01.png
+  Nereden: Simgeler
+  Sorun: TS amblem biçimi ve top: takım logosu (kural 11). Sitede monogramsız sürümü var (11.10).
+
+DK-059 - Sarmal Hareket - 02.png
+  Nereden: Simgeler
+  Sorun: TS amblemi, yıldız ve top: takım armasına çok yakın (kural 11).
+
+DK-060 - Ay Yıldız - 01.png
+  Nereden: Simgeler
+  Sorun: Sağ alttaki şehir silüeti ve kuşlar boyalı çizim, parça değil (kural 4, 6).
+
+DK-061 - Aslan - 03.png
+  Nereden: Simgeler
+  Sorun: Sivri dişler ve minik yele parçaları (kural 8).
+
+DK-061 - Aslan - 04.png
+  Nereden: Simgeler
+  Sorun: Sivri dişler ve minik yele parçaları (kural 8).
+
+DK-063 - Kartal Kanatları - 05.png
+  Nereden: Simgeler
+  Sorun: Pençeler ve minik tüy parçaları (kural 8).
+
+DK-063 - Kartal Kanatları - 06.png
+  Nereden: Simgeler
+  Sorun: Alttaki köprü çizim; minik tüy parçaları (kural 4, 8).
+
+DK-067 - Altın Kuş - 01.png
+  Nereden: Simgeler
+  Sorun: İnce zeytin dalı; sağ alttaki köprü ve şehir çizim (kural 4, 8).
+
+DK-047 - Kafe Kavisleri - 01.png
+  Nereden: Soyut ve Geometrik
+  Sorun: Duvarda basılı İngilizce slogan (kural 11).
+
+DK-047 - Kafe Kavisleri - 02.png
+  Nereden: Soyut ve Geometrik
+  Sorun: Duvarda basılı İngilizce slogan (kural 11).
+
+DK-047 - Kafe Kavisleri - 03.png
+  Nereden: Soyut ve Geometrik
+  Sorun: Duvarda basılı İngilizce slogan (kural 11).
+
+DK-019 - Aile Ağacı - 01.png
+  Nereden: İsim ve Harf
+  Sorun: Duvarda basılı ad ve sloganlar (kural 11).
+
+DK-019 - Aile Ağacı - 02.png
+  Nereden: İsim ve Harf
+  Sorun: Duvarda basılı ad ve sloganlar (kural 11).
+
+05-Kizil-Panda-ve-Manolya__BU-01-04-14-16.png
+  Nereden: Onay Bekleyen
+  Sorun: Yüzde boyalı bıyık ve göz ayrıntısı, kıvırcık tüy dokusu; manolya ortasında minik parçalar (kural 2, 4, 8).
+
+12-Sogut-Altindaki-Kayik__CU-02-03-08-11.png
+  Nereden: Onay Bekleyen
+  Sorun: Ağaca bağlı ip (parça olmayan çizgi); kayık içinde yarıda biten çizgiler (kural 6, 8).
+
+17-Kiyidaki-Kesis-Yengec__EL-03-05-06-11.png
+  Nereden: Onay Bekleyen
+  Sorun: İnce, tel gibi anten ve bacak uçları (kural 8).
+
+27-Lavanta-Ustunde-Ari__SA-01-09-10-12-14.png
+  Nereden: Onay Bekleyen
+  Sorun: Arının anteni ve bacakları ip inceliğinde (kural 8).
+
+40-Iki-Koi-Baligi__HA-04-06-07-13.png
+  Nereden: Onay Bekleyen
+  Sorun: Koilerde tel gibi bıyıklar; yüzgeçlerde boyalı ton geçişi (kural 4, 8).
+
+41-Karda-Kizil-Tilki__BU-03-04-14-16.png
+  Nereden: Onay Bekleyen
+  Sorun: Tilkide tüy dokusu ve boyalı yüz/göz ayrıntısı (kural 2, 4).
+
+42-Devedikeni-Ustunde-Kelebek__OR-01-11-17-19.png
+  Nereden: Onay Bekleyen
+  Sorun: Kelebekte tel gibi antenler; devedikeninde sivri, minik uçlar (kural 8).
+
+54-Ebegumeci-ve-Sinek-Kusu__HA-06-10-13-15.png
+  Nereden: Onay Bekleyen
+  Sorun: Sinek kuşunda iğne gibi gaga; çiçek ercikleri tel inceliğinde (kural 8).
+
+58-Dagdaki-Alpaka__FO-03-04-10-12.png
+  Nereden: Onay Bekleyen
+  Sorun: Alpakada tüy dokusu ve boyalı yüz; dağlarda ton geçişi (kural 2, 4).
+
+59-Eski-Sehir-Tramvayi__TO-01-03-08-09.png
+  Nereden: Onay Bekleyen
+  Sorun: Tramvay teli ve pantograf ip inceliğinde çizgi (kural 6, 8).
+
+62-Yuvasindaki-Porsuk__NU-01-03-04-08.png
+  Nereden: Onay Bekleyen
+  Sorun: Porsukta tüy dokusu, boyalı yüz ve ince pençeler (kural 4, 8).
+
+66-Acibakla-Ciceklerinde-Kelebek__SA-04-10-13-14.png
+  Nereden: Onay Bekleyen
+  Sorun: Kelebekte tel gibi antenler (kural 8).
+
+71-Coldeki-Kaktus-Calikusu__FO-03-09-10-12.png
+  Nereden: Onay Bekleyen
+  Sorun: Kuşta boyalı tüy ayrıntısı; ince bacak ve gaga (kural 4, 8).
+
+74-Karli-Baykus__BU-03-04-09-16.png
+  Nereden: Onay Bekleyen
+  Sorun: Baykuşta tüy dokusu ve boyalı göz/gaga ayrıntısı (kural 2, 4).
+
+75-Kozalaktaki-Sincap__HA-04-10-12-23.png
+  Nereden: Onay Bekleyen
+  Sorun: Sincapta tüy dokusu ve bıyık; çam iğneleri ince (kural 4, 8).
+
+82-Daktilo__FE-01-18-20-24.png
+  Nereden: Onay Bekleyen
+  Sorun: Daktiloda tel gibi harf kolları ve çok sayıda minik tuş; boyalı gölge (kural 4, 8).
+
+97-Kose-Kafesi__OR-01-09-11-19.png
+  Nereden: Onay Bekleyen
+  Sorun: Sandalye/masa ayakları ve lamba kablosu ip inceliğinde; vitrinde boyalı ışık (kural 4, 8).
+
+26.10.2026 — Üç konseptin ara çıktıları; yeni üretim kuyruğu değildir.
+
+Üç Konsept 2026-10-26\Fırın Sabahı - İlk Taslak.png
+  Nereden: 26.10 konsept üretimi
+  Sorun: Kabartı, ahşap görünümü, ince yaprak/sap (2,3,8); yerine düzeltilmiş sunum var.
+
+Üç Konsept 2026-10-26\Fırın Sabahı - Ara Sürüm.png
+  Nereden: 26.10 konsept üretimi
+  Sorun: Sivri daralan ekmek parçaları ve aynı renk komşu kemer blokları (4,8); yerine düzeltilmiş sunum var.
+
+Üç Konsept 2026-10-26\Kervan Geçidi - İlk Taslak.png
+  Nereden: 26.10 konsept üretimi
+  Sorun: Gövde içinde yarıda biten çizgiler (6); yerine düzeltilmiş sunum var.
+
+Üç Konsept 2026-10-26\Çömlekçi Elleri - İlk Taslak.png
+  Nereden: 26.10 konsept üretimi
+  Sorun: El içinde yarıda biten çizgiler (6); konu nihai üçlüden çıkarıldı.
+
+Üç Konsept 2026-10-26\Mektup Saati - İlk Taslak.png
+  Nereden: 26.10 konsept üretimi
+  Sorun: Zarfın katman/derinlik ve posta ağzının delik görünümü (3); yerine düzeltilmiş sunum var.
