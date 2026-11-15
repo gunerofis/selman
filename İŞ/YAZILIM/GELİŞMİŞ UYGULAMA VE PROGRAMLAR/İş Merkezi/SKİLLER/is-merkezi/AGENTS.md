@@ -1,6 +1,6 @@
 # is-merkezi
 
-Alan: İŞ/YAPAY ZEKA/Skill Setleri/is-merkezi. Bu klasörde ilk bu AGENTS.md okunur; üst klasör kuralları geçerlidir.
+Alan: İŞ/YAZILIM/GELİŞMİŞ UYGULAMA VE PROGRAMLAR/İş Merkezi/SKİLLER/is-merkezi. Bu klasörde ilk bu AGENTS.md okunur; üst klasör kuralları geçerlidir.
 
 Bu alan skill, eğitim ve araç kaynaklarıdır. Mevcut SKILL.md dosyasını değiştirmeden önce oku. Yalnız işe uygun kaynakları kullan.
 

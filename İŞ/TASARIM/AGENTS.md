@@ -1,7 +1,5 @@
 # TASARIM
 
-İlk bu dosyayı oku; üst AGENTS.md kuralları geçerlidir.
+İlk bu AGENTS.md okunur; üst kurallar geçerlidir. Tasarım kaynakları, depodaki tasarım arşivleri ve ilgili SKİLLER bu alandadır.
 
-Görsel tasarım alanı. DOKU Görselleri proje görsellerinin bağlantısıdır; ikinci kopya değildir. SKİLLER tasarım, ürün ve görsel işleme kurallarını içerir.
-
-Ana konum kaydı selman/HARİTA.md. İş dosyaları PC üzerinde kalır. GitHub’a yalnız denetlenmiş kaynaklar aktarılır; anahtar, müşteri verisi ve kişisel dosyalar aktarılmaz. GPT Damıtma için kullanıcı “FARİS İZİN VERİYOR” yazmadıkça çalışma yasaktır.
+[DOKU görselleri](<../PROJELER/DOKU/Görseller>) kendi projesinde tek kaynaktır. Dosya adlarını, görsel eşlemelerini ve proje bağlantılarını koru. Önce ilgili SKILL.md dosyasını oku. Özel veri ve anahtar yayımlanmaz.
