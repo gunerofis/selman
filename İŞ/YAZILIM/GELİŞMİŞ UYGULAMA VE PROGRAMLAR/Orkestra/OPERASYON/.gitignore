@@ -1,0 +1,27 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*.json
+secrets*
+node_modules/
+__pycache__/
+*.log
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
+
+# Yerel işlem verileri ve çalışma artıkları
+local_data/
+private_data/
+backups/
+work/
+*.sqlite
+*.sqlite3
+*.db
+.venv/
+.pytest_cache/

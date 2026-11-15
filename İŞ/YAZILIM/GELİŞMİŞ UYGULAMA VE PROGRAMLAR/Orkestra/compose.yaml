@@ -1,0 +1,38 @@
+services:
+  core:
+    build: .
+    ports:
+      - "127.0.0.1:3100:3100"
+    environment:
+      HOST: 0.0.0.0
+      DATABASE_PATH: /app/data/core.sqlite
+      INGEST_SECRET: ${INGEST_SECRET:?Set INGEST_SECRET}
+      BOOTSTRAP_TOKEN: ${BOOTSTRAP_TOKEN:?Set BOOTSTRAP_TOKEN}
+    volumes:
+      - core_data:/app/data
+    restart: unless-stopped
+  worker:
+    build: .
+    command: ["node", "apps/worker/worker.mjs"]
+    environment:
+      DATABASE_PATH: /app/data/core.sqlite
+    volumes:
+      - core_data:/app/data
+    depends_on:
+      - core
+    restart: unless-stopped
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:${N8N_VERSION:?Set an explicit N8N_VERSION}
+    ports:
+      - "127.0.0.1:5678:5678"
+    environment:
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?Set N8N_ENCRYPTION_KEY}
+      GENERIC_TIMEZONE: Europe/Istanbul
+      TZ: Europe/Istanbul
+      N8N_SECURE_COOKIE: "false"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    restart: unless-stopped
+volumes:
+  core_data:
+  n8n_data:

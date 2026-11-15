@@ -1,0 +1,106 @@
+**Yeni programdan çok, mevcut araçlara net görev vermek gerekiyor.** Senin site geliştirme işlerini esas alırsam başlangıçta **Ollama + OpenCode** merkezli kurardım; diğerlerini ihtiyaç oldukça devreye alırdım.
+
+## 1. Elindekileri böyle konumlandır
+
+| Araç         | Görevi                                                                            | Benim önerim                                                                                           |
+| ------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Ollama**   | Yerel modelleri çalıştıran sunucu.                                                | Başlangıçta ana model sunucun olsun.                                                                   |
+| **Lemonade** | Alternatif yerel model sunucusu (NPU/GPU optimize).                               | Kendi donanımında daha iyi sonuç verirse Ollama’nın yerine kullan; başlangıçta ikisini birden işletme. |
+| **OpenCode** | Projeyi okuyup kod değiştiren, komut ve test çalıştıran ajan.                     | Site ve yazılım işlerinde ana aracın olsun.                                                            |
+| **Goose**    | Kodlama yanında araştırma, dosya ve farklı araçlarla iş akışı yürüten genel ajan. | OpenCode’dan ayrı bir ihtiyacı karşılıyorsa kullan; yoksa yedekte tut.                                 |
+| **OpenClaw** | Mesajlaşma ve bağlı bilgisayar yetenekleri üzerinden çalışan asistan altyapısı.   | Mesajla görev verme ve sürekli çalışan asistan ihtiyacın varsa etkinleştir.                            |
+
+Bu ayrım, araçların güncel belgelenmiş rollerine dayanıyor; **Ollama–Lemonade aynı katmanda, OpenCode–Goose ise kısmen örtüşüyor.**
+
+**Bunları birbirinin içinden geçen uzun bir zincire dönüştürme.** Önerdiğim düzende her ajan, model sunucusuna kendi bağlantısıyla erişsin.
+
+## 2. Asıl tamamlanması gerekenler
+
+**Git ve ayrı çalışma alanları:** Her siteyi ayrı depoda tut. Değişiklikleri ayrı dalda yap; iki ajanı aynı dosyaları eşzamanlı değiştirmeye gönderme. Paralel çalışma gerektiğinde ayrı `git worktree` kullan.
+
+**Tarayıcıyla doğrulama:** Site işlerin için ekleyeceğim ilk yetenek **Playwright** olur. OpenCode tarafında **CLI + Skills**, Goose tarafında gerektiğinde **MCP** bağlantısı kullanırdım. Microsoft’un güncel belgesi de kodlama ajanları için CLI + Skills yaklaşımının daha az bağlam tüketebileceğini belirtiyor.
+
+**Proje kuralları:** Her projenin köküne `AGENTS.md` koy; tasarım kuralları, çalıştırma/test komutları, dokunulmayacak dosyalar ve yayınlama şartları burada olsun. OpenCode bu dosyayı doğrudan destekliyor. Görev durumunu ayrıca kısa bir dosyada tutmanı öneririm.
+
+**Yetki ve güvenlik:** Yalnız gereken klasörlere erişim ver; otomasyon için ayrı tarayıcı profili kullan. Silme, canlıya yayınlama ve dışarıya mesaj gönderme işlemlerini onaya bağla. **Kurallar dosyasını güvenlik kilidi sayma; sınırları araç izinlerinde uygula.** OpenClaw’ı etkinleştirmeden önce `openclaw security audit` çalıştır.
+
+## 3. Bağlantıları böyle kur
+
+*Aşağıdaki adresler, uygulamalar aynı Windows ortamındayken ve varsayılan portlar değiştirilmemişken geçerli.*
+
+| Bağlantı                          | Kullanılacak adres          |
+| --------------------------------- | --------------------------- |
+| **OpenCode → Ollama**             | `http://localhost:11434/v1` |
+| **Goose → Ollama sağlayıcısı**    | `http://localhost:11434`    |
+| **OpenClaw → Ollama sağlayıcısı** | `http://localhost:11434`    |
+
+**OpenClaw’ın Ollama bağlantısına `/v1` ekleme:** Güncel doküman bunun araç çağırmayı bozabildiğini özellikle belirtiyor.
+
+OpenCode–Ollama bağlantısını başlatmanın güncel kısa yolu:
+
+```powershell
+ollama launch opencode
+```
+
+Bu komutla model seçip OpenCode’u açabilirsin. Önce tek bir modelle bağlantıyı doğrula; ardından dosya okuma, kontrollü düzenleme ve test çalıştırma denemesi yap. **Modelin sohbet edebilmesi yeterli değil; araç çağırma desteği ve yeterli bağlam kapasitesi de gerekiyor.** Donanım bilgisi olmadan model boyutunu sabitlemek doğru olmaz.
+
+**Windows’ta çalışan kurulumu sırf yeniden düzenlemek için taşıma.** OpenCode için WSL öneriliyor ama zorunlu değil; Windows ve WSL’yi karıştırdığında `localhost` erişimi ağ moduna göre değişebiliyor.
+
+**Benim kurulum sıram: Ollama → uygun model → OpenCode → Git ve proje kuralları → Playwright → ihtiyaç varsa Goose/OpenClaw. Şimdilik altıncı bir yapay zekâ uygulaması eklemezdim.**
+
+---
+
+## 4. Doğrulanmış Mevcut Durum (Güncel)
+
+### Donanım
+- **İşlemci:** AMD Ryzen AI 7 350 w/ Radeon 860M (8 çekirdek / 16 iş parçacığı)
+- **NPU:** XDNA2 (PCI `VEN_1022&DEV_17F0`, REV_20) — Ryzen AI 300 serisi
+- **RAM:** 16 GB lehimli (kullanılabilir ~15.2 GB)
+
+### Ollama
+- **Sürüm:** 0.34.1
+- **Sunucu:** `http://localhost:11434` (çalışıyor, tek sunucu)
+- **Modeller:** `qwen3:8b` (4K ctx), `qwen3-8k` (8K ctx), `qwen3-16k` (16K ctx)
+- **Env:** `OLLAMA_MAX_LOADED_MODELS=1`, `OLLAMA_NUM_PARALLEL=1` (HKCU\Environment)
+- **Araç çağırma:** Doğrulandı (`hesap_makinesi` tool_call)
+- **GPU/NPU:** `ollama ps` → `100% CPU`; iGPU (Radeon 860M) kullanılmıyor
+- **RAM profili:** qwen3-16k @16K ctx ≈ 7.9 GB yüklü; boş RAM ~0.5 GB (kritik darboğaz)
+
+### OpenCode
+- **Kurulum:** Desktop uygulaması (`ollama launch opencode` ile kuruldu)
+- **Config:** `C:\Users\Guner Office\.config\opencode\opencode.jsonc`
+  - Default model: `ollama/qwen3-8k`
+  - Provider: Ollama @ `http://localhost:11434/v1`
+- **Durum:** Desktop çalışıyor; config güncel (yeniden başlatma ile etkinleşir)
+- **CLI test:** `opencode run` — 16 GB RAM + CPU-only inference'te görevler dakikalarca takılıyor; 10 dk timeout'ta dosya yazımı başarısız
+- **Test klasörü:** `C:\Users\Guner Office\Desktop\Yerel Agent\TEST_AGENT`
+  - Git repo + AGENTS.md + Playwright + dosya okuma/yazma/tarayıcı testleri **başarılı** (Node.js + Playwright)
+
+### Goose
+- **Sürüm:** 1.50.1 (CLI, resmi installer)
+- **Config:** `C:\Users\Guner Office\AppData\Roaming\Block\goose\config\config.yaml`
+- **Provider:** Ollama @ `http://localhost:11434` (model `qwen3-8k`)
+- **Test:** `goose run -t "2+2 kaç?" --provider ollama --model qwen3-8k` — 3 dk timeout (CPU-only inference yavaşlığı)
+
+### OpenClaw
+- **Sürüm:** 2026.9.4 (CLI, npm global)
+- **Gateway:** Yerel servis (schtasks) çalışıyor (pid aktif)
+- **Config:** `C:\Users\Guner Office\.openclaw\openclaw.json` (provider `ollama` @ `http://localhost:11434` eklendi)
+- **Test:** `infer model run --model ollama/qwen3-8k --prompt "2+2 kaç?"` — **başarılı** (cevap: "4")
+- **Güvenlik:** `openclaw security audit` → 0 kritik · 1 uyarı (reverse proxy, yerelde ilgili değil)
+
+### Lemonade
+- **Sürüm:** 11.9.0 (embeddable portable binary)
+- **NPU desteği:** **EVET** — `ryzenai-llm` recipe'i XDNA2 NPU (Ryzen AI 300) için optimize edilmiş modeller sunar (`*-NPU` sonekiyle 30+ model: `Llama-3.2-1B-Instruct-NPU`, `Qwen2.5-3B-Instruct-NPU`, `Phi-4-mini-instruct-NPU` vb.)
+- **Durum:** Portable binary hazır; **model indirme testi ertelendi** — Hugging Face indirme hızı 15+ dakika sürdü ve tamamlanamadı (ağ/timeout); inference ve NPU doğrulaması model indirilene kadar beklemede
+- **Model optimizasyonu:** En sona bırakıldı (indirme sorunu çözülene kadar)
+
+---
+
+[1]: https://docs.ollama.com/integrations/opencode "OpenCode - Ollama"
+[2]: https://git-scm.com/docs/git-worktree "Git - git-worktree Documentation"
+[3]: https://github.com/microsoft/playwright-mcp "GitHub - microsoft/playwright-mcp: Playwright MCP server · GitHub"
+[4]: https://opencode.ai/docs/rules/ "Rules | OpenCode"
+[5]: https://docs.openclaw.ai/gateway/security "Security - OpenClaw"
+[6]: https://opencode.ai/docs/providers/ "Providers | OpenCode"
+[7]: https://opencode.ai/docs/windows-wsl "Windows (WSL) | OpenCode"

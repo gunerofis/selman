@@ -1,0 +1,15 @@
+﻿FİYAT — görsellere fiyat ve açıklama yazma programı
+
+BAŞLAT
+  Fiyat.exe'ye çift tıkla. İlk açılış birkaç saniye sürebilir.
+  Windows "Bilgisayarınız korundu" derse: "Ek bilgi" → "Yine de çalıştır".
+
+KULLAN
+  İlk açılışta kısa bir tanıtım seni yönlendirir:
+  klasörünü seç → fiyatı yaz, Enter → açıklamayı yaz, Enter.
+  Her şey kendiliğinden kaydedilir.
+  Excel listesi, seçtiğin klasöre _FIYAT_LISTESI.csv adıyla yazılır.
+
+YARDIM
+  F1: tüm kısayollar ve "Tanıtımı yeniden göster"
+  Kapatmak için sağ üstteki X ya da Ctrl+Q

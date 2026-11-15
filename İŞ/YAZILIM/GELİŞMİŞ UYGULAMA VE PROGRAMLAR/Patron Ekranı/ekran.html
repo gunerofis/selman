@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patron</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f3efe6; color: #1a1814; font: 18px/1.4 "Segoe UI", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 20px 48px; }
+  header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 24px; }
+  h1 { margin: 0; font-size: 28px; font-weight: 650; letter-spacing: 0; }
+  h2 { margin: 0 0 18px; font-size: 20px; font-weight: 650; }
+  #baslik { margin: 4px 0 0; color: #4a453f; }
+  .donem { display: flex; flex-wrap: wrap; gap: 8px; }
+  button { min-height: 44px; padding: 8px 16px; border: 1px solid #1a1814; border-radius: 8px; background: transparent; color: #1a1814; font: inherit; cursor: pointer; }
+  button[aria-pressed="true"] { background: #1a1814; color: #fff; }
+  button:focus-visible { outline: 2px solid #1a1814; outline-offset: 2px; }
+  #durum { min-height: 1.4em; margin: 22px 0; color: #4a453f; }
+  #kartlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  article { background: #fff; border-radius: 12px; padding: 22px 22px 8px; }
+  dl { margin: 0; }
+  dl div { display: grid; grid-template-columns: 92px 1fr; gap: 8px; align-items: baseline; padding: 12px 0; border-top: 1px solid #e4ddd0; }
+  dt { color: #4a453f; }
+  dd { margin: 0; font-size: 34px; font-variant-numeric: tabular-nums; letter-spacing: 0; }
+  dd.eksik { font-size: 18px; color: #4a453f; }
+  small { display: block; margin-top: 2px; color: #4a453f; font-size: 14px; }
+  .uyari { margin: 0 0 8px; color: #4a453f; font-size: 15px; }
+  @media (max-width: 640px) {
+    dd { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Patron</h1>
+      <p id="baslik"></p>
+    </div>
+    <div class="donem" role="group" aria-label="Dönem">
+      <button type="button" data-donem="bugun" aria-pressed="true">Bugün</button>
+      <button type="button" data-donem="buay" aria-pressed="false">Bu ay</button>
+    </div>
+  </header>
+  <p id="durum" role="status"></p>
+  <section id="kartlar" aria-live="polite"></section>
+</main>
+<script>
+const baslik = document.querySelector("#baslik");
+const durum = document.querySelector("#durum");
+const kartlar = document.querySelector("#kartlar");
+const dugmeler = [...document.querySelectorAll("[data-donem]")];
+const tl = new Intl.NumberFormat("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+const adet = new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 0 });
+
+function para(value) {
+  if (value == null) return "kayıt yok";
+  return tl.format(value) + " TL";
+}
+function sayi(value) {
+  if (value == null) return "kayıt yok";
+  return adet.format(value);
+}
+function hucre(label, text, note) {
+  const eksik = text === "kayıt yok" ? " eksik" : "";
+  const alt = note ? `<small>${note}</small>` : "";
+  return `<div><dt>${label}</dt><dd class="${eksik.trim()}">${text}${alt}</dd></div>`;
+}
+function kac(value) {
+  return String(value ?? "").replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+}
+function ciz(data) {
+  baslik.textContent = data.baslik;
+  durum.textContent = data.not || "";
+  kartlar.innerHTML = data.firmalar.map(firma => `<article><h2>${kac(firma.ad)}</h2>${firma.uyari ? `<p class="uyari">${kac(firma.uyari)}</p>` : ""}<dl>
+    ${hucre("Satış", para(firma.satis), "")}
+    ${hucre("Sipariş", sayi(firma.siparis), "")}
+    ${hucre("Reklam", para(firma.reklam), kac(firma.reklamNot || ""))}
+  </dl></article>`).join("");
+}
+async function ac(donem) {
+  dugmeler.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.donem === donem)));
+  durum.textContent = "Bakılıyor.";
+  try {
+    const response = await fetch("/api/ozet?donem=" + donem, { cache: "no-store" });
+    if (!response.ok) throw new Error("okunamadı");
+    ciz(await response.json());
+  } catch (error) {
+    durum.textContent = "Sayılar okunamadı.";
+    kartlar.innerHTML = "";
+  }
+}
+dugmeler.forEach(button => button.addEventListener("click", () => ac(button.dataset.donem)));
+const istenen = new URLSearchParams(location.search).get("donem");
+ac(istenen === "buay" ? "buay" : "bugun");
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Orkestra salt-okunur canlı mağaza bağlantısı.
+client_id = "d7273b4cc21c5bb41a02f1d5ae0f99c8"
+name = "Sumen Terminal Admin"
+application_url = "https://tower-ireland-domain-divx.trycloudflare.com"
+embedded = false
+
+[access_scopes]
+scopes = "read_orders"
+optional_scopes = []
+use_legacy_install_flow = false
+
+[webhooks]
+api_version = "2026-07"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = ["app/uninstalled"]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/scopes_update"
+  topics = ["app/scopes_update"]
+
+[auth]
+redirect_urls = [
+  "https://tower-ireland-domain-divx.trycloudflare.com/auth/callback",
+  "https://tower-ireland-domain-divx.trycloudflare.com/auth/shopify/callback",
+  "https://tower-ireland-domain-divx.trycloudflare.com/api/auth/callback"
+]

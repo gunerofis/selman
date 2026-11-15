@@ -1,0 +1,24 @@
+{
+  "name": "business-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env apps/api/server.mjs",
+    "start:local": "node --env-file-if-exists=.env scripts/start-local.mjs",
+    "worker:dev": "node --env-file-if-exists=.env apps/worker/worker.mjs",
+    "desktop:dev": "node scripts/desktop-dev.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "db:migrate": "node scripts/migrate.mjs",
+    "seed:demo": "node --env-file-if-exists=.env scripts/seed-demo.mjs",
+    "test": "node --test",
+    "test:acceptance": "node --test tests/acceptance/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "backup": "node --env-file-if-exists=.env scripts/backup.mjs",
+    "restore:verify": "node scripts/restore-verify.mjs",
+    "package:desktop": "node scripts/package-desktop.mjs",
+    "bootstrap": "node --env-file-if-exists=.env scripts/bootstrap.mjs"
+  }
+}

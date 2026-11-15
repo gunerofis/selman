@@ -1,0 +1,21 @@
+﻿FİYAT — görsellere fiyat ve açıklama girme
+
+Çalıştır: AyiklaFiyat.bat · İlk açılışta kısa bir tanıtım çıkar (F1 → "Tanıtımı yeniden göster")
+Klasör: "Klasör seç" butonu, ya da yolu üstteki kutuya yapıştır + Enter, ya da klasörü pencereye sürükle (alt klasörler dahil).
+Her kartın altında iki bar: solda FİYAT (₺, yalnız rakam), sağda AÇIKLAMA. Yazdıkça kaydedilir.
+Fiyatı girilen kartta yeşil onay rozeti çıkar; üstte "fiyatlı / toplam" sayacı ve ilerleme çubuğu var.
+Filtre: Tümü · Fiyatsız · Fiyatlı (Ctrl+1 / Ctrl+2 / Ctrl+3). Fiyatsız listesinde fiyatlananlar F5 ile listeden çıkar.
+
+Kayıt: %APPDATA%\AyiklaFiyat\fiyatlar.json
+Excel listesi: açılan klasörde _FIYAT_LISTESI.csv (otomatik güncellenir; Excel'de açıkken yazılamazsa kapatınca yazılır).
+
+HIZLI GİRİŞ
+  Ok tuşlarıyla karta git → rakam yaz (fiyata başlar) → Enter → açıklamayı yaz → Enter → sıradaki kartın fiyatı
+  Harf yazarsan doğrudan açıklamaya başlar · Ctrl+Boşluk: sıradaki fiyatsız kart
+  Alanda: Tab / Shift+Tab ileri-geri · ↑ ↓ üst/alt kartın aynı alanı · Esc iptal
+  Del: kartın fiyat+açıklamasını sil · Ctrl+Z: geri al · Ctrl+S: hemen kaydet
+
+Görsel boyutu: üstteki "2 sıra" butonu (1–6 sıra) · Ctrl+tekerlek · Ctrl + / Ctrl −
+  Kartlar her görselin kendi oranında (kare, dikey, yatay) dizilir; satırlar ekranı boşluksuz doldurur
+Ctrl+Enter / çift tık görseli açar · Ctrl+E / sağ tık klasörde gösterir · F5 yenile · F11 tam ekran · Ctrl+O klasör · Ctrl+L yol kutusu · Ctrl+Q kapat
+TÜM KISAYOLLAR: F1 ya da üstteki "Kısayollar"

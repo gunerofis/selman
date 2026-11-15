@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orkestra</title>
+  <link rel="stylesheet" href="/app.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <section class="login-screen" id="login-screen" aria-labelledby="login-title">
+    <div class="login-card">
+      <div class="logo-tile" aria-hidden="true">O</div>
+      <p class="eyebrow">İŞLETME ORKESTRATÖRÜ</p>
+      <h1 id="login-title">Çalışma alanınıza girin.</h1>
+      <p class="muted">Kişisel erişim anahtarınız yalnızca bu sekmede tutulur.</p>
+      <form id="login-form" novalidate>
+        <label for="token">Kişisel erişim anahtarı</label>
+        <div class="input-action"><input id="token" name="token" type="password" minlength="32" autocomplete="current-password" required><button class="ghost-button" id="toggle-token" type="button">Göster</button></div>
+        <p class="form-error" id="login-error" role="alert"></p>
+        <button class="primary-button full" type="submit">Giriş yap</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="app-shell hidden" id="app-shell">
+    <header class="app-topbar">
+      <button class="app-brand" id="home-button" type="button" aria-label="Ana ekrana dön"><span class="logo-tile small">O</span><strong>Orkestra</strong></button>
+      <div class="location"><span class="live-dot"></span><span id="location-label">Ana ekran</span></div>
+      <div class="topbar-actions">
+        <label class="brand-picker"><span>Marka</span><select id="brand-select" aria-label="Marka seç"></select></label>
+        <div class="profile-chip"><span class="avatar" id="user-avatar">Y</span><span><strong id="user-name">—</strong><small id="user-role">Kullanıcı</small></span></div>
+        <button class="icon-button" id="logout" type="button" aria-label="Çıkış"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3M15 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/></svg></button>
+      </div>
+    </header>
+
+    <main class="command-frame" id="command-frame">
+      <nav class="module-rail top-rail" id="top-rail" aria-label="Ana iş alanları"></nav>
+      <nav class="module-rail left-rail" id="left-rail" aria-label="İş takibi"></nav>
+      <section class="center-stage" id="center-stage" aria-live="polite"></section>
+      <nav class="module-rail right-rail" id="right-rail" aria-label="Yönetim ve araçlar"></nav>
+    </main>
+  </div>
+
+  <dialog class="modal" id="app-dialog" aria-labelledby="dialog-title">
+    <div class="modal-frame">
+      <header class="modal-head"><div><p class="eyebrow" id="dialog-eyebrow">ORKESTRA</p><h2 id="dialog-title">İşlem</h2></div><button class="modal-close" type="button" data-close-dialog aria-label="Pencereyi kapat">×</button></header>
+      <div class="modal-body" id="dialog-body"></div>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

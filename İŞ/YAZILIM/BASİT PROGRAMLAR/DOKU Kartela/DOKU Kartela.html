@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOKU Kartela</title>
+<style>
+/* Layout: iki kapak yan yana (telefonda alt alta), üstte yalnız logo */
+:root{
+  --bg:#f3f4ef; --fg:#1d1f1b; --mut:#73776c; --card:#ffffff; --line:#e1e3db;
+  --display:"Segoe UI Variable Display","Segoe UI",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#151714;--fg:#eceee7;--mut:#9a9e92;--card:#1f221e;--line:#2c2f2a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151714;--fg:#eceee7;--mut:#9a9e92;--card:#1f221e;--line:#2c2f2a;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+h1{margin:0;font:700 30px/1 var(--display);letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+a.cat{display:grid;gap:12px;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 10px 16px;transition:transform .15s ease}
+a.cat:hover{transform:translateY(-2px)}
+a.cat:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+a.cat img{width:100%;max-width:100%;aspect-ratio:595/842;object-fit:cover;border-radius:12px;display:block}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:0 6px}
+.row b{font:500 18px/1.2 var(--display)}
+.row span{color:var(--mut);font-size:13px;font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){a.cat{transition:none}}
+body{margin:0}</style></head><body>
+<div class="wrap">
+  <h1>doku.</h1>
+  <div class="grid">
+    <a class="cat" href="deri.pdf" target="_blank" rel="noopener"><img src="deri.jpg" alt="Deri kartela kapağı"><div class="row"><b>Deri</b><span>2026</span></div></a>
+    <a class="cat" href="kumas.pdf" target="_blank" rel="noopener"><img src="kumas.jpg" alt="Kumaş kartela kapağı"><div class="row"><b>Kumaş</b><span>2026</span></div></a>
+  </div>
+</div>
+</body></html>

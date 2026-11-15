@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d1a">
+  <meta name="description" content="FILINTA AI — Transformer mimarisinin etkileşimli, matematiksel eğitim simülasyonu.">
+  <title>FILINTA AI · Transformer Control Lab</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080d1a;--surface:#10192b;--surface2:#131f33;--surface3:#18263b;--edge:#26354b;--muted:#8495aa;--text:#ecf5ff;--cyan:#44dfed;--blue:#5888ff;--purple:#ab86ff;--gold:#f1c979;--green:#5ee2b6;--red:#ff7a91;--radius:17px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 460px at 54% -170px,#1b356180,transparent 75%),radial-gradient(450px 370px at 100% 45%,#1c214650,transparent 80%),var(--bg);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--text);min-height:100vh}
+    button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}button:disabled{cursor:not-allowed;opacity:.48}
+    .shell{max-width:1600px;margin:auto;padding:0 32px 34px}.top{display:flex;align-items:center;justify-content:space-between;min-height:80px;border-bottom:1px solid #233148;gap:16px}.brand{display:flex;gap:13px;align-items:center}.mark{width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,#52e4f1,#5272ff);display:grid;place-items:center;box-shadow:0 0 32px #44dfee33}.mark svg{width:26px;height:26px}.name{font-size:18px;line-height:1;font-weight:850;letter-spacing:.14em}.name span{color:var(--cyan)}.subbrand{font-size:10px;letter-spacing:.26em;color:var(--muted);margin-top:6px}.topright{display:flex;align-items:center;gap:15px}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #2d455c;background:#122334;border-radius:999px;padding:7px 12px;color:#bce4ea;font-size:11px;font-weight:700;letter-spacing:.09em}.pulse{height:7px;width:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #5ee2b61c,0 0 10px var(--green);animation:breathe 2s infinite}.toplink{font-size:12px;color:var(--muted);text-decoration:none}.toplink:hover{color:white}
+    .intro{display:flex;justify-content:space-between;gap:20px;align-items:end;padding:31px 0 28px}.eyebrow{font-size:11px;color:var(--cyan);letter-spacing:.21em;font-weight:800}.intro h1{font-size:clamp(24px,3vw,36px);letter-spacing:-.055em;line-height:1.13;margin:9px 0 10px;font-weight:780}.intro h1 em{font-style:normal;color:#91aaff}.intro p{margin:0;color:#9cabc0;font-size:13px;max-width:610px}.mode{color:var(--gold);background:#2b261e;border:1px solid #5b4933;padding:8px 12px;border-radius:8px;font-size:11px;white-space:nowrap}
+    .layout{display:grid;grid-template-columns:minmax(258px,292px) minmax(0,1fr) minmax(270px,300px);gap:16px;align-items:start}.panel{border:1px solid var(--edge);background:linear-gradient(160deg,#111a2bdc,#0e1727e9);border-radius:var(--radius);box-shadow:0 14px 35px #00000013;min-width:0}.sidebar{padding:21px;display:flex;flex-direction:column;gap:18px}.side-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.kicker{font-size:10px;font-weight:800;letter-spacing:.19em;color:#7b92b0}.tiny-no{font:600 10px ui-monospace,Consolas,monospace;color:#607590}.section-title{font-size:16px;font-weight:760;letter-spacing:-.03em;margin:6px 0 0}.divider{height:1px;background:var(--edge);margin:1px 0}.label{font-size:11px;color:#b5c6d8;font-weight:750;margin-bottom:9px;display:block}textarea{border-radius:12px;border:1px solid #334762;background:#0a1323;color:#f1f8ff;resize:vertical;min-height:111px;width:100%;padding:12px;line-height:1.55;transition:border .2s}textarea:focus{border-color:var(--cyan)}.hint{font-size:10px;color:#6f849c;margin-top:6px;display:flex;justify-content:space-between}.presets{display:flex;flex-wrap:wrap;gap:7px}.preset{color:#aac6e0;background:#18263a;border:1px solid #2a3c56;border-radius:7px;padding:7px 9px;font-size:11px;transition:.2s}.preset:hover{color:white;border-color:var(--cyan);background:#203650}.primary{border:0;background:linear-gradient(110deg,#4ed8e6,#5e8df8);color:#061426;box-shadow:0 8px 25px #468df13b;font-weight:850;border-radius:10px;padding:12px 14px;display:flex;gap:9px;align-items:center;justify-content:center;width:100%;transition:transform .2s,filter .2s}.primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.primary svg,.secondary svg{width:16px;height:16px}.secondary{display:flex;align-items:center;gap:7px;justify-content:center;border:1px solid #334761;background:#18263b;color:#bdd0e5;padding:10px 12px;border-radius:9px;font-weight:680}.secondary:hover{border-color:#6385ae;color:#fff}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}.spec{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #26364b;font-size:12px;color:#8297ae}.spec strong{color:#e7f1ff;font:700 12px ui-monospace,Consolas,monospace}.spec:last-child{border:0}.speedrow{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#9eb0c5}.speedrow strong{color:#dce9fa}input[type=range]{width:100%;margin:13px 0 4px;accent-color:var(--cyan)}.disclaimer{font-size:11px;line-height:1.7;color:#8093a9;background:#162133;border:1px solid #293950;padding:12px;border-radius:10px}.disclaimer strong{color:#d7e9fa}
+    .maincol{display:grid;gap:16px;min-width:0}.workspace{overflow:hidden}.workspace-head{padding:20px 22px 16px;display:flex;align-items:center;justify-content:space-between;gap:15px}.workspace-title{font-size:17px;font-weight:800;letter-spacing:-.035em;margin-top:5px}.status{display:flex;align-items:center;gap:7px;color:#81a4c0;font-size:10px;white-space:nowrap}.status .dot{height:7px;width:7px;border-radius:50%;background:var(--cyan)}.stage-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);background:#0c1626}.stage{border:0;border-right:1px solid #223247;background:transparent;padding:14px 6px 12px;color:#7590a8;min-width:0;position:relative;text-align:center}.stage:last-child{border-right:0}.stage b{display:block;font:800 10px ui-monospace,Consolas,monospace;color:#647b95}.stage span{display:block;font-size:11px;font-weight:700;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stage.active{background:linear-gradient(#1b2c45,#101c31);color:#e8faff}.stage.active b{color:var(--cyan)}.stage.active:after{content:"";position:absolute;bottom:0;height:2px;left:16%;right:16%;background:var(--cyan);box-shadow:0 0 15px #44dfed88}.stage.done b{color:var(--green)}
+    .canvas-title{display:flex;justify-content:space-between;gap:15px;align-items:start;padding:20px 22px 6px}.canvas-title h2{margin:0;font-size:17px;letter-spacing:-.04em}.canvas-title p{margin:4px 0 0;color:#8ba1b9;font-size:11px;max-width:470px}.step-badge{font:750 10px ui-monospace,Consolas,monospace;color:#bfeefa;background:#173447;border:1px solid #2b6473;padding:5px 8px;border-radius:6px;white-space:nowrap}.token-row{display:flex;gap:7px;overflow:auto;padding:17px 22px 6px;scrollbar-color:#3e546f transparent;min-height:67px}.token{flex:1;min-width:54px;max-width:130px;position:relative;border-radius:9px;border:1px solid #3c5473;background:#14273c;padding:9px 8px;text-align:center;transition:.2s}.token .index{display:block;font:650 9px ui-monospace,Consolas,monospace;color:#718da8}.token .word{display:block;font-weight:730;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#d4e8ff}.token.selected{background:#24445c;border-color:var(--cyan);box-shadow:0 0 0 1px #44dfed55,0 0 22px #44dfed22}.token.selected .word{color:white}.token:hover{border-color:#71c4d4}
+    .viz{margin:8px 22px 0;background:radial-gradient(300px 180px at 50% 50%,#1c30475e,transparent),#0b1423;border:1px solid #293b50;border-radius:13px;min-height:272px;position:relative;overflow:hidden}.viz:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#38577655 1px,transparent 1px);background-size:19px 19px;opacity:.37;pointer-events:none}.viz-top{display:flex;justify-content:space-between;align-items:center;gap:8px;position:relative;padding:13px 14px 0;color:#7590ab;font:700 10px ui-monospace,Consolas,monospace;letter-spacing:.06em}.viz-top strong{color:#a9e5f1;font-weight:700}.viz svg{display:block;position:relative;width:100%;height:224px;overflow:visible}.arc{fill:none;stroke:var(--cyan);transition:opacity .18s}.arc.flowing{stroke-dasharray:6 9;animation:flowstroke 1.2s linear infinite}.svg-token{cursor:pointer}.svg-token:focus{outline:none}.svg-token:focus rect{stroke:var(--gold);stroke-width:3}.svg-token text{pointer-events:none}.svg-token:hover rect{stroke:#fff}.viz-caption{position:absolute;bottom:8px;left:0;right:0;text-align:center;color:#6f8aa4;font:650 10px ui-monospace,Consolas,monospace;pointer-events:none}
+    .model-strip{padding:17px 22px 19px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.layer-card{border:1px solid #2c415b;background:#142238;border-radius:9px;padding:12px 10px;display:flex;flex-direction:column;gap:4px;text-align:left;color:#8398b0;transition:.2s}.layer-card strong{font-size:12px;color:#d9e9fc}.layer-card small{font-size:10px}.layer-card.active{border-color:#4e9cdb;background:linear-gradient(130deg,#1b344d,#17243e);box-shadow:inset 0 0 15px #4ed9ed0a}.layer-card.active strong{color:var(--cyan)}.layer-flow{display:flex;align-items:center;gap:5px;margin-top:3px;height:4px}.layer-flow span{height:3px;flex:1;background:#2c4159;border-radius:9px}.layer-card.active .layer-flow span{background:linear-gradient(90deg,var(--blue),var(--cyan))}
+    .matrix-panel{padding:18px 22px 22px}.matrix-heading{display:flex;justify-content:space-between;align-items:center;gap:10px}.matrix-heading h3{font-size:14px;margin:0;font-weight:800}.matrix-heading .sub{font-size:10px;color:#7d92a9}.head-tabs{display:flex;gap:6px;margin:14px 0}.head-btn{flex:1;border:1px solid #334863;border-radius:7px;background:#172338;color:#8197b1;font:740 11px ui-monospace,Consolas,monospace;padding:7px 6px}.head-btn.active{color:#081929;background:var(--cyan);border-color:var(--cyan)}.heat-holder{overflow:auto;padding-bottom:3px}.heat-grid{display:grid;gap:3px;min-width:350px;align-items:center}.axis-label{font:700 10px ui-monospace,Consolas,monospace;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#93a9c1}.axis-row{color:var(--cyan)}.heat-cell{border:1px solid #233b4b;border-radius:4px;aspect-ratio:1.5;min-height:22px;display:grid;place-items:center;font:680 9px ui-monospace,Consolas,monospace;color:#b5dae9;padding:0}.heat-cell:disabled{opacity:.2;background:#1a2737!important;border-color:#243246;color:transparent}.heat-cell.active{outline:2px solid #eafaff;outline-offset:-2px}.heat-cell:not(:disabled):hover{outline:2px solid var(--gold)}.heat-legend{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#7890aa;margin-top:12px}.gradient{height:6px;border-radius:9px;flex:1;max-width:160px;margin:0 11px;background:linear-gradient(90deg,#1c3c51,#216e92,#3fc5e0,#cefcff)}
+    .right-section h3{margin:6px 0 10px;font-size:16px;letter-spacing:-.035em}.right-section p{font-size:12px;color:#95aac2;line-height:1.7;margin:0}.formula{margin-top:13px;padding:11px;border-radius:9px;background:#0b1422;border:1px solid #293b51;color:#7fbee5;font:670 12px/1.5 ui-monospace,Consolas,monospace;overflow:auto}.metric-list{display:grid;grid-template-columns:1fr 1fr;gap:9px}.metric{padding:11px 10px;background:#131f33;border:1px solid #2c3e56;border-radius:9px}.metric b{display:block;color:#f0f7ff;font:800 18px ui-monospace,Consolas,monospace}.metric small{font-size:10px;color:#738aa4}.vector{display:flex;gap:4px;height:82px;align-items:center;border-bottom:1px solid #334761;padding:10px 0 0}.barwrap{flex:1;height:100%;position:relative;display:flex;align-items:center;justify-content:center}.barzero{position:absolute;width:100%;height:1px;background:#53677d;top:50%}.vbar{position:absolute;width:min(100%,13px);border-radius:3px;background:linear-gradient(180deg,#51d8ea,#4c88df);min-height:2px;transition:.45s}.vbar.negative{background:linear-gradient(180deg,#8e7bed,#594fba)}.vector-label{display:flex;justify-content:space-between;margin-top:7px;font:9px ui-monospace,Consolas,monospace;color:#5f7894}.predictions{display:flex;flex-direction:column;gap:11px}.pred-row{display:grid;grid-template-columns:90px 1fr 39px;align-items:center;gap:8px}.pred-word{font-size:11px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#c4d9ed}.pred-track{height:7px;border-radius:8px;background:#26374a;overflow:hidden}.pred-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,#4566dc,#55e2ed);transition:width .45s}.pred-pct{font:680 10px ui-monospace,Consolas,monospace;text-align:right;color:#8ab0c7}.footnote{font-size:10px;color:#71869e;line-height:1.65}.activity{font:10px/1.7 ui-monospace,Consolas,monospace;background:#0b1422;border:1px solid #293b51;border-radius:9px;padding:11px 12px;color:#91a9c2;min-height:78px}.activity div:before{content:'›';margin-right:8px;color:var(--cyan)}.footer{margin-top:26px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#5d748e;font-size:10px;letter-spacing:.04em;border-top:1px solid #1e2d42;padding-top:15px}.footer strong{color:#81a9bb;font-weight:740}
+    @keyframes flowstroke{to{stroke-dashoffset:-30}}@keyframes breathe{50%{box-shadow:0 0 0 6px #5ee2b610,0 0 18px var(--green)}}@media(max-width:1250px){.shell{padding:0 20px 25px}.layout{grid-template-columns:245px minmax(0,1fr)}.rightpanel{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.rightpanel .divider{display:none}.rightpanel .side-head{grid-column:1/-1}.rightpanel .right-section{min-width:0}.rightpanel .section-title{margin:0}.rightpanel .metrics-section{grid-column:span 1}.rightpanel .log-section{grid-column:span 1}}@media(max-width:780px){.shell{padding:0 12px 22px}.top{min-height:68px}.intro{padding:23px 0 22px;align-items:start;flex-direction:column;gap:13px}.layout{grid-template-columns:1fr}.leftpanel{display:grid;grid-template-columns:1fr 1fr;gap:14px}.leftpanel .side-head,.leftpanel .input-section,.leftpanel .disclaimer{grid-column:1/-1}.leftpanel .divider{display:none}.leftpanel .run-section{align-self:end}.rightpanel{grid-template-columns:1fr 1fr}.rightpanel .right-section{grid-column:span 1}.rightpanel .metrics-section,.rightpanel .log-section{grid-column:span 1}.model-strip{gap:6px}.stage span{font-size:9px}.canvas-title{padding:17px 14px 2px}.token-row{padding:14px 12px 5px}.viz{margin:8px 12px 0}.model-strip{padding:15px 12px}.matrix-panel{padding:17px 14px}.mode{white-space:normal}.toplink{display:none}}@media(max-width:480px){.leftpanel,.rightpanel{grid-template-columns:1fr}.leftpanel .input-section,.leftpanel .side-head,.leftpanel .disclaimer{grid-column:auto}.rightpanel .side-head,.rightpanel .right-section,.rightpanel .metrics-section,.rightpanel .log-section{grid-column:auto}.stage{padding:10px 3px}.stage span{font-size:8px}.stage b{font-size:9px}.sidebar{padding:15px}.brand .name{font-size:15px}.brand .subbrand{font-size:9px}.pill{font-size:9px}.workspace-head{padding:16px 14px}.workspace-title{font-size:15px}.status{font-size:9px}.viz{min-height:246px}.viz svg{height:201px}.token{min-width:58px}.footer{align-items:start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+    .view-nav{display:flex;gap:6px;background:#0d1727;border:1px solid #273950;padding:6px;border-radius:12px}.view-tab{flex:1;border:1px solid transparent;background:transparent;color:#819ab4;padding:11px 9px;border-radius:8px;font-weight:750;font-size:12px;letter-spacing:.01em}.view-tab.active{background:#1b3049;color:#e4faff;border-color:#3d6f8d;box-shadow:0 3px 17px #0003}.view-tab:hover{color:white}.view-icon{display:inline-block;margin-right:7px;color:var(--cyan)}.mode-panel[hidden]{display:none!important}.config-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.config-field{display:flex;flex-direction:column;gap:5px}.config-field span{font-size:10px;color:#7f9ab5;font-weight:720}.config-field select{appearance:none;background:#0d1a2c;color:#dbeefe;border:1px solid #334b65;border-radius:8px;padding:9px 8px;font:750 12px ui-monospace,Consolas,monospace;min-width:0;width:100%}.config-field select:hover{border-color:#55b1d4}.mini-actions{display:flex;gap:6px}.mini-btn{background:#18283d;border:1px solid #344d66;border-radius:7px;color:#b8d4e8;font-size:10px;font-weight:750;padding:7px 9px}.mini-btn:hover{border-color:var(--cyan);color:white}.seed-line{display:flex;justify-content:space-between;align-items:center;gap:6px}.seed-value{font:750 11px ui-monospace,Consolas,monospace;color:#b7d2ea}.mini-note{color:#7490a8;font-size:10px;line-height:1.55}.collapse-info{background:#101c2e;border:1px solid #253a51;border-radius:9px;padding:10px 12px;color:#879eb6;font-size:10px}.collapse-info summary{cursor:pointer;font-weight:750;color:#9fc0d7}.collapse-info p{margin:8px 0 0;line-height:1.65}.architecture-foot{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 14px;background:#101d2e;border:1px solid #293e55;border-radius:10px}.architecture-foot span{font:700 10px ui-monospace,Consolas,monospace;color:#8daac2}.architecture-foot strong{color:#def4fd}.graph-panel{padding:20px;overflow:hidden}.section-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.section-bar h2{font-size:17px;letter-spacing:-.04em;margin:4px 0 0}.graph-nodes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.graph-node{min-height:92px;border:1px solid #34506b;background:#14263b;border-radius:11px;display:flex;align-items:flex-start;justify-content:space-between;flex-direction:column;color:#99b4cf;padding:12px;text-align:left;position:relative;overflow:hidden}.graph-node:after{content:"";height:2px;width:100%;position:absolute;bottom:0;left:0;background:linear-gradient(90deg,transparent,#4ce2e8,transparent);opacity:0}.graph-node.active{border-color:#53d7e8;background:#193348;box-shadow:0 0 28px #2ee2eb13}.graph-node.active:after{opacity:1}.graph-node .node-id{font:800 10px ui-monospace,Consolas,monospace;color:#54bad2}.graph-node .node-name{font-size:12px;font-weight:800;color:#d7e8fc}.graph-node .node-out{font:700 10px ui-monospace,Consolas,monospace;color:#7897b5}.graph-node:hover{border-color:#79bed9}.trace-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}.trace-block{min-width:0;border:1px solid #2b4058;background:#101d2f;border-radius:11px;padding:14px}.trace-title{display:flex;justify-content:space-between;gap:8px;font-size:11px;font-weight:800;color:#c4def0;margin-bottom:12px}.trace-title small{font:10px ui-monospace,Consolas,monospace;color:#6f91b2}.trace-bars{display:flex;align-items:end;gap:4px;height:155px;overflow:hidden;border-bottom:1px solid #42607a}.trace-bars .chartbar{flex:1;min-width:3px;border-radius:3px 3px 0 0;background:linear-gradient(180deg,#57f0ef,#406ecb);transition:height .25s;position:relative}.trace-bars .chartbar:hover{background:linear-gradient(180deg,#fbd48d,#c57b58)}.trace-bars .chartbar.selected{background:linear-gradient(180deg,#ffe0a0,#ec9e53)}.trace-bars .chartbar:focus{outline:2px solid white}.trace-legend{display:flex;justify-content:space-between;font:10px ui-monospace,Consolas,monospace;color:#7694ad;margin-top:10px}.timeline{display:grid;gap:7px}.timeline-item{display:grid;grid-template-columns:25px 1fr 45px;align-items:center;gap:7px;font:10px ui-monospace,Consolas,monospace;color:#83a1b7}.timeline-item .track{background:#21394f;height:6px;border-radius:9px;overflow:hidden}.timeline-item .fill{background:linear-gradient(90deg,#5b75e4,#43d9e5);height:100%;border-radius:9px}.value-strip{display:flex;gap:5px;flex-wrap:wrap;margin-top:13px}.value-pill{padding:5px 7px;border:1px solid #334c65;background:#17283d;border-radius:6px;color:#9fbdda;font:700 10px ui-monospace,Consolas,monospace}.weights-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.weights-head{display:flex;align-items:end;justify-content:space-between;gap:10px;flex-wrap:wrap}.matrix-scroll{overflow:auto;max-height:490px;padding:3px 4px 5px 2px}.weight-grid{display:grid;gap:2px;align-items:center;min-width:max-content}.weight-cell{width:24px;height:24px;border:1px solid #24384b;background:#13273f;border-radius:3px;transition:filter .15s,outline .15s}.weight-cell:hover{outline:2px solid #fff;z-index:2;filter:brightness(1.4)}.weight-cell.selected{outline:2px solid var(--gold)}.weight-axis{height:24px;display:grid;place-items:center;font:9px ui-monospace,Consolas,monospace;color:#7794ab}.editor{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;padding:13px;border:1px solid #344e65;border-radius:11px;background:#111f31;margin-top:13px}.editor input[type=number]{background:#0b1728;border:1px solid #47617a;border-radius:7px;color:white;padding:10px;width:100%;max-width:180px}.editor label{font-size:10px;color:#8fb0c9;display:block;margin-bottom:5px}.weight-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.weight-stat{background:#152339;border:1px solid #2b435d;padding:9px;border-radius:8px}.weight-stat strong{display:block;color:#dff5fe;font:780 13px ui-monospace,Consolas,monospace}.weight-stat span{font-size:9px;color:#7796af}.weight-color{display:flex;align-items:center;gap:8px;font:10px ui-monospace,Consolas,monospace;color:#849bb2}.weight-gradient{width:160px;height:7px;border-radius:10px;background:linear-gradient(90deg,#8456d6,#1a2d4a,#47dddc)}.train-box{padding:16px;border-radius:13px;border:1px solid #385469;background:#14243a;display:grid;grid-template-columns:1fr 1fr;gap:11px;align-items:center}.train-box .label{margin:0}.train-box select{width:100%;background:#0b182a;border:1px solid #42607a;border-radius:8px;padding:9px;color:#d9f0fb}.train-box .primary{grid-column:1/-1}.train-result{grid-column:1/-1;color:#8fd8bd;font:700 11px ui-monospace,Consolas,monospace;min-height:15px}.w-action-row{display:flex;gap:7px;flex-wrap:wrap}.no-text{font-size:0}.key-line{font:11px ui-monospace,Consolas,monospace;color:#8eadc4}.key-line b{color:#e0faff}.scroll-sticky{position:sticky;top:0}.tab-hidden{display:none}.full-width{grid-column:1/-1}
+    @media(max-width:950px){.graph-nodes{grid-template-columns:repeat(3,minmax(0,1fr))}.trace-grid{grid-template-columns:1fr}.rightpanel{grid-template-columns:1fr 1fr}.rightpanel .right-section{grid-column:span 1}}@media(max-width:580px){.graph-nodes{grid-template-columns:repeat(2,minmax(0,1fr))}.view-tab{font-size:10px;padding:9px 3px}.view-icon{margin-right:3px}.weights-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.weight-stats{grid-template-columns:1fr 1fr}.graph-panel{padding:14px}.trace-grid{gap:10px}}
+    .dag-holder{overflow:auto;border:1px solid #2e4963;border-radius:12px;background:radial-gradient(400px 180px at 50% 30%,#1a3c5355,transparent),#0b1727;margin-bottom:13px;scrollbar-color:#4e6b85 transparent}.dag-holder svg{display:block;min-width:1150px;width:100%;height:auto}.dag-edge{fill:none;stroke:#46718d;stroke-width:2;opacity:.77}.dag-edge.active{stroke:#4ee4e8;stroke-width:3;stroke-dasharray:6 8;animation:flowstroke 1.15s linear infinite}.dag-node{cursor:pointer}.dag-node rect{fill:#192c43;stroke:#3b5874;stroke-width:1.5}.dag-node.active rect{fill:#1e485b;stroke:#4fedee;stroke-width:2.7;filter:drop-shadow(0 0 8px #48dfe5a8)}.dag-node text{font-weight:800;font-size:13px;fill:#b6d3e7;pointer-events:none}.dag-node.active text{fill:#f2ffff}.dag-node:hover rect{stroke:#fff}.dag-node:focus rect{stroke:#f1c979;stroke-width:3}
+  </style>
+  <link rel="stylesheet" href="/transformer-embed.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 10v12L16 29 4 22V10L16 3Z" stroke="#061a2b" stroke-width="2"/><circle cx="16" cy="16" r="4" fill="#061a2b"/><path d="m16 12 0-7M20 16h7m-11 4v7m-4-11H5" stroke="#061a2b" stroke-width="2"/></svg></div>
+        <div><div class="name">FILINTA <span>AI</span></div><div class="subbrand">TRANSFORMER STUDIO</div></div>
+      </div>
+      <div class="topright"><span class="pill"><span class="pulse"></span> LOCAL · LIVE</span><span class="toplink">v2.0 · BACKEND YOK</span></div>
+    </header>
+
+    <section class="intro">
+      <div><div class="eyebrow">FILINTA AI / MODEL CONTROL LAB</div><h1>Transformer <em>Studio</em></h1><p>Mimari · Hesaplama · Ağırlıklar — tüm kontroller canlı.</p></div>
+      <div class="mode">◈ Decoder-only · Causal self-attention</div>
+    </section>
+
+    <main class="layout">
+      <aside class="panel sidebar leftpanel">
+        <div class="side-head"><div><div class="kicker">01 / KONTROL MERKEZİ</div><h2 class="section-title">Model girişi</h2></div><span class="tiny-no">INPUT</span></div>
+        <div class="divider"></div>
+        <div class="input-section">
+          <label for="prompt" class="label">İşlenecek metin</label>
+          <textarea id="prompt" maxlength="200" spellcheck="false">transformer attention tensor</textarea>
+          <div class="hint"><span>Türkçe / İngilizce destekli</span><span id="char-count">0 / 200</span></div>
+          <div class="label" style="margin-top:17px">Hızlı örnekler</div>
+          <div class="presets"><button class="preset" data-preset="query key value attention">Q / K / V</button><button class="preset" data-preset="residual layer normalization">Residual</button><button class="preset" data-preset="causal attention softmax">Causal Mask</button></div>
+        </div>
+        <div class="run-section"><button id="run" class="primary"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M5 2.8 17 10 5 17.2V2.8Z"/></svg><span id="run-label">Akışı başlat</span></button><div class="controls" style="margin-top:8px"><button id="next" class="secondary" title="Sonraki işleme geç">Adım at →</button><button id="reset" class="secondary" title="Başa dön">↺ Sıfırla</button></div></div>
+        <div class="divider"></div>
+        <div class="settings-section">
+          <div class="label">Mimari ayarları <span style="color:var(--green)">● CANLI</span></div>
+          <div class="config-grid">
+            <label class="config-field"><span>KATMAN</span><select id="cfg-layers"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>8</option></select></label>
+            <label class="config-field"><span>HEAD</span><select id="cfg-heads"><option>1</option><option>2</option><option selected>4</option><option>8</option></select></label>
+            <label class="config-field"><span>D_MODEL</span><select id="cfg-dim"><option selected>16</option><option>24</option><option>32</option><option>48</option><option>64</option></select></label>
+            <label class="config-field"><span>FFN ÇARPANI</span><select id="cfg-ff"><option selected>2</option><option>3</option><option>4</option></select></label>
+            <label class="config-field"><span>TOKEN SINIRI</span><select id="cfg-limit"><option>8</option><option selected>10</option><option>12</option><option>16</option></select></label>
+            <label class="config-field"><span>SEED</span><select id="cfg-seed"><option selected>42</option><option>17</option><option>101</option><option>2026</option></select></label>
+          </div>
+          <div class="architecture-foot" style="margin-top:11px"><span>PARAMETRE <strong id="param-count">0</strong></span><span>FFN <strong id="ff-value">32</strong></span><span>DK <strong id="dk-value">4</strong></span></div>
+          <div class="mini-actions" style="margin-top:10px"><button id="shuffle" class="mini-btn" title="Yeni ağırlıklar üret">⤨ Ağırlıkları yenile</button><button id="export" class="mini-btn" title="Ayarları ve ağırlıkları JSON indir">↓ JSON</button><button id="import" class="mini-btn" title="Kaydedilmiş modeli yükle">↑ Yükle</button><input type="file" id="import-file" accept="application/json,.json" hidden></div>
+        </div>
+        <div class="speed-section"><div class="speedrow"><span>Animasyon hızı</span><strong id="speed-label">Normal</strong></div><input type="range" id="speed" min="1" max="5" value="3" aria-label="Animasyon hızı"></div>
+        <details class="collapse-info"><summary>Demo hakkında</summary><p>Gerçek ileri yayılım matematiği: Q/K/V, causal mask, softmax, residual, normalization, GELU ve FFN. Rastgele başlangıç ağırlıkları kullanılır. Gerçek bir eğitilmiş LLM değildir. Ağ bağlantısı yapılmaz.</p></details>
+      </aside>
+
+      <div class="maincol">
+        <nav class="view-nav" role="tablist" aria-label="Ana görünümler"><button class="view-tab active" data-view="architecture" role="tab" aria-selected="true"><span class="view-icon">⌘</span>Mimari</button><button class="view-tab" data-view="calculation" role="tab" aria-selected="false"><span class="view-icon">◈</span>Hesaplama</button><button class="view-tab" data-view="weights" role="tab" aria-selected="false"><span class="view-icon">▦</span>Ağırlıklar</button></nav>
+        <section class="panel workspace mode-panel" data-panel="architecture">
+          <div class="workspace-head"><div><div class="kicker">02 / CANLI MİMARİ</div><div class="workspace-title">Hesaplama hattı</div></div><div class="status"><span class="dot" id="status-dot"></span><span id="status-text">Sistem hazır</span></div></div>
+          <nav class="stage-list" aria-label="Hesaplama adımları">
+            <button class="stage active" data-step="0"><b>01</b><span>Tokenize</span></button>
+            <button class="stage" data-step="1"><b>02</b><span>Embedding</span></button>
+            <button class="stage" data-step="2"><b>03</b><span>Attention</span></button>
+            <button class="stage" data-step="3"><b>04</b><span>FFN + Norm</span></button>
+            <button class="stage" data-step="4"><b>05</b><span>Tahmin</span></button>
+          </nav>
+          <div class="canvas-title"><div><h2 id="stage-title">01 · Tokenizasyon</h2><p id="stage-description">Girdi, modelin işleyebileceği token parçalarına ayrılır.</p></div><div class="step-badge" id="step-badge">ADIM 1 / 5</div></div>
+          <div class="token-row" id="token-row" aria-label="Token listesi"></div>
+          <div class="viz">
+            <div class="viz-top"><span id="viz-caption">TOKEN BAĞLANTILARI</span><span><strong id="viz-head">H1</strong> · <span id="viz-layer">L1</span></span></div>
+            <svg id="network" viewBox="0 0 800 225" role="img" aria-label="Seçili tokenın kendisinden ve önceki tokenlardan aldığı attention ağırlıklarının görselleştirmesi"></svg>
+            <div class="viz-caption" id="network-note">Bir token seçerek bağlantıları inceleyin</div>
+          </div>
+          <div class="model-strip" id="layer-strip" aria-label="Transformer katmanları"></div>
+        </section>
+        <section class="panel matrix-panel mode-panel" data-panel="architecture">
+          <div class="matrix-heading"><div><h3>Attention matrisi</h3><div class="sub">Ağırlıklar = softmax(QKᵀ / √dₖ + mask)</div></div><span class="step-badge">CAUSAL MASK</span></div>
+          <div class="head-tabs" id="head-tabs" role="group" aria-label="Attention başlığı seçimi"></div>
+          <div class="heat-holder"><div class="heat-grid" id="heat-grid" aria-label="Attention olasılıkları ısı haritası"></div></div>
+          <div class="heat-legend"><span>Düşük etki</span><span class="gradient"></span><span>Yüksek etki · 100%</span></div>
+        </section>
+        <section class="panel graph-panel mode-panel" data-panel="calculation" hidden>
+          <div class="section-bar"><div><div class="kicker">02 / İŞLEM MOTORU</div><h2>Hesaplama grafiği</h2></div><span class="step-badge">FORWARD PASS</span></div>
+          <div class="weights-controls" style="margin-bottom:12px"><label class="config-field"><span>TOKEN</span><select id="calc-token"></select></label><label class="config-field"><span>KATMAN</span><select id="calc-layer"></select></label><label class="config-field"><span>HEAD</span><select id="calc-head"></select></label></div>
+          <div class="dag-holder"><svg id="compute-dag" viewBox="0 0 1440 320" role="img" aria-label="Transformer işlem düğümleri ve hesaplama akış bağlantıları"></svg></div>
+          <div class="graph-nodes" id="graph-nodes"></div>
+          <div class="architecture-foot" style="margin-top:14px" id="graph-summary"></div>
+        </section>
+        <section class="panel graph-panel mode-panel" data-panel="calculation" hidden>
+          <div class="section-bar"><div><div class="kicker">TENSOR İNCELEYİCİ</div><h2 id="tensor-title">Ara değerler</h2></div><div class="mini-actions"><button id="previous-trace" class="mini-btn">← Önceki</button><button id="next-trace" class="mini-btn">Sonraki →</button></div></div>
+          <div class="trace-grid"><div class="trace-block"><div class="trace-title">Seçili vektör <small id="trace-vector-label">16 DIM</small></div><div class="trace-bars" id="trace-bars"></div><div class="trace-legend"><span id="trace-min">MIN</span><span id="trace-max">MAX</span></div><div class="value-strip" id="trace-values"></div></div><div class="trace-block"><div class="trace-title">Katman aktivasyonu <small>LAYER NORM</small></div><div class="timeline" id="layer-chart"></div><div class="value-strip"><span class="value-pill" id="trace-info">SEÇİLİ TENSOR</span></div></div></div>
+        </section>
+        <section class="panel graph-panel mode-panel" data-panel="weights" hidden>
+          <div class="section-bar"><div><div class="kicker">02 / PARAMETRE EDİTÖRÜ</div><h2>Ağırlık mimarisi</h2></div><span class="step-badge">CANLI DÜZENLEME</span></div>
+          <div class="weights-controls"><label class="config-field"><span>MATRİS</span><select id="weight-type"><option value="q">WQ · Query</option><option value="k">WK · Key</option><option value="v">WV · Value</option><option value="o">WO · Output</option><option value="f1">W1 · FFN In</option><option value="f2">W2 · FFN Out</option><option value="vocab">W · Vocabulary</option></select></label><label class="config-field"><span>KATMAN</span><select id="weight-layer"></select></label><label class="config-field"><span>HEAD</span><select id="weight-head"></select></label></div>
+          <div class="weight-stats" style="margin:14px 0"><div class="weight-stat"><strong id="w-shape">16×4</strong><span>BOYUT</span></div><div class="weight-stat"><strong id="w-min">-0.00</strong><span>MIN</span></div><div class="weight-stat"><strong id="w-max">+0.00</strong><span>MAX</span></div><div class="weight-stat"><strong id="w-std">0.00</strong><span>STD</span></div></div>
+          <div class="weight-color"><span>−</span><span class="weight-gradient"></span><span>+</span><span id="selected-weight" style="margin-left:auto">[0,0]</span></div>
+          <div class="w-action-row" style="margin-top:12px"><label class="config-field"><span>SATIR ARALIĞI</span><select id="weight-row-page"></select></label><label class="config-field"><span>SÜTUN ARALIĞI</span><select id="weight-col-page"></select></label></div>
+          <div class="matrix-scroll" style="margin-top:10px"><div class="weight-grid" id="weight-grid"></div></div>
+          <div class="editor"><div><label for="weight-value">Seçili hücre değeri</label><input id="weight-value" type="number" step="0.01" min="-6" max="6" value="0"></div><button class="secondary" id="set-weight">✓ Uygula</button></div>
+          <div class="w-action-row" style="margin-top:11px"><button id="zero-weight" class="mini-btn">0'a ayarla</button><button id="noise-weights" class="mini-btn">± Gürültü ekle</button><button id="reset-weights" class="mini-btn">↺ Matrisi sıfırla</button></div>
+        </section>
+        <section class="panel graph-panel mode-panel" data-panel="weights" hidden>
+          <div class="section-bar"><div><div class="kicker">YEREL ÖĞRENME</div><h2>Çıktı katmanı eğitimi</h2></div><span class="step-badge">SGD / CROSS ENTROPY</span></div>
+          <div class="train-box"><label class="config-field"><span>HEDEF TOKEN</span><select id="train-target"></select></label><label class="config-field"><span>ÖĞRENME ORANI</span><select id="train-rate"><option value="0.01">0.01</option><option value="0.05">0.05</option><option value="0.1" selected>0.10</option><option value="0.25">0.25</option><option value="0.5">0.50</option></select></label><button id="train" class="primary">SGD +1</button><div class="train-result" id="train-result"></div></div>
+        </section>
+      </div>
+
+      <aside class="panel sidebar rightpanel">
+        <div class="side-head"><div><div class="kicker">03 / MODEL TELEMETRİSİ</div><h2 class="section-title">İç görünüm</h2></div><span class="tiny-no">INSPECTOR</span></div>
+        <div class="divider"></div>
+        <div class="right-section"><div class="kicker">AKTİF İŞLEM</div><h3 id="detail-title">Tokenization</h3><p id="detail-text">Cümle küçük parçalara ayrılır. Her parça ayrı bir konum kazanır.</p><div class="formula" id="formula">tokens = tokenize(text)</div></div>
+        <div class="divider"></div>
+        <div class="right-section metrics-section"><div class="label">Anlık değerler</div><div class="metric-list"><div class="metric"><b id="token-count">0</b><small>Token</small></div><div class="metric"><b id="vector-dim">16</b><small>Vektör boyutu</small></div><div class="metric"><b id="attention-score">0.0%</b><small>Seçili attention</small></div><div class="metric"><b id="vector-norm">0.00</b><small>Vektör normu</small></div></div></div>
+        <div class="divider"></div>
+        <div class="right-section"><div class="label">Seçili token · gizli vektör</div><div class="vector" id="vector"></div><div class="vector-label"><span>−1</span><span>0</span><span>+1</span></div><div class="footnote" style="margin-top:9px" id="vector-footnote">16 boyutlu vektör; görsel ölçek normalize edildi.</div></div>
+        <div class="divider"></div>
+        <div class="right-section"><div class="label">Örnek sonraki token dağılımı</div><div id="predictions" class="predictions"></div><div class="footnote" style="margin-top:10px">Eğitilmemiş ağın örnek dağılımı · gerçek LLM çıktısı değil.</div></div>
+        <div class="divider"></div>
+        <div class="right-section log-section"><div class="label">Hesaplama günlüğü</div><div class="activity" id="log" aria-live="polite"></div></div>
+      </aside>
+    </main>
+    <footer class="footer"><span><strong>FILINTA AI</strong> / TRANSFORMER ARCHITECTURE EXPLORER</span><span>Yerel, bağımsız HTML · Verileriniz hiçbir sunucuya gönderilmez.</span></footer>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+      let D = 16, H = 4, DK = 4, FF = 32, L = 3, LIMIT = 10, seed=42;
+      const STEPS = [
+        {title:'01 · Tokenizasyon',short:'TOKEN AYIRMA',description:'Metin, noktalama işaretleri de dahil olmak üzere tokenlara ayrılır.',detail:'Tokenization',text:'Yazdığınız ifade işlem birimlerine ayrılır. Her token dizide kendine ait bir sıra numarası alır.',formula:'tokens = tokenize(text)'},
+        {title:'02 · Embedding ve konum',short:'EMBEDDING + POSITION',description:'Token vektörleri + sinüzoidal konum kodu.',detail:'Token Embedding',text:'Token kimliği + pozisyon kodlaması.',formula:'X₀ = E(token) + PE(position)'},
+        {title:'03 · Maskeli Self-Attention',short:'Q / K / V ATTENTION',description:'Çok başlıklı causal self-attention.',detail:'Multi-Head Attention',text:'Q / K / V → mask → softmax → context.',formula:'A = softmax(QKᵀ / √dₖ + mask)'},
+        {title:'04 · FFN, Residual ve Norm',short:'FEED-FORWARD NETWORK',description:'Residual + layer norm + GELU FFN.',detail:'Feed-Forward + Norm',text:'D → FFN → D. Layer normalization uygulanır.',formula:'Y = LN(X + Attn(X)); Z = LN(Y + FFN(Y))'},
+        {title:'05 · Olasılık dağılımı',short:'NEXT-TOKEN LOGITS',description:'Son tokenın son katman vektörü, örnek sözlük üzerindeki olasılıklara projekte edilir.',detail:'Next-Token Projection',text:'Son gizli durum, örnek sözcükler için skorlara çevrilir ve softmax ile olasılıklara dönüştürülür. Ağ eğitilmediği için anlamlı cevap üretmez.',formula:'P(next) = softmax(W_vocab · h_last)'}
+      ];
+      const VOCAB = ['öğrenir','analiz','bağlam','veri','üretir','model','işler','yanıt','zeka','sistem'];
+      const $ = id => document.getElementById(id);
+      const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
+      const fmt = n => (Math.round(n * 100) / 100).toFixed(2);
+      const dot = (a,b) => a.reduce((s,x,i)=>s+x*b[i],0);
+      const norm = x => Math.sqrt(dot(x,x));
+      const add = (a,b) => a.map((v,i)=>v+b[i]);
+      const hash = text => {let n=2166136261;for(const c of text){n=Math.imul(n ^ c.codePointAt(0),16777619)}return n>>>0};
+      const random = seed => {let s=seed>>>0;return()=>{s+=0x6D2B79F5;let t=s;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296}};
+      const weights = (seed,rows,cols,scale=1) => {const rand=random(seed);return Array.from({length:rows},()=>Array.from({length:cols},()=>((rand()+rand()+rand()+rand()-2)*scale/Math.sqrt(rows))))};
+      const mat = (vec,w) => w[0].map((_,j)=>vec.reduce((s,x,i)=>s+x*w[i][j],0));
+      const softmax = logits => {const max=Math.max(...logits);const exp=logits.map(v=>Math.exp(v-max));const sum=exp.reduce((a,b)=>a+b,0);return exp.map(v=>v/sum)};
+      const layernorm = v => {const mean=v.reduce((a,b)=>a+b,0)/v.length;const variance=v.reduce((s,x)=>s+(x-mean)**2,0)/v.length;return v.map(x=>(x-mean)/Math.sqrt(variance+1e-5))};
+      const gelu = x => .5*x*(1+Math.tanh(Math.sqrt(2/Math.PI)*(x+.044715*x*x*x)));
+      const tokenize = text => (text.trim().match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*|[^\s]/gu)||[]).slice(0,LIMIT);
+      const embedding = (word,pos) => {const rand=random(hash(word.toLocaleLowerCase('tr')));return Array.from({length:D},(_,i)=>(rand()*2-1)*1.7+(i%2===0?Math.sin(pos/10000**(i/D)):Math.cos(pos/10000**((i-1)/D)))*.8)};
+      let Ws=[],vocabWeights=[];
+      let tokens=[], traces=[], embeddings=[], probabilities=[], selectedToken=0,selectedKey=0,selectedDim=0,layer=0,head=0,step=0,playing=false,timer=null,view='architecture',traceStage=0;
+      let weightType='q',weightLayer=0,weightHead=0,weightRow=0,weightCol=0,weightRowPage=0,weightColPage=0,trainSteps=0;
+      const PROCESSES=[['TOK','Tokens','N × 1'],['EMB','Embedding','N × D'],['Q','Query · WQ','N × DK'],['K','Key · WK','N × DK'],['V','Value · WV','N × DK'],['DOT','QKᵀ','N × N'],['MASK','Causal mask','N × N'],['SOFT','Softmax','N × N'],['CTX','A × V','N × DK'],['OUT','Concat + WO','N × D'],['NORM','Residual + FFN','N × D'],['LOGITS','Vocabulary','1 × V']];
+      function createWeights(){
+        Ws=Array.from({length:L},(_,l)=>({heads:Array.from({length:H},(_,h)=>({q:weights(seed*911+3100+l*199+h*31,D,DK,1.45),k:weights(seed*733+5100+l*211+h*23,D,DK,1.45),v:weights(seed*521+7100+l*251+h*37,D,DK,1.3)})),o:weights(seed*313+9000+l*293,D,D,1.1),f1:weights(seed*223+11000+l*311,D,FF,1.15),f2:weights(seed*179+13000+l*353,FF,D,1.1)}));
+        vocabWeights=weights(seed*127+27091,D,VOCAB.length,1.8);trainSteps=0;
+      }
+      function parameterCount(){return L*(4*D*D+2*D*FF)+D*VOCAB.length}
+
+      function compute(){
+        tokens=tokenize($('prompt').value);if(!tokens.length){tokens=['FILINTA'];}
+        embeddings=tokens.map(embedding);
+        traces=[];let x=embeddings;
+        for(let l=0;l<L;l++){
+          const w=Ws[l], allHeads=[], qkv=[];
+          for(let h=0;h<H;h++){
+            const hw=w.heads[h];const q=x.map(v=>mat(v,hw.q)),k=x.map(v=>mat(v,hw.k)),v=x.map(v=>mat(v,hw.v));
+            const attention=x.map((_,i)=>softmax(x.map((__,j)=>j>i?-1e9:dot(q[i],k[j])/Math.sqrt(DK))));
+            const ctx=x.map((_,i)=>Array.from({length:DK},(_,d)=>v.reduce((s,row,j)=>s+attention[i][j]*row[d],0)));
+            allHeads.push({attention,ctx});qkv.push({q,k,v});
+          }
+          const afterAttn=x.map((row,i)=>layernorm(add(row,mat(allHeads.flatMap(h=>h.ctx[i]),w.o))));
+          const ffn=afterAttn.map(row=>mat(mat(row,w.f1).map(gelu),w.f2));
+          const out=afterAttn.map((row,i)=>layernorm(add(row,ffn[i])));
+          traces.push({input:x,heads:allHeads,qkv,afterAttn,ffn,output:out});x=out;
+        }
+        const last=x[x.length-1];probabilities=softmax(mat(last,vocabWeights).map(v=>v*.8));
+        selectedToken=clamp(selectedToken,0,tokens.length-1);selectedKey=clamp(selectedKey,0,selectedToken);
+      }
+      function attention(){return traces[layer].heads[head].attention;}
+      function currentVector(){const i=selectedToken;return step===0?embeddings[i].map(()=>0):step===1?embeddings[i]:step===2?traces[layer].afterAttn[i]:step===3?traces[layer].output[i]:traces[L-1].output[i];}
+      function tShort(t){return [...t].length>12?[...[...t].slice(0,11),'…'].join(''):t;}
+      function renderTokens(){
+        const container=$('token-row');container.replaceChildren();
+        tokens.forEach((t,i)=>{const b=document.createElement('button');b.className='token'+(i===selectedToken?' selected':'');b.setAttribute('aria-label',`Token ${i+1}: ${t}`);b.title=t;b.innerHTML=`<span class="index">T${String(i+1).padStart(2,'0')}</span><span class="word"></span>`;b.querySelector('.word').textContent=t;b.onclick=()=>chooseToken(i);container.append(b)});
+      }
+      function renderNetwork(){
+        const svg=$('network');svg.replaceChildren();svg.setAttribute('viewBox','0 0 800 225');const n=tokens.length;const margin=clamp(310/n,34,80);const x=i=>n===1?400:margin+i*(800-2*margin)/(n-1);const y=178;
+        const NS='http://www.w3.org/2000/svg';const el=(tag,attrs)=>{const node=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,String(v));return node};
+        const defs=el('defs',{});const grad=el('linearGradient',{id:'arc-grad',x1:'0%',y1:'100%',x2:'0%',y2:'0%'});grad.append(el('stop',{offset:'0%','stop-color':'#547CA5'}),el('stop',{offset:'100%','stop-color':'#80AAE4'}));defs.append(grad);svg.append(defs);
+        const a=attention()[selectedToken];
+        for(let j=0;j<=selectedToken;j++){
+          const xx=x(j),xq=x(selectedToken),dist=Math.abs(xq-xx),height=clamp(37+dist*.29,42,145);
+          const path=j===selectedToken?`M ${xq-11} ${y-20} C ${xq-48} ${y-98}, ${xq+48} ${y-98}, ${xq+11} ${y-20}`:`M ${xq} ${y-21} Q ${(xq+xx)/2} ${y-height*2} ${xx} ${y-21}`;
+          const p=el('path',{d:path,stroke:'url(#arc-grad)','stroke-width':(1.1+a[j]*11).toFixed(2),opacity:(.15+a[j]*.85).toFixed(3),class:'arc'+(playing?' flowing':'')});svg.append(p);
+          if(j===selectedKey){const cx=j===selectedToken?xq:(xq+xx)/2;const cy=j===selectedToken?y-80:y-height;const label=el('text',{x:cx,y:Math.max(22,cy-8),'text-anchor':'middle',fill:'#d9fbff','font-size':'14','font-weight':'750'});label.textContent=(a[j]*100).toFixed(1)+'%';svg.append(label)}
+        }
+        tokens.forEach((t,i)=>{
+          const chosen=i===selectedToken;const node=el('g',{class:'svg-token',tabindex:'0',role:'button','aria-label':`Token ${i+1}, ${t}`});node.append(el('rect',{x:x(i)-Math.min(36,330/n),y:y-20,width:Math.min(72,660/n),height:41,rx:8,fill:chosen?'#24586c':'#182a41',stroke:chosen?'#64eef5':'#3a5875','stroke-width':chosen?2:1}));const label=el('text',{x:x(i),y:y+5,'text-anchor':'middle',fill:chosen?'#f6ffff':'#b5cde3','font-size':Math.max(10,14-n*.4),'font-weight':chosen?800:650});const maxChars=n>12?4:n>8?6:n>5?8:12;label.textContent=[...t].length>maxChars?[...[...t].slice(0,maxChars-1),'…'].join(''):t;node.append(label);const sub=el('text',{x:x(i),y:y+37,'text-anchor':'middle',fill:'#6485a3','font-size':'10'});sub.textContent=`T${i+1}`;node.append(sub);node.addEventListener('click',()=>chooseToken(i));node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();chooseToken(i)}});svg.append(node)
+        });
+        $('network-note').textContent=`T${selectedToken+1} sorgusu · ${selectedToken+1} görünür token · geleceğe bakış kapalı`;
+        $('viz-head').textContent=`H${head+1}`;$('viz-layer').textContent=`L${layer+1}`;
+      }
+      function renderHeat(){
+        const grid=$('heat-grid');grid.replaceChildren();const n=tokens.length;grid.style.gridTemplateColumns=`minmax(39px,1.1fr) repeat(${n},minmax(27px,1fr))`;
+        const label=(text,extra='')=>{const div=document.createElement('div');div.className='axis-label '+extra;div.textContent=text;grid.append(div)};
+        label('Q↓ K→');tokens.forEach((t,i)=>label(tShort(t)||String(i+1)));
+        const a=attention();
+        tokens.forEach((t,i)=>{label(tShort(t),'axis-row');tokens.forEach((_,j)=>{const btn=document.createElement('button');const p=a[i][j];btn.className='heat-cell'+(selectedToken===i&&selectedKey===j?' active':'');btn.style.background=`rgba(128,170,228,${clamp(.065+p*.87,.07,.92)})`;btn.disabled=j>i;btn.title=`${t} → ${tokens[j]}: ${(p*100).toFixed(2)}%`;btn.textContent=j>i?'':`${Math.round(p*100)}%`;btn.setAttribute('aria-label',btn.title);btn.onclick=()=>{selectedToken=i;selectedKey=j;render()};grid.append(btn)})});
+      }
+      function renderVector(){const vec=currentVector();const box=$('vector');box.replaceChildren();const scale=Math.max(...vec.map(v=>Math.abs(v)),.1);vec.forEach(v=>{const w=document.createElement('div');w.className='barwrap';w.append(Object.assign(document.createElement('span'),{className:'barzero'}));const b=document.createElement('span');b.className='vbar'+(v<0?' negative':'');const height=Math.min(47,Math.max(2,Math.abs(v)/scale*37));b.style.height=`${height}px`;b.style.top=v>=0?`calc(50% - ${height}px)`:'50%';b.title=fmt(v);w.append(b);box.append(w)});$('vector-norm').textContent=fmt(norm(vec));$('vector-footnote').textContent=step===0?'Token ayrıştırma aşamasında henüz vektör kullanılmıyor.':`T${selectedToken+1} · ${step===1?'girdi':step===2?'attention sonrası':'son'} · ${D} boyut.`}
+      function renderPredictions(){const box=$('predictions');box.replaceChildren();const ranked=VOCAB.map((word,i)=>({word,p:probabilities[i]})).sort((a,b)=>b.p-a.p).slice(0,5);ranked.forEach(({word,p})=>{const row=document.createElement('div');row.className='pred-row';const label=document.createElement('div');label.className='pred-word';label.textContent=word;const track=document.createElement('div');track.className='pred-track';const fill=document.createElement('div');fill.className='pred-fill';fill.style.width=`${p*100}%`;track.append(fill);const pct=document.createElement('div');pct.className='pred-pct';pct.textContent=(p*100).toFixed(1)+'%';row.append(label,track,pct);box.append(row)})}
+      function renderDetails(){
+        const state=STEPS[step];$('stage-title').textContent=state.title;$('stage-description').textContent=state.description;$('step-badge').textContent=`ADIM ${step+1} / 5`; $('viz-caption').textContent=state.short;
+        $('detail-title').textContent=state.detail;$('detail-text').textContent=state.text;$('formula').textContent=state.formula;
+        $('token-count').textContent=tokens.length;$('vector-dim').textContent=D;$('attention-score').textContent=(attention()[selectedToken][selectedKey]*100).toFixed(1)+'%';
+        document.querySelectorAll('.stage').forEach((b,i)=>{b.classList.toggle('active',i===step);b.classList.toggle('done',i<step);b.setAttribute('aria-current',i===step?'step':'false')});
+        document.querySelectorAll('.layer-card').forEach((b,i)=>{b.classList.toggle('active',i===layer);b.setAttribute('aria-pressed',String(i===layer))});
+        document.querySelectorAll('.head-btn').forEach((b,i)=>{b.classList.toggle('active',i===head);b.setAttribute('aria-pressed',String(i===head))});
+        $('status-text').textContent=playing?'Hesaplama akıyor':step===4?'Hesaplama tamamlandı':'Sistem hazır';$('status-dot').style.background=step===4&&!playing?'var(--green)':'var(--cyan)';
+        $('run-label').textContent=playing?'Duraklat':'Akışı başlat';
+        const trunc=tokenize($('prompt').value).length>=LIMIT?` · limit ${LIMIT} token`:'';
+        $('log').replaceChildren();[`[${String(step+1).padStart(2,'0')}/05] ${state.detail}`,`L${layer+1} · H${head+1} · Q: T${selectedToken+1} · K: T${selectedKey+1}`,`Ağırlık: ${(attention()[selectedToken][selectedKey]*100).toFixed(2)}%${trunc}`].forEach(t=>{const d=document.createElement('div');d.textContent=t;$('log').append(d)});
+      }
+      function renderLayers(){
+        const box=$('layer-strip');box.replaceChildren();box.style.gridTemplateColumns=`repeat(${Math.min(4,L)},minmax(0,1fr))`;
+        for(let i=0;i<L;i++){const b=document.createElement('button');b.className='layer-card'+(layer===i?' active':'');b.dataset.layer=i;b.innerHTML=`<small>BLOK / ${String(i+1).padStart(2,'0')}</small><strong>Transformer ${String(i+1).padStart(2,'0')}</strong><small>${H} heads · ${D}D</small><div class="layer-flow"><span></span><span></span><span></span><span></span></div>`;b.onclick=()=>{layer=i;render()};box.append(b)}
+        const heads=$('head-tabs');heads.replaceChildren();for(let h=0;h<H;h++){const b=document.createElement('button');b.className='head-btn'+(h===head?' active':'');b.textContent=`HEAD ${String(h+1).padStart(2,'0')}`;b.setAttribute('aria-pressed',String(h===head));b.onclick=()=>{head=h;render()};heads.append(b)}
+      }
+      function traceVector(){
+        const i=selectedToken,t=traces[layer],p=t.qkv[head],a=t.heads[head];
+        switch(traceStage){
+          case 0:return [tokens.length,i+1];
+          case 1:return embeddings[i];
+          case 2:return p.q[i];
+          case 3:return p.k[i];
+          case 4:return p.v[i];
+          case 5:return p.k.map((k,j)=>j>i?0:dot(p.q[i],k)/Math.sqrt(DK));
+          case 6:return p.k.map((k,j)=>j>i?0:dot(p.q[i],k)/Math.sqrt(DK));
+          case 7:return a.attention[i];
+          case 8:return a.ctx[i];
+          case 9:return t.afterAttn[i];
+          case 10:return t.output[i];
+          case 11:return mat(traces[L-1].output[tokens.length-1],vocabWeights).map(v=>v*.8);
+          default:return embeddings[i];
+        }
+      }
+      function renderDAG(){
+        const svg=$('compute-dag');svg.replaceChildren();const NS='http://www.w3.org/2000/svg';
+        const make=(tag,attrs)=>{const el=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,String(v)));return el};
+        const positions=[[68,160],[214,160],[373,60],[373,160],[373,260],[548,105],[690,105],[832,105],[979,190],[1110,190],[1244,190],[1370,190]];
+        const defs=make('defs',{}),marker=make('marker',{id:'dag-arrow',markerWidth:8,markerHeight:8,refX:7,refY:4,orient:'auto',markerUnits:'userSpaceOnUse'});marker.append(make('path',{d:'M0 0 L8 4 L0 8 Z',fill:'#56a3bd'}));defs.append(marker);svg.append(defs);
+        const edges=[[0,1],[1,2],[1,3],[1,4],[2,5],[3,5],[5,6],[6,7],[7,8],[4,8],[8,9],[9,10],[10,11]];
+        edges.forEach(([a,b])=>{const [x1,y1]=positions[a],[x2,y2]=positions[b];const dx=Math.max(25,(x2-x1)*.52);const p=make('path',{d:`M${x1+42} ${y1} C${x1+dx} ${y1},${x2-dx} ${y2},${x2-44} ${y2}`,class:'dag-edge'+(traceStage===b?' active':''),'marker-end':'url(#dag-arrow)'});svg.append(p)});
+        const loop=make('path',{d:'M1244 165 C1275 16, 502 3, 373 36',class:'dag-edge','stroke-dasharray':'3 9'});svg.append(loop);
+        const t=make('text',{x:835,y:22,fill:'#819eb4','font-size':12,'font-weight':800});t.textContent=`↻  ${L} KATMAN`;svg.append(t);
+        PROCESSES.forEach(([id],i)=>{const [x,y]=positions[i];const g=make('g',{class:'dag-node'+(traceStage===i?' active':''),tabindex:0,role:'button','aria-label':PROCESSES[i][1]});g.append(make('rect',{x:x-43,y:y-23,width:86,height:46,rx:10}));const txt=make('text',{x,y:y+5,'text-anchor':'middle'});txt.textContent=id;g.append(txt);g.onclick=()=>{traceStage=i;step=i<2?i:i<10?2:i===10?3:4;render()};g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();g.onclick()}};svg.append(g)});
+      }
+      function renderCalculation(){
+        setSelectOptions($('calc-token'),tokens.map((t,i)=>[i,`T${i+1} · ${t}`]),selectedToken);
+        setSelectOptions($('calc-layer'),Array.from({length:L},(_,i)=>[i,`Katman ${i+1}`]),layer);
+        setSelectOptions($('calc-head'),Array.from({length:H},(_,i)=>[i,`Head ${i+1}`]),head);
+        renderDAG();
+        const box=$('graph-nodes');box.replaceChildren();PROCESSES.forEach(([id,name,shape],i)=>{const b=document.createElement('button');b.className='graph-node'+(traceStage===i?' active':'');b.innerHTML=`<span class="node-id">${String(i+1).padStart(2,'0')} · ${id}</span><span class="node-name"></span><span class="node-out">${shape.replaceAll('N',tokens.length).replaceAll('DK',DK).replaceAll('D',D).replaceAll('V',VOCAB.length)}</span>`;b.querySelector('.node-name').textContent=name;b.onclick=()=>{traceStage=i;step=i<2?i:i<10?2:i===10?3:4;render()};box.append(b)});
+        $('graph-summary').replaceChildren();[`TOK ${tokens.length}`,`D ${D}`,`L ${L}`,`H ${H}`,`DK ${DK}`,`FF ${FF}`,`PARAM ${parameterCount().toLocaleString('tr-TR')}`].forEach(s=>{const tag=document.createElement('span');tag.textContent=s;$('graph-summary').append(tag)});
+        const vec=traceVector();$('tensor-title').textContent=PROCESSES[traceStage][1];$('trace-vector-label').textContent=`${vec.length} DIM`;
+        const min=Math.min(...vec),max=Math.max(...vec),peak=Math.max(...vec.map(v=>Math.abs(v)),.0001);const bars=$('trace-bars');bars.replaceChildren();
+        selectedDim=clamp(selectedDim,0,vec.length-1);
+        vec.forEach((value,j)=>{const b=document.createElement('div');b.className='chartbar'+(j===selectedDim?' selected':'');b.style.height=`${clamp(Math.abs(value)/peak*100,2,100)}%`;b.title=`[${j}] ${value.toFixed(5)}`;b.tabIndex=0;b.setAttribute('role','button');b.setAttribute('aria-label',b.title);b.onclick=()=>{selectedDim=j;renderCalculation()};b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();b.onclick()}};bars.append(b)});
+        $('trace-min').textContent=`MIN ${fmt(min)}`;$('trace-max').textContent=`MAX ${fmt(max)}`;
+        $('trace-values').replaceChildren();vec.slice(0,12).forEach((v,i)=>{const s=document.createElement('span');s.className='value-pill';s.textContent=`${i}:${v.toFixed(2)}`;$('trace-values').append(s)});
+        $('trace-info').textContent=`L${layer+1} · H${head+1} · T${selectedToken+1} · v[${selectedDim}] ${vec[selectedDim].toFixed(4)}`;
+        const chart=$('layer-chart');chart.replaceChildren();traces.forEach((t,j)=>{const row=document.createElement('div');row.className='timeline-item';const val=t.heads[Math.min(head,t.heads.length-1)].attention[selectedToken];const peak=Math.max(...val);row.innerHTML=`<span>L${j+1}</span><div class="track"><div class="fill" style="width:${Math.max(1,100*peak)}%"></div></div><span>${(peak*100).toFixed(1)}%</span>`;chart.append(row)});
+      }
+      function matrixFor(type=weightType,l=weightLayer,h=weightHead){return type==='vocab'?vocabWeights:['q','k','v'].includes(type)?Ws[l].heads[h][type]:Ws[l][type]}
+      function originalMatrix(type=weightType,l=weightLayer,h=weightHead){
+        if(type==='vocab')return weights(seed*127+27091,D,VOCAB.length,1.8);
+        if(type==='q')return weights(seed*911+3100+l*199+h*31,D,DK,1.45);
+        if(type==='k')return weights(seed*733+5100+l*211+h*23,D,DK,1.45);
+        if(type==='v')return weights(seed*521+7100+l*251+h*37,D,DK,1.3);
+        if(type==='o')return weights(seed*313+9000+l*293,D,D,1.1);
+        if(type==='f1')return weights(seed*223+11000+l*311,D,FF,1.15);
+        return weights(seed*179+13000+l*353,FF,D,1.1);
+      }
+      function setSelectOptions(element,values,selected){element.replaceChildren();values.forEach(([v,label])=>{const o=document.createElement('option');o.value=String(v);o.textContent=label;o.selected=String(v)===String(selected);element.append(o)})}
+      function renderWeights(){
+        weightLayer=clamp(weightLayer,0,L-1);weightHead=clamp(weightHead,0,H-1);
+        $('weight-type').value=weightType;
+        setSelectOptions($('weight-layer'),Array.from({length:L},(_,i)=>[i,`Katman ${i+1}`]),weightLayer);
+        setSelectOptions($('weight-head'),Array.from({length:H},(_,i)=>[i,`Head ${i+1}`]),weightHead);
+        $('weight-layer').disabled=weightType==='vocab';$('weight-head').disabled=!['q','k','v'].includes(weightType);
+        const m=matrixFor();const rows=m.length,cols=m[0].length;
+        weightRow=clamp(weightRow,0,rows-1);weightCol=clamp(weightCol,0,cols-1);
+        const rpMax=Math.ceil(rows/16),cpMax=Math.ceil(cols/16);weightRowPage=clamp(weightRowPage,0,rpMax-1);weightColPage=clamp(weightColPage,0,cpMax-1);
+        setSelectOptions($('weight-row-page'),Array.from({length:rpMax},(_,i)=>[i,`${i*16+1}–${Math.min(rows,(i+1)*16)}`]),weightRowPage);
+        setSelectOptions($('weight-col-page'),Array.from({length:cpMax},(_,i)=>[i,`${i*16+1}–${Math.min(cols,(i+1)*16)}`]),weightColPage);
+        const values=m.flat();const min=Math.min(...values),max=Math.max(...values),mean=values.reduce((s,v)=>s+v,0)/values.length;
+        const std=Math.sqrt(values.reduce((s,v)=>s+(v-mean)**2,0)/values.length);const peak=Math.max(Math.abs(min),Math.abs(max),.001);
+        $('w-shape').textContent=`${rows}×${cols}`;$('w-min').textContent=fmt(min);$('w-max').textContent=fmt(max);$('w-std').textContent=fmt(std);
+        const grid=$('weight-grid');grid.replaceChildren();const visibleR=Math.min(16,rows-weightRowPage*16),visibleC=Math.min(16,cols-weightColPage*16);grid.style.gridTemplateColumns=`24px repeat(${visibleC},24px)`;
+        const axis=(val)=>{const d=document.createElement('div');d.className='weight-axis';d.textContent=val;grid.append(d)};
+        axis('↘');for(let c=0;c<visibleC;c++)axis(weightColPage*16+c+1);
+        for(let r=0;r<visibleR;r++){
+          const rr=weightRowPage*16+r;axis(rr+1);
+          for(let c=0;c<visibleC;c++){
+            const cc=weightColPage*16+c,v=m[rr][cc],b=document.createElement('button');b.className='weight-cell'+(weightRow===rr&&weightCol===cc?' selected':'');const z=clamp(Math.abs(v)/peak,0,1);b.style.background=v>=0?`rgba(128,170,228,${.08+z*.85})`:`rgba(214,179,140,${.08+z*.85})`;
+            b.title=`W[${rr},${cc}] = ${v.toFixed(6)}`;b.setAttribute('aria-label',b.title);b.onclick=()=>{weightRow=rr;weightCol=cc;renderWeights()};grid.append(b);
+          }
+        }
+        $('selected-weight').textContent=`[${weightRow+1}, ${weightCol+1}] = ${m[weightRow][weightCol].toFixed(4)}`;
+        $('weight-value').value=m[weightRow][weightCol].toFixed(5);
+      }
+      function renderView(){
+        document.querySelectorAll('.view-tab').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active))});
+        document.querySelectorAll('.mode-panel').forEach(el=>el.hidden=el.dataset.panel!==view);
+        if(view==='calculation')renderCalculation();if(view==='weights')renderWeights();
+      }
+      function render(){renderLayers();renderTokens();renderNetwork();renderHeat();renderVector();renderPredictions();renderDetails();renderView();$('param-count').textContent=parameterCount().toLocaleString('tr-TR');$('ff-value').textContent=FF;$('dk-value').textContent=DK}
+      function stop(){playing=false;if(timer!==null){clearTimeout(timer);timer=null}}
+      function chooseToken(i){selectedToken=i;selectedKey=i;render()}
+      function gotoStep(i){step=clamp(i,0,4);render()}
+      function cycle(){
+        if(!playing)return;
+        if(view==='calculation'&&traceStage<PROCESSES.length-1){traceStage++;step=traceStage<2?traceStage:traceStage<10?2:traceStage===10?3:4;render();timer=setTimeout(cycle,1100-170*Number($('speed').value))}
+        else if(view!=='calculation'&&step<4){gotoStep(step+1);timer=setTimeout(cycle,1100-170*Number($('speed').value))}
+        else{stop();render()}
+      }
+      function toggle(){if(playing){stop();render();return}if(view==='calculation'&&traceStage===11)traceStage=0;else if(view!=='calculation'&&step===4)step=0;playing=true;render();timer=setTimeout(cycle,1100-170*Number($('speed').value))}
+      function updateModel(){
+        stop();D=Number($('cfg-dim').value);H=Number($('cfg-heads').value);L=Number($('cfg-layers').value);DK=D/H;FF=D*Number($('cfg-ff').value);LIMIT=Number($('cfg-limit').value);seed=Number($('cfg-seed').value);
+        layer=clamp(layer,0,L-1);head=clamp(head,0,H-1);weightLayer=clamp(weightLayer,0,L-1);weightHead=clamp(weightHead,0,H-1);
+        weightRow=0;weightCol=0;weightRowPage=0;weightColPage=0;createWeights();compute();step=0;traceStage=0;render();$('train-result').textContent='Yeni mimari oluşturuldu · ileri yayılım tamamlandı.';
+      }
+      function refreshAfterWeightChange(){stop();compute();render()}
+      function applyCell(value){
+        const v=Number(value);if(!Number.isFinite(v)||v< -6||v>6){$('weight-value').setCustomValidity('−6 ile 6 arasında girin');$('weight-value').reportValidity();return}
+        $('weight-value').setCustomValidity('');matrixFor()[weightRow][weightCol]=v;refreshAfterWeightChange();
+      }
+      function downloadJSON(){
+        const data={version:2,name:'FILINTA AI Transformer Studio',config:{D,H,L,FF,LIMIT,seed},weights:Ws,vocabularyWeights:vocabWeights,prompt:$('prompt').value,selectedToken,layer,head,trainSteps};
+        const blob=new Blob([JSON.stringify(data)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='filinta-ai-model.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500);
+      }
+      function validateModel(data){
+        if(!data||data.version!==2||!data.config||!Array.isArray(data.weights))return false;
+        const {D:d,H:h,L:l,FF:f,LIMIT:n,seed:s}=data.config;
+        if(![16,24,32,48,64].includes(d)||![1,2,4,8].includes(h)||![1,2,3,4,5,6,8].includes(l)||![2,3,4].includes(f/d)||![8,10,12,16].includes(n)||!Number.isSafeInteger(s)||s<0||s>10000000)return false;
+        const valid=(m,r,c)=>Array.isArray(m)&&m.length===r&&m.every(row=>Array.isArray(row)&&row.length===c&&row.every(v=>typeof v==='number'&&Number.isFinite(v)&&Math.abs(v)<=100));
+        if(data.weights.length!==l||!valid(data.vocabularyWeights,d,VOCAB.length))return false;
+        return data.weights.every(w=>w&&Array.isArray(w.heads)&&w.heads.length===h&&w.heads.every(x=>x&&valid(x.q,d,d/h)&&valid(x.k,d,d/h)&&valid(x.v,d,d/h))&&valid(w.o,d,d)&&valid(w.f1,d,f)&&valid(w.f2,f,d));
+      }
+      async function importJSON(file){
+        if(!file)return;
+        if(file.size>10000000){alert('Dosya 10 MB sınırını geçiyor.');return}
+        try{
+          const data=JSON.parse(await file.text());if(!validateModel(data))throw new Error('Geçersiz model yapısı');
+          stop();({D,H,L,FF,LIMIT,seed}=data.config);DK=D/H;Ws=data.weights;vocabWeights=data.vocabularyWeights;trainSteps=Number(data.trainSteps)||0;
+          for(const [id,v] of [['cfg-dim',D],['cfg-heads',H],['cfg-layers',L],['cfg-ff',FF/D],['cfg-limit',LIMIT]])$(id).value=String(v);
+          if(![...$('cfg-seed').options].some(o=>Number(o.value)===seed)){const o=document.createElement('option');o.value=seed;o.textContent=seed;$('cfg-seed').append(o)}$('cfg-seed').value=String(seed);
+          $('prompt').value=String(data.prompt||'FILINTA AI').slice(0,200);$('char-count').textContent=`${$('prompt').value.length} / 200`;
+          layer=clamp(Number(data.layer)||0,0,L-1);head=clamp(Number(data.head)||0,0,H-1);selectedToken=Number(data.selectedToken)||0;selectedKey=selectedToken;
+          weightLayer=0;weightHead=0;weightRow=0;weightCol=0;weightRowPage=0;weightColPage=0;compute();step=0;traceStage=0;render();$('train-result').textContent='JSON modeli başarıyla yüklendi.';
+        }catch(error){alert('Model yüklenemedi: '+error.message)}finally{$('import-file').value=''}
+      }
+      function trainOutput(){
+        const target=Number($('train-target').value),rate=Number($('train-rate').value);
+        if(!Number.isInteger(target)||target<0||target>=VOCAB.length||!Number.isFinite(rate))return;
+        const before=probabilities[target],hidden=traces[L-1].output[tokens.length-1];
+        for(let i=0;i<D;i++)for(let j=0;j<VOCAB.length;j++)vocabWeights[i][j]-=rate*.8*hidden[i]*(probabilities[j]-(j===target?1:0));
+        trainSteps++;refreshAfterWeightChange();$('train-result').textContent=`${trainSteps} SGD · ${VOCAB[target]}: ${(before*100).toFixed(1)}% → ${(probabilities[target]*100).toFixed(1)}%`;
+      }
+      $('run').addEventListener('click',toggle);
+      $('next').addEventListener('click',()=>{stop();if(view==='calculation'){traceStage=Math.min(11,traceStage+1);step=traceStage<2?traceStage:traceStage<10?2:traceStage===10?3:4;render()}else gotoStep(Math.min(4,step+1))});
+      $('reset').addEventListener('click',()=>{stop();step=0;traceStage=0;layer=0;head=0;selectedToken=tokens.length-1;selectedKey=selectedToken;render()});
+      $('prompt').addEventListener('input',()=>{stop();step=0;selectedToken=0;selectedKey=0;compute();render();$('char-count').textContent=`${$('prompt').value.length} / 200`});
+      document.querySelectorAll('.preset').forEach(b=>b.addEventListener('click',()=>{$('prompt').value=b.dataset.preset;$('prompt').dispatchEvent(new Event('input'));$('run').focus()}));
+      document.querySelectorAll('.stage').forEach(b=>b.addEventListener('click',()=>{stop();gotoStep(Number(b.dataset.step))}));
+      document.querySelectorAll('.view-tab').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;renderView()}));
+      $('calc-token').addEventListener('change',e=>{selectedToken=Number(e.target.value);selectedKey=selectedToken;render()});
+      $('calc-layer').addEventListener('change',e=>{layer=Number(e.target.value);render()});
+      $('calc-head').addEventListener('change',e=>{head=Number(e.target.value);render()});
+      for(const id of ['cfg-layers','cfg-heads','cfg-dim','cfg-ff','cfg-limit','cfg-seed'])$(id).addEventListener('change',updateModel);
+      $('shuffle').addEventListener('click',()=>{seed=Math.floor(Math.random()*1000000)+1;const o=document.createElement('option');o.value=String(seed);o.textContent=String(seed);$('cfg-seed').append(o);$('cfg-seed').value=String(seed);updateModel()});
+      $('export').addEventListener('click',downloadJSON);$('import').addEventListener('click',()=>$('import-file').click());
+      $('import-file').addEventListener('change',e=>importJSON(e.target.files[0]));
+      $('previous-trace').addEventListener('click',()=>{traceStage=(traceStage+PROCESSES.length-1)%PROCESSES.length;renderCalculation()});
+      $('next-trace').addEventListener('click',()=>{traceStage=(traceStage+1)%PROCESSES.length;renderCalculation()});
+      $('weight-type').addEventListener('change',e=>{weightType=e.target.value;weightRow=0;weightCol=0;weightRowPage=0;weightColPage=0;renderWeights()});
+      $('weight-layer').addEventListener('change',e=>{weightLayer=Number(e.target.value);weightRow=0;weightCol=0;renderWeights()});
+      $('weight-head').addEventListener('change',e=>{weightHead=Number(e.target.value);weightRow=0;weightCol=0;renderWeights()});
+      $('weight-row-page').addEventListener('change',e=>{weightRowPage=Number(e.target.value);renderWeights()});
+      $('weight-col-page').addEventListener('change',e=>{weightColPage=Number(e.target.value);renderWeights()});
+      $('set-weight').addEventListener('click',()=>applyCell($('weight-value').value));
+      $('weight-value').addEventListener('keydown',e=>{if(e.key==='Enter')applyCell(e.target.value)});
+      $('zero-weight').addEventListener('click',()=>applyCell(0));
+      $('noise-weights').addEventListener('click',()=>{const rng=random(Date.now()>>>0),m=matrixFor();m.forEach(row=>row.forEach((v,j)=>row[j]=clamp(v+(rng()-.5)*.2,-6,6)));refreshAfterWeightChange()});
+      $('reset-weights').addEventListener('click',()=>{const m=matrixFor(),fresh=originalMatrix();m.forEach((row,i)=>row.forEach((_,j)=>row[j]=fresh[i][j]));refreshAfterWeightChange()});
+      $('train').addEventListener('click',trainOutput);
+      $('speed').addEventListener('input',()=>{$('speed-label').textContent=['','Çok yavaş','Yavaş','Normal','Hızlı','Çok hızlı'][Number($('speed').value)]});
+      window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','TEXTAREA','BUTTON'].includes(document.activeElement.tagName)){e.preventDefault();toggle()}});
+      setSelectOptions($('train-target'),VOCAB.map((w,i)=>[i,w]),0);
+      createWeights();compute();selectedToken=tokens.length-1;selectedKey=selectedToken;render();$('char-count').textContent=`${$('prompt').value.length} / 200`;
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿AYIKLA — görsel ayıklama galerisi
+
+Çalıştır: Ayikla.bat (ilk açılışta PySide6'yı kendisi kurar; Python gerekir)
+Klasör aç: yolu üstteki kutuya yapıştır + Enter, klasör simgesi ya da klasörü pencereye sürükle. Tüm alt klasörler taranır.
+
+KART BUTONLARI (tıkladığın an işler)
+  ✕ kırmızı  Red   → <açılan klasör>\_RED\<alt klasör yolu>\
+  ✓ yeşil    Onay  → dosya yerinde kalır, onaylı işaretlenir
+  − sarı     Arşiv → <açılan klasör>\_ARSIV\<alt klasör yolu>\
+  not mavi   Not   → <açılan klasör>\_ISLEM\<alt klasör yolu>\ + "ad - NOT.txt"
+İşlenen kart yerinde kalır (soluk + işaret). Üstüne tıklarsan o işlem geri alınır.
+F5 işlenenleri listeden toplar. Onaylılar gizlenir; göz simgesi onaylıları gösterir/gizler.
+
+SEÇİM + TOPLU İŞLEM
+  Görsele tık = seç/bırak · basılı tutup sürükle = toplu seç · Shift+tık = aralık · Ctrl+A = tümü · Esc = temizle
+  Seçim varken üst çubukta renkli butonlar çıkar: seçilenlerin hepsine uygular. Toplu not: tek not, her görsele ayrı dosya.
+  Del = seçilenleri (seçim yoksa imlecin altındakini) Red.
+
+GÖRSEL BOYUTU: üst çubuktaki sıra butonundan seç (1–6 sıra) · Ctrl+tekerlek veya Ctrl + / Ctrl − · seçim hatırlanır
+  Kartlar her görselin kendi oranında (kare, dikey, yatay) dizilir; satırlar ekranı boşluksuz doldurur
+
+KLAVYE (imleç: kesikli çerçeve · fare hangi karttaysa imleç oradadır)
+  1 / X / Del = Red · 2 / O = Onay · 3 / A = Arşiv · 4 / N = Not  → işlem sonrası imleç sıradakine geçer
+  Backspace / U = kartın işlemini geri al · Ctrl+Z = son işlemi geri al (toplu işlem tek adımda)
+  Ok tuşları / PgUp / PgDn / Home / End = gezin · Boşluk = seç · Shift+ok = seçimi genişlet
+  Enter = görseli aç · Ctrl+E = klasörde göster · H = onaylıları göster/gizle
+  F5 yenile · F11 tam ekran · Ctrl+O klasör · Ctrl+L yol kutusu · Ctrl+Q kapat
+  TÜM KISAYOLLAR: F1  ·  Çift tık görseli açar · Sağ tık klasörde gösterir
+Onay kayıtları: %APPDATA%\Ayikla\onaylar.json · İşlem günlüğü: ayikla_log.txt
