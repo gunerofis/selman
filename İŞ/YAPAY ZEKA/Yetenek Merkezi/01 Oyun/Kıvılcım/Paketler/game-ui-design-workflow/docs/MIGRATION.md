@@ -1,0 +1,117 @@
+# 契约迁移指南
+
+本指南用于升级 `style-contract.yaml`、`screen-contract.yaml`、`component-contract.yaml`、`asset-manifest.yaml`，以及可选的 `sprite-contract.yaml`、`atlas-contract.yaml` 和 `export-contract.yaml`。也覆盖 Spec-Kit 文档增补（如 `gdd.md` / `prd.md` / `interaction.md`）。
+
+## 迁移前
+
+1. 提交或备份当前项目。
+2. 运行旧版本校验并保存结果。
+3. 检查四个核心契约和可选 sprite、atlas、export 契约的 `schema_version`。
+4. 阅读 `CHANGELOG.md` 中对应版本说明。
+5. 不要直接覆盖已批准页面和组件。
+
+## 增补策划文档（生图前门禁）
+
+若旧项目缺少 `gdd.md` / `prd.md` / `interaction.md`：
+
+1. 从 `templates/spec-kit/` 复制三份模板到项目根目录。
+2. 按现有 `spec.md`、`research.md` 与屏幕契约回填内容。
+3. 将 `文档状态.status` 设为 `approved`（或记录明确跳过原因到 `quickstart.md`）。
+4. 再运行 `validate_project.py`；已有视觉资产且策划仍为 `draft` 时，`--strict` 会失败。
+
+## 向后兼容字段
+
+新增可选字段且旧含义不变时：
+
+1. 更新 `templates/contracts/`。
+2. 为旧项目补充默认值。
+3. 更新完整示例和调用文档。
+4. 在校验脚本中允许缺省值或提供明确警告。
+5. 添加迁移前后测试。
+
+这种变化通常不提升 `schema_version`，但必须在 Changelog 中说明。
+
+## 不兼容变化
+
+以下情况需要提升 `schema_version`：
+
+- 字段改名或删除
+- 允许值含义改变
+- ID 或路径规则改变
+- 页面、组件或资源之间的引用方式改变
+- 批准状态语义改变
+
+迁移步骤：
+
+1. 新增下一版本模板。
+2. 编写确定性迁移脚本。
+3. 保留旧版本读取或给出明确停止信息。
+4. 更新示例、测试和 CI。
+5. 运行迁移后严格校验。
+
+## 示例：字段改名
+
+假设：
+
+```yaml
+aspect: "9:16"
+```
+
+改为：
+
+```yaml
+aspect_ratio: "9:16"
+```
+
+不能只修改模板。必须同步：
+
+- 旧项目中的字段
+- 页面生成技能读取规则
+- 校验脚本
+- 示例契约
+- Changelog 和迁移说明
+
+## 已批准资源的处理
+
+契约变化可能影响现有资源时：
+
+```yaml
+status: stale
+approved: false
+```
+
+处理原则：
+
+- 保留旧文件和版本来源
+- 说明由哪个契约变化导致失效
+- 生成新版本，不覆盖旧版本
+- 新版本通过验收后再批准
+
+仅文档描述变化、且不影响视觉或文件含义时，不需要把资源标记为 `stale`。
+
+## 建议的迁移脚本行为
+
+迁移脚本必须：
+
+- 支持 `--dry-run`
+- 默认不覆盖原文件
+- 输出修改字段和受影响资源
+- 失败时保持原项目可用
+- 迁移后自动运行校验
+
+不要让 Agent 仅靠自然语言批量改写大量契约；稳定迁移应使用可测试脚本。
+
+## 迁移验收
+
+```bash
+python3 scripts/validate_project.py specs/your-game-id --strict
+```
+
+确认：
+
+- 四类核心契约版本一致，可选雪碧图契约与项目版本兼容
+- 页面和组件 ID 仍可解析
+- manifest 路径和实际文件一致
+- 真实尺寸与透明通道通过
+- 受影响资源已标记 `stale` 或重新批准
+- `quickstart.md` 记录迁移后的限制

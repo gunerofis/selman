@@ -1,0 +1,120 @@
+{
+ "satici": {
+  "unvan": "Selman Korkmaz (DOKU)",
+  "adres": "",
+  "eposta": "info@dokuduvar.com",
+  "telefon": "0543 453 88 64",
+  "web": "www.dokuduvar.com"
+ },
+ "sayfalar": [
+  {
+   "slug": "mesafeli-satis",
+   "baslik": "Mesafeli Satış Sözleşmesi",
+   "ozet": "DOKU üzerinden verilen siparişlere uygulanan mesafeli satış sözleşmesi.",
+   "bolumler": [
+    [
+     "1. Taraflar",
+     "SATICI: {unvan}. Adres: {adres}. Telefon: {telefon}. E-posta: {eposta}. ALICI: Siparişi veren ve sipariş sırasında ad, adres ve iletişim bilgilerini bildiren kişi."
+    ],
+    [
+     "2. Konu",
+     "Bu sözleşme, ALICI'nın SATICI'ya ait {web} internet sitesi, sosyal medya hesapları veya ödeme bağlantısı üzerinden sipariş verdiği ürün ve hizmetlerin satışı ve teslimi ile ilgili hakları ve yükümlülükleri 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği hükümlerine göre düzenler."
+    ],
+    [
+     "3. Ürün ve hizmet",
+     "DOKU, ölçüye ve isteğe göre tasarlanan, deri veya kumaş kaplamalı duvar tasarımları üretir. Ürünün tasarımı, ölçüsü, kaplaması, renkleri, adedi, fiyatı ve teslim şekli, sipariş öncesinde ALICI'ya yazılı olarak gönderilen teklif ve onaylı tasarım çiziminde belirtilir. Bu teklif ve çizim sözleşmenin ekidir."
+    ],
+    [
+     "4. Fiyat ve ödeme",
+     "Fiyatlar teklifte Türk lirası olarak ve vergiler dahil gösterilir. Ödeme, teklifte belirtilen şekilde (ön ödeme/kapora ve kalan tutar) banka havalesi veya ödeme kuruluşu aracılığıyla kredi kartı ile yapılır. Ölçü, tasarım, montaj ve nakliye bedelleri teklifte ayrıca belirtilir."
+    ],
+    [
+     "5. Teslim ve montaj",
+     "Üretim, tasarımın ALICI tarafından yazılı onaylanmasından ve ön ödemenin yapılmasından sonra başlar. Teslim ve montaj tarihi teklifte belirtilir ve en geç 30 gündür; daha uzun süre gerektiren işlerde süre teklifte açıkça yazılır ve ALICI'nın onayı alınır. Montaj, ALICI'nın bildirdiği adreste yapılır."
+    ],
+    [
+     "6. Cayma hakkı",
+     "Mesafeli Sözleşmeler Yönetmeliği'nin 15. maddesinin 1. fıkrasının (ç) bendi uyarınca, tüketicinin istekleri veya kişisel ihtiyaçları doğrultusunda hazırlanan ürünlerde cayma hakkı kullanılamaz. DOKU duvar panelleri ALICI'nın ölçüsüne ve onayladığı tasarıma göre üretildiğinden bu kapsamdadır. Standart ölçülü hazır ürünlerde ve numune setlerinde ALICI, teslimden itibaren 14 gün içinde gerekçe göstermeden cayma hakkını kullanabilir; bildirim {eposta} adresine veya {telefon} numarasına yazılı olarak yapılır. Cayma halinde bedel, ürünün SATICI'ya ulaşmasından itibaren en geç 14 gün içinde ödeme yöntemine iade edilir."
+    ],
+    [
+     "7. Ayıplı ürün",
+     "Ürün ayıplı teslim edilirse ALICI, 6502 sayılı Kanun'un 11. maddesinde sayılan haklardan birini (sözleşmeden dönme, bedelden indirim, ücretsiz onarım, ayıpsız misli ile değişim) kullanabilir. Ayıp bildirimi teslim tarihinden itibaren yazılı olarak yapılır."
+    ],
+    [
+     "8. Uyuşmazlık",
+     "Uyuşmazlıklarda, Ticaret Bakanlığı'nca ilan edilen parasal sınırlar içinde ALICI'nın yerleşim yerindeki veya işlemin yapıldığı yerdeki Tüketici Hakem Heyetleri, bu sınırları aşan durumlarda Tüketici Mahkemeleri yetkilidir."
+    ],
+    [
+     "9. Yürürlük",
+     "ALICI, ödemeyi yapmakla bu sözleşmenin tüm koşullarını okuyup kabul etmiş sayılır."
+    ]
+   ]
+  },
+  {
+   "slug": "iade",
+   "baslik": "İptal, İade ve Değişim",
+   "ozet": "DOKU siparişlerinde iptal, iade ve değişim koşulları.",
+   "bolumler": [
+    [
+     "Kişiye özel ürünler",
+     "DOKU duvar panelleri ölçünüze ve onayladığınız tasarıma göre üretilir. Bu nedenle Mesafeli Sözleşmeler Yönetmeliği'nin 15/1-ç maddesi uyarınca cayma hakkı ve keyfi iade kapsamında değildir."
+    ],
+    [
+     "Sipariş iptali",
+     "Tasarım onayından ve üretim başlamadan önce siparişinizi iptal edebilirsiniz; bu durumda ödemenizden yalnız o ana kadar yapılmış ölçü ve tasarım hizmeti bedeli düşülür. Bu bedel teklifte ayrıca belirtilir. Üretim başladıktan sonra iptal yapılamaz."
+    ],
+    [
+     "Standart ürünler ve numuneler",
+     "Standart ölçülü hazır ürünlerde ve numune setlerinde teslimden itibaren 14 gün içinde cayma hakkınızı kullanabilirsiniz. Ürün kullanılmamış ve hasarsız olmalıdır. İade bedeli, ürün bize ulaştıktan sonra en geç 14 gün içinde ödeme yönteminize iade edilir."
+    ],
+    [
+     "Hatalı veya hasarlı ürün",
+     "Teslimde ya da montajda hata veya hasar görürseniz bize fotoğrafla bildirin. Üretim veya montaj kaynaklı sorunlarda ürünü ücretsiz onarır ya da yenisiyle değiştiririz. 6502 sayılı Kanun'dan doğan diğer haklarınız saklıdır."
+    ],
+    [
+     "İletişim",
+     "İptal ve iade talepleri için: {telefon} (WhatsApp) veya {eposta}."
+    ]
+   ]
+  },
+  {
+   "slug": "kvkk",
+   "baslik": "KVKK Aydınlatma Metni ve Gizlilik",
+   "ozet": "Kişisel verilerinizin işlenmesine ilişkin aydınlatma metni.",
+   "bolumler": [
+    [
+     "Veri sorumlusu",
+     "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusu {unvan}'dır. Adres: {adres}. E-posta: {eposta}."
+    ],
+    [
+     "İşlenen veriler",
+     "Ad soyad, telefon, e-posta, teslimat ve montaj adresi, fatura bilgileri, proje için paylaştığınız mekân fotoğrafları, ölçüler ve tasarım talepleri, sipariş ve ödeme kayıtları."
+    ],
+    [
+     "Amaç",
+     "Teklif hazırlamak, ölçü ve tasarım yapmak, siparişi üretmek, teslim ve montajı gerçekleştirmek, ödemeyi almak, fatura düzenlemek, sizinle iletişim kurmak ve yasal yükümlülükleri yerine getirmek."
+    ],
+    [
+     "Hukuki sebep",
+     "KVKK'nın 5. maddesi uyarınca sözleşmenin kurulması ve ifası, hukuki yükümlülüğün yerine getirilmesi ve meşru menfaat. Mekân fotoğraflarınızı tanıtımda yalnız açık izninizle kullanırız."
+    ],
+    [
+     "Aktarım",
+     "Verileriniz yalnız gerektiği kadar; ödeme kuruluşu, kargo ve nakliye firmaları, muhasebe hizmeti ve yetkili kamu kurumlarıyla paylaşılır. Yurt dışına aktarım yapılmaz."
+    ],
+    [
+     "Toplama yöntemi",
+     "İnternet sitesindeki proje formu, WhatsApp, e-posta, telefon ve ödeme sayfası aracılığıyla."
+    ],
+    [
+     "Haklarınız",
+     "KVKK'nın 11. maddesi uyarınca verilerinizin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltilmesini veya silinmesini isteme, aktarıldığı kişileri öğrenme ve itiraz etme haklarınız vardır. Taleplerinizi {eposta} adresine iletebilirsiniz; en geç 30 gün içinde yanıtlanır."
+    ],
+    [
+     "Çerezler",
+     "Sitemiz reklam veya takip çerezi kullanmaz. Yalnız sitenin çalışması için gerekli teknik veriler işlenir."
+    ]
+   ]
+  }
+ ]
+}

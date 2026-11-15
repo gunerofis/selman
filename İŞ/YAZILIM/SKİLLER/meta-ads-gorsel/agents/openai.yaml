@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meta Ads Görsel"
+  short_description: "Web araştırmasıyla doğru ürün reklamı görseli üret"
+  default_prompt: "$meta-ads-gorsel ile bu ürün için güncel kaynaklara dayanan bir Meta reklam görseli tasarla ve üret."

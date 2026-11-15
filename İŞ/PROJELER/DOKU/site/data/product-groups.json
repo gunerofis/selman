@@ -1,0 +1,8873 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "id": "DK-001",
+      "slug": "organik-akis",
+      "name": "Organik Adalar",
+      "sourceIds": [
+        "DK-001"
+      ],
+      "images": [
+        21
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-075",
+      "slug": "organik-akis-dk-075",
+      "name": "Organik Akış",
+      "sourceIds": [
+        "DK-001"
+      ],
+      "images": [
+        6
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-076",
+      "slug": "renk-adalari",
+      "name": "Renk Adaları",
+      "sourceIds": [
+        "DK-001"
+      ],
+      "images": [
+        51
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-002",
+      "slug": "cicek-bahcesi",
+      "name": "Lale Masalı",
+      "sourceIds": [
+        "DK-002"
+      ],
+      "images": [
+        26
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-077",
+      "slug": "papatya-bahcesi",
+      "name": "Papatya Bahçesi",
+      "sourceIds": [
+        "DK-002"
+      ],
+      "images": [
+        8
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-003",
+      "slug": "ritim",
+      "name": "Ritim",
+      "sourceIds": [
+        "DK-003"
+      ],
+      "images": [
+        37
+      ]
+    },
+    {
+      "id": "DK-079",
+      "slug": "dikey-ritim",
+      "name": "Dikey Ritim",
+      "sourceIds": [
+        "DK-003"
+      ],
+      "images": [
+        31
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-004",
+      "slug": "botanik-uclu",
+      "name": "Botanik Üçlü",
+      "sourceIds": [
+        "DK-004"
+      ],
+      "images": [
+        40,
+        39
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-005",
+      "slug": "ay-isigi",
+      "name": "Ayıcık Uykusu",
+      "sourceIds": [
+        "DK-005"
+      ],
+      "images": [
+        45
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-080",
+      "slug": "ayda-uyku",
+      "name": "Ayda Uyku",
+      "sourceIds": [
+        "DK-005"
+      ],
+      "images": [
+        46
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-081",
+      "slug": "ay-ve-gokkusagi",
+      "name": "Ay ve Gökkuşağı",
+      "sourceIds": [
+        "DK-005"
+      ],
+      "images": [
+        41
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-006",
+      "slug": "ufuk",
+      "name": "Ufuk",
+      "sourceIds": [
+        "DK-006"
+      ],
+      "images": [
+        19,
+        5
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-008",
+      "slug": "monogram",
+      "name": "Monogram",
+      "sourceIds": [
+        "DK-008"
+      ],
+      "images": [
+        22,
+        4
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-009",
+      "slug": "dairesel-denge",
+      "name": "Dairesel Denge",
+      "sourceIds": [
+        "DK-009"
+      ],
+      "images": [
+        20,
+        2
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-010",
+      "slug": "orman-dostlari",
+      "name": "Orman Oyunu",
+      "sourceIds": [
+        "DK-010"
+      ],
+      "images": [
+        42
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-082",
+      "slug": "dostlar-ve-simsek",
+      "name": "Dostlar ve Şimşek",
+      "sourceIds": [
+        "DK-010"
+      ],
+      "images": [
+        48
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-083",
+      "slug": "geyik-ormani",
+      "name": "Geyik Ormanı",
+      "sourceIds": [
+        "DK-010"
+      ],
+      "images": [
+        18
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-011",
+      "slug": "kemer",
+      "name": "Kemer",
+      "sourceIds": [
+        "DK-011"
+      ],
+      "images": [
+        43,
+        17
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-012",
+      "slug": "kartal",
+      "name": "Kartal",
+      "sourceIds": [
+        "DK-012"
+      ],
+      "images": [
+        24,
+        3
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-013",
+      "slug": "okyanus",
+      "name": "Okyanus",
+      "sourceIds": [
+        "DK-013"
+      ],
+      "images": [
+        99,
+        78
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-015",
+      "slug": "gokyuzu-yolculugu",
+      "name": "Gökyüzü Yolculuğu",
+      "sourceIds": [
+        "DK-015"
+      ],
+      "images": [
+        9
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-017",
+      "slug": "gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "DK-017"
+      ],
+      "images": [
+        47
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-018",
+      "slug": "ilk-harfim",
+      "name": "İlk Harfim",
+      "sourceIds": [
+        "DK-018"
+      ],
+      "images": [
+        81
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-084",
+      "slug": "yaprakli-harf",
+      "name": "Yapraklı Harf",
+      "sourceIds": [
+        "DK-018"
+      ],
+      "images": [
+        95
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-087",
+      "slug": "daire-imza",
+      "name": "Daire İmza",
+      "sourceIds": [
+        "DK-020"
+      ],
+      "images": [
+        80
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-021",
+      "slug": "geometrik-oyun",
+      "name": "Geometrik Oyun",
+      "sourceIds": [
+        "DK-021"
+      ],
+      "images": [
+        11
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-088",
+      "slug": "renk-yollari",
+      "name": "Renk Yolları",
+      "sourceIds": [
+        "DK-021"
+      ],
+      "images": [
+        10
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-089",
+      "slug": "oyun-sehri",
+      "name": "Oyun Şehri",
+      "sourceIds": [
+        "DK-021"
+      ],
+      "images": [
+        97
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-090",
+      "slug": "halka-sehir",
+      "name": "Halka Şehir",
+      "sourceIds": [
+        "DK-021"
+      ],
+      "images": [
+        107
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-022",
+      "slug": "yon",
+      "name": "Çapraz Rota",
+      "sourceIds": [
+        "DK-022"
+      ],
+      "images": [
+        27
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-023",
+      "slug": "denizci",
+      "name": "Denizci",
+      "sourceIds": [
+        "DK-023"
+      ],
+      "images": [
+        28
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-025",
+      "slug": "minik-dostlar",
+      "name": "Minik Dostlar",
+      "sourceIds": [
+        "DK-025"
+      ],
+      "images": [
+        1
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-026",
+      "slug": "kavis",
+      "name": "Üç Kavis",
+      "sourceIds": [
+        "DK-026"
+      ],
+      "images": [
+        30
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-092",
+      "slug": "dort-kavis",
+      "name": "Dört Kavis",
+      "sourceIds": [
+        "DK-026"
+      ],
+      "images": [
+        55
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-027",
+      "slug": "dalga",
+      "name": "Dalga",
+      "sourceIds": [
+        "DK-027"
+      ],
+      "images": [
+        12
+      ]
+    },
+    {
+      "id": "DK-093",
+      "slug": "topografik-dalga",
+      "name": "Topografik Dalga",
+      "sourceIds": [
+        "DK-027"
+      ],
+      "images": [
+        29,
+        54
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-028",
+      "slug": "cakil",
+      "name": "Çakıl",
+      "sourceIds": [
+        "DK-028"
+      ],
+      "images": [
+        13
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-029",
+      "slug": "yaprak",
+      "name": "Yaprak",
+      "sourceIds": [
+        "DK-029"
+      ],
+      "images": [
+        77
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-094",
+      "slug": "meyveli-dal",
+      "name": "Meyveli Dal",
+      "sourceIds": [
+        "DK-029"
+      ],
+      "images": [
+        100,
+        112
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-030",
+      "slug": "doga-panelleri",
+      "name": "Doğa Panelleri",
+      "sourceIds": [
+        "DK-030"
+      ],
+      "images": [
+        69,
+        90
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-031",
+      "slug": "gol-kiyisi",
+      "name": "Ağaçlı Nehir",
+      "sourceIds": [
+        "DK-031"
+      ],
+      "images": [
+        68
+      ]
+    },
+    {
+      "id": "DK-095",
+      "slug": "sazlik-nehir",
+      "name": "Sazlık Nehir",
+      "sourceIds": [
+        "DK-031"
+      ],
+      "images": [
+        76
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-096",
+      "slug": "katmanli-vadi",
+      "name": "Katmanlı Vadi",
+      "sourceIds": [
+        "DK-031"
+      ],
+      "images": [
+        86
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-097",
+      "slug": "nehir-ufku",
+      "name": "Nehir Ufku",
+      "sourceIds": [
+        "DK-031"
+      ],
+      "images": [
+        94
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-098",
+      "slug": "kanyon",
+      "name": "Kanyon",
+      "sourceIds": [
+        "DK-031"
+      ],
+      "images": [
+        115
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-033",
+      "slug": "yelken",
+      "name": "Yelken",
+      "sourceIds": [
+        "DK-033"
+      ],
+      "images": [
+        58
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-034",
+      "slug": "rota",
+      "name": "Rota",
+      "sourceIds": [
+        "DK-034"
+      ],
+      "images": [
+        92,
+        120
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-035",
+      "slug": "at",
+      "name": "At",
+      "sourceIds": [
+        "DK-035"
+      ],
+      "images": [
+        36
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-036",
+      "slug": "tilki-ailesi",
+      "name": "Tilki Ailesi",
+      "sourceIds": [
+        "DK-036"
+      ],
+      "images": [
+        71,
+        91,
+        119
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-037",
+      "slug": "anne-ve-cocuk",
+      "name": "Anne ve Çocuk",
+      "sourceIds": [
+        "DK-037"
+      ],
+      "images": [
+        57
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-038",
+      "slug": "figurler",
+      "name": "Dansçılar",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        56
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-099",
+      "slug": "sohbet-dk-099",
+      "name": "Sohbet",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        64
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-100",
+      "slug": "okuyan-figur",
+      "name": "Okuyan Figür",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        65
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-101",
+      "slug": "okuyan-kadin",
+      "name": "Okuyan Kadın",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        102
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-102",
+      "slug": "okuma-kosesi",
+      "name": "Okuma Köşesi",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        113
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-103",
+      "slug": "kitap-ve-sessizlik",
+      "name": "Kitap ve Sessizlik",
+      "sourceIds": [
+        "DK-038"
+      ],
+      "images": [
+        130
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-039",
+      "slug": "cicek-silueti",
+      "name": "Turnalar",
+      "sourceIds": [
+        "DK-039"
+      ],
+      "images": [
+        79,
+        101
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-040",
+      "slug": "geometri",
+      "name": "Balıksırtı",
+      "sourceIds": [
+        "DK-040",
+        "EK-001"
+      ],
+      "images": [
+        0,
+        339
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-104",
+      "slug": "ucgen-mozaik",
+      "name": "Üçgen Mozaik",
+      "sourceIds": [
+        "DK-040",
+        "EK-001"
+      ],
+      "images": [
+        62
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-105",
+      "slug": "cokgen-mozaik",
+      "name": "Çokgen Mozaik",
+      "sourceIds": [
+        "DK-040"
+      ],
+      "images": [
+        109
+      ]
+    },
+    {
+      "id": "DK-106",
+      "slug": "buyuk-cokgenler",
+      "name": "Büyük Çokgenler",
+      "sourceIds": [
+        "DK-040",
+        "EK-001"
+      ],
+      "images": [
+        126
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-041",
+      "slug": "labirent",
+      "name": "Kavis Labirenti",
+      "sourceIds": [
+        "DK-041"
+      ],
+      "images": [
+        49
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-107",
+      "slug": "yol-kavisleri",
+      "name": "Yol Kavisleri",
+      "sourceIds": [
+        "DK-041"
+      ],
+      "images": [
+        96
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-108",
+      "slug": "kesisen-yollar",
+      "name": "Kesişen Yollar",
+      "sourceIds": [
+        "DK-041"
+      ],
+      "images": [
+        104
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-109",
+      "slug": "s-akisi",
+      "name": "S Akışı",
+      "sourceIds": [
+        "DK-041"
+      ],
+      "images": [
+        125
+      ]
+    },
+    {
+      "id": "DK-042",
+      "slug": "denge",
+      "name": "Dikey Denge",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        15
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-110",
+      "slug": "kavis-dengesi",
+      "name": "Kavis Dengesi",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        83
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-111",
+      "slug": "dalga-dengesi",
+      "name": "Dalga Dengesi",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        103,
+        110,
+        129
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-112",
+      "slug": "kemer-dengesi",
+      "name": "Kemer Dengesi",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        111
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-113",
+      "slug": "simetrik-kemer",
+      "name": "Simetrik Kemer",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        131
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-114",
+      "slug": "yarim-daire-dengesi",
+      "name": "Yarım Daire Dengesi",
+      "sourceIds": [
+        "DK-042"
+      ],
+      "images": [
+        132
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-043",
+      "slug": "eksen",
+      "name": "Eksen",
+      "sourceIds": [
+        "DK-043"
+      ],
+      "images": [
+        16,
+        66
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-115",
+      "slug": "dalga-ekseni",
+      "name": "Dalga Ekseni",
+      "sourceIds": [
+        "DK-043"
+      ],
+      "images": [
+        67
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-044",
+      "slug": "katman",
+      "name": "Dikdörtgen Katman",
+      "sourceIds": [
+        "DK-044"
+      ],
+      "images": [
+        14
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-116",
+      "slug": "kivrimli-katman",
+      "name": "Kıvrımlı Katman",
+      "sourceIds": [
+        "DK-044"
+      ],
+      "images": [
+        60
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-045",
+      "slug": "modul",
+      "name": "Modül",
+      "sourceIds": [
+        "DK-045"
+      ],
+      "images": [
+        32
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-117",
+      "slug": "moduler-duvar",
+      "name": "Modüler Duvar",
+      "sourceIds": [
+        "DK-045"
+      ],
+      "images": [
+        50
+      ]
+    },
+    {
+      "id": "DK-118",
+      "slug": "yaprakli-modul",
+      "name": "Yapraklı Modül",
+      "sourceIds": [
+        "DK-045"
+      ],
+      "images": [
+        85
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-119",
+      "slug": "kemerli-duvar",
+      "name": "Kemerli Duvar",
+      "sourceIds": [
+        "DK-045"
+      ],
+      "images": [
+        128
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-046",
+      "slug": "sohbet",
+      "name": "Bağlantılar",
+      "sourceIds": [
+        "DK-046"
+      ],
+      "images": [
+        61
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-120",
+      "slug": "sohbet-dk-120",
+      "name": "Sohbet",
+      "sourceIds": [
+        "DK-046"
+      ],
+      "images": [
+        63
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-123",
+      "slug": "kavis-bahcesi",
+      "name": "Kavis Bahçesi",
+      "sourceIds": [
+        "DK-047"
+      ],
+      "images": [
+        88
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-124",
+      "slug": "isin-kavisleri",
+      "name": "Işın Kavisleri",
+      "sourceIds": [
+        "DK-047"
+      ],
+      "images": [
+        117
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-048",
+      "slug": "karsilama",
+      "name": "Çerçeveli Karşılama",
+      "sourceIds": [
+        "DK-048"
+      ],
+      "images": [
+        82
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-125",
+      "slug": "karsilama-dk-125",
+      "name": "Karşılama",
+      "sourceIds": [
+        "DK-048"
+      ],
+      "images": [
+        87,
+        116
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-049",
+      "slug": "botanik-harf",
+      "name": "Botanik Harf",
+      "sourceIds": [
+        "DK-049"
+      ],
+      "images": [
+        93
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-050",
+      "slug": "totem",
+      "name": "Figür Totemi",
+      "sourceIds": [
+        "DK-050"
+      ],
+      "images": [
+        105
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-126",
+      "slug": "geometrik-totem",
+      "name": "Geometrik Totem",
+      "sourceIds": [
+        "DK-050"
+      ],
+      "images": [
+        133
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-051",
+      "slug": "yorunge",
+      "name": "Yörünge",
+      "sourceIds": [
+        "DK-051"
+      ],
+      "images": [
+        106,
+        124
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-052",
+      "slug": "gece-ormani",
+      "name": "Gece Ormanı",
+      "sourceIds": [
+        "DK-052"
+      ],
+      "images": [
+        114
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-053",
+      "slug": "selvi-manzarasi",
+      "name": "Selvi Manzarası",
+      "sourceIds": [
+        "DK-053"
+      ],
+      "images": [
+        121
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-054",
+      "slug": "botanik-daire",
+      "name": "Botanik Daire",
+      "sourceIds": [
+        "DK-054"
+      ],
+      "images": [
+        122
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-055",
+      "slug": "botanik-geometri",
+      "name": "Botanik Geometri",
+      "sourceIds": [
+        "DK-055"
+      ],
+      "images": [
+        123
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-056",
+      "slug": "gs",
+      "name": "GS",
+      "sourceIds": [
+        "DK-061",
+        "DK-066"
+      ],
+      "images": [
+        144,
+        145,
+        156,
+        157
+      ],
+      "affiliation": "GS",
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-057",
+      "slug": "fb",
+      "name": "FB",
+      "sourceIds": [
+        "DK-057",
+        "DK-062",
+        "DK-065",
+        "DK-067"
+      ],
+      "images": [
+        140,
+        146,
+        147,
+        154,
+        155,
+        163
+      ],
+      "affiliation": "FB",
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-058",
+      "slug": "bjk",
+      "name": "BJK",
+      "sourceIds": [
+        "DK-058",
+        "DK-063"
+      ],
+      "images": [
+        136,
+        141,
+        148,
+        149,
+        152,
+        153
+      ],
+      "affiliation": "BJK",
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-059",
+      "slug": "ts",
+      "name": "TS",
+      "sourceIds": [
+        "DK-059",
+        "DK-064"
+      ],
+      "images": [
+        137,
+        165,
+        150,
+        151
+      ],
+      "affiliation": "TS",
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-060",
+      "slug": "turkiye",
+      "name": "Türkiye",
+      "sourceIds": [
+        "DK-060"
+      ],
+      "images": [
+        143,
+        166,
+        167
+      ],
+      "affiliation": "TR",
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-068",
+      "slug": "esik",
+      "name": "Eşik",
+      "sourceIds": [
+        "DK-068"
+      ],
+      "images": [
+        201
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-069",
+      "slug": "henuz",
+      "name": "Henüz",
+      "sourceIds": [
+        "DK-069"
+      ],
+      "images": [
+        202,
+        203
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-071",
+      "slug": "iki-bakis",
+      "name": "İki Bakış",
+      "sourceIds": [
+        "DK-071"
+      ],
+      "images": [
+        205,
+        206
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-072",
+      "slug": "akis-haritasi",
+      "name": "Akış Haritası",
+      "sourceIds": [
+        "DK-072"
+      ],
+      "images": [
+        207
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-073",
+      "slug": "sessiz-portre",
+      "name": "Sessiz Portre",
+      "sourceIds": [
+        "DK-073"
+      ],
+      "images": [
+        208
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-074",
+      "slug": "uc-iz",
+      "name": "Üç İz",
+      "sourceIds": [
+        "DK-074"
+      ],
+      "images": [
+        209
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-003",
+      "slug": "co-003-mercan-gunesli-mavi-balina",
+      "name": "Mavi Balina",
+      "sourceIds": [
+        "CO-003"
+      ],
+      "images": [
+        210,
+        211
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-004",
+      "slug": "co-004-kobalt-roketle-yorunge-macerasi",
+      "name": "Yörünge",
+      "sourceIds": [
+        "CO-004"
+      ],
+      "images": [
+        212,
+        213
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-005",
+      "slug": "co-005-uc-parcali-neseli-armut",
+      "name": "Neşeli Armut",
+      "sourceIds": [
+        "CO-005"
+      ],
+      "images": [
+        214,
+        215
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-006",
+      "slug": "co-006-soyut-kaplumbaga",
+      "name": "Kaplumbağa",
+      "sourceIds": [
+        "CO-006"
+      ],
+      "images": [
+        216,
+        217
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-007",
+      "slug": "co-007-iki-penguen",
+      "name": "İki Penguen",
+      "sourceIds": [
+        "CO-007"
+      ],
+      "images": [
+        218,
+        219
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-008",
+      "slug": "co-008-lila-fil-ve-dalgali-bulut",
+      "name": "Fil ve Bulut",
+      "sourceIds": [
+        "CO-008",
+        "CO-031"
+      ],
+      "images": [
+        220,
+        221,
+        252,
+        253
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-010",
+      "slug": "co-010-turkuaz-sarkici-kus",
+      "name": "Şarkıcı Kuş",
+      "sourceIds": [
+        "CO-010",
+        "CO-033"
+      ],
+      "images": [
+        222,
+        223,
+        256,
+        257
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-011",
+      "slug": "co-011-geometrik-dag-kecisi",
+      "name": "Dağ Keçisi",
+      "sourceIds": [
+        "CO-011"
+      ],
+      "images": [
+        224,
+        225
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-013",
+      "slug": "co-013-renkli-ucurtma-duvar-heykeli",
+      "name": "Uçurtmalar",
+      "sourceIds": [
+        "CO-013"
+      ],
+      "images": [
+        226,
+        227
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-015",
+      "slug": "co-015-yaprak-kivriminda-tavsan",
+      "name": "Yapraklı Tavşan",
+      "sourceIds": [
+        "CO-015"
+      ],
+      "images": [
+        228,
+        229
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-016",
+      "slug": "co-016-uc-dev-yaprakli-dokulu-cocuk-odasi",
+      "name": "Üç Yaprak",
+      "sourceIds": [
+        "CO-016"
+      ],
+      "images": [
+        230,
+        231
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-017",
+      "slug": "co-017-tepeler-arasinda-dost-dinozor",
+      "name": "Dost Dinozor",
+      "sourceIds": [
+        "CO-017"
+      ],
+      "images": [
+        232,
+        233
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-018",
+      "slug": "co-018-gunes-ve-gezegenler",
+      "name": "Güneş ve Gezegen",
+      "sourceIds": [
+        "CO-018"
+      ],
+      "images": [
+        234,
+        235
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-020",
+      "slug": "co-020-uc-kuleli-masal-kalesi",
+      "name": "Masal Kalesi",
+      "sourceIds": [
+        "CO-020"
+      ],
+      "images": [
+        236,
+        237
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-021",
+      "slug": "co-021-gokyuzune-yukselen-uc-soyut-kus",
+      "name": "Üç Kuş",
+      "sourceIds": [
+        "CO-021"
+      ],
+      "images": [
+        238,
+        239
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-022",
+      "slug": "co-022-ay-yelkenli-bulut-adasi",
+      "name": "Ay Yelkeni",
+      "sourceIds": [
+        "CO-022"
+      ],
+      "images": [
+        240,
+        241
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-023",
+      "slug": "co-023-renkli-geometrik-vadi",
+      "name": "Renkli Vadi",
+      "sourceIds": [
+        "CO-023"
+      ],
+      "images": [
+        242,
+        243
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-025",
+      "slug": "co-025-renkli-oyuncak-blok-sehir",
+      "name": "Oyuncak Şehir",
+      "sourceIds": [
+        "CO-025"
+      ],
+      "images": [
+        244,
+        245
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-026",
+      "slug": "co-026-ormanda-oturan-ayi",
+      "name": "Ormandaki Ayı",
+      "sourceIds": [
+        "CO-026"
+      ],
+      "images": [
+        246,
+        247
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-029",
+      "slug": "co-029-buzdaginda-kutup-ayisi-ve-aurora",
+      "name": "Kutup Ayısı",
+      "sourceIds": [
+        "CO-029"
+      ],
+      "images": [
+        248,
+        249
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-030",
+      "slug": "co-030-renkli-panoramik-tren",
+      "name": "Renkli Tren",
+      "sourceIds": [
+        "CO-030",
+        "CO-032"
+      ],
+      "images": [
+        250,
+        251,
+        254,
+        255
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-102",
+      "slug": "co-102-anne-ve-bebek-oturan-model",
+      "name": "Oturan Anne",
+      "sourceIds": [
+        "CO-102"
+      ],
+      "images": [
+        258
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-103",
+      "slug": "co-103-anne-ve-bebek-genis-kartela",
+      "name": "Anne Kucağı",
+      "sourceIds": [
+        "CO-103"
+      ],
+      "images": [
+        259
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CO-104",
+      "slug": "co-104-anne-ve-bebek-adacayi",
+      "name": "Anne ve Bebek",
+      "sourceIds": [
+        "CO-104"
+      ],
+      "images": [
+        260
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-001",
+      "slug": "dg-001-kanyon-vadisi",
+      "name": "Kanyon Nehri",
+      "sourceIds": [
+        "DG-001"
+      ],
+      "images": [
+        261
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-127",
+      "slug": "gunesli-kanyon",
+      "name": "Güneşli Kanyon",
+      "sourceIds": [
+        "DG-001"
+      ],
+      "images": [
+        262
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-002",
+      "slug": "dg-002-ginkgo-dali",
+      "name": "Ginkgo Dalı",
+      "sourceIds": [
+        "DG-002"
+      ],
+      "images": [
+        263
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-003",
+      "slug": "dg-003-nehir-deltasi",
+      "name": "Nehir Deltası",
+      "sourceIds": [
+        "DG-003"
+      ],
+      "images": [
+        264
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-004",
+      "slug": "dg-004-zeytinlik",
+      "name": "Zeytin Ağacı",
+      "sourceIds": [
+        "DG-004"
+      ],
+      "images": [
+        265
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-128",
+      "slug": "iki-zeytin",
+      "name": "İki Zeytin",
+      "sourceIds": [
+        "DG-004"
+      ],
+      "images": [
+        266
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-129",
+      "slug": "zeytinlik",
+      "name": "Zeytinlik",
+      "sourceIds": [
+        "DG-004"
+      ],
+      "images": [
+        267
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-005",
+      "slug": "dg-005-terasli-yamaclar",
+      "name": "Teraslı Yamaçlar",
+      "sourceIds": [
+        "DG-005"
+      ],
+      "images": [
+        268
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-006",
+      "slug": "dg-006-selale-kayaliklari",
+      "name": "Şelale Kayalıkları",
+      "sourceIds": [
+        "DG-006"
+      ],
+      "images": [
+        269
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-130",
+      "slug": "selale-havuzu",
+      "name": "Şelale Havuzu",
+      "sourceIds": [
+        "DG-006"
+      ],
+      "images": [
+        270
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-131",
+      "slug": "mavi-selale",
+      "name": "Mavi Şelale",
+      "sourceIds": [
+        "DG-006"
+      ],
+      "images": [
+        271
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-007",
+      "slug": "dg-007-egrelti-otu",
+      "name": "Eğrelti Otu",
+      "sourceIds": [
+        "DG-007"
+      ],
+      "images": [
+        272
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-008",
+      "slug": "dg-008-kum-tepeleri-ve-vaha",
+      "name": "Kum Vahası",
+      "sourceIds": [
+        "DG-008"
+      ],
+      "images": [
+        273
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-132",
+      "slug": "vaha-halkasi",
+      "name": "Vaha Halkası",
+      "sourceIds": [
+        "DG-008"
+      ],
+      "images": [
+        274
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-133",
+      "slug": "palmiyeli-vaha",
+      "name": "Palmiyeli Vaha",
+      "sourceIds": [
+        "DG-008"
+      ],
+      "images": [
+        275
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-009",
+      "slug": "dg-009-buzul-vadisi",
+      "name": "Buzul Vadisi",
+      "sourceIds": [
+        "DG-009"
+      ],
+      "images": [
+        276
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-134",
+      "slug": "buzul-daglari",
+      "name": "Buzul Dağları",
+      "sourceIds": [
+        "DG-009"
+      ],
+      "images": [
+        277
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-010",
+      "slug": "dg-010-volkanik-akis",
+      "name": "Volkanik Akış",
+      "sourceIds": [
+        "DG-010"
+      ],
+      "images": [
+        278
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-010B",
+      "slug": "dg-010b-volkanik-arazi",
+      "name": "Volkanik Arazi",
+      "sourceIds": [
+        "DG-010B"
+      ],
+      "images": [
+        279
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-011",
+      "slug": "dg-011-sahil-ucurumlari",
+      "name": "Sahil Uçurumları",
+      "sourceIds": [
+        "DG-011"
+      ],
+      "images": [
+        280
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-012",
+      "slug": "dg-012-bataklik-havuzlari",
+      "name": "Bataklık Adaları",
+      "sourceIds": [
+        "DG-012"
+      ],
+      "images": [
+        281
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-135",
+      "slug": "bataklik-akisi",
+      "name": "Bataklık Akışı",
+      "sourceIds": [
+        "DG-012"
+      ],
+      "images": [
+        282
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-013",
+      "slug": "dg-013-monstera-kanopisi",
+      "name": "Monstera Kanopisi",
+      "sourceIds": [
+        "DG-013"
+      ],
+      "images": [
+        283
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-014",
+      "slug": "dg-014-sonbahar-akcaagac",
+      "name": "Sonbahar Akçaağaç",
+      "sourceIds": [
+        "DG-014"
+      ],
+      "images": [
+        284
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-014B",
+      "slug": "dg-014b-sonbahar-ormani",
+      "name": "Sonbahar Ormanı",
+      "sourceIds": [
+        "DG-014B"
+      ],
+      "images": [
+        285
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-014C",
+      "slug": "dg-014c-sonbahar-tepeleri",
+      "name": "Sonbahar Tepeleri",
+      "sourceIds": [
+        "DG-014C"
+      ],
+      "images": [
+        286
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-136",
+      "slug": "sonbahar-ufku",
+      "name": "Sonbahar Ufku",
+      "sourceIds": [
+        "DG-014C"
+      ],
+      "images": [
+        287
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-015",
+      "slug": "dg-015-bugday-dalgalari",
+      "name": "Buğday Dalgaları",
+      "sourceIds": [
+        "DG-015"
+      ],
+      "images": [
+        288
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-015B",
+      "slug": "dg-015b-bugday-tarlasi",
+      "name": "Buğday Tarlası",
+      "sourceIds": [
+        "DG-015B"
+      ],
+      "images": [
+        289
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-015C",
+      "slug": "dg-015c-tarla-ruzgari",
+      "name": "Tarla Rüzgârı",
+      "sourceIds": [
+        "DG-015C"
+      ],
+      "images": [
+        290
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-137",
+      "slug": "tarla-akisi",
+      "name": "Tarla Akışı",
+      "sourceIds": [
+        "DG-015C"
+      ],
+      "images": [
+        291
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-016",
+      "slug": "dg-016-bag-teraslari",
+      "name": "Bağ Terasları",
+      "sourceIds": [
+        "DG-016"
+      ],
+      "images": [
+        292
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-016B",
+      "slug": "dg-016b-bag-yamaclari",
+      "name": "Bağ Yamaçları",
+      "sourceIds": [
+        "DG-016B"
+      ],
+      "images": [
+        293
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-138",
+      "slug": "bag-ufku",
+      "name": "Bağ Ufku",
+      "sourceIds": [
+        "DG-016B"
+      ],
+      "images": [
+        294
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-017",
+      "slug": "dg-017-alp-cayiri",
+      "name": "Alp Çayırı",
+      "sourceIds": [
+        "DG-017"
+      ],
+      "images": [
+        295
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-139",
+      "slug": "alp-vadisi",
+      "name": "Alp Vadisi",
+      "sourceIds": [
+        "DG-017"
+      ],
+      "images": [
+        296
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DK-140",
+      "slug": "alp-cicekleri",
+      "name": "Alp Çiçekleri",
+      "sourceIds": [
+        "DG-017"
+      ],
+      "images": [
+        297
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-018",
+      "slug": "dg-018-col-mesa-katmanlari",
+      "name": "Çöl Mesa Katmanları",
+      "sourceIds": [
+        "DG-018"
+      ],
+      "images": [
+        298
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-018B",
+      "slug": "dg-018b-mesa-vadisi",
+      "name": "Mesa Vadisi",
+      "sourceIds": [
+        "DG-018B"
+      ],
+      "images": [
+        299,
+        300
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-019",
+      "slug": "dg-019-bazalt-kiyisi",
+      "name": "Bazalt Kıyısı",
+      "sourceIds": [
+        "DG-019"
+      ],
+      "images": [
+        301
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-020",
+      "slug": "dg-020-bulutlu-dag-sirtlari",
+      "name": "Bulutlu Dağ Sırtları",
+      "sourceIds": [
+        "DG-020"
+      ],
+      "images": [
+        302
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-021",
+      "slug": "dg-021-gelgit-ovalari",
+      "name": "Gelgit Ovaları",
+      "sourceIds": [
+        "DG-021"
+      ],
+      "images": [
+        303
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-022",
+      "slug": "dg-022-gol-adalari",
+      "name": "Göl Adaları",
+      "sourceIds": [
+        "DG-022"
+      ],
+      "images": [
+        304
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-023",
+      "slug": "dg-023-nehir-dirsegi",
+      "name": "Nehir Dirseği",
+      "sourceIds": [
+        "DG-023"
+      ],
+      "images": [
+        305
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-024",
+      "slug": "dg-024-kiyi-kumullari",
+      "name": "Kıyı Kumulları",
+      "sourceIds": [
+        "DG-024"
+      ],
+      "images": [
+        306
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-025",
+      "slug": "dg-025-yagmur-ormani-kanopisi",
+      "name": "Yağmur Ormanı Kanopisi",
+      "sourceIds": [
+        "DG-025"
+      ],
+      "images": [
+        307
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-026",
+      "slug": "dg-026-yosunlu-kayalar",
+      "name": "Yosunlu Kayalar",
+      "sourceIds": [
+        "DG-026"
+      ],
+      "images": [
+        308
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-027",
+      "slug": "dg-027-kar-suruklenmeleri",
+      "name": "Kar Sürüklenmeleri",
+      "sourceIds": [
+        "DG-027"
+      ],
+      "images": [
+        309
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-028",
+      "slug": "dg-028-sis-katmanlari",
+      "name": "Sis Katmanları",
+      "sourceIds": [
+        "DG-028"
+      ],
+      "images": [
+        310
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-029",
+      "slug": "dg-029-lotus-goleti",
+      "name": "Lotus Goleti",
+      "sourceIds": [
+        "DG-029"
+      ],
+      "images": [
+        311
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-030",
+      "slug": "dg-030-akik-halkalari",
+      "name": "Akik Halkaları",
+      "sourceIds": [
+        "DG-030"
+      ],
+      "images": [
+        312
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-031",
+      "slug": "dg-031-cakil-kiyisi",
+      "name": "Çakıl Kıyısı",
+      "sourceIds": [
+        "DG-031"
+      ],
+      "images": [
+        313
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-032",
+      "slug": "dg-032-yosun-adaciklari",
+      "name": "Yosun Adacıkları",
+      "sourceIds": [
+        "DG-032"
+      ],
+      "images": [
+        314
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-033",
+      "slug": "dg-033-mantar-korusu",
+      "name": "Mantar Korusu",
+      "sourceIds": [
+        "DG-033"
+      ],
+      "images": [
+        315
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-034",
+      "slug": "dg-034-kamelya-cicegi",
+      "name": "Kamelya Çiçeği",
+      "sourceIds": [
+        "DG-034"
+      ],
+      "images": [
+        316
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-035",
+      "slug": "dg-035-manolya-cicekleri",
+      "name": "Manolya Çiçekleri",
+      "sourceIds": [
+        "DG-035"
+      ],
+      "images": [
+        317
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-036",
+      "slug": "dg-036-egreltinin-acilisi",
+      "name": "Eğreltinin Açılışı",
+      "sourceIds": [
+        "DG-036"
+      ],
+      "images": [
+        318
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-037",
+      "slug": "dg-037-dalga-yayi",
+      "name": "Dalga Yayı",
+      "sourceIds": [
+        "DG-037"
+      ],
+      "images": [
+        319
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-038",
+      "slug": "dg-038-jeotermal-havuzlar",
+      "name": "Jeotermal Havuzlar",
+      "sourceIds": [
+        "DG-038"
+      ],
+      "images": [
+        320
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-039",
+      "slug": "dg-039-kirec-teraslari",
+      "name": "Kireç Terasları",
+      "sourceIds": [
+        "DG-039"
+      ],
+      "images": [
+        321
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-040",
+      "slug": "dg-040-tuz-ovasi",
+      "name": "Tuz Ovası",
+      "sourceIds": [
+        "DG-040"
+      ],
+      "images": [
+        322
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-041",
+      "slug": "dg-041-yagmur-perdesi",
+      "name": "Yağmur Perdesi",
+      "sourceIds": [
+        "DG-041"
+      ],
+      "images": [
+        323
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-042",
+      "slug": "dg-042-yaprakta-ciy",
+      "name": "Yaprakta Çiy",
+      "sourceIds": [
+        "DG-042"
+      ],
+      "images": [
+        324
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-043",
+      "slug": "dg-043-yosun-ormani",
+      "name": "Yosun Ormanı",
+      "sourceIds": [
+        "DG-043"
+      ],
+      "images": [
+        325
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-044",
+      "slug": "dg-044-kum-tasi-kemerleri",
+      "name": "Kum Taşı Kemerleri",
+      "sourceIds": [
+        "DG-044"
+      ],
+      "images": [
+        326
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-046",
+      "slug": "dg-046-buz-kutleleri",
+      "name": "Buz Kütleleri",
+      "sourceIds": [
+        "DG-046"
+      ],
+      "images": [
+        327
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-047",
+      "slug": "dg-047-bulut-denizi",
+      "name": "Bulut Denizi",
+      "sourceIds": [
+        "DG-047"
+      ],
+      "images": [
+        328
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-048",
+      "slug": "dg-048-kaktus-vadisi",
+      "name": "Kaktüs Vadisi",
+      "sourceIds": [
+        "DG-048"
+      ],
+      "images": [
+        329
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-050",
+      "slug": "dg-050-tohum-kesiti",
+      "name": "Tohum Kesiti",
+      "sourceIds": [
+        "DG-050"
+      ],
+      "images": [
+        330
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-051",
+      "slug": "dg-051-liken-kolonisi",
+      "name": "Liken Kolonisi",
+      "sourceIds": [
+        "DG-051"
+      ],
+      "images": [
+        331
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-052",
+      "slug": "dg-052-gol-halkalari",
+      "name": "Göl Halkaları",
+      "sourceIds": [
+        "DG-052"
+      ],
+      "images": [
+        332
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-053",
+      "slug": "dg-053-bambu-bogumlari",
+      "name": "Bambu Boğumları",
+      "sourceIds": [
+        "DG-053"
+      ],
+      "images": [
+        333
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-055",
+      "slug": "dg-055-gelgit-havuzlari",
+      "name": "Gelgit Havuzları",
+      "sourceIds": [
+        "DG-055"
+      ],
+      "images": [
+        334
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-058",
+      "slug": "dg-058-kabuk-plakalari",
+      "name": "Kabuk Plakaları",
+      "sourceIds": [
+        "DG-058"
+      ],
+      "images": [
+        335
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-060",
+      "slug": "dg-060-kum-topografyasi",
+      "name": "Kum Topografyası",
+      "sourceIds": [
+        "DG-060"
+      ],
+      "images": [
+        336
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-061",
+      "slug": "dg-061-gelincik-kesiti",
+      "name": "Gelincik Kesiti",
+      "sourceIds": [
+        "DG-061"
+      ],
+      "images": [
+        337
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "DG-062",
+      "slug": "dg-062-mantar-lamelleri",
+      "name": "Mantar Lamelleri",
+      "sourceIds": [
+        "DG-062"
+      ],
+      "images": [
+        338
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-001",
+      "slug": "fh-001-analog-fotografcilik",
+      "name": "Analog Fotoğrafçılık",
+      "sourceIds": [
+        "FH-001"
+      ],
+      "images": [
+        341
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-002",
+      "slug": "fh-002-yol-bisikleti",
+      "name": "Yol Bisikleti",
+      "sourceIds": [
+        "FH-002"
+      ],
+      "images": [
+        342
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-003",
+      "slug": "fh-003-teleskop-gozlemi",
+      "name": "Teleskop Gözlemi",
+      "sourceIds": [
+        "FH-003"
+      ],
+      "images": [
+        343
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-004",
+      "slug": "fh-004-caz-saksofon",
+      "name": "Caz Saksofon",
+      "sourceIds": [
+        "FH-004"
+      ],
+      "images": [
+        344
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-005",
+      "slug": "fh-005-dag-yuruyusu",
+      "name": "Dağ Yürüyüşü",
+      "sourceIds": [
+        "FH-005"
+      ],
+      "images": [
+        345
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-006",
+      "slug": "fh-006-yelken",
+      "name": "Yelken",
+      "sourceIds": [
+        "FH-006"
+      ],
+      "images": [
+        346
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-007",
+      "slug": "fh-007-satranc",
+      "name": "Satranç",
+      "sourceIds": [
+        "FH-007"
+      ],
+      "images": [
+        347
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-008",
+      "slug": "fh-008-seramik",
+      "name": "Seramik",
+      "sourceIds": [
+        "FH-008"
+      ],
+      "images": [
+        348
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-009",
+      "slug": "fh-009-elektro-gitar",
+      "name": "Elektro Gitar",
+      "sourceIds": [
+        "FH-009"
+      ],
+      "images": [
+        349
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-010",
+      "slug": "fh-010-sorf",
+      "name": "Sörf",
+      "sourceIds": [
+        "FH-010"
+      ],
+      "images": [
+        350
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-011",
+      "slug": "fh-011-balikcilik",
+      "name": "Balıkçılık",
+      "sourceIds": [
+        "FH-011"
+      ],
+      "images": [
+        351
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-012",
+      "slug": "fh-012-havacilik",
+      "name": "Havacılık",
+      "sourceIds": [
+        "FH-012"
+      ],
+      "images": [
+        352
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-013",
+      "slug": "fh-013-klasik-otomobil",
+      "name": "Klasik Otomobil",
+      "sourceIds": [
+        "FH-013"
+      ],
+      "images": [
+        353
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-014",
+      "slug": "fh-014-kahve",
+      "name": "Kahve",
+      "sourceIds": [
+        "FH-014"
+      ],
+      "images": [
+        354
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-015",
+      "slug": "fh-015-kitap-okuma",
+      "name": "Kitap Okuma",
+      "sourceIds": [
+        "FH-015"
+      ],
+      "images": [
+        355
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-016",
+      "slug": "fh-016-bitki-yetistirme",
+      "name": "Bitki Yetiştirme",
+      "sourceIds": [
+        "FH-016"
+      ],
+      "images": [
+        356
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-017",
+      "slug": "fh-017-aricilik",
+      "name": "Arıcılık",
+      "sourceIds": [
+        "FH-017"
+      ],
+      "images": [
+        357
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-018",
+      "slug": "fh-018-okculuk",
+      "name": "Okçuluk",
+      "sourceIds": [
+        "FH-018"
+      ],
+      "images": [
+        358
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-019",
+      "slug": "fh-019-basketbol",
+      "name": "Basketbol",
+      "sourceIds": [
+        "FH-019"
+      ],
+      "images": [
+        359
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-020",
+      "slug": "fh-020-futbol",
+      "name": "Futbol",
+      "sourceIds": [
+        "FH-020"
+      ],
+      "images": [
+        360
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-021",
+      "slug": "fh-021-tenis",
+      "name": "Tenis",
+      "sourceIds": [
+        "FH-021"
+      ],
+      "images": [
+        361
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-022",
+      "slug": "fh-022-kayak",
+      "name": "Kayak",
+      "sourceIds": [
+        "FH-022"
+      ],
+      "images": [
+        362
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-023",
+      "slug": "fh-023-dalis",
+      "name": "Dalış",
+      "sourceIds": [
+        "FH-023"
+      ],
+      "images": [
+        363
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-024",
+      "slug": "fh-024-kosuculuk",
+      "name": "Koşuculuk",
+      "sourceIds": [
+        "FH-024"
+      ],
+      "images": [
+        364
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-025",
+      "slug": "fh-025-kamp",
+      "name": "Kamp",
+      "sourceIds": [
+        "FH-025"
+      ],
+      "images": [
+        365
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-026",
+      "slug": "fh-026-uzay",
+      "name": "Uzay",
+      "sourceIds": [
+        "FH-026"
+      ],
+      "images": [
+        366
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-027",
+      "slug": "fh-027-paleontoloji",
+      "name": "Paleontoloji",
+      "sourceIds": [
+        "FH-027"
+      ],
+      "images": [
+        367
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-028",
+      "slug": "fh-028-kus-gozlemi",
+      "name": "Kuş Gözlemi",
+      "sourceIds": [
+        "FH-028"
+      ],
+      "images": [
+        368
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-029",
+      "slug": "fh-029-ahsap-isleri",
+      "name": "Ahşap İşleri",
+      "sourceIds": [
+        "FH-029"
+      ],
+      "images": [
+        369
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-030",
+      "slug": "fh-030-dikis",
+      "name": "Dikiş",
+      "sourceIds": [
+        "FH-030"
+      ],
+      "images": [
+        370
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-031",
+      "slug": "fh-031-plak-koleksiyonu",
+      "name": "Plak Koleksiyonu",
+      "sourceIds": [
+        "FH-031"
+      ],
+      "images": [
+        371
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-032",
+      "slug": "fh-032-davul",
+      "name": "Davul",
+      "sourceIds": [
+        "FH-032"
+      ],
+      "images": [
+        372
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-033",
+      "slug": "fh-033-piyano",
+      "name": "Piyano",
+      "sourceIds": [
+        "FH-033"
+      ],
+      "images": [
+        373
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-034",
+      "slug": "fh-034-mutfak",
+      "name": "Mutfak",
+      "sourceIds": [
+        "FH-034"
+      ],
+      "images": [
+        374
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-035",
+      "slug": "fh-035-ekmek-yapimi",
+      "name": "Ekmek Yapımı",
+      "sourceIds": [
+        "FH-035"
+      ],
+      "images": [
+        375
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-036",
+      "slug": "fh-036-cay-ritueli",
+      "name": "Çay Ritüeli",
+      "sourceIds": [
+        "FH-036"
+      ],
+      "images": [
+        376
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-037",
+      "slug": "fh-037-saat-koleksiyonu",
+      "name": "Saat Koleksiyonu",
+      "sourceIds": [
+        "FH-037"
+      ],
+      "images": [
+        377
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-038",
+      "slug": "fh-038-sneaker-koleksiyonu",
+      "name": "Sneaker Koleksiyonu",
+      "sourceIds": [
+        "FH-038"
+      ],
+      "images": [
+        378
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-039",
+      "slug": "fh-039-dovme-sanati",
+      "name": "Dövme Sanatı",
+      "sourceIds": [
+        "FH-039"
+      ],
+      "images": [
+        379
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-040",
+      "slug": "fh-040-kaligrafi",
+      "name": "Kaligrafi",
+      "sourceIds": [
+        "FH-040"
+      ],
+      "images": [
+        380
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-041",
+      "slug": "fh-041-yapboz",
+      "name": "Yapboz",
+      "sourceIds": [
+        "FH-041"
+      ],
+      "images": [
+        381
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-042",
+      "slug": "fh-042-masa-oyunu",
+      "name": "Masa Oyunu",
+      "sourceIds": [
+        "FH-042"
+      ],
+      "images": [
+        382
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-043",
+      "slug": "fh-043-dijital-oyun",
+      "name": "Dijital Oyun",
+      "sourceIds": [
+        "FH-043"
+      ],
+      "images": [
+        383
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-044",
+      "slug": "fh-044-kodlama",
+      "name": "Kodlama",
+      "sourceIds": [
+        "FH-044"
+      ],
+      "images": [
+        384
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-045",
+      "slug": "fh-045-robotik",
+      "name": "Robotik",
+      "sourceIds": [
+        "FH-045"
+      ],
+      "images": [
+        385
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-046",
+      "slug": "fh-046-drone",
+      "name": "Drone",
+      "sourceIds": [
+        "FH-046"
+      ],
+      "images": [
+        386
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-047",
+      "slug": "fh-047-tren",
+      "name": "Tren",
+      "sourceIds": [
+        "FH-047"
+      ],
+      "images": [
+        387
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-048",
+      "slug": "fh-048-deniz-feneri",
+      "name": "Deniz Feneri",
+      "sourceIds": [
+        "FH-048"
+      ],
+      "images": [
+        388
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-049",
+      "slug": "fh-049-binicilik",
+      "name": "Binicilik",
+      "sourceIds": [
+        "FH-049"
+      ],
+      "images": [
+        389
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-050",
+      "slug": "fh-050-yoga",
+      "name": "Yoga",
+      "sourceIds": [
+        "FH-050"
+      ],
+      "images": [
+        390
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-051",
+      "slug": "fh-051-formula-yarisi",
+      "name": "Formula Yarışı",
+      "sourceIds": [
+        "FH-051"
+      ],
+      "images": [
+        391
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-052",
+      "slug": "fh-052-motokros",
+      "name": "Motokros",
+      "sourceIds": [
+        "FH-052"
+      ],
+      "images": [
+        392
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-053",
+      "slug": "fh-053-kaykay",
+      "name": "Kaykay",
+      "sourceIds": [
+        "FH-053"
+      ],
+      "images": [
+        393
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-054",
+      "slug": "fh-054-voleybol",
+      "name": "Voleybol",
+      "sourceIds": [
+        "FH-054"
+      ],
+      "images": [
+        394
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-055",
+      "slug": "fh-055-yuzme",
+      "name": "Yüzme",
+      "sourceIds": [
+        "FH-055"
+      ],
+      "images": [
+        395
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-056",
+      "slug": "fh-056-masa-tenisi",
+      "name": "Masa Tenisi",
+      "sourceIds": [
+        "FH-056"
+      ],
+      "images": [
+        396
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-057",
+      "slug": "fh-057-badminton",
+      "name": "Badminton",
+      "sourceIds": [
+        "FH-057"
+      ],
+      "images": [
+        397
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-058",
+      "slug": "fh-058-boks",
+      "name": "Boks",
+      "sourceIds": [
+        "FH-058"
+      ],
+      "images": [
+        398
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-059",
+      "slug": "fh-059-dovus-sanatlari",
+      "name": "Dövüş Sanatları",
+      "sourceIds": [
+        "FH-059"
+      ],
+      "images": [
+        399
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-060",
+      "slug": "fh-060-tirmanis",
+      "name": "Tırmanış",
+      "sourceIds": [
+        "FH-060"
+      ],
+      "images": [
+        400
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-062",
+      "slug": "fh-062-kurek",
+      "name": "Kürek",
+      "sourceIds": [
+        "FH-062"
+      ],
+      "images": [
+        402
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-063",
+      "slug": "fh-063-buz-hokeyi",
+      "name": "Buz Hokeyi",
+      "sourceIds": [
+        "FH-063"
+      ],
+      "images": [
+        403
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-064",
+      "slug": "fh-064-amerikan-futbolu",
+      "name": "Amerikan Futbolu",
+      "sourceIds": [
+        "FH-064"
+      ],
+      "images": [
+        404
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-065",
+      "slug": "fh-065-beyzbol",
+      "name": "Beyzbol",
+      "sourceIds": [
+        "FH-065"
+      ],
+      "images": [
+        405
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-066",
+      "slug": "fh-066-golf",
+      "name": "Golf",
+      "sourceIds": [
+        "FH-066"
+      ],
+      "images": [
+        406
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-067",
+      "slug": "fh-067-hentbol",
+      "name": "Hentbol",
+      "sourceIds": [
+        "FH-067"
+      ],
+      "images": [
+        407
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-068",
+      "slug": "fh-068-eskrim",
+      "name": "Eskrim",
+      "sourceIds": [
+        "FH-068"
+      ],
+      "images": [
+        408
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-069",
+      "slug": "fh-069-jimnastik",
+      "name": "Jimnastik",
+      "sourceIds": [
+        "FH-069"
+      ],
+      "images": [
+        409
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-070",
+      "slug": "fh-070-bale",
+      "name": "Bale",
+      "sourceIds": [
+        "FH-070"
+      ],
+      "images": [
+        410
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-071",
+      "slug": "fh-071-sinema",
+      "name": "Sinema",
+      "sourceIds": [
+        "FH-071"
+      ],
+      "images": [
+        411
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-072",
+      "slug": "fh-072-tiyatro",
+      "name": "Tiyatro",
+      "sourceIds": [
+        "FH-072"
+      ],
+      "images": [
+        412
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-073",
+      "slug": "fh-073-resim",
+      "name": "Resim",
+      "sourceIds": [
+        "FH-073"
+      ],
+      "images": [
+        413
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-074",
+      "slug": "fh-074-heykel",
+      "name": "Heykel",
+      "sourceIds": [
+        "FH-074"
+      ],
+      "images": [
+        414
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-075",
+      "slug": "fh-075-origami",
+      "name": "Origami",
+      "sourceIds": [
+        "FH-075"
+      ],
+      "images": [
+        415
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-076",
+      "slug": "fh-076-orgu",
+      "name": "Örgü",
+      "sourceIds": [
+        "FH-076"
+      ],
+      "images": [
+        416
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-077",
+      "slug": "fh-077-bonsai",
+      "name": "Bonsai",
+      "sourceIds": [
+        "FH-077"
+      ],
+      "images": [
+        417
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-078",
+      "slug": "fh-078-akvaryum",
+      "name": "Akvaryum",
+      "sourceIds": [
+        "FH-078"
+      ],
+      "images": [
+        418
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-079",
+      "slug": "fh-079-kopek-sevgisi",
+      "name": "Köpek Sevgisi",
+      "sourceIds": [
+        "FH-079"
+      ],
+      "images": [
+        419
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-080",
+      "slug": "fh-080-kedi-sevgisi",
+      "name": "Kedi Sevgisi",
+      "sourceIds": [
+        "FH-080"
+      ],
+      "images": [
+        420
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-081",
+      "slug": "fh-081-sahincilik",
+      "name": "Şahincilik",
+      "sourceIds": [
+        "FH-081"
+      ],
+      "images": [
+        421
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-082",
+      "slug": "fh-082-kelebek-gozlemi",
+      "name": "Kelebek Gözlemi",
+      "sourceIds": [
+        "FH-082"
+      ],
+      "images": [
+        422
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-083",
+      "slug": "fh-083-jeoloji",
+      "name": "Jeoloji",
+      "sourceIds": [
+        "FH-083"
+      ],
+      "images": [
+        423
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-084",
+      "slug": "fh-084-arkeoloji",
+      "name": "Arkeoloji",
+      "sourceIds": [
+        "FH-084"
+      ],
+      "images": [
+        424
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-085",
+      "slug": "fh-085-meteoroloji",
+      "name": "Meteoroloji",
+      "sourceIds": [
+        "FH-085"
+      ],
+      "images": [
+        425
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-086",
+      "slug": "fh-086-haritacilik",
+      "name": "Haritacılık",
+      "sourceIds": [
+        "FH-086"
+      ],
+      "images": [
+        426
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-087",
+      "slug": "fh-087-karavan-seyahati",
+      "name": "Karavan Seyahati",
+      "sourceIds": [
+        "FH-087"
+      ],
+      "images": [
+        427
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-088",
+      "slug": "fh-088-motosiklet-turu",
+      "name": "Motosiklet Turu",
+      "sourceIds": [
+        "FH-088"
+      ],
+      "images": [
+        428
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-089",
+      "slug": "fh-089-arazi-araci",
+      "name": "Arazi Aracı",
+      "sourceIds": [
+        "FH-089"
+      ],
+      "images": [
+        429
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-090",
+      "slug": "fh-090-klasik-scooter",
+      "name": "Klasik Scooter",
+      "sourceIds": [
+        "FH-090"
+      ],
+      "images": [
+        430
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-091",
+      "slug": "fh-091-roketcilik",
+      "name": "Roketçilik",
+      "sourceIds": [
+        "FH-091"
+      ],
+      "images": [
+        431
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-092",
+      "slug": "fh-092-model-ucak",
+      "name": "Model Uçak",
+      "sourceIds": [
+        "FH-092"
+      ],
+      "images": [
+        432
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-093",
+      "slug": "fh-093-rc-araba",
+      "name": "RC Araba",
+      "sourceIds": [
+        "FH-093"
+      ],
+      "images": [
+        433
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-094",
+      "slug": "fh-094-peynir-yapimi",
+      "name": "Peynir Yapımı",
+      "sourceIds": [
+        "FH-094"
+      ],
+      "images": [
+        434
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-095",
+      "slug": "fh-095-sabun-yapimi",
+      "name": "Sabun Yapımı",
+      "sourceIds": [
+        "FH-095"
+      ],
+      "images": [
+        435
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-096",
+      "slug": "fh-096-mum-yapimi",
+      "name": "Mum Yapımı",
+      "sourceIds": [
+        "FH-096"
+      ],
+      "images": [
+        436
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-098",
+      "slug": "fh-098-teraryum",
+      "name": "Teraryum",
+      "sourceIds": [
+        "FH-098"
+      ],
+      "images": [
+        437
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "FH-100",
+      "slug": "fh-100-illuzyon",
+      "name": "İllüzyon",
+      "sourceIds": [
+        "FH-100"
+      ],
+      "images": [
+        438
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "EK-002",
+      "slug": "ek-002-orman-tilkisi",
+      "name": "Orman Tilkisi",
+      "sourceIds": [
+        "EK-002"
+      ],
+      "images": [
+        340
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KO-001",
+      "slug": "ko-001-anne-ve-bebek",
+      "name": "Anne ve Bebek",
+      "sourceIds": [
+        "KO-001"
+      ],
+      "images": [
+        439,
+        440
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KO-002",
+      "slug": "ko-002-kobalt-roket",
+      "name": "Kobalt Roket",
+      "sourceIds": [
+        "KO-002"
+      ],
+      "images": [
+        441,
+        442
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KO-003",
+      "slug": "ko-003-kanyon-duvari",
+      "name": "Kanyon Duvarı",
+      "sourceIds": [
+        "KO-003"
+      ],
+      "images": [
+        443
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "NB-001",
+      "slug": "nb-001-topografik-katlar",
+      "name": "Topografik Katlar",
+      "sourceIds": [
+        "NB-001"
+      ],
+      "images": [
+        444
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "NB-002",
+      "slug": "nb-002-mimari-kemerler",
+      "name": "Mimari Kemerler",
+      "sourceIds": [
+        "NB-002"
+      ],
+      "images": [
+        445
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "NB-003",
+      "slug": "nb-003-soyut-monolit",
+      "name": "Soyut Monolit",
+      "sourceIds": [
+        "NB-003"
+      ],
+      "images": [
+        446
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "NB-004",
+      "slug": "nb-004-modernist-ritim",
+      "name": "Modernist Ritim",
+      "sourceIds": [
+        "NB-004"
+      ],
+      "images": [
+        447
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-001",
+      "slug": "cx-001-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-001"
+      ],
+      "images": [
+        448,
+        449,
+        450
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-002",
+      "slug": "cx-002-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-002"
+      ],
+      "images": [
+        451
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-004",
+      "slug": "cx-004-orman-hayvanlari",
+      "name": "Orman Hayvanları",
+      "sourceIds": [
+        "CX-004"
+      ],
+      "images": [
+        452,
+        453
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-005",
+      "slug": "cx-005-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-005"
+      ],
+      "images": [
+        454,
+        455
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-006",
+      "slug": "cx-006-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-006"
+      ],
+      "images": [
+        456,
+        457
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-007",
+      "slug": "cx-007-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-007"
+      ],
+      "images": [
+        458
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-009",
+      "slug": "cx-009-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-009"
+      ],
+      "images": [
+        459,
+        460
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-014",
+      "slug": "cx-014-aslan-ve-orman",
+      "name": "Aslan ve Orman",
+      "sourceIds": [
+        "CX-014"
+      ],
+      "images": [
+        461,
+        462
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-015",
+      "slug": "cx-015-masal-satosu",
+      "name": "Masal Şatosu",
+      "sourceIds": [
+        "CX-015"
+      ],
+      "images": [
+        463
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-016",
+      "slug": "cx-016-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-016"
+      ],
+      "images": [
+        464
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-017",
+      "slug": "cx-017-gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "CX-017"
+      ],
+      "images": [
+        465
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-018",
+      "slug": "cx-018-dunya-haritasi",
+      "name": "Dünya Haritası",
+      "sourceIds": [
+        "CX-018"
+      ],
+      "images": [
+        466
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-020",
+      "slug": "cx-020-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-020"
+      ],
+      "images": [
+        467
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-021",
+      "slug": "cx-021-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-021"
+      ],
+      "images": [
+        468
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-022",
+      "slug": "cx-022-fil-ve-yapraklar",
+      "name": "Fil ve Yapraklar",
+      "sourceIds": [
+        "CX-022"
+      ],
+      "images": [
+        469
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-023",
+      "slug": "cx-023-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-023"
+      ],
+      "images": [
+        470
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-024",
+      "slug": "cx-024-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-024"
+      ],
+      "images": [
+        471
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-025",
+      "slug": "cx-025-aslan-ve-orman",
+      "name": "Aslan ve Orman",
+      "sourceIds": [
+        "CX-025"
+      ],
+      "images": [
+        472
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-026",
+      "slug": "cx-026-masal-satosu",
+      "name": "Masal Şatosu",
+      "sourceIds": [
+        "CX-026"
+      ],
+      "images": [
+        473
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-027",
+      "slug": "cx-027-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-027"
+      ],
+      "images": [
+        474
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-028",
+      "slug": "cx-028-dunya-haritasi",
+      "name": "Dünya Haritası",
+      "sourceIds": [
+        "CX-028"
+      ],
+      "images": [
+        475
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-029",
+      "slug": "cx-029-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-029"
+      ],
+      "images": [
+        476
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-030",
+      "slug": "cx-030-fil-ve-yapraklar",
+      "name": "Fil ve Yapraklar",
+      "sourceIds": [
+        "CX-030"
+      ],
+      "images": [
+        477
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-031",
+      "slug": "cx-031-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-031"
+      ],
+      "images": [
+        478
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-032",
+      "slug": "cx-032-aslan-ve-orman",
+      "name": "Aslan ve Orman",
+      "sourceIds": [
+        "CX-032"
+      ],
+      "images": [
+        479
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-033",
+      "slug": "cx-033-masal-satosu",
+      "name": "Masal Şatosu",
+      "sourceIds": [
+        "CX-033"
+      ],
+      "images": [
+        480
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-034",
+      "slug": "cx-034-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-034"
+      ],
+      "images": [
+        481
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-035",
+      "slug": "cx-035-gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "CX-035"
+      ],
+      "images": [
+        482
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-036",
+      "slug": "cx-036-dunya-haritasi",
+      "name": "Dünya Haritası",
+      "sourceIds": [
+        "CX-036"
+      ],
+      "images": [
+        483
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-056",
+      "slug": "cx-056-renkli-tepeler",
+      "name": "Renkli Tepeler",
+      "sourceIds": [
+        "CX-056"
+      ],
+      "images": [
+        484
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-057",
+      "slug": "cx-057-renkli-tepeler",
+      "name": "Renkli Tepeler",
+      "sourceIds": [
+        "CX-057"
+      ],
+      "images": [
+        485
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-058",
+      "slug": "cx-058-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-058"
+      ],
+      "images": [
+        486
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-059",
+      "slug": "cx-059-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-059"
+      ],
+      "images": [
+        487
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-060",
+      "slug": "cx-060-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-060"
+      ],
+      "images": [
+        488
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-061",
+      "slug": "cx-061-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-061"
+      ],
+      "images": [
+        489
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-062",
+      "slug": "cx-062-orman-hayvanlari",
+      "name": "Orman Hayvanları",
+      "sourceIds": [
+        "CX-062"
+      ],
+      "images": [
+        490
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-063",
+      "slug": "cx-063-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-063"
+      ],
+      "images": [
+        491
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-064",
+      "slug": "cx-064-tek-boynuzlu-at",
+      "name": "Tek Boynuzlu At",
+      "sourceIds": [
+        "CX-064"
+      ],
+      "images": [
+        492
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-065",
+      "slug": "cx-065-agac-ve-baykus",
+      "name": "Ağaç ve Baykuş",
+      "sourceIds": [
+        "CX-065"
+      ],
+      "images": [
+        493
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-066",
+      "slug": "cx-066-renkli-evler",
+      "name": "Renkli Evler",
+      "sourceIds": [
+        "CX-066"
+      ],
+      "images": [
+        494
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-067",
+      "slug": "cx-067-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-067"
+      ],
+      "images": [
+        495
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-068",
+      "slug": "cx-068-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-068"
+      ],
+      "images": [
+        496
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-069",
+      "slug": "cx-069-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-069"
+      ],
+      "images": [
+        497
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-070",
+      "slug": "cx-070-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-070"
+      ],
+      "images": [
+        498
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-071",
+      "slug": "cx-071-orman-hayvanlari",
+      "name": "Orman Hayvanları",
+      "sourceIds": [
+        "CX-071"
+      ],
+      "images": [
+        499
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-072",
+      "slug": "cx-072-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-072"
+      ],
+      "images": [
+        500
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-073",
+      "slug": "cx-073-tek-boynuzlu-at",
+      "name": "Tek Boynuzlu At",
+      "sourceIds": [
+        "CX-073"
+      ],
+      "images": [
+        501
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-074",
+      "slug": "cx-074-agac-ve-baykus",
+      "name": "Ağaç ve Baykuş",
+      "sourceIds": [
+        "CX-074"
+      ],
+      "images": [
+        502
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-075",
+      "slug": "cx-075-renkli-evler",
+      "name": "Renkli Evler",
+      "sourceIds": [
+        "CX-075"
+      ],
+      "images": [
+        503
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-076",
+      "slug": "cx-076-renkli-tepeler",
+      "name": "Renkli Tepeler",
+      "sourceIds": [
+        "CX-076"
+      ],
+      "images": [
+        504
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-077",
+      "slug": "cx-077-renkli-tepeler",
+      "name": "Renkli Tepeler",
+      "sourceIds": [
+        "CX-077"
+      ],
+      "images": [
+        505
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-078",
+      "slug": "cx-078-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-078"
+      ],
+      "images": [
+        506
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-079",
+      "slug": "cx-079-masal-satosu",
+      "name": "Masal Şatosu",
+      "sourceIds": [
+        "CX-079"
+      ],
+      "images": [
+        507
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-080",
+      "slug": "cx-080-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-080"
+      ],
+      "images": [
+        508
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-081",
+      "slug": "cx-081-dunya-haritasi",
+      "name": "Dünya Haritası",
+      "sourceIds": [
+        "CX-081"
+      ],
+      "images": [
+        509
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-082",
+      "slug": "cx-082-renkli-tepeler",
+      "name": "Renkli Tepeler",
+      "sourceIds": [
+        "CX-082"
+      ],
+      "images": [
+        510
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-083",
+      "slug": "cx-083-agac-ve-baykus",
+      "name": "Ağaç ve Baykuş",
+      "sourceIds": [
+        "CX-083"
+      ],
+      "images": [
+        511
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-084",
+      "slug": "cx-084-roket-ve-uzay",
+      "name": "Roket ve Uzay",
+      "sourceIds": [
+        "CX-084"
+      ],
+      "images": [
+        512
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-085",
+      "slug": "cx-085-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-085"
+      ],
+      "images": [
+        513
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-086",
+      "slug": "cx-086-gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "CX-086"
+      ],
+      "images": [
+        514
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-087",
+      "slug": "cx-087-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-087"
+      ],
+      "images": [
+        515
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-088",
+      "slug": "cx-088-zurafa-ve-orman",
+      "name": "Zürafa ve Orman",
+      "sourceIds": [
+        "CX-088"
+      ],
+      "images": [
+        516
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-089",
+      "slug": "cx-089-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-089"
+      ],
+      "images": [
+        517
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-090",
+      "slug": "cx-090-renkli-evler",
+      "name": "Renkli Evler",
+      "sourceIds": [
+        "CX-090"
+      ],
+      "images": [
+        518
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-091",
+      "slug": "cx-091-dinozor-ve-doga",
+      "name": "Dinozor ve Doğa",
+      "sourceIds": [
+        "CX-091"
+      ],
+      "images": [
+        519
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-092",
+      "slug": "cx-092-dinozor-ve-doga",
+      "name": "Dinozor ve Doğa",
+      "sourceIds": [
+        "CX-092"
+      ],
+      "images": [
+        520
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-093",
+      "slug": "cx-093-agac-ve-baykus",
+      "name": "Ağaç ve Baykuş",
+      "sourceIds": [
+        "CX-093"
+      ],
+      "images": [
+        521
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-094",
+      "slug": "cx-094-ayicik",
+      "name": "Ayıcık",
+      "sourceIds": [
+        "CX-094"
+      ],
+      "images": [
+        522
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-095",
+      "slug": "cx-095-dag-ve-orman",
+      "name": "Dağ ve Orman",
+      "sourceIds": [
+        "CX-095"
+      ],
+      "images": [
+        523
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-096",
+      "slug": "cx-096-gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "CX-096"
+      ],
+      "images": [
+        524
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-097",
+      "slug": "cx-097-balina-ve-deniz",
+      "name": "Balina ve Deniz",
+      "sourceIds": [
+        "CX-097"
+      ],
+      "images": [
+        525
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-098",
+      "slug": "cx-098-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "CX-098"
+      ],
+      "images": [
+        526
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-099",
+      "slug": "cx-099-renkli-evler",
+      "name": "Renkli Evler",
+      "sourceIds": [
+        "CX-099"
+      ],
+      "images": [
+        527
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-100",
+      "slug": "cx-100-ay-ve-yildizlar",
+      "name": "Ay ve Yıldızlar",
+      "sourceIds": [
+        "CX-100"
+      ],
+      "images": [
+        528
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-101",
+      "slug": "cx-101-dinozor-ve-doga",
+      "name": "Dinozor ve Doğa",
+      "sourceIds": [
+        "CX-101"
+      ],
+      "images": [
+        529
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-102",
+      "slug": "cx-102-cicek",
+      "name": "Çiçek",
+      "sourceIds": [
+        "CX-102"
+      ],
+      "images": [
+        530
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "CX-103",
+      "slug": "cx-103-gokkusagi",
+      "name": "Gökkuşağı",
+      "sourceIds": [
+        "CX-103"
+      ],
+      "images": [
+        531,
+        532
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "TW-003",
+      "slug": "tw-003-orman-gecidi",
+      "name": "Orman Geçidi",
+      "sourceIds": [
+        "TW-003"
+      ],
+      "images": [
+        533
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "TW-004",
+      "slug": "tw-004-halkali-gezegen",
+      "name": "Halkalı Gezegen",
+      "sourceIds": [
+        "TW-004"
+      ],
+      "images": [
+        534
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-005",
+      "slug": "py-005-karli-orman",
+      "name": "Karlı Orman",
+      "sourceIds": [
+        "PY-005"
+      ],
+      "images": [
+        535,
+        536,
+        537
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-006",
+      "slug": "py-006-dag-gecidi",
+      "name": "Dağ Geçidi",
+      "sourceIds": [
+        "PY-006"
+      ],
+      "images": [
+        538,
+        539
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-007",
+      "slug": "py-007-alp-golu",
+      "name": "Alp Gölü",
+      "sourceIds": [
+        "PY-007"
+      ],
+      "images": [
+        540,
+        541
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-009",
+      "slug": "py-009-tropik-ada",
+      "name": "Tropik Ada",
+      "sourceIds": [
+        "PY-009"
+      ],
+      "images": [
+        542,
+        543
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-014",
+      "slug": "py-014-nehir-kiyisi",
+      "name": "Nehir Kıyısı",
+      "sourceIds": [
+        "PY-014"
+      ],
+      "images": [
+        544,
+        545
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-015",
+      "slug": "py-015-acik-deniz",
+      "name": "Açık Deniz",
+      "sourceIds": [
+        "PY-015"
+      ],
+      "images": [
+        546,
+        547
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-018",
+      "slug": "py-018-volkan",
+      "name": "Volkan",
+      "sourceIds": [
+        "PY-018"
+      ],
+      "images": [
+        548,
+        549
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-016",
+      "slug": "py-016-mercan-resifi",
+      "name": "Mercan Resifi",
+      "sourceIds": [
+        "PY-016"
+      ],
+      "images": [
+        550,
+        551
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-020",
+      "slug": "py-020-lavanta-tarlasi",
+      "name": "Lavanta Tarlası",
+      "sourceIds": [
+        "PY-020"
+      ],
+      "images": [
+        552,
+        553
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-019",
+      "slug": "py-019-savan",
+      "name": "Savan",
+      "sourceIds": [
+        "PY-019"
+      ],
+      "images": [
+        554,
+        555
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "TW-015",
+      "slug": "tw-015-bag-yolu",
+      "name": "Bağ Yolu",
+      "sourceIds": [
+        "TW-015"
+      ],
+      "images": [
+        556,
+        557
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-022",
+      "slug": "py-022-bugday-ovasi",
+      "name": "Buğday Ovası",
+      "sourceIds": [
+        "PY-022"
+      ],
+      "images": [
+        558,
+        559
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-023",
+      "slug": "py-023-bulut-denizi",
+      "name": "Bulut Denizi",
+      "sourceIds": [
+        "PY-023"
+      ],
+      "images": [
+        560,
+        561
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-024",
+      "slug": "py-024-kuzey-isiklari",
+      "name": "Kuzey Işıkları",
+      "sourceIds": [
+        "PY-024"
+      ],
+      "images": [
+        562,
+        563
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-025",
+      "slug": "py-025-ay-yuzeyi",
+      "name": "Ay Yüzeyi",
+      "sourceIds": [
+        "PY-025"
+      ],
+      "images": [
+        564,
+        565,
+        566
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-029",
+      "slug": "py-029-sehir-silueti",
+      "name": "Şehir Silüeti",
+      "sourceIds": [
+        "PY-029"
+      ],
+      "images": [
+        567,
+        568
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-037",
+      "slug": "py-037-kiraz-cicegi-yolu",
+      "name": "Kiraz Çiçeği Yolu",
+      "sourceIds": [
+        "PY-037"
+      ],
+      "images": [
+        569,
+        570
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "TW-025",
+      "slug": "tw-025-alp-cayiri",
+      "name": "Alp Çayırı",
+      "sourceIds": [
+        "TW-025"
+      ],
+      "images": [
+        571
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-044",
+      "slug": "py-044-firtinali-kiyi",
+      "name": "Fırtınalı Kıyı",
+      "sourceIds": [
+        "PY-044"
+      ],
+      "images": [
+        572,
+        573
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-050",
+      "slug": "py-050-halkali-gezegen",
+      "name": "Halkalı Gezegen",
+      "sourceIds": [
+        "PY-050"
+      ],
+      "images": [
+        574,
+        575
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-001",
+      "slug": "kx-001-gri-dalga",
+      "name": "Gri Dalga",
+      "sourceIds": [
+        "KX-001"
+      ],
+      "images": [
+        576
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-002",
+      "slug": "kx-002-dikey-sutunlar",
+      "name": "Dikey Sütunlar",
+      "sourceIds": [
+        "KX-002"
+      ],
+      "images": [
+        577
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-003",
+      "slug": "kx-003-kivrimli-yapraklar",
+      "name": "Kıvrımlı Yapraklar",
+      "sourceIds": [
+        "KX-003"
+      ],
+      "images": [
+        578
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-004",
+      "slug": "kx-004-yesil-basamaklar",
+      "name": "Yeşil Basamaklar",
+      "sourceIds": [
+        "KX-004"
+      ],
+      "images": [
+        579
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-005",
+      "slug": "kx-005-geometrik-bloklar",
+      "name": "Geometrik Bloklar",
+      "sourceIds": [
+        "KX-005"
+      ],
+      "images": [
+        580
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-006",
+      "slug": "kx-006-kesisen-dalgalar",
+      "name": "Kesişen Dalgalar",
+      "sourceIds": [
+        "KX-006"
+      ],
+      "images": [
+        581
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-007",
+      "slug": "kx-007-dairesel-denge",
+      "name": "Dairesel Denge",
+      "sourceIds": [
+        "KX-007"
+      ],
+      "images": [
+        582
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-008",
+      "slug": "kx-008-gunesli-ufuk",
+      "name": "Güneşli Ufuk",
+      "sourceIds": [
+        "KX-008"
+      ],
+      "images": [
+        583
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-009",
+      "slug": "kx-009-dikdortgen-ritim",
+      "name": "Dikdörtgen Ritim",
+      "sourceIds": [
+        "KX-009"
+      ],
+      "images": [
+        584
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-010",
+      "slug": "kx-010-capraz-cizgiler",
+      "name": "Çapraz Çizgiler",
+      "sourceIds": [
+        "KX-010"
+      ],
+      "images": [
+        585
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-011",
+      "slug": "kx-011-dikey-kavisler",
+      "name": "Dikey Kavisler",
+      "sourceIds": [
+        "KX-011"
+      ],
+      "images": [
+        586
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-012",
+      "slug": "kx-012-acilan-yapraklar",
+      "name": "Açılan Yapraklar",
+      "sourceIds": [
+        "KX-012"
+      ],
+      "images": [
+        587
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-013",
+      "slug": "kx-013-katmanli-kavisler",
+      "name": "Katmanlı Kavisler",
+      "sourceIds": [
+        "KX-013"
+      ],
+      "images": [
+        588
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-014",
+      "slug": "kx-014-geometrik-yuzey",
+      "name": "Geometrik Yüzey",
+      "sourceIds": [
+        "KX-014"
+      ],
+      "images": [
+        589
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-015",
+      "slug": "kx-015-yatay-dalgalar",
+      "name": "Yatay Dalgalar",
+      "sourceIds": [
+        "KX-015"
+      ],
+      "images": [
+        590
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-016",
+      "slug": "kx-016-kavis-ve-daire",
+      "name": "Kavis ve Daire",
+      "sourceIds": [
+        "KX-016"
+      ],
+      "images": [
+        591
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-017",
+      "slug": "kx-017-dairesel-akis",
+      "name": "Dairesel Akış",
+      "sourceIds": [
+        "KX-017"
+      ],
+      "images": [
+        592
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-018",
+      "slug": "kx-018-mimari-kemerler",
+      "name": "Mimari Kemerler",
+      "sourceIds": [
+        "KX-018"
+      ],
+      "images": [
+        593
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-019",
+      "slug": "kx-019-renkli-dalgalar",
+      "name": "Renkli Dalgalar",
+      "sourceIds": [
+        "KX-019"
+      ],
+      "images": [
+        594
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-020",
+      "slug": "kx-020-geometrik-duvar",
+      "name": "Geometrik Duvar",
+      "sourceIds": [
+        "KX-020"
+      ],
+      "images": [
+        595
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-021",
+      "slug": "kx-021-mavi-dalgalar",
+      "name": "Mavi Dalgalar",
+      "sourceIds": [
+        "KX-021"
+      ],
+      "images": [
+        596
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-022",
+      "slug": "kx-022-yesil-moduller",
+      "name": "Yeşil Modüller",
+      "sourceIds": [
+        "KX-022"
+      ],
+      "images": [
+        597
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-023",
+      "slug": "kx-023-kare-ve-daire",
+      "name": "Kare ve Daire",
+      "sourceIds": [
+        "KX-023"
+      ],
+      "images": [
+        598
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-024",
+      "slug": "kx-024-yaprak-formlari",
+      "name": "Yaprak Formları",
+      "sourceIds": [
+        "KX-024"
+      ],
+      "images": [
+        599
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-025",
+      "slug": "kx-025-capraz-dalgalar",
+      "name": "Çapraz Dalgalar",
+      "sourceIds": [
+        "KX-025"
+      ],
+      "images": [
+        600
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-026",
+      "slug": "kx-026-gunes-ve-dalgalar",
+      "name": "Güneş ve Dalgalar",
+      "sourceIds": [
+        "KX-026"
+      ],
+      "images": [
+        601
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-028",
+      "slug": "kx-028-geometrik-kolaj",
+      "name": "Geometrik Kolaj",
+      "sourceIds": [
+        "KX-028"
+      ],
+      "images": [
+        602
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-029",
+      "slug": "kx-029-acilan-formlar",
+      "name": "Açılan Formlar",
+      "sourceIds": [
+        "KX-029"
+      ],
+      "images": [
+        603
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-030",
+      "slug": "kx-030-yatay-katmanlar",
+      "name": "Yatay Katmanlar",
+      "sourceIds": [
+        "KX-030"
+      ],
+      "images": [
+        604
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-031",
+      "slug": "kx-031-geometrik-halka",
+      "name": "Geometrik Halka",
+      "sourceIds": [
+        "KX-031"
+      ],
+      "images": [
+        605
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-032",
+      "slug": "kx-032-genis-kavisler",
+      "name": "Geniş Kavisler",
+      "sourceIds": [
+        "KX-032"
+      ],
+      "images": [
+        606
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-033",
+      "slug": "kx-033-kiyi-cizgisi",
+      "name": "Kıyı Çizgisi",
+      "sourceIds": [
+        "KX-033"
+      ],
+      "images": [
+        607
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-034",
+      "slug": "kx-034-serit-ve-daire",
+      "name": "Şerit ve Daire",
+      "sourceIds": [
+        "KX-034"
+      ],
+      "images": [
+        608
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-035",
+      "slug": "kx-035-kivrimli-katmanlar",
+      "name": "Kıvrımlı Katmanlar",
+      "sourceIds": [
+        "KX-035"
+      ],
+      "images": [
+        609
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-036",
+      "slug": "kx-036-genis-kemerler",
+      "name": "Geniş Kemerler",
+      "sourceIds": [
+        "KX-036"
+      ],
+      "images": [
+        610
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-037",
+      "slug": "kx-037-deniz-manzarasi",
+      "name": "Deniz Manzarası",
+      "sourceIds": [
+        "KX-037"
+      ],
+      "images": [
+        611
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-038",
+      "slug": "kx-038-kirmizi-serit",
+      "name": "Kırmızı Şerit",
+      "sourceIds": [
+        "KX-038"
+      ],
+      "images": [
+        612
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-039",
+      "slug": "kx-039-mavi-yapraklar",
+      "name": "Mavi Yapraklar",
+      "sourceIds": [
+        "KX-039"
+      ],
+      "images": [
+        613
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-040",
+      "slug": "kx-040-mimari-yaylar",
+      "name": "Mimari Yaylar",
+      "sourceIds": [
+        "KX-040"
+      ],
+      "images": [
+        614
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-041",
+      "slug": "kx-041-organik-hucreler",
+      "name": "Organik Hücreler",
+      "sourceIds": [
+        "KX-041"
+      ],
+      "images": [
+        615
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "KX-042",
+      "slug": "kx-042-toprak-kavisleri",
+      "name": "Toprak Kavisleri",
+      "sourceIds": [
+        "KX-042"
+      ],
+      "images": [
+        616
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-001",
+      "slug": "px-001-gunesli-ufuk",
+      "name": "Güneşli Ufuk",
+      "sourceIds": [
+        "PX-001"
+      ],
+      "images": [
+        617
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-002",
+      "slug": "px-002-yumusak-kemerler",
+      "name": "Yumuşak Kemerler",
+      "sourceIds": [
+        "PX-002"
+      ],
+      "images": [
+        618
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-004",
+      "slug": "px-004-ataturk-portresi",
+      "name": "Atatürk Portresi",
+      "sourceIds": [
+        "PX-004"
+      ],
+      "images": [
+        619
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-005",
+      "slug": "px-005-uzay-roketi",
+      "name": "Uzay Roketi",
+      "sourceIds": [
+        "PX-005"
+      ],
+      "images": [
+        620
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-007",
+      "slug": "px-007-sehir-ve-gun-batimi",
+      "name": "Şehir ve Gün Batımı",
+      "sourceIds": [
+        "PX-007"
+      ],
+      "images": [
+        621,
+        622
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-008",
+      "slug": "px-008-aslan-portresi",
+      "name": "Aslan Portresi",
+      "sourceIds": [
+        "PX-008"
+      ],
+      "images": [
+        623
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-009",
+      "slug": "px-009-deniz-dalgasi",
+      "name": "Deniz Dalgası",
+      "sourceIds": [
+        "PX-009"
+      ],
+      "images": [
+        624
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-010",
+      "slug": "px-010-yelpaze-yapraklar",
+      "name": "Yelpaze Yapraklar",
+      "sourceIds": [
+        "PX-010"
+      ],
+      "images": [
+        625
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-011",
+      "slug": "px-011-yaris-arabasi",
+      "name": "Yarış Arabası",
+      "sourceIds": [
+        "PX-011"
+      ],
+      "images": [
+        626
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-012",
+      "slug": "px-012-satranc-ati",
+      "name": "Satranç Atı",
+      "sourceIds": [
+        "PX-012"
+      ],
+      "images": [
+        627
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-013",
+      "slug": "px-013-ucan-kus",
+      "name": "Uçan Kuş",
+      "sourceIds": [
+        "PX-013"
+      ],
+      "images": [
+        628
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-014",
+      "slug": "px-014-gitar-silueti",
+      "name": "Gitar Silüeti",
+      "sourceIds": [
+        "PX-014"
+      ],
+      "images": [
+        629
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-015",
+      "slug": "px-015-dinozor-ve-gunes",
+      "name": "Dinozor ve Güneş",
+      "sourceIds": [
+        "PX-015"
+      ],
+      "images": [
+        630
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-017",
+      "slug": "px-017-soyut-ufuk",
+      "name": "Soyut Ufuk",
+      "sourceIds": [
+        "PX-017"
+      ],
+      "images": [
+        631
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-018",
+      "slug": "px-018-botanik-kemer",
+      "name": "Botanik Kemer",
+      "sourceIds": [
+        "PX-018"
+      ],
+      "images": [
+        632
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-019",
+      "slug": "px-019-koi-baliklari",
+      "name": "Koi Balıkları",
+      "sourceIds": [
+        "PX-019"
+      ],
+      "images": [
+        633
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-020",
+      "slug": "px-020-renkli-kemerler",
+      "name": "Renkli Kemerler",
+      "sourceIds": [
+        "PX-020"
+      ],
+      "images": [
+        634
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-021",
+      "slug": "px-021-gunes-cicegi",
+      "name": "Güneş Çiçeği",
+      "sourceIds": [
+        "PX-021"
+      ],
+      "images": [
+        635
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-022",
+      "slug": "px-022-tilki-ve-ay",
+      "name": "Tilki ve Ay",
+      "sourceIds": [
+        "PX-022"
+      ],
+      "images": [
+        636
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-023",
+      "slug": "px-023-yelkenli",
+      "name": "Yelkenli",
+      "sourceIds": [
+        "PX-023"
+      ],
+      "images": [
+        637
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-024",
+      "slug": "px-024-dag-ve-gun-dogumu",
+      "name": "Dağ ve Gün Doğumu",
+      "sourceIds": [
+        "PX-024"
+      ],
+      "images": [
+        638
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-025",
+      "slug": "px-025-disli-carklar",
+      "name": "Dişli Çarklar",
+      "sourceIds": [
+        "PX-025"
+      ],
+      "images": [
+        639
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-026",
+      "slug": "px-026-geometrik-yol",
+      "name": "Geometrik Yol",
+      "sourceIds": [
+        "PX-026"
+      ],
+      "images": [
+        640
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-027",
+      "slug": "px-027-tropik-cephe",
+      "name": "Tropik Cephe",
+      "sourceIds": [
+        "PX-027"
+      ],
+      "images": [
+        641
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-028",
+      "slug": "px-028-renkli-kemerler",
+      "name": "Renkli Kemerler",
+      "sourceIds": [
+        "PX-028"
+      ],
+      "images": [
+        642
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-029",
+      "slug": "px-029-tropik-kus",
+      "name": "Tropik Kuş",
+      "sourceIds": [
+        "PX-029"
+      ],
+      "images": [
+        643
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-030",
+      "slug": "px-030-mercan-ve-balik",
+      "name": "Mercan ve Balık",
+      "sourceIds": [
+        "PX-030"
+      ],
+      "images": [
+        644
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-031",
+      "slug": "px-031-anka-kusu",
+      "name": "Anka Kuşu",
+      "sourceIds": [
+        "PX-031"
+      ],
+      "images": [
+        645
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-032",
+      "slug": "px-032-nar-ve-yapraklar",
+      "name": "Nar ve Yapraklar",
+      "sourceIds": [
+        "PX-032"
+      ],
+      "images": [
+        646
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-033",
+      "slug": "px-033-kuzey-isiklari",
+      "name": "Kuzey Işıkları",
+      "sourceIds": [
+        "PX-033"
+      ],
+      "images": [
+        647
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-034",
+      "slug": "px-034-sicak-hava-balonlari",
+      "name": "Sıcak Hava Balonları",
+      "sourceIds": [
+        "PX-034"
+      ],
+      "images": [
+        648
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-035",
+      "slug": "px-035-cini-cicegi",
+      "name": "Çini Çiçeği",
+      "sourceIds": [
+        "PX-035"
+      ],
+      "images": [
+        649
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-036",
+      "slug": "px-036-spor-toplari",
+      "name": "Spor Topları",
+      "sourceIds": [
+        "PX-036"
+      ],
+      "images": [
+        650
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-037",
+      "slug": "px-037-renkli-cokgenler",
+      "name": "Renkli Çokgenler",
+      "sourceIds": [
+        "PX-037"
+      ],
+      "images": [
+        651
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-038",
+      "slug": "px-038-gunesin-izleri",
+      "name": "Güneşin İzleri",
+      "sourceIds": [
+        "PX-038"
+      ],
+      "images": [
+        652
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-039",
+      "slug": "px-039-ay-ve-yapraklar",
+      "name": "Ay ve Yapraklar",
+      "sourceIds": [
+        "PX-039"
+      ],
+      "images": [
+        653
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-040",
+      "slug": "px-040-turuncgiller",
+      "name": "Turunçgiller",
+      "sourceIds": [
+        "PX-040"
+      ],
+      "images": [
+        654
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-041",
+      "slug": "px-041-sirk-cadiri",
+      "name": "Sirk Çadırı",
+      "sourceIds": [
+        "PX-041"
+      ],
+      "images": [
+        655
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-042",
+      "slug": "px-042-soyut-renkler",
+      "name": "Soyut Renkler",
+      "sourceIds": [
+        "PX-042"
+      ],
+      "images": [
+        656
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-043",
+      "slug": "px-043-uzay-gezegenleri",
+      "name": "Uzay Gezegenleri",
+      "sourceIds": [
+        "PX-043"
+      ],
+      "images": [
+        657
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-044",
+      "slug": "px-044-kemerli-manzara",
+      "name": "Kemerli Manzara",
+      "sourceIds": [
+        "PX-044"
+      ],
+      "images": [
+        658
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-045",
+      "slug": "px-045-renkli-yapraklar",
+      "name": "Renkli Yapraklar",
+      "sourceIds": [
+        "PX-045"
+      ],
+      "images": [
+        659
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-046",
+      "slug": "px-046-renkli-agaclar",
+      "name": "Renkli Ağaçlar",
+      "sourceIds": [
+        "PX-046"
+      ],
+      "images": [
+        660
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-047",
+      "slug": "px-047-gun-batiminda-yelken",
+      "name": "Gün Batımında Yelken",
+      "sourceIds": [
+        "PX-047"
+      ],
+      "images": [
+        661
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-048",
+      "slug": "px-048-turuncu-dalga",
+      "name": "Turuncu Dalga",
+      "sourceIds": [
+        "PX-048"
+      ],
+      "images": [
+        662
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-049",
+      "slug": "px-049-sahne-perdeleri",
+      "name": "Sahne Perdeleri",
+      "sourceIds": [
+        "PX-049"
+      ],
+      "images": [
+        663
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-050",
+      "slug": "px-050-kum-saatleri",
+      "name": "Kum Saatleri",
+      "sourceIds": [
+        "PX-050"
+      ],
+      "images": [
+        664
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-051",
+      "slug": "px-051-nehir-vadisi",
+      "name": "Nehir Vadisi",
+      "sourceIds": [
+        "PX-051"
+      ],
+      "images": [
+        665
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-052",
+      "slug": "px-052-gunesli-kiyi",
+      "name": "Güneşli Kıyı",
+      "sourceIds": [
+        "PX-052"
+      ],
+      "images": [
+        666
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-053",
+      "slug": "px-053-renkli-dallar",
+      "name": "Renkli Dallar",
+      "sourceIds": [
+        "PX-053"
+      ],
+      "images": [
+        667
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-054",
+      "slug": "px-054-renkli-cicek",
+      "name": "Renkli Çiçek",
+      "sourceIds": [
+        "PX-054"
+      ],
+      "images": [
+        668
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-055",
+      "slug": "px-055-yuvarlak-formlar",
+      "name": "Yuvarlak Formlar",
+      "sourceIds": [
+        "PX-055"
+      ],
+      "images": [
+        669
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-056",
+      "slug": "px-056-kase-formlari",
+      "name": "Kase Formları",
+      "sourceIds": [
+        "PX-056"
+      ],
+      "images": [
+        670
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PX-057",
+      "slug": "px-057-renkli-sehir",
+      "name": "Renkli Şehir",
+      "sourceIds": [
+        "PX-057"
+      ],
+      "images": [
+        671
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-001",
+      "slug": "py-001-orman-yolu",
+      "name": "Orman Yolu",
+      "sourceIds": [
+        "PY-001"
+      ],
+      "images": [
+        672
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-002",
+      "slug": "py-002-bambu-korusu",
+      "name": "Bambu Korusu",
+      "sourceIds": [
+        "PY-002"
+      ],
+      "images": [
+        673
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-003",
+      "slug": "py-003-tropik-orman",
+      "name": "Tropik Orman",
+      "sourceIds": [
+        "PY-003"
+      ],
+      "images": [
+        674
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-004",
+      "slug": "py-004-sonbahar-korusu",
+      "name": "Sonbahar Korusu",
+      "sourceIds": [
+        "PY-004"
+      ],
+      "images": [
+        675
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-008",
+      "slug": "py-008-kiyi-falezi",
+      "name": "Kıyı Falezi",
+      "sourceIds": [
+        "PY-008"
+      ],
+      "images": [
+        676
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-010",
+      "slug": "py-010-col-kumullari",
+      "name": "Çöl Kumulları",
+      "sourceIds": [
+        "PY-010"
+      ],
+      "images": [
+        677
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-011",
+      "slug": "py-011-kanyon",
+      "name": "Kanyon",
+      "sourceIds": [
+        "PY-011"
+      ],
+      "images": [
+        678
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-012",
+      "slug": "py-012-magara",
+      "name": "Mağara",
+      "sourceIds": [
+        "PY-012"
+      ],
+      "images": [
+        679
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-013",
+      "slug": "py-013-selale",
+      "name": "Şelale",
+      "sourceIds": [
+        "PY-013"
+      ],
+      "images": [
+        680
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-017",
+      "slug": "py-017-buzul",
+      "name": "Buzul",
+      "sourceIds": [
+        "PY-017"
+      ],
+      "images": [
+        681
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-021",
+      "slug": "py-021-bag-yolu",
+      "name": "Bağ Yolu",
+      "sourceIds": [
+        "PY-021"
+      ],
+      "images": [
+        682
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-026",
+      "slug": "py-026-uzay",
+      "name": "Uzay",
+      "sourceIds": [
+        "PY-026"
+      ],
+      "images": [
+        683
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-027",
+      "slug": "py-027-gun-batimi",
+      "name": "Gün Batımı",
+      "sourceIds": [
+        "PY-027"
+      ],
+      "images": [
+        684
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-028",
+      "slug": "py-028-gun-dogumu",
+      "name": "Gün Doğumu",
+      "sourceIds": [
+        "PY-028"
+      ],
+      "images": [
+        685
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-030",
+      "slug": "py-030-tas-gecit",
+      "name": "Taş Geçit",
+      "sourceIds": [
+        "PY-030"
+      ],
+      "images": [
+        686
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-031",
+      "slug": "py-031-sekoya-yolu",
+      "name": "Sekoya Yolu",
+      "sourceIds": [
+        "PY-031"
+      ],
+      "images": [
+        687
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-032",
+      "slug": "py-032-mangrov-lagunu",
+      "name": "Mangrov Lagünü",
+      "sourceIds": [
+        "PY-032"
+      ],
+      "images": [
+        688
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-033",
+      "slug": "py-033-vaha",
+      "name": "Vaha",
+      "sourceIds": [
+        "PY-033"
+      ],
+      "images": [
+        689
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-034",
+      "slug": "py-034-tuz-duzlugu",
+      "name": "Tuz Düzlüğü",
+      "sourceIds": [
+        "PY-034"
+      ],
+      "images": [
+        690
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-035",
+      "slug": "py-035-pirinc-teraslari",
+      "name": "Pirinç Terasları",
+      "sourceIds": [
+        "PY-035"
+      ],
+      "images": [
+        691
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-036",
+      "slug": "py-036-lale-bahcesi",
+      "name": "Lale Bahçesi",
+      "sourceIds": [
+        "PY-036"
+      ],
+      "images": [
+        692
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-038",
+      "slug": "py-038-servi-yolu",
+      "name": "Servi Yolu",
+      "sourceIds": [
+        "PY-038"
+      ],
+      "images": [
+        693
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-039",
+      "slug": "py-039-zeytinlik",
+      "name": "Zeytinlik",
+      "sourceIds": [
+        "PY-039"
+      ],
+      "images": [
+        694
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-040",
+      "slug": "py-040-sera",
+      "name": "Sera",
+      "sourceIds": [
+        "PY-040"
+      ],
+      "images": [
+        695
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-041",
+      "slug": "py-041-dag-cayiri",
+      "name": "Dağ Çayırı",
+      "sourceIds": [
+        "PY-041"
+      ],
+      "images": [
+        696
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-042",
+      "slug": "py-042-fiyort",
+      "name": "Fiyort",
+      "sourceIds": [
+        "PY-042"
+      ],
+      "images": [
+        697
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-043",
+      "slug": "py-043-deniz-kemeri",
+      "name": "Deniz Kemeri",
+      "sourceIds": [
+        "PY-043"
+      ],
+      "images": [
+        698
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-045",
+      "slug": "py-045-sicak-su-teraslari",
+      "name": "Sıcak Su Terasları",
+      "sourceIds": [
+        "PY-045"
+      ],
+      "images": [
+        699
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-046",
+      "slug": "py-046-gayzer-vadisi",
+      "name": "Gayzer Vadisi",
+      "sourceIds": [
+        "PY-046"
+      ],
+      "images": [
+        700
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-047",
+      "slug": "py-047-yildirim-ovasi",
+      "name": "Yıldırım Ovası",
+      "sourceIds": [
+        "PY-047"
+      ],
+      "images": [
+        701
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-048",
+      "slug": "py-048-gokkusagi-vadisi",
+      "name": "Gökkuşağı Vadisi",
+      "sourceIds": [
+        "PY-048"
+      ],
+      "images": [
+        702
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-049",
+      "slug": "py-049-mars-yuzeyi",
+      "name": "Mars Yüzeyi",
+      "sourceIds": [
+        "PY-049"
+      ],
+      "images": [
+        703
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-051",
+      "slug": "py-051-yosun-ormani",
+      "name": "Yosun Ormanı",
+      "sourceIds": [
+        "PY-051"
+      ],
+      "images": [
+        704
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-052",
+      "slug": "py-052-su-alti-magarasi",
+      "name": "Su Altı Mağarası",
+      "sourceIds": [
+        "PY-052"
+      ],
+      "images": [
+        705
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-053",
+      "slug": "py-053-turkuaz-lagun",
+      "name": "Turkuaz Lagün",
+      "sourceIds": [
+        "PY-053"
+      ],
+      "images": [
+        706
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-054",
+      "slug": "py-054-deniz-feneri",
+      "name": "Deniz Feneri",
+      "sourceIds": [
+        "PY-054"
+      ],
+      "images": [
+        707
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-055",
+      "slug": "py-055-liman",
+      "name": "Liman",
+      "sourceIds": [
+        "PY-055"
+      ],
+      "images": [
+        708
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-056",
+      "slug": "py-056-kanal-sehri",
+      "name": "Kanal Şehri",
+      "sourceIds": [
+        "PY-056"
+      ],
+      "images": [
+        709
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-057",
+      "slug": "py-057-tas-sokak",
+      "name": "Taş Sokak",
+      "sourceIds": [
+        "PY-057"
+      ],
+      "images": [
+        710
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-058",
+      "slug": "py-058-avlu",
+      "name": "Avlu",
+      "sourceIds": [
+        "PY-058"
+      ],
+      "images": [
+        711
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-059",
+      "slug": "py-059-amfitiyatro",
+      "name": "Amfitiyatro",
+      "sourceIds": [
+        "PY-059"
+      ],
+      "images": [
+        712
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-060",
+      "slug": "py-060-antik-kalintilar",
+      "name": "Antik Kalıntılar",
+      "sourceIds": [
+        "PY-060"
+      ],
+      "images": [
+        713
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-061",
+      "slug": "py-061-sisli-fundalik",
+      "name": "Sisli Fundalık",
+      "sourceIds": [
+        "PY-061"
+      ],
+      "images": [
+        714
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-062",
+      "slug": "py-062-sazlik-yolu",
+      "name": "Sazlık Yolu",
+      "sourceIds": [
+        "PY-062"
+      ],
+      "images": [
+        715
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-063",
+      "slug": "py-063-aycicegi-gecidi",
+      "name": "Ayçiçeği Geçidi",
+      "sourceIds": [
+        "PY-063"
+      ],
+      "images": [
+        716
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-064",
+      "slug": "py-064-gelincik-vadisi",
+      "name": "Gelincik Vadisi",
+      "sourceIds": [
+        "PY-064"
+      ],
+      "images": [
+        717
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-065",
+      "slug": "py-065-tas-kopru-vadisi",
+      "name": "Taş Köprü Vadisi",
+      "sourceIds": [
+        "PY-065"
+      ],
+      "images": [
+        718
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-066",
+      "slug": "py-066-buz-magarasi",
+      "name": "Buz Mağarası",
+      "sourceIds": [
+        "PY-066"
+      ],
+      "images": [
+        719
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-067",
+      "slug": "py-067-lav-tuneli",
+      "name": "Lav Tüneli",
+      "sourceIds": [
+        "PY-067"
+      ],
+      "images": [
+        720
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-068",
+      "slug": "py-068-yagmurlu-sehir",
+      "name": "Yağmurlu Şehir",
+      "sourceIds": [
+        "PY-068"
+      ],
+      "images": [
+        721
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-069",
+      "slug": "py-069-karli-koy",
+      "name": "Karlı Köy",
+      "sourceIds": [
+        "PY-069"
+      ],
+      "images": [
+        722
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-070",
+      "slug": "py-070-tropik-havuz",
+      "name": "Tropik Havuz",
+      "sourceIds": [
+        "PY-070"
+      ],
+      "images": [
+        723
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-071",
+      "slug": "py-071-camlik-kiyi",
+      "name": "Çamlık Kıyı",
+      "sourceIds": [
+        "PY-071"
+      ],
+      "images": [
+        724
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-072",
+      "slug": "py-072-kemerli-carsi",
+      "name": "Kemerli Çarşı",
+      "sourceIds": [
+        "PY-072"
+      ],
+      "images": [
+        725
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-073",
+      "slug": "py-073-zirve-hatti",
+      "name": "Zirve Hattı",
+      "sourceIds": [
+        "PY-073"
+      ],
+      "images": [
+        726
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-074",
+      "slug": "py-074-col-kaya-kapisi",
+      "name": "Çöl Kaya Kapısı",
+      "sourceIds": [
+        "PY-074"
+      ],
+      "images": [
+        727
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "PY-075",
+      "slug": "py-075-derin-deniz-vadisi",
+      "name": "Derin Deniz Vadisi",
+      "sourceIds": [
+        "PY-075"
+      ],
+      "images": [
+        728
+      ],
+      "hidden": true,
+      "hiddenReason": "Kumaş kodu yok (2026-10-29)"
+    },
+    {
+      "id": "GK-001",
+      "slug": "gk-001-yalicapkini",
+      "name": "Yalıçapkını",
+      "sourceIds": [
+        "GK-001"
+      ],
+      "images": [
+        729
+      ]
+    },
+    {
+      "id": "GK-002",
+      "slug": "gk-002-kemerli-kanal",
+      "name": "Kemerli Kanal",
+      "sourceIds": [
+        "GK-002"
+      ],
+      "images": [
+        730
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-003",
+      "slug": "gk-003-nar-dali",
+      "name": "Nar Dalı",
+      "sourceIds": [
+        "GK-003"
+      ],
+      "images": [
+        731
+      ]
+    },
+    {
+      "id": "GK-004",
+      "slug": "gk-004-denizati-ve-yosun",
+      "name": "Denizatı ve Yosun",
+      "sourceIds": [
+        "GK-004"
+      ],
+      "images": [
+        732
+      ]
+    },
+    {
+      "id": "GK-006",
+      "slug": "gk-006-ahtapot-ve-deniz-kabugu",
+      "name": "Ahtapot ve Deniz Kabuğu",
+      "sourceIds": [
+        "GK-006"
+      ],
+      "images": [
+        734
+      ]
+    },
+    {
+      "id": "GK-008",
+      "slug": "gk-008-daldaki-bukalemun",
+      "name": "Daldaki Bukalemun",
+      "sourceIds": [
+        "GK-008"
+      ],
+      "images": [
+        736
+      ]
+    },
+    {
+      "id": "GK-009",
+      "slug": "gk-009-orman-esiginde-geyik",
+      "name": "Orman Eşiğinde Geyik",
+      "sourceIds": [
+        "GK-009"
+      ],
+      "images": [
+        737
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-010",
+      "slug": "gk-010-peri-bacalari-uzerinde-balon",
+      "name": "Peri Bacaları Üzerinde Balon",
+      "sourceIds": [
+        "GK-010"
+      ],
+      "images": [
+        738
+      ]
+    },
+    {
+      "id": "GK-011",
+      "slug": "gk-011-lale-tarlasindaki-yel-degirmeni",
+      "name": "Lale Tarlasındaki Yel Değirmeni",
+      "sourceIds": [
+        "GK-011"
+      ],
+      "images": [
+        739
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-013",
+      "slug": "gk-013-coldeki-deve-kervani",
+      "name": "Çöldeki Deve Kervanı",
+      "sourceIds": [
+        "GK-013"
+      ],
+      "images": [
+        741
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-014",
+      "slug": "gk-014-cello-ve-yay",
+      "name": "Çello ve Yay",
+      "sourceIds": [
+        "GK-014"
+      ],
+      "images": [
+        742
+      ]
+    },
+    {
+      "id": "GK-015",
+      "slug": "gk-015-comlekci-carki",
+      "name": "Çömlekçi Çarkı",
+      "sourceIds": [
+        "GK-015"
+      ],
+      "images": [
+        743
+      ]
+    },
+    {
+      "id": "GK-016",
+      "slug": "gk-016-narenciye-sepeti",
+      "name": "Narenciye Sepeti",
+      "sourceIds": [
+        "GK-016"
+      ],
+      "images": [
+        744
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-018",
+      "slug": "gk-018-ay-guvesi-ve-egrelti",
+      "name": "Ay Güvesi ve Eğrelti",
+      "sourceIds": [
+        "GK-018"
+      ],
+      "images": [
+        746
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-019",
+      "slug": "gk-019-akasya-altindaki-zurafa",
+      "name": "Akasya Altındaki Zürafa",
+      "sourceIds": [
+        "GK-019"
+      ],
+      "images": [
+        747
+      ]
+    },
+    {
+      "id": "GK-021",
+      "slug": "gk-021-mercan-ustunde-deniz-kaplumbagasi",
+      "name": "Mercan Üstünde Deniz Kaplumbağası",
+      "sourceIds": [
+        "GK-021"
+      ],
+      "images": [
+        749
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-023",
+      "slug": "gk-023-yapraktaki-ugur-bocegi",
+      "name": "Yapraktaki Uğur Böceği",
+      "sourceIds": [
+        "GK-023"
+      ],
+      "images": [
+        751
+      ]
+    },
+    {
+      "id": "GK-024",
+      "slug": "gk-024-cinardaki-agackakan",
+      "name": "Çınardaki Ağaçkakan",
+      "sourceIds": [
+        "GK-024"
+      ],
+      "images": [
+        752
+      ]
+    },
+    {
+      "id": "GK-025",
+      "slug": "gk-025-keman-kutusu",
+      "name": "Keman Kutusu",
+      "sourceIds": [
+        "GK-025"
+      ],
+      "images": [
+        753
+      ]
+    },
+    {
+      "id": "GK-026",
+      "slug": "gk-026-cicek-sepetli-bisiklet",
+      "name": "Çiçek Sepetli Bisiklet",
+      "sourceIds": [
+        "GK-026"
+      ],
+      "images": [
+        754
+      ]
+    },
+    {
+      "id": "GK-028",
+      "slug": "gk-028-kestane-arabasi",
+      "name": "Kestane Arabası",
+      "sourceIds": [
+        "GK-028"
+      ],
+      "images": [
+        756
+      ]
+    },
+    {
+      "id": "GK-029",
+      "slug": "gk-029-eski-tren-gari",
+      "name": "Eski Tren Garı",
+      "sourceIds": [
+        "GK-029"
+      ],
+      "images": [
+        757
+      ]
+    },
+    {
+      "id": "GK-030",
+      "slug": "gk-030-kizil-mercan-baligi",
+      "name": "Kızıl Mercan Balığı",
+      "sourceIds": [
+        "GK-030"
+      ],
+      "images": [
+        758
+      ]
+    },
+    {
+      "id": "GK-031",
+      "slug": "gk-031-sazliktaki-flamingo",
+      "name": "Sazlıktaki Flamingo",
+      "sourceIds": [
+        "GK-031"
+      ],
+      "images": [
+        759
+      ]
+    },
+    {
+      "id": "GK-032",
+      "slug": "gk-032-kayaliktaki-deniz-feneri",
+      "name": "Kayalıktaki Deniz Feneri",
+      "sourceIds": [
+        "GK-032"
+      ],
+      "images": [
+        760
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-033",
+      "slug": "gk-033-orman-mantari-kumesi",
+      "name": "Orman Mantarı Kümesi",
+      "sourceIds": [
+        "GK-033"
+      ],
+      "images": [
+        761
+      ]
+    },
+    {
+      "id": "GK-034",
+      "slug": "gk-034-kosan-at",
+      "name": "Koşan At",
+      "sourceIds": [
+        "GK-034"
+      ],
+      "images": [
+        762
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-035",
+      "slug": "gk-035-gelincik-dali",
+      "name": "Gelincik Dalı",
+      "sourceIds": [
+        "GK-035"
+      ],
+      "images": [
+        763
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-036",
+      "slug": "gk-036-eski-fotograf-makinesi",
+      "name": "Eski Fotoğraf Makinesi",
+      "sourceIds": [
+        "GK-036"
+      ],
+      "images": [
+        764
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-037",
+      "slug": "gk-037-yukselen-balina-kuyrugu",
+      "name": "Yükselen Balina Kuyruğu",
+      "sourceIds": [
+        "GK-037"
+      ],
+      "images": [
+        765
+      ]
+    },
+    {
+      "id": "GK-038",
+      "slug": "gk-038-zeytin-dali-ve-sepet",
+      "name": "Zeytin Dalı ve Sepet",
+      "sourceIds": [
+        "GK-038"
+      ],
+      "images": [
+        766
+      ]
+    },
+    {
+      "id": "GK-039",
+      "slug": "gk-039-fenerdeki-guve",
+      "name": "Fenerdeki Güve",
+      "sourceIds": [
+        "GK-039"
+      ],
+      "images": [
+        767
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-043",
+      "slug": "gk-043-akdeniz-merdiveni",
+      "name": "Akdeniz Merdiveni",
+      "sourceIds": [
+        "GK-043"
+      ],
+      "images": [
+        771
+      ]
+    },
+    {
+      "id": "GK-044",
+      "slug": "gk-044-mese-dali-ve-palamut",
+      "name": "Meşe Dalı ve Palamut",
+      "sourceIds": [
+        "GK-044"
+      ],
+      "images": [
+        772
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-045",
+      "slug": "gk-045-tarihi-yelkenli",
+      "name": "Tarihi Yelkenli",
+      "sourceIds": [
+        "GK-045"
+      ],
+      "images": [
+        773
+      ]
+    },
+    {
+      "id": "GK-047",
+      "slug": "gk-047-bugdaydaki-bildircin",
+      "name": "Buğdaydaki Bıldırcın",
+      "sourceIds": [
+        "GK-047"
+      ],
+      "images": [
+        775
+      ]
+    },
+    {
+      "id": "GK-048",
+      "slug": "gk-048-gramofon",
+      "name": "Gramofon",
+      "sourceIds": [
+        "GK-048"
+      ],
+      "images": [
+        776
+      ]
+    },
+    {
+      "id": "GK-049",
+      "slug": "gk-049-aycicegi-bahcesi",
+      "name": "Ayçiçeği Bahçesi",
+      "sourceIds": [
+        "GK-049"
+      ],
+      "images": [
+        777
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-050",
+      "slug": "gk-050-bambu-arasindaki-panda",
+      "name": "Bambu Arasındaki Panda",
+      "sourceIds": [
+        "GK-050"
+      ],
+      "images": [
+        778
+      ]
+    },
+    {
+      "id": "GK-051",
+      "slug": "gk-051-kayaliktaki-deniz-papagani",
+      "name": "Kayalıktaki Deniz Papağanı",
+      "sourceIds": [
+        "GK-051"
+      ],
+      "images": [
+        779
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-052",
+      "slug": "gk-052-bakir-semaver",
+      "name": "Bakır Semaver",
+      "sourceIds": [
+        "GK-052"
+      ],
+      "images": [
+        780
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-053",
+      "slug": "gk-053-gokyuzune-bakan-teleskop",
+      "name": "Gökyüzüne Bakan Teleskop",
+      "sourceIds": [
+        "GK-053"
+      ],
+      "images": [
+        781
+      ]
+    },
+    {
+      "id": "GK-055",
+      "slug": "gk-055-incir-dali",
+      "name": "İncir Dalı",
+      "sourceIds": [
+        "GK-055"
+      ],
+      "images": [
+        783
+      ]
+    },
+    {
+      "id": "GK-056",
+      "slug": "gk-056-yuksuk-otu-cicekleri",
+      "name": "Yüksük Otu Çiçekleri",
+      "sourceIds": [
+        "GK-056"
+      ],
+      "images": [
+        784
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-057",
+      "slug": "gk-057-pirinc-pusula",
+      "name": "Pirinç Pusula",
+      "sourceIds": [
+        "GK-057"
+      ],
+      "images": [
+        785
+      ]
+    },
+    {
+      "id": "GK-060",
+      "slug": "gk-060-yelkenli-yarisi",
+      "name": "Yelkenli Yarışı",
+      "sourceIds": [
+        "GK-060"
+      ],
+      "images": [
+        788
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-061",
+      "slug": "gk-061-karli-daldaki-kizilgerdan",
+      "name": "Karlı Daldaki Kızılgerdan",
+      "sourceIds": [
+        "GK-061"
+      ],
+      "images": [
+        789
+      ]
+    },
+    {
+      "id": "GK-063",
+      "slug": "gk-063-espresso-makinesi",
+      "name": "Espresso Makinesi",
+      "sourceIds": [
+        "GK-063"
+      ],
+      "images": [
+        791
+      ]
+    },
+    {
+      "id": "GK-064",
+      "slug": "gk-064-kirmizi-telefon-kulubesi",
+      "name": "Kırmızı Telefon Kulübesi",
+      "sourceIds": [
+        "GK-064"
+      ],
+      "images": [
+        792
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-067",
+      "slug": "gk-067-kayadaki-su-samuru",
+      "name": "Kayadaki Su Samuru",
+      "sourceIds": [
+        "GK-067"
+      ],
+      "images": [
+        795
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-068",
+      "slug": "gk-068-balkabagi-sarmasigi",
+      "name": "Balkabağı Sarmaşığı",
+      "sourceIds": [
+        "GK-068"
+      ],
+      "images": [
+        796
+      ]
+    },
+    {
+      "id": "GK-069",
+      "slug": "gk-069-caydanlik-takimi",
+      "name": "Çaydanlık Takımı",
+      "sourceIds": [
+        "GK-069"
+      ],
+      "images": [
+        797
+      ]
+    },
+    {
+      "id": "GK-070",
+      "slug": "gk-070-iskeledeki-marti",
+      "name": "İskeledeki Martı",
+      "sourceIds": [
+        "GK-070"
+      ],
+      "images": [
+        798
+      ]
+    },
+    {
+      "id": "GK-073",
+      "slug": "gk-073-armut-sepeti",
+      "name": "Armut Sepeti",
+      "sourceIds": [
+        "GK-073"
+      ],
+      "images": [
+        801
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-076",
+      "slug": "gk-076-uzum-hasadi",
+      "name": "Üzüm Hasadı",
+      "sourceIds": [
+        "GK-076"
+      ],
+      "images": [
+        804
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-077",
+      "slug": "gk-077-dag-kecisi",
+      "name": "Dağ Keçisi",
+      "sourceIds": [
+        "GK-077"
+      ],
+      "images": [
+        805
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-078",
+      "slug": "gk-078-deniz-yelpazesi-mercani",
+      "name": "Deniz Yelpazesi Mercanı",
+      "sourceIds": [
+        "GK-078"
+      ],
+      "images": [
+        806
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-079",
+      "slug": "gk-079-yagmur-birikintisinde-kagit-kayik",
+      "name": "Yağmur Birikintisinde Kağıt Kayık",
+      "sourceIds": [
+        "GK-079"
+      ],
+      "images": [
+        807
+      ]
+    },
+    {
+      "id": "GK-080",
+      "slug": "gk-080-kardelen-demeti",
+      "name": "Kardelen Demeti",
+      "sourceIds": [
+        "GK-080"
+      ],
+      "images": [
+        808
+      ]
+    },
+    {
+      "id": "GK-081",
+      "slug": "gk-081-sazliktaki-pelikan",
+      "name": "Sazlıktaki Pelikan",
+      "sourceIds": [
+        "GK-081"
+      ],
+      "images": [
+        809
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-083",
+      "slug": "gk-083-ay-isiginda-kurt",
+      "name": "Ay Işığında Kurt",
+      "sourceIds": [
+        "GK-083"
+      ],
+      "images": [
+        811
+      ]
+    },
+    {
+      "id": "GK-084",
+      "slug": "gk-084-havuclu-tavsan",
+      "name": "Havuçlu Tavşan",
+      "sourceIds": [
+        "GK-084"
+      ],
+      "images": [
+        812
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-085",
+      "slug": "gk-085-kiraz-dali",
+      "name": "Kiraz Dalı",
+      "sourceIds": [
+        "GK-085"
+      ],
+      "images": [
+        813
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-086",
+      "slug": "gk-086-limonlu-cam-sise",
+      "name": "Limonlu Cam Şişe",
+      "sourceIds": [
+        "GK-086"
+      ],
+      "images": [
+        814
+      ]
+    },
+    {
+      "id": "GK-088",
+      "slug": "gk-088-satranc-ati",
+      "name": "Satranç Atı",
+      "sourceIds": [
+        "GK-088"
+      ],
+      "images": [
+        816
+      ]
+    },
+    {
+      "id": "GK-089",
+      "slug": "gk-089-kitaptaki-kelebek",
+      "name": "Kitaptaki Kelebek",
+      "sourceIds": [
+        "GK-089"
+      ],
+      "images": [
+        817
+      ]
+    },
+    {
+      "id": "GK-091",
+      "slug": "gk-091-yaprak-altindaki-kirpi",
+      "name": "Yaprak Altındaki Kirpi",
+      "sourceIds": [
+        "GK-091"
+      ],
+      "images": [
+        819
+      ]
+    },
+    {
+      "id": "GK-092",
+      "slug": "gk-092-kirmizi-horoz",
+      "name": "Kırmızı Horoz",
+      "sourceIds": [
+        "GK-092"
+      ],
+      "images": [
+        820
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-093",
+      "slug": "gk-093-kaktus-yanindaki-dev-kaplumbaga",
+      "name": "Kaktüs Yanındaki Dev Kaplumbağa",
+      "sourceIds": [
+        "GK-093"
+      ],
+      "images": [
+        821
+      ]
+    },
+    {
+      "id": "GK-094",
+      "slug": "gk-094-eski-kirmizi-kamyon",
+      "name": "Eski Kırmızı Kamyon",
+      "sourceIds": [
+        "GK-094"
+      ],
+      "images": [
+        822
+      ]
+    },
+    {
+      "id": "GK-095",
+      "slug": "gk-095-bal-kavanozu-ve-cicekler",
+      "name": "Bal Kavanozu ve Çiçekler",
+      "sourceIds": [
+        "GK-095"
+      ],
+      "images": [
+        823
+      ],
+      "hidden": true,
+      "hiddenReason": "Faris gizledi (2026-10-31)"
+    },
+    {
+      "id": "GK-096",
+      "slug": "gk-096-davul-seti",
+      "name": "Davul Seti",
+      "sourceIds": [
+        "GK-096"
+      ],
+      "images": [
+        824
+      ]
+    },
+    {
+      "id": "GK-098",
+      "slug": "gk-098-aycicegindeki-serce",
+      "name": "Ayçiçeğindeki Serçe",
+      "sourceIds": [
+        "GK-098"
+      ],
+      "images": [
+        826
+      ]
+    },
+    {
+      "id": "GK-099",
+      "slug": "gk-099-deniz-kabugu",
+      "name": "Deniz Kabuğu",
+      "sourceIds": [
+        "GK-099"
+      ],
+      "images": [
+        827
+      ]
+    },
+    {
+      "id": "GK-101",
+      "slug": "gk-101-tukan-ve-tropik-yaprak",
+      "name": "Tukan ve Tropik Yaprak",
+      "sourceIds": [
+        "GK-101"
+      ],
+      "images": [
+        829
+      ]
+    },
+    {
+      "id": "GK-102",
+      "slug": "gk-102-vazoda-beyaz-zambak",
+      "name": "Vazoda Beyaz Zambak",
+      "sourceIds": [
+        "GK-102"
+      ],
+      "images": [
+        830
+      ]
+    },
+    {
+      "id": "GK-103",
+      "slug": "gk-103-niluferde-kurbaga",
+      "name": "Nilüferde Kurbağa",
+      "sourceIds": [
+        "GK-103"
+      ],
+      "images": [
+        831
+      ]
+    },
+    {
+      "id": "GK-104",
+      "slug": "gk-104-penceredeki-kedi",
+      "name": "Penceredeki Kedi",
+      "sourceIds": [
+        "GK-104"
+      ],
+      "images": [
+        832
+      ]
+    },
+    {
+      "id": "GK-105",
+      "slug": "gk-105-eski-lokomotif",
+      "name": "Eski Lokomotif",
+      "sourceIds": [
+        "GK-105"
+      ],
+      "images": [
+        833
+      ]
+    },
+    {
+      "id": "GK-106",
+      "slug": "gk-106-eski-sinema-girisi",
+      "name": "Eski Sinema Girişi",
+      "sourceIds": [
+        "GK-106"
+      ],
+      "images": [
+        834
+      ]
+    },
+    {
+      "id": "GK-107",
+      "slug": "gk-107-boks-eldivenleri",
+      "name": "Boks Eldivenleri",
+      "sourceIds": [
+        "GK-107"
+      ],
+      "images": [
+        835
+      ]
+    },
+    {
+      "id": "GK-108",
+      "slug": "gk-108-uzay-modulu-penceresi",
+      "name": "Uzay Modülü Penceresi",
+      "sourceIds": [
+        "GK-108"
+      ],
+      "images": [
+        836
+      ]
+    },
+    {
+      "id": "GK-109",
+      "slug": "gk-109-terzi-atolyesi",
+      "name": "Terzi Atölyesi",
+      "sourceIds": [
+        "GK-109"
+      ],
+      "images": [
+        837
+      ]
+    },
+    {
+      "id": "GK-110",
+      "slug": "gk-110-lunapark-donme-dolabi",
+      "name": "Lunapark Dönme Dolabı",
+      "sourceIds": [
+        "GK-110"
+      ],
+      "images": [
+        838
+      ]
+    },
+    {
+      "id": "TD-001",
+      "slug": "koi",
+      "name": "Koi",
+      "sourceIds": [
+        "TD-001"
+      ],
+      "images": [
+        839
+      ]
+    },
+    {
+      "id": "TD-002",
+      "slug": "yalicapkini",
+      "name": "Yalıçapkını",
+      "sourceIds": [
+        "TD-002"
+      ],
+      "images": [
+        840
+      ]
+    },
+    {
+      "id": "TD-003",
+      "slug": "nar-bahcesi",
+      "name": "Nar Bahçesi",
+      "sourceIds": [
+        "TD-003"
+      ],
+      "images": [
+        841
+      ]
+    },
+    {
+      "id": "TD-004",
+      "slug": "nefes-alan-balina",
+      "name": "Nefes Alan Balina",
+      "sourceIds": [
+        "TD-004"
+      ],
+      "images": [
+        842
+      ]
+    },
+    {
+      "id": "TD-005",
+      "slug": "ruzgar-agaci",
+      "name": "Rüzgâr Ağacı",
+      "sourceIds": [
+        "TD-005"
+      ],
+      "images": [
+        843
+      ]
+    },
+    {
+      "id": "TD-006",
+      "slug": "sarmal",
+      "name": "Sarmal",
+      "sourceIds": [
+        "TD-006"
+      ],
+      "images": [
+        844
+      ]
+    },
+    {
+      "id": "TD-007",
+      "slug": "td-007-lacivert-sedan",
+      "name": "Lacivert Sedan",
+      "sourceIds": [
+        "TD-007"
+      ],
+      "images": [
+        845
+      ]
+    },
+    {
+      "id": "TD-008",
+      "slug": "td-008-ahtapot",
+      "name": "Ahtapot",
+      "sourceIds": [
+        "TD-008",
+        "TD-026"
+      ],
+      "images": [
+        846,
+        864
+      ]
+    },
+    {
+      "id": "TD-009",
+      "slug": "td-009-safari-gunesi",
+      "name": "Safari Güneşi",
+      "sourceIds": [
+        "TD-009"
+      ],
+      "images": [
+        847
+      ]
+    },
+    {
+      "id": "TD-010",
+      "slug": "td-010-tavuskusu",
+      "name": "Tavuskuşu",
+      "sourceIds": [
+        "TD-010"
+      ],
+      "images": [
+        848
+      ]
+    },
+    {
+      "id": "TD-011",
+      "slug": "td-011-ay-ve-tilki",
+      "name": "Ay ve Tilki",
+      "sourceIds": [
+        "TD-011"
+      ],
+      "images": [
+        849
+      ]
+    },
+    {
+      "id": "TD-012",
+      "slug": "td-012-kosan-at",
+      "name": "Koşan At",
+      "sourceIds": [
+        "TD-012"
+      ],
+      "images": [
+        850
+      ]
+    },
+    {
+      "id": "TD-013",
+      "slug": "td-013-kiyida-klasik-otomobil",
+      "name": "Kıyıda Klasik Otomobil",
+      "sourceIds": [
+        "TD-013"
+      ],
+      "images": [
+        851
+      ]
+    },
+    {
+      "id": "TD-014",
+      "slug": "td-014-zeytin-dali",
+      "name": "Zeytin Dalı",
+      "sourceIds": [
+        "TD-014"
+      ],
+      "images": [
+        852
+      ]
+    },
+    {
+      "id": "TD-015",
+      "slug": "td-015-fil",
+      "name": "Fil",
+      "sourceIds": [
+        "TD-015"
+      ],
+      "images": [
+        853
+      ]
+    },
+    {
+      "id": "TD-016",
+      "slug": "td-016-renkli-cicek",
+      "name": "Renkli Çiçek",
+      "sourceIds": [
+        "TD-016"
+      ],
+      "images": [
+        854
+      ]
+    },
+    {
+      "id": "TD-017",
+      "slug": "td-017-aslan",
+      "name": "Aslan",
+      "sourceIds": [
+        "TD-017"
+      ],
+      "images": [
+        855
+      ]
+    },
+    {
+      "id": "TD-018",
+      "slug": "td-018-zurafa",
+      "name": "Zürafa",
+      "sourceIds": [
+        "TD-018"
+      ],
+      "images": [
+        856
+      ]
+    },
+    {
+      "id": "TD-019",
+      "slug": "td-019-derin-nefes",
+      "name": "Derin Nefes",
+      "sourceIds": [
+        "TD-019"
+      ],
+      "images": [
+        857
+      ]
+    },
+    {
+      "id": "TD-020",
+      "slug": "td-020-beyaz-sedan",
+      "name": "Beyaz Sedan",
+      "sourceIds": [
+        "TD-020"
+      ],
+      "images": [
+        858
+      ]
+    },
+    {
+      "id": "TD-021",
+      "slug": "td-021-balina-anne-ve-yavrusu",
+      "name": "Balina Anne ve Yavrusu",
+      "sourceIds": [
+        "TD-021"
+      ],
+      "images": [
+        859
+      ]
+    },
+    {
+      "id": "TD-022",
+      "slug": "td-022-klasik-motosiklet",
+      "name": "Klasik Motosiklet",
+      "sourceIds": [
+        "TD-022"
+      ],
+      "images": [
+        860
+      ]
+    },
+    {
+      "id": "TD-023",
+      "slug": "td-023-asirlik-mese",
+      "name": "Asırlık Meşe",
+      "sourceIds": [
+        "TD-023"
+      ],
+      "images": [
+        861
+      ]
+    },
+    {
+      "id": "TD-024",
+      "slug": "td-024-puhu",
+      "name": "Puhu",
+      "sourceIds": [
+        "TD-024"
+      ],
+      "images": [
+        862
+      ]
+    },
+    {
+      "id": "TD-025",
+      "slug": "td-025-gece-bekcisi",
+      "name": "Gece Bekçisi",
+      "sourceIds": [
+        "TD-025"
+      ],
+      "images": [
+        863
+      ]
+    },
+    {
+      "id": "TD-027",
+      "slug": "td-027-modern-sedan",
+      "name": "Modern Sedan",
+      "sourceIds": [
+        "TD-027"
+      ],
+      "images": [
+        865
+      ]
+    },
+    {
+      "id": "TD-028",
+      "slug": "td-028-gumus-kurt",
+      "name": "Gümüş Kurt",
+      "sourceIds": [
+        "TD-028"
+      ],
+      "images": [
+        866
+      ]
+    },
+    {
+      "id": "TD-029",
+      "slug": "td-029-kozmik-kum-saati",
+      "name": "Kozmik Kum Saati",
+      "sourceIds": [
+        "TD-029"
+      ],
+      "images": [
+        867
+      ]
+    },
+    {
+      "id": "TD-030",
+      "slug": "td-030-kavisli-lobi",
+      "name": "Kavisli Lobi",
+      "sourceIds": [
+        "TD-030"
+      ],
+      "images": [
+        868
+      ]
+    },
+    {
+      "id": "TD-031",
+      "slug": "td-031-athena",
+      "name": "Athena",
+      "sourceIds": [
+        "TD-031",
+        "TD-039"
+      ],
+      "images": [
+        869,
+        877
+      ]
+    },
+    {
+      "id": "TD-032",
+      "slug": "td-032-kozmik-balina",
+      "name": "Kozmik Balina",
+      "sourceIds": [
+        "TD-032"
+      ],
+      "images": [
+        870
+      ]
+    },
+    {
+      "id": "TD-033",
+      "slug": "td-033-anka",
+      "name": "Anka",
+      "sourceIds": [
+        "TD-033"
+      ],
+      "images": [
+        871
+      ]
+    },
+    {
+      "id": "TD-034",
+      "slug": "td-034-kirmizi-otomobil",
+      "name": "Kırmızı Otomobil",
+      "sourceIds": [
+        "TD-034"
+      ],
+      "images": [
+        872
+      ]
+    },
+    {
+      "id": "TD-035",
+      "slug": "td-035-horoz",
+      "name": "Horoz",
+      "sourceIds": [
+        "TD-035"
+      ],
+      "images": [
+        873
+      ]
+    },
+    {
+      "id": "TD-036",
+      "slug": "td-036-gramofon",
+      "name": "Gramofon",
+      "sourceIds": [
+        "TD-036"
+      ],
+      "images": [
+        874
+      ]
+    },
+    {
+      "id": "TD-037",
+      "slug": "td-037-ruzgarin-izi",
+      "name": "Rüzgârın İzi",
+      "sourceIds": [
+        "TD-037"
+      ],
+      "images": [
+        875
+      ]
+    },
+    {
+      "id": "TD-038",
+      "slug": "td-038-manolya",
+      "name": "Manolya",
+      "sourceIds": [
+        "TD-038"
+      ],
+      "images": [
+        876
+      ]
+    },
+    {
+      "id": "TD-040",
+      "slug": "td-040-dugun-sarilmasi",
+      "name": "Düğün Sarılması",
+      "sourceIds": [
+        "TD-040"
+      ],
+      "images": [
+        878
+      ]
+    },
+    {
+      "id": "TD-041",
+      "slug": "td-041-anne-ve-bebek",
+      "name": "Anne ve Bebek",
+      "sourceIds": [
+        "TD-041"
+      ],
+      "images": [
+        879
+      ]
+    },
+    {
+      "id": "TD-042",
+      "slug": "td-042-birlikte-gulumsemek",
+      "name": "Birlikte Gülümsemek",
+      "sourceIds": [
+        "TD-042"
+      ],
+      "images": [
+        880
+      ]
+    },
+    {
+      "id": "TD-043",
+      "slug": "td-043-aile-sarilmasi",
+      "name": "Aile Sarılması",
+      "sourceIds": [
+        "TD-043"
+      ],
+      "images": [
+        881
+      ]
+    },
+    {
+      "id": "TD-044",
+      "slug": "td-044-baba-ve-kiz",
+      "name": "Baba ve Kız",
+      "sourceIds": [
+        "TD-044"
+      ],
+      "images": [
+        882
+      ]
+    },
+    {
+      "id": "TD-045",
+      "slug": "td-045-bir-omur-birlikte",
+      "name": "Bir Ömür Birlikte",
+      "sourceIds": [
+        "TD-045"
+      ],
+      "images": [
+        883
+      ]
+    },
+    {
+      "id": "TD-046",
+      "slug": "td-046-sadik-dost",
+      "name": "Sadık Dost",
+      "sourceIds": [
+        "TD-046"
+      ],
+      "images": [
+        884
+      ]
+    }
+  ]
+}

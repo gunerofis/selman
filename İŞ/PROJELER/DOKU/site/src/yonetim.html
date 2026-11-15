@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Etiket yönetimi | DOKU</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/yonetim.css"><script defer src="/yonetim.js"></script></head>
+<body><a class="skip" href="#editor">Düzenlemeye geç</a>
+<header class="admin-header"><a class="brand" href="/" aria-label="DOKU ana sayfa">doku<span>.</span></a><h1>Etiketler</h1><nav aria-label="Yönetim"><a href="/galeri/" target="_blank">Site</a><a id="backup" href="/api/admin/keywords/export" download>Yedek</a><a href="/yonetim/cikis/" target="_top">Çıkış</a></nav></header>
+<p id="page-status" class="page-status" role="status">Etiketler yükleniyor…</p>
+<div id="load-error" class="load-error" hidden><p id="load-message"></p><button id="retry" type="button">Tekrar dene</button><a href="/yonetim/giris/" target="_top">Giriş</a></div>
+<main class="workspace" id="workspace" hidden>
+<aside class="image-list" aria-label="Görseller"><div class="list-tools"><label for="image-search">Görsel bul</label><input type="search" id="image-search" placeholder="G-100, DK-029, yaprak…"><p id="list-count" role="status"></p></div><ul id="image-list"></ul><p id="list-empty" hidden>Görsel bulunamadı.</p></aside>
+<section class="editor" id="editor" aria-labelledby="selected-code" tabindex="-1">
+<div class="editor-heading"><div><p id="selected-product"></p><h2 id="selected-code"></h2></div><div class="editor-actions"><span id="dirty-status"></span><button id="discard" type="button" disabled>Vazgeç</button><button id="save" class="primary" type="button" disabled>Kaydet</button></div></div>
+<p id="save-status" class="save-status" role="status"></p><button id="reload-record" type="button" hidden>Güncel kaydı yükle</button>
+<div class="editor-body"><div class="image-preview"><img id="selected-image" alt=""><details class="base-keywords"><summary>Ürün ve alan etiketleri</summary><p id="base-keywords"></p></details></div>
+<form id="tag-form" novalidate><p class="form-note">Görsele özel etiketler. Her grupta en az bir etiket olmalı.</p><div id="tag-fields"></div></form></div>
+<details id="history" class="history"><summary>Geçmiş</summary><p id="history-status" role="status"></p><ul id="history-list"></ul></details>
+</section></main></body></html>

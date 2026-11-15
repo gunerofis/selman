@@ -1,0 +1,4 @@
+interface:
+  display_name: "Admin Panel UX"
+  short_description: "Sade ve görev odaklı yönetim arayüzleri"
+  default_prompt: "Use $gof-admin-panel-ux to design a clear, efficient admin panel."

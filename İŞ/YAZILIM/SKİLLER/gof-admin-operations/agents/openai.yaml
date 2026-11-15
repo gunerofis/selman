@@ -1,0 +1,4 @@
+interface:
+  display_name: "Admin Operations"
+  short_description: "Güvenli CRUD ve yönetim veri akışları"
+  default_prompt: "Use $gof-admin-operations to implement reliable admin data workflows."

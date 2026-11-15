@@ -1,0 +1,7 @@
+# dependency-upgrade-safety
+
+Alan: İŞ/YAPAY ZEKA/Skill Setleri/dependency-upgrade-safety. Bu klasörde ilk bu AGENTS.md okunur; üst klasör kuralları geçerlidir.
+
+Bu alan skill, eğitim ve araç kaynaklarıdır. Mevcut SKILL.md dosyasını değiştirmeden önce oku. Yalnız işe uygun kaynakları kullan.
+
+Ana konumlar selman/HARİTA.md içindedir. Kişisel veri ve anahtar GitHub’a yüklenmez. GPT Damıtma için üst AGENTS.md özel izin yasağı geçerlidir.

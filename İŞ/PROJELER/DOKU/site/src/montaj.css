@@ -1,0 +1,15 @@
+.assembly{margin:1rem 0;padding:1rem;border:1px solid #d4d9d2;border-radius:12px;background:#f6f7f4;color:#344b4a}
+.assembly summary{cursor:pointer;font-weight:650}
+.assembly p{line-height:1.5;margin:.8rem 0}
+.assembly fieldset{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.assembly legend{font-size:.85rem;margin-bottom:.4rem}
+.assembly label{display:inline-flex;align-items:center;gap:.2rem;padding:.45rem .55rem;border:1px solid #c3cec5;border-radius:6px;cursor:pointer}
+.assembly input{accent-color:#39574c}
+.assembly label:has(:checked){background:#dbe6df}
+.assembly svg{width:100%;max-width:630px;height:auto;display:block;margin:auto}
+.assembly path{transition:transform .65s ease}
+.assembly .part-a{transform:translate(-34px,14px)}
+.assembly .part-b{transform:translate(0,-25px)}
+.assembly .part-c{transform:translate(32px,13px)}
+.assembly:has(input:is([value="1"],[value="2"],[value="3"]):checked) .part-a,.assembly:has(input:is([value="2"],[value="3"]):checked) .part-b,.assembly:has(input[value="3"]:checked) .part-c{transform:translate(0,0)}
+@media(prefers-reduced-motion:reduce){.assembly path{transition:none}}

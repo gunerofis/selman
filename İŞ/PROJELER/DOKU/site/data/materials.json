@@ -1,0 +1,6558 @@
+{
+  "version": 2,
+  "families": [
+    {
+      "id": "suni-deri",
+      "name": "Suni deri",
+      "description": "Üreticinin renk kodlarıyla suni deri kartelaları."
+    },
+    {
+      "id": "dosemelik-kumaslar",
+      "name": "Döşemelik kumaş",
+      "description": "Üreticinin renk kodlarıyla döşemelik kumaş kartelaları."
+    }
+  ],
+  "references": [
+    {
+      "id": "suni-deri-arena",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Arena",
+      "image": "/assets/kaplamalar/suni-deri-arena/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Arena 01",
+          "image": "/assets/kaplamalar/suni-deri-arena/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 03",
+          "image": "/assets/kaplamalar/suni-deri-arena/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 06",
+          "image": "/assets/kaplamalar/suni-deri-arena/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 09",
+          "image": "/assets/kaplamalar/suni-deri-arena/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 11",
+          "image": "/assets/kaplamalar/suni-deri-arena/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 12",
+          "image": "/assets/kaplamalar/suni-deri-arena/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 13",
+          "image": "/assets/kaplamalar/suni-deri-arena/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 14",
+          "image": "/assets/kaplamalar/suni-deri-arena/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arena 15",
+          "image": "/assets/kaplamalar/suni-deri-arena/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-asos",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Asos",
+      "image": "/assets/kaplamalar/suni-deri-asos/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Asos 01",
+          "image": "/assets/kaplamalar/suni-deri-asos/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 02",
+          "image": "/assets/kaplamalar/suni-deri-asos/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 03",
+          "image": "/assets/kaplamalar/suni-deri-asos/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 04",
+          "image": "/assets/kaplamalar/suni-deri-asos/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 05",
+          "image": "/assets/kaplamalar/suni-deri-asos/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 06",
+          "image": "/assets/kaplamalar/suni-deri-asos/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 07",
+          "image": "/assets/kaplamalar/suni-deri-asos/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 08",
+          "image": "/assets/kaplamalar/suni-deri-asos/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 09",
+          "image": "/assets/kaplamalar/suni-deri-asos/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Asos 10",
+          "image": "/assets/kaplamalar/suni-deri-asos/010.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-aspendos",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Aspendos",
+      "image": "/assets/kaplamalar/suni-deri-aspendos/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Aspendos 01",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 02",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 03",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 04",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 05",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 06",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 07",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 08",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 09",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 10",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 11",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 12",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 13",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 14",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 15",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 16",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 17",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 18",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 19",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Aspendos 20",
+          "image": "/assets/kaplamalar/suni-deri-aspendos/020.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-barcelona",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Barcelona",
+      "image": "/assets/kaplamalar/suni-deri-barcelona/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Barcelona 01",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 02",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 03",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 04",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 05",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 06",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 07",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 08",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 09",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 10",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 11",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 12",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Barcelona 13",
+          "image": "/assets/kaplamalar/suni-deri-barcelona/013.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-belmont",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Belmont",
+      "image": "/assets/kaplamalar/suni-deri-belmont/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Belmont 01",
+          "image": "/assets/kaplamalar/suni-deri-belmont/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 02",
+          "image": "/assets/kaplamalar/suni-deri-belmont/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 03",
+          "image": "/assets/kaplamalar/suni-deri-belmont/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 04",
+          "image": "/assets/kaplamalar/suni-deri-belmont/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 05",
+          "image": "/assets/kaplamalar/suni-deri-belmont/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 06",
+          "image": "/assets/kaplamalar/suni-deri-belmont/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 07",
+          "image": "/assets/kaplamalar/suni-deri-belmont/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 08",
+          "image": "/assets/kaplamalar/suni-deri-belmont/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 09",
+          "image": "/assets/kaplamalar/suni-deri-belmont/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Belmont 10",
+          "image": "/assets/kaplamalar/suni-deri-belmont/010.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-biolife",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Biolife",
+      "image": "/assets/kaplamalar/suni-deri-biolife/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "BioLife 01",
+          "image": "/assets/kaplamalar/suni-deri-biolife/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  02",
+          "image": "/assets/kaplamalar/suni-deri-biolife/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  03",
+          "image": "/assets/kaplamalar/suni-deri-biolife/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  04",
+          "image": "/assets/kaplamalar/suni-deri-biolife/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  05",
+          "image": "/assets/kaplamalar/suni-deri-biolife/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  06",
+          "image": "/assets/kaplamalar/suni-deri-biolife/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  07",
+          "image": "/assets/kaplamalar/suni-deri-biolife/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  08",
+          "image": "/assets/kaplamalar/suni-deri-biolife/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  09",
+          "image": "/assets/kaplamalar/suni-deri-biolife/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  10",
+          "image": "/assets/kaplamalar/suni-deri-biolife/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  11",
+          "image": "/assets/kaplamalar/suni-deri-biolife/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "BioLife  12",
+          "image": "/assets/kaplamalar/suni-deri-biolife/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-chester",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Chester",
+      "image": "/assets/kaplamalar/suni-deri-chester/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Chester 01",
+          "image": "/assets/kaplamalar/suni-deri-chester/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 02",
+          "image": "/assets/kaplamalar/suni-deri-chester/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 03",
+          "image": "/assets/kaplamalar/suni-deri-chester/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 04",
+          "image": "/assets/kaplamalar/suni-deri-chester/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 05",
+          "image": "/assets/kaplamalar/suni-deri-chester/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 07",
+          "image": "/assets/kaplamalar/suni-deri-chester/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 08",
+          "image": "/assets/kaplamalar/suni-deri-chester/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 09",
+          "image": "/assets/kaplamalar/suni-deri-chester/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 10",
+          "image": "/assets/kaplamalar/suni-deri-chester/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-diamond",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Diamond",
+      "image": "/assets/kaplamalar/suni-deri-diamond/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Diamond 01",
+          "image": "/assets/kaplamalar/suni-deri-diamond/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 02",
+          "image": "/assets/kaplamalar/suni-deri-diamond/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 03",
+          "image": "/assets/kaplamalar/suni-deri-diamond/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 04",
+          "image": "/assets/kaplamalar/suni-deri-diamond/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 05",
+          "image": "/assets/kaplamalar/suni-deri-diamond/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 06",
+          "image": "/assets/kaplamalar/suni-deri-diamond/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 07",
+          "image": "/assets/kaplamalar/suni-deri-diamond/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 08",
+          "image": "/assets/kaplamalar/suni-deri-diamond/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 9",
+          "image": "/assets/kaplamalar/suni-deri-diamond/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 10",
+          "image": "/assets/kaplamalar/suni-deri-diamond/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diamond 11",
+          "image": "/assets/kaplamalar/suni-deri-diamond/011.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-dubai",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Dubai",
+      "image": "/assets/kaplamalar/suni-deri-dubai/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Dubai 01",
+          "image": "/assets/kaplamalar/suni-deri-dubai/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 02",
+          "image": "/assets/kaplamalar/suni-deri-dubai/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 03",
+          "image": "/assets/kaplamalar/suni-deri-dubai/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 04",
+          "image": "/assets/kaplamalar/suni-deri-dubai/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 05",
+          "image": "/assets/kaplamalar/suni-deri-dubai/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 06",
+          "image": "/assets/kaplamalar/suni-deri-dubai/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 07",
+          "image": "/assets/kaplamalar/suni-deri-dubai/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 08",
+          "image": "/assets/kaplamalar/suni-deri-dubai/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 09",
+          "image": "/assets/kaplamalar/suni-deri-dubai/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 10",
+          "image": "/assets/kaplamalar/suni-deri-dubai/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Dubai 11",
+          "image": "/assets/kaplamalar/suni-deri-dubai/011.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-extra",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Extra",
+      "image": "/assets/kaplamalar/suni-deri-extra/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Extra 01",
+          "image": "/assets/kaplamalar/suni-deri-extra/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 02",
+          "image": "/assets/kaplamalar/suni-deri-extra/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 03",
+          "image": "/assets/kaplamalar/suni-deri-extra/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 04",
+          "image": "/assets/kaplamalar/suni-deri-extra/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 05",
+          "image": "/assets/kaplamalar/suni-deri-extra/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 06",
+          "image": "/assets/kaplamalar/suni-deri-extra/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 07",
+          "image": "/assets/kaplamalar/suni-deri-extra/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 08",
+          "image": "/assets/kaplamalar/suni-deri-extra/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 09",
+          "image": "/assets/kaplamalar/suni-deri-extra/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 10",
+          "image": "/assets/kaplamalar/suni-deri-extra/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 11",
+          "image": "/assets/kaplamalar/suni-deri-extra/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 12",
+          "image": "/assets/kaplamalar/suni-deri-extra/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 13",
+          "image": "/assets/kaplamalar/suni-deri-extra/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 14",
+          "image": "/assets/kaplamalar/suni-deri-extra/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 15",
+          "image": "/assets/kaplamalar/suni-deri-extra/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 16",
+          "image": "/assets/kaplamalar/suni-deri-extra/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 17",
+          "image": "/assets/kaplamalar/suni-deri-extra/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Extra 18",
+          "image": "/assets/kaplamalar/suni-deri-extra/018.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-forza",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Forza",
+      "image": "/assets/kaplamalar/suni-deri-forza/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Forza 01",
+          "image": "/assets/kaplamalar/suni-deri-forza/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 02",
+          "image": "/assets/kaplamalar/suni-deri-forza/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 03",
+          "image": "/assets/kaplamalar/suni-deri-forza/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 04",
+          "image": "/assets/kaplamalar/suni-deri-forza/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 05",
+          "image": "/assets/kaplamalar/suni-deri-forza/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 06",
+          "image": "/assets/kaplamalar/suni-deri-forza/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 07",
+          "image": "/assets/kaplamalar/suni-deri-forza/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 08",
+          "image": "/assets/kaplamalar/suni-deri-forza/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 09",
+          "image": "/assets/kaplamalar/suni-deri-forza/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 10",
+          "image": "/assets/kaplamalar/suni-deri-forza/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 11",
+          "image": "/assets/kaplamalar/suni-deri-forza/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 12",
+          "image": "/assets/kaplamalar/suni-deri-forza/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Forza 13",
+          "image": "/assets/kaplamalar/suni-deri-forza/013.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-goktug",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Göktuğ",
+      "image": "/assets/kaplamalar/suni-deri-goktug/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Göktuğ 01",
+          "image": "/assets/kaplamalar/suni-deri-goktug/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 02",
+          "image": "/assets/kaplamalar/suni-deri-goktug/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 03",
+          "image": "/assets/kaplamalar/suni-deri-goktug/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 04",
+          "image": "/assets/kaplamalar/suni-deri-goktug/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 05",
+          "image": "/assets/kaplamalar/suni-deri-goktug/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 06",
+          "image": "/assets/kaplamalar/suni-deri-goktug/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 07",
+          "image": "/assets/kaplamalar/suni-deri-goktug/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 08",
+          "image": "/assets/kaplamalar/suni-deri-goktug/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 09",
+          "image": "/assets/kaplamalar/suni-deri-goktug/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 10",
+          "image": "/assets/kaplamalar/suni-deri-goktug/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 11",
+          "image": "/assets/kaplamalar/suni-deri-goktug/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 12",
+          "image": "/assets/kaplamalar/suni-deri-goktug/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Göktuğ 13",
+          "image": "/assets/kaplamalar/suni-deri-goktug/013.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-harsena",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Harşena",
+      "image": "/assets/kaplamalar/suni-deri-harsena/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Harşena 01",
+          "image": "/assets/kaplamalar/suni-deri-harsena/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 02",
+          "image": "/assets/kaplamalar/suni-deri-harsena/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 03",
+          "image": "/assets/kaplamalar/suni-deri-harsena/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 04",
+          "image": "/assets/kaplamalar/suni-deri-harsena/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 05",
+          "image": "/assets/kaplamalar/suni-deri-harsena/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 06",
+          "image": "/assets/kaplamalar/suni-deri-harsena/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 07",
+          "image": "/assets/kaplamalar/suni-deri-harsena/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 08",
+          "image": "/assets/kaplamalar/suni-deri-harsena/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 09",
+          "image": "/assets/kaplamalar/suni-deri-harsena/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 10",
+          "image": "/assets/kaplamalar/suni-deri-harsena/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 11",
+          "image": "/assets/kaplamalar/suni-deri-harsena/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 12",
+          "image": "/assets/kaplamalar/suni-deri-harsena/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 13",
+          "image": "/assets/kaplamalar/suni-deri-harsena/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 14",
+          "image": "/assets/kaplamalar/suni-deri-harsena/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 15",
+          "image": "/assets/kaplamalar/suni-deri-harsena/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 16",
+          "image": "/assets/kaplamalar/suni-deri-harsena/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 17",
+          "image": "/assets/kaplamalar/suni-deri-harsena/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 18",
+          "image": "/assets/kaplamalar/suni-deri-harsena/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 19",
+          "image": "/assets/kaplamalar/suni-deri-harsena/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 20",
+          "image": "/assets/kaplamalar/suni-deri-harsena/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 21",
+          "image": "/assets/kaplamalar/suni-deri-harsena/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 22",
+          "image": "/assets/kaplamalar/suni-deri-harsena/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 23",
+          "image": "/assets/kaplamalar/suni-deri-harsena/023.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 24",
+          "image": "/assets/kaplamalar/suni-deri-harsena/024.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 25",
+          "image": "/assets/kaplamalar/suni-deri-harsena/025.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 26",
+          "image": "/assets/kaplamalar/suni-deri-harsena/026.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 27",
+          "image": "/assets/kaplamalar/suni-deri-harsena/027.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 28",
+          "image": "/assets/kaplamalar/suni-deri-harsena/028.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Harşena 29",
+          "image": "/assets/kaplamalar/suni-deri-harsena/029.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-inter",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Inter",
+      "image": "/assets/kaplamalar/suni-deri-inter/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Inter 01",
+          "image": "/assets/kaplamalar/suni-deri-inter/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 02",
+          "image": "/assets/kaplamalar/suni-deri-inter/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 03",
+          "image": "/assets/kaplamalar/suni-deri-inter/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 04",
+          "image": "/assets/kaplamalar/suni-deri-inter/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 05",
+          "image": "/assets/kaplamalar/suni-deri-inter/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 06",
+          "image": "/assets/kaplamalar/suni-deri-inter/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 07",
+          "image": "/assets/kaplamalar/suni-deri-inter/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 08",
+          "image": "/assets/kaplamalar/suni-deri-inter/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 10",
+          "image": "/assets/kaplamalar/suni-deri-inter/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 11",
+          "image": "/assets/kaplamalar/suni-deri-inter/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 12",
+          "image": "/assets/kaplamalar/suni-deri-inter/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 13",
+          "image": "/assets/kaplamalar/suni-deri-inter/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 14",
+          "image": "/assets/kaplamalar/suni-deri-inter/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 15",
+          "image": "/assets/kaplamalar/suni-deri-inter/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Inter 16",
+          "image": "/assets/kaplamalar/suni-deri-inter/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-karven",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Karven",
+      "image": "/assets/kaplamalar/suni-deri-karven/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Karven 01",
+          "image": "/assets/kaplamalar/suni-deri-karven/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 02",
+          "image": "/assets/kaplamalar/suni-deri-karven/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 03",
+          "image": "/assets/kaplamalar/suni-deri-karven/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 04",
+          "image": "/assets/kaplamalar/suni-deri-karven/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 05",
+          "image": "/assets/kaplamalar/suni-deri-karven/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 06",
+          "image": "/assets/kaplamalar/suni-deri-karven/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 07",
+          "image": "/assets/kaplamalar/suni-deri-karven/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 08",
+          "image": "/assets/kaplamalar/suni-deri-karven/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Karven 09",
+          "image": "/assets/kaplamalar/suni-deri-karven/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-latte",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Latte",
+      "image": "/assets/kaplamalar/suni-deri-latte/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Latte 01",
+          "image": "/assets/kaplamalar/suni-deri-latte/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 02",
+          "image": "/assets/kaplamalar/suni-deri-latte/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 03",
+          "image": "/assets/kaplamalar/suni-deri-latte/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 04",
+          "image": "/assets/kaplamalar/suni-deri-latte/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 05",
+          "image": "/assets/kaplamalar/suni-deri-latte/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 06",
+          "image": "/assets/kaplamalar/suni-deri-latte/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 07",
+          "image": "/assets/kaplamalar/suni-deri-latte/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 08",
+          "image": "/assets/kaplamalar/suni-deri-latte/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Latte 09",
+          "image": "/assets/kaplamalar/suni-deri-latte/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-lizbon",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Lizbon",
+      "image": "/assets/kaplamalar/suni-deri-lizbon/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Lizbon 01",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 02",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 03",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 04",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 05",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 06",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 07",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 08",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 09",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 10",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 11",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 12",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 13",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 14",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lizbon 15",
+          "image": "/assets/kaplamalar/suni-deri-lizbon/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-madonna",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Madonna",
+      "image": "/assets/kaplamalar/suni-deri-madonna/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Madonna 01",
+          "image": "/assets/kaplamalar/suni-deri-madonna/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 02",
+          "image": "/assets/kaplamalar/suni-deri-madonna/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 03",
+          "image": "/assets/kaplamalar/suni-deri-madonna/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 05",
+          "image": "/assets/kaplamalar/suni-deri-madonna/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 07",
+          "image": "/assets/kaplamalar/suni-deri-madonna/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 09",
+          "image": "/assets/kaplamalar/suni-deri-madonna/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 10",
+          "image": "/assets/kaplamalar/suni-deri-madonna/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 11",
+          "image": "/assets/kaplamalar/suni-deri-madonna/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 13",
+          "image": "/assets/kaplamalar/suni-deri-madonna/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 14",
+          "image": "/assets/kaplamalar/suni-deri-madonna/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 15",
+          "image": "/assets/kaplamalar/suni-deri-madonna/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 16",
+          "image": "/assets/kaplamalar/suni-deri-madonna/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 17",
+          "image": "/assets/kaplamalar/suni-deri-madonna/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 19",
+          "image": "/assets/kaplamalar/suni-deri-madonna/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 20",
+          "image": "/assets/kaplamalar/suni-deri-madonna/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 21",
+          "image": "/assets/kaplamalar/suni-deri-madonna/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 23",
+          "image": "/assets/kaplamalar/suni-deri-madonna/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 24",
+          "image": "/assets/kaplamalar/suni-deri-madonna/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 25",
+          "image": "/assets/kaplamalar/suni-deri-madonna/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Madonna 26",
+          "image": "/assets/kaplamalar/suni-deri-madonna/020.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-martin",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Martin",
+      "image": "/assets/kaplamalar/suni-deri-martin/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Martin 01",
+          "image": "/assets/kaplamalar/suni-deri-martin/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 02",
+          "image": "/assets/kaplamalar/suni-deri-martin/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 03",
+          "image": "/assets/kaplamalar/suni-deri-martin/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 04",
+          "image": "/assets/kaplamalar/suni-deri-martin/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 05",
+          "image": "/assets/kaplamalar/suni-deri-martin/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 06",
+          "image": "/assets/kaplamalar/suni-deri-martin/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 07",
+          "image": "/assets/kaplamalar/suni-deri-martin/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 08",
+          "image": "/assets/kaplamalar/suni-deri-martin/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Martin 09",
+          "image": "/assets/kaplamalar/suni-deri-martin/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-montana",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Montana",
+      "image": "/assets/kaplamalar/suni-deri-montana/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Montana 01",
+          "image": "/assets/kaplamalar/suni-deri-montana/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 02",
+          "image": "/assets/kaplamalar/suni-deri-montana/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 03",
+          "image": "/assets/kaplamalar/suni-deri-montana/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 04",
+          "image": "/assets/kaplamalar/suni-deri-montana/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 05",
+          "image": "/assets/kaplamalar/suni-deri-montana/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 06",
+          "image": "/assets/kaplamalar/suni-deri-montana/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 07",
+          "image": "/assets/kaplamalar/suni-deri-montana/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 08",
+          "image": "/assets/kaplamalar/suni-deri-montana/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 09",
+          "image": "/assets/kaplamalar/suni-deri-montana/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 10",
+          "image": "/assets/kaplamalar/suni-deri-montana/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Montana 11",
+          "image": "/assets/kaplamalar/suni-deri-montana/011.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-nur",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Nur",
+      "image": "/assets/kaplamalar/suni-deri-nur/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Nur 01",
+          "image": "/assets/kaplamalar/suni-deri-nur/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 02",
+          "image": "/assets/kaplamalar/suni-deri-nur/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 03",
+          "image": "/assets/kaplamalar/suni-deri-nur/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 04",
+          "image": "/assets/kaplamalar/suni-deri-nur/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 05",
+          "image": "/assets/kaplamalar/suni-deri-nur/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 06",
+          "image": "/assets/kaplamalar/suni-deri-nur/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 07",
+          "image": "/assets/kaplamalar/suni-deri-nur/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 08",
+          "image": "/assets/kaplamalar/suni-deri-nur/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 09",
+          "image": "/assets/kaplamalar/suni-deri-nur/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 10",
+          "image": "/assets/kaplamalar/suni-deri-nur/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 11",
+          "image": "/assets/kaplamalar/suni-deri-nur/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nur 12",
+          "image": "/assets/kaplamalar/suni-deri-nur/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-pegasus",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Pegasus",
+      "image": "/assets/kaplamalar/suni-deri-pegasus/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Pegasus 01",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 02",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 03",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 04",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 05",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 06",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 07",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 08",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 09",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 10",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 11",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pegasus 12",
+          "image": "/assets/kaplamalar/suni-deri-pegasus/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-pull-up",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Pull-Up",
+      "image": "/assets/kaplamalar/suni-deri-pull-up/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Pull-Up 01",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 02",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 03",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 04",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 05",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 06",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 07",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 08",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 09",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 10",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 11",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up 12",
+          "image": "/assets/kaplamalar/suni-deri-pull-up/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-pull-up-mat",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Pull-Up Mat",
+      "image": "/assets/kaplamalar/suni-deri-pull-up-mat/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Pull-Up Mat 01",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 02",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 03",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 04",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 05",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 06",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 07",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 08",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 09",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 10",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 11",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Pull-Up Mat 12",
+          "image": "/assets/kaplamalar/suni-deri-pull-up-mat/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-quantum",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Quantum",
+      "image": "/assets/kaplamalar/suni-deri-quantum/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Quantum 01",
+          "image": "/assets/kaplamalar/suni-deri-quantum/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 02",
+          "image": "/assets/kaplamalar/suni-deri-quantum/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 03",
+          "image": "/assets/kaplamalar/suni-deri-quantum/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 04",
+          "image": "/assets/kaplamalar/suni-deri-quantum/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 05",
+          "image": "/assets/kaplamalar/suni-deri-quantum/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 06",
+          "image": "/assets/kaplamalar/suni-deri-quantum/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 07",
+          "image": "/assets/kaplamalar/suni-deri-quantum/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Quantum 08",
+          "image": "/assets/kaplamalar/suni-deri-quantum/008.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-sahra",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Sahra",
+      "image": "/assets/kaplamalar/suni-deri-sahra/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Sahra 01",
+          "image": "/assets/kaplamalar/suni-deri-sahra/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 02",
+          "image": "/assets/kaplamalar/suni-deri-sahra/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 03",
+          "image": "/assets/kaplamalar/suni-deri-sahra/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 04",
+          "image": "/assets/kaplamalar/suni-deri-sahra/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 05",
+          "image": "/assets/kaplamalar/suni-deri-sahra/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 06",
+          "image": "/assets/kaplamalar/suni-deri-sahra/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 07",
+          "image": "/assets/kaplamalar/suni-deri-sahra/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 08",
+          "image": "/assets/kaplamalar/suni-deri-sahra/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 09",
+          "image": "/assets/kaplamalar/suni-deri-sahra/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 10",
+          "image": "/assets/kaplamalar/suni-deri-sahra/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 11",
+          "image": "/assets/kaplamalar/suni-deri-sahra/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 12",
+          "image": "/assets/kaplamalar/suni-deri-sahra/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 13",
+          "image": "/assets/kaplamalar/suni-deri-sahra/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 14",
+          "image": "/assets/kaplamalar/suni-deri-sahra/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 15",
+          "image": "/assets/kaplamalar/suni-deri-sahra/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra 16",
+          "image": "/assets/kaplamalar/suni-deri-sahra/016.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-santa-furnisoft",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Santa Furnisoft",
+      "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Sahra Furnisoft 01",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 02",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 03",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 04",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 05",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 06",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 07",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 08",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 09",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 10",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 11",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 12",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 13",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 14",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 15",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 16",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Sahra Furnisoft 17",
+          "image": "/assets/kaplamalar/suni-deri-santa-furnisoft/017.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-soho",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Soho",
+      "image": "/assets/kaplamalar/suni-deri-soho/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Soho 01",
+          "image": "/assets/kaplamalar/suni-deri-soho/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soho 02",
+          "image": "/assets/kaplamalar/suni-deri-soho/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soho 03",
+          "image": "/assets/kaplamalar/suni-deri-soho/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soho 04",
+          "image": "/assets/kaplamalar/suni-deri-soho/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soho 05",
+          "image": "/assets/kaplamalar/suni-deri-soho/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soho 06",
+          "image": "/assets/kaplamalar/suni-deri-soho/006.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "suni-deri-toskano",
+      "familyId": "suni-deri",
+      "family": "Suni deri",
+      "type": "Suni deri",
+      "collection": "Toskano",
+      "image": "/assets/kaplamalar/suni-deri-toskano/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Toskano 01",
+          "image": "/assets/kaplamalar/suni-deri-toskano/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 02",
+          "image": "/assets/kaplamalar/suni-deri-toskano/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 03",
+          "image": "/assets/kaplamalar/suni-deri-toskano/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 04",
+          "image": "/assets/kaplamalar/suni-deri-toskano/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 05",
+          "image": "/assets/kaplamalar/suni-deri-toskano/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 06",
+          "image": "/assets/kaplamalar/suni-deri-toskano/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 07",
+          "image": "/assets/kaplamalar/suni-deri-toskano/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 08",
+          "image": "/assets/kaplamalar/suni-deri-toskano/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 09",
+          "image": "/assets/kaplamalar/suni-deri-toskano/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 10",
+          "image": "/assets/kaplamalar/suni-deri-toskano/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 11",
+          "image": "/assets/kaplamalar/suni-deri-toskano/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 2307",
+          "image": "/assets/kaplamalar/suni-deri-toskano/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 2308",
+          "image": "/assets/kaplamalar/suni-deri-toskano/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 2309",
+          "image": "/assets/kaplamalar/suni-deri-toskano/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Toskano 2314",
+          "image": "/assets/kaplamalar/suni-deri-toskano/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-elvis",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Elvis",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Elvis 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Elvis 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-elvis/016.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-euro-file",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Euro File",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Euro File 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Euro File 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-euro-file/014.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-fiesta",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Fiesta",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Fiesta 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Fiesta 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-fiesta/016.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-file-air",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "File Air",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "File Air 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Air 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-air/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-file-sert",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "File Sert",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "File Sert 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "File Sert 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-file-sert/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-kase",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Kaşe",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Kaşe 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kaşe 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kase/011.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-kirisik",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Kırışık",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Kırışık 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kırışık 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kirisik/016.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-micro",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Micro",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Micro 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 25",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 26",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 27",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 28",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 29",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 30",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 31",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 32",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/023.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 33",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/024.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 34",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/025.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 35",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/026.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Micro 55",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-micro/027.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-serit-file-air",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Şerit File Air",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Şerit File Air 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Air 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-air/007.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-serit-file-sert",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Şerit File Sert",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Şerit File Sert 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Şerit File Sert 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-serit-file-sert/007.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-antik",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Antik",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Antik 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/023.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 24",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/024.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Antik 25",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-antik/025.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-arel",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Arel",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Arel 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arel 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arel/019.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-arizona",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Arizona",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Arizona 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Arizona 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-arizona/019.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-berlin",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Berlin",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Berlin 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Berlin 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-berlin/023.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-bukle",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Bukle",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Bukle 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Bukle 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-bukle/017.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-cunda",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Cunda",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Cunda 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Cunda 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-cunda/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-diplomat",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Diplomat",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Diplomat Bordo",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diplomat Kahve",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diplomat Kırmızı",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diplomat Mavi",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diplomat Mor",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Diplomat Siyah",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-diplomat/006.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-felix",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Felix",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Felix 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/023.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Felix 24",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-felix/024.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-gold",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Gold",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Gold 92",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 410",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 412",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 414",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 416",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 419",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 421",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 426",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 428",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 429",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 431",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 433",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 436",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 438",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 440",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 442",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 444",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 445",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 447",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 594",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Gold 666",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-gold/021.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-kazayagi",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Kazayağı",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Kazayağı 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Kazayağı 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-kazayagi/011.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-lara",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Lara",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Lara 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 24",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 25",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lara 29",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lara/018.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-lidya",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Lidya",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Lidya 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Lidya 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-lidya/021.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-londra",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Londra",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Londra 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Londra 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Londra 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Londra 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Londra 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-londra/005.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-monza",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Monza",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Monza 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Monza 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-monza/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-nora",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Nora",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Nora 1",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 2",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 3",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 4",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 5",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 6",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 7",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 8",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 9",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nora 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nora/016.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-nubuk",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Nubuk",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Nubuk 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Nubuk 24",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-nubuk/017.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-orion",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Orion",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Orion 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Orion 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-orion/023.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-parla",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Parla",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Parla 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Parla 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-parla/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-patara",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Patara",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Patara 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Patara 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-patara/019.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-roots",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Roots",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Roots 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roots 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roots/021.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-roza",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Roza",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Roza 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roza 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roza/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-soft",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Soft",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Soft 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/018.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/019.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 20",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/020.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 21",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/021.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 22",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/022.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 23",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/023.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Soft 24",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-soft/024.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-tokyo",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Tokyo",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Tokyo 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 16",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/015.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 17",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/016.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 18",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/017.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Tokyo 19",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-tokyo/018.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-zoe",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Zoe",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Chester 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Chester 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-zoe/009.webp",
+          "w": 512,
+          "h": 512
+        }
+      ],
+      "sourceNote": "Üreticinin Zoe sayfasındaki renk görselleri Chester kodlarıyla yayımlanmıştır; kartela kodları aynen korunmuştur."
+    },
+    {
+      "id": "dosemelik-kumaslar-coreca",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Coreca",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Coreca 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 05",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 06",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 07",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 08",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 09",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 10",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 11",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 12",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/012.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 13",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/013.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 14",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/014.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Coreca 15",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-coreca/015.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-roma",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Roma",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-roma/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Roma 01",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma 02",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma 03",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma 04",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma/004.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-roma-cizgili",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Roma Çizgili",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-roma-cizgili/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Roma Çizgili 401",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma-cizgili/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma Çizgili 402",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma-cizgili/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma Çizgili 403",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma-cizgili/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Roma Çizgili 404",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-roma-cizgili/004.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "dosemelik-kumaslar-plise",
+      "familyId": "dosemelik-kumaslar",
+      "family": "Döşemelik kumaş",
+      "type": "Döşemelik kumaş",
+      "collection": "Plise",
+      "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/001.webp",
+      "w": 512,
+      "h": 512,
+      "swatches": [
+        {
+          "code": "Plise 101",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/001.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 102",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/002.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 103",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/003.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 104",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/004.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 201",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/005.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 202",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/006.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 203",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/007.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 204",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/008.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 301",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/009.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 302",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/010.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 303",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/011.webp",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "code": "Plise 304",
+          "image": "/assets/kaplamalar/dosemelik-kumaslar-plise/012.webp",
+          "w": 512,
+          "h": 512
+        }
+      ]
+    }
+  ]
+}

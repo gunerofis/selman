@@ -1,0 +1,274 @@
+{
+  "updated": "2026-11-06",
+  "montaj": {
+    "m2": 2000,
+    "esik": 5
+  },
+  "items": [
+    {
+      "collection": "Diplomat",
+      "family": "Döşemelik kumaş",
+      "m2": 8400
+    },
+    {
+      "collection": "File Air",
+      "family": "Döşemelik kumaş",
+      "m2": 8400
+    },
+    {
+      "collection": "Kırışık",
+      "family": "Döşemelik kumaş",
+      "m2": 8400
+    },
+    {
+      "collection": "Micro",
+      "family": "Döşemelik kumaş",
+      "m2": 8400
+    },
+    {
+      "collection": "Fiesta",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "File Sert",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Gold",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Harşena",
+      "family": "Suni deri",
+      "m2": 8600
+    },
+    {
+      "collection": "Madonna",
+      "family": "Suni deri",
+      "m2": 8600
+    },
+    {
+      "collection": "Patara",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Roza",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Şerit File Air",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Şerit File Sert",
+      "family": "Döşemelik kumaş",
+      "m2": 8600
+    },
+    {
+      "collection": "Antik",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Elvis",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Kazayağı",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Roots",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Soft",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Tokyo",
+      "family": "Döşemelik kumaş",
+      "m2": 8700
+    },
+    {
+      "collection": "Arena",
+      "family": "Suni deri",
+      "m2": 8800
+    },
+    {
+      "collection": "Euro File",
+      "family": "Döşemelik kumaş",
+      "m2": 8800
+    },
+    {
+      "collection": "Inter",
+      "family": "Suni deri",
+      "m2": 8800
+    },
+    {
+      "collection": "Lara",
+      "family": "Döşemelik kumaş",
+      "m2": 8800
+    },
+    {
+      "collection": "Sahra",
+      "family": "Suni deri",
+      "m2": 8800
+    },
+    {
+      "collection": "Aspendos",
+      "family": "Suni deri",
+      "m2": 8900
+    },
+    {
+      "collection": "Barcelona",
+      "family": "Suni deri",
+      "m2": 8900
+    },
+    {
+      "collection": "Felix",
+      "family": "Döşemelik kumaş",
+      "m2": 8900
+    },
+    {
+      "collection": "Lizbon",
+      "family": "Suni deri",
+      "m2": 8900
+    },
+    {
+      "collection": "Martin",
+      "family": "Suni deri",
+      "m2": 8900
+    },
+    {
+      "collection": "Toskano",
+      "family": "Suni deri",
+      "m2": 8900
+    },
+    {
+      "collection": "Bukle",
+      "family": "Döşemelik kumaş",
+      "m2": 9000
+    },
+    {
+      "collection": "Chester",
+      "family": "Suni deri",
+      "m2": 9000
+    },
+    {
+      "collection": "Forza",
+      "family": "Suni deri",
+      "m2": 9000
+    },
+    {
+      "collection": "Göktuğ",
+      "family": "Suni deri",
+      "m2": 9000
+    },
+    {
+      "collection": "Karven",
+      "family": "Suni deri",
+      "m2": 9000
+    },
+    {
+      "collection": "Asos",
+      "family": "Suni deri",
+      "m2": 9100
+    },
+    {
+      "collection": "Berlin",
+      "family": "Döşemelik kumaş",
+      "m2": 9100
+    },
+    {
+      "collection": "Extra",
+      "family": "Suni deri",
+      "m2": 9100
+    },
+    {
+      "collection": "Londra",
+      "family": "Döşemelik kumaş",
+      "m2": 9100
+    },
+    {
+      "collection": "Nubuk",
+      "family": "Döşemelik kumaş",
+      "m2": 9100
+    },
+    {
+      "collection": "Arel",
+      "family": "Döşemelik kumaş",
+      "m2": 9200
+    },
+    {
+      "collection": "Lidya",
+      "family": "Döşemelik kumaş",
+      "m2": 9200
+    },
+    {
+      "collection": "Nora",
+      "family": "Döşemelik kumaş",
+      "m2": 9200
+    },
+    {
+      "collection": "Pegasus",
+      "family": "Suni deri",
+      "m2": 9200
+    },
+    {
+      "collection": "Santa Furnisoft",
+      "family": "Suni deri",
+      "m2": 9200
+    },
+    {
+      "collection": "Belmont",
+      "family": "Suni deri",
+      "m2": 9300
+    },
+    {
+      "collection": "Dubai",
+      "family": "Suni deri",
+      "m2": 9300
+    },
+    {
+      "collection": "Montana",
+      "family": "Suni deri",
+      "m2": 9300
+    },
+    {
+      "collection": "Soho",
+      "family": "Suni deri",
+      "m2": 9300
+    },
+    {
+      "collection": "Orion",
+      "family": "Döşemelik kumaş",
+      "m2": 9400
+    },
+    {
+      "collection": "Pull-Up",
+      "family": "Suni deri",
+      "m2": 9600
+    },
+    {
+      "collection": "Biolife",
+      "family": "Suni deri",
+      "m2": 10500
+    },
+    {
+      "collection": "Kaşe",
+      "family": "Döşemelik kumaş",
+      "m2": 11400
+    }
+  ]
+}

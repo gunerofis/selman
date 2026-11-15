@@ -1,0 +1,4 @@
+interface:
+  display_name: "DOKU Sanat Yönetimi"
+  short_description: "DOKU için malzeme ve özel üretim odaklı tasarım"
+  default_prompt: "DOKU sitesini $doku-art-direction ile malzeme ve özel üretim odağında geliştir."

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /hesap/
+Disallow: /api/
+
+Sitemap: https://www.dokuduvar.com/sitemap.xml

@@ -1,0 +1,91 @@
+[
+  {
+    "ad": "openai-game-studio",
+    "depo": "openai/plugins",
+    "commit": "d420d13051bffe4543ed39e30fa46b87148e47dd",
+    "kaynak_tarihi": "2026-11-06T19:08:34Z",
+    "alindigi_tarih": "2026-11-13",
+    "lisans": "Depo kökünde ve paket ağacında lisans dosyası bulunamadı; GitHub API license=null. Lisans atanmamıştır.",
+    "kapsam": [
+      "plugins/game-studio — tam paket"
+    ],
+    "not": "Özel yerel başvuru kopyası. Yeniden dağıtım hakkı doğrulanmadı. 3D/Phaser skill ve referansları paket bağımlılıkları için korunur; mevcut proje motoru değiştirilmez.",
+    "skill_sayisi": 9
+  },
+  {
+    "ad": "ui-ux-pro-max",
+    "depo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "commit": "6ae86f61f520d6ca229d2f40e070410638c908c5",
+    "kaynak_tarihi": "2026-11-10T13:03:57Z",
+    "alindigi_tarih": "2026-11-13",
+    "lisans": "MIT — LICENSE",
+    "kapsam": [
+      ".claude/skills/ui-ux-pro-max",
+      "LICENSE",
+      "README.md"
+    ],
+    "not": "skill-installer ile ayrı hedefe alındı. Skill, data, scripts ve references birlikte korunur. Diğer tasarım skill paketleri alınmadı. Genel web tasarımı önerileri Kıvılcım referanslarının yerine geçmez.",
+    "skill_sayisi": 1
+  },
+  {
+    "ad": "game-ui-design-workflow",
+    "depo": "guiguiyan930-source/game-ui-design-workflow",
+    "commit": "1ec604638dd1a27198576206eb3e47632725a078",
+    "kaynak_tarihi": "2026-08-05T02:53:18Z",
+    "alindigi_tarih": "2026-11-13",
+    "lisans": "MIT — LICENSE",
+    "kapsam": [
+      "CHANGELOG.md",
+      "config",
+      "CONTRIBUTING.md",
+      "docs",
+      "examples",
+      "install.sh",
+      "LICENSE",
+      "ORIGIN.md",
+      "README.md",
+      "requirements.txt",
+      "schemas",
+      "scripts",
+      "skills",
+      "specs",
+      "templates",
+      "tests"
+    ],
+    "not": "Sekiz skill, şablonlar, şemalar, araçlar ve örnekler korunur. Kaynak çoğunlukla Çince. Scriptler ve install.sh çalıştırılmadı. Yeni asset üretimi şu an proje kapsamında değil.",
+    "skill_sayisi": 8
+  },
+  {
+    "ad": "oyun-gelistirme",
+    "depo": "gamedev-skills/awesome-gamedev-agent-skills",
+    "commit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+    "kaynak_tarihi": "2026-11-12T07:38:53Z",
+    "alindigi_tarih": "2026-11-13",
+    "lisans": "Apache-2.0 — LICENSE ve NOTICE",
+    "kapsam": [
+      "LICENSE",
+      "NOTICE",
+      "README.md",
+      "docs",
+      "scripts",
+      "templates",
+      "skills/disciplines/ai-behavior-trees-utility-ai",
+      "skills/disciplines/audio-design",
+      "skills/disciplines/camera-systems",
+      "skills/disciplines/create-game-assets",
+      "skills/disciplines/dialogue-systems",
+      "skills/disciplines/game-ai",
+      "skills/disciplines/game-feel",
+      "skills/disciplines/game-ui-ux",
+      "skills/disciplines/input-systems",
+      "skills/disciplines/level-design",
+      "skills/disciplines/performance-optimization",
+      "skills/disciplines/save-systems",
+      "skills/genres/rpg",
+      "skills/workflows/game-docs",
+      "skills/workflows/prototype-fast"
+    ],
+    "not": "15 seçilmiş skill. Diğer motorlara ait kod örnekleri doğrudan uygulanmaz; mevcut JavaScript/Canvas yapısına uyarlanır. Formüller ve hedef sayılar örnektir. Kaynak README tam depo kataloğudur; yerel seçim için Skill Dizini kullanılır.",
+    "skill_sayisi": 15
+  }
+]

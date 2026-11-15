@@ -1,0 +1,45 @@
+{
+  "url": "https://www.dokuduvar.com",
+  "name": "DOKU",
+  "whatsapp": "905434538864",
+  "phoneDisplay": "0543 453 88 64",
+  "tagline": "Mekâna özel duvar tasarımları",
+  "material": "Deri veya kumaş kaplama; tür ve renk numuneyle netleşir.",
+  "thickness": "1–18 mm panel; katmanlı yapıda 3 cm’ye kadar. Özel projelerde 10, 15 veya 20 cm derinlik.",
+  "finish": "Renk ve form parçaları arasında ince, düzenli boşluklar bırakılır. Kaplama ve bitiş ayrıntıları projeye göre belirlenir.",
+  "mounting": "5 m² üzeri: 2.000 TL/m² montaj. 5 m² ve altı: montaj yok, paneller gizli geçme sistemiyle kolayca takılır.",
+  "size": "Ölçü ve uygulama biçimi yerinde değerlendirilir. Büyük duvarlarda önizleme projeye göre planlanır.",
+  "sound": "Tam duvar kaplamaları orta seviye ses yalıtımı sağlar.",
+  "seo": {
+    "home": {
+      "title": "Mekâna Özel Duvar Tasarımları | DOKU",
+      "description": "Ev, çocuk odası ve işletmeler için mekâna özel duvar tasarımlarını keşfedin. Bir konsepti seçin veya kendi fikrinizle yeni bir proje başlatın."
+    },
+    "gallery": {
+      "title": "Duvar Tasarımı Galerisi | DOKU",
+      "description": "DOKU galerisinde soyut, botanik, figürlü ve kişiselleştirilebilir duvar tasarımı konseptlerini görün; beğendiğiniz tasarımı inceleyin."
+    },
+    "spaces": {
+      "ev": {
+        "title": "Ev İçin Duvar Tasarımları | DOKU",
+        "description": "Salon, yatak odası ve yaşam alanları için soyut, botanik, figürlü ve kişiselleştirilebilir DOKU duvar tasarımlarını keşfedin.",
+        "intro": "Yaşam alanının renklerine, ritmine ve duvar yüzeyine uyarlanabilen sakin ya da güçlü kompozisyonlar."
+      },
+      "cocuk-odasi": {
+        "title": "Çocuk Odası Duvar Tasarımları | DOKU",
+        "description": "Bebek ve çocuk odaları için hayvan, gökyüzü, doğa, isim ve geometrik form temalı DOKU duvar tasarımlarını inceleyin.",
+        "intro": "Odanın yaşına ve atmosferine göre uyarlanabilen yumuşak renkli, neşeli ve kişisel duvar konseptleri."
+      },
+      "isletme": {
+        "title": "İşletmeler İçin Duvar Tasarımları | DOKU",
+        "description": "Ofis, kafe, resepsiyon ve karşılama alanları için geometrik, botanik ve kurumsal DOKU duvar tasarımlarını keşfedin.",
+        "intro": "Karşılama, çalışma ve buluşma alanlarında mekânın kimliğini görünür kılan duvar konseptleri."
+      }
+    },
+    "customDesign": {
+      "title": "Size Özel Duvar Tasarımı | DOKU",
+      "description": "Fotoğraf, harf, isim veya size ait bir fikirle özel duvar tasarımı başlatın. DOKU fikrinizi mekâna uyarlanabilir bir kompozisyona dönüştürsün."
+    }
+  },
+  "delivery": "5 m² ve altı: üretim 1–3 gün + kargo 1–3 gün. 5 m² üzeri: işe göre birlikte belirlenir."
+}
