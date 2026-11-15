@@ -1,0 +1,20 @@
+{
+  "name": "@rift-empire/server",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "demo:transport": "node dist/transportSmokeMain.js",
+    "demo:room": "node dist/matchLifecycleMain.js"
+  },
+  "dependencies": {
+    "@rift-empire/shared": "0.0.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.14"
+  }
+}

@@ -1,0 +1,18 @@
+import {Pager,PagedInput} from './ScreenTools.jsx';
+import React,{useState} from 'react';
+import {Button,DataComponent,DataTable} from '../../data-app-public.jsx';
+import {api,useResource,useDirty,lower} from './hub-api.js';
+export function InformationContent(){
+ const r=useResource('information'),[q,setQ]=useState(''),[filter,setFilter]=useState('missing'),[drafts,setDrafts]=useState({}),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[page,setPage]=useState(0),[field,setField]=useState(0);
+ const entries=r.data?.entries||{},catalog=r.data?.catalog||[];
+ const values=row=>({...Object.fromEntries(row.fields.map(f=>[f.key,''])),...(drafts[row.id]||entries[row.id]?.values||{})});
+ const dirty=catalog.filter(row=>row.fields.some(f=>(values(row)[f.key]||'')!==(entries[row.id]?.values?.[f.key]||'')));
+ useDirty(dirty.length>0);
+ const filled=row=>row.fields.every(f=>String(values(row)[f.key]||'').trim());
+ const rows=catalog.filter(row=>lower(row.title).includes(lower(q))&&(filter==='all'||(filter==='missing'?!row.fields.every(f=>String(entries[row.id]?.values?.[f.key]||'').trim()):row.fields.every(f=>String(entries[row.id]?.values?.[f.key]||'').trim()))));
+ const current=Math.min(page,Math.max(0,rows.length-1));
+ function change(row,key,value){setDrafts(d=>({...d,[row.id]:{...values(row),[key]:value}}));setMessage('')}
+ async function save(){setBusy(true);try{const d=await api('information-save',{changes:dirty.map(row=>({id:row.id,revision:entries[row.id]?.revision||0,values:values(row)}))});r.setData(v=>({...v,entries:d.entries}));setDrafts({});setMessage('Kaydedildi')}catch(e){setMessage(e.message)}finally{setBusy(false)}}
+ return <section className="hub-content hub-screen hub-information"><div className="hub-toolbar"><input type="search" aria-label="Bilgi girilecek ürün ara" placeholder="Ürün ara" value={q} onChange={e=>(setQ(e.target.value),setPage(0),setField(0))}/><span className="hub-muted">{dirty.length?dirty.length+' değişiklik':''}</span><Button disabled={busy||!dirty.length} onClick={save}>{busy?'Kaydediliyor…':'Kaydet'}</Button></div><div className="hub-filters">{[['missing','Eksik bilgiler'],['all','Tümü'],['filled','Tamamlananlar']].map(([v,l])=><button key={v} aria-pressed={filter===v} onClick={()=>{setFilter(v);setPage(0);setField(0)}}>{l}</button>)}</div>{message&&<p role="status">{message}</p>}{r.error&&<p role="alert">{r.error}</p>}
+ <div className="hub-info-card">{rows.slice(current,current+1).map(row=><section key={row.id}><div className="hub-info-heading"><h2>{row.title}</h2><span className="work-badge">{dirty.some(x=>x.id===row.id)?'Kaydedilmedi':filled(row)?'Tamamlandı':'Eksik'}</span></div>{row.fields.length>1&&<div className="hub-filters">{row.fields.map((f,i)=><button key={f.key} aria-pressed={Math.min(field,row.fields.length-1)===i} onClick={()=>setField(i)}>{f.label}</button>)}</div>}{row.fields.slice(Math.min(field,row.fields.length-1),Math.min(field,row.fields.length-1)+1).map(f=><div key={f.key}>{f.options?<div className="hub-field"><label>{f.label}</label><div className="hub-filters">{f.options.map(o=><button key={o} disabled={busy} aria-pressed={values(row)[f.key]===o} onClick={()=>change(row,f.key,values(row)[f.key]===o?'':o)}>{o}</button>)}</div></div>:<label className="hub-field">{f.label}<PagedInput label={f.label} maxLength={4000} value={values(row)[f.key]||''} onChange={value=>change(row,f.key,value)}/></label>}</div>)}</section>)}{!rows.length&&<p className="hub-empty">{r.loading?'Yükleniyor…':filter==='missing'?'Eksik bilgi yok.':'Kayıt yok.'}</p>}<Pager page={current} pages={Math.max(1,rows.length)} count={rows.length} onChange={n=>{setPage(n);setField(0)}}/></div></section>;
+}

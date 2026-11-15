@@ -1,0 +1,16 @@
+{
+  "name": "test_agent",
+  "version": "1.0.0",
+  "description": "Yerel yapinin yetenek dogrulama klasoru. Amac: Ollama + OpenCode baglantisinin dosya okuma, duzenleme, komut/test ve tarayici kontrollerini ayri bir calisma alaninda kanitlamak.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

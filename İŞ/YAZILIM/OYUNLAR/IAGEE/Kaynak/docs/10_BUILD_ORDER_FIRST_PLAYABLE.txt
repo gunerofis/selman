@@ -1,0 +1,459 @@
+================================================================================
+BUILD ORDER — FIRST PLAYABLE — Project RIFT EMPIRE (1v1 Prototip)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+MVP kapsamı: docs\04_MVP_SCOPE.txt
+Uygulama planı: docs\05_IMPLEMENTATION_PLAN.txt
+Core loop görev kırılımı: docs\06_TASK_BREAKDOWN_CORE_LOOP.txt
+Client UI görev kırılımı: docs\07_TASK_BREAKDOWN_CLIENT_UI.txt
+Server & network görev kırılımı: docs\08_TASK_BREAKDOWN_SERVER_NETWORK.txt
+Content & map görev kırılımı: docs\09_TASK_BREAKDOWN_CONTENT_MAP.txt
+Sonraki belge: docs\11_DECISION_LOG.txt (opsiyonel)
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge ilk oynanabilir build’e ulaşmak için uygulanacak gerçek yapım sırasını sabitler.
+- Hedef belge üretmek değil; çalışır prototip üretmektir.
+- Öncelik hızlı ama kontrollü ilerleyiştir.
+- Bu sıra bozulmadan uygulanmalıdır.
+
+--------------------------------------------------------------------------------
+2. Hedef Çıktı
+--------------------------------------------------------------------------------
+
+- Menüden maça girilebilen.
+- Haritada unit kontrolü yapılabilen.
+- Kaynak toplanabilen.
+- Bina kurulabilen.
+- Unit üretilebilen.
+- Savaşılabilen.
+- Maç bitirilebilen.
+- Sonuç ekranı görülebilen.
+- Lobiye dönülebilen ilk oynanabilir build.
+
+--------------------------------------------------------------------------------
+3. Uygulama İlkesi
+--------------------------------------------------------------------------------
+
+- Önce iskelet.
+- Sonra çekirdek oynanış.
+- Sonra görünürlük.
+- Sonra match flow.
+- Sonra sonuç ekranı.
+- Sonra kısa test ve düzeltme turu.
+- Scope dışı işler bu sıraya girmez.
+
+--------------------------------------------------------------------------------
+4. Build Aşaması 1 — Proje İskeleti
+--------------------------------------------------------------------------------
+
+- Klasör ve modül düzenini gözden geçir.
+- Ortak tip / protocol alanını netleştir.
+- Match state için ana dosya veya modül yerini sabitle.
+- Client giriş noktısını netleştir.
+- Server room / match giriş noktısını netleştir.
+- Gereksiz veya karışıklık çıkaran geçici dosyaları ayıkla.
+
+--------------------------------------------------------------------------------
+5. Build Aşaması 1 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Projede nerede ne olduğu anlaşılır.
+- Client, server ve shared alanları ayrışmış.
+- Match lifecycle için ana giriş noktıları belli.
+- İlk oynanabilir build için temel yapı hazır.
+
+--------------------------------------------------------------------------------
+6. Build Aşaması 2 — Match State ve Entity Temeli
+--------------------------------------------------------------------------------
+
+- Merkezi match state yapısını kur.
+- Player modelini oluştur.
+- Unit modelini oluştur.
+- Building modelini oluştur.
+- Resource node modelini oluştur.
+- Match phase ve result alanlarını ekle.
+
+--------------------------------------------------------------------------------
+7. Build Aşaması 2 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Match state oluşturulabiliyor.
+- Oyuncu, unit, building ve resource verileri aynı yapı altında tutuluyor.
+- Match start / running / ended mantığı için temel hazır.
+- Simülasyonun taşıyacağı veri zemini net.
+
+--------------------------------------------------------------------------------
+8. Build Aşaması 3 — Tick ve Match Lifecycle
+--------------------------------------------------------------------------------
+
+- Sabit tick akışını kur.
+- Match init akışını bağla.
+- Başlangıç unit ve base spawn’larını ekle.
+- Başlangıç resource değerlerini ata.
+- Match start ve match end geçişlerini bağla.
+- Result oluşturma temelini ekle.
+
+--------------------------------------------------------------------------------
+9. Build Aşaması 3 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Match başlatılabiliyor.
+- Başlangıç state’i doğru kuruluyor.
+- Tick akıyor.
+- Match end’e gidebilecek lifecycle temeli var.
+
+--------------------------------------------------------------------------------
+10. Build Aşaması 4 — Temel Command Sistemi
+--------------------------------------------------------------------------------
+
+- Move command ekle.
+- Attack command ekle.
+- Gather command ekle.
+- Build command ekle.
+- Train unit command ekle.
+- Surrender command ekle.
+- Command validation giriş noktasını bağla.
+
+--------------------------------------------------------------------------------
+11. Build Aşaması 4 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Temel komut tipleri tanımlı.
+- Komutlar oyuncu kimliğiyle ilişkili.
+- Simülasyon komutları alıp işleyebiliyor.
+- Geçersiz komutlar için reddetme zemini var.
+
+--------------------------------------------------------------------------------
+12. Build Aşaması 5 — Resource Gathering
+--------------------------------------------------------------------------------
+
+- Worker hareket + toplama mantığını bağla.
+- Resource node tüketimini ekle.
+- Oyuncu resource artışını uygula.
+- Gather hedef doğrulamasını ekle.
+- Basit teslim veya doğrudan toplama kuralını sabitle.
+- Test verisiyle erken ekonomi akışını doğrula.
+
+--------------------------------------------------------------------------------
+13. Build Aşaması 5 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Worker kaynak toplayabiliyor.
+- Oyuncunun resource değeri artıyor.
+- Node azalıyor veya tükeniyor.
+- Erken ekonomi döngüsü çalışıyor.
+
+--------------------------------------------------------------------------------
+14. Build Aşaması 6 — Building Placement
+--------------------------------------------------------------------------------
+
+- Bina kurma komutunu işle.
+- Geçerli konum kontrolünü ekle.
+- Kaynak maliyetini düş.
+- Building spawn akışını bağla.
+- Owner bilgisini ata.
+- İlk prototip için minimum bina setini aktif et.
+
+--------------------------------------------------------------------------------
+15. Build Aşaması 6 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu bina kurabiliyor.
+- Kaynak yetmiyorsa komut reddediliyor.
+- Bina state’e ekleniyor.
+- Üretim/economy zinciri için kullanılabilir hale geliyor.
+
+--------------------------------------------------------------------------------
+16. Build Aşaması 7 — Unit Production
+--------------------------------------------------------------------------------
+
+- Production building üzerinden train komutunu işle.
+- En az iki savaş unit’i üretilebilir olsun.
+- Cost kontrolünü bağla.
+- Spawn noktasını tanımla.
+- Train time varsa basit biçimde işle.
+- Yeni unit’i state’e ekle.
+
+--------------------------------------------------------------------------------
+17. Build Aşaması 7 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Worker dışında en az iki unit üretilebiliyor.
+- Üretim resource tüketiyor.
+- Yeni unit komut alabiliyor.
+- Ekonomi -> bina -> üretim zinciri tamamlanıyor.
+
+--------------------------------------------------------------------------------
+18. Build Aşaması 8 — Move ve Combat
+--------------------------------------------------------------------------------
+
+- Basit hareket sistemini bağla.
+- Hedefe ilerleme ve durma mantığını ekle.
+- Attack range kontrolünü ekle.
+- Damage ve HP düşüşünü ekle.
+- Ölüm / kaldırılma akışını bağla.
+- Base hedeflenebilir hale gelsin.
+
+--------------------------------------------------------------------------------
+19. Build Aşaması 8 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Unit’ler hareket ediyor.
+- Unit’ler saldırabiliyor.
+- HP düşüyor.
+- Entity yok olabiliyor.
+- İlk gerçek çatışma oynanabiliyor.
+
+--------------------------------------------------------------------------------
+20. Build Aşaması 9 — Victory / Defeat / Surrender
+--------------------------------------------------------------------------------
+
+- Ana üs yıkımıyla maç bitişini bağla.
+- Surrender komutuyla maç bitişini bağla.
+- Winner / loser belirle.
+- End reason üret.
+- Result payload temelini sabitle.
+- Match ended geçişini netleştir.
+
+--------------------------------------------------------------------------------
+21. Build Aşaması 9 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Maç kesin biçimde bitebiliyor.
+- Kazanan / kaybeden belirleniyor.
+- Sonuç verisi sonraki katmana aktarılabiliyor.
+- Askıda kalan maç oluşmuyor.
+
+--------------------------------------------------------------------------------
+22. Build Aşaması 10 — Server Room ve Start Akışı
+--------------------------------------------------------------------------------
+
+- Room oluşturma temelini kur.
+- İki oyuncuyu aynı room’a alma akışını bağla.
+- Fake queue veya doğrudan start akışını bağla.
+- Room -> match init geçişini ekle.
+- Match bitince cleanup akışını bağla.
+- Tek maçlık prototip yaşam döngüsünü sabitle.
+
+--------------------------------------------------------------------------------
+23. Build Aşaması 10 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Room oluşturulabiliyor.
+- İki oyuncu aynı maça alınabiliyor.
+- Match başlatılabiliyor.
+- Match sonrası cleanup çalışıyor.
+
+--------------------------------------------------------------------------------
+24. Build Aşaması 11 — State / Event / Result Dispatch
+--------------------------------------------------------------------------------
+
+- Client’a state iletimini bağla.
+- Gerekli temel event’leri ilet.
+- Result payload’ını client’a gönder.
+- Command red / hata event’lerini bağla.
+- Payload formatlarını shared contract ile eşleştir.
+- Client tarafında işlenebilir hale getir.
+
+--------------------------------------------------------------------------------
+25. Build Aşaması 11 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Client güncel oyun durumunu alıyor.
+- Kritik geçişler event ile taşınıyor.
+- Sonuç verisi client’a ulaşıyor.
+- Server/client veri akışı kopmuyor.
+
+--------------------------------------------------------------------------------
+26. Build Aşaması 12 — Client Render ve Kamera
+--------------------------------------------------------------------------------
+
+- Harita render’ını bağla.
+- Unit / building / resource render’ını bağla.
+- Dost / düşman ayrımını görünür yap.
+- Kamera hareketini bağla.
+- Başlangıç görünümünü düzelt.
+- Placeholder görsellerle okunabilirlik sağla.
+
+--------------------------------------------------------------------------------
+27. Build Aşaması 12 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyun sahası görünür.
+- Entity’ler ayırt edilebilir.
+- Kamera kullanılabilir.
+- Temel oynanış ekranda takip edilebilir.
+
+--------------------------------------------------------------------------------
+28. Build Aşaması 13 — Selection, Input ve Command UI
+--------------------------------------------------------------------------------
+
+- Sol tık seçim.
+- Sağ tık komut.
+- Selection highlight.
+- Hover feedback.
+- Build preview.
+- Production UI.
+- Invalid action geri bildirimi.
+
+--------------------------------------------------------------------------------
+29. Build Aşaması 13 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu seçim yapabiliyor.
+- Oyuncu komut verebiliyor.
+- Üretim ve bina kurma akışı client’ta çalışıyor.
+- Verilen komutların karşılığı görsel olarak anlaşılıyor.
+
+--------------------------------------------------------------------------------
+30. Build Aşaması 14 — HUD ve Match Flow Screens
+--------------------------------------------------------------------------------
+
+- Ana menü / lobi ekranını bağla.
+- Start Match akışını bağla.
+- Loading / geçiş ekranını ekle.
+- Resource HUD’ını ekle.
+- Seçili entity panelini ekle.
+- Match end sonrası sonuç ekranını bağla.
+- Return to lobby akışını bağla.
+
+--------------------------------------------------------------------------------
+31. Build Aşaması 14 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Menü -> maç -> sonuç -> lobi akışı tamam.
+- HUD temel bilgileri gösteriyor.
+- Sonuç ekranı açılıyor.
+- Oyuncu lobiye geri dönebiliyor.
+
+--------------------------------------------------------------------------------
+32. Build Aşaması 15 — Harita ve İçerik Kilidi
+--------------------------------------------------------------------------------
+
+- Tek haritayı aktif kullanıma al.
+- İki başlangıç noktasını kilitle.
+- Resource node yerleşimini sabitle.
+- Minimum unit setini kilitle.
+- Minimum building setini kilitle.
+- Başlangıç değerlerini içerik dosyasında topla.
+
+--------------------------------------------------------------------------------
+33. Build Aşaması 15 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oynanabilir tek harita sabit.
+- İçerik seti MVP dışına taşmıyor.
+- Başlangıç dengesi test edilebilir.
+- Tüm temel entity’ler görünür ve kullanılabilir.
+
+--------------------------------------------------------------------------------
+34. Build Aşaması 16 — İlk Oynanabilir Test Turu
+--------------------------------------------------------------------------------
+
+- Tek maçlık uçtan uca test yap.
+- Kaynak toplama akışını test et.
+- Bina kurma ve üretim akışını test et.
+- Savaş ve base kill akışını test et.
+- Sonuç ekranı ve lobiye dönüşü test et.
+- Bloke eden bug’ları listele.
+
+--------------------------------------------------------------------------------
+35. Build Aşaması 16 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Uçtan uca bir maç tamamlanabiliyor.
+- Çekirdek oynanış döngüsü kırılmıyor.
+- Kritik bug listesi çıkarılmış.
+- İlk oynanabilir build tanımı karşılanıyor.
+
+--------------------------------------------------------------------------------
+36. Build Aşaması 17 — İlk Düzeltme Turu
+--------------------------------------------------------------------------------
+
+- Kritik bug’ları kapat.
+- Selection / input sorunlarını düzelt.
+- State akışındaki kopmaları düzelt.
+- Room cleanup sorunlarını düzelt.
+- Sonuç ekranı / geçiş sorunlarını düzelt.
+- Oynanışı bozan bariz denge uçurumlarını yumuşat.
+
+--------------------------------------------------------------------------------
+37. Build Aşaması 17 Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Build daha stabil hale geliyor.
+- Maç akışı daha tutarlı.
+- Gözle görülen kritik kırılmalar azalıyor.
+- Demo seviyesinde tekrar oynanabilirlik oluşuyor.
+
+--------------------------------------------------------------------------------
+38. Bloke Eden Hata Tanımı
+--------------------------------------------------------------------------------
+
+- Match başlamıyorsa bloke edici.
+- Komutlar işlenmiyorsa bloke edici.
+- Kaynak toplanmıyorsa bloke edici.
+- Bina kurulamıyorsa bloke edici.
+- Unit üretilemiyorsa bloke edici.
+- Maç bitmiyorsa bloke edici.
+- Sonuç ekranı açılmıyorsa bloke edici.
+- Lobiye dönüş yoksa bloke edici.
+
+--------------------------------------------------------------------------------
+39. İlk Oynanabilir Build Tanımı
+--------------------------------------------------------------------------------
+
+- Menü çalışıyor.
+- Start Match çalışıyor.
+- Match başlıyor.
+- Worker kaynak topluyor.
+- Oyuncu bina kuruyor.
+- Oyuncu unit üretiyor.
+- Unit hareket ediyor ve savaşıyor.
+- Maç bitiyor.
+- Sonuç ekranı açılıyor.
+- Lobiye dönüş çalışıyor.
+
+--------------------------------------------------------------------------------
+40. Uygulama Disiplini
+--------------------------------------------------------------------------------
+
+- Faz sırası bozulmayacak.
+- Scope dışı işler eklenmeyecek.
+- Kozmetik / mağaza / pass eklenmeyecek.
+- 2v2+ modlara geçilmeyecek.
+- Mükemmel UI hedeflenmeyecek.
+- Önce çalışır yapı, sonra temizlik ve iyileştirme.
+
+--------------------------------------------------------------------------------
+41. Notlar
+--------------------------------------------------------------------------------
+
+- Bu belge planlama setinin kapanış belgesidir.
+- Bundan sonra yeni tasarım belgesi değil, uygulama ve düzeltme akışı önceliklidir.
+- Gerekirse bundan sonra opsiyonel olarak karar günlüğü tutulabilir.
+- Ana hedef ilk oynanabilir build’i mümkün olan en kısa kontrollü yoldan çıkarmaktır.
+
+--------------------------------------------------------------------------------
+42. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge opsiyonel olarak docs\11_DECISION_LOG.txt.
+- Zorunlu planlama seti bu belgeyle tamamlanmış kabul edilir.
+
+--------------------------------------------------------------------------------
+Ek notlar (disiplin)
+--------------------------------------------------------------------------------
+
+- Bölüm isimleri diğer belgelerle uyumlu düz yazı stilindedir.
+- Kabul kriterleri kısa ama net tutulmuştur.
+- Build sırası gerçekten uygulanabilir sırada yazılmıştır.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE build order (first playable)
+================================================================================

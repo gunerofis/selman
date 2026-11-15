@@ -1,0 +1,24 @@
+{
+  "name": "@rift-empire/client",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "demo:transport": "node dist/transportDemoMain.js",
+    "smoke:e2e": "node dist/smokeE2eMain.js",
+    "dev:browser": "vite",
+    "build:browser": "vite build"
+  },
+  "dependencies": {
+    "@rift-empire/shared": "0.0.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.14",
+    "vite": "^6.0.0"
+  }
+}

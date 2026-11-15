@@ -1,0 +1,27 @@
+{
+  "name": "rift-empire",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Project RIFT EMPIRE — 1v1 prototip monorepo",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@rift-empire/shared && npm run build --workspace=@rift-empire/server && npm run build --workspace=@rift-empire/client && npm run build:browser --workspace=@rift-empire/client",
+    "build:shared": "npm run build --workspace=@rift-empire/shared",
+    "test": "npm run test:unit && npm run smoke:e2e",
+    "test:unit": "npm run build --workspace=@rift-empire/shared && tsx --test apps/server/src/validation/validateCommandEnvelope.test.ts apps/server/src/commands/dispatch.test.ts apps/server/src/match/MatchSession.test.ts packages/shared/src/bootstrap/createPrototype1v1MatchState.test.ts packages/shared/src/transport/guards.test.ts packages/shared/src/protocol/commandGuards.test.ts",
+    "smoke:e2e": "npm run build --workspace=@rift-empire/shared && npm run build --workspace=@rift-empire/server && npm run build --workspace=@rift-empire/client && npm run smoke:e2e --workspace=@rift-empire/client",
+    "smoke:e2e:verbose": "cross-env SMOKE_VERBOSE=1 npm run smoke:e2e",
+    "smoke:e2e:port": "cross-env SMOKE_PORT=18766 npm run smoke:e2e"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "~5.7.2"
+  }
+}

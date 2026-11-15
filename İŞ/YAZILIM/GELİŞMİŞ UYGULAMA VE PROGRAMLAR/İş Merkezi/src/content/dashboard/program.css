@@ -1,0 +1,25 @@
+.sumen-program {padding-bottom:36px;}
+.sumen-period {display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;}
+.sumen-run {display:flex;align-items:center;gap:7px;font-size:12px;color:var(--secondary);white-space:nowrap;}
+.sumen-dot {width:6px;height:6px;background:#087d72;border-radius:50%;}
+.sumen-metric {font-variant-numeric:tabular-nums;}
+.sumen-metric.spend {border-top:3px solid #4066d6;}
+.sumen-metric.income {border-top:3px solid #087d72;}
+.sumen-metric.attribution {border-top:3px solid #8c95ab;}
+.sumen-metric-foot {font-size:12px;color:var(--secondary);margin-top:8px;}
+.sumen-empty {padding:24px 4px;color:var(--secondary);font-size:14px;}
+.sumen-refund,.sumen-shipping {font-size:12px;color:var(--secondary);padding-top:12px;}
+.sumen-new {display:inline-block;margin-left:8px;padding:2px 6px;border-radius:5px;background:color-mix(in srgb,#087d72 12%,var(--surface));color:#087d72;font-size:10px;}
+.sumen-new-data {border:1px solid var(--border);background:var(--control);color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer;}
+@media(max-width:600px){.sumen-period{gap:8px;}.sumen-window{display:none;}.sumen-run{font-size:11px;}}
+
+.advertising-content > .tab-panel {padding-top:24px;}
+.meta-connection {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:24px;font-size:13px;color:var(--secondary);}
+.meta-connection a,.meta-profile-link {color:var(--text);text-decoration:underline;text-underline-offset:3px;}
+.meta-brand-filter {display:flex;gap:8px;flex-wrap:wrap;}
+
+.advertising-content>.tab-panel{padding-top:8px}.sumen-program{padding-bottom:0}.sumen-period{margin-bottom:8px;gap:8px}.sumen-run{display:none}.hub-report-period{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.hub-report-period .hub-filters{margin:0}.hub-report-tabs{margin:6px 0 10px}.hub-ad-selectors{display:grid;gap:6px}.hub-filter-line{display:flex;align-items:flex-start;gap:12px}.hub-filter-line>strong{width:70px;flex-shrink:0;font-size:12px;line-height:30px;color:var(--secondary)}.hub-filter-line .hub-filters{margin:0;gap:4px}.hub-ad-selectors>.hub-filters{margin:0}.hub-ad-selectors button{font-size:12px;padding:5px 8px}.meta-connection{margin:8px 0}.sumen-metric-foot{margin-top:4px}.advertising-content .hub-fit-table th:first-child{width:40%}
+
+.sumen-metric{padding:10px 16px}.hub-report-tabs{margin-bottom:6px}.hub-ad-selectors .hub-filters{margin-bottom:0}.advertising-content .sumen-empty{padding:12px 4px}
+
+.sumen-metric-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:2px 0 8px;font-size:12px;color:var(--secondary)}

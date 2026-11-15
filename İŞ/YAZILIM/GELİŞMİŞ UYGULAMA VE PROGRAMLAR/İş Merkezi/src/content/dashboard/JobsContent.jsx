@@ -1,0 +1,19 @@
+import React,{useState} from 'react';
+import {Button,Dialog} from '../../data-app-public.jsx';
+import {api,useResource,useDirty,day,dateLabel,lower} from './hub-api.js';
+import {FitTable} from './ScreenTools.jsx';
+import {JobDialog,shortNote} from './JobDialog.jsx';
+import {AgentControl} from './AgentControl.jsx';
+export function JobsContent(){
+ const r=useResource('jobs'),[view,setView]=useState('active'),[query,setQuery]=useState(''),[selected,setSelected]=useState(null),[creating,setCreating]=useState(false);
+ const jobs=r.data||[],roots=jobs.filter(j=>!j.parentId),match=(j,v)=>v==='active'?['active','needs_user'].includes(j.status):j.status===v;
+ const counts=Object.fromEntries(['active','completed','cancelled'].map(v=>[v,roots.filter(j=>match(j,v)).length]));
+ const rows=roots.filter(j=>match(j,view)&&lower(j.title+' '+shortNote(j)).includes(lower(query))).sort((a,b)=>(a.status==='needs_user'?0:1)-(b.status==='needs_user'?0:1)||(a.plannedFor||'9999').localeCompare(b.plannedFor||'9999')||b.updatedAt.localeCompare(a.updatedAt));
+ async function saved(){const d=await r.reload();setSelected(old=>old?d.find(j=>j.id===old.id):null)}
+ return <section className="hub-content hub-screen hub-jobs"><div className="hub-toolbar"><input type="search" aria-label="İş ara" placeholder="İş ara" value={query} onChange={e=>setQuery(e.target.value)}/><AgentControl counts={counts}/><Button variant="primary" onClick={()=>setCreating(true)}>Yeni iş</Button></div>
+ <div className="hub-filters">{[['active','Devam eden'],['completed','Biten'],['cancelled','İptal']].map(([id,label])=><button key={id} aria-pressed={view===id} onClick={()=>setView(id)}>{label}<span>{counts[id]}</span></button>)}</div>
+ {r.error&&<p role="alert" className="hub-error">{r.error}</p>}{r.loading&&!r.data?<p>Yükleniyor…</p>:rows.length?<FitTable label="İşler" rows={rows} rowKey="id" onRowSelect={setSelected} columns={[{field:'title',label:'İş',renderCell:(title,j)=><div className="hub-job-title"><strong>{title}</strong>{shortNote(j)&&<span>{shortNote(j)}</span>}</div>},{field:'statusLabel',label:'Durum',renderCell:(v,j)=><span className={'work-badge '+(j.status==='needs_user'?'work-blocked':j.status==='completed'?'work-completed':'')}>{v}{j.childCount>0&&<small> · {j.childCount-j.openChildren}/{j.childCount} alt iş</small>}</span>},{field:'plannedFor',label:'Plan',renderCell:v=>v?dateLabel(v):<span aria-label="Plan tarihi yok" title="Plan tarihi yok">—</span>} ]}/>:<p className="hub-empty">Bu görünümde iş yok.</p>}
+ <JobDialog job={selected} jobs={jobs} onClose={()=>setSelected(null)} onSaved={saved}/><NewJob open={creating} onClose={()=>setCreating(false)} onSaved={async()=>{setCreating(false);setView('active');await saved()}}/>
+ </section>
+}
+function NewJob({open,onClose,onSaved}){const [title,setTitle]=useState(''),[details,setDetails]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false),[id,setId]=useState(()=>crypto.randomUUID().replaceAll('-',''));useDirty(open&&!!title);async function save(e){e.preventDefault();setBusy(true);try{await api('add',{id,title:title.trim(),details,author:'Ben',plannedFor:day(),summary:details});setTitle('');setDetails('');setId(crypto.randomUUID().replaceAll('-',''));await onSaved()}catch(e){setError(e.message)}finally{setBusy(false)}}return <Dialog open={open} title="Yeni iş" onClose={()=>{if(!busy&&(!title||confirm('Kaydedilmemiş iş bırakılsın mı?')))onClose()}}><form onSubmit={save} className="hub-detail"><label className="hub-field">Başlık<input required minLength={3} maxLength={160} value={title} onChange={e=>setTitle(e.target.value)}/></label><label className="hub-field">Kısa açıklama<textarea maxLength={280} rows={3} value={details} onChange={e=>setDetails(e.target.value)}/></label><Button variant="primary" type="submit" disabled={busy}>Kaydet</Button><p role="alert" className="hub-error">{error}</p></form></Dialog>}

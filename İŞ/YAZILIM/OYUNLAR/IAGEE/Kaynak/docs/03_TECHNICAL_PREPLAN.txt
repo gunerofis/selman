@@ -1,0 +1,187 @@
+================================================================================
+TEKNİK ÖN-PLAN — Project RIFT EMPIRE (Prototip / 1v1 Dikey Dilim)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Bu belge: prototip için teknik kararların sabitlendiği referans.
+Sonraki belge: docs\04_MVP_SCOPE.txt (ardından docs\05_IMPLEMENTATION_PLAN.txt)
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu doküman 1v1 prototip için teknik kararları sabitleyecek.
+- Hedef tam oyun değil; yatırım gösterimine uygun oynanabilir dikey dilim (vertical slice).
+- “Çalışıyor” demekten çok: server-authoritative RTS çekirdeği + oturum akışının birlikte kanıtlanması.
+- Kapsam dışı özellikler bilinçli olarak bu belgede ‘ertelenmiş’ olarak işaretlenir; prototipte yer almaz.
+
+--------------------------------------------------------------------------------
+2. Prototip Hedefi
+--------------------------------------------------------------------------------
+
+- Sadece 1v1.
+- Tek harita (sabit layout; ileride harita seçimi yok).
+- Tek fraksiyon veya en fazla 2 basit fraksiyon (asimetri minimum; denge yüzü basit tutulur).
+- Basit akış: lobi → maç → sonuç (queue gerçek veya sahte olabilir).
+- Maç içi: kaynak toplama, bina kurma, ünite üretme, savaş, kazanma/kaybetme.
+- Maç dışı: hesap/progression prototipte ya mock ya da minimal; GDD’deki tam live-service bu fazda zorunlu değil.
+
+--------------------------------------------------------------------------------
+3. Mimari Kararı
+--------------------------------------------------------------------------------
+
+- Server-authoritative yapı: maç sonucu ve oyun durumu sunucuda kesin.
+- Maç simülasyonu sunucu otoritesinde; istemci sadece görünüm ve komut üretir.
+- İstemci katmanı: render + input + prediction + UI (HUD, menü, sonuç ekranı).
+- Ağ modeli command-based: istemci niyet bildirir; sunucu doğrular ve simülasyonu ilerletir.
+- Sunucu sabit tick ile çalışır (ör. saniyede N tick); tick değeri prototipte sabit seçilir ve dokümante edilir.
+- Determinism: istemciler arası lockstep zorunlu değil.
+- Öncelik: sunucu içi tutarlı, tekrarlanabilir simülasyon (test ve debug için); replay ürün özelliği bu fazda hedef değil.
+
+--------------------------------------------------------------------------------
+4. Mevcut Kod Tabanı ile Uyum
+--------------------------------------------------------------------------------
+
+- IRON AGE hattı (Python / simülasyon / headless / test / HTTP API / LiveOps-benzeri iskelet):
+  - Maç çekirdeği, tick simülasyonu, komut işleme, headless koşum ve otomatik test kültürü için referans veya doğrudan taşıma adayı.
+  - API ve kalıcı LiveOps servisleri: prototipte tam üretim şartı değil; ihtiyaç halinde mock veya in-process sadeleştirilmiş sürüm.
+- OYUN - Kopya - Kopya hattı (Colyseus + TypeScript istemci + gerçek zamanlı oda):
+  - Lobi, oda, oturum, çok oyunculu bağlantı ve istemci render/input katmanı için referans veya doğrudan taşıma adayı.
+- İki hattın tek ürün (Project RIFT EMPIRE) altında birleştirilmesi prototip için hedeflenen senaryodur:
+  - Örnek: sunucu tarafında simülasyon otoritesi + oda/match yaşam döngüsü; istemci mevcut TS yapısından beslenir.
+- Sıfırdan tam yeniden yazım yerine: mevcut yapıların yeniden adlandırılması, modül sınırlarının netleştirilmesi ve prototip kapsamına göre sadeleştirme tercih edilir.
+- Durumsal not (teknik karar değil): Kaynak kod önceki çalışma klasörlerinde kalmış olabilir; bu bölüm hangi hatların referans alındığını hatırlatır.
+
+--------------------------------------------------------------------------------
+5. İstemci Katmanı
+--------------------------------------------------------------------------------
+
+- Teknoloji: TypeScript tabanlı mevcut istemci yaklaşımı korunur (ör. Vite + Canvas/WebGL pipeline; motor seçimi mevcut projeyle hizalanır).
+- Sorumluluklar:
+  - input toplama (fare, klavye, kısayollar)
+  - seçim ve komut verme (birim, bina, hedef)
+  - kamera (pan/zoom sınırları prototipte basit)
+  - HUD / UI (kaynak, üretim, minimap varsa sade)
+  - animasyon ve görsel geri bildirim (VFX önceliği düşük olabilir)
+  - state görselleştirme (sunucudan gelen durumun ekrana yansıması)
+  - prediction / smoothing (gecikme hissinin azaltılması; sunucu gerçeği ile reconcile)
+- İstemci otorite değildir: çatışan durumda sunucu state’i esas alınır.
+
+--------------------------------------------------------------------------------
+6. Sunucu Katmanı
+--------------------------------------------------------------------------------
+
+- Oyun kuralları (ekonomi, üretim, savaş, zafer) sunucuda çalışır.
+- Komut doğrulama sunucuda yapılır (yetki, maliyet, mesafe, cooldown, görüş kuralları — prototipte minimum kural seti).
+- Kaynak, hasar, üretim, görüş (FOV basit olabilir), maç sonucu sunucuda kesinleşir.
+- Headless çalışma desteği hedeflenir: GUI olmadan maç koşturma, otomasyon ve regresyon için.
+- Test edilebilir simülasyon çekirdeği tercih edilir (birim test veya senaryo script ile doğrulanabilir davranış).
+
+--------------------------------------------------------------------------------
+7. Ağ Akışı
+--------------------------------------------------------------------------------
+
+Client → Server (örnek komut ailesi; isimler uygulamada netleşir):
+
+- move
+- attack
+- build
+- train unit
+- research
+- surrender
+
+Server → Client:
+
+- state update (düzenli snapshot veya delta; prototipte basitlik için snapshot ağırlıklı olabilir)
+- event update (önemli olaylar: ölüm, bina tamamlandı, maç sonu tetikleyicileri)
+- result update (kazanma/kaybetme, istatistik özeti)
+
+İlk prototipte hedef:
+
+- düşük karmaşıklık
+- düşük ünite sayısı
+- küçük ve sabit mesaj seti
+- sıkıştırma ve gelişmiş optimizasyon ertelenebilir
+
+--------------------------------------------------------------------------------
+8. Match Flow Teknik Akışı
+--------------------------------------------------------------------------------
+
+Sıra (mantıksal; uygulama tek process veya ayrı servis olabilir):
+
+1. Ana menü
+2. Play / Maç bul
+3. Queue veya sahte queue (anında eşleşme, bot veya ikinci istemci ile test)
+4. Match room oluşturma (oda kimliği, oyuncu slotları)
+5. Oyuncuları maça alma (bağlantı hazır, yükleme)
+6. Maç başlatma (simülasyon tick’leri başlar)
+7. Simülasyon çalıştırma (komut alımı + tick)
+8. Zafer koşulu veya teslim
+9. Sonuç ekranı verisi (client’a result)
+10. Lobiye dönüş veya yeniden queue
+
+--------------------------------------------------------------------------------
+9. İlk Sistemler (Prototip Kapsamı)
+--------------------------------------------------------------------------------
+
+- Unit selection (tekli / çoklu seçim basit seviyede)
+- Move command
+- Resource gathering (worker + node modeli)
+- Building placement (geçerli/geçersiz yerleşim kuralı)
+- Unit production (kuyruk basit veya tek slot)
+- Combat (basit hasar, ölüm, hedef seçimi)
+- Victory / defeat (ana üs yok olması; isteğe bağlı FF)
+- Match end screen (kazanan, süre, özet)
+
+--------------------------------------------------------------------------------
+10. Bilinçli Olarak Ertelenenler
+--------------------------------------------------------------------------------
+
+- 2v2 ve üzeri takım modları
+- gerçek ranked / lig / MMR üretim pipeline’ı
+- battle pass backend
+- mağaza ve ödeme
+- kozmetik sistemi (skin envanteri, görünürlük)
+- replay kayıt ve oynatma
+- spectator
+- gelişmiş AI (rakip bot sade tutulabilir veya yok)
+- çok fraksiyonlu denge ve geniş meta
+- ileri seviye pathfinding optimizasyonu (grid küçük ve basit tutularak risk düşürülür)
+- tam anti-cheat ve tam moderasyon pipeline’ı
+
+--------------------------------------------------------------------------------
+11. Teknik Riskler
+--------------------------------------------------------------------------------
+
+- Simülasyon karmaşıklığı: kurallar büyüdükçe hata yüzeyi artar.
+- Pathfinding: çok ünite + dinamik engeller senkron ve performans riski yaratır.
+- Sync / state replication: snapshot boyutu, sıklığı, prediction uyumsuzluğu.
+- Scope patlaması: “bir özellik daha” ile prototipin ölçüsü şişer.
+- Mevcut iki kod tabanını birleştirme zorluğu: dil/paradigma farkı, çift kaynaklı gerçeklik riski, entegrasyon borcu.
+
+--------------------------------------------------------------------------------
+12. Risk Azaltma Kararları
+--------------------------------------------------------------------------------
+
+- Sadece 1v1 kilitli.
+- Düşük ünite sayısı ve düşük ünite türü sayısı.
+- Tek harita; rastgele üretim yok.
+- Tek ana kaynak (ikinci kaynak yok veya çok sonra).
+- Basit bina seti ve basit üretim kuralları.
+- Basit command seti; ekstra komutlar için genişleme noktaları tasarımda not edilir, prototipe eklenmez.
+- Mock veya fake queue kabul (anında maç, yerel iki pencere, tek oyuncu + bot).
+- Gelişmiş servisler (pass, mağaza, gerçek MM) sonraya; prototip önce oynanır maç teslim eder.
+- Erken oynanabilir build: haftalık çalışan dikey dilim hedefi.
+
+--------------------------------------------------------------------------------
+13. Klasör / Doküman Amacı
+--------------------------------------------------------------------------------
+
+- Bu doküman GDD’den sonraki teknik referanstır; implementasyon ve mimari tartışmalarda öncelik sırası buradan okunur.
+- Çelişen taleplerde önce docs\02 (tasarım sınırları), sonra bu belge (teknik sınırlar) uygulanır.
+- Sonraki dokümanlar: docs\04_MVP_SCOPE.txt (MVP net maddeleri, teslim tanımı, “bitti” kriterleri); ardından docs\05_IMPLEMENTATION_PLAN.txt (iş paketleri, sıra, fazlar).
+- Kod reposu oluşturulduğunda: README veya CONTRIBUTING bu dosyalara link vermeli; tek doğruluk kaynağı docs klasörüdür.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE teknik ön-plan (prototip)
+================================================================================

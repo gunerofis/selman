@@ -1,0 +1,2 @@
+BASLANGIC
+Test verisi okunacak.

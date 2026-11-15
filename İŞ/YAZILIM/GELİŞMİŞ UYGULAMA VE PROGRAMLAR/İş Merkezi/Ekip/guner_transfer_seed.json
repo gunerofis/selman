@@ -1,0 +1,911 @@
+{
+  "staged": true,
+  "userNote": "",
+  "agentNotes": "30.10.2026 — 53 kalan, 23 biten iş mevcut kayıtlardan ayrıldı. Canlı site kontrolü yapılmadı. Her bulgu tek kısa cümle ve puanla kaydedilir; araştırma ve çözüm yapılmaz. Yalnız kullanıcı istediğinde programı kontrol et. Kararlar otomatik uygulama başlatmaz. Program kurulumu bekliyor: derleme Windows yol hatasında; servis yeniden başlatması otomatik onay denetimince reddedildi. UI doğrulanmadı. Devreye alma sonrası Ekip/guner_transfer_setup.py API üzerinden kayıtları aktarır. Devir notları bu alanda kısa tutulur.",
+  "resources": [
+    {
+      "label": "Ortak çalışma kuralları",
+      "path": "C:\\Users\\Guner Office\\Desktop\\AGENTS.md"
+    },
+    {
+      "label": "Dosya haritası",
+      "path": "C:\\Users\\Guner Office\\Desktop\\HARİTA.md"
+    },
+    {
+      "label": "Programın ortak kuralları",
+      "path": "C:\\Users\\Guner Office\\Desktop\\selman\\Programlar\\Program Dosyaları\\İş Merkezi\\Kurallar.md"
+    },
+    {
+      "label": "Taşıma çalışma girişi",
+      "path": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\AGENTS.md"
+    },
+    {
+      "label": "Tek kalan ve biten iş belgesi",
+      "path": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\Açık.md"
+    },
+    {
+      "label": "Taşıma kararları",
+      "path": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\karar.md"
+    },
+    {
+      "label": "Taşıma sınırları",
+      "path": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\dikkat.md"
+    },
+    {
+      "label": "Kısa çıktı skill’i",
+      "path": "C:\\Users\\Guner Office\\.codex\\skills\\net-dogrudan-cikti\\SKILL.md"
+    },
+    {
+      "label": "Shopify çalışma skill’i",
+      "path": "C:\\Users\\Guner Office\\.agents\\skills\\gof-shopify\\SKILL.md"
+    },
+    {
+      "label": "İşlev kontrolü skill’i",
+      "path": "C:\\Users\\Guner Office\\.agents\\skills\\gof-web-qa\\SKILL.md"
+    },
+    {
+      "label": "Teknik SEO skill’i",
+      "path": "C:\\Users\\Guner Office\\.agents\\skills\\gof-technical-seo\\SKILL.md"
+    },
+    {
+      "label": "İş takip işlemleri skill’i",
+      "path": "C:\\Users\\Guner Office\\.codex\\skills\\gof-admin-operations\\SKILL.md"
+    },
+    {
+      "label": "Programın geliştirme kuralları",
+      "path": "C:\\Users\\Guner Office\\Desktop\\selman\\Programlar\\Program Dosyaları\\İş Merkezi\\AGENTS.md"
+    },
+    {
+      "label": "Önceki taşıma durum kaydı",
+      "path": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md"
+    },
+    {
+      "label": "Önceki tamamlanan iş kaydı",
+      "path": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Kapalı — Güner taşıma 2026-10-30 — 57e0acee6d.md"
+    }
+  ],
+  "items": [
+    {
+      "id": "07158cc1af73526398dc5f85a3b0ae10",
+      "title": "iyzico ödeme kurulumu tamamlanmadı.",
+      "priority": 100,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "6f7f4d83e8ab59ff82b093f2e400110c",
+      "title": "Gerçek ödeme ve iade testi yapılmadı.",
+      "priority": 99,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "e161d44ba562567894cf91a5d349e6cc",
+      "title": "Kapıda ödeme için 150 TL ek bedel kurulmadı.",
+      "priority": 98,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "04abc655bd0953b38be92b6522149b4a",
+      "title": "Kargo ücretlerinin son toplam kontrolü yapılmadı.",
+      "priority": 97,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "5b8061a9804155b3a2bc1e010c653b56",
+      "title": "Vergi tutarının son ödeme kontrolü yapılmadı.",
+      "priority": 96,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "61cbf68cc7d257c9a71d49d61b20ef89",
+      "title": "Havale akışının son kontrolü yapılmadı.",
+      "priority": 95,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ödeme ve toplam",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "b6379f45f4b650fca94956e56511bc14",
+      "title": "Çerez tercih alanı tamamlanmadı.",
+      "priority": 94,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Hukuk ve resmî bilgiler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "2dd083887c8f5654bb0289492f0e1f96",
+      "title": "Ödeme öncesi dinamik bilgilendirme tamamlanmadı.",
+      "priority": 94,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Hukuk ve resmî bilgiler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "05fa431d72bb5b289742641317b18b6f",
+      "title": "Vergi dairesi, KEP ve sicil bilgileri tamamlanmadı.",
+      "priority": 93,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Hukuk ve resmî bilgiler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "e7951a0cd1d8548eb3a443d26b9ca04a",
+      "title": "ETBİS, İYS ve VERBİS durumları doğrulanmadı.",
+      "priority": 93,
+      "status": "uncertain",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Gerçek erişim veya bilgi gerektirenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "1ccdbff7761e5621a6345ed1396144e0",
+      "title": "Shopify veri aktarım bilgileri tamamlanmadı.",
+      "priority": 92,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Hukuk ve resmî bilgiler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "0e5dc360066450e5b82be696175e5ce1",
+      "title": "Yayın öncesi son veri eşitlemesi yapılmadı.",
+      "priority": 91,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Geçiş ve yayın",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "ce0eefd62b275da39e91a88ea38cdcf4",
+      "title": "Alan adı ve DNS geçişi son kabulü bekliyor.",
+      "priority": 90,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Geçiş ve yayın; dikkat.md",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "2f73cda0aee75befac639a4033e3ed7e",
+      "title": "Yayın sonrası indeksleme ve ölçüm kontrolü yapılmadı.",
+      "priority": 90,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Geçiş ve yayın",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "72a1aaa60c035fcfaebe2e750125fa0f",
+      "title": "Eski adres yönlendirmelerinin vitrin testi tamamlanmadı.",
+      "priority": 89,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kaynakla eşitleme uygulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "9fcc76950cc55dddb0c5b5cbde4a784a",
+      "title": "Canonical, hreflang ve sitemap son kontrolü yapılmadı.",
+      "priority": 88,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "3fa3ff2c1ee45cdd879fa94652d4dd3b",
+      "title": "Beş ürünün temiz adres değişikliği tamamlanmadı.",
+      "priority": 87,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\karar.md → URL haritası kararı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "b3d4f192123e5c5592760b87f6b2585b",
+      "title": "Korunan 13 eski adresin karşılıkları doğrulanmadı.",
+      "priority": 86,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\karar.md → URL haritası kararı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "deaad504e8fd534a8bc2a9f848d5f515",
+      "title": "Yeni yapıya alınmayan 101 adresin HTTP kararı verilmedi.",
+      "priority": 85,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\karar.md → URL haritası kararı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "3e13eccd504c5cb5a5fe986a3cc9965f",
+      "title": "Atatürk tablo seçiminin sepet kontrolü tamamlanmadı.",
+      "priority": 84,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "661e0e281e775a0b8ef2dc93354e0831",
+      "title": "Özel ölçü alanlarının son işlev kontrolü yapılmadı.",
+      "priority": 83,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "9bcb26dfeccc56ad966ed75f2cbdb78d",
+      "title": "Masa takvimliği fiyat farklarının sepet kontrolü yapılmadı.",
+      "priority": 83,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ürün formu ve sepet",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "3eefc5a4e764549baf582830895232c3",
+      "title": "Kumaşlı pano teklif akışının son kontrolü yapılmadı.",
+      "priority": 82,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Kapalı — Güner taşıma 2026-10-30 — 57e0acee6d.md → Kumaşlı pano uygulaması; işlev testi açık",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "a977575c802e56c882b5778024511aca",
+      "title": "Favoriden doğrudan sepete ekleme sınanmadı.",
+      "priority": 81,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → 25 tasarım uygulaması",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "2527f7d721785b67b3cacff0ff2cb106",
+      "title": "Sepet hatırlatmasının süre koşulları sınanmadı.",
+      "priority": 80,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "820d2726054b5c21ab81c42132f163c1",
+      "title": "İletişim formunun teslimi doğrulanmadı.",
+      "priority": 79,
+      "status": "uncertain",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "68fd4ac45ef951ecaf8b0f044ee72a41",
+      "title": "Müşteri hesabına girişin son kontrolü yapılmadı.",
+      "priority": 78,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "1731e4865d8a5136b6465ebbb2fb49f7",
+      "title": "Sipariş takibi akışının son kontrolü yapılmadı.",
+      "priority": 77,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Son işlev ve yayın kabulü",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "f04122ec48275412b38563abd1812352",
+      "title": "Katalog ve menülerin tam mobil kabulü tamamlanmadı.",
+      "priority": 76,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Vitrin ve hesap akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "52633f7c8d5e518084ff15a1f0f4ee19",
+      "title": "Ana sayfadaki 32 ürün kartının son kabulü yapılmadı.",
+      "priority": 75,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Vitrin ve hesap akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "3b03a6388e6b53a495b87db24b999906",
+      "title": "Gizli sayfa ve blogların yayın kabulü tamamlanmadı.",
+      "priority": 74,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori, sayfa ve blog aktarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "55188cf0ac7f5595ade8dead9de1a9c5",
+      "title": "Ürün tasarımının referanslara tam uyumu tamamlanmadı.",
+      "priority": 73,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ürün alanı — 29.10.2026",
+      "sourceDate": "2026-10-29",
+      "revision": 1
+    },
+    {
+      "id": "5c3d8c2d2eeb513e9e91189bd6ac72c4",
+      "title": "Hesap ve ödeme tasarımlarının tam uyumu platform sınırında kaldı.",
+      "priority": 72,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → 25 tasarım uygulaması; Ürün alanı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "603faaefe45a55f48832df3cc79d01a1",
+      "title": "Google ve Ads hesap bağlantıları tamamlanmadı.",
+      "priority": 71,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ölçüm ve ürün akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d648285110b751019768dbabf672751f",
+      "title": "Meta hesap bağlantısı Shopify tarafında tamamlanmadı.",
+      "priority": 70,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ölçüm ve ürün akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d0e4dbdb6a925f9e82f6a1a484165fa4",
+      "title": "Ölçüm olaylarının tekil çalıştığı doğrulanmadı.",
+      "priority": 69,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ölçüm ve ürün akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "32be311a589f5898b8aee7805871a84c",
+      "title": "Sipariş ve katalog ürün kimlikleri eşleştirilmedi.",
+      "priority": 68,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ölçüm ve ürün akışları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "7e48ecfc3db45ba4a5fc7fcbee1e4c82",
+      "title": "İngilizce ve Arapça ürün adresleri yüklenmedi.",
+      "priority": 67,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → EN/AR",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "b5dc66dc5dc7514bab4123288260f858",
+      "title": "Üç yeni koleksiyonun dil kayıtları tamamlanmadı.",
+      "priority": 66,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → EN/AR",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "f64deefe5bf35109912144e18c4e3c86",
+      "title": "Dil seçicinin son yayın kontrolü yapılmadı.",
+      "priority": 65,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → EN/AR",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "cfe3eca98c215f648fe6fba7ed879119",
+      "title": "Arapça sağdan sola görünüm kontrolü yapılmadı.",
+      "priority": 64,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → EN/AR",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "14baa3caebc25075916bdc87a877235d",
+      "title": "Panel ile yedek arasındaki beş müşteri farkı kapanmadı.",
+      "priority": 63,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Korunan kaynak sınırları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "c54bc1b073c9594dbd787b8fdf609738",
+      "title": "Panel ile yedek arasındaki bir sipariş farkı kapanmadı.",
+      "priority": 62,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Korunan kaynak sınırları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "9574783a8bc15828bb3638ade3592c8d",
+      "title": "Kaynakta ana sayfaya dönen beş ürün adresi açık kaldı.",
+      "priority": 61,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "7d495a660f6b5a15b42e0b5019845090",
+      "title": "Kaynağı boş 12 pasif varyantın fiyatı doğrulanamadı.",
+      "priority": 60,
+      "status": "uncertain",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Uygulama ve kalan engel",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "15b6f54181f65bd3acbbdadb4427bca7",
+      "title": "Takım oluşturmadaki diğer parça görselleri eksik kaldı.",
+      "priority": 59,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Parça görselleri — 29.10.2026",
+      "sourceDate": "2026-10-29",
+      "revision": 1
+    },
+    {
+      "id": "b256cfa161aa5714ab70336dca9f9b01",
+      "title": "GNRS01 ve GNRS07 ölçü bilgileri eksik kaldı.",
+      "priority": 58,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Faprika’dan taşımaya devredenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "740fe4d2253a551eb20032a17521a864",
+      "title": "GNRS05 yastık, bölme ve saat çapı bilgileri eksik kaldı.",
+      "priority": 57,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Faprika’dan taşımaya devredenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d1bc3aa4cf3b5dee9b09c24647abbc62",
+      "title": "GNR101 parça ölçüleri eksik kaldı.",
+      "priority": 56,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Faprika’dan taşımaya devredenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d4e862f97a1858f7a577dd55978d839f",
+      "title": "GNRS04 ve GNRS06 yüzük bölmesi ayrımı tamamlanmadı.",
+      "priority": 55,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Faprika’dan taşımaya devredenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "1f8ff02c37e1514bb2461a06b75223f0",
+      "title": "Diğer eksik ürün galeri açıları tamamlanmadı.",
+      "priority": 54,
+      "status": "remaining",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Faprika’dan taşımaya devredenler",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d98d9de2e21a59d49ff9881fda7541c5",
+      "title": "Tek tip indirim için oran ve koşullar belirlenmedi.",
+      "priority": 45,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\Güner Ofis\\02 Web\\İşler ve Belgeler\\Güner Shopify Taşıma - KRİTİK\\karar.md → İndirim kapsamı değişti",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "4801fefb213e529f83468c49bcb4f6a5",
+      "title": "3.944 eski sipariş Shopify’a aktarılmadı.",
+      "priority": 40,
+      "status": "deferred",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Yedek ve geçmiş",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "69db552384a858e8b6087a5c8bab72ab",
+      "title": "826 kaynak ürün Shopify’a aktarıldı.",
+      "priority": 100,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "de4d57dde2605f8b81ff9fbb1b7412a6",
+      "title": "Ürünlerin kaynak aktiflik durumları eşitlendi.",
+      "priority": 99,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "88e9feb418705d29b78514e4b91f8221",
+      "title": "Geçerli barkodların aktarımı doğrulandı.",
+      "priority": 98,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "94723734b1445dd8b704374ffa6dbd0e",
+      "title": "Tüm varyantlarda stok takibi kapatıldı.",
+      "priority": 97,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "46a722a1bc0c55de944a7bd395c785a4",
+      "title": "Dokuz takım oluşturma ürününün sepet testi geçti.",
+      "priority": 96,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "7c2783e7f82c56349b3f3875cd82bd60",
+      "title": "Ücretli parçaların adet ve birlikte silinmesi doğrulandı.",
+      "priority": 95,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "abaac9fc2d4f5648a2a2e7fc2dcecac8",
+      "title": "Hediye paketi için 50 TL ek fiyat doğrulandı.",
+      "priority": 94,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "299e3a66c2295125a721253b70994f7d",
+      "title": "Ürün adları, açıklamalar ve SEO farkları eşitlendi.",
+      "priority": 93,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kaynakla eşitleme uygulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "7c431acb6fbd56ba89952f49cb07dbe6",
+      "title": "Bilinen ürün görselleri ve galeri sıraları eşitlendi.",
+      "priority": 92,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kaynakla eşitleme uygulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "e2c7cc551d395e469fb0c89aa60693a9",
+      "title": "146 kaynak kategori Shopify’a taşındı.",
+      "priority": 91,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori, sayfa ve blog aktarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "218afcefa3cb5093ba96ac5467eb8092",
+      "title": "Kategori ürün üyelikleri ve sıraları eşitlendi.",
+      "priority": 90,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori, sayfa ve blog aktarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "42c5afe1a95c5bab95d7580831ea23dd",
+      "title": "37 sayfa ve 27 blog içeriği taşındı.",
+      "priority": 89,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori, sayfa ve blog aktarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "3cc3d7f88a29510db0636b47fe50e1ea",
+      "title": "1.004 yönlendirme kaydı oluşturuldu ve geri okundu.",
+      "priority": 88,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori, sayfa ve blog aktarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "8eca065a0b215f08be6527540dbcdbf4",
+      "title": "2.375 müşteri aktarıldı; 33 kaynak istisnası korundu.",
+      "priority": 87,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Korunan kaynak sınırları",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "97e9db8945ca5ffd8aac5359562ce17f",
+      "title": "Üst menü ve ürün araması düzenlendi.",
+      "priority": 86,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Üst alan tasarımı tamamlandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "d6f6a4955154590bb3c9c925e485ffbb",
+      "title": "SSS araması ve soru açılması doğrulandı.",
+      "priority": 85,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Sepet hatası giderildi; stok, barkod ve aktiflik doğrulandı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "2bc40419003656eba46e9603e4f5ca6f",
+      "title": "Kategori başlıkları ve ürün kartları düzenlendi.",
+      "priority": 84,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Kategori ve ürün tasarımı",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "c0cfb94288db59968784e75080434424",
+      "title": "Ürün alanı ve isimlik görünümü düzenlendi.",
+      "priority": 83,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Ürün alanı — 29.10.2026",
+      "sourceDate": "2026-10-29",
+      "revision": 1
+    },
+    {
+      "id": "e0d54156810f50a1a4e7ced713b9016b",
+      "title": "Sepet önerileri ve alt alan tasarımı düzenlendi.",
+      "priority": 82,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Tasarım sırası; 17 numaralı alt alan",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "efc5c5596bba5e22909d2bf5bb286087",
+      "title": "Favori ekleme ve çıkarma kontrolü geçti.",
+      "priority": 81,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → 25 tasarım uygulaması",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "f64521f3cbe65fa5bfcd253dcfc73f71",
+      "title": "Mobil ana sayfa yerleşimi düzenlendi.",
+      "priority": 80,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Mobil ana sayfa",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "dcc1b52bf5c554bba545c0d2187b5cd4",
+      "title": "Destek alanının boş içeriği giderildi.",
+      "priority": 79,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → 18 numaralı destek",
+      "sourceDate": "2026-10-28",
+      "revision": 1
+    },
+    {
+      "id": "40a65c133b9d5849a6afbc1672697149",
+      "title": "Siyah takımın üç parça kartına fotoğraf eklendi.",
+      "priority": 78,
+      "status": "done",
+      "decision": "pending",
+      "note": "",
+      "source": "C:\\Users\\Guner Office\\Desktop\\_ARŞİV\\MD\\Açık — Güner taşıma 2026-10-30 — 4436f9f549.md → Parça görselleri — 29.10.2026",
+      "sourceDate": "2026-10-29",
+      "revision": 1
+    }
+  ],
+  "rules": [
+    "Her iş tek kısa cümle ve 0–100 önem puanıyla yazılır.",
+    "Yalnız kalan iş kaydedilir; araştırma ve çözüm yapılmaz.",
+    "Program yalnız kullanıcı istediğinde kontrol edilir.",
+    "Agent önce kaynakları ve agent notlarını okur; kısa devir notu bırakır."
+  ]
+}

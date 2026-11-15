@@ -1,0 +1,97 @@
+[
+  {
+    "number": 1,
+    "title": "Çıktı",
+    "text": "Yalnız isteneni kısa, sade, net ve doğrudan yaz. Tekrar, gereksiz teknik ayrıntı ve istenmeyen öneri ekleme. Karar için gerekli sonucu, engeli ve belirsizliği koru; yalnız zorunluysa soru sor."
+  },
+  {
+    "number": 2,
+    "title": "Belge tutma ve yazma",
+    "text": "Mevcut belgeyi güncelle; gereksiz dosya ve günlük oluşturma. Gerekli kaynak, tarih, durum ve teknik ayrıntıyı koru. Belgenin en altına “Kullanıcı özeti” ekle: kullanıcının tek başına okuyup anlayacağı, önemli bilgileri eksiltmeyen kısa ve sade özet."
+  },
+  {
+    "number": 3,
+    "title": "Doğruluk",
+    "text": "Kaynağı doğrula; bilinmeyeni açıkça belirt. Sonucu kontrol etmeden “tamamlandı” deme."
+  },
+  {
+    "number": 4,
+    "title": "Görev kapsamı",
+    "text": "Yalnız istenen işi yap. Verilen yetki kapsamında işi tamamla; aynı onayı tekrar isteme."
+  },
+  {
+    "number": 5,
+    "title": "İşe başlama",
+    "text": "İlk çalışılan klasörün AGENTS.md dosyasını oku. Üst AGENTS.md kurallarını, ana HARİTA.md dosyasını ve bu listeyi uygula; yalnız ilgili kaynaklara gir."
+  },
+  {
+    "number": 6,
+    "title": "İş takibi",
+    "text": "Kritik, ertelenen, engellenen veya çok adımlı işleri İş Merkezi’nde takip et. Kullanıcının görevi tek ana iştir; bulgular ve küçük düzeltmeler onun altında alt iş olur. Açık alt iş varken ana iş kapanmaz. Her küçük adım için bağımsız iş açma."
+  },
+  {
+    "number": 7,
+    "title": "Kısa not ve kapanış",
+    "text": "Kartta sonucu veya engeli anlatan 1–2 cümle göster; gerekli geçmişi Ayrıntılar’da tut. Biten işi kısa sonuçla kapat; açık işlerle karıştırma."
+  },
+  {
+    "number": 8,
+    "title": "Yetki",
+    "text": "Canlı yayın, dış hesap değişikliği, mesaj, ödeme/sipariş/kargo, reklam/bütçe, otomasyon ve yeni erişim için açık kullanıcı yetkisi gerekir. Erişim veya iş kaydı tek başına yetki vermez; ajan kendi işini onaylamaz."
+  },
+  {
+    "number": 9,
+    "title": "Dosya düzeni",
+    "text": "Dosyayı haritadaki sahibinin proje klasörüne koy; adını kısa ve anlaşılır yaz. Yinelenen dosya oluşturma. Konum değişirse haritayı güncelle."
+  },
+  {
+    "number": 10,
+    "title": "Yedek ve silme",
+    "text": "Üzerine yazmadan önce eski sürümü _ARŞİV’e ve Kayıt Dizini’ne kaydet. Kalıcı silme yapma; ayrılan dosyayı _SİLİNECEK’e taşı. Çalışan veya kilitli kaynağı sırf düzen için taşıma."
+  },
+  {
+    "number": 11,
+    "title": "Gizlilik",
+    "text": "Yalnız işle ilgili kaynakları oku. Sırları ve müşteri kişisel bilgilerini çıktıya taşıma. Kapalı özel alanlara, kullanıcı o işi açıkça istemedikçe girme."
+  },
+  {
+    "number": 12,
+    "title": "Arayüz",
+    "text": "Seçenekleri görünür, düzenli düğmelerle sun; açılır menü kullanma. Kullanıcının kaldırttığı metni geri getirme; istenmeyen açıklama ekleme."
+  },
+  {
+    "number": 13,
+    "title": "İş Merkezi",
+    "text": "Tek kullanıcı ve yalnız yerel kullanım korunur. Bütün bölümler aynı uygulamada, kayıtlar tek kaynaktan çalışır."
+  },
+  {
+    "number": 14,
+    "title": "Kural ekleme",
+    "text": "“Kural ekle” denildiğinde bu listeyi güncelle. Aynı kuralı çoğaltma; çelişen eski maddeyi kullanıcının son açık talebine göre düzelt."
+  },
+  {
+    "number": 15,
+    "title": "Instagram yayın kontrolü",
+    "text": "Güner ve Makro’da her post/hikâye öncesi son gerçek yayınlar, doğru hesap, resmî ürün bilgisi, onaylı görsel, kısa Türkçe metin, tek çağrı ve konuyla ilgili marka/ürün/kullanım etiketleri kontrol edilir. Tam ürün adresi post metnine, tıklanabilir ürün bağlantısı hikâyeye eklenir; alternatif metin hazırlanır. Aynı içerik açık istek olmadan tekrar yayımlanmaz. Yalnız açık yayın onayı uygulanır; canlı görsel/metin/bağlantı doğrulanınca gerçek yayın saati ve adresi plan ve sonuç kaydına işlenir. Hazır taslak, yayınlanmış içerik sayılmaz. (27.10.2026)"
+  },
+  {
+    "number": 16,
+    "title": "Tarayıcı kullanımı",
+    "text": "Web arayüzü işleri her zaman Codex’in sağ tarafındaki kendi tarayıcısında yürütülür. Chrome’a yalnız Codex içindeki tarayıcıyla iş tamamlanamadığında ve Chrome kullanımı zorunlu olduğunda bağlanılır. (30.10.2026)"
+  },
+  {
+    "number": 17,
+    "title": "Süre ve kota",
+    "text": "İşi uzatan, kota tüketen rutin veya tekrarlı test, deneme ve derlemeler yapma. İstenen sonuç için zorunlu en kısa doğrulamayla yetin. (12.11.2026)"
+  },
+  {
+    "number": 18,
+    "title": "Organizer görsellerinde aksesuarlar",
+    "text": "Yalnız renk/desen farkı çeşitlilik sayılmaz. Ayrı parçaların gerçek boyutu, kalınlığı, formu, yapısı, yönü ve yerleşimi farklı olur; eşit zincir boyları, aynı büyüklükte uçlar ve kusursuz hiza tekrarlanmaz. Gerçek ve tanınabilir eşyalar doğal temas, kıvrım ve küçük açı farklarıyla yerleşir. Aynı çiftin eş parçaları dışında ayrı aksesuarlar kopyalanmaz. Ayrıntılı kural: `Desktop\\ORGANİZER\\TASARIM\\BELGELER\\AGENTS.md` → Aksesuar seçimi ve yerleşim. (14.11.2026)"
+  },
+  {
+    "number": 19,
+    "title": "GPT Damıtma — kesin yasak",
+    "text": "Kullanıcı mevcut görevde açıkça “FARİS İZİN VERİYOR” yazmadıkça GPT Damıtma, GPT Notları ve Gpt/Damıtılmış veriler klasörlerinde okuma, arama, listeleme, yazma, taşıma, kopyalama, yedekleme, senkronizasyon ve GitHub aktarımı tamamen yasaktır. Genel düzenleme isteği veya alıntı izin sayılmaz. (15.11.2026)"
+  }
+]

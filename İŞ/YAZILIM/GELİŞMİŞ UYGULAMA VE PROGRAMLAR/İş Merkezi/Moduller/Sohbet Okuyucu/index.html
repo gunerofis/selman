@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sohbet Okuyucu</title>
+<style>
+:root{--bg:#F5F6F8;--panel:#FFFFFF;--ink:#1A2230;--muted:#5D6779;--faint:#98A1B0;--line:#E3E7ED;--accent:#2F5BEA;--accentSoft:#EEF2FF;--me:#2F5BEA;--meInk:#FFFFFF;--other:#FFFFFF;--otherInk:#1A2230;--hit:#FFE58A;--cur:#FFB547;--tile:#EEF1F5}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--panel:#1A1D22;--ink:#E8EBF0;--muted:#A3ABB8;--faint:#6E7684;--line:#2A2F37;--accent:#7C9BFF;--accentSoft:#1E2740;--me:#3B5BD6;--meInk:#FFFFFF;--other:#22262D;--otherInk:#E8EBF0;--hit:#6B5A1E;--cur:#9A6514;--tile:#262B33}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",system-ui,sans-serif;display:flex;overflow:hidden}
+button,input,select{font:inherit;color:inherit}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:7px 14px;cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--faint)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.field{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:7px 12px;outline:none;min-width:0}
+.field:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accentSoft)}
+#side{width:320px;flex:none;display:flex;flex-direction:column;border-right:1px solid var(--line);background:var(--panel)}
+#sideTop{padding:20px 16px 12px;display:flex;flex-direction:column;gap:10px}
+#sideTop h1{font-size:20px;margin:0;font-weight:650}
+#folderRow{display:flex;gap:8px}
+#folderName{font-size:12px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:18px}
+#list{flex:1;overflow:auto;padding:4px 10px 16px}
+.conv{display:flex;gap:12px;align-items:center;padding:9px 10px;border-radius:12px;cursor:pointer;border:2px solid transparent}
+.conv:hover{background:var(--bg)}
+.conv.on{background:var(--accentSoft);border-color:var(--accent)}
+.av{width:40px;height:40px;border-radius:50%;background:var(--tile);display:grid;place-items:center;font-weight:600;flex:none;font-size:14px}
+.ci{min-width:0;flex:1}
+.conv .t{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.conv .s{font-size:12px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.conv .n{font-size:12px;color:var(--accent);font-weight:700;white-space:nowrap;background:var(--accentSoft);border-radius:999px;padding:1px 8px}
+.tag{font-size:10px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:0 4px;margin-left:6px;vertical-align:2px}
+.empty{color:var(--faint);padding:20px 12px;font-size:14px}
+#main{flex:1;display:flex;flex-direction:column;min-width:0}
+#head{padding:12px 24px;border-bottom:1px solid var(--line);background:var(--panel);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#title{font-size:18px;font-weight:650;margin-right:auto;min-width:160px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#title small{display:block;font-size:12px;color:var(--faint);font-weight:400;overflow:hidden;text-overflow:ellipsis}
+#find{display:flex;gap:6px;align-items:center}
+#count{font-size:13px;color:var(--muted);min-width:70px;text-align:center}
+#time{display:flex;gap:2px;align-items:flex-end;height:50px;padding:6px 24px 6px;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--panel);flex:none}
+.bar{flex:none;width:8px;background:var(--line);border-radius:3px 3px 0 0;cursor:pointer}
+.bar:hover{background:var(--faint)}
+.bar.on{background:var(--accent)}
+.yr{flex:none;font-size:11px;color:var(--faint);font-weight:600;align-self:center;margin:0 4px 0 10px}
+.yr:first-child{margin-left:0}
+#msgs{flex:1;overflow:auto;padding:8px 24px 40px;position:relative}
+.day{content-visibility:auto;contain-intrinsic-size:auto 900px}
+.dsep{position:sticky;top:0;z-index:2;text-align:center;padding:10px 0 6px}
+.dsep span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:12px;color:var(--muted);font-weight:600}
+.m{display:flex;margin:2px 0}
+.m.me{justify-content:flex-end}
+.m.gap{margin-top:10px}
+.b{max-width:min(640px,72%);background:var(--other);color:var(--otherInk);border:1px solid var(--line);border-radius:16px 16px 16px 6px;padding:6px 12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.me .b{background:var(--me);color:var(--meInk);border-color:transparent;border-radius:16px 16px 6px 16px}
+.who{display:block;font-size:12px;font-weight:700;color:var(--accent)}
+.tm{float:right;font-size:11px;opacity:.6;margin:6px 0 0 10px}
+.b img,.b video{display:block;max-width:280px;max-height:320px;border-radius:10px;margin:4px 0;cursor:zoom-in;background:var(--tile);min-width:120px;min-height:90px;object-fit:cover}
+.b audio{display:block;margin:4px 0;width:260px}
+.b a{color:inherit}
+.note{font-style:italic;opacity:.7}
+.rx{font-size:12px;margin-top:2px}
+.sys{text-align:center;font-size:12px;color:var(--faint);margin:6px 0}
+.m.hit .b{box-shadow:0 0 0 2px var(--hit)}
+.m.cur .b{box-shadow:0 0 0 3px var(--cur)}
+mark{background:var(--hit);color:inherit;border-radius:3px;padding:0 1px}
+.cur mark{background:var(--cur)}
+.flash .b{animation:fl 1.4s}
+@keyframes fl{0%{box-shadow:0 0 0 5px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
+#welcome{margin:12vh auto 0;text-align:center;max-width:480px;color:var(--muted);padding:20px}
+#welcome h2{color:var(--ink);font-size:22px;margin:0 0 8px}
+#welcome p{margin:0 0 18px}
+#status{font-size:13px;color:var(--muted);margin-top:14px}
+#keys{font-size:12px;color:var(--faint);margin-top:28px;line-height:2}
+kbd{border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 6px;font-size:12px;background:var(--panel);color:var(--ink)}
+#light{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:10;cursor:zoom-out}
+#light.on{display:grid}
+#light img{max-width:94vw;max-height:94vh}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<aside id="side">
+ <div id="sideTop">
+  <h1>Sohbetler</h1>
+  <div id="folderRow"><button class="btn primary" id="pick">Klasör seç</button><button class="btn hidden" id="reopen"></button></div>
+  <div id="folderName"></div>
+  <input class="field" id="gq" type="search" placeholder="Tüm sohbetlerde ara…">
+ </div>
+ <div id="list"><div class="empty">Henüz klasör seçilmedi.</div></div>
+</aside>
+<main id="main">
+ <div id="head" class="hidden">
+  <div id="title"></div>
+  <div id="find"><input class="field" id="q" type="search" placeholder="Bu sohbette ara" style="width:230px"><button class="btn" id="prev" title="Önceki (Enter)">▲</button><button class="btn" id="next" title="Sonraki (Shift+Enter)">▼</button><span id="count"></span></div>
+  <input class="field" id="dt" type="date" title="Tarihe git">
+  <label style="font-size:13px;color:var(--muted)">Ben: <select class="field" id="me"></select></label>
+ </div>
+ <div id="time" class="hidden"></div>
+ <div id="msgs"><div id="welcome"><h2>Sohbet okuyucu</h2><p>Instagram / Facebook dışa aktarma klasörünü ya da WhatsApp sohbet dışa aktarımlarının olduğu klasörü seç. Alt klasörlerdeki tüm sohbetler soldaki listeye gelir.</p><button class="btn primary" id="pick2">Klasör seç</button><div id="status"></div>
+ <div id="keys"><kbd>Ctrl</kbd>+<kbd>F</kbd> sohbette ara · <kbd>Enter</kbd> önceki sonuç · <kbd>Alt</kbd>+<kbd>↑</kbd><kbd>↓</kbd> sohbet değiştir · <kbd>Esc</kbd> temizle</div></div></div>
+</main>
+<div id="light"></div>
+<input type="file" id="dirInput" webkitdirectory multiple class="hidden">
+<script id="core">
+const MEDIA=/\.(jpe?g|png|gif|webp|heic|mp4|mov|3gp|webm|opus|ogg|m4a|mp3|aac|wav|pdf)$/i;
+const R1=/^\[(\d{1,2})[./-](\d{1,2})[./-](\d{2,4}),?\s+(\d{1,2})[:.](\d{2})(?:[:.](\d{2}))?\s*([AaPp]\.?\s?[Mm]\.?)?\]\s*(.*)$/;
+const R2=/^(\d{1,2})[./-](\d{1,2})[./-](\d{2,4}),?\s+(\d{1,2})[:.](\d{2})(?:[:.](\d{2}))?\s*([AaPp]\.?\s?[Mm]\.?)?\s+[-–]\s+(.*)$/;
+function fixText(s){if(typeof s!=='string')return '';if(!/[Â-ô][\u0080-¿]/.test(s))return s;const b=new Uint8Array(s.length);for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);if(c>255)return s;b[i]=c;}try{return new TextDecoder('utf-8',{fatal:true}).decode(b);}catch(e){return s;}}
+function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ı/g,'i').toLowerCase();}
+function kindOf(n){return /\.(jpe?g|png|gif|webp|heic)$/i.test(n)?'img':/\.(mp4|mov|3gp|webm)$/i.test(n)?'video':/\.(opus|ogg|m4a|mp3|aac|wav)$/i.test(n)?'audio':'file';}
+function parseMeta(list){let title='',parts=[];const msgs=[];
+ for(const j of list){if(!title&&j.title)title=fixText(j.title);if(!parts.length&&j.participants)parts=j.participants.map(p=>fixText(p.name||'')).filter(Boolean);
+  for(const m of (j.messages||[])){const media=[];
+   for(const [k,kind] of [['photos','img'],['videos','video'],['audio_files','audio'],['gifs','img'],['files','file']])for(const x of (m[k]||[]))if(x&&x.uri)media.push({kind:kind==='file'?kindOf(x.uri):kind,name:x.uri.split('/').pop()});
+   if(m.sticker&&m.sticker.uri)media.push({kind:'img',name:m.sticker.uri.split('/').pop()});
+   let text=fixText(m.content||''),link='',linkText='';
+   if(m.share){link=m.share.link||'';linkText=fixText(m.share.share_text||'');}
+   if(m.call_duration!=null&&!text)text='📞 Arama · '+Math.round(m.call_duration/60)+' dk';
+   const rx=(m.reactions||[]).map(r=>fixText(r.reaction||'')).join(' ');
+   msgs.push({t:m.timestamp_ms||0,from:fixText(m.sender_name||''),text,media,link,linkText,rx});}}
+ msgs.sort((a,b)=>a.t-b.t);return {title:title||parts.join(', '),parts,msgs};}
+function looksWA(txt){const lines=txt.replace(/\r/g,'').replace(/[‎‏‪-‮﻿]/g,'').split('\n').filter(l=>l.trim()).slice(0,300);let n=0;for(const l of lines)if(R1.test(l)||R2.test(l))n++;return n>=3&&n>=lines.length*0.3;}
+function parseWA(txt){const lines=txt.replace(/\r/g,'').replace(/[‎‏‪-‮﻿]/g,'').split('\n');const raw=[];let mdy=false;
+ for(const line of lines){const m=R1.exec(line)||R2.exec(line);
+  if(m){const rest=m[8];const k=rest.indexOf(': ');const has=k>0&&k<80;raw.push({a:+m[1],b:+m[2],y:+m[3],h:+m[4],mi:+m[5],s:+(m[6]||0),ap:(m[7]||'').toLowerCase(),from:has?rest.slice(0,k).trim():'',text:has?rest.slice(k+2):rest});if(+m[2]>12)mdy=true;}
+  else if(raw.length)raw[raw.length-1].text+='\n'+line;}
+ const msgs=raw.map(r=>{const d=mdy?r.b:r.a,mo=mdy?r.a:r.b,y=r.y<100?2000+r.y:r.y;let h=r.h;if(r.ap.startsWith('p')&&h<12)h+=12;if(r.ap.startsWith('a')&&h===12)h=0;const media=[];let text=r.text.replace(/\s+$/,'');
+  const att=text.match(/<(?:attached|eklendi|ekli|eklenen|ek)\s*:\s*([^>]+)>/i)||text.match(/^(.+?\.[A-Za-z0-9]{2,4})\s*\((?:dosya ekli|file attached|dosya eklendi)\)/i);
+  if(att){const name=att[1].trim();media.push({kind:kindOf(name),name});text=text.replace(att[0],'').trim();}
+  if(/^<?(media omitted|medya dahil edilmedi|medya atland[ıi]|görüntü dahil edilmedi|video dahil edilmedi)>?$/i.test(text.trim()))text='‹medya dışa aktarılmamış›';
+  return {t:new Date(y,mo-1,d,h,r.mi,r.s).getTime(),from:r.from,text,media,link:'',linkText:'',rx:''};});
+ return {title:'',parts:[...new Set(msgs.map(m=>m.from).filter(Boolean))],msgs};}
+function waTitle(name,dir){let t=name.replace(/\.txt$/i,'').replace(/^WhatsApp\s+(Chat with|Chat -|Sohbeti\s*-|Sohbeti:)\s*/i,'').replace(/\s*ile WhatsApp Sohbeti$/i,'').trim();if(!t||/^_?chat$/i.test(t))t=(dir.split('/').pop()||'WhatsApp').replace(/^WhatsApp\s+(Chat|Sohbeti)\s*-\s*/i,'');return t;}
+if(typeof module!=='undefined')module.exports={fixText,norm,parseMeta,parseWA,looksWA,waTitle};
+</script>
+<script>
+const $=id=>document.getElementById(id);
+const S={convs:[],cur:null,hits:[],hi:-1,byName:new Map(),urls:new Map(),meGuess:'',obs:null,root:''};
+const MON=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+const DAYS=['Pazar','Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi'];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const linkify=s=>esc(s).replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');
+const pad=n=>String(n).padStart(2,'0');
+const dayKey=t=>{const d=new Date(t);return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());};
+const monKey=t=>{const d=new Date(t);return d.getFullYear()*12+d.getMonth();};
+const dayLabel=t=>{const d=new Date(t);return d.getDate()+' '+MON[d.getMonth()]+' '+d.getFullYear()+', '+DAYS[d.getDay()];};
+const hm=t=>{const d=new Date(t);return pad(d.getHours())+':'+pad(d.getMinutes());};
+const short=t=>{const d=new Date(t);return pad(d.getDate())+'.'+pad(d.getMonth()+1)+'.'+d.getFullYear();};
+const initials=s=>{const p=(s||'?').trim().split(/\s+/).filter(Boolean);return (((p[0]||'?')[0])+(p[1]?p[1][0]:'')).toLocaleUpperCase('tr');};
+const fmtN=n=>n.toLocaleString('tr-TR');
+const ls={get(k){try{return localStorage.getItem(k);}catch(e){return null;}},set(k,v){try{localStorage.setItem(k,v);}catch(e){}}};
+function status(t){$('status').textContent=t;}
+function idb(){return new Promise((res,rej)=>{const r=indexedDB.open('sohbet-okuyucu',1);r.onupgradeneeded=()=>r.result.createObjectStore('kv');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);});}
+async function kvSet(k,v){try{const db=await idb();await new Promise((res,rej)=>{const tx=db.transaction('kv','readwrite');tx.objectStore('kv').put(v,k);tx.oncomplete=res;tx.onerror=()=>rej(tx.error);});}catch(e){}}
+async function kvGet(k){try{const db=await idb();return await new Promise((res,rej)=>{const r=db.transaction('kv').objectStore('kv').get(k);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);});}catch(e){return undefined;}}
+async function walk(dir,prefix,out,depth){if(depth>9||out.length>300000)return;for await(const [name,h] of dir.entries()){if(h.kind==='file')out.push({path:prefix+name,get:()=>h.getFile()});else if(name!=='node_modules'&&name!=='.git')await walk(h,prefix+name+'/',out,depth+1);if(out.length%2000===0)status('Taranıyor… '+fmtN(out.length)+' dosya');}}
+async function openHandle(h){S.root=h.name;$('folderName').textContent='📁 '+h.name;$('reopen').classList.add('hidden');status('Taranıyor…');const out=[];await walk(h,'',out,0);await build(out);}
+async function pick(){if(window.showDirectoryPicker){try{const h=await showDirectoryPicker({id:'sohbet-okuyucu',mode:'read'});await kvSet('dir',h);await openHandle(h);}catch(e){if(e.name!=='AbortError'){status('Klasör açılamadı: '+e.message);$('dirInput').click();}}}else $('dirInput').click();}
+$('pick').onclick=pick;$('pick2').onclick=pick;
+$('dirInput').onchange=async e=>{const files=[...e.target.files];if(!files.length)return;const root=(files[0].webkitRelativePath||'').split('/')[0];S.root=root;$('folderName').textContent='📁 '+root;await build(files.map(f=>({path:(f.webkitRelativePath||f.name).split('/').slice(1).join('/')||f.name,get:()=>Promise.resolve(f)})));};
+const num=n=>+((n.match(/\d+/)||[0])[0]);
+function mk(r,dir,kind){const msgs=r.msgs;const parts=r.parts.length?r.parts:[...new Set(msgs.map(m=>m.from).filter(Boolean))];const title=r.title||parts.join(', ')||dir.split('/').pop()||'Sohbet';return {id:kind+'|'+dir+'|'+title,title,parts,msgs,dir,kind,first:msgs[0].t,last:msgs[msgs.length-1].t};}
+async function build(entries){for(const u of S.urls.values())URL.revokeObjectURL(u);S.urls.clear();const dirs=new Map();S.byName=new Map();
+ for(const e of entries){const k=e.path.lastIndexOf('/');const dir=k<0?'':e.path.slice(0,k);const name=e.path.slice(k+1);if(!dirs.has(dir))dirs.set(dir,[]);dirs.get(dir).push({name,e});const ln=name.toLowerCase();if(MEDIA.test(ln)){if(!S.byName.has(ln))S.byName.set(ln,[]);S.byName.get(ln).push(e);}}
+ const jobs=[];for(const [dir,files] of dirs){const metas=files.filter(f=>/^message_\d+\.json$/i.test(f.name));if(metas.length){jobs.push({dir,kind:'ig',files:metas.sort((a,b)=>num(a.name)-num(b.name))});continue;}for(const f of files)if(/\.txt$/i.test(f.name))jobs.push({dir,kind:'wa',files:[f]});}
+ const convs=[];let i=0;
+ for(const j of jobs){i++;if(i%5===0||i===jobs.length)status('Okunuyor '+i+' / '+jobs.length);try{
+  if(j.kind==='ig'){const list=[];for(const f of j.files)list.push(JSON.parse(await (await f.e.get()).text()));const r=parseMeta(list);if(r.msgs.length)convs.push(mk(r,j.dir,'ig'));}
+  else{const file=await j.files[0].e.get();if(file.size>150*1024*1024)continue;const txt=await file.text();if(!looksWA(txt))continue;const r=parseWA(txt);r.title=waTitle(j.files[0].name,j.dir);if(r.msgs.length)convs.push(mk(r,j.dir,'wa'));}
+ }catch(err){console.warn(j.dir,err);}}
+ convs.sort((a,b)=>b.last-a.last);S.convs=convs;S.meGuess=guessMe();
+ status(convs.length?fmtN(convs.length)+' sohbet bulundu.':'Bu klasörde sohbet bulunamadı. Instagram için message_1.json, WhatsApp için dışa aktarılan .txt dosyası olmalı.');
+ renderList();if(convs.length){const last=ls.get('so.last');openConv(convs.find(c=>c.id===last)||convs[0]);}}
+function guessMe(){const cnt=new Map();for(const c of S.convs)for(const p of new Set(c.msgs.map(m=>m.from).filter(Boolean)))cnt.set(p,(cnt.get(p)||0)+1);let best='',bv=-1;for(const [p,v] of cnt){const sc=v*10+(/selman/i.test(p)?1000:0);if(sc>bv){bv=sc;best=p;}}return best;}
+function meFor(c){const own=ls.get('so.me|'+c.id);if(own!==null)return own;const g=ls.get('so.me');const senders=new Set(c.msgs.map(m=>m.from));if(g&&senders.has(g))return g;return senders.has(S.meGuess)?S.meGuess:'';}
+function renderList(){const q=norm($('gq').value.trim());let items=S.convs.map(c=>({c,n:0}));
+ if(q.length>=2){items=S.convs.map(c=>{let n=0;for(const m of c.msgs){if(m.n===undefined)m.n=norm(m.text+' '+m.linkText);if(m.n.includes(q))n++;}return {c,n,tm:norm(c.title).includes(q)};}).filter(x=>x.n||x.tm).sort((a,b)=>b.n-a.n);}
+ if(!S.convs.length){$('list').innerHTML='<div class="empty">Henüz klasör seçilmedi.</div>';return;}
+ if(!items.length){$('list').innerHTML='<div class="empty">“'+esc($('gq').value.trim())+'” hiçbir sohbette yok.</div>';return;}
+ $('list').innerHTML=items.map(x=>{const c=x.c;return '<div class="conv'+(S.cur===c?' on':'')+'" data-id="'+esc(c.id)+'"><div class="av">'+esc(initials(c.title))+'</div><div class="ci"><div class="t">'+esc(c.title)+'<span class="tag">'+(c.kind==='wa'?'WA':'IG')+'</span></div><div class="s">'+short(c.last)+' · '+fmtN(c.msgs.length)+' mesaj</div></div>'+(x.n?'<span class="n">'+fmtN(x.n)+'</span>':'')+'</div>';}).join('');}
+$('list').onclick=e=>{const el=e.target.closest('.conv');if(!el)return;const c=S.convs.find(x=>x.id===el.dataset.id);if(!c)return;const q=$('gq').value.trim();openConv(c);if(q.length>=2){$('q').value=q;find(true);}};
+let gT;$('gq').oninput=()=>{clearTimeout(gT);gT=setTimeout(renderList,250);};
+function textHtml(m){if(!m.text)return '';return m.text.startsWith('‹')?'<span class="note">'+esc(m.text)+'</span>':linkify(m.text);}
+function msgHtml(c,m,i,me,prev){if(!m.from&&c.kind==='wa')return '<div class="sys" id="m'+i+'">'+esc(m.text)+'</div>';const mine=m.from===me;const newSender=!prev||prev.from!==m.from||m.t-prev.t>30*60e3;let h='<div class="m'+(mine?' me':'')+(newSender?' gap':'')+'" id="m'+i+'"><div class="b">';
+ if(!mine&&newSender&&c.parts.length>2)h+='<span class="who">'+esc(m.from)+'</span>';
+ m.media.forEach((md,k)=>{const a=' data-f="'+i+':'+k+'"';h+=md.kind==='img'?'<img'+a+' alt="">':md.kind==='video'?'<video'+a+' controls preload="metadata"></video>':md.kind==='audio'?'<audio'+a+' controls preload="none"></audio>':'<a href="#"'+a+'>📎 '+esc(md.name)+'</a><br>';});
+ h+='<span class="tx">'+textHtml(m)+'</span>';
+ if(m.link)h+=(m.text?'<br>':'')+'<a href="'+esc(m.link)+'" target="_blank" rel="noopener">🔗 '+esc(m.linkText||m.link)+'</a>';
+ h+='<span class="tm">'+hm(m.t)+'</span>';if(m.rx)h+='<div class="rx">'+esc(m.rx)+'</div>';return h+'</div></div>';}
+function openConv(c){if(S.cur)clearHits();S.cur=c;ls.set('so.last',c.id);$('q').value='';$('count').textContent='';const me=meFor(c);
+ $('head').classList.remove('hidden');$('time').classList.remove('hidden');
+ $('title').innerHTML=esc(c.title)+'<small>'+esc(c.parts.join(', '))+' · '+short(c.first)+' – '+short(c.last)+' · '+fmtN(c.msgs.length)+' mesaj</small>';
+ const senders=[...new Set(c.msgs.map(m=>m.from).filter(Boolean))];$('me').innerHTML='<option value="">—</option>'+senders.map(s=>'<option'+(s===me?' selected':'')+'>'+esc(s)+'</option>').join('');
+ $('dt').min=dayKey(c.first);$('dt').max=dayKey(c.last);$('dt').value='';
+ let html='',day='';for(let i=0;i<c.msgs.length;i++){const m=c.msgs[i];const d=dayKey(m.t);if(d!==day){if(day)html+='</div>';day=d;html+='<div class="day" data-d="'+d+'"><div class="dsep"><span>'+dayLabel(m.t)+'</span></div>';}html+=msgHtml(c,m,i,me,c.msgs[i-1]);}if(day)html+='</div>';
+ const box=$('msgs');box.innerHTML=html;timeline(c);observeMedia();box.scrollTop=box.scrollHeight;requestAnimationFrame(()=>{box.scrollTop=box.scrollHeight;markMonth();});renderList();
+ const on=document.querySelector('.conv.on');if(on)on.scrollIntoView({block:'nearest'});}
+$('me').onchange=()=>{const c=S.cur;if(!c)return;ls.set('so.me|'+c.id,$('me').value);if($('me').value)ls.set('so.me',$('me').value);const top=$('msgs').scrollTop;openConv(c);$('msgs').scrollTop=top;};
+function timeline(c){const counts=new Map();for(const m of c.msgs){const k=monKey(m.t);counts.set(k,(counts.get(k)||0)+1);}const a=monKey(c.first),b=monKey(c.last);let max=1;for(const v of counts.values())max=Math.max(max,v);let h='';
+ for(let k=a;k<=b;k++){const y=Math.floor(k/12),mo=k%12;if(mo===0||k===a)h+='<span class="yr">'+y+'</span>';const v=counts.get(k)||0;h+='<div class="bar" data-k="'+k+'" style="height:'+(v?4+Math.round(34*Math.sqrt(v/max)):2)+'px" title="'+MON[mo]+' '+y+' · '+fmtN(v)+' mesaj"></div>';}
+ $('time').innerHTML=h;}
+$('time').onclick=e=>{const b=e.target.closest('.bar');if(!b||!S.cur)return;const k=+b.dataset.k;const i=S.cur.msgs.findIndex(m=>monKey(m.t)>=k);if(i>=0)go(i,'start');};
+function markMonth(){const c=S.cur;if(!c)return;const box=$('msgs');const r=box.getBoundingClientRect();const el=document.elementFromPoint(r.left+r.width/2,r.top+60);const d=el&&el.closest('.day');if(!d)return;const [y,mo]=d.dataset.d.split('-').map(Number);const k=y*12+mo-1;document.querySelectorAll('.bar.on').forEach(x=>x.classList.remove('on'));const bar=document.querySelector('.bar[data-k="'+k+'"]');if(bar){bar.classList.add('on');const t=$('time');const bl=bar.offsetLeft,tw=t.clientWidth;if(bl<t.scrollLeft||bl>t.scrollLeft+tw-20)t.scrollLeft=bl-tw/2;}}
+let sT;$('msgs').addEventListener('scroll',()=>{clearTimeout(sT);sT=setTimeout(markMonth,120);});
+function go(i,block){const el=$('m'+i);if(!el)return;el.scrollIntoView({block:block||'center'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');}
+$('dt').onchange=()=>{if(!S.cur||!$('dt').value)return;const t=new Date($('dt').value+'T00:00:00').getTime();let i=S.cur.msgs.findIndex(m=>m.t>=t);if(i<0)i=S.cur.msgs.length-1;go(i,'start');};
+const VAR={a:'aâä',c:'cç',e:'eê',g:'gğ',i:'iıîİI',o:'oöô',s:'sş',u:'uüû'};
+function queryRe(q){let p='';for(const ch of norm(q)){const v=VAR[ch];p+=v?'['+v+v.toUpperCase()+']':ch.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}return new RegExp('('+p+')','gi');}
+function markText(text,re){return text.split(re).map((part,k)=>k%2?'<mark>'+esc(part)+'</mark>':esc(part)).join('');}
+function clearHits(){for(const i of S.hits){const el=$('m'+i);if(el){el.classList.remove('hit','cur');const tx=el.querySelector('.tx');if(tx)tx.innerHTML=textHtml(S.cur.msgs[i]);}}S.hits=[];S.hi=-1;}
+function find(jump){const c=S.cur;if(!c)return;clearHits();const q=$('q').value.trim();const n=norm(q);if(n.length<2){$('count').textContent='';return;}const re=queryRe(q);
+ c.msgs.forEach((m,i)=>{if(m.n===undefined)m.n=norm(m.text+' '+m.linkText);if(m.n.includes(n))S.hits.push(i);});
+ for(const i of S.hits){const el=$('m'+i);if(!el)continue;el.classList.add('hit');const tx=el.querySelector('.tx');if(tx&&c.msgs[i].text)tx.innerHTML=markText(c.msgs[i].text,re);}
+ if(!S.hits.length){$('count').textContent='0 sonuç';return;}S.hi=S.hits.length;step(-1);}
+function step(dir){if(!S.hits.length)return;if(S.hi>=0&&S.hi<S.hits.length){const old=$('m'+S.hits[S.hi]);if(old)old.classList.remove('cur');}S.hi=(S.hi+dir+S.hits.length)%S.hits.length;const el=$('m'+S.hits[S.hi]);if(el)el.classList.add('cur');go(S.hits[S.hi]);$('count').textContent=(S.hi+1)+' / '+fmtN(S.hits.length);}
+let qT;$('q').oninput=()=>{clearTimeout(qT);qT=setTimeout(()=>find(true),300);};
+$('q').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();clearTimeout(qT);if(!S.hits.length)find(true);else step(e.shiftKey?1:-1);}else if(e.key==='Escape'){$('q').value='';clearHits();$('count').textContent='';}};
+$('prev').onclick=()=>step(-1);$('next').onclick=()=>step(1);
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='f'){e.preventDefault();if(S.cur){$('q').focus();$('q').select();}else $('gq').focus();}
+ else if(e.altKey&&(e.key==='ArrowUp'||e.key==='ArrowDown')&&S.cur){e.preventDefault();const els=[...document.querySelectorAll('.conv')];const ix=els.findIndex(x=>x.classList.contains('on'));const nx=els[Math.max(0,Math.min(els.length-1,ix+(e.key==='ArrowDown'?1:-1)))];if(nx)nx.click();}
+ else if(e.key==='Escape'&&$('light').classList.contains('on')){$('light').classList.remove('on');$('light').innerHTML='';}});
+function findEntry(name){const l=S.byName.get(name.toLowerCase());if(!l)return null;const pre=S.cur.dir?S.cur.dir+'/':'';return l.find(e=>e.path.startsWith(pre))||l[0];}
+async function urlFor(e){if(S.urls.has(e.path))return S.urls.get(e.path);const u=URL.createObjectURL(await e.get());S.urls.set(e.path,u);return u;}
+async function loadMedia(el){const [i,k]=el.dataset.f.split(':').map(Number);const md=S.cur.msgs[i]&&S.cur.msgs[i].media[k];if(!md)return;const e=findEntry(md.name);if(!e){const s=document.createElement('span');s.className='note';s.textContent=(md.kind==='img'?'📷 fotoğraf':md.kind==='video'?'🎬 video':md.kind==='audio'?'🎤 ses':'📎 dosya')+' bulunamadı';el.replaceWith(s);return;}try{const u=await urlFor(e);if(el.tagName==='A'){el.href=u;el.target='_blank';}else el.src=u;}catch(err){}}
+function observeMedia(){if(S.obs)S.obs.disconnect();S.obs=new IntersectionObserver(list=>{for(const x of list)if(x.isIntersecting){S.obs.unobserve(x.target);loadMedia(x.target);}},{root:$('msgs'),rootMargin:'600px'});document.querySelectorAll('#msgs [data-f]').forEach(el=>S.obs.observe(el));}
+$('msgs').onclick=e=>{const t=e.target;if(t.tagName==='IMG'&&t.src){const L=$('light');L.innerHTML='<img src="'+t.src+'">';L.classList.add('on');}};
+$('light').onclick=()=>{$('light').classList.remove('on');$('light').innerHTML='';};
+async function start(){if(location.search.includes('demo')){S.root='Örnek';$('folderName').textContent='📁 Örnek veri';await build(demoEntries());return;}
+ const h=await kvGet('dir');if(!h)return;let p='prompt';try{p=await h.queryPermission({mode:'read'});}catch(e){}
+ if(p==='granted'){openHandle(h);return;}const b=$('reopen');b.textContent='↺ '+h.name;b.title='Son açılan klasörü tekrar aç';b.classList.remove('hidden');b.onclick=async()=>{try{if(await h.requestPermission({mode:'read'})==='granted')openHandle(h);}catch(e){status(e.message);}};status('Son klasör: '+h.name+' — açmak için ↺ butonuna bas.');}
+function demoEntries(){const moj=s=>{let o='';for(const x of new TextEncoder().encode(s))o+=String.fromCharCode(x);return o;};const names=['Selman Korkmaz','Deniz Örnek'];const w=['Merhaba, nasılsın?','Bugün atölyede çok iş vardı.','Şu ürünün görselini attım.','Yarın görüşürüz 👍','Çok güzel olmuş!','Fiyatı ne kadar?','Bak buna https://example.com'];const msgs=[];const t0=new Date(2023,5,1).getTime();
+ for(let i=0;i<420;i++)msgs.push({sender_name:moj(names[i%3?0:1]),timestamp_ms:t0+i*3600e3*29,content:moj(w[i%w.length])});msgs.reverse();
+ const ig=JSON.stringify({participants:names.map(n=>({name:moj(n)})),messages:msgs,title:moj('Deniz Örnek')});let wa='';for(let i=0;i<160;i++){const d=new Date(2025,2,1+Math.floor(i/5),9+i%5,10+i%40);wa+=pad(d.getDate())+'.'+pad(d.getMonth()+1)+'.'+d.getFullYear()+' '+pad(d.getHours())+':'+pad(d.getMinutes())+' - '+(i%2?'Selman Korkmaz':['Ayşe','Mehmet'][i%4?0:1])+': '+w[i%w.length]+'\n';}
+ const f=(n,s)=>({path:n,get:()=>Promise.resolve(new File([s],n.split('/').pop()))});return [f('inbox/deniz_1/message_1.json',ig),f('whatsapp/WhatsApp Sohbeti - Atölye Grubu.txt',wa)];}
+start();
+</script>
+</body>
+</html>

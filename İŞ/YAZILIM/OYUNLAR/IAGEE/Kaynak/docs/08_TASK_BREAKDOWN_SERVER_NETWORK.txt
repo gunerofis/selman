@@ -1,0 +1,393 @@
+================================================================================
+TASK BREAKDOWN — SERVER & NETWORK — Project RIFT EMPIRE (1v1 Prototip)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+MVP kapsamı: docs\04_MVP_SCOPE.txt
+Uygulama planı: docs\05_IMPLEMENTATION_PLAN.txt
+Core loop görev kırılımı: docs\06_TASK_BREAKDOWN_CORE_LOOP.txt
+Client UI görev kırılımı: docs\07_TASK_BREAKDOWN_CLIENT_UI.txt
+Sonraki belge: docs\09_TASK_BREAKDOWN_CONTENT_MAP.txt
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge sunucu ve ağ katmanını küçük ve uygulanabilir görevlere ayırır.
+- Hedef 1v1 prototip için çalışır room -> match -> result akışını kurmaktır.
+- Öncelik: güvenilir komut akışı ve sunucu otoritesidir.
+- Bu belge yalnızca server orchestration, network sınırları ve veri iletimi kapsamına odaklanır.
+
+--------------------------------------------------------------------------------
+2. Kapsam
+--------------------------------------------------------------------------------
+
+- Room yönetimi.
+- Match orchestration.
+- Client connection akışı.
+- Command ingestion.
+- Validation sınırları.
+- State / event / result iletimi.
+- Disconnect davranışı.
+- Fake queue veya doğrudan match başlatma akışı.
+- Network kabul kriterleri.
+
+--------------------------------------------------------------------------------
+3. Kapsam Dışı
+--------------------------------------------------------------------------------
+
+- Detaylı simülasyon mantığı.
+- Client HUD ve render detayları.
+- Gerçek matchmaking.
+- Battle pass / görev / mağaza backend.
+- Spectator.
+- Replay servisleri.
+- Kalıcı veri / tam hesap servisi.
+- 2v2 ve üstü modlar.
+- Ölçekleme / production infra derinliği.
+
+--------------------------------------------------------------------------------
+4. Sunucu Rolü
+--------------------------------------------------------------------------------
+
+- Match otoritesini taşır.
+- Komutları kabul eder veya reddeder.
+- Match lifecycle yönetir.
+- State / event / result bilgilerini client’a iletir.
+- Disconnect ve match end durumlarını yönetir.
+- Nihai gerçeklik kaynağıdır.
+
+--------------------------------------------------------------------------------
+5. Ağ Modeli İlkesi
+--------------------------------------------------------------------------------
+
+- Client komut gönderir.
+- Sunucu doğrular.
+- Sunucu simülasyona uygular.
+- Sunucu state veya event çıktısı üretir.
+- Client yalnızca görselleştirir.
+- Otorite hiçbir noktada client’a verilmez.
+
+--------------------------------------------------------------------------------
+6. Task Grubu A — Room Temeli
+--------------------------------------------------------------------------------
+
+- Match room kavramını tanımla.
+- Room state enum oluştur.
+- Room id / match id üretim mantığını belirle.
+- Odaya oyuncu bağlama akışını kur.
+- Oda kapanış ve temizleme davranışını tanımla.
+- Tek maçlık yaşam döngüsünü sabitle.
+
+--------------------------------------------------------------------------------
+7. Task Grubu A — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Tek bir room oluşturulabiliyor.
+- 1v1 için iki oyuncu aynı room’da tutulabiliyor.
+- Room durumu okunabiliyor.
+- Match bittiğinde room kapanabiliyor veya temizlenebiliyor.
+
+--------------------------------------------------------------------------------
+8. Task Grubu B — Match Orchestration
+--------------------------------------------------------------------------------
+
+- Room hazır olduğunda match init’i tetikle.
+- Match instance ile room ilişkisini kur.
+- Start signal akışını oluştur.
+- Running state geçişini bağla.
+- Match end olduğunda result üretim akışını tetikle.
+- Room -> result -> cleanup sırasını sabitle.
+
+--------------------------------------------------------------------------------
+9. Task Grubu B — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Room’dan maça geçiş çalışıyor.
+- Match start ve end olayları sunucuda izlenebiliyor.
+- Result üretildikten sonra cleanup yapılabiliyor.
+- Orchestration akışı test edilebilir.
+
+--------------------------------------------------------------------------------
+10. Task Grubu C — Connection Akışı
+--------------------------------------------------------------------------------
+
+- Client connect giriş noktasını kur.
+- Session / connection id mantığını belirle.
+- Oyuncu kimliğini room ile eşleştir.
+- Reconnect desteğini ilk sürümde opsiyonel bırak veya yok say.
+- Disconnect davranışını tanımla.
+- Invalid / yarım bağlantı durumlarını ele al.
+
+--------------------------------------------------------------------------------
+11. Task Grubu C — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Client sunucuya bağlanabiliyor.
+- Bağlanan oyuncu room’a atanabiliyor.
+- Disconnect olayı sunucuda yakalanıyor.
+- Yarım bağlantı durumları match’i bozmayacak şekilde ele alınıyor.
+
+--------------------------------------------------------------------------------
+12. Task Grubu D — Fake Queue / Start Akışı
+--------------------------------------------------------------------------------
+
+- Gerçek matchmaking yerine fake queue tanımla.
+- Play / Start Match isteğini room oluşturma akışına bağla.
+- Tek oyuncu testinde local / bot / ikinci client yaklaşımını not et.
+- İki oyuncu hazır olduğunda start koşulunu tanımla.
+- Gecikmeli start veya countdown opsiyonunu değerlendir.
+- Akışı MVP düzeyinde basit tut.
+
+--------------------------------------------------------------------------------
+13. Task Grubu D — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu start isteği sonrası room’a düşebiliyor.
+- Match başlatma akışı kopmadan ilerliyor.
+- Gerçek matchmaking olmadan test yapılabiliyor.
+- MVP için yeterli basitlik korunuyor.
+
+--------------------------------------------------------------------------------
+14. Task Grubu E — Command Ingestion
+--------------------------------------------------------------------------------
+
+- Client’ten gelen komutlar için giriş noktası oluştur.
+- Komut zarfı / payload şemasını tanımla.
+- Komut tipi, oyuncu kimliği, timestamp veya tick referansı alanlarını belirle.
+- Komut kuyruğu veya eşdeğer buffer mantığını kur.
+- Simülasyona iletim sırasını sabitle.
+- Geçersiz / eksik payload’ları reddet.
+
+--------------------------------------------------------------------------------
+15. Task Grubu E — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Temel komut tipleri sunucuya ulaşıyor.
+- Komutlar oyuncu bazında ayrışıyor.
+- Eksik veya bozuk veri filtreleniyor.
+- Simülasyon katmanına kontrollü teslim yapılıyor.
+
+--------------------------------------------------------------------------------
+16. Task Grubu F — Validation Sınırları
+--------------------------------------------------------------------------------
+
+- Owner kontrolü için giriş noktası ekle.
+- Match state uygunluğu kontrolü ekle.
+- Room state uygunluğu kontrolü ekle.
+- Temel payload bütünlüğü kontrolü ekle.
+- Rate limit veya spam kontrolü için basit koruma ekle.
+- Validation başarısız olduğunda davranışı tanımla.
+
+--------------------------------------------------------------------------------
+17. Task Grubu F — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu kendi olmayan entity adına komut veremiyor.
+- Match başlamadan gameplay komutu işlenmiyor.
+- Bozuk istekler sessizce geçmiyor.
+- Validation reddi log veya event ile görülebiliyor.
+
+--------------------------------------------------------------------------------
+18. Task Grubu G — State Dispatch
+--------------------------------------------------------------------------------
+
+- Client’a hangi sıklıkta state gönderileceğini belirle.
+- Full snapshot veya basit delta yaklaşımını MVP düzeyinde seç.
+- Entity listesi / resource / phase / result alanlarını kapsa.
+- State serialization şemasını tanımla.
+- İletim sırasını sabitle.
+- Gerekirse düşük frekans + event destekli hibrit yaklaşımı not et.
+
+--------------------------------------------------------------------------------
+19. Task Grubu G — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Client düzenli state alabiliyor.
+- Oyun ekranda güncel kalıyor.
+- State payload MVP için yönetilebilir büyüklükte.
+- Serialization / deserialization akışı çalışıyor.
+
+--------------------------------------------------------------------------------
+20. Task Grubu H — Event Dispatch
+--------------------------------------------------------------------------------
+
+- Match start event tanımla.
+- Entity created / destroyed benzeri temel event’leri tanımla.
+- Error / invalid action event’lerini tanımla.
+- Combat veya result için gerekli kısa event’leri ayır.
+- Event payload formatını sabitle.
+- Client tarafında işlenebilir kalmasını hedefle.
+
+--------------------------------------------------------------------------------
+21. Task Grubu H — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Kritik geçişler event ile iletilebiliyor.
+- Client sadece snapshot’a bağımlı kalmıyor.
+- Hata / red durumları oyuncuya taşınabiliyor.
+- Event formatı sade ve tutarlı.
+
+--------------------------------------------------------------------------------
+22. Task Grubu I — Result Dispatch
+--------------------------------------------------------------------------------
+
+- Match end payload yapısını tanımla.
+- Winner / loser alanlarını ekle.
+- End reason alanını ekle.
+- Match duration veya temel summary alanlarını ekle.
+- Result ekranına aktarılacak minimum veriyi sabitle.
+- Result sonrası room cleanup tetiklemesini bağla.
+
+--------------------------------------------------------------------------------
+23. Task Grubu I — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Match sonucu client’a iletiliyor.
+- Result ekranı için yeterli veri mevcut.
+- End reason ayırt edilebiliyor.
+- Result sonrası lifecycle kapanışı düzgün işliyor.
+
+--------------------------------------------------------------------------------
+24. Task Grubu J — Disconnect ve Hata Davranışları
+--------------------------------------------------------------------------------
+
+- Maç öncesi disconnect davranışını tanımla.
+- Maç sırasında disconnect davranışını tanımla.
+- İlk prototip için kısa süreli bekleme mi direkt yenilgi mi olacağını not et.
+- Sunucu hata durumunda cleanup davranışını tanımla.
+- Yarım kalmış match’lerin kapanışını ele al.
+- MVP için sade ama tutarlı kurallar yaz.
+
+--------------------------------------------------------------------------------
+25. Task Grubu J — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Disconnect match’i belirsiz durumda bırakmıyor.
+- Sunucu tarafı cleanup çalışıyor.
+- Oyuncu tarafı temel hata sonucu alabiliyor.
+- Prototipte askıda kalan room oluşmuyor.
+
+--------------------------------------------------------------------------------
+26. Task Grubu K — Shared Protocol Sözleşmesi
+--------------------------------------------------------------------------------
+
+- Command type sözleşmelerini sabitle.
+- State payload sözleşmesini sabitle.
+- Event payload sözleşmesini sabitle.
+- Result payload sözleşmesini sabitle.
+- Match phase / room state enum’larını ortaklaştır.
+- Client/server arasında kullanılan tipleri tek yerde topla.
+
+--------------------------------------------------------------------------------
+27. Task Grubu K — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Client ve server aynı sözleşmeleri kullanıyor.
+- Veri tipleri dağınık değil.
+- Yeni payload eklemek kontrollü hale geliyor.
+- Debug ve bakım kolaylaşıyor.
+
+--------------------------------------------------------------------------------
+28. Task Grubu L — Test ve Gözlemlenebilirlik
+--------------------------------------------------------------------------------
+
+- Room create testi.
+- Join / start flow testi.
+- Invalid command testi.
+- State dispatch testi.
+- Result dispatch testi.
+- Disconnect testi.
+- Basit log / debug noktıları ekle.
+
+--------------------------------------------------------------------------------
+29. Task Grubu L — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- En kritik network akışları test edilebiliyor.
+- Başlat / oynat / bitir hattı doğrulanabiliyor.
+- Invalid durumlar görünür hale geliyor.
+- Debug süreci kolaylaşıyor.
+
+--------------------------------------------------------------------------------
+30. Önerilen Uygulama Sırası
+--------------------------------------------------------------------------------
+
+- Room temeli.
+- Match orchestration.
+- Connection akışı.
+- Fake queue / start akışı.
+- Command ingestion.
+- Validation sınırları.
+- Shared protocol sözleşmesi.
+- State dispatch.
+- Event dispatch.
+- Result dispatch.
+- Disconnect davranışları.
+- Test ve gözlemlenebilirlik.
+
+--------------------------------------------------------------------------------
+31. Minimum Çalışır Server/Network Tanımı
+--------------------------------------------------------------------------------
+
+- İki client aynı room’a alınabiliyor.
+- Match başlatılabiliyor.
+- Komutlar sunucuya ulaşabiliyor.
+- Sunucu komutları filtreleyip simülasyona iletebiliyor.
+- Client güncel state alabiliyor.
+- Match sonucu gönderilebiliyor.
+- Room cleanup çalışıyor.
+
+--------------------------------------------------------------------------------
+32. Network Riskleri
+--------------------------------------------------------------------------------
+
+- Payload karmaşıklığı.
+- Aşırı sık state gönderimi.
+- Client/server tip uyumsuzluğu.
+- Disconnect sonrası askıda room.
+- Validation eksikliği.
+- Simülasyon ve network katmanının fazla iç içe geçmesi.
+
+--------------------------------------------------------------------------------
+33. Risk Azaltma Kararları
+--------------------------------------------------------------------------------
+
+- 1v1 kilidi.
+- Fake queue kabulü.
+- Basit payload şemaları.
+- Minimum event seti.
+- Snapshot tabanlı sade yaklaşım.
+- Reconnect’i ilk sürümde erteleme.
+- Ortak protocol dosyası kullanma.
+- Cleanup kurallarını erken yazma.
+
+--------------------------------------------------------------------------------
+34. Notlar
+--------------------------------------------------------------------------------
+
+- İlk sürümde ölçekleme optimizasyonu hedeflenmiyor.
+- İlk sürümde production-grade matchmaking hedeflenmiyor.
+- Ama room -> match -> result hattı güvenilir olmalı.
+- Önce çalışırlık, sonra optimizasyon.
+- Scope genişlemesi bu belge tamamlanmadan yapılmaz.
+
+--------------------------------------------------------------------------------
+35. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge docs\09_TASK_BREAKDOWN_CONTENT_MAP.txt.
+- O belgede harita, başlangıç yerleşimleri, resource node düzeni, minimum unit/building içerik listesi ve placeholder içerik kapsamı görev seviyesinde parçalanacak.
+
+--------------------------------------------------------------------------------
+Ek notlar (disiplin)
+--------------------------------------------------------------------------------
+
+- Bölüm isimleri diğer belgelerle uyumlu düz yazı stilindedir.
+- Kabul kriterleri kısa ama net tutulmuştur.
+- Server/network görevleri uygulanabilir büyüklükte kalır.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE server & network task breakdown
+================================================================================

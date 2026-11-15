@@ -1,0 +1,4 @@
+ORNEK METIN
+Bu dosya, agentin dosya okuma yetenegini dogrulamak icin olusturulmustur.
+Satir 3: OKUMA-TESTI
+Satir 4: DUZENLEME-TESTI (yeni)

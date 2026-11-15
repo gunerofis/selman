@@ -1,0 +1,30 @@
+.hub-workspace{font-size:14px;min-height:0}
+.hub-workspace button,.hub-detail button{font-family:inherit;font-size:13px;line-height:1.25;border:1px solid var(--border-strong);border-radius:8px;background:var(--control);color:var(--text);min-height:34px;padding:7px 12px;cursor:pointer;box-sizing:border-box;transition:background .12s}
+.hub-workspace button:hover,.hub-detail button:hover{background:var(--control-hover,var(--muted))}
+.hub-workspace button:disabled,.hub-detail button:disabled{opacity:.45;cursor:default}
+.hub-workspace button.primary,.hub-detail button.primary{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.hub-workspace button.danger,.hub-detail button.danger{color:var(--negative);border-color:var(--negative)}
+.hub-workspace button[aria-pressed=true],.hub-detail button[aria-pressed=true]{background:color-mix(in srgb,var(--accent) 12%,var(--surface));border-color:var(--accent);color:var(--text)}
+.hub-workspace :is(button,input,textarea):focus-visible,.hub-detail :is(button,input,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hub-workspace .hub-filters{gap:7px;margin:0 0 12px}.hub-workspace .hub-filters button span{margin-left:8px;font-variant-numeric:tabular-nums}
+.hub-workspace .hub-toolbar{min-height:36px;gap:10px;margin-bottom:12px}
+.hub-workspace .hub-fit-table th{font-size:12px;height:32px}.hub-workspace .hub-fit-table td{height:58px;padding-top:4px;padding-bottom:4px}
+.hub-workspace .hub-sort,.hub-workspace .hub-row-open{border:0;background:none;padding:0;min-height:0;text-align:left;border-radius:0}
+.hub-workspace .hub-sort:hover,.hub-workspace .hub-row-open:hover{background:none;color:var(--accent)}
+.hub-workspace .hub-job-title{gap:4px}.hub-workspace .hub-job-title strong{font-size:14px}.hub-workspace .hub-job-title span{display:block;-webkit-line-clamp:unset;font-size:12px;line-height:1.4;white-space:normal;overflow:visible}
+.hub-workspace .hub-jobs th:first-child{width:66%}.hub-workspace .hub-jobs th:last-child{width:100px}.hub-workspace .hub-jobs .work-badge{white-space:normal;line-height:1.5}
+.hub-workspace .hub-agent-result{position:relative;font-size:12px}.hub-agent-result summary{cursor:pointer;padding:7px}.hub-agent-result[open]{max-width:440px}.hub-agent-result p{margin:7px 0}
+.hub-detail .hub-decision-top{border:1px solid var(--accent);border-radius:10px;background:var(--muted);padding:12px;margin:0 0 12px}
+.hub-detail .hub-subtasks{border-top:1px solid var(--border);margin-top:14px;padding-top:12px}.hub-subtasks h3{font-size:14px;margin:0 auto 0 0}.hub-subtask-row{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;margin:8px 0;gap:16px;min-height:48px}.hub-subtask-row strong{font-weight:550}.hub-subtask-row small{display:block;color:var(--secondary);margin-top:3px}.hub-subtask-row>span:last-child{font-size:12px;white-space:nowrap}
+.hub-detail .hub-child-form{padding:10px;border:1px solid var(--border);border-radius:8px;margin-top:10px}.hub-detail .hub-summary{margin:12px 0;line-height:1.5}
+.hub-workspace .hub-report-period{display:flex;align-items:end;gap:8px;flex-wrap:wrap;margin-bottom:14px}.hub-report-period>label{display:grid;gap:4px;font-size:11px;color:var(--secondary)}.hub-report-period input{height:34px;min-width:145px}.hub-report-period .hub-filters{margin:0!important}
+.hub-workspace .hub-orders .hub-order-totals{float:right;margin:0 0 10px 16px}.hub-orders .hub-filters{clear:none}.hub-orders .hub-channels{grid-template-columns:repeat(9,minmax(0,1fr))}.hub-orders .hub-channel small{font-size:10px;line-height:1.25}.hub-orders .hub-channel{min-height:68px}
+.hub-workspace .hub-file-link,.hub-detail .hub-file-link{display:inline;border:0;background:none;color:var(--accent);padding:0;min-height:0;text-decoration:underline;overflow-wrap:anywhere;text-align:left;font:inherit}
+.hub-workspace [hidden]{display:none!important}.hub-paged-text .hub-pre{line-height:1.55;overflow-wrap:anywhere}.hub-workspace .hub-pager{min-height:34px;padding-top:8px}.hub-workspace .hub-pager button{font-size:12px;padding:6px 10px}.hub-workspace .hub-screen{padding-bottom:0}
+.hub-workspace .hub-social .hub-embed{height:calc(100dvh - 212px);min-height:0}.hub-workspace .hub-embed{background:var(--surface)}
+.hub-workspace .advertising-content .sumen-period{margin:0 0 8px;min-height:0}.hub-workspace .sumen-run{display:none}.hub-workspace .hub-report-tabs{margin-top:10px}.hub-workspace .hub-toolbar input[type=search]{max-width:400px;width:min(400px,55%)}
+@media(max-height:650px){.hub-workspace[data-dashboard-layout=viewport]{padding-top:10px}.hub-workspace .hub-report-period{margin-bottom:8px}.hub-workspace .hub-fit-table td{height:52px}.hub-workspace .hub-toolbar{margin-bottom:8px}.hub-workspace .hub-filters{margin-bottom:8px}.hub-detail .hub-field{margin:7px 0}.hub-detail textarea{max-height:90px}}
+@media(max-width:900px){.hub-orders .hub-channels{grid-template-columns:repeat(5,minmax(0,1fr))}.hub-workspace .hub-jobs th:first-child{width:55%}.hub-report-period .hub-filters{flex-wrap:wrap}}
+@media(max-width:700px){.hub-workspace .hub-toolbar{align-items:flex-start}.hub-workspace .hub-toolbar input[type=search]{width:100%;max-width:none}.hub-workspace .hub-report-period{align-items:center}.hub-workspace .hub-report-period .hub-filters{width:100%}.hub-workspace .hub-fit-table{overflow-x:auto}.hub-detail .hub-subtask-row{align-items:flex-start}.hub-workspace .hub-social .hub-embed{min-height:480px}}
+
+.hub-report-period input{width:142px;min-width:142px}.hub-report-period>label{font-size:11px}.hub-workspace .info-tooltip-trigger,.hub-workspace .icon-button{padding:5px;min-height:28px;width:28px;border-color:transparent;background:none}

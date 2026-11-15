@@ -1,0 +1,370 @@
+================================================================================
+TASK BREAKDOWN — CONTENT & MAP — Project RIFT EMPIRE (1v1 Prototip)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+MVP kapsamı: docs\04_MVP_SCOPE.txt
+Uygulama planı: docs\05_IMPLEMENTATION_PLAN.txt
+Core loop görev kırılımı: docs\06_TASK_BREAKDOWN_CORE_LOOP.txt
+Client UI görev kırılımı: docs\07_TASK_BREAKDOWN_CLIENT_UI.txt
+Server & network görev kırılımı: docs\08_TASK_BREAKDOWN_SERVER_NETWORK.txt
+Sonraki belge: docs\10_BUILD_ORDER_FIRST_PLAYABLE.txt
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge 1v1 prototip için gerekli minimum içerik ve harita kapsamını küçük ve uygulanabilir görevlere ayırır.
+- Hedef oynanabilir maç için gereken en az unit, building, map ve placeholder içeriği sabitlemektir.
+- Öncelik içerik zenginliği değil; okunabilir, test edilebilir ve dengelenebilir minimum set kurmaktır.
+- Bu belge yalnızca içerik kapsamı ve harita düzenine odaklanır.
+
+--------------------------------------------------------------------------------
+2. Kapsam
+--------------------------------------------------------------------------------
+
+- Tek harita.
+- Başlangıç yerleşimleri.
+- Resource node yerleşimi.
+- Minimum unit listesi.
+- Minimum building listesi.
+- Temel content değerleri.
+- Placeholder asset kapsamı.
+- Dengeye yakın başlangıç kuralları.
+
+--------------------------------------------------------------------------------
+3. Kapsam Dışı
+--------------------------------------------------------------------------------
+
+- Çoklu haritalar.
+- Çoklu biyomlar.
+- Çok fraksiyonlu tam içerik.
+- İleri seviye çevresel etkileşimler.
+- Dekoratif dünya zenginliği.
+- Lore / campaign content.
+- Kozmetik içerik havuzu.
+- Gelişmiş ses paketi.
+- Yüksek üretim kalitesinde sanat.
+
+--------------------------------------------------------------------------------
+4. İçerik İlkesi
+--------------------------------------------------------------------------------
+
+- Önce okunabilirlik.
+- Önce dengeye yakın simetri.
+- Önce oynanışa hizmet eden içerik.
+- Görsel çeşitlilik ikinci planda.
+- Placeholder kabul.
+- Gereksiz asset üretimi ertelenir.
+
+--------------------------------------------------------------------------------
+5. Harita Rolü
+--------------------------------------------------------------------------------
+
+- Maçın ekonomi ve çatışma akışını taşır.
+- Başlangıç bölgelerini net ayırır.
+- Kaynak erişimini dengeler.
+- Erken keşif ve orta oyun çatışmasına izin verir.
+- Tıkanmayı azaltacak sade düzen sunar.
+
+--------------------------------------------------------------------------------
+6. Task Grubu A — Harita Çerçevesi
+--------------------------------------------------------------------------------
+
+- Tek harita boyutunu sabitle.
+- Kamera ve oynanış için uygun sınırları belirle.
+- Başlangıç bölgelerini karşılıklı ve dengeye yakın konumlandır.
+- Orta alanı çatışma bölgesi olarak tanımla.
+- Kaynak bölgeleri için temel iskeleti çıkar.
+- Test için sade ama okunabilir zemin düzeni kur.
+
+--------------------------------------------------------------------------------
+7. Task Grubu A — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Tek bir prototip harita tanımlanmış.
+- Başlangıç ve orta alan net ayrışıyor.
+- Harita çok büyük veya çok sıkışık değil.
+- 1v1 testleri için kullanılabilir.
+
+--------------------------------------------------------------------------------
+8. Task Grubu B — Başlangıç Yerleşimleri
+--------------------------------------------------------------------------------
+
+- Oyuncu 1 başlangıç noktısını tanımla.
+- Oyuncu 2 başlangıç noktısını tanımla.
+- Ana üs konumlarını sabitle.
+- Başlangıç worker sayısını belirle.
+- Başlangıç resource miktarını belirle.
+- İlk görüş ve ilk hareket alanını netleştir.
+
+--------------------------------------------------------------------------------
+9. Task Grubu B — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- İki taraf eşit veya dengeye çok yakın başlıyor.
+- Başlangıç kuralları tekrar üretilebilir.
+- Maç açıldığında her oyuncunun net başlangıç seti var.
+- Erken oyun test edilebilir.
+
+--------------------------------------------------------------------------------
+10. Task Grubu C — Resource Node Düzeni
+--------------------------------------------------------------------------------
+
+- Ana yakın resource node’ları yerleştir.
+- Orta alan resource node’larını yerleştir.
+- Riskli / ödüllü ileri resource noktalarını opsiyonel değerlendir.
+- Node sayısını minimum tut.
+- Node türlerini sadeleştir.
+- Toplanabilirlik ve erişim dengesini kontrol et.
+
+--------------------------------------------------------------------------------
+11. Task Grubu C — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncular erken oyunda kaynak bulabiliyor.
+- Orta alan çatışmayı teşvik ediyor.
+- Resource düzeni tek tarafı kayırmıyor.
+- Node yoğunluğu yönetilebilir.
+
+--------------------------------------------------------------------------------
+12. Task Grubu D — Minimum Unit Listesi
+--------------------------------------------------------------------------------
+
+- Worker unit tanımını sabitle.
+- Basic melee unit tanımını sabitle.
+- Basic ranged unit tanımını sabitle.
+- Opsiyonel heavy / siege unit kararını netleştir.
+- Her unit için rol cümlesi yaz.
+- Unit setini MVP dışına taşırmayacak sınırı koru.
+
+--------------------------------------------------------------------------------
+13. Task Grubu D — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- En az üç temel unit tipi net tanımlanmış.
+- Her unit’in maç içi görevi belli.
+- Unit seti öğrenilebilir büyüklükte.
+- UI ve üretim sistemi için yeterli çeşit var.
+
+--------------------------------------------------------------------------------
+14. Task Grubu E — Minimum Building Listesi
+--------------------------------------------------------------------------------
+
+- Main base tanımını sabitle.
+- Economy / drop-off binasını sabitle.
+- Unit production binasını sabitle.
+- Opsiyonel tech / upgrade binasını değerlendir.
+- Savunma binasını MVP dışında bırak veya net karar ver.
+- Her binanın rolünü tek cümleyle yaz.
+
+--------------------------------------------------------------------------------
+15. Task Grubu E — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Minimum bina seti oynanışı taşıyor.
+- Her bina açık bir işleve sahip.
+- Üretim ve ekonomi akışı bina setiyle kurulabiliyor.
+- Gereksiz bina çeşitliliği yok.
+
+--------------------------------------------------------------------------------
+16. Task Grubu F — Temel İçerik Değerleri
+--------------------------------------------------------------------------------
+
+- Worker toplama hızı için başlangıç değeri belirle.
+- Unit cost değerlerini belirle.
+- Build cost değerlerini belirle.
+- HP başlangıç değerlerini belirle.
+- Damage / attack interval başlangıç değerlerini belirle.
+- Train / build sürelerini başlangıç seviyesi olarak sabitle.
+
+--------------------------------------------------------------------------------
+17. Task Grubu F — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Tüm minimum unit ve building seti için başlangıç değerleri mevcut.
+- Değerler test build’inde kullanılabilecek kadar net.
+- Denge mükemmel olmasa da oynanış başlatılabiliyor.
+- Belirsiz alanlar notlanmış ama boş bırakılmamış.
+
+--------------------------------------------------------------------------------
+18. Task Grubu G — Placeholder Asset Kapsamı
+--------------------------------------------------------------------------------
+
+- Harita zemin placeholder’ını belirle.
+- Worker görsel placeholder’ını belirle.
+- Melee unit placeholder’ını belirle.
+- Ranged unit placeholder’ını belirle.
+- Building placeholder’larını belirle.
+- Resource node placeholder’larını belirle.
+
+--------------------------------------------------------------------------------
+19. Task Grubu G — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Her kritik entity için görünür placeholder mevcut.
+- Görseller estetik olmasa da karıştırılmıyor.
+- Dost / düşman / resource ayrımı okunabiliyor.
+- Asset eksikliği testleri durdurmuyor.
+
+--------------------------------------------------------------------------------
+20. Task Grubu H — Takım ve Kimlik Okunabilirliği
+--------------------------------------------------------------------------------
+
+- Oyuncu 1 / oyuncu 2 renk veya işaret sistemini sabitle.
+- Dost / düşman farkını görünür yap.
+- Resource node’ları ayırt edilebilir tut.
+- Main base’i diğer binalardan ayrıştır.
+- Seçili entity okunabilirliğiyle çakışmayacak içerik kararları al.
+- Renk körlüğü veya kontrast sorunlarını minimum düzeyde düşün.
+
+--------------------------------------------------------------------------------
+21. Task Grubu H — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Hangi entity’nin kime ait olduğu anlaşılabiliyor.
+- Harita üstünde temel bilgi kaybolmuyor.
+- Placeholder içerik selection feedback ile karışmıyor.
+- Görsel okunabilirlik oynanışı destekliyor.
+
+--------------------------------------------------------------------------------
+22. Task Grubu I — Dengeye Yakın Başlangıç Kuralları
+--------------------------------------------------------------------------------
+
+- Başlangıç worker sayısını iki taraf için eşitle.
+- Başlangıç resource miktarını eşitle.
+- Base konumlarını simetrik veya dengeye yakın yap.
+- Yakın kaynak mesafelerini benzer tut.
+- İlk çatışma temposunu bozacak aşırı farkları kaldır.
+- Harita avantajlarını notla ve sınırla.
+
+--------------------------------------------------------------------------------
+23. Task Grubu I — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Başlangıç aşaması tek tarafı açıkça kayırmıyor.
+- Erken ekonomi benzer hızda kurulabiliyor.
+- İlk çatışma süreleri aşırı sapmıyor.
+- Test geri bildirimi için temiz temel oluşuyor.
+
+--------------------------------------------------------------------------------
+24. Task Grubu J — İçerik Dokümantasyonu
+--------------------------------------------------------------------------------
+
+- Unit listesi tablosu veya düz metin özeti oluştur.
+- Building listesi tablosu veya düz metin özeti oluştur.
+- Resource node listesi özeti oluştur.
+- Harita yerleşim mantığını kısa maddelerle özetle.
+- Placeholder içerik listesini tek yerde topla.
+- Değerlerin geçici olduğunu gerektiği yerde işaretle.
+
+--------------------------------------------------------------------------------
+25. Task Grubu J — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- İçerik kararları dağınık değil.
+- Unit / building / resource özetleri tek yerde görülebiliyor.
+- Sonraki uygulama adımları için referans net.
+- Değer güncellemeleri yönetilebilir.
+
+--------------------------------------------------------------------------------
+26. Task Grubu K — Test Senaryoları
+--------------------------------------------------------------------------------
+
+- Erken ekonomi testi.
+- İlk bina kurulum testi.
+- İlk unit üretim testi.
+- İlk çatışma testi.
+- Orta alan resource çatışması testi.
+- Base kill veya surrender’a giden kısa test senaryosu.
+
+--------------------------------------------------------------------------------
+27. Task Grubu K — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Harita ve içerik yalnızca teorik kalmıyor.
+- İlk oynanış döngüsü test edilebiliyor.
+- İçerik değerlerinin kaba doğrulaması yapılabiliyor.
+- Açık problemli alanlar tespit edilebiliyor.
+
+--------------------------------------------------------------------------------
+28. Önerilen Uygulama Sırası
+--------------------------------------------------------------------------------
+
+- Harita çerçevesi.
+- Başlangıç yerleşimleri.
+- Resource node düzeni.
+- Minimum unit listesi.
+- Minimum building listesi.
+- Temel içerik değerleri.
+- Placeholder asset kapsamı.
+- Takım ve kimlik okunabilirliği.
+- Dengeye yakın başlangıç kuralları.
+- İçerik dokümantasyonu.
+- Test senaryoları.
+
+--------------------------------------------------------------------------------
+29. Minimum Çalışır Content/Map Tanımı
+--------------------------------------------------------------------------------
+
+- Tek harita var.
+- İki başlangıç noktası var.
+- Yakın resource node’lar var.
+- Worker, melee, ranged tanımlı.
+- Main base ve production building tanımlı.
+- Placeholder görseller mevcut.
+- Harita üstünde kısa maç oynanabiliyor.
+
+--------------------------------------------------------------------------------
+30. İçerik Riskleri
+--------------------------------------------------------------------------------
+
+- Fazla içerik ekleme isteği.
+- Harita boyutunun yanlış seçilmesi.
+- Resource dağılımının dengesiz olması.
+- Placeholder’ların fazla karışması.
+- Unit rollerinin belirsiz kalması.
+- Simetrinin oynanışı bozacak kadar katı veya gevşek olması.
+
+--------------------------------------------------------------------------------
+31. Risk Azaltma Kararları
+--------------------------------------------------------------------------------
+
+- Tek harita kilidi.
+- Minimum üç ana unit tipi.
+- Minimum üç ana bina tipi.
+- Tek ana kaynak.
+- Placeholder kabulü.
+- Simetriye yakın başlangıç.
+- Değerleri erken yazma, sonra test ile düzeltme.
+- Dekoratif içerikleri erteleme.
+
+--------------------------------------------------------------------------------
+32. Notlar
+--------------------------------------------------------------------------------
+
+- İlk sürümde görsel zenginlik hedeflenmiyor.
+- İçerik miktarı değil oynanış taşıma gücü önemli.
+- Harita sade ama işlevsel olmalı.
+- Önce test edilebilirlik, sonra estetik.
+- Scope genişlemesi bu belge tamamlanmadan yapılmaz.
+
+--------------------------------------------------------------------------------
+33. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge docs\10_BUILD_ORDER_FIRST_PLAYABLE.txt.
+- O belgede belgelerden görev sırasına geçilecek ve ilk oynanabilir build için adım adım uygulama düzeni çıkarılacak.
+
+--------------------------------------------------------------------------------
+Ek notlar (disiplin)
+--------------------------------------------------------------------------------
+
+- Bölüm isimleri diğer belgelerle uyumlu düz yazı stilindedir.
+- Kabul kriterleri kısa ama net tutulmuştur.
+- İçerik ve harita görevleri uygulanabilir büyüklükte kalır.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE content & map task breakdown
+================================================================================

@@ -1,0 +1,4 @@
+import React,{useState} from 'react';
+import {api} from './hub-api.js';
+export function FileLink({path,children}){const [message,setMessage]=useState('');return <><button className="hub-file-link" type="button" title={path} onClick={async()=>{try{await api('open-path',{path});setMessage('')}catch(e){setMessage(e.message)}}}>{children||path}</button>{message&&<span className="hub-error" role="alert">{message}</span>}</>}
+export function FileText({text=''}){const expression=/(?:[A-Za-z]:[\\/]|Güner Ofis[\\/]|selman[\\/]|(?:Ekip|src|Moduller)[\\/])[^\n`<>"|]*?\.(?:md|txt|csv|tsv|pdf|docx|xlsx|pptx|png|jpe?g|webp|json|py|jsx?|tsx?|css|liquid|html|xml|ya?ml|toml|ini|log|ps1|bat|cmd)\b/giu;const output=[];let start=0;for(const match of String(text).matchAll(expression)){output.push(String(text).slice(start,match.index));output.push(<FileLink key={match.index} path={match[0]}/>);start=match.index+match[0].length}output.push(String(text).slice(start));return <>{output}</>}

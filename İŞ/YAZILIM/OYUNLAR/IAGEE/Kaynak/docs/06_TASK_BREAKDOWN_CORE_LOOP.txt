@@ -1,0 +1,360 @@
+================================================================================
+TASK BREAKDOWN — CORE LOOP — Project RIFT EMPIRE (1v1 Prototip)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+MVP kapsamı: docs\04_MVP_SCOPE.txt
+Uygulama planı: docs\05_IMPLEMENTATION_PLAN.txt
+Sonraki belge: docs\07_TASK_BREAKDOWN_CLIENT_UI.txt
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge çekirdek oynanış sistemlerini küçük ve uygulanabilir görevlere ayırır.
+- Hedef 1v1 prototipin maç içi temelini kurmaktır.
+- Öncelik: oynanış çalışsın, sonra polish gelir.
+- Bu belge yalnızca core loop kapsamına odaklanır.
+
+--------------------------------------------------------------------------------
+2. Kapsam
+--------------------------------------------------------------------------------
+
+- Match state.
+- Entity/data model.
+- Command system.
+- Resource gathering.
+- Building placement.
+- Unit production.
+- Combat.
+- Victory / defeat.
+- Surrender.
+- Match lifecycle.
+
+--------------------------------------------------------------------------------
+3. Kapsam Dışı
+--------------------------------------------------------------------------------
+
+- Client UI detayları.
+- Menü akışı.
+- Sonuç ekranı tasarımı.
+- Gerçek matchmaking.
+- Battle pass / görev / mağaza.
+- Çoklu modlar.
+- Gelişmiş AI.
+- Replay / spectator.
+
+--------------------------------------------------------------------------------
+4. Çekirdek Döngü Tanımı
+--------------------------------------------------------------------------------
+
+- Maç başlar.
+- Oyuncu worker ile ekonomi kurar.
+- Kaynak toplanır.
+- Bina kurulur.
+- Ünite üretilir.
+- Çatışma yaşanır.
+- Üs yıkılır veya teslim olunur.
+- Maç biter.
+
+--------------------------------------------------------------------------------
+5. Task Grubu A — Match State Temeli
+--------------------------------------------------------------------------------
+
+- Global match state yapısını tanımla.
+- Match phase enum oluştur.
+- Oyuncu state alanlarını belirle.
+- Resource state alanlarını belirle.
+- Unit listesi / building listesi alanlarını belirle.
+- Tick / time alanlarını belirle.
+- Match result alanlarını belirle.
+
+--------------------------------------------------------------------------------
+6. Task Grubu A — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Tek bir match state nesnesi veya eşdeğer merkezi yapı var.
+- Başlangıç, oynanış ve bitiş durumları ayrılmış.
+- Oyuncu, unit, building, resource ve result bilgileri bu yapıda okunabilir.
+- Tick tabanlı güncelleme için uygun temel hazır.
+
+--------------------------------------------------------------------------------
+7. Task Grubu B — Entity Model Temeli
+--------------------------------------------------------------------------------
+
+- Unit modelini tanımla.
+- Building modelini tanımla.
+- Resource node modelini tanımla.
+- Player modelini tanımla.
+- Position / team / owner / hp / state alanlarını sabitle.
+- Kimliklendirme için entity id sistemi belirle.
+
+--------------------------------------------------------------------------------
+8. Task Grubu B — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Her entity tipi minimum zorunlu alanlara sahip.
+- Unit ve building owner bilgisi taşıyor.
+- Resource node tüketilebilir alanlara sahip.
+- Veri modelleri command ve simülasyon tarafından kullanılabilir.
+
+--------------------------------------------------------------------------------
+9. Task Grubu C — Match Lifecycle
+--------------------------------------------------------------------------------
+
+- Match init akışını kur.
+- Spawn başlangıç unit’lerini tanımla.
+- Spawn başlangıç base’lerini tanımla.
+- Başlangıç resource değerlerini ata.
+- Match start / running / ended geçişlerini kur.
+- Result üretimi için temel akışı ekle.
+
+--------------------------------------------------------------------------------
+10. Task Grubu C — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Maç deterministik şekilde başlatılabiliyor.
+- Başlangıç state’i test edilebiliyor.
+- Match start ve match end geçişleri çalışıyor.
+- Sonuç üretimi için temel veri mevcut.
+
+--------------------------------------------------------------------------------
+11. Task Grubu D — Command Sistemi Temeli
+--------------------------------------------------------------------------------
+
+- Command enum veya type yapısını oluştur.
+- Move command tanımla.
+- Attack command tanımla.
+- Gather command tanımla.
+- Build command tanımla.
+- Train unit command tanımla.
+- Surrender command tanımla.
+- Command validation giriş noktasını oluştur.
+
+--------------------------------------------------------------------------------
+12. Task Grubu D — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Her temel komut için veri şeması var.
+- Komutlar oyuncu kimliğiyle ilişkilendiriliyor.
+- Geçersiz komutları reddetmek için temel yapı var.
+- Simülasyon tarafı komutları işleyebiliyor.
+
+--------------------------------------------------------------------------------
+13. Task Grubu E — Tick / Simulation Loop
+--------------------------------------------------------------------------------
+
+- Sabit tick akışını kur.
+- Her tick’te command queue işle.
+- Entity update sırasını belirle.
+- Resource / production / combat çözümleme sırasını sabitle.
+- Match end kontrolünü tick sonunda çalıştır.
+- State snapshot veya eşdeğer çıktı noktası tanımla.
+
+--------------------------------------------------------------------------------
+14. Task Grubu E — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Simülasyon sabit akışla ilerliyor.
+- Komutlar kontrollü sırada işleniyor.
+- Tick sonunda state okunabiliyor.
+- Match end kontrolü düzenli çalışıyor.
+
+--------------------------------------------------------------------------------
+15. Task Grubu F — Resource Gathering
+--------------------------------------------------------------------------------
+
+- Worker’ın resource node’a yönelmesini sağla.
+- Gather state veya eşdeğer işlem durumu oluştur.
+- Taşıma / teslim mantığını kur veya basit akış kullan.
+- Resource artışını oyuncu state’ine uygula.
+- Tükenen node davranışını belirle.
+- Geçersiz gather hedeflerini reddet.
+
+--------------------------------------------------------------------------------
+16. Task Grubu F — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Worker kaynak toplamaya başlayabiliyor.
+- Oyuncunun resource değeri artıyor.
+- Resource node zamanla azalıyor veya tükeniyor.
+- Gather işlemi test edilebilir durumda.
+
+--------------------------------------------------------------------------------
+17. Task Grubu G — Building Placement
+--------------------------------------------------------------------------------
+
+- Build command çözümlemesini ekle.
+- Geçerli konum kontrolü ekle.
+- Kaynak yeterlilik kontrolü ekle.
+- Building spawn akışını kur.
+- Gerekirse build time ekle.
+- Owner ve takım bilgisini ata.
+
+--------------------------------------------------------------------------------
+18. Task Grubu G — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu yeterli kaynakla bina kurabiliyor.
+- Geçersiz konumlar reddediliyor.
+- Bina state’e ekleniyor.
+- Kurulan bina sonraki sistemlerce kullanılabiliyor.
+
+--------------------------------------------------------------------------------
+19. Task Grubu H — Unit Production
+--------------------------------------------------------------------------------
+
+- Production building üzerinden üretim komutu ekle.
+- Üretilebilir unit tiplerini sabitle.
+- Resource cost kontrolü ekle.
+- Train time veya anlık üretim kararı uygula.
+- Unit spawn noktasını belirle.
+- Owner atamasını yap.
+
+--------------------------------------------------------------------------------
+20. Task Grubu H — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- En az iki unit tipi üretilebiliyor.
+- Üretim resource tüketiyor.
+- Üretilen unit state’e ekleniyor.
+- Yeni unit komut alabiliyor.
+
+--------------------------------------------------------------------------------
+21. Task Grubu I — Move ve Position Güncelleme
+--------------------------------------------------------------------------------
+
+- Basit hareket mantığını kur.
+- Hedef pozisyona ilerleme ekle.
+- Stop / arrive davranışını tanımla.
+- Basit çakışma toleransı veya minimal çözüm ekle.
+- Karmaşık pathfinding ilk sürümde zorunlu değil.
+- Hareket state’ini güncelle.
+
+--------------------------------------------------------------------------------
+22. Task Grubu I — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Unit verilen hedefe ilerliyor.
+- Hedefe varınca duruyor veya idle’a dönüyor.
+- Hareket test sahnesinde gözlenebilir.
+- İlk prototip için yeterli basitlik korunuyor.
+
+--------------------------------------------------------------------------------
+23. Task Grubu J — Combat Resolution
+--------------------------------------------------------------------------------
+
+- Attack command işleme akışını kur.
+- Target validation ekle.
+- Attack range kontrolü ekle.
+- Damage uygulama mantığını kur.
+- Attack cooldown veya basit atak aralığı ekle.
+- HP düşüşü ve ölüm kaldırma akışını kur.
+
+--------------------------------------------------------------------------------
+24. Task Grubu J — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Unit başka bir unit veya binaya saldırabiliyor.
+- Hedefin HP’si azalıyor.
+- Ölen entity state’ten kaldırılıyor veya dead state’e geçiyor.
+- Combat sonucu test edilebilir.
+
+--------------------------------------------------------------------------------
+25. Task Grubu K — Victory / Defeat / Surrender
+--------------------------------------------------------------------------------
+
+- Ana üs yok olunca yenilgi koşulunu tanımla.
+- Rakip ana üs yok olunca galibiyet koşulunu tanımla.
+- Surrender komutunu match result’a bağla.
+- Match ended phase geçişini kur.
+- Result payload temelini üret.
+
+--------------------------------------------------------------------------------
+26. Task Grubu K — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Base kill ile maç bitebiliyor.
+- Surrender ile maç bitebiliyor.
+- Kazanan / kaybeden belirleniyor.
+- Match end bilgisi sonraki katmana aktarılabiliyor.
+
+--------------------------------------------------------------------------------
+27. Task Grubu L — Test Edilebilirlik
+--------------------------------------------------------------------------------
+
+- Match init testi.
+- Resource gathering testi.
+- Building placement testi.
+- Unit production testi.
+- Combat testi.
+- Victory condition testi.
+- Invalid command testi.
+
+--------------------------------------------------------------------------------
+28. Task Grubu L — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- En kritik çekirdek sistemler için temel testler mevcut.
+- Regresyon riski yüksek alanlar kapsanmış.
+- Headless veya logic-level test çalıştırılabiliyor.
+
+--------------------------------------------------------------------------------
+29. Önerilen Uygulama Sırası
+--------------------------------------------------------------------------------
+
+- Match state.
+- Entity model.
+- Match lifecycle.
+- Command system.
+- Tick loop.
+- Resource gathering.
+- Building placement.
+- Unit production.
+- Move.
+- Combat.
+- Victory / surrender.
+- Testler.
+
+--------------------------------------------------------------------------------
+30. Minimum Çalışır Core Loop Tanımı
+--------------------------------------------------------------------------------
+
+- Match başlıyor.
+- Worker kaynak topluyor.
+- Oyuncu bina kuruyor.
+- Oyuncu unit üretiyor.
+- Unit hareket ediyor.
+- Unit saldırıyor.
+- Base yıkılıyor veya surrender oluyor.
+- Match result oluşuyor.
+
+--------------------------------------------------------------------------------
+31. Notlar
+--------------------------------------------------------------------------------
+
+- İlk sürümde karmaşık pathfinding zorunlu değil.
+- İlk sürümde tam denge hedeflenmiyor.
+- Placeholder veri kabul.
+- Önce çalışırlık, sonra kalite.
+- Scope genişlemesi bu belge tamamlanmadan yapılmaz.
+
+--------------------------------------------------------------------------------
+32. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge docs\07_TASK_BREAKDOWN_CLIENT_UI.txt.
+- O belgede HUD, input, selection feedback, render ve maç akışı ekranları görev seviyesinde parçalanacak.
+
+--------------------------------------------------------------------------------
+Ek notlar (disiplin)
+--------------------------------------------------------------------------------
+
+- Bölüm isimleri diğer belgelerle uyumlu düz yazı stilindedir.
+- Kabul kriterleri kısa ama net tutulmuştur.
+- Görevler uygulanabilir büyüklükte kalır.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE core loop task breakdown
+================================================================================

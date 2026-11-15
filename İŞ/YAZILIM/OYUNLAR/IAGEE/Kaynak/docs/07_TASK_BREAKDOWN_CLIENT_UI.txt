@@ -1,0 +1,382 @@
+================================================================================
+TASK BREAKDOWN — CLIENT UI — Project RIFT EMPIRE (1v1 Prototip)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+MVP kapsamı: docs\04_MVP_SCOPE.txt
+Uygulama planı: docs\05_IMPLEMENTATION_PLAN.txt
+Core loop görev kırılımı: docs\06_TASK_BREAKDOWN_CORE_LOOP.txt
+Sonraki belge: docs\08_TASK_BREAKDOWN_SERVER_NETWORK.txt
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge istemci tarafı görselleştirme ve kullanıcı etkileşimi işlerini küçük ve uygulanabilir görevlere ayırır.
+- Hedef 1v1 prototip için oynanabilir ve okunabilir client katmanını kurmaktır.
+- Öncelik: kullanıcı temel komutları verebilsin ve maç akışı anlaşılır olsun.
+- Bu belge yalnızca client UI / input / render kapsamına odaklanır.
+
+--------------------------------------------------------------------------------
+2. Kapsam
+--------------------------------------------------------------------------------
+
+- Render temeli.
+- Kamera.
+- Input handling.
+- Unit selection.
+- Command feedback.
+- HUD.
+- Resource display.
+- Production UI.
+- Combat feedback.
+- Match flow screens.
+- Result screen.
+- Client-side okunabilirlik ve kullanılabilirlik.
+
+--------------------------------------------------------------------------------
+3. Kapsam Dışı
+--------------------------------------------------------------------------------
+
+- Sunucu simülasyonu detayları.
+- Command validation server mantığı.
+- Gerçek matchmaking.
+- Battle pass / görev / mağaza.
+- Gelişmiş VFX sistemi.
+- Gelişmiş sanat pipeline’ı.
+- Tam polish.
+- Replay / spectator.
+- Ayarlar menüsü derinliği.
+
+--------------------------------------------------------------------------------
+4. Client Katmanı Rolü
+--------------------------------------------------------------------------------
+
+- Sunucu otoritesini görselleştirir.
+- Oyuncudan input alır.
+- Selection ve command verme akışını sağlar.
+- HUD üzerinden temel bilgi gösterir.
+- Match başlangıç ve sonuç ekranlarını sunar.
+- Otorite sahibi değildir.
+
+--------------------------------------------------------------------------------
+5. Task Grubu A — Client State Görünümü
+--------------------------------------------------------------------------------
+
+- Sunucudan gelen state’i client tarafında temsil edecek veri yapısını tanımla.
+- Entity view model veya eşdeğer yapıyı oluştur.
+- Unit / building / resource görsel temsillerini ayır.
+- Selection state yapısını oluştur.
+- Hover / active / target gibi geçici client state’leri tanımla.
+- UI’nin ihtiyaç duyduğu okunabilir alanları sabitle.
+
+--------------------------------------------------------------------------------
+6. Task Grubu A — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Client tarafında render edilebilir merkezi görünüm verisi var.
+- Selection ve hover gibi client-only bilgiler ayrışmış.
+- Sunucu state’inden UI state’e geçiş yolu net.
+- HUD ve render katmanı aynı veriyi kullanabiliyor.
+
+--------------------------------------------------------------------------------
+7. Task Grubu B — Render Temeli
+--------------------------------------------------------------------------------
+
+- Harita render temelini kur.
+- Unit render temelini kur.
+- Building render temelini kur.
+- Resource node render temelini kur.
+- Owner / takım farkını görünür hale getir.
+- Placeholder asset / shape ile okunabilirlik sağla.
+
+--------------------------------------------------------------------------------
+8. Task Grubu B — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Harita ve temel entity’ler ekranda görünüyor.
+- Oyuncu kendi ve rakip entity’leri ayırt edebiliyor.
+- Placeholder görseller yeterince okunaklı.
+- Render katmanı oynanış testine engel olmuyor.
+
+--------------------------------------------------------------------------------
+9. Task Grubu C — Kamera Temeli
+--------------------------------------------------------------------------------
+
+- Kamera başlangıç konumunu belirle.
+- Kamera sürükleme veya kenar kaydırma mantığını ekle.
+- Zoom desteği ekle veya basit sabit çözüm kullan.
+- Harita sınırı kısıtlamasını ekle.
+- Maç başlangıcında doğru bölgeyi göster.
+- Temel kamera hissini test et.
+
+--------------------------------------------------------------------------------
+10. Task Grubu C — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu haritada gezinip başlangıç alanını görebiliyor.
+- Kamera kontrolü temel RTS hissi veriyor.
+- Kamera harita dışına taşmıyor.
+- İlk prototip için yeterli kullanım rahatlığı sağlanıyor.
+
+--------------------------------------------------------------------------------
+11. Task Grubu D — Input Handling
+--------------------------------------------------------------------------------
+
+- Sol tık seçim mantığını ekle.
+- Sağ tık komut verme mantığını ekle.
+- Boş alana tıklayınca selection temizleme davranışını ekle.
+- Shift / çoklu seçim desteğini opsiyonel değerlendir.
+- Klavye kısayolları için temel giriş noktısını kur.
+- Input olaylarını command dispatch’e bağla.
+
+--------------------------------------------------------------------------------
+12. Task Grubu D — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu entity seçebiliyor.
+- Oyuncu komut verebiliyor.
+- Yanlış hedeflerde input bozulmuyor.
+- Input akışı temel oynanış için yeterli.
+
+--------------------------------------------------------------------------------
+13. Task Grubu E — Unit Selection Görselleştirmesi
+--------------------------------------------------------------------------------
+
+- Seçili unit highlight ekle.
+- Seçili building highlight ekle.
+- Selection ring veya eşdeğer basit işaret ekle.
+- Çoklu seçim varsa basit seçim kutusu ekle.
+- Hover feedback ekle.
+- Seçili entity bilgi paneline bağla.
+
+--------------------------------------------------------------------------------
+14. Task Grubu E — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Seçili entity net biçimde anlaşılabiliyor.
+- Hover ve selection karışmıyor.
+- Bilgi paneli seçime tepki veriyor.
+- Oyuncu hangi entity’ye komut verdiğini takip edebiliyor.
+
+--------------------------------------------------------------------------------
+15. Task Grubu F — Command Feedback
+--------------------------------------------------------------------------------
+
+- Move komutunda hedef işareti ekle.
+- Attack komutunda hedef feedback’i ekle.
+- Build komutunda placement preview ekle.
+- Invalid action için basit red feedback’i ekle.
+- Gather komutunda hedef node vurgusu ekle.
+- Komut verildiğinde görsel cevap üret.
+
+--------------------------------------------------------------------------------
+16. Task Grubu F — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu verdiği komutun alındığını anlayabiliyor.
+- Geçersiz komutlar sessizce kaybolmuyor.
+- Build preview yerleşimi okunabilir.
+- Command feedback oynanışı hızlandırıyor.
+
+--------------------------------------------------------------------------------
+17. Task Grubu G — HUD Temeli
+--------------------------------------------------------------------------------
+
+- Üst bar veya eşdeğer HUD alanını oluştur.
+- Resource göstergesini ekle.
+- Match phase veya basit durum bilgisini ekle.
+- Seçili entity bilgi paneli alanını oluştur.
+- Temel action / command paneli alanını ayır.
+- Placeholder metinlerle okunaklılık sağla.
+
+--------------------------------------------------------------------------------
+18. Task Grubu G — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Kaynak bilgisi sürekli görünür.
+- Seçili entity bilgisi HUD’da yer alıyor.
+- Oyuncu temel oyun bilgisini tek bakışta alabiliyor.
+- HUD okunabilir ama aşırı detaylı değil.
+
+--------------------------------------------------------------------------------
+19. Task Grubu H — Production UI
+--------------------------------------------------------------------------------
+
+- Seçili bina için üretim paneli ekle.
+- Üretilebilir unit listesini göster.
+- Train komutunu buton üzerinden tetikle.
+- Resource yetersizse disabled veya basit uyarı göster.
+- Basit queue gösterimi opsiyonel ekle.
+- Üretim durumunu oyuncuya aktar.
+
+--------------------------------------------------------------------------------
+20. Task Grubu H — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu en az iki unit tipi üretebiliyor.
+- UI üzerinden üretim komutu verilebiliyor.
+- Yetersiz kaynak durumu anlaşılabiliyor.
+- Üretim arayüzü temel kullanım için yeterli.
+
+--------------------------------------------------------------------------------
+21. Task Grubu I — Building Placement UI
+--------------------------------------------------------------------------------
+
+- Build mode’a giriş akışını ekle.
+- Placeholder bina ghost preview ekle.
+- Geçerli / geçersiz yerleşim işaretlemesini ekle.
+- Sol tık ile onay, sağ tık ile iptal davranışını ekle.
+- Build command’i client’ten server’a bağla.
+- Yerleştirme modundan çıkış davranışını netleştir.
+
+--------------------------------------------------------------------------------
+22. Task Grubu I — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu bina yerleştirme moduna girebiliyor.
+- Yerleşimin geçerli olup olmadığını görebiliyor.
+- Yerleşimi onaylayabiliyor veya iptal edebiliyor.
+- Placement akışı anlaşılır ve tutarlı.
+
+--------------------------------------------------------------------------------
+23. Task Grubu J — Combat Feedback
+--------------------------------------------------------------------------------
+
+- Hasar alındığında basit görsel tepki ekle.
+- Ölen unit/building için kaldırılma feedback’i ekle.
+- Attack hedefini görsel olarak ayırt et.
+- Basit hit flash veya eşdeğer efekt kullan.
+- HP gösterimi için minimal çözüm ekle.
+- Aşırı VFX yerine okunabilirlik öncelikli olsun.
+
+--------------------------------------------------------------------------------
+24. Task Grubu J — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Savaşın yaşandığı ekranda anlaşılabiliyor.
+- Hangi entity’nin hasar aldığı belli.
+- Ölüm ve yok oluş durumları okunabiliyor.
+- Combat feedback performansı bozmayacak kadar hafif.
+
+--------------------------------------------------------------------------------
+25. Task Grubu K — Match Flow Screens
+--------------------------------------------------------------------------------
+
+- Ana menü / lobi ekranını oluştur.
+- Play veya Start Match akışını ekle.
+- Fake queue veya connecting ekranını ekle.
+- Match loading veya kısa geçiş ekranını ekle.
+- Oyun içine geçişi bağla.
+- Match bitince sonuç ekranına geçişi bağla.
+
+--------------------------------------------------------------------------------
+26. Task Grubu K — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu menüden maça girebiliyor.
+- Maç öncesi geçiş kopuk hissettirmiyor.
+- Maç bitişinde doğru ekrana yönleniyor.
+- Lobi -> maç -> sonuç akışı çalışıyor.
+
+--------------------------------------------------------------------------------
+27. Task Grubu L — Result Screen
+--------------------------------------------------------------------------------
+
+- Win / loss başlığını göster.
+- Basit match summary alanı ekle.
+- Süre, sonuç, temel istatistik placeholder alanları ekle.
+- Return to lobby butonunu ekle.
+- Tekrar maç başlatma opsiyonunu değerlendir.
+- Görsel sadelik korunsun.
+
+--------------------------------------------------------------------------------
+28. Task Grubu L — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Maç sonucu net biçimde görünüyor.
+- Oyuncu lobiye dönebiliyor.
+- Sonuç ekranı prototip için yeterince temiz.
+- Fazla detay yüklenmeden ürün hissi veriyor.
+
+--------------------------------------------------------------------------------
+29. Task Grubu M — Client Kullanılabilirlik İyileştirmeleri
+--------------------------------------------------------------------------------
+
+- Temel hotkey desteği ekle.
+- Seçim hissini iyileştir.
+- Buton yerleşimlerini sadeleştir.
+- Yazı boyutu ve kontrast okunabilirliğini artır.
+- İlk-time kullanıcı için akışı bozmayan basit ipuçları ekle veya placeholder bırak.
+- Gereksiz UI kalabalığını azalt.
+
+--------------------------------------------------------------------------------
+30. Task Grubu M — Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- UI ilk kullanımda anlaşılır.
+- Oyuncu temel işlemleri aramadan yapabiliyor.
+- Görsel kalabalık düşük.
+- Prototip düzeyinde rahat oynanabilirlik sağlanıyor.
+
+--------------------------------------------------------------------------------
+31. Önerilen Uygulama Sırası
+--------------------------------------------------------------------------------
+
+- Client state görünümü.
+- Render temeli.
+- Kamera.
+- Input handling.
+- Selection feedback.
+- HUD.
+- Production UI.
+- Building placement UI.
+- Command feedback.
+- Combat feedback.
+- Match flow screens.
+- Result screen.
+- Kullanılabilirlik iyileştirmeleri.
+
+--------------------------------------------------------------------------------
+32. Minimum Çalışır Client Tanımı
+--------------------------------------------------------------------------------
+
+- Harita görünüyor.
+- Unit ve building’ler görünüyor.
+- Kamera hareket ediyor.
+- Oyuncu seçim yapabiliyor.
+- Oyuncu komut verebiliyor.
+- Kaynak HUD’da görünüyor.
+- Üretim UI’si çalışıyor.
+- Sonuç ekranına geçiş var.
+- Lobiye dönüş var.
+
+--------------------------------------------------------------------------------
+33. Notlar
+--------------------------------------------------------------------------------
+
+- İlk sürümde estetikten çok okunabilirlik öncelikli.
+- Placeholder sanat kabul.
+- Karmaşık animasyon zorunlu değil.
+- Minimum ama temiz UI hedeflenmeli.
+- Scope genişlemesi bu belge tamamlanmadan yapılmaz.
+
+--------------------------------------------------------------------------------
+34. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge docs\08_TASK_BREAKDOWN_SERVER_NETWORK.txt.
+- O belgede room yönetimi, server match lifecycle, command routing, validation giriş noktaları, state/event/result iletimi ve network sınırları görev seviyesinde parçalanacak.
+
+--------------------------------------------------------------------------------
+Ek notlar (disiplin)
+--------------------------------------------------------------------------------
+
+- Bölüm isimleri diğer belgelerle uyumlu düz yazı stilindedir.
+- Kabul kriterleri kısa ama net tutulmuştur.
+- Client tarafı görevler uygulanabilir büyüklükte kalır.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE client UI task breakdown
+================================================================================

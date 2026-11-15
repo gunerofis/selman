@@ -1,0 +1,190 @@
+================================================================================
+MVP KAPSAMI — Project RIFT EMPIRE (1v1 Prototip / Oynanabilir Dikey Dilim)
+================================================================================
+Ürün tanımı: docs\01_PROJE_TANIMI_RIFT_EMPIRE.txt
+Tasarım iskeleti: docs\02_GDD_ISKELET_PROTOTIP.txt
+Teknik ön-plan: docs\03_TECHNICAL_PREPLAN.txt
+Sonraki belge: docs\05_IMPLEMENTATION_PLAN.txt
+
+--------------------------------------------------------------------------------
+1. Amaç
+--------------------------------------------------------------------------------
+
+- Bu belge 1v1 oynanabilir prototipin net kapsamını sabitler.
+- Hedef tam oyun değil; yatırım gösterimine uygun dikey dilim (vertical slice).
+- Kapsam dışı işler bilinçli olarak ertelenir.
+- Amaç üretim sınırını korumaktır.
+
+--------------------------------------------------------------------------------
+2. MVP Tanımı
+--------------------------------------------------------------------------------
+
+- Tek mod: 1v1.
+- Tek harita.
+- Tek fraksiyon veya en fazla 2 çok basit fraksiyon.
+- Maç başlatılabilir, oynanabilir ve bitirilebilir olmalı.
+- Oyuncu lobi → maç → sonuç → lobi akışını deneyimlemeli.
+
+--------------------------------------------------------------------------------
+3. Oyuncu Deneyimi Hedefi
+--------------------------------------------------------------------------------
+
+- Oyuncu oyuna girer.
+- Play / Start Match ile maçı başlatır.
+- Haritada ekonomi kurar.
+- Ünite üretir.
+- Savaşır.
+- Rakibi yener veya yenilir.
+- Sonuç ekranını görür.
+- Tekrar lobiye döner.
+
+--------------------------------------------------------------------------------
+4. Zorunlu Ekranlar
+--------------------------------------------------------------------------------
+
+- Ana menü / lobi.
+- Basit profil alanı veya placeholder üst bar.
+- Match başlatma ekranı veya doğrudan Play butonu.
+- Loading / match start geçişi.
+- Oyun içi HUD.
+- Sonuç ekranı.
+
+--------------------------------------------------------------------------------
+5. Zorunlu Oyun İçi Sistemler
+--------------------------------------------------------------------------------
+
+- Unit selection.
+- Move command.
+- Attack command.
+- Resource gathering.
+- Building placement.
+- Unit production.
+- Basit combat resolution.
+- Victory / defeat condition.
+- Surrender / match exit (çok basit biçimde olabilir).
+
+--------------------------------------------------------------------------------
+6. Minimum Unit Seti
+--------------------------------------------------------------------------------
+
+- Worker.
+- Basic melee unit.
+- Basic ranged unit.
+- Opsiyonel: 1 ağır / siege benzeri ünite.
+- Unit sayısı minimum tutulmalı.
+
+--------------------------------------------------------------------------------
+7. Minimum Building Seti
+--------------------------------------------------------------------------------
+
+- Main base.
+- Resource drop-off veya worker economy binası.
+- Unit production building.
+- Opsiyonel: basit tech / upgrade binası.
+- Savunma binası ilk MVP’de zorunlu değil.
+
+--------------------------------------------------------------------------------
+8. Kaynak Sistemi
+--------------------------------------------------------------------------------
+
+- Tek ana kaynak tercih edilir.
+- Haritada sınırlı kaynak noktaları bulunur.
+- Worker ile toplanır.
+- Kaynak bina ve ünite üretiminde kullanılır.
+- İkinci kaynak ancak gerçekten gerekiyorsa düşünülür.
+
+--------------------------------------------------------------------------------
+9. Harita Kapsamı
+--------------------------------------------------------------------------------
+
+- Tek oynanabilir harita.
+- Simetrik veya dengeye yakın düzen.
+- Büyük değil, test edilebilir ölçekte.
+- Kaynak noktaları ve başlangıç pozisyonları net.
+
+--------------------------------------------------------------------------------
+10. Match Flow Kapsamı
+--------------------------------------------------------------------------------
+
+- Lobi.
+- Start Match.
+- Oda oluşturma veya sahte eşleşme.
+- Maça giriş.
+- Simülasyon.
+- Sonuç.
+- Lobiye dönüş.
+
+--------------------------------------------------------------------------------
+11. Teknik Kabul
+--------------------------------------------------------------------------------
+
+- Server-authoritative yapı korunur.
+- İstemci otorite olmaz.
+- Komutlar sunucuya gider.
+- Sunucu state / event / result gönderir.
+- Headless test veya en azından test edilebilir simülasyon çekirdeği hedeflenir.
+
+--------------------------------------------------------------------------------
+12. Kasıtlı Olarak Kapsam Dışında Bırakılanlar
+--------------------------------------------------------------------------------
+
+- 2v2 / 3v3 / 4v4 / 5v5.
+- Gerçek matchmaking.
+- Gerçek ranked sistemi.
+- Battle pass backend.
+- Görev backend.
+- Mağaza.
+- Kozmetik envanteri.
+- Replay.
+- Spectator.
+- Detaylı tutorial.
+- Çok sayıda fraksiyon.
+- Derin teknoloji ağacı.
+- Gelişmiş AI.
+- İleri seviye görsel kalite.
+
+--------------------------------------------------------------------------------
+13. Placeholder Kabulü
+--------------------------------------------------------------------------------
+
+- Sanat varlıkları placeholder olabilir.
+- UI geçici olabilir ama okunaklı olmalı.
+- Ses tasarımı minimal olabilir.
+- VFX minimal olabilir.
+- Mock queue / fake matchmaking kabul edilir.
+
+--------------------------------------------------------------------------------
+14. “Bitti” Kabul Kriterleri
+--------------------------------------------------------------------------------
+
+- Oyuncu ana menüden maça girebilmeli.
+- Maçta worker ile kaynak toplayabilmeli.
+- En az bir bina kurabilmeli.
+- En az iki farklı ünite üretebilmeli.
+- Unit’lere komut verebilmeli.
+- Çatışma yaşanmalı.
+- Maç kazanılabilir / kaybedilebilir olmalı.
+- Sonuç ekranı görünmeli.
+- Oyun lobiye geri dönebilmeli.
+
+--------------------------------------------------------------------------------
+15. Demo / Yatırım Sunumu İçin Değer
+--------------------------------------------------------------------------------
+
+- Bu MVP tam oyun değildir.
+- Ama oyunun çekirdeğini gösterir.
+- RTS hissini kanıtlar.
+- Session flow’u kanıtlar.
+- Genişleyebilir ürün iskeletini görünür kılar.
+
+--------------------------------------------------------------------------------
+16. Sonraki Belge
+--------------------------------------------------------------------------------
+
+- Sonraki belge docs\05_IMPLEMENTATION_PLAN.txt olacak.
+- O belgede iş paketleri, sıra, fazlar ve uygulanacak görev kırılımı yazılacak.
+- İçerik çerçevesi: faz sırası, sistem öncelikleri, teknik görev grupları, client/server ayrımı, “ilk çalışır build”e kadar uygulanacak iş planı.
+
+================================================================================
+Belge sonu — Project RIFT EMPIRE MVP kapsamı (1v1 prototip)
+================================================================================
