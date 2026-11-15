@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "katalog",
+  "account_id": "4a84519bceedefed36cb86f6bf37e4aa",
+  "compatibility_date": "2026-08-28",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker.ts",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bucuruktoys",
+      "database_id": "875ef0d6-0271-45a7-ac30-581e7db90e2d"
+    }
+  ],
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "none",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/app-assets/_next/static/*",
+      "/media/*",
+      "/files/*"
+    ]
+  }
+}

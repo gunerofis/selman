@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Stil rehberi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..600&family=Instrument+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--krem:#F7F1E8;--kagit:#FDFAF6;--sut:#E9DCCB;--kahve:#4A3B2E;--ikincil:#8A7866;--dikis:#E3D8CA;--dikis-koyu:#D6C7B4;--taba:#A9743F;--bordo:#6B2D36;--p-krem:#EFE6DA;--p-gri:#E4E5E2;--p-lacivert:#DDE1E6;--p-taba:#EDE2DB;--p-bordo:#E8DCDC;--p-siyah:#E3E0DC;--font-display:'Archivo',sans-serif;--font-body:'Instrument Sans',sans-serif;--font-mono:'JetBrains Mono',monospace;--hiz:320ms;--egri:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--krem);color:var(--kahve);font-family:var(--font-body);font-size:16px;line-height:1.65;padding:32px 20px 80px}
+.wrap{max-width:1100px;margin:0 auto}
+h1{font-family:var(--font-display);font-variation-settings:'wdth' 118;font-weight:600;font-size:34px;letter-spacing:-.02em;line-height:1.15}
+h2{font-family:var(--font-display);font-variation-settings:'wdth' 112;font-weight:600;font-size:20px;letter-spacing:-.01em;margin:0 0 16px}
+.mono{font-family:var(--font-mono);font-size:12px;color:var(--ikincil);letter-spacing:.02em}
+section{border-top:1px dashed var(--dikis);padding:32px 0}
+.grid{display:grid;gap:12px}
+.sw{height:76px;border:1px solid var(--dikis)}
+.sw+div{margin-top:6px}
+a{color:var(--taba)}
+.btn{display:inline-block;background:var(--kahve);color:var(--kagit);padding:11px 20px;font-size:14px;border:none;font-family:var(--font-body);cursor:pointer}
+.btn-2{background:transparent;color:var(--kahve);border:1px solid var(--dikis-koyu)}
+.dot{width:22px;height:22px;display:block;border:1px solid var(--dikis-koyu)}
+.dot.sel{outline:2px solid var(--taba);outline-offset:2px}
+.card{background:var(--kagit);border:1px solid var(--dikis)}
+.tile{background:var(--sut);aspect-ratio:1;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;border:1px solid var(--dikis)}
+input{width:100%;padding:10px;border:1px solid var(--dikis-koyu);background:var(--kagit);font-family:var(--font-body);font-size:15px;color:var(--kahve)}
+input:focus{outline:2px solid var(--taba);outline-offset:1px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:7px 0;border-bottom:1px dashed var(--dikis)}
+td:last-child{text-align:right;font-family:var(--font-mono);font-size:13px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+</style></head><body><div class="wrap">
+
+<h1>Stil rehberi</h1>
+<p class="mono" style="margin-top:6px">faz 0 · token seti · prod'da noindex</p>
+
+<section>
+<h2>Zemin ve metin</h2>
+<div class="grid g4">
+<div><div class="sw" style="background:var(--krem)"></div><div class="mono">--krem #F7F1E8 · sayfa</div></div>
+<div><div class="sw" style="background:var(--kagit)"></div><div class="mono">--kagit #FDFAF6 · kart</div></div>
+<div><div class="sw" style="background:var(--sut)"></div><div class="mono">--sut #E9DCCB · blok</div></div>
+<div><div class="sw" style="background:var(--kahve)"></div><div class="mono">--kahve #4A3B2E · metin</div></div>
+<div><div class="sw" style="background:var(--ikincil)"></div><div class="mono">--ikincil #8A7866</div></div>
+<div><div class="sw" style="background:var(--taba)"></div><div class="mono">--taba #A9743F · aksan</div></div>
+</div>
+</section>
+
+<section>
+<h2>Pastel kategori zeminleri</h2>
+<div class="grid g4">
+<div><div class="sw" style="background:var(--p-krem)"></div><div class="mono">krem</div></div>
+<div><div class="sw" style="background:var(--p-gri)"></div><div class="mono">gri</div></div>
+<div><div class="sw" style="background:var(--p-lacivert)"></div><div class="mono">lacivert</div></div>
+<div><div class="sw" style="background:var(--p-taba)"></div><div class="mono">taba</div></div>
+<div><div class="sw" style="background:var(--p-bordo)"></div><div class="mono">bordo</div></div>
+<div><div class="sw" style="background:var(--p-siyah)"></div><div class="mono">siyah</div></div>
+</div>
+</section>
+
+<section>
+<h2>Tipografi</h2>
+<p style="font-family:var(--font-display);font-variation-settings:'wdth' 118;font-weight:600;font-size:46px;letter-spacing:-.025em;line-height:1.1">Komodin organizeri</p>
+<p style="font-family:var(--font-display);font-variation-settings:'wdth' 112;font-weight:600;font-size:26px;letter-spacing:-.015em;margin-top:12px">Yatak odası · 14 ürün</p>
+<p style="margin-top:12px;max-width:62ch">Gövde metni. Telefon, gözlük ve saat için üç bölme, altta çekmece. Ölçü satırı 60-75 karakter arasında tutulur.</p>
+<p class="mono" style="margin-top:12px;font-size:14px">7002 · 240 × 160 × 90 mm · 380 g · 1.450,00 ₺</p>
+<p class="mono" style="margin-top:16px">display Archivo · gövde Instrument Sans · teknik JetBrains Mono</p>
+</section>
+
+<section>
+<h2>Buton, link, durum</h2>
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+<button class="btn">Sepete ekle</button>
+<button class="btn btn-2">Teklif iste</button>
+<a href="#">Ürün detayı</a>
+<span style="color:var(--taba);font-size:14px">Stokta</span>
+<span style="color:var(--bordo);font-size:14px">Son 2 adet</span>
+</div>
+</section>
+
+<section>
+<h2>Renk noktaları</h2>
+<div style="display:flex;gap:9px">
+<span class="dot" style="background:#E9DCCB"></span>
+<span class="dot sel" style="background:#B9926A"></span>
+<span class="dot" style="background:#8C8F8B"></span>
+<span class="dot" style="background:#2C3542"></span>
+<span class="dot" style="background:#6B2D36"></span>
+<span class="dot" style="background:#4A3B2E"></span>
+<span class="dot" style="background:#FDFAF6"></span>
+<span class="dot" style="background:#26241F"></span>
+</div>
+<p class="mono" style="margin-top:10px">seçili: taba</p>
+</section>
+
+<section>
+<h2>Duvar karesi</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));max-width:640px">
+<div class="tile"><span style="font-size:13px;font-weight:500">komodin organizeri</span><span class="mono">7002</span></div>
+<div class="tile" style="background:var(--p-lacivert)"><span style="font-size:13px;font-weight:500">araç organizeri</span><span class="mono">7003</span></div>
+<div class="tile" style="background:var(--p-bordo)"><span style="font-size:13px;font-weight:500">anahtar istasyonu</span><span class="mono">7011</span></div>
+</div>
+</section>
+
+<section>
+<h2>Spec tablosu</h2>
+<div class="card" style="padding:16px;max-width:420px">
+<table>
+<tr><td>Dış ölçü</td><td>240 × 160 × 90 mm</td></tr>
+<tr><td>Ağırlık</td><td>380 g</td></tr>
+<tr><td>Renk</td><td>8 seçenek</td></tr>
+<tr><td>Teslim</td><td>3-5 iş günü</td></tr>
+</table>
+</div>
+</section>
+
+<section>
+<h2>Form</h2>
+<div style="max-width:340px">
+<label class="mono" for="e">e-posta</label>
+<input id="e" type="email" placeholder="ad@firma.com" style="margin-top:6px">
+<p style="color:var(--bordo);font-size:13px;margin-top:6px">Geçerli e-posta girin.</p>
+</div>
+</section>
+
+</div></body></html>

@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "feelparfume",
+	"main": "@tanstack/react-start/server-entry",
+	"workers_dev": true,
+  "compatibility_date": "2026-09-08",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+    "enabled": true
+  }
+  // DATABASE_URL is NOT set here — it is an encrypted Worker secret
+  // (`wrangler secret put DATABASE_URL`). Never put the Neon password in this
+  // committed file; it would leak in git and in the Cloudflare dashboard.
+}

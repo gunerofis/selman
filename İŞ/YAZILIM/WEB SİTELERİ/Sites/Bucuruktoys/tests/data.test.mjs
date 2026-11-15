@@ -1,0 +1,64 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { createHash,randomBytes } from 'node:crypto';
+import { build } from 'esbuild';
+import { Miniflare,convertV4MiniflareOptions } from 'miniflare';
+
+const bundle=await build({entryPoints:['tests/data-worker.ts'],bundle:true,format:'esm',platform:'browser',write:false,target:'es2022'});
+const mf=new Miniflare(convertV4MiniflareOptions({modules:true,script:bundle.outputFiles[0].text,compatibilityDate:'2026-08-28',d1Databases:{DB:'test-db'}}));
+const db=await mf.getD1Database('DB');
+let checks=0;
+const developer={id:'developer@example.test',email:'developer@example.test',role:'developer',displayName:'Developer'};
+const owner={...developer,id:'owner@example.test',email:'owner@example.test',role:'owner'};
+const viewer={...developer,id:'viewer@example.test',email:'viewer@example.test',role:'viewer'};
+const editor={...developer,id:'editor@example.test',email:'editor@example.test',role:'editor'};
+const request=async(path,body={},headers={})=>mf.dispatchFetch('https://example.test'+path,{method:'POST',body:JSON.stringify(body),headers:{'Content-Type':'application/json',...headers}});
+const query=async(path,init={},user=developer)=>{const r=await request('/query',{path,init,user});return {status:r.status,data:await r.json()};};
+try {
+  for(const file of ['0001_initial-cloudflare-schema.sql','0002_admin-and-files.sql']) {
+    const sql=await readFile('migrations/'+file,'utf8');
+    await db.batch(sql.split(';').map(s=>s.trim()).filter(Boolean).map(s=>db.prepare(s)));
+  }
+  for(const u of [developer,owner,viewer,editor])await db.prepare('INSERT INTO admin_users(email,display_name,role) VALUES(?,?,?)').bind(u.email,u.displayName,u.role).run();
+  await db.prepare("INSERT INTO categories(id,slug,name) VALUES('fun','fun','Fun')").run();
+  await db.prepare("INSERT INTO products(sku,name,category,pack,stock,cost_price,is_published,gallery) VALUES('T-1','Published','fun','one',20,10,1,'[\"https://example.test/a.webp\"]'),('T-2','Draft','fun','one',3,8,0,'[]')").run();
+  let r=await query('/rest/v1/products?select=*&order=id.asc',{},null);
+  assert.equal(r.status,200);assert.equal(r.data.length,1);assert.equal(r.data[0].cost_price,null);assert.equal(r.data[0].is_published,true);assert.deepEqual(r.data[0].gallery,['https://example.test/a.webp']);checks++;
+  assert.equal((await query('/rest/v1/admin_users',{},null)).status,400);checks++;
+  assert.equal((await query('/rest/v1/products',{method:'POST',body:JSON.stringify({sku:'bad'})},viewer)).status,400);checks++;
+  assert.equal((await query('/rest/v1/admin_users',{method:'POST',body:JSON.stringify({email:'new@example.test',role:'owner'})},editor)).status,400);checks++;
+  assert.equal((await query('/rest/v1/admin_users?email=eq.developer%40example.test',{method:'PATCH',body:JSON.stringify({role:'editor'})},owner)).status,400);checks++;
+  assert.equal((await query('/rest/v1/products?select=id);DROP%20TABLE%20products--')).status,400);checks++;
+  assert.equal((await query('/rest/v1/products',{method:'DELETE'})).status,400);checks++;
+  r=await query('/rest/v1/products?on_conflict=sku',{method:'POST',body:JSON.stringify([{sku:'T-1',name:'Changed',category:'fun',pack:'one',stock:4},{sku:'T-3',name:'Invalid',category:'fun',pack:'one',stock:-1}])});
+  assert.equal(r.status,400);assert.equal((await db.prepare("SELECT name FROM products WHERE sku='T-1'").first()).name,'Published');checks++;
+  const key='bt_'+randomBytes(32).toString('base64url');
+  await db.prepare('INSERT INTO admin_credentials(email,key_hash) VALUES(?,?)').bind(developer.email,createHash('sha256').update(key).digest('hex')).run();
+  assert.equal((await request('/login',{email:developer.email,key:'bt_'+randomBytes(32).toString('base64url')})).status,401);checks++;
+  const login=await request('/login',{email:developer.email,key});assert.equal(login.status,200);
+  const setCookie=login.headers.get('set-cookie');assert.match(setCookie,/HttpOnly/);assert.match(setCookie,/Secure/);assert.match(setCookie,/SameSite=Strict/);
+  const sessionCookie=setCookie.split(';')[0];assert.equal((await (await request('/auth',{}, {Cookie:sessionCookie})).json()).email,developer.email);checks++;
+  assert.equal(await (await request('/auth',{}, {Cookie:'bt_admin=forged'})).json(),null);checks++;
+  assert.equal((await (await request('/origin',{}, {Origin:'https://evil.test'})).json()).ok,false);checks++;
+  const tokenHash=createHash('sha256').update(sessionCookie.split('=')[1]).digest('hex');
+  await db.prepare('UPDATE admin_sessions SET expires_at=0 WHERE token_hash=?').bind(tokenHash).run();assert.equal(await (await request('/auth',{}, {Cookie:sessionCookie})).json(),null);checks++;
+  const login2=await request('/login',{email:developer.email,key});const cookie2=login2.headers.get('set-cookie').split(';')[0];
+  await db.prepare('UPDATE admin_users SET is_active=0 WHERE email=?').bind(developer.email).run();assert.equal(await (await request('/auth',{}, {Cookie:cookie2})).json(),null);checks++;
+  await db.prepare('UPDATE admin_users SET is_active=1 WHERE email=?').bind(developer.email).run();
+  await request('/logout',{}, {Cookie:cookie2});assert.equal(await (await request('/auth',{}, {Cookie:cookie2})).json(),null);checks++;
+  const stock=await query('/rest/v1/rpc/adjust_product_stock',{method:'POST',body:JSON.stringify({p_product_id:1,p_change:-21,p_reason:'test'})});assert.equal(stock.status,400);
+  assert.equal((await db.prepare('SELECT stock FROM products WHERE id=1').first()).stock,20);assert.equal((await db.prepare('SELECT count(*) n FROM inventory_movements').first()).n,0);checks++;
+  const adjustments=await Promise.all(Array.from({length:5},()=>query('/rest/v1/rpc/adjust_product_stock',{method:'POST',body:JSON.stringify({p_product_id:1,p_change:-1})},editor)));
+  assert.ok(adjustments.every(r=>r.status===200));assert.equal((await db.prepare('SELECT stock FROM products WHERE id=1').first()).stock,15);assert.equal((await db.prepare('SELECT count(*) n FROM inventory_movements').first()).n,5);checks++;
+  assert.equal((await query('/rest/v1/rpc/adjust_product_stock',{method:'POST',body:JSON.stringify({p_product_id:1,p_change:1})},viewer)).status,400);checks++;
+  assert.equal((await query('/rest/v1/rpc/create_catalog_quote',{method:'POST',body:'{}'},null)).status,400);checks++;
+  await db.prepare("INSERT INTO site_settings(key,label,value,is_public) VALUES('test','Test','false',1)").run();assert.equal((await query('/rest/v1/site_settings',{},null)).data[0].value,false);checks++;
+  const bytes=Array.from(randomBytes(600000));
+  assert.equal((await request('/upload',{bucket:'product-images',path:'test/picture.webp',data:bytes,type:'image/webp'})).status,200);
+  const file=await mf.dispatchFetch('https://example.test/files/product-images/test/picture.webp');assert.equal(file.status,200);assert.deepEqual(new Uint8Array(await file.arrayBuffer()),new Uint8Array(bytes));checks++;
+  assert.equal((await mf.dispatchFetch('https://example.test/files/product-images/test/picture.webp',{headers:{'If-None-Match':file.headers.get('ETag')}})).status,304);checks++;
+  await request('/upload',{bucket:'print-request-files',path:'test/private.pdf',data:[1,2,3],type:'application/pdf'});
+  const denied=await mf.dispatchFetch('https://example.test/files/print-request-files/test/private.pdf');assert.equal(denied.status,401);assert.equal(denied.headers.get('Cache-Control'),'no-store');checks++;
+  assert.equal((await mf.dispatchFetch('https://example.test/files/product-images/%2e%2e/private.pdf')).status,404);checks++;
+  console.log(`${checks} integration checks passed: access, cookies, rollback, concurrent stock, JSON and file integrity.`);
+}finally{await mf.dispose();}

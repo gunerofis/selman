@@ -1,0 +1,1 @@
+function e(e,t=5e3){let n=Number(e);if(Number.isFinite(n))return Math.min(t,Math.max(24,Math.floor(n)))}function t(e){return Math.max(24,e??24)}export{e as n,t};

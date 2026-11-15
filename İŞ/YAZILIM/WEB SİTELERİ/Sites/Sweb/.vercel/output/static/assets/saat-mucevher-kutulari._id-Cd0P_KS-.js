@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-CP8wJgJA.js";import{n as t}from"./not-found-i5RsCZif.js";import{n}from"./catalog-context-DJYfquKc.js";import{i as r,r as i}from"./index-CLS4VDaM.js";import{r as a}from"./line-catalog-DBjdoxzD.js";var o=e();function s(){let{id:e}=i.useParams(),s=n(r,e);if(!s)throw t();return(0,o.jsx)(a,{line:s.line,item:s.item})}export{s as component};

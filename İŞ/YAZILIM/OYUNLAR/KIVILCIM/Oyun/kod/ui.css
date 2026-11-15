@@ -1,0 +1,34 @@
+/* ORTAK ARAYÜZ — en son yüklenir. Tek düğme biçimi ve "sayılar kutusuz" kuralı burada. */
+
+/* 1) Düğme: hub plakalarıyla aynı dil — sivri uçlu, altın çerçeveli mine plaka. */
+.gxBtn,.roomAction,.ktBtn,[data-view=result] .receipt .action{all:unset;box-sizing:border-box;position:relative;isolation:isolate;display:inline-grid;place-items:center;align-content:center;gap:1px;min-height:44px;min-width:96px;padding:6px 26px;cursor:pointer;touch-action:manipulation;font:700 16px/1.1 Georgia,"Times New Roman",serif;letter-spacing:.02em;color:#fff3d6;text-align:center;text-shadow:0 1px 0 #3d100c,0 2px 3px #000;clip-path:polygon(13px 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,13px 100%,0 50%);background:linear-gradient(#ffe9ad,#c79a4b 30%,#7a5621 70%,#e2bd72)}
+.gxBtn:before,.roomAction:before,.ktBtn:before,[data-view=result] .receipt .action:before{content:"";position:absolute;inset:2px;z-index:-1;clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%);background:linear-gradient(#e0694c,#a53a2b 46%,#7a231d 54%,#8f2f24);box-shadow:inset 0 0 0 1px #0006}
+.gxBtn.sub:before,.roomAction.secondary:before,.ktBtn.sub:before,[data-view=result] .receipt .action.sub:before{background:linear-gradient(#5a5364,#383240 46%,#211d28 54%,#2c2733)}
+.gxBtn:disabled,.roomAction:disabled,.ktBtn:disabled,[data-view=result] .receipt .action:disabled{cursor:default;filter:grayscale(.85) brightness(.62)}
+.gxBtn:active:not(:disabled),.roomAction:active:not(:disabled),.ktBtn:active:not(:disabled),[data-view=result] .receipt .action:active{filter:brightness(1.18);translate:0 1px}
+.gxBtn small,.roomAction small{display:inline-flex;gap:3px;align-items:center;font:600 11px/1 system-ui,sans-serif;color:#ffe6a6;text-shadow:0 1px 2px #000}
+.gxBtn small .glyph,.roomAction small .glyph{width:12px;height:12px}
+.gxBtn.stone{min-width:64px;padding-inline:20px;grid-auto-flow:column;gap:5px}
+
+/* 2) Sayılar kutu içine alınmaz: ikon + rakam, arkada yalnız gölge. */
+html[data-room=true] #top .resource{background:none!important;border:0!important;box-shadow:none!important;min-width:0!important;padding:4px 6px!important;font-size:15px!important;text-shadow:0 1px 3px #000,0 0 7px #000}
+html[data-room=true] #top .resource small{display:none}
+html[data-room=true] #top .resource .hudIcon{width:20px;height:20px}
+.roomPill,.lootMedals span{background:none!important;border:0!important;box-shadow:none!important;padding:0 5px!important;min-height:0!important;text-shadow:0 1px 3px #000,0 0 8px #000}
+.focusDetails{background:none!important}
+.legacyStage .balanceLine,.ktTag,.ktChip{background:none!important;border:0!important;text-shadow:0 1px 3px #000}
+.duel .plate,.duel .target{background:none;border:0;box-shadow:none;text-shadow:0 1px 3px #000,0 0 7px #000}
+.duel .target[aria-pressed=true]{box-shadow:none}
+.duel .hpBar{height:8px;box-shadow:inset 0 0 0 1px var(--k-gold),0 1px 4px #000}
+[data-view=result] .receipt .bigStat,[data-view=result] .receipt .reward{background:none;border:0;padding:0 10px}
+.duelNames>div{background:none!important}
+
+/* Gelen görseller: taş, yuva çerçevesi, düğme plakası */
+.gxStone.yakut{background:var(--art-yakut,radial-gradient(circle at 35% 30%,#ffb0a0,#d8382c 60%,#7a1410)) center/contain no-repeat;border:0}
+.gxStone.zumrut{background:var(--art-zumrut,radial-gradient(circle at 35% 30%,#b6f5cf,#2fae6a 60%,#0f5a34)) center/contain no-repeat;border:0}
+html[data-frames=true] .gxCell{background:var(--art-slot) center/100% 100% no-repeat,radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--c,#9aa0a6) 30%,#17151d),#17151d 78%);border-color:transparent;box-shadow:0 0 0 1px color-mix(in srgb,var(--c,#9aa0a6) 60%,transparent),0 2px 5px #0008}
+html[data-frames=true] .gxBtn,html[data-frames=true] .roomAction,html[data-frames=true] .ktBtn,html[data-frames=true] [data-view=result] .receipt .action{clip-path:none;background:var(--art-btn) center/100% 100% no-repeat;padding:8px 30px}
+html[data-frames=true] .gxBtn:before,html[data-frames=true] .roomAction:before,html[data-frames=true] .ktBtn:before,html[data-frames=true] [data-view=result] .receipt .action:before{display:none}
+html[data-frames=true] .gxBtn.sub,html[data-frames=true] .roomAction.secondary,html[data-frames=true] .ktBtn.sub,html[data-frames=true] [data-view=result] .receipt .action.sub{background-image:var(--art-btn2)}
+html[data-frames=true] .gxCell img{width:66%;height:66%}
+html[data-frames=true] .gxCell{box-shadow:0 0 0 1px color-mix(in srgb,var(--c,#9aa0a6) 70%,transparent)}

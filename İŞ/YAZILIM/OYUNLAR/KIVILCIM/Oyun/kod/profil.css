@@ -1,0 +1,145 @@
+/* Profil referansının yerleşimi; tüm kurallar bu ekrana özeldir. */
+.prRoom{--pr-gold:#e8bd73;--pr-text:#fff0ce;font-family:Georgia,"Times New Roman",serif;background:#171413;color:var(--pr-text);container-type:size}
+.prBackdrop{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.prSprite{position:absolute;pointer-events:none}
+.prTop{position:absolute;left:max(1.1%,env(safe-area-inset-left));top:max(1%,env(safe-area-inset-top));display:flex;align-items:center;gap:1.5cqw;z-index:5}
+.prTop h2{font:bold clamp(27px,3.25cqw,60px)/1 Georgia,serif;text-shadow:0 3px 4px #000}
+.prTop .roomBack{width:clamp(44px,3.7cqw,64px);height:clamp(44px,3.7cqw,64px)}
+.prNav{position:absolute;left:.4%;top:16.6%;width:19.1%;display:grid;gap:1.65cqh;z-index:3}
+.prNavButton{position:relative;isolation:isolate;display:block;width:100%;height:9.45cqh;min-height:44px;padding:0;border:0;background:transparent;font:bold clamp(14px,1.96cqw,36px)/1 Georgia,serif;touch-action:manipulation;filter:drop-shadow(0 4px 3px #0009)}
+.prTrim{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.prNavContent{position:absolute;inset:13% 9%;display:flex;align-items:center;gap:6%;white-space:nowrap;text-shadow:0 2px 2px #000}
+.prNavContent>img,.prNavContent>.glyph{width:18%;height:85%;object-fit:contain;color:#efc77d}
+.prNavContent>b{font-weight:700;flex:1;text-align:center}
+.prNavButton.selected{filter:drop-shadow(0 0 4px #c6802c44) drop-shadow(0 3px 3px #0009)}
+.prRoom button:hover:not(:disabled){filter:brightness(1.16)}
+.prRoom button:active:not(:disabled){translate:0 1px}
+.prRoom button:focus-visible{outline:3px solid #ffe2a0;outline-offset:3px}
+.prIdentity{position:absolute;left:20.3%;bottom:8.2%;width:39.2%;height:13.8%;padding-left:9cqw;display:flex;flex-direction:column;justify-content:center;isolation:isolate;background:linear-gradient(#181713f5,#0c0c0ce8);border-block:2px solid #c7974d;clip-path:polygon(8% 0,95% 0,100% 33%,96% 58%,99% 73%,95% 100%,8% 100%,0 50%);filter:drop-shadow(0 4px 5px #000)}
+.prDragon{position:absolute;left:1%;height:98%;width:23%;top:1%}
+.prNameLine{display:flex;align-items:center;gap:5%;padding:0 4% 1% 0;border-bottom:1px solid #98764470}
+.prNameLine strong{font:bold clamp(18px,2.8cqw,52px)/1.1 Georgia,serif;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.prEdit{min-width:44px;min-height:44px;border:0;background:none;color:#efbd65;padding:4px;display:grid;place-items:center}
+.prEdit .glyph{width:26px;height:26px}
+.prRegion{display:flex;align-items:center;gap:7px;font-size:clamp(11px,1.28cqw,24px);padding-top:3%;white-space:nowrap}
+.prRegion>.glyph{width:1.7em;height:1.3em;color:#eac174}
+.prRight{position:absolute;left:63%;right:1%;top:10%;bottom:9.3%;display:flex;flex-direction:column;gap:1.5cqh;min-height:0}
+.prHeroSummary{height:23.5%;flex-shrink:0;display:flex;align-items:stretch;gap:1%;min-height:76px}
+.prCrest{width:25%;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2%;background:linear-gradient(135deg,#c8873d,#401212 8%,#ac281e 45%,#481615 83%,#d5a45d);border:2px solid #c29950;clip-path:polygon(15% 0,50% 7%,85% 0,100% 16%,94% 82%,50% 100%,6% 82%,0 16%);filter:drop-shadow(0 3px 3px #000)}
+.prCrest>.glyph{height:57%;width:65%;stroke-width:1.3;color:#ffe8a7;filter:drop-shadow(0 2px 1px #260908)}
+.prCrestArt{height:68%;width:97%;flex-shrink:0}
+.prCrest>span{font:bold clamp(9px,1.14cqw,20px)/1.05 Georgia,serif;text-align:center;padding:3px 4px;background:#4b1212d9;max-width:95%}
+.prHeroNumbers{width:74%;display:flex;flex-direction:column;justify-content:space-evenly;min-width:0}
+.prHeroNumbers h3{border-block:2px solid #bc9559;box-shadow:inset 0 0 0 1px #312719;background:linear-gradient(#181716,#080909);padding:1% 5%;font:bold clamp(15px,1.94cqw,36px)/1.2 Georgia,serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%)}
+.prHeroNumbers h3 span{margin-left:3%}
+.prPower{background:linear-gradient(90deg,#9c251b,transparent 85%);color:#ffe178;font:bold clamp(16px,2.08cqw,38px)/1.05 Georgia,serif;padding:1% 8%;text-shadow:0 2px 3px #280a08}
+.prXp{position:relative;isolation:isolate;border:1px solid #e0b566;height:20%;min-height:16px;background:#241029;clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%);display:flex;align-items:center;justify-content:space-between;padding:0 5%;font:bold clamp(10px,1.2cqw,22px)/1 Georgia,serif}
+.prXp>i{position:absolute;inset:0 auto 0 0;z-index:-1;background:linear-gradient(#f4c2ed,#993ba4 44%,#43164b 56%,#a64db0);border-right:1px solid #f1a6ef}
+.prXp>b{color:#ffe388}
+.prXp>span{font-variant-numeric:tabular-nums}
+.prContent{min-height:0;flex:1;display:flex;flex-direction:column;gap:1.2cqh;overflow:auto;scrollbar-width:thin;scrollbar-color:#aa8247 #141210}
+.prContent:focus-visible{outline:1px solid #bc9559;outline-offset:1px}
+.prContent.prOverview{display:grid;grid-template-rows:minmax(0,.95fr) minmax(0,1.22fr) minmax(0,1.15fr);overflow:visible}
+.prPanel{position:relative;isolation:isolate;flex-shrink:0;min-height:0;color:#fff0d2}
+.prPanelInner{position:relative;padding:2.5% 5% 3.2%;height:100%;min-height:0;display:flex;flex-direction:column}
+.prPanel h3{display:flex;align-items:center;gap:3%;font:bold clamp(14px,1.72cqw,32px)/1.15 Georgia,serif;white-space:nowrap;min-height:1.2em}
+.prPanel h3>.glyph{width:1.1em;height:1.1em;color:var(--pr-gold)}
+.prDivider{flex-shrink:0;display:flex;align-items:center;gap:1%;color:#e4b65f;font-size:clamp(7px,.8cqw,14px);line-height:1;margin:.4% 0 1.6%}
+.prDivider:before,.prDivider:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#bc9559)}
+.prDivider:after{transform:scaleX(-1)}
+.prBasics{flex:1 0 25%;min-height:100px}
+.prStatGrid{display:grid;grid-template-columns:1fr 1fr;gap:.5cqh 9%;align-content:center;flex:1}
+.prStat{display:flex;align-items:center;gap:5%;font-size:clamp(12px,1.48cqw,27px);min-height:1.5em}
+.prStat>.glyph{width:1.2em;height:1.2em;color:#e5b663}
+.prStat.health>.glyph{color:#e14735;fill:#8d281e}
+.prStat>b{margin-left:auto;font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.prCount{margin-left:auto;font:500 clamp(11px,1.2cqw,22px)/1 Georgia,serif}
+.prAwards{flex:1.15 0 32%;min-height:120px}
+.prAchievements{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3%;align-items:center;flex:1;min-height:0}
+.prAchievement{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;border:0;background:none;color:#fff0d3;padding:0;min-height:44px;min-width:44px;font:bold clamp(9px,1.05cqw,20px)/1.1 Georgia,serif;text-shadow:0 2px 2px #000}
+.prMedalArt{display:block;width:100%;max-height:10cqh;filter:drop-shadow(0 3px 3px #0005)}
+.prAchievement>span{background:linear-gradient(#6d2119,#2f100d);border-block:1px solid #b78b42;padding:4% 2%;width:100%;white-space:nowrap;text-align:center}
+.prAchievement.locked>.prMedalArt{filter:grayscale(.9) brightness(.5)}
+.prAchievement.locked>span{color:#b9afa0;background:#201c19}
+.prAchievement>i{position:absolute;top:20%;left:42%;color:#ffdc9d;filter:drop-shadow(0 1px 3px #000)}
+.prAchievement>i>.glyph{width:18px;height:18px}
+.prAccount{flex:1 0 28%;min-height:104px}
+.prProgress{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;flex:1}
+.prProgressItem{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7cqh;border:0;border-right:1px solid #a880424d;background:none;color:#fff0ce;min-height:44px;min-width:0;padding:2%;font:500 clamp(9px,1.13cqw,21px)/1.1 Georgia,serif}
+.prProgressItem:last-child{border:0}
+.prProgressItem>.glyph{width:2em;height:1.6em;color:#e8b766}
+.prProgressItem>b{font-size:1.25em;font-weight:500;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.prFullPanel{min-height:100%;flex:0 0 auto;border:2px solid #bc9559;border-radius:10px;background:linear-gradient(#191715f5,#11100ef5);box-shadow:inset 0 0 0 1px #4c3520}
+.prFullPanel>.prTrim{display:none}
+.prFullPanel .prPanelInner{height:auto;min-height:100%}
+.prAllAchievements{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 5%;padding:3% 0}
+.prAllAchievements .prMedalArt{max-height:80px}
+.prAppearance{display:flex;flex-direction:column;gap:2px}
+.prAppearanceItem{display:flex;align-items:center;gap:8%;width:100%;min-height:48px;padding:3% 0;border:0;border-bottom:1px solid #bc955933;background:transparent;color:#f8e5c3;text-align:left}
+.prAppearanceItem>.glyph{width:1.8em;height:1.8em;color:#e6b567}
+.prAppearanceItem>.glyph:last-child{width:1em;height:1em;margin-left:auto}
+.prAppearanceItem span{display:flex;flex-direction:column;gap:5px;min-width:0}
+.prAppearanceItem small{font:500 clamp(10px,1cqw,17px)/1.1 Georgia,serif;color:#c7b99e}
+.prAppearanceItem b{font:500 clamp(13px,1.4cqw,24px)/1.15 Georgia,serif}
+.prCollectionLink{display:flex;align-items:center;justify-content:center;gap:10px;color:#f3cb81;background:none;border:1px solid #bc955950;margin:5% 0 0;min-height:44px;font:bold 15px Georgia,serif}
+.prStatistics .prStat{padding:2.6% 0;border-bottom:1px solid #bc955930;gap:4%}
+.prSubheading{margin:5% 0 2%;font:bold clamp(13px,1.4cqw,24px) Georgia,serif;color:#dfbe7c}
+.prTime{display:flex;gap:10px;justify-content:space-between;padding:2% 0;font-size:clamp(11px,1.1cqw,19px)}
+.prCollection{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding-top:2%}
+.prCollectionItem{display:flex;align-items:center;gap:8px;min-height:44px;background:transparent;border:0;border-bottom:1px solid #bc95592b;color:#edddbf;text-align:left;padding:5px 2px;font:500 clamp(12px,1.2cqw,21px)/1.15 Georgia,serif}
+.prCollectionItem>.glyph{width:20px;height:20px;color:#cda45f}
+.prNameLabel{display:block;font-size:14px;margin-bottom:8px}
+.prNameInput{width:100%;padding:12px;border:1px solid #bc9559;background:#151313;color:#fff0ce;font:20px Georgia,serif;min-height:44px}
+/* Metin boyutu yalnız genişliğe değil, kullanılabilir yüksekliğe de uyar. */
+.prOverview .prPanel{min-height:0}
+.prOverview .prPanelInner{padding:min(1.2cqh,8px) 4%;overflow:hidden}
+.prOverview .prPanel h3{font-size:clamp(13px,min(1.72cqw,3.25cqh),32px);line-height:1.1}
+.prOverview .prDivider{font-size:clamp(6px,1.3cqh,11px);margin:.7cqh 0 .6cqh}
+.prOverview .prStat{font-size:clamp(10px,min(1.48cqw,2.65cqh),27px);line-height:1.15;min-height:1.35em}
+.prOverview .prStatGrid{gap:.2cqh 8%}
+.prOverview .prProgressItem{font-size:clamp(9px,min(1.13cqw,2.12cqh),21px);gap:.55cqh;padding:0 2%;min-height:44px}
+.prOverview .prProgressItem>.glyph{height:1.55em;width:1.8em}
+.prOverview .prAchievement{font-size:clamp(9px,min(1.05cqw,2cqh),20px)}
+.prOverview .prAchievement>span{white-space:normal;padding:3% 1%}
+.prOverview .prMedalArt{max-height:10.5cqh}
+html[data-view=profile] #top .resource{font-family:Georgia,serif!important;font-size:clamp(12px,1.65vw,30px)!important}
+html[data-view=profile] #top .resource .hudIcon{width:clamp(18px,2vw,34px);height:clamp(18px,2vw,34px)}
+@media(orientation:landscape) and (max-height:550px){
+ .prNav{top:18%;gap:2cqh}.prNavButton{height:11cqh;min-height:44px;font-size:clamp(13px,1.9cqw,21px)}
+ .prRight{top:13%;bottom:5%;gap:1cqh}.prHeroSummary{height:24%;min-height:68px}
+ .prPanelInner{padding:2% 5%}.prBasics{min-height:79px}.prAwards{min-height:99px}.prAccount{min-height:90px}
+ .prContent{gap:4px}.prIdentity{bottom:5%;height:17%;padding-left:9cqw}.prEdit{min-width:44px;min-height:44px}
+ .prAchievement>span{padding:2% 0}.prMedalArt{max-height:9cqh}.prProgressItem{gap:3px}
+ .prStat{font-size:clamp(11px,1.45cqw,17px)}.prStatGrid{gap:0 7%}.prPanel h3{font-size:clamp(13px,1.7cqw,20px)}
+ .prRegion{padding-top:2%}.prNameLine strong{font-size:2.6cqw}.prCrest>span{font-size:clamp(9px,1.1cqw,13px)}
+}
+@media(orientation:portrait){
+ .prRoom{height:auto;min-height:100svh;overflow:visible;padding:76px 12px 20px;container-type:inline-size}
+ .prBackdrop{position:absolute;height:660px;object-fit:cover;object-position:42% top;background:#171413}
+ .prTop{position:absolute;top:max(9px,env(safe-area-inset-top));left:12px}.prTop h2{font-size:29px}
+ .prNav{position:relative;left:auto;top:auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 285px}
+ .prNavButton{height:48px;font-size:18px}.prNavContent{inset:12% 10%;gap:8px}.prNavContent>img,.prNavContent>.glyph{width:27px;height:27px}
+ .prIdentity{left:8%;top:371px;bottom:auto;width:84%;height:84px;padding-left:24%}.prNameLine strong{font-size:25px}.prRegion{font-size:13px;padding-top:5px}
+ .prRight{position:relative;inset:auto;width:100%;gap:10px}.prHeroSummary{height:110px;min-height:110px}
+ .prHeroNumbers h3{font-size:23px}.prPower{font-size:25px}.prXp{font-size:13px;min-height:20px}.prCrest>span{font-size:12px}
+ .prContent{overflow:visible;gap:10px}.prPanelInner{padding:14px 18px}.prPanel h3{font-size:20px}.prCount{font-size:14px}.prDivider{font-size:10px;margin:5px 0 8px}
+ .prBasics{min-height:130px}.prStat{font-size:16px}.prAwards{min-height:165px}.prMedalArt{max-height:90px}.prAchievement{font-size:12px}
+ .prAccount{min-height:150px}.prProgressItem{font-size:12px;gap:8px}.prProgressItem>.glyph{width:28px;height:28px}.prFullPanel{min-height:360px}
+ .prAppearanceItem small{font-size:12px}.prAppearanceItem b{font-size:17px}.prStatistics .prStat{padding:10px 0}.prSubheading{font-size:18px}.prTime{font-size:14px}
+ .prCollectionItem{font-size:14px}.prAllAchievements{gap:20px 8px}.prCollection{gap:8px}
+ .prContent.prOverview{display:flex;overflow:visible}
+ .prOverview .prPanelInner{padding:14px 18px;overflow:visible}
+ .prOverview .prPanel h3{font-size:20px}.prOverview .prDivider{font-size:10px;margin:5px 0 8px}
+ .prOverview .prStat{font-size:16px}.prOverview .prProgressItem{font-size:12px;gap:8px}
+ .prOverview .prAchievement{font-size:12px}.prOverview .prMedalArt{max-height:90px}
+ .prOverview .prBasics{min-height:130px}.prOverview .prAwards{min-height:165px}.prOverview .prAccount{min-height:150px}
+ html[data-view=profile] .shell,html[data-view=profile] #main{height:auto;min-height:100svh}
+ html[data-view=profile] #top{top:7px;left:auto;max-width:calc(100% - 164px);right:6px;min-height:44px}
+ html[data-view=profile] #top .wallet{gap:0}html[data-view=profile] #top .resource{font-size:12px!important;padding:4px!important;gap:2px;min-height:44px}
+ html[data-view=profile] #top .resource .hudIcon{width:16px;height:20px}
+}
+@media(orientation:landscape) and (max-width:740px){
+ .prOverview .prPanelInner{padding:.9cqh 4%}
+ .prOverview .prMedalArt{max-height:8cqh}
+ .prCrest>span{font-size:8px}
+}

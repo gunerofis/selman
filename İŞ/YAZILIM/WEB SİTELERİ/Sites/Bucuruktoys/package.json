@@ -1,0 +1,43 @@
+{
+  "name": "bucuruktoys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "assets:generate": "node scripts/generate-responsive-images.mjs",
+    "pdf:generate": "python scripts/generate_pdf_catalog.py",
+    "prebuild": "npm run assets:generate",
+    "build": "vinext build",
+    "postbuild": "node scripts/prepare-hosting.mjs",
+    "start": "vinext start",
+    "check": "vinext check",
+    "lint": "vinext lint",
+    "test": "node tests/data.test.mjs",
+    "migration:check": "node scripts/check-migration.mjs",
+    "deploy": "npm run migration:check && npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "next": "16.3.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-server-dom-webpack": "^19.2.6",
+    "vinext": "^1.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.45.1",
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "@vitejs/plugin-rsc": "^0.5.28",
+    "eslint": "^9.22.0",
+    "typescript": "5.8.3",
+    "vite": "^8.1.5"
+  },
+  "overrides": {
+    "postcss": "8.5.23"
+  }
+}

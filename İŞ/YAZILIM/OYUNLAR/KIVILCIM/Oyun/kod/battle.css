@@ -1,0 +1,52 @@
+/* Savaş ve sonuç ekranı — hub dili: koyu taş, eskitilmiş altın, kırmızı mine, fildişi. */
+:root{--k-stone:#17151d;--k-stone2:#2a2630;--k-gold:#bc9559;--k-gold2:#e9c886;--k-rim:#7d6238;--k-red:#983c30;--k-ivory:#f4ead5}
+[data-fight=true] header,[data-view=result] header{display:none}
+[data-fight=true] footer:not(:has(.qaTools)),[data-view=result] footer:not(:has(.qaTools)){display:none}
+[data-fight=true] footer:has(.qaTools){position:fixed;left:0;right:0;bottom:0;z-index:6;background:#0d0c11cc}
+
+.duel{position:fixed;inset:0;z-index:4;background:#0d0c11;font-family:var(--hub-font,Georgia,"Times New Roman",serif);color:var(--k-ivory)}
+.duelStage{position:absolute;inset:0;overflow:hidden}
+.duelStage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.duelStage:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(#0d0c11b0,transparent 22%,transparent 68%,#0d0c11c8)}
+
+.duelTitle{position:absolute;z-index:2;left:max(14px,env(safe-area-inset-left));top:max(9px,env(safe-area-inset-top));display:grid;line-height:1.1;text-shadow:0 1px 3px #000,0 0 8px #000}
+.duelTitle small{font:600 10px/1.3 system-ui,sans-serif;letter-spacing:.14em;color:var(--k-gold2)}
+.duelTitle b{font-size:clamp(16px,2.6vw,24px);font-weight:600}
+
+.duelClock{position:absolute;z-index:2;left:50%;top:max(7px,env(safe-area-inset-top));transform:translateX(-50%);width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle at 50% 32%,#3a3340,#17151d);border:2px solid var(--k-gold);box-shadow:0 0 0 2px var(--k-stone),0 0 0 3px var(--k-rim),0 4px 10px #0009;font-size:19px;font-variant-numeric:tabular-nums;color:var(--k-gold2)}
+
+.duelBtns{position:absolute;z-index:2;right:max(14px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));display:flex;gap:10px}
+.duelBtn{all:unset;box-sizing:border-box;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;cursor:pointer;font:700 19px Georgia,serif;color:var(--k-ivory);background:radial-gradient(circle at 50% 30%,#3a3340,#17151d);border:2px solid var(--k-gold);box-shadow:0 0 0 2px var(--k-stone),0 3px 8px #0009}
+.duelBtn+.duelBtn{background:radial-gradient(circle at 50% 30%,#b04f3c,#6a2a23)}
+.duelBtn:active{transform:translateY(1px);filter:brightness(1.15)}
+.duelBtn:focus-visible{outline:3px solid #ffd990;outline-offset:2px}
+
+.duel .plate,.duel .target{all:unset;box-sizing:border-box;position:absolute;z-index:2;transform:translateX(-50%);width:clamp(66px,17vw,150px);display:grid;gap:3px;justify-items:center;padding:4px 8px 5px;border-radius:10px;background:#17151de0;border:1px solid var(--k-gold);box-shadow:0 3px 8px #0008;text-align:center;pointer-events:none}
+.duel .target[hidden]{display:none}
+.duel .plate b,.duel .target b{font:600 11px/1.2 Georgia,serif;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.duel .hpBar{all:unset;display:block;width:100%;height:7px;border-radius:4px;background:#0b0a0e;box-shadow:inset 0 0 0 1px var(--k-rim);overflow:hidden}
+.duel .hpBar i{all:unset;display:block;height:100%;width:100%;background:linear-gradient(#d0604a,#8f3328);transition:width .18s}
+.duel .heroPlate .hpBar i{background:linear-gradient(#a9d09f,#5f9160)}
+.duel #hpValue,.duel .enemyValue{font:10px/1 system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#d9cfba}
+.duel .target[aria-pressed=true]{border-color:var(--k-gold2);box-shadow:0 0 0 1px var(--k-gold2),0 3px 8px #0008}
+@media(max-height:420px){.duelClock{width:38px;height:38px;font-size:16px}.duelBtn{width:40px;height:40px}.duel .plate,.duel .target{padding:3px 6px 4px}}
+
+/* Sonuç: boyalı avlu üstünde taş-altın levha */
+[data-view=result] .page{position:fixed;inset:0;z-index:4;display:grid;place-items:center;padding:16px;margin:0;max-width:none;overflow:auto;background:linear-gradient(#0d0c11b8,#0d0c11e0),var(--room_arena) center/cover}
+[data-view=result] .pageIn{width:min(560px,100%);max-width:none;margin:0;padding:0}
+[data-view=result] .page .back,[data-view=result] .page .heading{display:none}
+[data-view=result] .receipt{display:grid;gap:12px;justify-items:center;text-align:center;padding:22px 20px;border-radius:16px;background:linear-gradient(#2a2630f5,#17151df5);border:2px solid var(--k-gold);box-shadow:0 0 0 3px var(--k-stone),0 0 0 4px var(--k-rim),0 18px 40px #000b;font-family:var(--hub-font,Georgia,serif);color:var(--k-ivory)}
+[data-view=result] .receipt h1{font-size:clamp(34px,7vw,56px);line-height:1.05;color:var(--k-gold2);text-shadow:0 2px 0 #000}
+[data-view=result] .receipt .kicker{letter-spacing:.16em;color:#d9cfba;font-size:11px}
+[data-view=result] .receipt .stats{display:flex;gap:10px;justify-content:center}
+[data-view=result] .receipt .bigStat{background:#0b0a0e99;border:1px solid var(--k-rim);border-radius:10px;padding:6px 14px;box-shadow:none}
+[data-view=result] .receipt .reward{font-size:18px;background:#0b0a0e99;border:1px solid var(--k-rim);border-radius:10px;padding:8px 14px;color:var(--k-ivory)}
+[data-view=result] .receipt .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+[data-view=result] .receipt .action{background:linear-gradient(#b04f3c,#6a2a23);border:1px solid var(--k-gold);border-radius:22px;color:var(--k-ivory);min-height:44px;padding:8px 18px}
+[data-view=result] .receipt .action.sub{background:linear-gradient(#3a3340,#201d27)}
+
+[data-view=result] .page{align-items:safe center}
+@media(max-height:480px){[data-view=result] .page{padding:8px}[data-view=result] .pageIn{width:min(680px,100%)}[data-view=result] .receipt{padding:10px 16px;gap:6px}[data-view=result] .receipt h1{font-size:30px}[data-view=result] .receipt .bigStat{padding:3px 12px}[data-view=result] .receipt .bigStat b{font-size:18px}[data-view=result] .receipt .reward{font-size:15px;padding:5px 12px}[data-view=result] .receipt .action{min-height:40px;padding:6px 16px}[data-view=result] .receipt hr{display:none}}
+
+/* Alt ekran üst şeridi: hub ile aynı kaynak ikonları */
+.resource .hudIcon{position:static;display:inline-block;width:17px;height:17px;vertical-align:-4px;filter:drop-shadow(0 1px 1px #000)}

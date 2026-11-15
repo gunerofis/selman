@@ -1,0 +1,60 @@
+/* Kıvılcım butonları — 13.11.2026. Görsel kaynaklar: Notlar/GORSEL_DIL.md. */
+:root{--k-control-ink:#fff0c7;--k-control-gold:#e9b75d;--k-control-ring:#fff1b2;--k-control-font:Georgia,"Times New Roman",serif;--k-control-dark:url('../gorsel/arayuz/k_button_dark.svg');--k-control-red:url('../gorsel/arayuz/k_button_red.svg');--k-control-round:url('../gorsel/arayuz/k_button_round.svg');--k-control-selection:url('../gorsel/arayuz/k_selection.svg')}
+/* Tek ölçüde olmayan düğmelerde dokuz dilim köşeleri korur. Ekranlar konum/ölçü sahibidir. */
+html button:is([data-ui=primary],[data-ui=secondary],[data-ui=tab],[data-ui=step]){box-sizing:border-box;isolation:isolate;color:var(--k-control-ink)!important;font-family:var(--k-control-font)!important;font-weight:700;text-align:center;text-shadow:0 1px 2px #130700;letter-spacing:.01em;background:none!important;border:8px solid transparent!important;border-image:var(--k-control-dark) 14 fill / 8px / 0 stretch!important;box-shadow:none!important;border-radius:0!important;clip-path:none!important;cursor:pointer;touch-action:manipulation}
+html button[data-ui=primary],html button[data-ui=tab][aria-pressed=true]{border-image-source:var(--k-control-red)!important}
+html button:is([data-ui=primary],[data-ui=secondary],[data-ui=tab],[data-ui=step]):before,html button:is([data-ui=primary],[data-ui=secondary],[data-ui=tab],[data-ui=step]):after{display:none!important}
+html button.refHit:is([data-ui=primary],[data-ui=secondary],[data-ui=tab],[data-ui=step]){display:flex;align-items:center;justify-content:center;gap:.4cqw;padding:.25cqw .65cqw;font-size:1.55cqw;line-height:1.1;min-width:0;min-height:0}
+html button.refHit[data-ui=primary]{font-size:1.9cqw}
+html .kButtonLabel{position:static;display:inline-flex;align-items:center;justify-content:center;gap:.45cqw;max-width:100%;background:none;border:0;line-height:1.1;pointer-events:none}
+html .kButtonLabel svg{width:1.55em;height:1.55em;flex:none}
+html .kButtonLabel b{font:inherit}
+html button[data-ui=tab]{display:inline-flex;align-items:center;justify-content:center;gap:.4em;line-height:1.1}
+html button[data-ui=tab][aria-pressed=true]{color:#fff4cf!important;filter:drop-shadow(0 0 3px #e8a64066)}
+html button:is([data-ui=back],[data-ui=icon]){display:grid;place-items:center;background:var(--k-control-round) center/100% 100% no-repeat!important;border:0!important;border-radius:50%!important;color:var(--k-control-ink)!important;box-shadow:none!important;padding:6px!important;aspect-ratio:1;clip-path:none!important}
+html button.refHit:is([data-ui=back],[data-ui=icon]){padding:.8cqw!important}
+html button[data-ui=back]:not(.refHit){width:44px;height:44px;min-width:44px;padding:9px!important}
+html button:is([data-ui=back],[data-ui=icon]) .kButtonLabel{width:100%;height:100%}
+html button:is([data-ui=back],[data-ui=icon]) svg{width:100%;height:100%}
+html button[data-ui=step]{font-size:2cqw!important;padding:0!important}
+html .collectionTab{font-size:1.45cqw!important;padding:.25cqw .6cqw;gap:.4cqw!important;min-width:0}
+.kTabIcon{display:inline-flex;align-items:center;justify-content:center;width:2.4cqw;height:2.4cqw;flex:none}.kTabIcon img,.kTabIcon svg{width:100%;height:100%;object-fit:contain}
+html .collectionReferenceLayout .collectionTabs{gap:.2cqw;background:#15100c}
+html button[data-ui=card][aria-pressed=true],html button[data-ui=card]:is(.selected,.on){outline:2px solid var(--k-control-gold);outline-offset:-2px;box-shadow:inset 0 0 8px #f4ad4944,0 0 5px #e9b75d66!important}
+html button[data-ui=card]:is(.collectionCard,.forgeReferenceCategory,.shopCard,.savasBossCard){border-image:var(--k-control-selection) 16 / 7px / 0 stretch}
+html button[data-ui=card]:is(.collectionCard,.forgeReferenceCategory,.shopCard,.ctCell){border-radius:3px}
+html button[data-ui=wallet]{cursor:pointer;touch-action:manipulation}
+html button[data-ui=scene]{touch-action:manipulation}
+html button[data-ui]:focus-visible{outline:2px solid var(--k-control-ring)!important;outline-offset:2px!important;filter:brightness(1.12);z-index:8}
+html button[data-ui]:disabled{cursor:default!important;filter:saturate(.2) brightness(.62)!important;opacity:1!important}
+@media(hover:hover){html button[data-ui]:hover:not(:disabled){filter:brightness(1.17)}html button[data-ui=card]:hover:not(:disabled){outline:1px solid var(--k-control-gold);outline-offset:-1px}}
+html button[data-ui]:active:not(:disabled){filter:brightness(.9);translate:0 1px}
+html button[data-ui=switch]{border-radius:18px;color:var(--k-control-ink)}
+html .panelSwitch{border:1px solid var(--k-control-gold);background:#30251b}.panelSwitch.on{background:#354421}.panelSwitch i{background:linear-gradient(#fff0af,#df9b35);border-color:#c78a35}
+html #modal button[data-ui]{min-height:40px;font-size:15px;padding:4px 18px}
+html .collectionAction,html .guildLiveAction{padding:.55cqw .7cqw}
+html .guildTextAction{padding:.15cqw .6cqw!important;min-height:1.7cqw}
+html .collectionEquipFloat button{border-image-source:var(--k-control-dark)!important}
+html .developerButton{padding:3px 10px;font-size:12px;min-height:30px}
+html .collectionToggle{padding:.3cqw .55cqw}
+html .ctAction,html .ctSmallButton,html .ctSort{padding:4px 12px}
+html .ctTab{padding:5px 7px;gap:4px}
+@media(orientation:landscape) and (max-height:550px){html button.refHit:is([data-ui=primary],[data-ui=secondary],[data-ui=tab]){border-width:5px!important;border-image-width:5px!important;padding:.1cqw .45cqw}html .collectionTab{border-width:5px!important;border-image-width:5px!important}html #modal button[data-ui]{min-height:36px}}
+@media(prefers-reduced-motion:no-preference){html[data-motion=true] button[data-ui]{transition:filter .12s ease,translate .08s ease}}
+@media(prefers-reduced-motion:reduce){html button[data-ui]{transition:none!important;translate:none!important;transform:none!important}}
+
+html button.refHit[data-act=marketShopFilter]{font-size:1.25cqw;padding-inline:.2cqw}
+html button.refHit[data-act=marketShopFilter] .kButtonLabel svg{width:1.2em;height:1.2em}
+
+@media(orientation:landscape) and (max-height:550px){html .developerButton{right:2px;bottom:2px;max-width:82px;min-height:26px;font-size:9px;white-space:normal;padding:2px 5px;border-width:5px!important;border-image-width:5px!important}}
+html button[data-act=developerToggle][aria-pressed=true]{border-image-source:var(--k-control-red)!important}
+
+/* Çanta başlığındaki boş alan: geliştirme kontrolü eşya işlemlerini örtmez. */
+html[data-view=bag] .developerButton{left:40%;right:auto;top:8px;bottom:auto}
+@media(max-width:600px) and (orientation:portrait){html .ctTab{border-width:5px!important;border-image-width:5px!important;padding:4px 2px;font-size:11px}html .ctTab span{white-space:nowrap}html .ctTab .glyph{width:18px;height:18px}}
+
+html button[data-ui=primary]{text-transform:uppercase}
+
+/* Kilitli koleksiyonların uzun işlem adları aynı plakaya sığar. */
+html .collection-titles .collectionAction{font-size:1.5cqw!important;padding:.4cqw!important}
+html .collectionEquipFloat .collectionAction{font-size:1.12cqw!important;padding:.2cqw!important}

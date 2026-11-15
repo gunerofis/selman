@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><rect width="700" height="700" fill="#E7E1D8"/>
+    <ellipse cx="350" cy="580" rx="150" ry="14" fill="#1B1714" opacity="0.08"/>
+    <polygon points="250,150 430,150 470,190 430,230 250,230" fill="#1B1714"/>
+    <polygon points="230,230 450,230 500,320 500,540 210,540 210,320" fill="#D5D0CB" stroke="#1B1714" stroke-opacity=".25" stroke-width="3"/>
+    <polygon points="270,300 420,300 450,360 450,500 250,500 250,360" fill="#5C534C"/>
+    <rect x="390" y="248" width="78" height="16" fill="#9C2E2E"/>
+    <circle cx="300" cy="420" r="5" fill="#F3EFE8"/>
+    <circle cx="340" cy="450" r="5" fill="#F3EFE8"/>
+    <circle cx="380" cy="400" r="5" fill="#F3EFE8"/>
+  <text x="350" y="662" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#1B1714" opacity="0.38" letter-spacing="5">ÖRNEK</text></svg>

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Sweb — düzen ürünleri",
+      "hasCanvas": false,
+      "bodyTextLen": 2059,
+      "bodyTextHash": "3182ee98bc7ddb0aee0518559f45c0af01c0da9830941591d31ad629290b33b4",
+      "bodyTextPrefix": "İçeriğe geç 5.000 ₺ üzeri kargo yok · 3–5 iş günü · 14 gün iade ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Sweb — düzen ürünleri",
+      "hasCanvas": false,
+      "bodyTextLen": 1911,
+      "bodyTextHash": "99caf19219cc7091be0f2894a6568c4693476162d3568ffc49cc4e6be371dd98",
+      "bodyTextPrefix": "İçeriğe geç 5.000 ₺ üzeri kargo yok · 3–5 iş günü · 14 gün iade ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

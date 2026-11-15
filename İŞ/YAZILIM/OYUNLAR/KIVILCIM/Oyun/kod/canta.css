@@ -1,0 +1,84 @@
+/* Envanter referansları: geniş ızgara, koyu taş, altın kenarlar ve ayrı eşya vitrini. */
+.ctRoom{--ct-gold:#d3ab69;--ct-ink:#171419;--ct-cream:#fff0d3;font-family:Georgia,"Times New Roman",serif;color:var(--ct-cream)}
+.ctBackdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.ctVeil{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#151013c9,#17101645),linear-gradient(0deg,#0e0b11b8,transparent 70%);pointer-events:none}
+.ctRoom .roomTop h2{display:flex;align-items:center;gap:10px;font-size:clamp(24px,3.1vw,48px)}
+.ctRoom .roomTop h2>.glyph{width:1em;height:1em;color:#e7bd78}
+.ctLayout{position:absolute;inset:75px max(16px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom));display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,27%);gap:16px;min-height:0}
+.ctInventory{display:flex;flex-direction:column;gap:10px;min-width:0;min-height:0}
+.ctTabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;flex-shrink:0;min-height:58px}
+.ctTab,.ctAction,.ctSmallButton{position:relative;isolation:isolate;border:1px solid #d4ad68;box-shadow:inset 0 0 0 2px #3e2e22,inset 0 0 0 3px #a7813b65,0 3px 5px #0007;background:linear-gradient(145deg,#36302b,#111114 65%);color:#ffedc7;touch-action:manipulation;text-shadow:0 2px 2px #000;font-family:Georgia,serif;clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 10px) 100%,10px 100%,0 calc(100% - 12px),0 12px)}
+.ctTab{min-height:52px;padding:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:clamp(12px,1.5vw,22px);font-weight:700}
+.ctTab>.glyph{width:25px;height:25px;color:#eac17e}
+.ctTab.selected,.ctAction.primary{background:linear-gradient(135deg,#b95128,#791c15 52%,#3e0c0d);color:#fff0cd;border-color:#ffe2a1}
+.ctTab.selected{filter:drop-shadow(0 0 5px #dc8d2a66)}
+.ctPanel{position:relative;min-width:0;min-height:0;border:2px solid #b79053;border-radius:9px;background:linear-gradient(135deg,#292228f5,#121014f5 55%,#211a20f5);box-shadow:inset 0 0 0 2px #110d0e,inset 0 0 0 3px #d2a45b55,0 5px 15px #0008}
+.ctPanel:before{content:"";position:absolute;inset:5px;border:1px solid #a47b403d;border-radius:4px;pointer-events:none}
+.ctStorage{flex:1;display:flex;flex-direction:column;padding:8px 12px;overflow:hidden}
+.ctToolbar{display:flex;align-items:center;gap:12px;padding:0 3px 8px;border-bottom:1px solid #b8904d77;flex-shrink:0;min-height:44px}
+.ctCount{display:flex;align-items:center;gap:8px;color:#efc990;font-size:19px;min-width:55px}
+.ctCount>.glyph{width:25px;height:25px}
+.ctSearch{display:flex;align-items:center;gap:7px;flex:1;min-width:0;border:1px solid #8e703f;border-radius:20px;background:#110f13b5;padding:5px 11px;color:#e6ba73}
+.ctSearch>.glyph{width:20px;height:20px}
+.ctSearch input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#fff0cf;font:16px Georgia,serif;height:26px}
+.ctSearch input::placeholder{color:#b9a98f}
+.ctSearch:focus-within{outline:2px solid #edc47a;outline-offset:1px}
+.ctSort{display:flex;align-items:center;justify-content:center;gap:7px;min-height:38px;min-width:128px;padding:6px 12px;border:1px solid #ad844a;border-radius:20px;background:#171316;color:#e8d3ae;font:15px Georgia,serif}
+.ctSort>.glyph{width:19px;height:19px;color:#e7b66f}
+.ctGrid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));align-content:start;gap:9px;overflow:auto;min-height:0;flex:1;padding:14px 4px 12px;scrollbar-width:thin;scrollbar-color:#b4874e #181219}
+.ctCell{position:relative;border:0;border-radius:5px;background:none;display:grid;place-items:center;min-width:0;min-height:44px;aspect-ratio:1;padding:2px;color:#fff0d4;touch-action:manipulation}
+.ctCell>.gxCell{--cell:100%;width:100%;height:100%;aspect-ratio:1;border-radius:4px}
+.ctCell .gxCell i{font:700 clamp(10px,1.35vw,20px)/1 Georgia,serif;left:6px;bottom:5px}
+.ctCell .gxCell b{font:700 clamp(12px,1.5vw,22px)/1 Georgia,serif;right:5px;bottom:5px;top:auto}
+.ctCell.selected{outline:2px solid #ffcf64;outline-offset:-1px;box-shadow:0 0 12px #d58b2a77}
+.ctCell.selected:after{content:"";position:absolute;inset:1px;border:1px solid #fff2bc;border-radius:4px;pointer-events:none}
+.ctCell.ctEmpty{margin:2px;border:1px solid #57424a;background:linear-gradient(135deg,#1e171e,#151116);box-shadow:inset 0 0 0 3px #100d11,inset 0 0 0 4px #49343a55;opacity:.8}
+.ctEquipped{position:absolute;top:5px;right:5px;display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#25180be8;color:#ffe197;border:1px solid #a17d39}
+.ctEquipped>.glyph{width:14px;height:14px}
+.ctFoot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0;min-height:42px;border-top:1px solid #9b723e77;padding:7px 3px 0;color:#ead4ab;font-size:16px}
+.ctFoot>span{display:flex;align-items:center;gap:8px}
+.ctFoot .glyph{width:21px;height:21px;color:#e2b572}
+.ctSmallButton{display:flex;align-items:center;gap:7px;justify-content:center;font-size:15px;padding:6px 20px;min-height:36px}
+.ctDetail{display:flex;align-items:center;flex-direction:column;gap:9px;padding:20px 19px;overflow:auto;scrollbar-width:thin;scrollbar-color:#b4874e #181219}
+.ctPreview{display:grid;place-items:center;flex-shrink:0;width:clamp(70px,10vw,145px);height:clamp(70px,10vw,145px);padding:7px;margin:0 auto 5px;background:radial-gradient(ellipse,#b18a3c24,transparent 72%)}
+.ctPreview>.gxCell{--cell:100%;width:100%;height:100%;border-radius:4px}
+.ctPreview .gxCell i,.ctPreview .gxCell b{font:700 18px Georgia,serif}
+.ctDetail>h3{font:700 clamp(17px,1.9vw,29px)/1.15 Georgia,serif;text-align:center;margin:0;flex-shrink:0}
+.ctItemType{color:#e4ba78;font-size:clamp(12px,1.3vw,19px);text-align:center;flex-shrink:0}
+.ctRarity{font-size:14px;color:var(--c);border-block:1px solid #a17a3e88;padding:4px 22px;margin-top:2px}
+.ctWorn{display:flex;align-items:center;gap:5px;color:#f7d594;font-size:14px}
+.ctWorn>.glyph{width:17px;height:17px}
+.ctItemStats{width:100%;padding:10px 0;border-block:1px solid #a5804566;margin-top:3px;flex-shrink:0}
+.ctStat{display:flex;align-items:center;gap:8px;font-size:clamp(13px,1.5vw,21px);padding:7px 0}
+.ctStat>.glyph{color:#e0ae64;width:22px;height:22px}
+.ctStat>b{font-weight:500;margin-left:auto}
+.ctStat>em{font-size:.9em;font-style:normal}.ctStat .up{color:#98ce76}.ctStat .down{color:#ec8d7c}
+.ctDetailActions{display:flex;flex-direction:column;gap:9px;width:100%;margin-top:auto;padding-top:12px;flex-shrink:0}
+.ctAction{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;min-height:48px;padding:8px 16px;font-size:clamp(16px,1.8vw,26px);font-weight:700}
+.ctAction>.glyph{width:25px;height:25px;color:#edc987}
+.ctAction small{display:flex;align-items:center;gap:4px;color:#d6bd92;font:13px Georgia,serif}
+.ctAction small>.glyph{width:15px;height:15px}
+.ctNoSelection{display:grid;place-items:center;flex:1;color:#987e5b}.ctNoSelection>.glyph{width:70px;height:70px}
+.ctRoom button:hover:not(:disabled){filter:brightness(1.15)}
+.ctRoom button:focus-visible{outline:3px solid #ffe4a7;outline-offset:2px}
+@media(orientation:landscape) and (max-height:550px){.ctLayout{inset:59px 10px 9px;gap:10px;grid-template-columns:minmax(0,1fr) minmax(200px,28%)}.ctTabs{min-height:44px;gap:4px}.ctTab{min-height:44px;flex-direction:row;gap:5px;font-size:12px}.ctTab>.glyph{width:18px;height:18px}.ctInventory{gap:6px}.ctGrid{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;padding-top:9px}.ctToolbar{gap:6px;min-height:36px;padding-bottom:5px}.ctCount{font-size:14px;min-width:38px}.ctCount>.glyph{width:19px;height:19px}.ctSort{min-width:89px;font-size:11px;padding:4px 7px;min-height:32px}.ctSort>.glyph{width:14px;height:14px}.ctSearch{padding:2px 7px}.ctSearch input{font-size:13px;height:25px}.ctDetail{padding:12px;gap:5px}.ctPreview{width:66px;height:66px;padding:3px;margin:0}.ctDetail>h3{font-size:17px}.ctItemType{font-size:12px}.ctRarity{font-size:11px;padding:2px 15px}.ctItemStats{padding:4px 0;margin:0}.ctStat{font-size:12px;padding:4px 0}.ctStat>.glyph{width:17px;height:17px}.ctDetailActions{gap:5px;padding-top:6px}.ctAction{min-height:44px;font-size:16px;padding:5px 10px}.ctFoot{min-height:36px;padding-top:4px;font-size:12px}.ctSmallButton{font-size:12px;min-height:32px;padding:4px 13px}}
+@media(orientation:portrait){.ctRoom{height:auto;min-height:100svh;padding-bottom:14px}.ctLayout{position:relative;inset:auto;display:flex;flex-direction:column;padding:105px 10px 0;gap:12px}.ctInventory{min-height:520px}.ctStorage{min-height:440px}.ctGrid{grid-template-columns:repeat(5,minmax(0,1fr));max-height:420px;gap:6px}.ctTabs{min-height:52px;gap:3px}.ctTab{font-size:11px;padding:4px}.ctTab>.glyph{width:21px;height:21px}.ctToolbar{gap:6px}.ctCount{font-size:15px;min-width:38px}.ctSearch input{font-size:14px}.ctSort{font-size:11px;min-width:93px;padding:4px 6px}.ctSort>.glyph{width:14px;height:14px}.ctDetail{min-height:310px;padding:18px}.ctPreview{width:100px;height:100px}.ctDetail>h3{font-size:23px}.ctItemType{font-size:15px}.ctItemStats{max-width:320px}.ctStat{font-size:17px}.ctDetailActions{max-width:320px}.ctAction{font-size:20px}.ctRoom .roomTop{max-width:50%}.ctRoom .roomTop h2{font-size:25px}.ctRoom .roomTop h2>.glyph{display:none}html[data-view=bag] .shell,html[data-view=bag] #main{height:auto;min-height:100svh}html[data-view=bag] #top{left:auto;right:8px;max-width:calc(100% - 150px)}html[data-view=bag] #top .wallet{gap:0}html[data-view=bag] #top .resource{font-size:11px!important;padding:3px!important;gap:1px}html[data-view=bag] #top .resource .hudIcon{width:16px;height:18px}}
+
+/* Boş kategori ve arama geri bildirimi. */
+.ctEmptyMessage{grid-column:1/-1;text-align:center;color:var(--ct-cream);padding:14px 8px;margin:0;font:16px Georgia,serif}
+.ctNoSelection{flex-direction:column;align-content:center;justify-items:center;gap:12px;text-align:center}.ctNoSelection p{margin:0;font:16px Georgia,serif}
+@media(orientation:landscape) and (max-height:550px){.ctEmptyMessage{font-size:13px;padding:8px}}
+
+/* Kalabalık çantada kareler satırları sıkıştırmaz; liste kaydırılır. */
+.ctGrid{grid-auto-rows:max-content}
+
+.ctDetail>h3{max-width:100%;white-space:normal;overflow-wrap:anywhere}.ctCell .gxCell b{top:5px;bottom:auto}.ctEquipped{left:5px;right:auto}
+@media(orientation:landscape) and (max-height:550px){.ctDetailActions{padding-bottom:22px}}
+
+@media(orientation:portrait){
+ .ctInventory{min-height:0;flex:none}.ctStorage{min-height:340px;max-height:380px}.ctGrid{max-height:260px}
+ .ctFoot{display:grid;grid-template-columns:1fr 1fr;gap:6px}.ctFoot>span{grid-column:1/-1;justify-content:center}.ctSmallButton{padding:6px;font-size:12px;white-space:nowrap;min-height:38px}
+ html[data-view=bag] #top{top:58px;left:10px;right:10px;width:auto;max-width:none;justify-content:flex-end}
+ html[data-view=bag] #top .wallet{width:auto;max-width:none;justify-content:flex-end;gap:5px}
+ html[data-view=bag] #top .resource{flex:0 0 auto;white-space:nowrap;min-width:0;font-size:12px!important}
+}

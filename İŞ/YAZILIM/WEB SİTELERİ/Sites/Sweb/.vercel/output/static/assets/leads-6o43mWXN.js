@@ -1,0 +1,1 @@
+function e(e){return!!e?.trim()}function t(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.trim())}function n(e){let n=e.trim();if(!n)return`E-posta girin.`;if(!n.includes(`@`))return`E-postada @ eksik.`;let r=n.indexOf(`@`),i=n.slice(r+1);return i?i.includes(`.`)?t(n)?``:`Geçerli e-posta girin.`:`Alan adı uzantısı eksik (.com gibi).`:`@ sonrası eksik.`}export{t as n,e as r,n as t};

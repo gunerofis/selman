@@ -1,0 +1,10 @@
+.lead-form > .lead-privacy-note {
+  margin: 0 0 22px;
+  padding: 13px 15px;
+  border: 1px solid #d59b54;
+  border-radius: 12px;
+  background: #fff3df;
+  color: #65420f;
+  font-size: .78rem;
+  line-height: 1.5;
+}

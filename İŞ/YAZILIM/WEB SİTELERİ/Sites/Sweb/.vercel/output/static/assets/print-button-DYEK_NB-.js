@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-CP8wJgJA.js";import{t}from"./button-BXVzE0Q3.js";var n=e();function r({label:e=`Yazdır`}){return(0,n.jsx)(t,{type:`button`,variant:`outline`,size:`sm`,onClick:()=>window.print(),children:e})}export{r as t};

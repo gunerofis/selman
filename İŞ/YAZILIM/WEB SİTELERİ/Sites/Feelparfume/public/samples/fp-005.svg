@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><rect width="700" height="700" fill="#E7E1D8"/>
+    <ellipse cx="350" cy="575" rx="180" ry="14" fill="#1B1714" opacity="0.08"/>
+    <rect x="286" y="168" width="128" height="36" fill="#4A3A28"/>
+    <rect x="314" y="140" width="72" height="32" fill="#2A241C"/>
+    <rect x="160" y="204" width="380" height="330" fill="#2E2926" stroke="#1B1714" stroke-opacity=".35" stroke-width="3"/>
+    <rect x="200" y="260" width="300" height="210" fill="#6B2433"/>
+    <path d="M280 330 q30 -40 16 -70 M340 340 q28 -36 10 -64 M400 336 q26 -32 8 -58" fill="none" stroke="#E7D3C4" stroke-width="3"/>
+  <text x="350" y="662" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#1B1714" opacity="0.38" letter-spacing="5">ÖRNEK</text></svg>

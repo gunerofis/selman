@@ -1,0 +1,88 @@
+/* Hub-only skin, measured against the supplied 1672 x 941 reference. */
+html[data-hub=true]{--hub-font:Georgia,'Times New Roman',serif}
+html[data-hub=true] body{overflow:hidden;background:#15181d}
+html[data-hub=true] .shell{position:relative;width:100%;max-width:none;height:100svh;min-height:0}
+html[data-hub=true] #main{height:100%;min-height:0}
+html[data-hub=true] #foot{display:none}
+html[data-hub=true] #top{position:absolute;inset:0 0 auto;display:block;height:15%;min-height:0;padding:0;border:0;background:none;z-index:6;pointer-events:none}
+html[data-hub=true] #top button{pointer-events:auto}
+html[data-hub=true] .hub{height:100svh;min-height:0;max-height:none;padding:0;display:block;overflow:hidden}
+html[data-hub=true] .hub:before{background:linear-gradient(0deg,#14151e78,transparent 31%,transparent 89%,#17131855)}
+html[data-hub=true] .hubArt{inset:0}
+.hubFrame{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;filter:drop-shadow(0 3px 2px #090608b0)}
+html[data-hub=true] .side{position:absolute;left:1.5%;top:17%;bottom:30%;width:19.3%;display:flex;flex-direction:column;gap:1.05svh;margin:0;align-self:auto}
+html[data-hub=true] .side.right{left:auto;right:1%;top:11%;bottom:31%;width:19%}
+html[data-hub=true] .navBtn{position:relative;flex:1;min-height:0;height:auto;width:100%;border:0;background:none;box-shadow:none;padding:0;gap:0;color:#fff9e9;isolation:isolate;font:700 clamp(13px,1.95vw,34px)/1 var(--hub-font);text-shadow:0 2px 2px #000,1px 0 2px #000;touch-action:manipulation}
+.hubButtonContent{position:relative;display:flex;align-items:center;justify-content:center;height:100%;gap:3%;padding:6% 7%;z-index:1}
+html[data-hub=true] .navBtn .hubButtonContent img{width:26%;height:135%;object-fit:contain;mix-blend-mode:normal;filter:drop-shadow(0 2px 2px #000);flex-shrink:0}
+html[data-hub=true] .navBtn b{flex:1;text-align:center;white-space:nowrap;letter-spacing:-.035em}
+html[data-hub=true] .navBtn:hover,html[data-hub=true] .mode:hover{filter:brightness(1.12)}
+html[data-hub=true] .navBtn:active,html[data-hub=true] .mode:active{transform:scale(.98)}
+html[data-hub=true] .modes{position:absolute;left:15%;right:13%;bottom:4.1%;height:25%;display:flex;align-items:end;justify-content:center;gap:1%;padding:0}
+html[data-hub=true] .mode.crestMode{position:relative;flex:1;height:86%;min-width:0;padding:0;border:0;box-shadow:none;background:none;display:block;text-align:center;color:#ffe3a5;font:700 clamp(21px,3vw,52px)/1 var(--hub-font);text-shadow:0 3px 2px #0c0604,2px 0 2px #000;isolation:isolate}
+html[data-hub=true] .mode.primary{height:109%;flex:1.45;min-width:0;background:none;border:0;color:#fff1c0;font-size:clamp(28px,4vw,70px)}
+html[data-hub=true] .crestMode .hubButtonContent{padding:9% 8% 5%;display:flex;flex-direction:column;gap:0;justify-content:space-between;overflow:hidden}
+html[data-hub=true] .crestMode img{height:62%;width:72%;object-fit:contain;mix-blend-mode:normal;filter:drop-shadow(0 3px 3px #000)}
+html[data-hub=true] .crestMode b{display:block;position:relative;padding:3% 0 6%;white-space:nowrap;width:100%}
+html[data-hub=true] .mode.primary .hubButtonContent:before{content:'';position:absolute;left:8%;right:8%;bottom:11%;height:29%;background:linear-gradient(135deg,#3e0f0c,#a8251a 48%,#400d0c);border-block:1px solid #bd813c;z-index:-1;clip-path:polygon(0 0,100% 0,98% 85%,50% 100%,2% 85%)}
+html[data-hub=true] .mode.primary:after{content:'';position:absolute;z-index:-2;left:9%;right:9%;height:45%;bottom:-5%;background:linear-gradient(90deg,#641a14 0 13%,transparent 13% 87%,#751b14 87%);clip-path:polygon(0 0,100% 0,99% 100%,90% 83%,87% 100%,13% 100%,10% 83%,1% 100%)}
+html[data-hub=true] .bag{position:fixed;left:1%;bottom:2.2%;width:6.4vw;height:6.4vw;max-width:120px;max-height:120px;min-width:44px;min-height:44px;padding:10px;border:3px solid #e4ba76;border-radius:50%;background:radial-gradient(circle at 35% 25%,#3c3b35,#0e1217 70%);box-shadow:inset 0 0 0 3px #241910,inset 0 0 0 5px #9c713d,0 3px 4px #000;display:grid;place-items:center;z-index:3}
+html[data-hub=true] .bag img{width:100%;height:100%;mix-blend-mode:normal;object-fit:contain}
+.hubDot{position:absolute;width:9%;aspect-ratio:1;right:9%;top:0;border-radius:50%;border:2px solid #ffe795;background:radial-gradient(circle at 38% 28%,#ff6c41,#ef160a 45%,#9a0706 85%);box-shadow:0 1px 4px #000;z-index:3}
+.heroProfile{position:absolute;left:.6%;top:1svh;width:26%;height:13svh;padding:0;border:0;background:none;display:flex;align-items:start;color:#fff4dc;text-align:left;font-family:var(--hub-font);min-height:48px}
+.portraitMedal{position:relative;width:31%;aspect-ratio:1;flex-shrink:0;border:3px solid #e8b563;border-radius:50%;background:#181d21;box-shadow:inset 0 0 0 3px #37251a,inset 0 0 0 5px #f8d596,0 0 0 2px #27150d,0 3px 6px #080707;isolation:isolate}
+.portraitMedal:before,.portraitMedal:after{content:'';position:absolute;top:43%;left:-6%;width:12%;height:12%;background:#f9dc9b;transform:rotate(45deg);border:2px solid #663c1e}.portraitMedal:after{left:auto;right:-6%}
+.portraitMedal img{position:absolute;inset:5%;width:90%;height:90%;object-fit:cover;border-radius:50%}
+.portraitMedal i{position:absolute;inset:-5%;border:1px solid #f5d38b;border-radius:50%;pointer-events:none}
+.portraitMedal em{position:absolute;left:9%;right:9%;bottom:-7%;font:700 clamp(7px,.9vw,17px)/1.3 var(--hub-font);text-align:center;background:linear-gradient(#da3425,#6c100b);color:#ffedc1;border-block:2px solid #d39846;clip-path:polygon(0 0,100% 0,92% 90%,50% 100%,8% 90%);padding:2% 0 5%;z-index:2}
+.heroIdentity{width:69%;display:flex;flex-direction:column;gap:.5svh;padding:0 0 0 3%;height:100%;text-shadow:0 2px 2px #000}
+.heroName{position:relative;min-height:32%;display:flex;align-items:center;gap:7%;padding:0 6%;font-size:clamp(10px,1.45vw,26px);white-space:nowrap}
+.heroName>*:not(svg){position:relative}.heroName .hubFrame{inset:-3% -5%;width:110%;height:110%}.heroName strong{overflow:hidden;text-overflow:ellipsis}
+.heroPower{display:flex;align-items:center;gap:4%;font-weight:700;font-size:clamp(11px,1.65vw,29px);color:#ffe56f;white-space:nowrap;background:linear-gradient(90deg,transparent,#121216bb,transparent)}.heroPower .glyph{width:10%;height:auto;color:#ffd28c}
+.heroExperience{position:relative;height:21%;min-height:13px;border:2px solid #dcb46a;background:#10121c;clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%);display:flex;align-items:center;justify-content:space-between;gap:2%;padding:0 4%;font-size:clamp(7px,.97vw,18px);line-height:1;color:#fff;white-space:nowrap}
+.heroExperience>i{position:absolute;left:0;top:0;height:100%;background:linear-gradient(#df8aff,#8b0bd8 42%,#55019e 70%,#c942ef);min-width:0}.heroExperience b{color:#ffec6f;font-size:1.2em;position:relative}.heroExperience>span{position:relative}
+.hubWallet{position:absolute;left:27%;right:24%;top:.6svh;height:5.8svh;display:flex;align-items:center;gap:1.4%}
+.hubResource{position:relative;min-width:0;height:100%;flex:1;border:0;background:none;padding:0 7% 0 22%;display:flex;align-items:center;justify-content:center;color:#fff6e4;font:700 clamp(9px,1.4vw,25px)/1 var(--hub-font);text-shadow:0 2px 2px #000;font-variant-numeric:tabular-nums}
+.hubResource .hubFrame{inset:3% -1%;width:102%;height:94%}
+.hudIcon{position:absolute;left:-4%;top:-8%;width:29%;height:116%;filter:drop-shadow(0 2px 2px #000)}
+.hubResource>b{position:relative;white-space:nowrap}.hubResource>small{position:absolute;right:6%;font:700 clamp(16px,2.2vw,37px)/1 system-ui;color:#e6a764;text-shadow:0 1px #ffe6b0,0 3px 2px #000}
+.hubChapter{position:absolute;left:76.4%;top:.6svh;width:11%;height:6.2svh;background:none;border:0;display:flex;align-items:center;justify-content:center;gap:4%;padding:0 8px;color:#fff3d9;font:700 clamp(8px,1vw,18px)/1 var(--hub-font)}
+.hubChapter>span{position:relative}.hubChapter>span:last-child{display:flex;flex-direction:column;gap:3px;white-space:nowrap}.hubChapter small{display:flex;justify-content:center;gap:3px;font:normal clamp(8px,1vw,16px) Georgia}.hubChapter small i{font-style:normal;color:#615c59;text-shadow:0 -1px #d3c5a4}.hubChapter small i.done{color:#ffcf5a}.chapterMountain{font-size:clamp(17px,2.2vw,38px);color:#d9b76a;text-shadow:0 -5px #fff1ce,0 3px #64411e}
+.hubTools{position:absolute;left:88.2%;right:.6%;top:.5svh;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.hubTool{position:relative;width:31%;aspect-ratio:1;border:2px solid #b5884e;border-radius:50%;padding:16%;padding:7px;display:grid;place-items:center;background:radial-gradient(circle at 35% 20%,#4b4539,#15181b 70%);color:#efc493;box-shadow:inset 0 0 0 2px #1c1511,0 2px 4px #090607}
+.hubTool>.glyph{width:100%;height:100%;stroke-width:1.9;filter:drop-shadow(0 2px 1px #000)}.hubTool .hubDot{width:34%;right:-2%;top:-6%;border-width:1px}
+html[data-hub=true] #top button:hover{filter:brightness(1.12)}
+html[data-hub=true] button:focus-visible{outline:3px solid #fff0b2;outline-offset:3px}
+@media(orientation:landscape) and (max-height:520px){.heroProfile{top:1%;height:14svh}.heroExperience{min-height:11px;border-width:1px}.portraitMedal{border-width:2px}.portraitMedal em{border-width:1px}.hubResource{padding-right:15%;padding-left:17%}.hubWallet{height:7.7svh}.hubResource .hudIcon{width:31%;left:-6%}.hubChapter{height:7.7svh}.hubTools{gap:3px}.hubTool{border-width:1px;padding:5px}.heroName{min-height:35%}.hubDot{border-width:1px}html[data-hub=true] .side{gap:.7svh;bottom:29%}html[data-hub=true] .side.right{gap:.7svh;bottom:30%}html[data-hub=true] .bag{padding:6px;border-width:2px}}
+@media(orientation:portrait){html[data-hub=true] .side{top:24%;bottom:30%;left:1%;width:29%;gap:8px}html[data-hub=true] .side.right{top:21%;bottom:30%;right:1%;width:29%;gap:7px}html[data-hub=true] .navBtn{font-size:13px}html[data-hub=true] .hubButtonContent{padding:8%}html[data-hub=true] .navBtn .hubButtonContent img{width:30%}.heroProfile{width:66%;height:12svh}.heroName{font-size:15px}.heroPower{font-size:17px}.heroExperience{font-size:10px}.portraitMedal em{font-size:9px}.hubWallet{top:14svh;left:2%;right:2%;height:4.5svh;gap:3%}.hubResource{font-size:12px;padding-left:15%;padding-right:16%}.hubResource>small{font-size:21px}.hubChapter{left:auto;right:2%;top:7.5svh;width:29%;height:4svh;font-size:11px}.hubChapter small{font-size:10px}.hubTools{left:70%;right:2%;top:1.3svh}.hubTool{padding:5px}.chapterMountain{font-size:25px}html[data-hub=true] .modes{left:2%;right:2%;bottom:7%;height:16%;gap:0}html[data-hub=true] .mode.crestMode{font-size:19px}html[data-hub=true] .mode.primary{font-size:25px}html[data-hub=true] .bag{bottom:1%;left:3%;width:48px;height:48px}.hubDot{width:12%}}
+
+/* Painted trim is sampled at render time from the existing reference, without generating files. */
+html[data-hub=true] .hubButtonContent{width:100%}
+html[data-hub=true] .mode.crestMode .hubButtonContent{opacity:0;pointer-events:none}
+html[data-hub=true] .mode.primary:after{display:none}
+html[data-hub=true] .mode.crestMode[data-act=av]{flex:1.3}
+html[data-hub=true] .mode.crestMode[data-act=map]{flex:1.7}
+.hubResource{padding-left:22%;padding-right:15%}.hubResource>b{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+@media(orientation:landscape){.hubWallet{right:24.2%;gap:1%}.hubResource{padding-left:20%;padding-right:16%;flex-basis:0}.hubResource .hudIcon{left:-4%;width:28%}}
+
+html[data-hub=true] .hubResource{padding:0 1.55vw 0 2.1vw}
+
+.heroExperience{background:linear-gradient(#42145d,#260a39 55%,#47125d)}
+html[data-hub=true] .navBtn .hubButtonContent img{mix-blend-mode:lighten}
+
+.hubSpriteBank{position:absolute;overflow:hidden;pointer-events:none}
+
+/* Feedback follows the same rim, without moving adjacent hit areas. */
+html[data-hub=true] .navBtn,html[data-hub=true] .crestMode,html[data-hub=true] .hubTool,html[data-hub=true] .hubResource{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+html[data-hub=true] :is(.navBtn,.crestMode,.hubTool,.hubResource):focus-visible{outline:none;filter:brightness(1.18) drop-shadow(0 0 4px #ffe49a)}
+html[data-hub=true] :is(.hubTool,.hubResource,.heroProfile,.hubChapter):active{filter:brightness(1.3);transform:translateY(1px)}
+html[data-hub=true] .hubDot{box-shadow:0 1px 3px #000,0 0 5px #d33b2280}
+html[data-motion=true][data-hub=true] .hubDot{animation:hubReadyPulse 2.8s ease-in-out infinite}
+html[data-motion=true][data-hub=true] :is(.navBtn,.crestMode,.hubTool,.hubResource){transition:filter .12s ease,transform .12s ease}
+@keyframes hubReadyPulse{0%,70%,100%{filter:brightness(1)}82%{filter:brightness(1.45)}}
+@media(prefers-reduced-motion:reduce){html[data-hub=true] .hubDot{animation:none!important}html[data-hub=true] button{transition:none!important}}
+
+/* Labels sit above the target; authored full-body art remains visible. */
+.targetHud{bottom:100%;transform:translate(-50%,-3px);background:#17151ddc;border-color:#bc9559;border-radius:13px;padding:4px 9px;font-size:11px;min-width:94px}
+.targetHud .hpBar{height:5px;margin:2px 0}.targetHud .enemyValue{font-size:10px}.target[aria-pressed=true] .targetHud{box-shadow:0 0 0 1px #e9c886,0 3px 8px #0005}
+@media(orientation:landscape) and (max-height:520px){.targetHud{font-size:10px;min-width:80px;padding:3px 7px}.targetHud .enemyValue{font-size:9px}}

@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-CP8wJgJA.js";import{r as t}from"./catalog-context-DJYfquKc.js";import{a as n}from"./index-CLS4VDaM.js";import{i as r}from"./line-catalog-DBjdoxzD.js";var i=e();function a(){let{tur:e,goster:a}=n.useSearch();return(0,i.jsx)(r,{line:t(`/saat-mucevher-kutulari`),initialFilter:e,initialShown:a})}export{a as component};

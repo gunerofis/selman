@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><rect width="700" height="700" fill="#E7E1D8"/>
+    <ellipse cx="350" cy="575" rx="170" ry="14" fill="#1B1714" opacity="0.08"/>
+    <polygon points="230,188 470,188 500,214 500,236 200,236 200,214" fill="#6E6878"/>
+    <polygon points="190,236 250,196 450,196 510,236 510,500 450,546 250,546 190,500" fill="#C9C0D4" stroke="#1B1714" stroke-opacity=".2" stroke-width="3"/>
+    <polygon points="230,300 280,270 420,270 470,300 470,470 420,506 280,506 230,470" fill="#8E79B5"/>
+    <path d="M330 360 q10 -28 20 -8 q10 -24 20 4" fill="none" stroke="#F3EFE8" stroke-width="3"/>
+  <text x="350" y="662" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#1B1714" opacity="0.38" letter-spacing="5">ÖRNEK</text></svg>

@@ -1,0 +1,28 @@
+{
+  "scripts": [
+    "oyun-verisi.js",
+    "ekonomi.js",
+    "engine.js",
+    "world.js",
+    "gear.js",
+    "art.js",
+    "minigames.js",
+    "systems.js",
+    "venues.js",
+    "rooms.js",
+    "rooms2.js",
+    "kanat.js",
+    "demirci.js",
+    "profil.js",
+    "canta.js",
+    "hub.js",
+    "kayit.js",
+    "magaza.js",
+    "ekranlar.js",
+    "paneller.js",
+    "alanlar.js",
+    "savasalanlari.js",
+    "arayuz.js",
+    "app.js"
+  ]
+}

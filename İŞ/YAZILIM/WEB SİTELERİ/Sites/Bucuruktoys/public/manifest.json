@@ -1,0 +1,65 @@
+{
+  "id": "/",
+  "name": "BÜCÜRÜKTOYS Toptan Oyuncak Kataloğu",
+  "short_name": "BÜCÜRÜKTOYS",
+  "description": "Paketli toptan oyuncakları inceleyin, adetleri belirleyin ve stok kodlu listenizle WhatsApp üzerinden teklif alın.",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f2e8",
+  "theme_color": "#17352d",
+  "categories": ["shopping", "business", "lifestyle"],
+  "icons": [
+    {
+      "src": "/assets/bucuruktoys-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/bucuruktoys-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Teklif Listem",
+      "short_name": "Teklif Listem",
+      "url": "/?teklif=ac",
+      "icons": [
+        {
+          "src": "/assets/bucuruktoys-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Toptan Ürün Kataloğu",
+      "short_name": "Katalog",
+      "url": "/#products",
+      "icons": [
+        {
+          "src": "/assets/bucuruktoys-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Bayilik Başvurusu",
+      "short_name": "Bayilik",
+      "url": "/bayi",
+      "icons": [
+        {
+          "src": "/assets/bucuruktoys-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

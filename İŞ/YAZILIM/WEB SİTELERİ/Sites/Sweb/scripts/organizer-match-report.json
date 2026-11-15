@@ -1,0 +1,986 @@
+{
+  "products": 109,
+  "files": 160,
+  "matched": 33,
+  "missing": 76,
+  "unused": 126,
+  "map": {
+    "7003": {
+      "file": "Sekiz renkli lüks koltuk arkası düzenleyici.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7012": {
+      "file": "Sekiz renkli lüks deri ayakkabı bankı.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7013": {
+      "file": "Sekiz renkli deri masa altı çanta beşiği.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7015": {
+      "file": "Sekiz Renkli Deri Duvar Anahtar İstasyonu.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7017": {
+      "file": "Sekiz renkli deri masaüstü şarj istasyonu.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7023": {
+      "file": "Sekiz renkli deri döner çocuk kitaplığı.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7025": {
+      "file": "100 model için beş katlı deri raf.png",
+      "score": 3,
+      "why": "name"
+    },
+    "7026": {
+      "file": "Deri robot süpürge garajı koleksiyonu.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7032": {
+      "file": "Sekiz renkli deri şemsiye ve baston standı.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7033": {
+      "file": "Sekizli lüks deri şarj istasyonu.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7034": {
+      "file": "Sekizli deri kemer ve saat düzenleyici koleksiyonu.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7037": {
+      "file": "Sekiz renkli açık deri değerli eşya kutusu.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7038": {
+      "file": "Sekiz renkli aynalı makyaj sandığı koleksiyonu.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7040": {
+      "file": "Sekiz renkli duvar tipi beyaz tahta düzenleyicisi.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7045": {
+      "file": "Sekizli premium banyo saç aleti düzenleyicileri.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7046": {
+      "file": "Premium banyo çekmece düzenleyici koleksiyonu.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7048": {
+      "file": "Sekiz renkli deri banyo organizeri.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7049": {
+      "file": "Sekiz renkli deri ofis kâğıt sepeti.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7050": {
+      "file": "7050 sekiz renkli çekilebilir deri kemer düzenleyici.png",
+      "score": 99,
+      "why": "filename-sku"
+    },
+    "7054": {
+      "file": "Sekizli deri duvara monte kahve istasyonu.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7055": {
+      "file": "Sekizli deri kahve karuseli koleksiyonu.png",
+      "score": 7,
+      "why": "name"
+    },
+    "7066": {
+      "file": "Sekiz renkli deri yağ ve baharat düzenleyicileri.png",
+      "score": 3,
+      "why": "name"
+    },
+    "7072": {
+      "file": "Sekiz renkli hediye paketleme düzenleyicisi.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7074": {
+      "file": "Sekiz renkli deri saç aksesuarı düzenleyici.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7084": {
+      "file": "Sekiz renkli deri monitör yükseltici.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7085": {
+      "file": "Sekiz renkli deri dizüstü standı.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7086": {
+      "file": "Sekiz renkli deri tablet standı.png",
+      "score": 6,
+      "why": "name"
+    },
+    "7092": {
+      "file": "Sekiz renkli deri duvar evrak düzenleyici.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7103": {
+      "file": "Sekiz renkli deri kitap desteği koleksiyonu.png",
+      "score": 5,
+      "why": "name"
+    },
+    "7111": {
+      "file": "Dört bölmeli sekiz renkli deri dosyalık.png",
+      "score": 2,
+      "why": "name"
+    },
+    "7006B": {
+      "file": "Araç İçi Deri Evcil Hayvan Bakım İstasyonu.png",
+      "score": 3,
+      "why": "name"
+    },
+    "7013B": {
+      "file": "Deri masa altı çanta askısı koleksiyonu.png",
+      "score": 4,
+      "why": "name"
+    },
+    "7065B": {
+      "file": "Sekiz renkli deri bardak altlığı koleksiyonu.png",
+      "score": 2,
+      "why": "name"
+    }
+  },
+  "missingList": [
+    {
+      "sku": "7002",
+      "name": "Komodin organizeri"
+    },
+    {
+      "sku": "7004",
+      "name": "Mama standı"
+    },
+    {
+      "sku": "7005",
+      "name": "Tıraş istasyonu"
+    },
+    {
+      "sku": "7006",
+      "name": "Piknik çantası"
+    },
+    {
+      "sku": "7007",
+      "name": "Askılı konsol"
+    },
+    {
+      "sku": "7008",
+      "name": "Yatak cebi"
+    },
+    {
+      "sku": "7009",
+      "name": "Kolçak organizeri"
+    },
+    {
+      "sku": "7010",
+      "name": "Koltuk yan sehpası"
+    },
+    {
+      "sku": "7011",
+      "name": "Saat standı"
+    },
+    {
+      "sku": "7016",
+      "name": "Çöp kutusu"
+    },
+    {
+      "sku": "7016B",
+      "name": "Kapaklı saklama küpü"
+    },
+    {
+      "sku": "7018",
+      "name": "Valet kutusu"
+    },
+    {
+      "sku": "7020",
+      "name": "Dizüstü tepsi"
+    },
+    {
+      "sku": "7027",
+      "name": "Katlanır oturak"
+    },
+    {
+      "sku": "7028",
+      "name": "Makyaj organizeri"
+    },
+    {
+      "sku": "7029",
+      "name": "Baharat istasyonu"
+    },
+    {
+      "sku": "7030",
+      "name": "Banyo lavabo istasyonu"
+    },
+    {
+      "sku": "7031",
+      "name": "Şarap standı"
+    },
+    {
+      "sku": "7035",
+      "name": "Makyaj rafı"
+    },
+    {
+      "sku": "7036",
+      "name": "Ruj kulesi"
+    },
+    {
+      "sku": "7041",
+      "name": "Evye organizeri"
+    },
+    {
+      "sku": "7042",
+      "name": "Baharatlık"
+    },
+    {
+      "sku": "7043",
+      "name": "Ekmek kutusu"
+    },
+    {
+      "sku": "7044",
+      "name": "Mutfak folyo kutusu"
+    },
+    {
+      "sku": "7047",
+      "name": "Banyo duvar rafı"
+    },
+    {
+      "sku": "7014",
+      "name": "Mektupluk"
+    },
+    {
+      "sku": "7024",
+      "name": "Ütü masası dolabı"
+    },
+    {
+      "sku": "7051",
+      "name": "Giriş panosu"
+    },
+    {
+      "sku": "7052",
+      "name": "Giriş dolabı"
+    },
+    {
+      "sku": "7053",
+      "name": "Duvar tipi antre istasyonu"
+    },
+    {
+      "sku": "7056",
+      "name": "Duvar tipi kahve dolabı"
+    },
+    {
+      "sku": "7057",
+      "name": "Çamaşır ayırmalı ütü istasyonu"
+    },
+    {
+      "sku": "7058",
+      "name": "Katlanır duvar ütü istasyonu"
+    },
+    {
+      "sku": "7059",
+      "name": "Çocuk kitap rafı"
+    },
+    {
+      "sku": "7060",
+      "name": "Figür rafı"
+    },
+    {
+      "sku": "7061",
+      "name": "Büyük figür vitrini"
+    },
+    {
+      "sku": "7062",
+      "name": "Başucu şarj istasyonu"
+    },
+    {
+      "sku": "7062B",
+      "name": "Kitap desteği seti"
+    },
+    {
+      "sku": "7063",
+      "name": "Duvar hol panosu"
+    },
+    {
+      "sku": "7063B",
+      "name": "Masaüstü dergi dosyalığı"
+    },
+    {
+      "sku": "7064",
+      "name": "Makyaj ve fırça organizeri"
+    },
+    {
+      "sku": "7064B",
+      "name": "Kutu mendil kılıfı"
+    },
+    {
+      "sku": "7065",
+      "name": "Lavabo tepsisi"
+    },
+    {
+      "sku": "7066B",
+      "name": "Yatay evrak sıralayıcı"
+    },
+    {
+      "sku": "7067",
+      "name": "Saat ve gözlük tepsisi"
+    },
+    {
+      "sku": "7067B",
+      "name": "Çay poşeti organizeri"
+    },
+    {
+      "sku": "7068",
+      "name": "Oyun kolu tepsisi"
+    },
+    {
+      "sku": "7069",
+      "name": "Fotoğraf tepsisi"
+    },
+    {
+      "sku": "7070",
+      "name": "Dikiş istasyonu"
+    },
+    {
+      "sku": "7071",
+      "name": "Resim ve hobi istasyonu"
+    },
+    {
+      "sku": "7073",
+      "name": "Bere ve eldiven tepsisi"
+    },
+    {
+      "sku": "7075",
+      "name": "Oje tepsisi"
+    },
+    {
+      "sku": "7076",
+      "name": "Sofra organizeri"
+    },
+    {
+      "sku": "7077",
+      "name": "Atıştırmalık standı"
+    },
+    {
+      "sku": "7078",
+      "name": "Giysi bakım istasyonu"
+    },
+    {
+      "sku": "7079",
+      "name": "Ayakkabı boya tepsisi"
+    },
+    {
+      "sku": "7080",
+      "name": "Dizüstü folyo"
+    },
+    {
+      "sku": "7081",
+      "name": "Cüzdan istasyonu"
+    },
+    {
+      "sku": "7083",
+      "name": "Çanta rafı"
+    },
+    {
+      "sku": "7087",
+      "name": "Kavisli kulaklık standı"
+    },
+    {
+      "sku": "7088",
+      "name": "İkili evrak tepsisi"
+    },
+    {
+      "sku": "7089",
+      "name": "Dikey dosyalık"
+    },
+    {
+      "sku": "7090",
+      "name": "Masaüstü kırtasiye organizeri"
+    },
+    {
+      "sku": "7091",
+      "name": "Bloknot ve kalem tepsisi"
+    },
+    {
+      "sku": "7094",
+      "name": "Yaka kartı organizeri"
+    },
+    {
+      "sku": "7100",
+      "name": "Masaüstü çekmeceli yükseltici"
+    },
+    {
+      "sku": "7101",
+      "name": "Sümen"
+    },
+    {
+      "sku": "7102",
+      "name": "Telefon standı"
+    },
+    {
+      "sku": "7104",
+      "name": "Kalem tepsisi"
+    },
+    {
+      "sku": "7105",
+      "name": "Fare altlığı"
+    },
+    {
+      "sku": "7106",
+      "name": "Kart tutucu"
+    },
+    {
+      "sku": "7107",
+      "name": "Saat yastığı"
+    },
+    {
+      "sku": "7108",
+      "name": "Küçük tepsi"
+    },
+    {
+      "sku": "7109",
+      "name": "Kartvizit tepsisi"
+    },
+    {
+      "sku": "7110",
+      "name": "Kare tepsi"
+    },
+    {
+      "sku": "7112",
+      "name": "Kulaklık standı"
+    }
+  ],
+  "unusedList": [
+    {
+      "file": "Beş katlı deri koleksiyon vitrini.png",
+      "note": "weak 7061:1"
+    },
+    {
+      "file": "Deri iki cepli A5 broşür standı.png",
+      "note": "weak 7004:1"
+    },
+    {
+      "file": "Duvara Monte Katlanır Makyaj Koleksiyonu.png",
+      "note": "weak 7027:1"
+    },
+    {
+      "file": "Dört tabletlik deri park düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Kemerli deri makyaj istasyonu koleksiyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Lüks deri katlanır ayakkabı oturağı.png",
+      "note": "weak 7012:1"
+    },
+    {
+      "file": "Lüks deri koleksiyon rafında 50 minyatür otomobil.png",
+      "note": "alt for 7025 score 2"
+    },
+    {
+      "file": "Lüks deri makyaj istasyonu koleksiyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Lüks sekizli deri evcil bakım istasyonu koleksiyonu.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Masa altı deri askı koleksiyonu.png",
+      "note": "alt for 7013B score 3"
+    },
+    {
+      "file": "Merkezi kulplu dengeli sekiz deri caddy.png",
+      "note": "no match"
+    },
+    {
+      "file": "Premium deri evye düzenleyici koleksiyonu.png",
+      "note": "weak 7041:1"
+    },
+    {
+      "file": "Sekiz boş deri ofis ayaklığı.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekiz renkli altı bölmeli ofis düzenleyici.png",
+      "note": "alt for 7111 score 2"
+    },
+    {
+      "file": "Sekiz Renkli Deri Alt Raf Sepeti.png",
+      "note": "alt for 7025 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri askı ve raf.png",
+      "note": "alt for 7013B score 2"
+    },
+    {
+      "file": "Sekiz renkli deri atıştırmalık düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri ayakkabı bakım düzenleyicisi.png",
+      "note": "weak 7012:1"
+    },
+    {
+      "file": "Sekiz renkli deri bakım düzenleyicileri.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri bilgisayar yükselticisi.png",
+      "note": "weak 7050:1"
+    },
+    {
+      "file": "Sekiz renkli deri dergilik koleksiyonu.png",
+      "note": "weak 7063B:1"
+    },
+    {
+      "file": "Sekiz renkli deri değerli eşya kutusu koleksiyonu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri dikiş düzenleyicisi.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri duvar düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri duvar istasyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Sekiz renkli deri dört bölmeli düzenleyici.png",
+      "note": "alt for 7111 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri giriş organizeri.png",
+      "note": "weak 7002:1"
+    },
+    {
+      "file": "Sekiz renkli deri iki katlı belge düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri imza platformu.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekiz Renkli Deri Kahvaltı Düzenleme Seti.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekiz renkli deri kahve organizeri.png",
+      "note": "weak 7002:1"
+    },
+    {
+      "file": "Sekiz renkli deri klavye ve fare düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri koltuk kolu düzenleyici.png",
+      "note": "weak 7003:1"
+    },
+    {
+      "file": "Sekiz Renkli Deri Kulaklık Düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri manikür organizeri.png",
+      "note": "weak 7002:1"
+    },
+    {
+      "file": "Sekiz renkli deri masa düzenleyici koleksiyonu.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli deri masaüstü düzenleyici.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli deri masaüstü notluk.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli deri masaüstü oyun düzenleyicisi.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli deri mendil kutusu koleksiyonu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri model araba vitrini.png",
+      "note": "alt for 7025 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri mutfak düzenleyici koleksiyonu.png",
+      "note": "weak 7044:1"
+    },
+    {
+      "file": "Sekiz renkli deri numune düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri oyun aksesuar düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri paket düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz Renkli Deri Posta Düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri raflı masaüstü bölücü.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli deri robot süpürge garajı(1).png",
+      "note": "alt for 7026 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri robot süpürge garajı.png",
+      "note": "alt for 7026 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri seyahat belge düzenleyicisi.png",
+      "note": "weak 7006B:1"
+    },
+    {
+      "file": "Sekiz Renkli Deri Sunum Düzenleyicisi.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri teknoloji düzenleyicisi.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri teslimat sandığı.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekiz renkli deri toplantı düzenleyicisi.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri yazıcı platformu.png",
+      "note": "weak 7050:1"
+    },
+    {
+      "file": "Sekiz renkli deri ziyaretçi kartlığı.png",
+      "note": "weak 7106:1"
+    },
+    {
+      "file": "Sekiz renkli deri çamaşır ve ütü konsolu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri çatal bıçak düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli deri çay kutusu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri çekmece içi düzenleyici.png",
+      "note": "alt for 7046 score 6"
+    },
+    {
+      "file": "Sekiz renkli deri ütü dolabı koleksiyonu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli deri şarap sunum istasyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Sekiz renkli duvar tipi deri düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli duvara monte ütü dolabı.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli duvara monte üçlü kulaklık askılığı.png",
+      "note": "weak 7007:1"
+    },
+    {
+      "file": "Sekiz renkli döner makyaj kulesi.png",
+      "note": "weak 7028:1"
+    },
+    {
+      "file": "Sekiz Renkli Entegre Ütü Masası Koleksiyonu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli iki bölmeli kâğıt düzenleyici.png",
+      "note": "alt for 7049 score 2"
+    },
+    {
+      "file": "Sekiz renkli kamera ve lens düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli katlanır deri çalışma masası.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli katlanır giriş konsolu.png",
+      "note": "weak 7007:1"
+    },
+    {
+      "file": "Sekiz renkli kompakt deri makyaj düzenleyicisi.png",
+      "note": "weak 7028:1"
+    },
+    {
+      "file": "Sekiz renkli kış aksesuar düzenleyicisi.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli lüks deri cihaz yuvası.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekiz renkli lüks deri evcil hayvan istasyonları.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Sekiz Renkli Lüks Deri Kargo Kutuları.png",
+      "note": "weak 7037:1"
+    },
+    {
+      "file": "Sekiz renkli lüks deri sergileme standı.png",
+      "note": "weak 7004:1"
+    },
+    {
+      "file": "Sekiz renkli lüks kemer düzenleyici koleksiyonu.png",
+      "note": "alt for 7050 score 2"
+    },
+    {
+      "file": "Sekiz renkli masa altı askı koleksiyonu.png",
+      "note": "alt for 7013B score 3"
+    },
+    {
+      "file": "Sekiz renkli masa altı kablo kanalı.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli masa yanı düzenleyici.png",
+      "note": "weak 7010:1"
+    },
+    {
+      "file": "Sekiz renkli masaüstü mahremiyet düzenleyicisi.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli masaüstü posta düzenleyici.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli masaüstü temizlik düzenleyicisi.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli mimari plan rulosu düzenleyici.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli minimalist ofis şemsiye düzenleyici.png",
+      "note": "alt for 7032 score 2"
+    },
+    {
+      "file": "Sekiz renkli Montessori kitap rafı koleksiyonu.png",
+      "note": "alt for 7023 score 2"
+    },
+    {
+      "file": "Sekiz renkli premium deri eşya istasyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Sekiz renkli premium deri kolçak düzenleyicileri.png",
+      "note": "weak 7009:1"
+    },
+    {
+      "file": "Sekiz renkli premium deri çekmece düzenleyici.png",
+      "note": "alt for 7046 score 6"
+    },
+    {
+      "file": "Sekiz renkli premium mama ve aksesuar istasyonu.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Sekiz Renkli Premium Masa Altı Ayaklık.png",
+      "note": "weak 7013:1"
+    },
+    {
+      "file": "Sekiz renkli premium paket kutusu.png",
+      "note": "alt for 7037 score 2"
+    },
+    {
+      "file": "Sekiz renkli premium şemsiye ve baston düzenleyici.png",
+      "note": "alt for 7032 score 2"
+    },
+    {
+      "file": "Sekiz renkli çamaşır bakım düzenleyicisi.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekiz renkli çanta raf düzenleyicisi.png",
+      "note": "alt for 7025 score 2"
+    },
+    {
+      "file": "Sekiz renkli çocuk ayakkabı oturağı koleksiyonu.png",
+      "note": "weak 7012:1"
+    },
+    {
+      "file": "Sekiz renkli çok bölmeli deri düzenleyici.png",
+      "note": "alt for 7111 score 2"
+    },
+    {
+      "file": "Sekiz Renkli Çok Bölmeli Masa Düzenleyicileri.png",
+      "note": "alt for 7111 score 2"
+    },
+    {
+      "file": "Sekiz renkli üç bölmeli klasör düzenleyici.png",
+      "note": "alt for 7111 score 2"
+    },
+    {
+      "file": "Sekiz renkli üç cepli deri kartlık.png",
+      "note": "weak 7106:1"
+    },
+    {
+      "file": "Sekiz renkte deri monitör standı koleksiyonu.png",
+      "note": "weak 7004:1"
+    },
+    {
+      "file": "Sekiz renkte mat deri bilgisayar standları.png",
+      "note": "weak 7085:1"
+    },
+    {
+      "file": "Sekizli deri duvar anahtar istasyonu.png",
+      "note": "alt for 7015 score 2"
+    },
+    {
+      "file": "Sekizli deri döner banyo düzenleyici koleksiyonu.png",
+      "note": "weak 7030:1"
+    },
+    {
+      "file": "Sekizli deri giriş istasyonu koleksiyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Sekizli deri kahve istasyonu koleksiyonu.png",
+      "note": "alt for 7054 score 6"
+    },
+    {
+      "file": "Sekizli deri kitap okuma standı koleksiyonu.png",
+      "note": "alt for 7023 score 2"
+    },
+    {
+      "file": "Sekizli deri köşe makyaj düzenleyicileri.png",
+      "note": "weak 7028:1"
+    },
+    {
+      "file": "Sekizli deri mutfak düzenleyici koleksiyonu.png",
+      "note": "weak 7044:1"
+    },
+    {
+      "file": "Sekizli deri yatak yanı düzenleyici koleksiyonu.png",
+      "note": "weak 7008:1"
+    },
+    {
+      "file": "Sekizli deri şarap sunum istasyonu.png",
+      "note": "weak 7005:1"
+    },
+    {
+      "file": "Sekizli lüks deri ayakta çalışma platformu koleksiyonu.png",
+      "note": "no match"
+    },
+    {
+      "file": "Sekizli lüks deri kemer ve saat düzenleyicileri.png",
+      "note": "alt for 7034 score 2"
+    },
+    {
+      "file": "Sekizli premium deri antre düzenleyici koleksiyonu.png",
+      "note": "weak 7046:1"
+    },
+    {
+      "file": "Sekizli premium deri ayakkabı bankı.png",
+      "note": "alt for 7012 score 6"
+    },
+    {
+      "file": "Sekizli premium deri banyo organizeri.png",
+      "note": "alt for 7048 score 6"
+    },
+    {
+      "file": "Sekizli premium deri döner baharat organizeri.png",
+      "note": "alt for 7066 score 2"
+    },
+    {
+      "file": "Sekizli premium deri evcil hayvan bakım istasyonları.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Sekizli premium deri kahve istasyonu koleksiyonu.png",
+      "note": "alt for 7054 score 6"
+    },
+    {
+      "file": "Sekizli premium deri mama ve aksesuar istasyonu.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Sekizli premium evcil hayvan bakım koleksiyonu.png",
+      "note": "alt for 7006B score 2"
+    },
+    {
+      "file": "Sekizli yatak kenarı deri şarj istasyonları.png",
+      "note": "weak 7008:1"
+    },
+    {
+      "file": "Yirmi Parçalı Koyu Kahverengi Ofis Koleksiyonu.png",
+      "note": "no match"
+    },
+    {
+      "file": "Yirmi parçalık koyu kahverengi deri ofis seti.png",
+      "note": "no match"
+    },
+    {
+      "file": "Çok renkli deri sanat düzenleyicisi.png",
+      "note": "weak 7046:1"
+    }
+  ]
+}

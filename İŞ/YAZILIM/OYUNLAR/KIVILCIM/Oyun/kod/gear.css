@@ -1,0 +1,53 @@
+/* Ekipman ekranı: kahraman + yuvalar solda, seçili eşya ve çanta sağda. */
+.r0{--c:#9aa0a6}.r1{--c:#5fbf6a}.r2{--c:#4f9bea}.r3{--c:#a66bea}.r4{--c:#f08a3c}.r5{--c:#f2c94c}.r6{--c:#8d6bff}.r7{--c:#ffffff}
+.gx{--cell:clamp(40px,11.5svh,58px);position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,44%) minmax(0,56%);gap:10px;font-family:var(--hub-font,Georgia,serif);color:var(--k-ivory)}
+.gxDoll{position:relative;height:100%;min-height:0;display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:100%;align-items:center}
+.gxDoll .roomActor{position:relative;left:auto;top:auto;width:100%;height:calc(100% - 26px);align-self:start;min-height:0}
+.gxCol{display:grid;gap:5px;z-index:2}
+.gxSlot{all:unset;cursor:pointer;display:grid;justify-items:center;gap:1px}
+.gxSlot small{font:600 10px/1.2 system-ui,sans-serif;color:#e6dcc6;text-shadow:0 1px 2px #000,0 0 5px #000}
+.gxSlot.on .gxCell,.gxItem.on .gxCell{outline:2px solid #ffe6a6;outline-offset:2px}
+.gxStats{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:18px;font-size:17px;font-weight:700;text-shadow:0 1px 3px #000,0 0 8px #000;pointer-events:none}
+.gxStats span,.gxLine{display:inline-flex;gap:5px;align-items:center}
+.gxStats .glyph,.gxLine .glyph{width:17px;height:17px;color:var(--k-gold2)}
+
+.gxCell{position:relative;box-sizing:border-box;width:var(--cell);aspect-ratio:1;display:grid;place-items:center;border-radius:10px;background:radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--c,#9aa0a6) 36%,#17151d),#17151d 78%);border:2px solid var(--c,#9aa0a6);box-shadow:inset 0 0 0 1px #0009,0 2px 5px #0008}
+.gxCell img,.gxCell .roomSprite,.gxCell .objectArt,.gxCell>.glyph{width:72%;height:72%;object-fit:contain}
+.gxCell i{position:absolute;left:3px;bottom:2px;font:700 10px/1 system-ui,sans-serif;font-style:normal;color:#fff;text-shadow:0 1px 2px #000,0 0 3px #000}
+.gxCell b{position:absolute;right:3px;top:2px;font:700 11px/1 Georgia,serif;color:#ffe6a6;text-shadow:0 1px 2px #000,0 0 3px #000}
+.gxCell u{position:absolute;right:3px;bottom:3px;display:flex;gap:2px;text-decoration:none}
+.gxCell s{width:5px;height:5px;border-radius:50%;background:#0b0a0e;border:1px solid #d9cfba}
+.gxCell s.yakut,.gxStone.yakut{background:radial-gradient(circle at 35% 30%,#ffb0a0,#d8382c 60%,#7a1410)}
+.gxCell s.zumrut,.gxStone.zumrut{background:radial-gradient(circle at 35% 30%,#b6f5cf,#2fae6a 60%,#0f5a34)}
+.gxCell.empty{border-style:dashed;--c:#7d6238}
+.gxCell.empty img{opacity:.35;filter:grayscale(1)}
+.gxCell.empty.r0,.gxCell.empty.r1{border-style:solid}
+.gxCell.r6{background:radial-gradient(circle at 50% 35%,#3a2f55,#050408 78%);border-color:#0a090d;box-shadow:0 0 0 1px #8d6bff,0 0 9px #8d6bffaa}
+.gxCell.r7{box-shadow:0 0 0 1px #fff,0 0 12px #fff,inset 0 0 10px #ffffff66;animation:gxGlow 1.6s ease-in-out infinite alternate}
+@keyframes gxGlow{to{box-shadow:0 0 0 1px #fff,0 0 22px #dff3ff,inset 0 0 14px #ffffffaa}}
+[data-motion=false] .gxCell.r7{animation:none}
+.gxName{color:var(--c);text-shadow:0 1px 2px #000}
+.gxStone{display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #f4ead5;box-shadow:0 1px 3px #000}
+
+.gxSide{display:grid;grid-template-rows:auto minmax(0,1fr);gap:8px;min-height:0;height:100%}
+.gxDetail{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 10px;align-items:center;padding:8px 10px;border-radius:14px;background:linear-gradient(#2a2630e6,#17151de6);border:1px solid var(--k-rim)}
+.gxCell.big{--cell:clamp(48px,14svh,66px)}
+.gxInfo h3{font-size:17px;margin:0;line-height:1.15}
+.gxInfo p{font:12px/1.3 system-ui,sans-serif;color:#d9cfba;margin:0}
+.gxInfo .gxLine{font:700 17px/1.2 Georgia,serif;color:var(--k-ivory)}
+.gxLine em{font:700 13px system-ui,sans-serif;font-style:normal}.gxLine em.up{color:#7fdc8a}.gxLine em.down{color:#ff8a7a}
+.gxNext{font:12px system-ui,sans-serif;color:#a79fb0;margin-left:4px}
+.gxActs{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}
+.gxBag{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cell),1fr));gap:6px;align-content:start;overflow:auto;padding:8px;border-radius:14px;background:#17151dd4;border:1px solid var(--k-rim)}
+.gxItem{all:unset;cursor:pointer;position:relative;display:grid;place-items:center}
+.gxItem .gxCell{width:100%}
+.gxItem.blank{aspect-ratio:1;border-radius:10px;background:#0b0a0e8c;box-shadow:inset 0 0 0 1px #3a3340;cursor:default}
+.gxItem.worn:after{content:"";position:absolute;left:-3px;top:-3px;width:13px;height:13px;border-radius:50%;background:#5f9160;border:1px solid #f4ead5;box-shadow:0 1px 3px #000}
+.gxItem:focus-visible,.gxSlot:focus-visible{outline:3px solid #ffd990;outline-offset:2px}
+
+/* Sonuç ekranında düşen eşya */
+.gxDrop{--cell:54px;display:flex;gap:10px;align-items:center;justify-content:center;font:700 16px Georgia,serif;animation:gxPop .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes gxPop{from{transform:scale(.4);opacity:0}}
+[data-motion=false] .gxDrop{animation:none}
+
+@media(orientation:portrait){.gx{--cell:clamp(42px,12vw,58px);grid-template-columns:1fr;grid-template-rows:minmax(0,40%) minmax(0,1fr)}}

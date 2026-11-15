@@ -1,0 +1,102 @@
+/* TEZGÂH — mekâna oturan üç bölgeli ekran kalıbı: solda liste, ortada nesne, sağda işlem.
+   Demirci, Kanatlar, Petler, Market bu kalıbı kullanır. */
+.tz{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,27%) minmax(0,1fr) minmax(0,29%);grid-template-rows:auto minmax(0,1fr);gap:8px;font-family:var(--hub-font,Georgia,serif);color:var(--k-ivory)}
+.tzTabs{grid-column:1/-1;display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.tzTab{all:unset;box-sizing:border-box;cursor:pointer;min-height:40px;padding:5px 18px;display:grid;grid-auto-flow:column;align-items:center;gap:7px;clip-path:polygon(11px 0,calc(100% - 11px) 0,100% 50%,calc(100% - 11px) 100%,11px 100%,0 50%);background:linear-gradient(#e9c886,#8a6a2e);color:#f4ead5;font:700 15px/1 Georgia,serif;text-shadow:0 1px 2px #000}
+.tzTab>span{position:absolute;inset:2px;z-index:-1;clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,10px 100%,0 50%);background:linear-gradient(#2e2833,#17151d)}
+.tzTab{position:relative;isolation:isolate}
+.tzTab.on>span{background:linear-gradient(#b04f3c,#6a2a23)}
+.tzTab .glyph,.tzTab img{width:18px;height:18px}
+.tzTab:focus-visible{outline:3px solid #ffd990;outline-offset:2px}
+
+.tzPanel{position:relative;min-height:0;display:flex;flex-direction:column;gap:6px;padding:9px 10px;border-radius:14px;background:linear-gradient(#241f2bf2,#15131af5);box-shadow:inset 0 0 0 1px #7d6238,0 0 0 1px #0c0a10,0 6px 16px #0009}
+.tzHead{display:flex;align-items:center;gap:7px;padding-bottom:5px;border-bottom:1px solid #7d623866;font:700 14px/1 Georgia,serif;color:var(--k-gold2)}
+.tzHead .glyph,.tzHead img{width:17px;height:17px}
+.tzBody{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:7px}
+
+.tzMid{position:relative;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;padding-bottom:2px}
+.tzMid .roomActor{position:relative;left:auto;top:auto;width:100%;flex:1 1 auto;min-height:70px}
+.tzName img,.tzName .glyph{width:21px;height:21px;flex:none}
+.tzName{flex:none;white-space:nowrap;max-width:100%;display:inline-flex;align-items:center;gap:8px;padding:4px 20px;border-radius:20px;background:#17151dc4;box-shadow:inset 0 0 0 1px #bc9559;font:700 17px/1.2 Georgia,serif;text-shadow:0 1px 3px #000}
+
+/* ilerleme yolu */
+.tzPath{flex:none;margin-bottom:9px;display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap}
+.tzStep{position:relative;width:38px;height:38px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:linear-gradient(#3a3340,#17151d);box-shadow:0 0 0 1px #7d6238;font:700 13px/1 Georgia,serif;color:#9d94a3}
+.tzStep.done{background:linear-gradient(#8a6a2e,#4a3618);color:#ffeec4}
+.tzStep.now{background:linear-gradient(#e9c886,#b98a33);color:#2a1d08;box-shadow:0 0 0 2px #ffe6a6,0 0 12px #e9c88699}
+.tzStep i{position:absolute;bottom:-9px;display:flex;gap:2px}
+.tzStep i s{width:4px;height:4px;border-radius:50%;background:#4b4551;text-decoration:none}
+.tzStep i s.on{background:#e9c886}
+
+/* değer satırları */
+.tzRow{display:flex;align-items:center;gap:7px;font:15px/1.2 Georgia,serif}
+.tzRow .glyph{width:16px;height:16px;color:var(--k-gold2)}
+.tzRow b{margin-left:auto;font-variant-numeric:tabular-nums}
+.tzRow em{font-style:normal;color:#7fdc8a;font-weight:700}
+.tzArrow{color:#8d8595}
+.tzChip{display:inline-flex;align-items:center;gap:9px;align-self:center;padding:4px 16px;border-radius:18px;background:#0b0a0e8c;box-shadow:inset 0 0 0 1px #7d6238;font:700 17px/1 Georgia,serif}
+.tzChip .to{color:#7fdc8a}
+.tzCost{display:flex;gap:12px;justify-content:center;align-items:center;font:700 15px/1 Georgia,serif}
+.tzCost span{display:inline-flex;align-items:center;gap:4px}
+.tzCost img,.tzCost .glyph{width:19px;height:19px}
+.tzCost .az{color:#ff8a7a}
+.tzOran{text-align:center;font:700 26px/1 Georgia,serif;color:#7fdc8a;text-shadow:0 2px 4px #000}
+.tzOran small{display:block;font:600 10px/1.6 system-ui,sans-serif;letter-spacing:.14em;color:#d9cfba;text-shadow:none}
+.tzNote{text-align:center;font:13px/1.35 system-ui,sans-serif;color:#a79fb0}
+
+/* liste */
+.tzList{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr));gap:7px;align-content:start}
+.tzItem{all:unset;cursor:pointer;position:relative;display:grid;justify-items:center;gap:2px}
+.tzItem small{font:600 10px/1.1 system-ui,sans-serif;color:#d9cfba;text-align:center}
+.tzCell{position:relative;width:100%;aspect-ratio:1;display:grid;place-items:center;border-radius:11px;background:radial-gradient(circle at 50% 30%,color-mix(in srgb,var(--c,#9aa0a6) 62%,#141219),#121017 82%);box-shadow:inset 0 0 0 1px #00000099,0 0 0 2px var(--c,#9aa0a6),0 3px 7px #0008}
+.tzCell img,.tzCell .glyph{width:74%;height:74%;object-fit:contain;filter:drop-shadow(0 2px 3px #000a)}
+.tzCell b{position:absolute;right:3px;top:2px;font:700 11px/1 Georgia,serif;color:#ffeec4;text-shadow:0 1px 2px #000,0 0 4px #000}
+.tzItem.on .tzCell{box-shadow:inset 0 0 0 1px #0009,0 0 0 2px #ffe6a6,0 0 12px #e9c886aa}
+.tzItem.worn:after{content:"✓";position:absolute;left:-2px;top:-4px;width:17px;height:17px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(#7fdc8a,#2f7a41);color:#0d2412;font:700 11px/1 system-ui;box-shadow:0 1px 3px #000}
+.tzItem:focus-visible{outline:3px solid #ffd990;outline-offset:3px}
+.tzItem.kilit .tzCell{filter:grayscale(.9) brightness(.6)}
+
+/* yuvalar (rün, taş) */
+.tzSlots{display:flex;gap:10px;justify-content:center}
+.tzSlot{all:unset;cursor:pointer;width:62px;height:62px;display:grid;place-items:center;border-radius:12px;background:radial-gradient(circle at 50% 30%,#2e2833,#141219);box-shadow:inset 0 0 0 1px #000a,0 0 0 2px #7d6238}
+.tzSlot.dolu{box-shadow:inset 0 0 0 1px #000a,0 0 0 2px #e9c886}
+.tzSlot .gxStone{width:34px;height:34px}
+.tzSlot.bos:after{content:"+";font:300 26px/1 Georgia,serif;color:#6b6475}
+
+.tzAct{margin-top:auto;display:flex;gap:7px;justify-content:center;flex-wrap:wrap}
+
+@media(max-height:430px){.tzTab{min-height:36px;padding:4px 13px;font-size:13px}.tzStep{width:32px;height:32px;font-size:12px}.tzName{font-size:15px;padding:3px 14px}.tzOran{font-size:21px}.tzRow{font-size:13px}}
+@media(orientation:portrait){.tz{grid-template-columns:1fr;grid-template-rows:auto minmax(0,34%) minmax(0,1fr) auto}.tzMid{order:-1}}
+
+.tzMid.parla:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 55%,#ffe6a6aa,transparent 62%);animation:tzParla .7s ease-out forwards}
+@keyframes tzParla{from{opacity:1;transform:scale(.8)}to{opacity:0;transform:scale(1.25)}}
+[data-motion=false] .tzMid.parla:after{display:none}
+
+/* Demirci */
+.fgFilter{display:flex;gap:4px;justify-content:center;padding-bottom:6px;border-bottom:1px solid #7d623866}
+.fgFil{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;border-radius:9px;background:#17151dcc;box-shadow:inset 0 0 0 1px #7d6238}
+.fgFil img{width:68%;height:68%;object-fit:contain;opacity:.75}
+.fgFil.on{background:linear-gradient(#8a4433,#4a211c);box-shadow:inset 0 0 0 1px #e9c886}
+.fgFil.on img{opacity:1}
+.fgFil:focus-visible{outline:3px solid #ffd990;outline-offset:2px}
+.fgRing{position:absolute;top:2%;left:50%;translate:-50% 0;width:clamp(68px,19svh,104px);height:clamp(68px,19svh,104px);display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,#2a1c2eaa,transparent 72%);box-shadow:0 0 0 2px #bc955955,0 0 26px #e9c88644}
+.fgRing .tzCell{width:74%}
+.fgRing .tzCell i{position:absolute;left:4px;bottom:2px;font:700 11px/1 system-ui;font-style:normal;color:#fff;text-shadow:0 1px 2px #000}
+.tz-forge .tzMid{justify-content:flex-end}
+.tz-forge .tzName{margin-bottom:2px}
+.fgTriple{display:flex;gap:5px;align-items:center}
+.fgTriple .tzCell{width:38px}
+.fgTriple .gxBtn{margin-left:auto;min-width:0;min-height:34px;padding:4px 14px;font-size:13px}
+.fgArrow{display:grid;place-items:center;color:#e9c886}
+.fgArrow .glyph{width:17px;height:17px}
+.tzMats{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.tzMat{display:inline-flex;flex-direction:column;align-items:center;gap:2px;min-width:52px;padding:5px 7px;border-radius:10px;background:#0b0a0e8c;box-shadow:inset 0 0 0 1px #7d6238;font:700 13px/1 Georgia,serif;color:#7fdc8a}
+.tzMat img,.tzMat .glyph,.tzMat .gxStone,.tzMat .tzCell{width:26px;height:26px}
+.tzMat.az{color:#ff8a7a}
+.tzOran.dusuk{color:#ffcf6b}
+
+.tz-forge .tzBody{gap:5px;justify-content:center}
+.tz-forge .tzPath{margin-bottom:4px;gap:5px}
+.tzOran{margin-top:2px}
+.gxBtn small img,.gxBtn small .glyph{width:14px;height:14px}
+.tzMat b{white-space:nowrap}

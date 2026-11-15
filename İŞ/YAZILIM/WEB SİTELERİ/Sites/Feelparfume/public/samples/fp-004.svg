@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><rect width="700" height="700" fill="#E7E1D8"/>
+    <ellipse cx="350" cy="575" rx="80" ry="14" fill="#1B1714" opacity="0.08"/>
+    <rect x="300" y="118" width="70" height="22" rx="4" fill="#D9D4CC"/>
+    <path d="M370 122 h48 v12 h-48 z" fill="#8A847C"/>
+    <rect x="316" y="140" width="38" height="48" fill="#C5C0B8"/>
+    <rect x="292" y="188" width="86" height="360" rx="20" fill="#D5E7E4" stroke="#1B1714" stroke-opacity=".2" stroke-width="3"/>
+    <rect x="306" y="250" width="58" height="250" rx="12" fill="#3FA3A0"/>
+    <rect x="314" y="340" width="42" height="56" fill="#F7F3EE"/>
+    <path d="M322 362 q10 -8 20 0 t20 0" fill="none" stroke="#1B6E6C" stroke-width="2"/>
+  <text x="350" y="662" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#1B1714" opacity="0.38" letter-spacing="5">ÖRNEK</text></svg>

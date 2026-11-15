@@ -1,0 +1,79 @@
+/* Tezgâh görünümü — ölçü birimi --u; 16:9'da büyük, telefonda orantılı küçülür. */
+.tz{--u:clamp(8px,2.15svh,19px);gap:calc(var(--u)*.6);grid-template-columns:minmax(0,26.5%) minmax(0,1fr) minmax(0,27.5%)}
+
+/* panel: koyu zemin, çift altın kenar, köşe elmasları */
+.tzPanel{padding:calc(var(--u)*.75) calc(var(--u)*.85);border-radius:calc(var(--u)*.9);background:linear-gradient(#1b1626f2,#100d18f7);
+ box-shadow:inset 0 0 0 2px #b4904f,inset 0 0 0 4px #0c0a12,inset 0 0 30px #00000090,0 8px 20px #000a;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 1 11 6 6 11 1 6Z' fill='%23e9c886' stroke='%236b4a1c' stroke-width='.8'/%3E%3C/svg%3E"),linear-gradient(#1b1626f2,#100d18f7);
+ background-repeat:no-repeat;background-size:calc(var(--u)*.78) calc(var(--u)*.78),auto;background-position:calc(var(--u)*.45) calc(var(--u)*.45),0 0}
+.tzPanel:before{content:"";position:absolute;inset:calc(var(--u)*.42);border-radius:calc(var(--u)*.55);box-shadow:inset 0 0 0 1px #6b532a80;pointer-events:none}
+.tzHead{font-size:calc(var(--u)*1.05);padding-bottom:calc(var(--u)*.35);letter-spacing:.01em}
+.tzHead .glyph,.tzHead img{width:calc(var(--u)*1.25);height:calc(var(--u)*1.25)}
+.tzBody{gap:calc(var(--u)*.5)}
+
+/* sekme plakaları */
+.tzTabs{gap:calc(var(--u)*.45)}
+.tzTab{min-height:calc(var(--u)*3.5);padding:0 calc(var(--u)*1.5);gap:calc(var(--u)*.5);font-size:calc(var(--u)*1.05);
+ clip-path:polygon(9px 0,calc(100% - 9px) 0,100% 9px,100% calc(100% - 9px),calc(100% - 9px) 100%,9px 100%,0 calc(100% - 9px),0 9px);
+ background:linear-gradient(#c8a765,#8a6a2e)}
+.tzTab>span{inset:2px;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px),0 8px);background:linear-gradient(#241f2e,#13101b)}
+.tzTab.on{background:linear-gradient(#f0cd82,#b98a33);box-shadow:0 0 16px #e0a05a55}
+.tzTab.on>span{background:linear-gradient(#ab3b2b,#691e17)}
+.tzTab .glyph,.tzTab img{width:calc(var(--u)*1.2);height:calc(var(--u)*1.2)}
+
+/* eşya kutuları: nadirlik dolu renk */
+.tzList{grid-template-columns:repeat(auto-fill,minmax(calc(var(--u)*5),1fr));gap:calc(var(--u)*.45)}
+.tzCell i{position:absolute;left:calc(var(--u)*.2);bottom:calc(var(--u)*.08);font:700 calc(var(--u)*.8)/1 system-ui,sans-serif;font-style:normal;color:#fff;text-shadow:0 1px 2px #000,0 0 4px #000}
+.tzCell{border-radius:calc(var(--u)*.6);background:linear-gradient(165deg,color-mix(in srgb,var(--c,#9aa0a6) 55%,#2b2436),color-mix(in srgb,var(--c,#9aa0a6) 14%,#131019));
+ box-shadow:inset 0 0 0 1px #00000088,inset 0 calc(var(--u)*.6) calc(var(--u)*.9) #ffffff14,0 0 0 2px #b4904f,0 3px 7px #0008}
+.tzCell img,.tzCell .glyph{width:80%;height:80%;filter:drop-shadow(0 2px 3px #000c)}
+.tzCell b{font-size:calc(var(--u)*.86)}
+.tzItem small{font-size:calc(var(--u)*.68)}
+.tzItem.on .tzCell{box-shadow:inset 0 0 0 1px #00000088,0 0 0 2px #ffe6a6,0 0 calc(var(--u)*1.1) #e9c886aa}
+
+/* değer satırı */
+.tzRow{font-size:calc(var(--u)*1.02);gap:calc(var(--u)*.5)}
+.tzRow .glyph{width:calc(var(--u)*1.15);height:calc(var(--u)*1.15)}
+.tzRow u{text-decoration:none;color:#7fdc8a;font-size:calc(var(--u)*.85);margin-left:calc(var(--u)*.3)}
+.tzChip{padding:calc(var(--u)*.25) calc(var(--u)*1.2);font-size:calc(var(--u)*1.25);gap:calc(var(--u)*.6)}
+.tzOran{font-size:calc(var(--u)*2.1)}
+.tzOran small{font-size:calc(var(--u)*.6)}
+
+/* malzeme taşları */
+.tzMats{gap:calc(var(--u)*.6)}
+.tzMat{min-width:calc(var(--u)*3.6);padding:calc(var(--u)*.35) calc(var(--u)*.5);border-radius:calc(var(--u)*.6);background:linear-gradient(165deg,#2b2436,#131019);box-shadow:inset 0 0 0 1px #00000088,0 0 0 2px #8a6a2e;font-size:calc(var(--u)*.95)}
+.tzMat img,.tzMat .glyph,.tzMat .gxStone,.tzMat .tzCell{width:calc(var(--u)*2.1);height:calc(var(--u)*2.1);box-shadow:none}
+
+/* merdiven: zincirli altıgenler */
+.tzPath{gap:0}
+.tzStep{width:calc(var(--u)*2.5);height:calc(var(--u)*2.8);font-size:calc(var(--u)*.92);box-shadow:0 0 0 2px #8a6a2e}
+.tzStep+.tzStep{margin-left:calc(var(--u)*1.1)}
+.tzStep+.tzStep:before{content:"";position:absolute;left:calc(var(--u)*-1.15);width:calc(var(--u)*1.2);height:2px;background:linear-gradient(90deg,#6b532a,#c8a765,#6b532a)}
+.tzStep.now{box-shadow:0 0 0 2px #ffe6a6,0 0 calc(var(--u)*1.1) #e9c886aa}
+
+/* ana düğme */
+.tz .gxBtn{min-height:calc(var(--u)*3.2);min-width:calc(var(--u)*9);padding:calc(var(--u)*.3) calc(var(--u)*1.8);font-size:calc(var(--u)*1.25);gap:0}
+.tz .gxBtn small{font-size:calc(var(--u)*.85);gap:calc(var(--u)*.25)}
+.tz .gxBtn small img,.tz .gxBtn small .glyph{width:calc(var(--u)*1.1);height:calc(var(--u)*1.1)}
+.tz .gxBtn.sub{min-height:calc(var(--u)*2.6);min-width:0;font-size:calc(var(--u)*1);padding:calc(var(--u)*.25) calc(var(--u)*1.1)}
+
+/* orta: halka + örsteki eşya */
+.fgRing{top:0;width:calc(var(--u)*8.2);height:calc(var(--u)*8.2);background:radial-gradient(circle,#2a1c2ebb,transparent 70%);box-shadow:0 0 0 2px #b4904f,0 0 0 4px #0c0a12,0 0 calc(var(--u)*2) #e9c88655}
+.fgRing .tzCell{width:72%}
+.fgEmber{position:absolute;left:50%;top:57%;translate:-50% -50%;width:calc(var(--u)*17);height:calc(var(--u)*7);border-radius:50%;background:radial-gradient(ellipse,#ff8a2ecc,#ff4d0e55 45%,transparent 72%);filter:blur(calc(var(--u)*.35));pointer-events:none}
+.fgForged{position:absolute;left:50%;top:55%;translate:-50% -50%;width:calc(var(--u)*16);rotate:-15deg;filter:drop-shadow(0 0 calc(var(--u)*.5) #ffc46a) drop-shadow(0 0 calc(var(--u)*1.6) #ff6a1e);pointer-events:none}
+[data-motion=true] .fgEmber{animation:fgKor 2.4s ease-in-out infinite alternate}
+@keyframes fgKor{from{opacity:.75;transform:translate(-50%,-50%) scale(.94)}to{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
+.tz-forge .tzName{font-size:calc(var(--u)*1.2);padding:calc(var(--u)*.28) calc(var(--u)*1.4)}
+.fgFil{width:calc(var(--u)*2.4);height:calc(var(--u)*2.4);border-radius:calc(var(--u)*.5)}
+.fgFilter{gap:calc(var(--u)*.3);padding-bottom:calc(var(--u)*.45)}
+.fgTriple .tzCell{width:calc(var(--u)*2.9)}
+.tzSlot{width:calc(var(--u)*4);height:calc(var(--u)*4);border-radius:calc(var(--u)*.6)}
+.tzNote{font-size:calc(var(--u)*.85)}
+
+.tz-forge .tzBody{justify-content:flex-start;gap:calc(var(--u)*.45)}
+.tz-forge .tzChip{margin:calc(var(--u)*.2) auto calc(var(--u)*.3)}
+.tz-forge .tzHead{margin-top:calc(var(--u)*.35)}
+.tz-forge .tzOran{margin-top:calc(var(--u)*.5)}
+.tz-forge .tzAct{margin-top:auto;padding-top:calc(var(--u)*.4)}
+.tz-forge .tzList{align-content:start}
