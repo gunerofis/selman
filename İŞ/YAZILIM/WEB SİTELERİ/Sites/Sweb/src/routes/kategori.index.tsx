@@ -1,0 +1,4 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { pageHead } from "@/lib/seo";
+export const Route = createFileRoute("/kategori/")({ head: () => pageHead({title: "Saat ve Mücevher Kutuları", path: "/kategori"}), component: Categories });
+function Categories() { return <div className="mx-auto max-w-5xl px-4 py-14"><h1 className="font-display text-4xl">Ürün kategorileri</h1><div className="mt-8 grid gap-6 sm:grid-cols-2">{([{id:"saat",name:"Saat kutuları",image:"/clik/s-8008.webp"},{id:"mucevher",name:"Mücevher kutuları",image:"/clik/mjx-001.webp"}] as const).map(c=><Link key={c.id} to="/saat-mucevher-kutulari" search={{tur:c.id}} className="border border-border bg-bg-wash p-6"><img src={c.image} alt={c.name} width={600} height={600} className="aspect-square w-full object-contain"/><h2 className="mt-4 font-display text-2xl">{c.name}</h2></Link>)}</div></div>; }

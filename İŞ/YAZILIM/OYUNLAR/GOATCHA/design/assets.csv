@@ -1,0 +1,5 @@
+id,role,kind,description,key_color,relative_scale,aspect_ratio,model,anim_kinds,notes
+sfx_jump,audio,audio,short bouncy cartoon jump hop,,—,—,mirelo_text_to_audio,,"duration 1s; produced, in design/assets/"
+sfx_death,audio,audio,comedic cartoon failure womp,,—,—,mirelo_text_to_audio,,"duration 2s; funny, not harsh; produced"
+sfx_trap,audio,audio,sudden comedic trap snap sting,,—,—,mirelo_text_to_audio,,"duration 1s; produced"
+music_main,audio,audio,light cheerful bouncy looping platformer tune,,—,—,sonilo_music,,"duration 30s; instrumental; loops; produced (.m4a)"
